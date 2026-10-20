@@ -1,6 +1,6 @@
 # 🌿 Environmental Science & Technology (ES1.101) — Interactive Study Suite
 
-[![Live Hub](https://img.shields.io/badge/Study%20Suite-Live%20Portal-10b981?style=for-the-badge&logo=safari)](./index.html)
+[![Live Hub](https://img.shields.io/badge/Study%20Suite-Live%20Portal-10b981?style=for-the-badge&logo=safari)](https://vivek-r-2000.github.io/est-interactive-study/)
 [![Course](https://img.shields.io/badge/Course-ES1.101%20EST-14b8a6?style=for-the-badge)](https://courses.iiit.ac.in/course/view.php?id=5826)
 [![Slides](https://img.shields.io/badge/Primary%20Slides-444%20Rendered-f59e0b?style=for-the-badge)](./Lecture_Slides/)
 [![Visuals](https://img.shields.io/badge/Extracted%20Visuals-770%2B%20Diagrams-06b6d4?style=for-the-badge)](./Study_Material/assets/diagrams/)
