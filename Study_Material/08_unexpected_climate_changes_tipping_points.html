@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lecture 08: Unexpected Climate Changes, Non-Linear Tipping Points & Feedback Loops — EST Study Suite 🌿</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<style>
+
+  :root {
+    --bg-main: #060f0b;
+    --bg-card: #0b1a14;
+    --bg-card-hover: #10241c;
+    --border: #183327;
+    --border-accent: #23523f;
+    --primary: #10b981;
+    --primary-light: #34d399;
+    --primary-glow: rgba(16, 185, 129, 0.35);
+    --teal: #14b8a6;
+    --cyan: #06b6d4;
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --text: #f0fdf4;
+    --muted: #94a3b8;
+    --muted-green: #a7f3d0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg-main);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Eco Glassmorphism & Cards */
+  .eco-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.25s ease;
+  }
+  .eco-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px -10px var(--primary-glow);
+    transform: translateY(-2px);
+  }
+  .eco-card-static {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  /* Badges */
+  .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
+  .badge-teal    { background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.3); color: #5eead4; }
+  .badge-amber   { background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); color: #fcd34d; }
+  .badge-cyan    { background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.3); color: #67e8f9; }
+
+  /* 3D Flip Card */
+  .flip-card-wrap { perspective: 900px; height: 210px; cursor: pointer; }
+  .flip-card-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1); }
+  .flip-card-wrap.flipped .flip-card-inner { transform: rotateY(180deg); }
+  .flip-face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border-radius: 14px; border: 1px dashed var(--border-accent);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .flip-front { background: rgba(16, 185, 129, 0.05); }
+  .flip-back  { background: rgba(20, 184, 166, 0.12); border-color: var(--teal); transform: rotateY(180deg); }
+
+  /* Quiz */
+  .quiz-option {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; border-radius: 10px;
+    border: 1px solid var(--border); margin-bottom: 10px;
+    cursor: pointer; font-size: 14px; transition: all .2s;
+    background: rgba(255,255,255,0.02);
+  }
+  .quiz-option:hover { border-color: var(--primary); background: rgba(16, 185, 129, 0.08); }
+  .quiz-option.correct { border-color: #10b981!important; background: rgba(16, 185, 129, 0.18)!important; color: #a7f3d0; }
+  .quiz-option.wrong   { border-color: #ef4444!important; background: rgba(239, 68, 68, 0.18)!important; color: #fca5a5; }
+  .quiz-option.disabled { pointer-events: none; }
+  .q-letter {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--border-accent); display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+  }
+
+  /* Slide Lightbox Modal */
+  .slide-modal-backdrop {
+    display: none; position: fixed; inset: 0; z-index: 1000;
+    background: rgba(3, 7, 5, 0.94); backdrop-filter: blur(8px);
+    align-items: center; justify-content: center; padding: 24px;
+  }
+  .slide-modal-backdrop.show { display: flex; }
+
+
+  /* Top Bar */
+  #topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    background: #040a07; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 12px;
+    padding: 0 16px; height: 54px;
+  }
+  #topbar a { color: var(--primary-light); font-size: 13px; text-decoration: none; font-weight: 600; }
+  #module-title { font-weight: 800; font-size: 13px; color: #fff; white-space: nowrap; }
+  #progress-bar-bg { background: var(--border); border-radius: 99px; height: 6px; width: 100%; }
+  #progress-bar-fill { background: linear-gradient(90deg, #10b981, #14b8a6); height: 6px; border-radius: 99px; transition: width .3s ease; width: 0%; }
+
+  /* Pomodoro */
+  #pomodoro {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 4px 12px; cursor: pointer; white-space: nowrap;
+  }
+  #timer-display { font-size: 13px; font-weight: 700; color: #f59e0b; font-variant-numeric: tabular-nums; }
+
+  /* Layout */
+  #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
+  #sidebar {
+    width: 250px; min-width: 250px; background: #040b08;
+    border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .sidebar-link {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 16px; font-size: 12px; color: var(--muted);
+    cursor: pointer; transition: all .2s; border-left: 3px solid transparent;
+  }
+  .sidebar-link:hover { background: rgba(16, 185, 129, 0.08); color: #fff; }
+  .sidebar-link.active { background: rgba(16, 185, 129, 0.15); color: #34d399; border-left-color: #10b981; font-weight: 700; }
+  .sidebar-dot { width: 6px; height: 6px; border-radius: 50%; background: #334155; flex-shrink: 0; }
+  .sidebar-link.active .sidebar-dot { background: #10b981; box-shadow: 0 0 8px #10b981; }
+
+  /* Main */
+  #main {
+    flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .card-screen { display: none; width: 100%; max-width: 900px; animation: fadeIn .25s ease; }
+  .card-screen.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+  /* Nav Bar */
+  #nav-bar {
+    position: fixed; bottom: 0; left: 250px; right: 0;
+    background: #040a07; border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    padding: 12px 24px; z-index: 40;
+  }
+  @media (max-width: 768px) {
+    #sidebar { display: none; }
+    #nav-bar { left: 0; }
+  }
+</style>
+</head>
+<body class="selection:bg-emerald-600 selection:text-white">
+
+  <!-- TOP BAR -->
+  <header id="topbar">
+    <a href="00_home.html" class="flex items-center gap-1">← <span class="hidden sm:inline">All Modules</span></a>
+    <span style="color:var(--border)">|</span>
+    <span id="module-title">Lec 08: Tipping Points & Feedbacks</span>
+    <div class="flex-1 flex flex-col gap-1 mx-2 min-w-0">
+      <div class="flex justify-between text-[11px]">
+        <span id="section-label" class="text-emerald-400 font-semibold truncate">Section 1</span>
+        <span id="progress-label" class="text-slate-400 font-mono">0%</span>
+      </div>
+      <div id="progress-bar-bg"><div id="progress-bar-fill"></div></div>
+    </div>
+    <div id="pomodoro" onclick="togglePomodoro()">
+      <span>⏱️</span>
+      <span id="timer-display">25:00</span>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div id="layout">
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+      <div class="text-[10px] font-bold tracking-widest text-emerald-400/80 uppercase px-4 py-2">Lecture Curriculum</div>
+      
+        <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">1. Big Picture & Intuition</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">2. Scientific Foundations</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">3. Visuals & Slide Figures</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">4. Math & Empirical Tables</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">5. Video Masterclass</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">6. Interactive Simulator</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">7. Active Recall Flashcards</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(7)" id="slink_7">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">8. High-Yield Exam Traps</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(8)" id="slink_8">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">9. Concept Check Quiz</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(9)" id="slink_9">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">10. Complete Slide Gallery (30 Slides)</span>
+        </div>
+        
+    </nav>
+
+    <!-- MAIN VIEW -->
+    <main id="main">
+      
+    <section class="card-screen active" data-title="Big Picture & Intuition">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 08 • Fundamental Concept</span>
+          <span class="text-xs text-slate-400">• Advanced • 55 mins</span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Unexpected Climate Changes, Non-Linear Tipping Points & Feedback Loops</h2>
+        <div class="text-emerald-400 text-sm font-semibold mb-4">Bifurcations, Hysteresis Dynamics, and Catastrophic Planetary Regime Shifts</div>
+        
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-sm leading-relaxed">
+          <strong>💡 Why This Topic Matters:</strong><br/>
+          The climate system is non-linear and governed by complex feedback loops. Gradual, linear increases in global temperature do not always produce gradual responses; once critical threshold temperatures are breached, sub-components of the Earth system (termed Tipping Elements) can abruptly transition into alternate, irreversible equilibrium states through runaway positive feedback. Understanding tipping points is paramount for assessing catastrophic environmental tail risk.
+        </div>
+
+        <div class="space-y-2">
+          
+        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">AMOC</span>
+            <strong class="text-emerald-300 text-sm">Atlantic Meridional Overturning Circulation (AMOC)</strong>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">Thermohaline circulation transporting warm equatorial water northward. Freshening from Greenland melt reduces surface water density in the North Atlantic, threatening complete circulation shutdown.</p>
+        </div>
+        
+        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Permafrost</span>
+            <strong class="text-emerald-300 text-sm">Permafrost-Methane Positive Feedback</strong>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">Arctic permafrost stores $\sim 1500\,\text{Gt}$ of ancient organic carbon. Thawing stimulates anaerobic microbial decomposition, releasing $CH_4$ (28x GWP of $CO_2$) and accelerating global heating in a self-sustaining feedback loop.</p>
+        </div>
+        
+        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Hysteresis</span>
+            <strong class="text-emerald-300 text-sm">Hysteresis & Non-Recoverability</strong>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">Because of internal system inertia, reversing a tipping event requires cooling the planet far below the original threshold where the tip occurred (bistable state with path-dependent recovery).</p>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Scientific Foundations">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-teal inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Core Mechanics</div>
+        <h2 class="text-2xl font-black text-white mb-4">Stommel's Bifurcation Model & Thermohaline Instability</h2>
+        <div class="text-sm leading-relaxed text-slate-200">
+          
+            <p class="mb-3">The Atlantic thermohaline circulation is driven by density gradients between tropical warm salty water and polar cold fresh water. In Henry Stommel's classic two-box bifurcation model, ocean density $\rho$ depends on temperature $T$ and salinity $S$:</p>
+            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
+              $$\rho = \rho_0 (1 - \alpha_T \Delta T + \beta_S \Delta S)$$
+            </div>
+            <p class="text-sm">The overturning transport flow rate $q$ is proportional to the density difference: $q = k (\alpha_T \Delta T - \beta_S \Delta S)$.</p>
+            <p class="text-sm mt-3">As Greenland meltwater discharges fresh water ($S \to 0$), the salinity advection feedback collapses. The system approaches a <strong>Saddle-Node Bifurcation</strong> where the vigorous 'On' state becomes unstable, suddenly snapping to an 'Off' collapsed state. Re-establishing the 'On' circulation requires reducing freshwater flux far below the initial threshold (the classic hysteresis loop).</p>
+            
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Extracted Slide Visuals">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
+        </div>
+        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
+        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_02.jpg', 'Slide 2: Tipping points in climate system')">
+            <img src="assets/slides/lec_08/slide_02.jpg" alt="Slide 2" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 1 (Slide #2)</span>
+              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Tipping points in climate system</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_03.jpg', 'Slide 3: The top six climate events scientists worry about today')">
+            <img src="assets/slides/lec_08/slide_03.jpg" alt="Slide 3" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 2 (Slide #3)</span>
+              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">The top six climate events scientists worry about today</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_01.jpg', 'Slide 1: Class: 8')">
+            <img src="assets/slides/lec_08/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 3 (Slide #1)</span>
+              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Class: 8</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_08.jpg', 'Slide 8: Term was first used by molecular nanotechnology pioneer Eric')">
+            <img src="assets/slides/lec_08/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 4 (Slide #8)</span>
+              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Term was first used by molecular nanotechnology pioneer Eric</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_15.jpg', 'Slide 15: Global Terrestrial Stilling')">
+            <img src="assets/slides/lec_08/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 5 (Slide #15)</span>
+              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Global Terrestrial Stilling</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_22.jpg', 'Slide 22: 6. Disappearing Beaches')">
+            <img src="assets/slides/lec_08/slide_22.jpg" alt="Slide 22" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 6 (Slide #22)</span>
+              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">6. Disappearing Beaches</div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Mathematical Formulations">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Rigorous Quantitative Model</div>
+        <h2 class="text-2xl font-black text-white mb-4">Tipping Element Risk Matrix</h2>
+        
+        <div class="p-4 bg-[#05120c] border border-emerald-900/80 rounded-xl text-center my-4 overflow-x-auto">
+          <div class="text-lg md:text-xl font-mono text-emerald-300">
+            $$\frac{dq}{dt} = -q + \eta_1 - \eta_2 q^2 \quad \implies \quad \text{Bifurcation Point } \eta_c$$
+          </div>
+        </div>
+        <p class="text-xs text-slate-300 mb-6">Where $q$ is normalized overturning volume transport, and $\eta$ represents normalized freshwater and thermal forcing parameters.</p>
+
+        <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
+          <table class="w-full text-xs text-left text-slate-300">
+            <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
+              <tr><th class='p-3 border-r border-emerald-900'>Tipping Element</th><th class='p-3 border-r border-emerald-900'>Estimated Threshold</th><th class='p-3 border-r border-emerald-900'>Primary Positive Feedback</th><th class='p-3 border-r border-emerald-900'>Planetary Impact of Tipping</th></tr>
+            </thead>
+            <tbody class="divide-y divide-emerald-950 font-sans">
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>AMOC Collapse</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 3.0^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Salinity-advection feedback shutdown</td><td class='p-3 border-r border-emerald-900 font-mono'>Severe cooling in NW Europe (-5 to -10°C), southward shift of tropical monsoon belts</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Greenland Ice Sheet Melt</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 2.5^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Melt-elevation feedback (lower ice surface experiences warmer air)</td><td class='p-3 border-r border-emerald-900 font-mono'>Irreversible global sea level rise of $+7\,\text{meters}$ over centuries</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Amazon Rainforest Dieback</td><td class='p-3 border-r border-emerald-900 font-mono'>$2.0^\circ\text{C} - 3.5^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Moisture-recycling breakdown and wildfire frequency</td><td class='p-3 border-r border-emerald-900 font-mono'>Conversion of rainforest into degraded savanna, release of $>100\,\text{Gt C}$</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Boreal Permafrost Thaw</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 2.0^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Microbial metabolic self-heating (talik formation)</td><td class='p-3 border-r border-emerald-900 font-mono'>Release of $>150\,\text{Gt C}$ as $CO_2$ and $CH_4$, self-amplifying warming</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+
+        <section class="card-screen" data-title="Video Masterclass">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <div class="badge-cyan inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Audiovisual Deep-Dive</div>
+            <h2 class="text-2xl font-black text-white mb-2">Lecture Videos & Multimedia Documentaries</h2>
+            <p class="text-xs text-slate-300 mb-6">Referenced directly from the course slides for active conceptual reinforcement.</p>
+            
+            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
+              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
+                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
+                </span>
+                <a href="https://www.youtube.com/watch?v=mpyiyEazodM" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+              </div>
+              <div class="relative w-full aspect-video bg-black">
+                <iframe src="https://www.youtube-nocookie.com/embed/mpyiyEazodM" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
+              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
+                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
+                </span>
+                <a href="https://www.youtube.com/watch?v=2o2AapO6rK8" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+              </div>
+              <div class="relative w-full aspect-video bg-black">
+                <iframe src="https://www.youtube-nocookie.com/embed/2o2AapO6rK8" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
+              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
+                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
+                </span>
+                <a href="https://www.youtube.com/watch?v=0XDHMgqlcEU" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+              </div>
+              <div class="relative w-full aspect-video bg-black">
+                <iframe src="https://www.youtube-nocookie.com/embed/0XDHMgqlcEU" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+
+    <section class="card-screen" data-title="Interactive Simulator">
+      <div class="mb-6">
+        
+    <div class="eco-card p-6 border-emerald-800/60">
+      <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
+        <div>
+          <h3 class="text-lg font-bold text-emerald-400">⚡ AMOC & Climate Tipping Element Hysteresis Explorer</h3>
+          <p class="text-xs text-slate-300">Simulate Stommel's two-box model of thermohaline circulation and discover saddle-node bifurcation tipping points.</p>
+        </div>
+        <span class="badge-amber px-2.5 py-1 rounded text-xs font-mono font-bold">Non-Linear Dynamics</span>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-xs text-slate-300 font-semibold mb-1">North Atlantic Freshwater Influx (Sv = 10⁶ m³/s): <span id="val_hose" class="text-amber-400 font-bold">0.12 Sv</span></label>
+        <input type="range" id="input_hose" min="0.00" max="0.40" step="0.01" value="0.12" class="w-full accent-amber-500" oninput="runSim08()">
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase">AMOC Overturning Volume Transport</div>
+          <div id="out_amoc" class="text-3xl font-black text-emerald-400 my-1">16.4 Sv</div>
+          <div id="out_amoc_state" class="text-xs text-emerald-300 font-bold">State: Active & Stable</div>
+        </div>
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase">Margin to Tipping Bifurcation</div>
+          <div id="out_margin" class="text-2xl font-black text-cyan-400 my-1">0.14 Sv</div>
+          <div class="text-xs text-slate-400">Critical Threshold: 0.26 Sv</div>
+        </div>
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase">Regional Climate Consequence</div>
+          <div id="out_impact" class="text-sm font-bold text-slate-300 my-1">Normal European heat transport (+10°C anomaly maintained)</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function runSim08() {
+        const hose = parseFloat(document.getElementById('input_hose').value);
+        document.getElementById('val_hose').innerText = hose.toFixed(2) + ' Sv';
+
+        const crit = 0.26;
+        const margin = Math.max(0, crit - hose);
+        document.getElementById('out_margin').innerText = margin.toFixed(2) + ' Sv';
+
+        const amocEl = document.getElementById('out_amoc');
+        const stateEl = document.getElementById('out_amoc_state');
+        const impactEl = document.getElementById('out_impact');
+
+        if (hose < crit) {
+          const transport = (19.0 - (hose / crit) * 6.5).toFixed(1);
+          amocEl.innerText = transport + ' Sv';
+          amocEl.className = 'text-3xl font-black text-emerald-400 my-1';
+          stateEl.innerText = 'State: Active & Stable';
+          stateEl.className = 'text-xs text-emerald-300 font-bold';
+          impactEl.innerText = 'Normal North Atlantic heat transport. Monsoon circulation stable.';
+        } else {
+          amocEl.innerText = '2.1 Sv (COLLAPSED)';
+          amocEl.className = 'text-3xl font-black text-red-400 my-1';
+          stateEl.innerText = 'State: Tipped / Collapsed (Bistable Regime)';
+          stateEl.className = 'text-xs text-red-300 font-bold';
+          impactEl.innerText = '⚠️ Severe European cooling (-8°C), ITCZ shifts southward, severe Indian monsoon disruption.';
+        }
+      }
+      setTimeout(runSim08, 100);
+    </script>
+    
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Active Recall Flashcards">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
+        <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential definitions, reactions, and principles before flipping.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-base font-bold text-white mb-2">What is a 'Tipping Element' in Earth System science?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">A critical continental- or planetary-scale sub-system of the Earth that can be pushed into a qualitative, abrupt, and often irreversible alternate state by a small incremental perturbation.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-base font-bold text-white mb-2">What is Hysteresis in climate dynamics?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">The phenomenon where the state of a system depends on its past history. Reversing an environmental tipping event requires restoring conditions to a point far lower than the original tipping threshold.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-base font-bold text-white mb-2">What would happen to the Indian Summer Monsoon if AMOC were to collapse?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">AMOC collapse causes inter-hemispheric temperature reorganization, shifting the Intertropical Convergence Zone (ITCZ) southward and severely disrupting or weakening the Indian monsoon rainfall.</div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Exam Traps & Pitfalls">
+      <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
+        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
+        <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
+        <p class="text-xs text-slate-300 mb-6">Common student misconceptions and subtle distinctions tested in Midsem and Endsem exams.</p>
+        <ul class="space-y-1">
+          <li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Trap:</strong> Assuming an AMOC collapse means the entire Earth cools. AMOC collapse causes profound regional cooling in Northern Europe and the North Atlantic, but leads to exacerbated heating in the Southern Hemisphere and tropical oceans.</li><li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Exam Trap:</strong> Believing all tipping points happen instantaneously. While the 'tipping decision' can occur in years, the resulting transition (e.g. melting of Greenland or West Antarctica) can unfold over decades to centuries.</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Concept Check Quiz">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
+        <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions.</p>
+        <div>
+          
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 1</div>
+          <div class="text-sm font-bold text-white mb-4">What is the primary physical mechanism of the 'melt-elevation' positive feedback on ice sheets?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_08_0')">
+              <span class="q-letter">A</span>
+              <span>Melting ice increases ocean salinity</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_08_0')">
+              <span class="q-letter">B</span>
+              <span>As ice sheets melt, their surface elevation drops into warmer, denser atmospheric layers, accelerating subsequent melting</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_08_0')">
+              <span class="q-letter">C</span>
+              <span>Meltwater permanently freezes the bedrock</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_08_0')">
+              <span class="q-letter">D</span>
+              <span>Ice sheets reflect more UV light as they thin</span>
+            </div>
+            
+          </div>
+          <div id="q_08_0" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> Because atmospheric temperature decreases with altitude (environmental lapse rate), surface lowering puts the remaining ice in warmer air, accelerating further melt.
+          </div>
+        </div>
+        
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 2</div>
+          <div class="text-sm font-bold text-white mb-4">Why is methane ($CH_4$) release from thawing permafrost of particularly acute concern over a 20-year timescale?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_08_1')">
+              <span class="q-letter">A</span>
+              <span>Methane permanently destroys nitrogen in the air</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_08_1')">
+              <span class="q-letter">B</span>
+              <span>Methane has a 20-year Global Warming Potential (GWP-20) over 80 times greater than that of $CO_2$</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_08_1')">
+              <span class="q-letter">C</span>
+              <span>Methane turns immediately into liquid water</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_08_1')">
+              <span class="q-letter">D</span>
+              <span>Methane has zero residence time in the atmosphere</span>
+            </div>
+            
+          </div>
+          <div id="q_08_1" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> While methane decays into $CO_2$ over ~12 years, its short-term radiative forcing efficiency is enormous, with a 20-year GWP around 84.
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Slide Reference Gallery">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
+          <div>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Primary Course Slides</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Reference Gallery</h2>
+            <p class="text-xs text-slate-300">All 30 slides from the lecture presentations for instant reference and review.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href='../Lecture_Slides/Class-8 Unexpected climate changes.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-8 Unexpected climate changes.pdf</span></a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_01.jpg', 'Slide 1: Class: 8')">
+            <img src="assets/slides/lec_08/slide_01.jpg" alt="Slide 1" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #1</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Class: 8">Class: 8</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_02.jpg', 'Slide 2: Tipping points in climate system')">
+            <img src="assets/slides/lec_08/slide_02.jpg" alt="Slide 2" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #2</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Tipping points in climate system">Tipping points in climate system</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_03.jpg', 'Slide 3: The top six climate events scientists worry about today')">
+            <img src="assets/slides/lec_08/slide_03.jpg" alt="Slide 3" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #3</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The top six climate events scientists worry about today">The top six climate events scientists worry about today</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_04.jpg', 'Slide 4: 3. The West Antarctic ice sheet disintegrates')">
+            <img src="assets/slides/lec_08/slide_04.jpg" alt="Slide 4" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #4</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="3. The West Antarctic ice sheet disintegrates">3. The West Antarctic ice sheet disintegrates</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_05.jpg', 'Slide 5: 5. The Amazon rain forest dies back')">
+            <img src="assets/slides/lec_08/slide_05.jpg" alt="Slide 5" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #5</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="5. The Amazon rain forest dies back">5. The Amazon rain forest dies back</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_06.jpg', 'Slide 6: Global catastrophic risk')">
+            <img src="assets/slides/lec_08/slide_06.jpg" alt="Slide 6" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #6</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global catastrophic risk">Global catastrophic risk</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_07.jpg', 'Slide 7: Black swan Theory')">
+            <img src="assets/slides/lec_08/slide_07.jpg" alt="Slide 7" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #7</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Black swan Theory">Black swan Theory</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_08.jpg', 'Slide 8: Term was first used by molecular nanotechnology pioneer Eric')">
+            <img src="assets/slides/lec_08/slide_08.jpg" alt="Slide 8" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #8</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Term was first used by molecular nanotechnology pioneer Eric">Term was first used by molecular nanotechnology pioneer Eric</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_09.jpg', 'Slide 9: The Doomsday Clock')">
+            <img src="assets/slides/lec_08/slide_09.jpg" alt="Slide 9" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #9</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The Doomsday Clock">The Doomsday Clock</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_10.jpg', 'Slide 10: The factors influencing the Clock are nuclear risk and climate...')">
+            <img src="assets/slides/lec_08/slide_10.jpg" alt="Slide 10" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #10</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The factors influencing the Clock are nuclear risk and climate...">The factors influencing the Clock are nuclear risk and climate...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_11.jpg', 'Slide 11: Slide 11')">
+            <img src="assets/slides/lec_08/slide_11.jpg" alt="Slide 11" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #11</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 11">Slide 11</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_12.jpg', 'Slide 12: Atomic scientists have kept their')">
+            <img src="assets/slides/lec_08/slide_12.jpg" alt="Slide 12" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #12</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Atomic scientists have kept their">Atomic scientists have kept their</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_13.jpg', 'Slide 13: •Nuclear Proliferation: Nations continue to modernize and expa...')">
+            <img src="assets/slides/lec_08/slide_13.jpg" alt="Slide 13" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #13</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="•Nuclear Proliferation: Nations continue to modernize and expa...">•Nuclear Proliferation: Nations continue to modernize and expa...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_14.jpg', 'Slide 14: Geopolitical tensions and nuclear risks: Growing rivalry among...')">
+            <img src="assets/slides/lec_08/slide_14.jpg" alt="Slide 14" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #14</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Geopolitical tensions and nuclear risks: Growing rivalry among...">Geopolitical tensions and nuclear risks: Growing rivalry among...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_15.jpg', 'Slide 15: Global Terrestrial Stilling')">
+            <img src="assets/slides/lec_08/slide_15.jpg" alt="Slide 15" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #15</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global Terrestrial Stilling">Global Terrestrial Stilling</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_16.jpg', 'Slide 16: Hypercane')">
+            <img src="assets/slides/lec_08/slide_16.jpg" alt="Slide 16" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #16</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Hypercane">Hypercane</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_17.jpg', 'Slide 17: 1. Volcanic')">
+            <img src="assets/slides/lec_08/slide_17.jpg" alt="Slide 17" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #17</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="1. Volcanic">1. Volcanic</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_18.jpg', 'Slide 18: 2. Oceans will darken')">
+            <img src="assets/slides/lec_08/slide_18.jpg" alt="Slide 18" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #18</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="2. Oceans will darken">2. Oceans will darken</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_19.jpg', 'Slide 19: 3. Sunlight will reach the seabed at the North Pole')">
+            <img src="assets/slides/lec_08/slide_19.jpg" alt="Slide 19" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #19</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="3. Sunlight will reach the seabed at the North Pole">3. Sunlight will reach the seabed at the North Pole</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_20.jpg', 'Slide 20: 4. The invasion of ants will slow down')">
+            <img src="assets/slides/lec_08/slide_20.jpg" alt="Slide 20" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #20</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="4. The invasion of ants will slow down">4. The invasion of ants will slow down</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_21.jpg', 'Slide 21: 5. Decline of desert bacteria')">
+            <img src="assets/slides/lec_08/slide_21.jpg" alt="Slide 21" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #21</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="5. Decline of desert bacteria">5. Decline of desert bacteria</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_22.jpg', 'Slide 22: 6. Disappearing Beaches')">
+            <img src="assets/slides/lec_08/slide_22.jpg" alt="Slide 22" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #22</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="6. Disappearing Beaches">6. Disappearing Beaches</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_23.jpg', 'Slide 23: 7. Faster-Growing Trees')">
+            <img src="assets/slides/lec_08/slide_23.jpg" alt="Slide 23" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #23</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="7. Faster-Growing Trees">7. Faster-Growing Trees</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_24.jpg', 'Slide 24: 8. More Lightning')">
+            <img src="assets/slides/lec_08/slide_24.jpg" alt="Slide 24" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #24</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="8. More Lightning">8. More Lightning</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_25.jpg', 'Slide 25: 9. Deteriorating Mummies')">
+            <img src="assets/slides/lec_08/slide_25.jpg" alt="Slide 25" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #25</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="9. Deteriorating Mummies">9. Deteriorating Mummies</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_26.jpg', 'Slide 26: 10. Hot (Human) Tempers')">
+            <img src="assets/slides/lec_08/slide_26.jpg" alt="Slide 26" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #26</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="10. Hot (Human) Tempers">10. Hot (Human) Tempers</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_27.jpg', 'Slide 27: Cricket and Climate change')">
+            <img src="assets/slides/lec_08/slide_27.jpg" alt="Slide 27" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #27</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Cricket and Climate change">Cricket and Climate change</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_28.jpg', 'Slide 28: cricket authorities to introduce &quot;heat rules&quot; including postpo...')">
+            <img src="assets/slides/lec_08/slide_28.jpg" alt="Slide 28" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #28</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="cricket authorities to introduce &quot;heat rules&quot; including postpo...">cricket authorities to introduce "heat rules" including postpo...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_29.jpg', 'Slide 29: They argue &quot;safety-related heat stress guidelines&quot; are now nee...')">
+            <img src="assets/slides/lec_08/slide_29.jpg" alt="Slide 29" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #29</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="They argue &quot;safety-related heat stress guidelines&quot; are now nee...">They argue "safety-related heat stress guidelines" are now nee...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_30.jpg', 'Slide 30: https://www.youtube.com/watch?v=mpyiyEazodM')">
+            <img src="assets/slides/lec_08/slide_30.jpg" alt="Slide 30" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #30</span>
+              <span>Class-8 Unexpected climate changes.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://www.youtube.com/watch?v=mpyiyEazodM">https://www.youtube.com/watch?v=mpyiyEazodM</div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+    </main>
+  </div>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <nav id="nav-bar">
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all" onclick="prevCard()">← Previous</button>
+    <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 10</span>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950" onclick="nextCard()">Next Card →</button>
+  </nav>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox_modal" class="slide-modal-backdrop" onclick="closeLightbox(event)">
+    <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
+        <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded" onclick="closeLightbox()">✕ Close</button>
+      </div>
+      <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
+        <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentCard = 0;
+    const screens = document.querySelectorAll('.card-screen');
+    const totalCards = screens.length;
+
+    function updateCardView() {
+      screens.forEach((s, i) => {
+        s.classList.toggle('active', i === currentCard);
+      });
+
+      // Update sidebar
+      for (let i = 0; i < totalCards; i++) {
+        const el = document.getElementById('slink_' + i);
+        if (el) el.classList.toggle('active', i === currentCard);
+      }
+
+      // Counter & Progress
+      document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
+      const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
+      document.getElementById('progress-bar-fill').style.width = pct + '%';
+      document.getElementById('progress-label').innerText = pct + '%';
+      
+      const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
+      document.getElementById('section-label').innerText = title;
+
+      // Scroll to top
+      document.getElementById('main').scrollTop = 0;
+    }
+
+    function nextCard() {
+      if (currentCard < totalCards - 1) {
+        currentCard++;
+        updateCardView();
+      }
+    }
+
+    function prevCard() {
+      if (currentCard > 0) {
+        currentCard--;
+        updateCardView();
+      }
+    }
+
+    function goToCard(idx) {
+      if (idx >= 0 && idx < totalCards) {
+        currentCard = idx;
+        updateCardView();
+      }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextCard();
+      else if (e.key === 'ArrowLeft') prevCard();
+      else if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Lightbox Modal
+    function openLightbox(imgSrc, title) {
+      document.getElementById('modal_img').src = imgSrc;
+      document.getElementById('modal_title').innerText = title || 'Slide Figure';
+      document.getElementById('lightbox_modal').classList.add('show');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox_modal').classList.remove('show');
+    }
+
+    // Quiz evaluation
+    function handleQuiz(el, isCorrect, feedbackId) {
+      const parent = el.parentElement;
+      const opts = parent.querySelectorAll('.quiz-option');
+      opts.forEach(o => o.classList.add('disabled'));
+
+      if (isCorrect) {
+        el.classList.add('correct');
+      } else {
+        el.classList.add('wrong');
+        // highlight correct option
+        opts.forEach(o => {
+          if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
+            o.classList.add('correct');
+          }
+        });
+      }
+      const fb = document.getElementById(feedbackId);
+      if (fb) fb.classList.remove('hidden');
+    }
+
+    // Pomodoro Timer
+    let timerSec = 25 * 60;
+    let timerRunning = false;
+    let timerInterval = null;
+
+    function togglePomodoro() {
+      if (timerRunning) {
+        clearInterval(timerInterval);
+        timerRunning = false;
+      } else {
+        timerRunning = true;
+        timerInterval = setInterval(() => {
+          if (timerSec > 0) {
+            timerSec--;
+            const m = Math.floor(timerSec / 60);
+            const s = timerSec % 60;
+            document.getElementById('timer-display').innerText = `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+          } else {
+            clearInterval(timerInterval);
+            timerRunning = false;
+            alert('🎉 Pomodoro Session Completed! Take a 5-minute breather.');
+            timerSec = 25 * 60;
+            document.getElementById('timer-display').innerText = '25:00';
+          }
+        }, 1000);
+      }
+    }
+
+    // Initialize
+    updateCardView();
+  </script>
+</body>
+</html>

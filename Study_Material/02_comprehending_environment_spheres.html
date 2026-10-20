@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lecture 02: Comprehending Our Environment: Earth Spheres & Thermodynamics — EST Study Suite 🌿</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<style>
+
+  :root {
+    --bg-main: #060f0b;
+    --bg-card: #0b1a14;
+    --bg-card-hover: #10241c;
+    --border: #183327;
+    --border-accent: #23523f;
+    --primary: #10b981;
+    --primary-light: #34d399;
+    --primary-glow: rgba(16, 185, 129, 0.35);
+    --teal: #14b8a6;
+    --cyan: #06b6d4;
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --text: #f0fdf4;
+    --muted: #94a3b8;
+    --muted-green: #a7f3d0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg-main);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Eco Glassmorphism & Cards */
+  .eco-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.25s ease;
+  }
+  .eco-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px -10px var(--primary-glow);
+    transform: translateY(-2px);
+  }
+  .eco-card-static {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  /* Badges */
+  .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
+  .badge-teal    { background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.3); color: #5eead4; }
+  .badge-amber   { background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); color: #fcd34d; }
+  .badge-cyan    { background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.3); color: #67e8f9; }
+
+  /* 3D Flip Card */
+  .flip-card-wrap { perspective: 900px; height: 210px; cursor: pointer; }
+  .flip-card-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1); }
+  .flip-card-wrap.flipped .flip-card-inner { transform: rotateY(180deg); }
+  .flip-face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border-radius: 14px; border: 1px dashed var(--border-accent);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .flip-front { background: rgba(16, 185, 129, 0.05); }
+  .flip-back  { background: rgba(20, 184, 166, 0.12); border-color: var(--teal); transform: rotateY(180deg); }
+
+  /* Quiz */
+  .quiz-option {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; border-radius: 10px;
+    border: 1px solid var(--border); margin-bottom: 10px;
+    cursor: pointer; font-size: 14px; transition: all .2s;
+    background: rgba(255,255,255,0.02);
+  }
+  .quiz-option:hover { border-color: var(--primary); background: rgba(16, 185, 129, 0.08); }
+  .quiz-option.correct { border-color: #10b981!important; background: rgba(16, 185, 129, 0.18)!important; color: #a7f3d0; }
+  .quiz-option.wrong   { border-color: #ef4444!important; background: rgba(239, 68, 68, 0.18)!important; color: #fca5a5; }
+  .quiz-option.disabled { pointer-events: none; }
+  .q-letter {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--border-accent); display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+  }
+
+  /* Slide Lightbox Modal */
+  .slide-modal-backdrop {
+    display: none; position: fixed; inset: 0; z-index: 1000;
+    background: rgba(3, 7, 5, 0.94); backdrop-filter: blur(8px);
+    align-items: center; justify-content: center; padding: 24px;
+  }
+  .slide-modal-backdrop.show { display: flex; }
+
+
+  /* Top Bar */
+  #topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    background: #040a07; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 12px;
+    padding: 0 16px; height: 54px;
+  }
+  #topbar a { color: var(--primary-light); font-size: 13px; text-decoration: none; font-weight: 600; }
+  #module-title { font-weight: 800; font-size: 13px; color: #fff; white-space: nowrap; }
+  #progress-bar-bg { background: var(--border); border-radius: 99px; height: 6px; width: 100%; }
+  #progress-bar-fill { background: linear-gradient(90deg, #10b981, #14b8a6); height: 6px; border-radius: 99px; transition: width .3s ease; width: 0%; }
+
+  /* Pomodoro */
+  #pomodoro {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 4px 12px; cursor: pointer; white-space: nowrap;
+  }
+  #timer-display { font-size: 13px; font-weight: 700; color: #f59e0b; font-variant-numeric: tabular-nums; }
+
+  /* Layout */
+  #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
+  #sidebar {
+    width: 250px; min-width: 250px; background: #040b08;
+    border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .sidebar-link {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 16px; font-size: 12px; color: var(--muted);
+    cursor: pointer; transition: all .2s; border-left: 3px solid transparent;
+  }
+  .sidebar-link:hover { background: rgba(16, 185, 129, 0.08); color: #fff; }
+  .sidebar-link.active { background: rgba(16, 185, 129, 0.15); color: #34d399; border-left-color: #10b981; font-weight: 700; }
+  .sidebar-dot { width: 6px; height: 6px; border-radius: 50%; background: #334155; flex-shrink: 0; }
+  .sidebar-link.active .sidebar-dot { background: #10b981; box-shadow: 0 0 8px #10b981; }
+
+  /* Main */
+  #main {
+    flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .card-screen { display: none; width: 100%; max-width: 900px; animation: fadeIn .25s ease; }
+  .card-screen.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+  /* Nav Bar */
+  #nav-bar {
+    position: fixed; bottom: 0; left: 250px; right: 0;
+    background: #040a07; border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    padding: 12px 24px; z-index: 40;
+  }
+  @media (max-width: 768px) {
+    #sidebar { display: none; }
+    #nav-bar { left: 0; }
+  }
+</style>
+</head>
+<body class="selection:bg-emerald-600 selection:text-white">
+
+  <!-- TOP BAR -->
+  <header id="topbar">
+    <a href="00_home.html" class="flex items-center gap-1">← <span class="hidden sm:inline">All Modules</span></a>
+    <span style="color:var(--border)">|</span>
+    <span id="module-title">Lec 02: Earth Spheres & Dynamics</span>
+    <div class="flex-1 flex flex-col gap-1 mx-2 min-w-0">
+      <div class="flex justify-between text-[11px]">
+        <span id="section-label" class="text-emerald-400 font-semibold truncate">Section 1</span>
+        <span id="progress-label" class="text-slate-400 font-mono">0%</span>
+      </div>
+      <div id="progress-bar-bg"><div id="progress-bar-fill"></div></div>
+    </div>
+    <div id="pomodoro" onclick="togglePomodoro()">
+      <span>⏱️</span>
+      <span id="timer-display">25:00</span>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div id="layout">
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+      <div class="text-[10px] font-bold tracking-widest text-emerald-400/80 uppercase px-4 py-2">Lecture Curriculum</div>
+      
+        <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">1. Big Picture & Intuition</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">2. Scientific Foundations</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">3. Visuals & Slide Figures</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">4. Math & Empirical Tables</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">5. Interactive Simulator</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">6. Active Recall Flashcards</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">7. High-Yield Exam Traps</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(7)" id="slink_7">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">8. Concept Check Quiz</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(8)" id="slink_8">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">9. Complete Slide Gallery (57 Slides)</span>
+        </div>
+        
+    </nav>
+
+    <!-- MAIN VIEW -->
+    <main id="main">
+      
+    <section class="card-screen active" data-title="Big Picture & Intuition">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 02 • Fundamental Concept</span>
+          <span class="text-xs text-slate-400">• Intermediate • 55 mins</span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Earth Spheres & Global Thermodynamics</h2>
+        <div class="text-emerald-400 text-sm font-semibold mb-4">Coupled Dynamic Systems, Solar Flux, and the Natural Greenhouse Blanket</div>
+        
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-sm leading-relaxed">
+          <strong>💡 Why This Topic Matters:</strong><br/>
+          The Earth is an open thermodynamic system with respect to energy (receiving solar radiation and radiating infrared heat) but closed with respect to matter. The interaction between the Atmosphere, Hydrosphere, Lithosphere, and Biosphere maintains the planetary surface in a stable, life-supporting thermal equilibrium. Understanding this radiation balance is essential for analyzing anthropogenic perturbations.
+        </div>
+
+        <div class="space-y-2">
+          
+        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Atmosphere</span>
+            <strong class="text-emerald-300 text-sm">Vertical Atmospheric Structure</strong>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">Troposphere (temperature decreases with altitude at standard environmental lapse rate $\Gamma = 6.5^\circ\text{C/km}$), Stratosphere (inversion due to $O_3$ UV absorption), Mesosphere, and Thermosphere.</p>
+        </div>
+        
+        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Radiation</span>
+            <strong class="text-emerald-300 text-sm">Planetary Radiation Budget</strong>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">Solar constant $S_0 = 1361\,\text{W/m}^2$. Effective incident flux is $S_0/4 = 340\,\text{W/m}^2$. Earth's albedo $\alpha \approx 0.30$ reflects $\sim 100\,\text{W/m}^2$. The remaining $240\,\text{W/m}^2$ heats the surface and atmosphere.</p>
+        </div>
+        
+        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Equilibrium</span>
+            <strong class="text-emerald-300 text-sm">Thermodynamic Greenhouse Effect</strong>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">Without atmosphere, Stefan-Boltzmann law dictates blackbody temperature $T_e = 255\,\text{K}$ ($-18^\circ\text{C}$). Greenhouse gases absorb outgoing infrared and re-radiate back down, raising surface temperature to a hospitable $T_s = 288\,\text{K}$ ($+15^\circ\text{C}$).</p>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Scientific Foundations">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-teal inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Core Mechanics</div>
+        <h2 class="text-2xl font-black text-white mb-4">Stefan-Boltzmann Equilibrium & Radiative Transfer</h2>
+        <div class="text-sm leading-relaxed text-slate-200">
+          
+            <p class="mb-3">The planetary energy equilibrium is governed by the conservation of radiant flux. The absorbed solar power must balance outgoing longwave radiation (OLR):</p>
+            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
+              $$\frac{S_0}{4}(1 - \alpha) = \sigma T_e^4$$
+            </div>
+            <p class="text-sm">Solving for effective emitting temperature $T_e$:</p>
+            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
+              $$T_e = \left[ \frac{S_0 (1 - \alpha)}{4\sigma} \right]^{1/4} = \left[ \frac{1361 \times 0.70}{4 \times 5.67 \times 10^{-8}} \right]^{1/4} \approx 254.9\,\text{K} \; (-18.2^\circ\text{C})$$
+            </div>
+            <p class="text-sm mt-3">In a single-layer isothermal atmospheric model with emissivity $\epsilon$, the surface temperature is elevated to:</p>
+            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
+              $$T_s = \left( \frac{2}{2 - \epsilon} \right)^{1/4} T_e$$
+            </div>
+            <p class="text-sm">For $\epsilon \approx 0.77$, $T_s \approx 288\,\text{K}$ ($+15^\circ\text{C}$). The natural greenhouse effect accounts for $+33^\circ\text{C}$ of planetary warming.</p>
+            
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Extracted Slide Visuals">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
+        </div>
+        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
+        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_43.jpg', 'Slide 43: Floristic structure, composition and diversity of dry evergree...')">
+            <img src="assets/slides/lec_02/slide_43.jpg" alt="Slide 43" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 1 (Slide #43)</span>
+              <span class="text-slate-400">Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Floristic structure, composition and diversity of dry evergree...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_01.jpg', 'Slide 1: Comprehend Environment')">
+            <img src="assets/slides/lec_02/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 2 (Slide #1)</span>
+              <span class="text-slate-400">Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Comprehend Environment</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_15.jpg', 'Slide 15: https://www.sciencedirect.com/science/article/abs/pii/S0006320...')">
+            <img src="assets/slides/lec_02/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 3 (Slide #15)</span>
+              <span class="text-slate-400">Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">https://www.sciencedirect.com/science/article/abs/pii/S0006320...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_29.jpg', 'Slide 29: Slide 29')">
+            <img src="assets/slides/lec_02/slide_29.jpg" alt="Slide 29" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
+              <span>Figure 4 (Slide #29)</span>
+              <span class="text-slate-400">Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-bold text-slate-200 line-clamp-1">Slide 29</div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Mathematical Formulations">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Rigorous Quantitative Model</div>
+        <h2 class="text-2xl font-black text-white mb-4">Governing Thermodynamic Parameters</h2>
+        
+        <div class="p-4 bg-[#05120c] border border-emerald-900/80 rounded-xl text-center my-4 overflow-x-auto">
+          <div class="text-lg md:text-xl font-mono text-emerald-300">
+            $$T_s = \left( \frac{1}{1 - \epsilon/2} \right)^{1/4} \cdot \left[ \frac{S_0(1-\alpha)}{4\sigma} \right]^{1/4}$$
+          </div>
+        </div>
+        <p class="text-xs text-slate-300 mb-6">Where $\sigma = 5.670374 \times 10^{-8}\,\text{W/m}^2\text{K}^4$ is the Stefan-Boltzmann constant, $\alpha$ is planetary albedo ($0.30$), and $\epsilon$ is effective infrared emissivity of greenhouse gases.</p>
+
+        <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
+          <table class="w-full text-xs text-left text-slate-300">
+            <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
+              <tr><th class='p-3 border-r border-emerald-900'>Sphere</th><th class='p-3 border-r border-emerald-900'>Primary Constituents</th><th class='p-3 border-r border-emerald-900'>Scale / Characteristic Mass</th><th class='p-3 border-r border-emerald-900'>Key Environmental Role</th></tr>
+            </thead>
+            <tbody class="divide-y divide-emerald-950 font-sans">
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Atmosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>$N_2 (78.08\%), O_2 (20.95\%), Ar (0.93\%), CO_2 (0.042\%)$</td><td class='p-3 border-r border-emerald-900 font-mono'>$5.15 \times 10^{18}\,\text{kg}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Radiation shield, thermal regulation, weather</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Hydrosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>Oceans ($97.5\%$), Glaciers ($1.75\%$), Groundwater ($0.75\%$)</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.4 \times 10^{21}\,\text{kg}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Huge thermal inertia ($C_p \approx 4184\,\text{J/kg K}$), ocean conveyor</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Lithosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>Crust & Upper Mantle ($SiO_2, Al_2O_3, Fe, Ca$)</td><td class='p-3 border-r border-emerald-900 font-mono'>$2.4 \times 10^{22}\,\text{kg}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Nutrient reservoir, plate tectonics, geochemical carbon sink</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Biosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>Living organic matter (carbon mass $\sim 550\,\text{Gt C}$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Global living biomass</td><td class='p-3 border-r border-emerald-900 font-mono'>Biogeochemical flux catalyst, photosynthesis/respiration</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Interactive Simulator">
+      <div class="mb-6">
+        
+    <div class="eco-card p-6 border-emerald-800/60">
+      <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
+        <div>
+          <h3 class="text-lg font-bold text-emerald-400">🌐 Earth Radiation Budget & Greenhouse Equilibrium Calculator</h3>
+          <p class="text-xs text-slate-300">Compute effective emitting temperature and surface greenhouse temperature by adjusting fundamental radiation parameters.</p>
+        </div>
+        <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Physics Model</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">Solar Constant $S_0$ (W/m²): <span id="val_s0" class="text-emerald-400 font-bold">1361</span></label>
+          <input type="range" id="input_s0" min="1200" max="1500" value="1361" class="w-full accent-emerald-500" oninput="runSim02()">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">Planetary Albedo $\alpha$: <span id="val_albedo" class="text-emerald-400 font-bold">0.30</span></label>
+          <input type="range" id="input_albedo" min="0.10" max="0.60" step="0.01" value="0.30" class="w-full accent-emerald-500" oninput="runSim02()">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">Atmospheric IR Emissivity $\epsilon$: <span id="val_emissivity" class="text-emerald-400 font-bold">0.77</span></label>
+          <input type="range" id="input_emissivity" min="0.00" max="0.99" step="0.01" value="0.77" class="w-full accent-emerald-500" oninput="runSim02()">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-3 text-center">
+          <div class="text-[11px] text-slate-400 uppercase">Effective Temp ($T_e$)</div>
+          <div id="out_te" class="text-xl font-black text-cyan-400 mt-1">255.0 K</div>
+          <div id="out_te_c" class="text-[11px] text-slate-400">-18.2 °C</div>
+        </div>
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-3 text-center">
+          <div class="text-[11px] text-slate-400 uppercase">Surface Temp ($T_s$)</div>
+          <div id="out_ts" class="text-xl font-black text-emerald-400 mt-1">288.2 K</div>
+          <div id="out_ts_c" class="text-[11px] text-emerald-300 font-bold">+15.1 °C</div>
+        </div>
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-3 text-center">
+          <div class="text-[11px] text-slate-400 uppercase">Natural Greenhouse ΔT</div>
+          <div id="out_gdelta" class="text-xl font-black text-amber-400 mt-1">+33.2 °C</div>
+          <div class="text-[11px] text-slate-400">Thermal Blanket</div>
+        </div>
+        <div class="bg-[#06110d] border border-emerald-900/80 rounded-xl p-3 text-center">
+          <div class="text-[11px] text-slate-400 uppercase">Absorbed Solar Flux</div>
+          <div id="out_absorbed" class="text-xl font-black text-teal-400 mt-1">238.2 W/m²</div>
+          <div class="text-[11px] text-slate-400">$S_0(1-\alpha)/4$</div>
+        </div>
+      </div>
+
+      <div id="sim02_status" class="p-3 bg-[#0a1913] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+        💡 <strong>Earth Baseline:</strong> Under natural conditions ($S_0=1361, \alpha=0.30, \epsilon=0.77$), Earth's surface temperature is a hospitable 15°C. Increasing greenhouse gases raises $\epsilon$, trapping extra infrared heat and elevating surface temperature.
+      </div>
+    </div>
+    <script>
+      function runSim02() {
+        const S0 = parseFloat(document.getElementById('input_s0').value);
+        const alpha = parseFloat(document.getElementById('input_albedo').value);
+        const eps = parseFloat(document.getElementById('input_emissivity').value);
+        document.getElementById('val_s0').innerText = S0;
+        document.getElementById('val_albedo').innerText = alpha.toFixed(2);
+        document.getElementById('val_emissivity').innerText = eps.toFixed(2);
+
+        const sigma = 5.670374e-8;
+        const absorbed = (S0 * (1 - alpha)) / 4.0;
+        const Te = Math.pow(absorbed / sigma, 0.25);
+        const Ts = Te * Math.pow(1.0 / (1.0 - eps / 2.0), 0.25);
+
+        const Te_C = Te - 273.15;
+        const Ts_C = Ts - 273.15;
+        const delta = Ts_C - Te_C;
+
+        document.getElementById('out_te').innerText = Te.toFixed(1) + ' K';
+        document.getElementById('out_te_c').innerText = Te_C.toFixed(1) + ' °C';
+        document.getElementById('out_ts').innerText = Ts.toFixed(1) + ' K';
+        document.getElementById('out_ts_c').innerText = (Ts_C >= 0 ? '+' : '') + Ts_C.toFixed(1) + ' °C';
+        document.getElementById('out_gdelta').innerText = '+' + delta.toFixed(1) + ' °C';
+        document.getElementById('out_absorbed').innerText = absorbed.toFixed(1) + ' W/m²';
+      }
+      setTimeout(runSim02, 100);
+    </script>
+    
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Active Recall Flashcards">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
+        <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential definitions, reactions, and principles before flipping.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-base font-bold text-white mb-2">Why does temperature increase with altitude in the Stratosphere?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Due to the absorption of solar ultraviolet radiation by the ozone ($O_3$) layer via the Chapman mechanism ($O_2 + h\nu \to 2O$, $O + O_2 + M \to O_3 + M$).</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-base font-bold text-white mb-2">What is Earth's average planetary albedo?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Approximately $\alpha = 0.30$ (30% of incoming solar radiation is reflected back to space by clouds, aerosols, and bright surfaces like ice).</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-base font-bold text-white mb-2">What would Earth's surface temperature be without any natural greenhouse gases?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Approximately $255\,\text{K}$ ($-18^\circ\text{C}$), rendering Earth an entirely frozen ice ball.</div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Exam Traps & Pitfalls">
+      <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
+        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
+        <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
+        <p class="text-xs text-slate-300 mb-6">Common student misconceptions and subtle distinctions tested in Midsem and Endsem exams.</p>
+        <ul class="space-y-1">
+          <li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Trap:</strong> Confusing solar constant $S_0$ with average incident flux. Solar constant is measured perpendicular to beam ($1361\,\text{W/m}^2$), but Earth's surface area ($4\pi R^2$) is 4 times its cross-sectional area ($\pi R^2$), making average incident flux $S_0 / 4 \approx 340\,\text{W/m}^2$.</li><li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Trap:</strong> Misidentifying the atmospheric window. The atmospheric window is in the thermal infrared spectrum ($8 - 12\,\mu\text{m}$), where clear atmosphere absorbs little radiation, allowing heat to escape directly to space.</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Concept Check Quiz">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
+        <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions.</p>
+        <div>
+          
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 1</div>
+          <div class="text-sm font-bold text-white mb-4">What is the primary physical reason for the negative environmental lapse rate (cooling with height) in the Troposphere?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_02_0')">
+              <span class="q-letter">A</span>
+              <span>Decreasing gravitational attraction on gas molecules</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_02_0')">
+              <span class="q-letter">B</span>
+              <span>The Troposphere is heated primarily from below by the planetary surface and cools via adiabatic expansion as air rises</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_02_0')">
+              <span class="q-letter">C</span>
+              <span>Ozone depletion occurring at the tropopause</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_02_0')">
+              <span class="q-letter">D</span>
+              <span>Solar radiation only interacts with the mesosphere</span>
+            </div>
+            
+          </div>
+          <div id="q_02_0" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> Solar shortwave radiation passes through the atmosphere and heats the ground; the ground then heats the troposphere from below via conduction, convection, and latent heat.
+          </div>
+        </div>
+        
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 2</div>
+          <div class="text-sm font-bold text-white mb-4">If Earth's planetary albedo $\alpha$ increased from 0.30 to 0.35 due to cloud seeding, what would happen to the effective emitting temperature $T_e$?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_02_1')">
+              <span class="q-letter">A</span>
+              <span>It would increase because more energy is absorbed</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_02_1')">
+              <span class="q-letter">B</span>
+              <span>It would decrease because less solar energy is absorbed into the Earth system</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_02_1')">
+              <span class="q-letter">C</span>
+              <span>It would remain strictly unchanged at 255 K</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_02_1')">
+              <span class="q-letter">D</span>
+              <span>It would cause immediate stratospheric heating</span>
+            </div>
+            
+          </div>
+          <div id="q_02_1" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> Higher albedo means less solar energy is absorbed ($1-\alpha$ decreases), reducing total outgoing emission required for equilibrium and lowering $T_e$.
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="Slide Reference Gallery">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
+          <div>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Primary Course Slides</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Reference Gallery</h2>
+            <p class="text-xs text-slate-300">All 57 slides from the lecture presentations for instant reference and review.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href='../Lecture_Slides/Class-2-Comprehend our Environment-Part-1.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-2-Comprehend our Environment-Part-1.pdf</span></a> <a href='../Lecture_Slides/Class-2-Comprehend our environment-Part-2.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-2-Comprehend our environment-Part-2.pdf</span></a> <a href='../Lecture_Slides/Class-2-Comprehend our Environment-Part-3.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-2-Comprehend our Environment-Part-3.pdf</span></a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_01.jpg', 'Slide 1: Comprehend Environment')">
+            <img src="assets/slides/lec_02/slide_01.jpg" alt="Slide 1" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #1</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Comprehend Environment">Comprehend Environment</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_02.jpg', 'Slide 2: Environmental')">
+            <img src="assets/slides/lec_02/slide_02.jpg" alt="Slide 2" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #2</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Environmental">Environmental</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_03.jpg', 'Slide 3: Understanding Our Environment')">
+            <img src="assets/slides/lec_02/slide_03.jpg" alt="Slide 3" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #3</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Understanding Our Environment">Understanding Our Environment</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_04.jpg', 'Slide 4: Introduction')">
+            <img src="assets/slides/lec_02/slide_04.jpg" alt="Slide 4" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #4</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Introduction">Introduction</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_05.jpg', 'Slide 5: Fig. 1-2, p. 7')">
+            <img src="assets/slides/lec_02/slide_05.jpg" alt="Slide 5" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #5</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Fig. 1-2, p. 7">Fig. 1-2, p. 7</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_06.jpg', 'Slide 6: • Garrett Hardin, 1968:')">
+            <img src="assets/slides/lec_02/slide_06.jpg" alt="Slide 6" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #6</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="• Garrett Hardin, 1968:">• Garrett Hardin, 1968:</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_07.jpg', 'Slide 7: Fig. 1-10, p. 17')">
+            <img src="assets/slides/lec_02/slide_07.jpg" alt="Slide 7" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #7</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Fig. 1-10, p. 17">Fig. 1-10, p. 17</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_08.jpg', 'Slide 8: Natural capital degradation')">
+            <img src="assets/slides/lec_02/slide_08.jpg" alt="Slide 8" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #8</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Natural capital degradation">Natural capital degradation</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_09.jpg', 'Slide 9: Global Outlook')">
+            <img src="assets/slides/lec_02/slide_09.jpg" alt="Slide 9" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #9</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global Outlook">Global Outlook</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_10.jpg', 'Slide 10: Slide 10')">
+            <img src="assets/slides/lec_02/slide_10.jpg" alt="Slide 10" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #10</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 10">Slide 10</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_11.jpg', 'Slide 11: Fig. 1-14, p. 20')">
+            <img src="assets/slides/lec_02/slide_11.jpg" alt="Slide 11" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #11</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Fig. 1-14, p. 20">Fig. 1-14, p. 20</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_12.jpg', 'Slide 12: Environmental science can help us avoid')">
+            <img src="assets/slides/lec_02/slide_12.jpg" alt="Slide 12" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #12</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Environmental science can help us avoid">Environmental science can help us avoid</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_13.jpg', 'Slide 13: What is an “environmental problem”?')">
+            <img src="assets/slides/lec_02/slide_13.jpg" alt="Slide 13" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #13</span>
+              <span>Class-2-Comprehend our Environment-Part-1.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="What is an “environmental problem”?">What is an “environmental problem”?</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_14.jpg', 'Slide 14: What is environmental science?')">
+            <img src="assets/slides/lec_02/slide_14.jpg" alt="Slide 14" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #14</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="What is environmental science?">What is environmental science?</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_15.jpg', 'Slide 15: https://www.sciencedirect.com/science/article/abs/pii/S0006320...')">
+            <img src="assets/slides/lec_02/slide_15.jpg" alt="Slide 15" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #15</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://www.sciencedirect.com/science/article/abs/pii/S0006320...">https://www.sciencedirect.com/science/article/abs/pii/S0006320...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_16.jpg', 'Slide 16: Slide 16')">
+            <img src="assets/slides/lec_02/slide_16.jpg" alt="Slide 16" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #16</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 16">Slide 16</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_17.jpg', 'Slide 17: Surface accumulations of cyanobacteria Nodularia in')">
+            <img src="assets/slides/lec_02/slide_17.jpg" alt="Slide 17" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #17</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Surface accumulations of cyanobacteria Nodularia in">Surface accumulations of cyanobacteria Nodularia in</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_18.jpg', 'Slide 18: Environmental Problems')">
+            <img src="assets/slides/lec_02/slide_18.jpg" alt="Slide 18" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #18</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Environmental Problems">Environmental Problems</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_19.jpg', 'Slide 19: Slide 19')">
+            <img src="assets/slides/lec_02/slide_19.jpg" alt="Slide 19" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #19</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 19">Slide 19</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_20.jpg', 'Slide 20: Slide 20')">
+            <img src="assets/slides/lec_02/slide_20.jpg" alt="Slide 20" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #20</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 20">Slide 20</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_21.jpg', 'Slide 21: Slide 21')">
+            <img src="assets/slides/lec_02/slide_21.jpg" alt="Slide 21" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #21</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 21">Slide 21</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_22.jpg', 'Slide 22: https://hakaimagazine.com/article-short/in-india-sacred-groves...')">
+            <img src="assets/slides/lec_02/slide_22.jpg" alt="Slide 22" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #22</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://hakaimagazine.com/article-short/in-india-sacred-groves...">https://hakaimagazine.com/article-short/in-india-sacred-groves...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_23.jpg', 'Slide 23: Slide 23')">
+            <img src="assets/slides/lec_02/slide_23.jpg" alt="Slide 23" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #23</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 23">Slide 23</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_24.jpg', 'Slide 24: Slide 24')">
+            <img src="assets/slides/lec_02/slide_24.jpg" alt="Slide 24" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #24</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 24">Slide 24</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_25.jpg', 'Slide 25: Slide 25')">
+            <img src="assets/slides/lec_02/slide_25.jpg" alt="Slide 25" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #25</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 25">Slide 25</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_26.jpg', 'Slide 26: ICRISAT - Genebank')">
+            <img src="assets/slides/lec_02/slide_26.jpg" alt="Slide 26" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #26</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="ICRISAT - Genebank">ICRISAT - Genebank</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_27.jpg', 'Slide 27: Food Supply Problems')">
+            <img src="assets/slides/lec_02/slide_27.jpg" alt="Slide 27" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #27</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Food Supply Problems">Food Supply Problems</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_28.jpg', 'Slide 28: KOLLERU  LAKE')">
+            <img src="assets/slides/lec_02/slide_28.jpg" alt="Slide 28" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #28</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="KOLLERU  LAKE">KOLLERU  LAKE</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_29.jpg', 'Slide 29: Slide 29')">
+            <img src="assets/slides/lec_02/slide_29.jpg" alt="Slide 29" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #29</span>
+              <span>Class-2-Comprehend our environment-Part-2.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 29">Slide 29</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_30.jpg', 'Slide 30: The “ecological footprint”')">
+            <img src="assets/slides/lec_02/slide_30.jpg" alt="Slide 30" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #30</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The “ecological footprint”">The “ecological footprint”</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_31.jpg', 'Slide 31: Source: https://www.footprintnetwork.org/our-work/ecological-f...')">
+            <img src="assets/slides/lec_02/slide_31.jpg" alt="Slide 31" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #31</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Source: https://www.footprintnetwork.org/our-work/ecological-f...">Source: https://www.footprintnetwork.org/our-work/ecological-f...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_32.jpg', 'Slide 32: https://worldpopulationreview.com/country-')">
+            <img src="assets/slides/lec_02/slide_32.jpg" alt="Slide 32" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #32</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://worldpopulationreview.com/country-">https://worldpopulationreview.com/country-</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_33.jpg', 'Slide 33: Our Ecological Footprint')">
+            <img src="assets/slides/lec_02/slide_33.jpg" alt="Slide 33" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #33</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Our Ecological Footprint">Our Ecological Footprint</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_34.jpg', 'Slide 34: Slide 34')">
+            <img src="assets/slides/lec_02/slide_34.jpg" alt="Slide 34" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #34</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 34">Slide 34</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_35.jpg', 'Slide 35: Earth Overshoot Day')">
+            <img src="assets/slides/lec_02/slide_35.jpg" alt="Slide 35" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #35</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Earth Overshoot Day">Earth Overshoot Day</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_36.jpg', 'Slide 36: http://www.tnpscthervupettagam.com/earth-overshoot-day/')">
+            <img src="assets/slides/lec_02/slide_36.jpg" alt="Slide 36" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #36</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="http://www.tnpscthervupettagam.com/earth-overshoot-day/">http://www.tnpscthervupettagam.com/earth-overshoot-day/</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_37.jpg', 'Slide 37: In 2020, Earth Overshoot Day is August 22,')">
+            <img src="assets/slides/lec_02/slide_37.jpg" alt="Slide 37" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #37</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="In 2020, Earth Overshoot Day is August 22,">In 2020, Earth Overshoot Day is August 22,</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_38.jpg', 'Slide 38: Slide 38')">
+            <img src="assets/slides/lec_02/slide_38.jpg" alt="Slide 38" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #38</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 38">Slide 38</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_39.jpg', 'Slide 39: Figure Countries’ positions in terms of relative income and do...')">
+            <img src="assets/slides/lec_02/slide_39.jpg" alt="Slide 39" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #39</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Figure Countries’ positions in terms of relative income and do...">Figure Countries’ positions in terms of relative income and do...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_40.jpg', 'Slide 40: Human Dimensions of  Environmental Science')">
+            <img src="assets/slides/lec_02/slide_40.jpg" alt="Slide 40" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #40</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Human Dimensions of  Environmental Science">Human Dimensions of  Environmental Science</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_41.jpg', 'Slide 41: Waste colonialism')">
+            <img src="assets/slides/lec_02/slide_41.jpg" alt="Slide 41" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #41</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Waste colonialism">Waste colonialism</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_42.jpg', 'Slide 42: Slide 42')">
+            <img src="assets/slides/lec_02/slide_42.jpg" alt="Slide 42" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #42</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 42">Slide 42</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_43.jpg', 'Slide 43: Floristic structure, composition and diversity of dry evergree...')">
+            <img src="assets/slides/lec_02/slide_43.jpg" alt="Slide 43" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #43</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Floristic structure, composition and diversity of dry evergree...">Floristic structure, composition and diversity of dry evergree...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_44.jpg', 'Slide 44: Slide 44')">
+            <img src="assets/slides/lec_02/slide_44.jpg" alt="Slide 44" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #44</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 44">Slide 44</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_45.jpg', 'Slide 45: Slide 45')">
+            <img src="assets/slides/lec_02/slide_45.jpg" alt="Slide 45" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #45</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 45">Slide 45</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_46.jpg', 'Slide 46: Slide 46')">
+            <img src="assets/slides/lec_02/slide_46.jpg" alt="Slide 46" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #46</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 46">Slide 46</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_47.jpg', 'Slide 47: Slide 47')">
+            <img src="assets/slides/lec_02/slide_47.jpg" alt="Slide 47" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #47</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 47">Slide 47</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_48.jpg', 'Slide 48: Human Development Index')">
+            <img src="assets/slides/lec_02/slide_48.jpg" alt="Slide 48" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #48</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Human Development Index">Human Development Index</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_49.jpg', 'Slide 49: How is the HDI calculated?')">
+            <img src="assets/slides/lec_02/slide_49.jpg" alt="Slide 49" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #49</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="How is the HDI calculated?">How is the HDI calculated?</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_50.jpg', 'Slide 50: Aggregating the dimensional indices to produce the HDI')">
+            <img src="assets/slides/lec_02/slide_50.jpg" alt="Slide 50" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #50</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Aggregating the dimensional indices to produce the HDI">Aggregating the dimensional indices to produce the HDI</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_51.jpg', 'Slide 51: Slide 51')">
+            <img src="assets/slides/lec_02/slide_51.jpg" alt="Slide 51" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #51</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 51">Slide 51</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_52.jpg', 'Slide 52: https://ourworldindata.org/grapher/human-development-index?tim...')">
+            <img src="assets/slides/lec_02/slide_52.jpg" alt="Slide 52" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #52</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://ourworldindata.org/grapher/human-development-index?tim...">https://ourworldindata.org/grapher/human-development-index?tim...</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_53.jpg', 'Slide 53: Slide 53')">
+            <img src="assets/slides/lec_02/slide_53.jpg" alt="Slide 53" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #53</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 53">Slide 53</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_54.jpg', 'Slide 54: IHDI - how unequally those')">
+            <img src="assets/slides/lec_02/slide_54.jpg" alt="Slide 54" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #54</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="IHDI - how unequally those">IHDI - how unequally those</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_55.jpg', 'Slide 55: Indigenous peoples are guardians')">
+            <img src="assets/slides/lec_02/slide_55.jpg" alt="Slide 55" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #55</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Indigenous peoples are guardians">Indigenous peoples are guardians</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_56.jpg', 'Slide 56: Importance of Indigenous Peoples’ lands for the conservation of')">
+            <img src="assets/slides/lec_02/slide_56.jpg" alt="Slide 56" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #56</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Importance of Indigenous Peoples’ lands for the conservation of">Importance of Indigenous Peoples’ lands for the conservation of</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_57.jpg', 'Slide 57: Conservation and Environmental Thought')">
+            <img src="assets/slides/lec_02/slide_57.jpg" alt="Slide 57" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #57</span>
+              <span>Class-2-Comprehend our Environment-Part-3.pdf</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Conservation and Environmental Thought">Conservation and Environmental Thought</div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+    </main>
+  </div>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <nav id="nav-bar">
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all" onclick="prevCard()">← Previous</button>
+    <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 9</span>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950" onclick="nextCard()">Next Card →</button>
+  </nav>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox_modal" class="slide-modal-backdrop" onclick="closeLightbox(event)">
+    <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
+        <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded" onclick="closeLightbox()">✕ Close</button>
+      </div>
+      <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
+        <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentCard = 0;
+    const screens = document.querySelectorAll('.card-screen');
+    const totalCards = screens.length;
+
+    function updateCardView() {
+      screens.forEach((s, i) => {
+        s.classList.toggle('active', i === currentCard);
+      });
+
+      // Update sidebar
+      for (let i = 0; i < totalCards; i++) {
+        const el = document.getElementById('slink_' + i);
+        if (el) el.classList.toggle('active', i === currentCard);
+      }
+
+      // Counter & Progress
+      document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
+      const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
+      document.getElementById('progress-bar-fill').style.width = pct + '%';
+      document.getElementById('progress-label').innerText = pct + '%';
+      
+      const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
+      document.getElementById('section-label').innerText = title;
+
+      // Scroll to top
+      document.getElementById('main').scrollTop = 0;
+    }
+
+    function nextCard() {
+      if (currentCard < totalCards - 1) {
+        currentCard++;
+        updateCardView();
+      }
+    }
+
+    function prevCard() {
+      if (currentCard > 0) {
+        currentCard--;
+        updateCardView();
+      }
+    }
+
+    function goToCard(idx) {
+      if (idx >= 0 && idx < totalCards) {
+        currentCard = idx;
+        updateCardView();
+      }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextCard();
+      else if (e.key === 'ArrowLeft') prevCard();
+      else if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Lightbox Modal
+    function openLightbox(imgSrc, title) {
+      document.getElementById('modal_img').src = imgSrc;
+      document.getElementById('modal_title').innerText = title || 'Slide Figure';
+      document.getElementById('lightbox_modal').classList.add('show');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox_modal').classList.remove('show');
+    }
+
+    // Quiz evaluation
+    function handleQuiz(el, isCorrect, feedbackId) {
+      const parent = el.parentElement;
+      const opts = parent.querySelectorAll('.quiz-option');
+      opts.forEach(o => o.classList.add('disabled'));
+
+      if (isCorrect) {
+        el.classList.add('correct');
+      } else {
+        el.classList.add('wrong');
+        // highlight correct option
+        opts.forEach(o => {
+          if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
+            o.classList.add('correct');
+          }
+        });
+      }
+      const fb = document.getElementById(feedbackId);
+      if (fb) fb.classList.remove('hidden');
+    }
+
+    // Pomodoro Timer
+    let timerSec = 25 * 60;
+    let timerRunning = false;
+    let timerInterval = null;
+
+    function togglePomodoro() {
+      if (timerRunning) {
+        clearInterval(timerInterval);
+        timerRunning = false;
+      } else {
+        timerRunning = true;
+        timerInterval = setInterval(() => {
+          if (timerSec > 0) {
+            timerSec--;
+            const m = Math.floor(timerSec / 60);
+            const s = timerSec % 60;
+            document.getElementById('timer-display').innerText = `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+          } else {
+            clearInterval(timerInterval);
+            timerRunning = false;
+            alert('🎉 Pomodoro Session Completed! Take a 5-minute breather.');
+            timerSec = 25 * 60;
+            document.getElementById('timer-display').innerText = '25:00';
+          }
+        }, 1000);
+      }
+    }
+
+    // Initialize
+    updateCardView();
+  </script>
+</body>
+</html>
