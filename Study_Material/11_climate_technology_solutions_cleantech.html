@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -298,110 +298,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_04.jpg', 'Slide 4: 3. Blue carbon’ habitat restoration')">
-            <img src="assets/slides/lec_11/slide_04.jpg" alt="Slide 4" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Biochar Pyrolysis & Recalcitrant Carbon Chemistry</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-11-Climate Change-Technology Solutions.pdf, Slide 5</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_11/diagram_01.jpeg', 'Biochar Pyrolysis &amp; Recalcitrant Carbon Chemistry')">
+              <img src="assets/diagrams/lec_11/diagram_01.jpeg" alt="Biochar Pyrolysis &amp; Recalcitrant Carbon Chemistry" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A molecular and process schematic illustrating the thermochemical conversion of labile plant biomass into polycyclic aromatic biochar under oxygen-free pyrolysis.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Raw plant biomass decomposes in soil within 2–5 years, releasing $CO_2$ back to the atmosphere. Pyrolysis at 500–600°C removes hydrogen and oxygen, condensing aliphatic carbon chains into fused aromatic benzene-ring clusters that soil microbes cannot readily enzymatically cleave.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Carbon stability index: $O:C$ molar ratio. Fresh biomass has $O:C \approx 0.6 - 0.8$. Quality biochar achieved via pyrolysis has $O:C < 0.20$, guaranteeing a soil half-life $>1000\,\text{years}$.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #4)</span>
-              <span class="text-slate-400">Class-11-Climate Change-Technology Solutions.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">3. Blue carbon’ habitat restoration</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_13.jpg', 'Slide 13: Carbon-capture technology scrubs CO2 from')">
-            <img src="assets/slides/lec_11/slide_13.jpg" alt="Slide 13" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #13)</span>
-              <span class="text-slate-400">Class-11-Climate Change-Technology Solutions.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Carbon-capture technology scrubs CO2 from</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_28.jpg', 'Slide 28: Trap cropping')">
-            <img src="assets/slides/lec_11/slide_28.jpg" alt="Slide 28" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #28)</span>
-              <span class="text-slate-400">Class-11-Climate Change-Technology Solutions.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Trap cropping</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Slow pyrolysis yields ~35% biochar, 30% bio-oil, and 35% syngas. Fast pyrolysis (seconds) maximizes liquid bio-oil, NOT solid biochar.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_01.jpg', 'Slide 1: Class-11')">
-            <img src="assets/slides/lec_11/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">Blue Carbon Coastal Ecosystem Sequestration</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-11-Climate Change-Technology Solutions.pdf, Slide 8</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_11/diagram_02.jpeg', 'Blue Carbon Coastal Ecosystem Sequestration')">
+              <img src="assets/diagrams/lec_11/diagram_02.jpeg" alt="Blue Carbon Coastal Ecosystem Sequestration" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">Cross-section of coastal mangrove, tidal salt marsh, and seagrass meadow ecosystems detailing sediment carbon accumulation.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Coastal wetlands sequester carbon at rates up to 10 times higher per hectare than terrestrial tropical forests. Their soils are perpetually waterlogged and anoxic, preventing microbial oxidation and allowing organic sediment to accumulate continuously over millennia without saturating.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Carbon burial rate: $C_{\text{burial}} = \rho_{\text{bulk}} \times \text{SAR} \times \%C_{\text{org}}$, where $\rho_{\text{bulk}}$ is soil bulk density, $\text{SAR}$ is sediment accretion rate ($2 - 10\,\text{mm/yr}$), and $\%C_{\text{org}}$ is organic carbon percentage.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #1)</span>
-              <span class="text-slate-400">Class-11-Climate Change-Technology Solutions.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Class-11</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_08.jpg', 'Slide 8: 7. DIRECT AIR CAPTURE')">
-            <img src="assets/slides/lec_11/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 5 (Slide #8)</span>
-              <span class="text-slate-400">Class-11-Climate Change-Technology Solutions.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">7. DIRECT AIR CAPTURE</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_15.jpg', 'Slide 15: Aether: In A First, Diamonds Made From Air')">
-            <img src="assets/slides/lec_11/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 6 (Slide #15)</span>
-              <span class="text-slate-400">Class-11-Climate Change-Technology Solutions.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Aether: In A First, Diamonds Made From Air</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Draining coastal mangroves for shrimp farming or real estate exposes centuries of anoxic carbon to air, causing massive immediate $CO_2$ pulse releases.
           </div>
         </div>
         
@@ -425,10 +415,14 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Technology</th><th class='p-3 border-r border-emerald-900'>TRL (Technology Readiness Level)</th><th class='p-3 border-r border-emerald-900'>Levelized Cost</th><th class='p-3 border-r border-emerald-900'>Primary Engineering Bottleneck</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Technology</th> <th class='p-3 border-r border-emerald-900'>TRL (Technology Readiness Level)</th> <th class='p-3 border-r border-emerald-900'>Levelized Cost</th> <th class='p-3 border-r border-emerald-900'>Primary Engineering Bottleneck</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Direct Air Capture (Solid Sorbent)</td><td class='p-3 border-r border-emerald-900 font-mono'>TRL 7 – 8 (Climeworks Orca/Mammoth)</td><td class='p-3 border-r border-emerald-900 font-mono'>$400 - $600 / t $CO_2$</td><td class='p-3 border-r border-emerald-900 font-mono'>Huge thermal desorption energy and sorbent degradation</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Green Hydrogen (PEM Electrolysis)</td><td class='p-3 border-r border-emerald-900 font-mono'>TRL 8 – 9</td><td class='p-3 border-r border-emerald-900 font-mono'>$4 - $6 / kg $H_2$ (targeting $1-2)</td><td class='p-3 border-r border-emerald-900 font-mono'>Iridium and Platinum catalyst scarcity, electricity tariffs</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Stratospheric Aerosol Injection (SRM)</td><td class='p-3 border-r border-emerald-900 font-mono'>TRL 3 – 4</td><td class='p-3 border-r border-emerald-900 font-mono'>Low economic cost (~$10-20B/yr)</td><td class='p-3 border-r border-emerald-900 font-mono'>Ozone depletion, monsoon rainfall termination shock, moral hazard</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Carbon Capture & Utilization (CCU)</td><td class='p-3 border-r border-emerald-900 font-mono'>TRL 6 – 8</td><td class='p-3 border-r border-emerald-900 font-mono'>Varies by end product</td><td class='p-3 border-r border-emerald-900 font-mono'>High thermodynamic reduction energy needed to turn $CO_2$ into hydrocarbons</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Direct Air Capture (Solid Sorbent)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 7 – 8 (Climeworks Orca/Mammoth)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$400 - $600 / t $CO_2$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Huge thermal desorption energy and sorbent degradation</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Green Hydrogen (PEM Electrolysis)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 8 – 9</td> <td class='p-3 border-r border-emerald-900 font-mono'>$4 - $6 / kg $H_2$ (targeting $1-2)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Iridium and Platinum catalyst scarcity, electricity tariffs</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Stratospheric Aerosol Injection (SRM)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 3 – 4</td> <td class='p-3 border-r border-emerald-900 font-mono'>Low economic cost (~$10-20B/yr)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Ozone depletion, monsoon rainfall termination shock, moral hazard</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Carbon Capture & Utilization (CCU)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 6 – 8</td> <td class='p-3 border-r border-emerald-900 font-mono'>Varies by end product</td> <td class='p-3 border-r border-emerald-900 font-mono'>High thermodynamic reduction energy needed to turn $CO_2$ into hydrocarbons</td> </tr>
+
             </tbody>
           </table>
         </div>

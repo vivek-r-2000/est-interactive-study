@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -307,110 +307,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_05.jpg', 'Slide 5: Types of impacts &amp; their attributes')">
-            <img src="assets/slides/lec_12/slide_05.jpg" alt="Slide 5" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Environmental Baseline & Impact Prediction Trajectory</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-12 EIA.pdf, Slide 10</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_12/diagram_03.jpeg', 'Environmental Baseline &amp; Impact Prediction Trajectory')">
+              <img src="assets/diagrams/lec_12/diagram_03.jpeg" alt="Environmental Baseline &amp; Impact Prediction Trajectory" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A temporal trend chart comparing the future environmental quality trajectory 'Without Project' (baseline trend) versus 'With Project' (adverse degradation) versus 'With EMP Mitigation'.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Demonstrates the core philosophy of EIA: an environmental impact is NOT measured by comparing environmental quality after the project against the initial state ($T_0$). It must be measured against what the environment <em>would have been</em> at time $T$ in the absence of the project.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">True Environmental Impact: $\Delta EI(t) = EQ_{\text{with project}}(t) - EQ_{\text{without project}}(t)$. Mitigation efficiency: $\eta_{\text{EMP}} = \frac{EQ_{\text{mitigated}} - EQ_{\text{unmitigated}}}{EQ_{\text{baseline}} - EQ_{\text{unmitigated}}} \times 100\%$.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #5)</span>
-              <span class="text-slate-400">Class-12 EIA.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Types of impacts & their attributes</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_07.jpg', 'Slide 7: The EIA process')">
-            <img src="assets/slides/lec_12/slide_07.jpg" alt="Slide 7" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #7)</span>
-              <span class="text-slate-400">Class-12 EIA.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">The EIA process</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_08.jpg', 'Slide 8: Phase 1 of the EIA Process')">
-            <img src="assets/slides/lec_12/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #8)</span>
-              <span class="text-slate-400">Class-12 EIA.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Phase 1 of the EIA Process</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Evaluating impact purely as post-project status minus pre-project status. If the baseline environment was already deteriorating independently (e.g. existing urban groundwater depletion), failing to model the 'Without Project' baseline skews the assessment.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_09.jpg', 'Slide 9: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_09.jpg" alt="Slide 9" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">EIA Statutory Clearance Flowchart & Review Matrix</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-12 EIA.pdf, Slide 2</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_12/diagram_01.png', 'EIA Statutory Clearance Flowchart &amp; Review Matrix')">
+              <img src="assets/diagrams/lec_12/diagram_01.png" alt="EIA Statutory Clearance Flowchart &amp; Review Matrix" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">The complete statutory workflow under India's EIA Notification 2006, from Application (Form 1) through Screening, Scoping, Draft EIA, Public Consultation, Final EIA, and Expert Appraisal Committee (EAC) clearance.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Provides institutional governance checkpoints ensuring public transparency and engineering accountability. The State Pollution Control Board (SPCB) facilitates the public hearing and submits the verbatim video and proceedings to MoEFCC within 45 days.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Statutory timeline: Scoping (TOR issued within 60 days), Public Hearing (45 days), Final Appraisal by EAC (60 days), Total regulatory turnaround target: 105 to 180 days.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #9)</span>
-              <span class="text-slate-400">Class-12 EIA.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Phase 1 of the EIA process:</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_10.jpg', 'Slide 10: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_10.jpg" alt="Slide 10" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 5 (Slide #10)</span>
-              <span class="text-slate-400">Class-12 EIA.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Phase 1 of the EIA process:</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_11.jpg', 'Slide 11: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_11.jpg" alt="Slide 11" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 6 (Slide #11)</span>
-              <span class="text-slate-400">Class-12 EIA.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Phase 1 of the EIA process:</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Category B2 projects are exempt from EIA studies, but they are NOT exempt from obtaining Environmental Clearance (EC) from the SEIAA based on Form 1 and EMP.
           </div>
         </div>
         
@@ -434,10 +424,15 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>EIA Stage</th><th class='p-3 border-r border-emerald-900'>Key Activities Involved</th><th class='p-3 border-r border-emerald-900'>Responsible Entity</th><th class='p-3 border-r border-emerald-900'>Statutory Outcome</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>EIA Stage</th> <th class='p-3 border-r border-emerald-900'>Key Activities Involved</th> <th class='p-3 border-r border-emerald-900'>Responsible Entity</th> <th class='p-3 border-r border-emerald-900'>Statutory Outcome</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>1. Screening</td><td class='p-3 border-r border-emerald-900 font-mono'>Determine whether project requires EIA based on investment and threshold criteria</td><td class='p-3 border-r border-emerald-900 font-mono'>SEIAA / MoEFCC</td><td class='p-3 border-r border-emerald-900 font-mono'>Classification into Category A, B1, or B2</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>2. Scoping</td><td class='p-3 border-r border-emerald-900 font-mono'>Determine spatial and temporal boundaries and formulate Terms of Reference (TOR)</td><td class='p-3 border-r border-emerald-900 font-mono'>Expert Appraisal Committee (EAC)</td><td class='p-3 border-r border-emerald-900 font-mono'>Approved Terms of Reference (TOR)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>3. Baseline Study</td><td class='p-3 border-r border-emerald-900 font-mono'>Collect 1 full season (non-monsoon) air, water, soil, noise, biodiversity data</td><td class='p-3 border-r border-emerald-900 font-mono'>Accredited EIA Consultant (NABET)</td><td class='p-3 border-r border-emerald-900 font-mono'>Baseline Environmental Status Report</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>4. Public Consultation</td><td class='p-3 border-r border-emerald-900 font-mono'>Notice published in national & local language newspapers; public hearing</td><td class='p-3 border-r border-emerald-900 font-mono'>State Pollution Control Board (SPCB)</td><td class='p-3 border-r border-emerald-900 font-mono'>Recorded Public Hearing Proceedings & Video</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>5. Appraisal</td><td class='p-3 border-r border-emerald-900 font-mono'>Detailed scrutiny of final EIA and public concerns by expert committee</td><td class='p-3 border-r border-emerald-900 font-mono'>EAC / SEAC</td><td class='p-3 border-r border-emerald-900 font-mono'>Grant or Rejection of Environmental Clearance (EC)</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>1. Screening</td> <td class='p-3 border-r border-emerald-900 font-mono'>Determine whether project requires EIA based on investment and threshold criteria</td> <td class='p-3 border-r border-emerald-900 font-mono'>SEIAA / MoEFCC</td> <td class='p-3 border-r border-emerald-900 font-mono'>Classification into Category A, B1, or B2</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>2. Scoping</td> <td class='p-3 border-r border-emerald-900 font-mono'>Determine spatial and temporal boundaries and formulate Terms of Reference (TOR)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Expert Appraisal Committee (EAC)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Approved Terms of Reference (TOR)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>3. Baseline Study</td> <td class='p-3 border-r border-emerald-900 font-mono'>Collect 1 full season (non-monsoon) air, water, soil, noise, biodiversity data</td> <td class='p-3 border-r border-emerald-900 font-mono'>Accredited EIA Consultant (NABET)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Baseline Environmental Status Report</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>4. Public Consultation</td> <td class='p-3 border-r border-emerald-900 font-mono'>Notice published in national & local language newspapers; public hearing</td> <td class='p-3 border-r border-emerald-900 font-mono'>State Pollution Control Board (SPCB)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Recorded Public Hearing Proceedings & Video</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>5. Appraisal</td> <td class='p-3 border-r border-emerald-900 font-mono'>Detailed scrutiny of final EIA and public concerns by expert committee</td> <td class='p-3 border-r border-emerald-900 font-mono'>EAC / SEAC</td> <td class='p-3 border-r border-emerald-900 font-mono'>Grant or Rejection of Environmental Clearance (EC)</td> </tr>
+
             </tbody>
           </table>
         </div>

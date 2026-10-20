@@ -17,6 +17,7 @@ from lecture_content_data_3 import LECTURE_DETAILS_3 as D3
 from simulators_data import SIMULATORS as S1
 from simulators_data_2 import SIMULATORS_2 as S2
 from simulators_data_3 import SIMULATORS_3 as S3
+from diagram_explanations import DIAGRAM_EXPLANATIONS
 
 ALL_DETAILS = {}
 ALL_DETAILS.update(D1)
@@ -213,63 +214,80 @@ def generate_lecture_page(lec):
     """)
     sidebar_links.append((1, "2. Scientific Foundations"))
 
-    # SCREEN 3: VISUAL DEEP-DIVE & EXTRACTED DIAGRAMS
-    diags_html = ""
-    visual_slides = []
-    keywords = ["cycle", "budget", "diagram", "model", "process", "spectrum", "layer", "structure", "system", "curve", "flow", "impact", "matrix", "overview", "mechanism", "sequestration", "balance", "trap", "smog", "carbon", "ndvi", "hazard", "event", "tipping"]
-    for s in lec["slides"]:
-        if any(kw in s["title"].lower() for kw in keywords):
-            visual_slides.append(s)
-    if len(visual_slides) < 4:
-        step = max(1, len(lec["slides"]) // 4)
-        for i in range(0, min(len(lec["slides"]), step * 4), step):
-            if lec["slides"][i] not in visual_slides:
-                visual_slides.append(lec["slides"][i])
+    # SCREEN 3: VISUAL DEEP-DIVE & EXTRACTED DIAGRAM BREAKDOWN
+    diag_items = DIAGRAM_EXPLANATIONS.get(lec_id, [])
+    diag_cards_html = ""
+    for d_idx, d in enumerate(diag_items, 1):
+        diag_cards_html += f"""
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure {d_idx}</span>
+              <h3 class="text-base font-bold text-white">{d['title']}</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 {d['source']}</span>
+          </div>
 
-    for idx, s in enumerate(visual_slides[:6], 1):
-        diags_html += f"""
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('{s['image']}', 'Slide {s['slide_num']}: {html.escape(s['title'])}')">
-            <img src="{s['image']}" alt="Slide {s['slide_num']}" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('{d['image']}', '{html.escape(d['title'])}')">
+              <img src="{d['image']}" alt="{html.escape(d['title'])}" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">{d['what_it_shows']}</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">{d['scientific_mechanism']}</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">{d['quantitative_math']}</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure {idx} (Slide #{s['slide_num']})</span>
-              <span class="text-slate-400">{s['source_file']}</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">{s['title']}</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            {d['exam_trap']}
           </div>
         </div>
         """
 
     screens.append(f"""
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {diags_html}
+        <div>
+          {diag_cards_html}
         </div>
       </div>
     </section>
     """)
-    sidebar_links.append((2, "3. Visuals & Slide Figures"))
+    sidebar_links.append((2, "3. Diagram Breakdown & Analysis"))
 
     # SCREEN 4: MATH FORMULATIONS & DATA TABLES
     math_info = details.get("math", {})
-    t_headers = "".join([f"<th class='p-3 border-r border-emerald-900'>{h}</th>" for h in math_info.get("table_headers", [])])
+    t_headers = "".join([f"<th class='p-3 border-r border-emerald-900'>{h}</th> " for h in math_info.get("table_headers", [])])
     t_rows = ""
     for r in math_info.get("table_rows", []):
-        cols = "".join([f"<td class='p-3 border-r border-emerald-900 font-mono'>{c}</td>" for c in r])
-        t_rows += f"<tr class='hover:bg-emerald-950/20'>{cols}</tr>"
+        cols = "".join([f"<td class='p-3 border-r border-emerald-900 font-mono'>{c}</td> " for c in r])
+        t_rows += f"<tr class='hover:bg-emerald-950/20'>{cols}</tr>\n"
 
     screens.append(f"""
     <section class="card-screen" data-title="Mathematical Formulations">

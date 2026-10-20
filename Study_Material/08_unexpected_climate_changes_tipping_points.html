@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -303,110 +303,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_02.jpg', 'Slide 2: Tipping points in climate system')">
-            <img src="assets/slides/lec_08/slide_02.jpg" alt="Slide 2" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Global Map of Planetary Climate Tipping Elements</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-8 Unexpected climate changes.pdf, Slide 6</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_08/diagram_01.jpeg', 'Global Map of Planetary Climate Tipping Elements')">
+              <img src="assets/diagrams/lec_08/diagram_01.jpeg" alt="Global Map of Planetary Climate Tipping Elements" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A world map identifying the 9 core continental tipping subsystems: AMOC, Greenland Ice Sheet, West Antarctic Ice Sheet, Amazon Rainforest, Boreal Permafrost, Coral Reefs, and Indian Monsoon.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Tipping elements are planetary subsystems that can be pushed past a critical threshold into a qualitatively different operational state. These elements are interconnected through 'teleconnections': Greenland melting freshens the North Atlantic, slowing down AMOC, which shifts tropical rainfall belts southward, desiccating the Amazon basin and destabilizing the Indian Monsoon.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Coupled non-linear dynamical systems exhibiting tipping cascades: $\frac{dx_i}{dt} = f_i(x_i) + \sum_{j \neq i} c_{ij} x_j$, where $c_{ij}$ is the coupling coefficient between tipping element $i$ and $j$.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #2)</span>
-              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Tipping points in climate system</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_03.jpg', 'Slide 3: The top six climate events scientists worry about today')">
-            <img src="assets/slides/lec_08/slide_03.jpg" alt="Slide 3" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #3)</span>
-              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">The top six climate events scientists worry about today</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_01.jpg', 'Slide 1: Class: 8')">
-            <img src="assets/slides/lec_08/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #1)</span>
-              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Class: 8</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Tipping elements do NOT act as independent risks. One tipping event significantly lowers the temperature threshold for adjacent tipping elements, creating cascade vulnerability.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_08.jpg', 'Slide 8: Term was first used by molecular nanotechnology pioneer Eric')">
-            <img src="assets/slides/lec_08/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">Marine Ice Sheet Instability (MISI) & Ice Shelf Grounding Collapse</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-8 Unexpected climate changes.pdf, Slide 14</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_08/diagram_03.jpeg', 'Marine Ice Sheet Instability (MISI) &amp; Ice Shelf Grounding Collapse')">
+              <img src="assets/diagrams/lec_08/diagram_03.jpeg" alt="Marine Ice Sheet Instability (MISI) &amp; Ice Shelf Grounding Collapse" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">Cross-section of the West Antarctic Ice Sheet showing retrograde (inward-sloping) bedrock topography and warm circumpolar deep water intrusion.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Because the bedrock slopes downwards towards the continental interior, as the grounding line retreats into deeper water, the ice thickness at the marine boundary increases. Ice flux across the grounding line scales with the fourth power of ice thickness ($Q \propto h^4$), triggering uncontrollable, runaway ice sheet discharge regardless of atmospheric warming.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Weertman's ice grounding flux law: $q_g = \rho_i h_g u_g \propto h_g^{m}$ ($m \approx 4 - 5$). An inward-sloping bed ($dh/dx < 0$) guarantees positive feedback instability.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #8)</span>
-              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Term was first used by molecular nanotechnology pioneer Eric</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_15.jpg', 'Slide 15: Global Terrestrial Stilling')">
-            <img src="assets/slides/lec_08/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 5 (Slide #15)</span>
-              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Global Terrestrial Stilling</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_08/slide_22.jpg', 'Slide 22: 6. Disappearing Beaches')">
-            <img src="assets/slides/lec_08/slide_22.jpg" alt="Slide 22" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 6 (Slide #22)</span>
-              <span class="text-slate-400">Class-8 Unexpected climate changes.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">6. Disappearing Beaches</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Floating ice shelves provide back-stress (buttressing) that holds back the grounded continental ice sheet. Calving of floating shelves removes this back-stress, accelerating inland glaciers.
           </div>
         </div>
         
@@ -430,10 +420,14 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Tipping Element</th><th class='p-3 border-r border-emerald-900'>Estimated Threshold</th><th class='p-3 border-r border-emerald-900'>Primary Positive Feedback</th><th class='p-3 border-r border-emerald-900'>Planetary Impact of Tipping</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Tipping Element</th> <th class='p-3 border-r border-emerald-900'>Estimated Threshold</th> <th class='p-3 border-r border-emerald-900'>Primary Positive Feedback</th> <th class='p-3 border-r border-emerald-900'>Planetary Impact of Tipping</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>AMOC Collapse</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 3.0^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Salinity-advection feedback shutdown</td><td class='p-3 border-r border-emerald-900 font-mono'>Severe cooling in NW Europe (-5 to -10°C), southward shift of tropical monsoon belts</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Greenland Ice Sheet Melt</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 2.5^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Melt-elevation feedback (lower ice surface experiences warmer air)</td><td class='p-3 border-r border-emerald-900 font-mono'>Irreversible global sea level rise of $+7\,\text{meters}$ over centuries</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Amazon Rainforest Dieback</td><td class='p-3 border-r border-emerald-900 font-mono'>$2.0^\circ\text{C} - 3.5^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Moisture-recycling breakdown and wildfire frequency</td><td class='p-3 border-r border-emerald-900 font-mono'>Conversion of rainforest into degraded savanna, release of $>100\,\text{Gt C}$</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Boreal Permafrost Thaw</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 2.0^\circ\text{C}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Microbial metabolic self-heating (talik formation)</td><td class='p-3 border-r border-emerald-900 font-mono'>Release of $>150\,\text{Gt C}$ as $CO_2$ and $CH_4$, self-amplifying warming</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>AMOC Collapse</td> <td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 3.0^\circ\text{C}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Salinity-advection feedback shutdown</td> <td class='p-3 border-r border-emerald-900 font-mono'>Severe cooling in NW Europe (-5 to -10°C), southward shift of tropical monsoon belts</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Greenland Ice Sheet Melt</td> <td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 2.5^\circ\text{C}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Melt-elevation feedback (lower ice surface experiences warmer air)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Irreversible global sea level rise of $+7\,\text{meters}$ over centuries</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Amazon Rainforest Dieback</td> <td class='p-3 border-r border-emerald-900 font-mono'>$2.0^\circ\text{C} - 3.5^\circ\text{C}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Moisture-recycling breakdown and wildfire frequency</td> <td class='p-3 border-r border-emerald-900 font-mono'>Conversion of rainforest into degraded savanna, release of $>100\,\text{Gt C}$</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Boreal Permafrost Thaw</td> <td class='p-3 border-r border-emerald-900 font-mono'>$1.5^\circ\text{C} - 2.0^\circ\text{C}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Microbial metabolic self-heating (talik formation)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Release of $>150\,\text{Gt C}$ as $CO_2$ and $CH_4$, self-amplifying warming</td> </tr>
+
             </tbody>
           </table>
         </div>

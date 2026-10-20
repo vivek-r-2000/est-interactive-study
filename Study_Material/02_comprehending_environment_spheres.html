@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -305,78 +305,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_43.jpg', 'Slide 43: Floristic structure, composition and diversity of dry evergree...')">
-            <img src="assets/slides/lec_02/slide_43.jpg" alt="Slide 43" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Natural Capital Depgradation & Material Flux Cycle</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-2-Comprehend our Environment-Part-1.pdf, Slide 8</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_02/diagram_01.jpeg', 'Natural Capital Depgradation &amp; Material Flux Cycle')">
+              <img src="assets/diagrams/lec_02/diagram_01.jpeg" alt="Natural Capital Depgradation &amp; Material Flux Cycle" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">Illustrates the linear 'Take-Make-Dispose' anthropogenic throughput versus the closed-loop circular material cycles of natural ecosystems.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Human systems convert natural capital (lithospheric minerals, fossil carbon, biotic resources) into short-lived consumer goods and ultimate waste. In contrast, natural biogeochemical systems exhibit zero waste: every organism's metabolic byproduct is another organism's thermodynamic input.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">First and Second Laws of Thermodynamics: Total mass is conserved ($\sum m_{\text{in}} = \sum m_{\text{out}}$), but entropy increases ($\Delta S_{\text{universe}} > 0$). Dissipated low-grade heat and dispersed pollutants require work to reconcentrate.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #43)</span>
-              <span class="text-slate-400">Class-2-Comprehend our Environment-Part-3.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Floristic structure, composition and diversity of dry evergree...</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_01.jpg', 'Slide 1: Comprehend Environment')">
-            <img src="assets/slides/lec_02/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #1)</span>
-              <span class="text-slate-400">Class-2-Comprehend our Environment-Part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Comprehend Environment</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_15.jpg', 'Slide 15: https://www.sciencedirect.com/science/article/abs/pii/S0006320...')">
-            <img src="assets/slides/lec_02/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #15)</span>
-              <span class="text-slate-400">Class-2-Comprehend our environment-Part-2.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">https://www.sciencedirect.com/science/article/abs/pii/S0006320...</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Confusing 'Natural Capital' with 'Renewable Resources'. Natural capital includes non-renewable resources (fossil reserves, mineral ores) and ecosystem services (pollination, flood control) alongside renewable biomass.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_02/slide_29.jpg', 'Slide 29: Slide 29')">
-            <img src="assets/slides/lec_02/slide_29.jpg" alt="Slide 29" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">Domestic Material Footprint vs Economic Development</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-2-Comprehend our Environment-Part-3.pdf, Slide 10</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_02/diagram_02.jpeg', 'Domestic Material Footprint vs Economic Development')">
+              <img src="assets/diagrams/lec_02/diagram_02.jpeg" alt="Domestic Material Footprint vs Economic Development" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">Plots per-capita domestic material consumption across global income brackets, demonstrating resource decoupling challenges.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Evaluates the Environmental Kuznets Curve (EKC) hypothesis. While some local air pollutants ($SO_2, PM$) decrease at higher per-capita income levels due to environmental regulations, aggregate carbon emissions and raw material footprints continue rising with GDP unless structural decoupling is enforced.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Resource Intensity Index: $RI = \frac{\text{Domestic Material Consumption (DMC)}}{\text{GDP}}$. Relative decoupling occurs when $RI$ decreases, but absolute decoupling requires total $DMC$ to decline while GDP grows.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #29)</span>
-              <span class="text-slate-400">Class-2-Comprehend our environment-Part-2.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Slide 29</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Developing economies frequently appear to have lower domestic environmental impact because heavy manufacturing is outsourced; always evaluate consumption-based footprint (trade-adjusted) rather than territorial emissions alone.
           </div>
         </div>
         
@@ -400,10 +422,14 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Sphere</th><th class='p-3 border-r border-emerald-900'>Primary Constituents</th><th class='p-3 border-r border-emerald-900'>Scale / Characteristic Mass</th><th class='p-3 border-r border-emerald-900'>Key Environmental Role</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Sphere</th> <th class='p-3 border-r border-emerald-900'>Primary Constituents</th> <th class='p-3 border-r border-emerald-900'>Scale / Characteristic Mass</th> <th class='p-3 border-r border-emerald-900'>Key Environmental Role</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Atmosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>$N_2 (78.08\%), O_2 (20.95\%), Ar (0.93\%), CO_2 (0.042\%)$</td><td class='p-3 border-r border-emerald-900 font-mono'>$5.15 \times 10^{18}\,\text{kg}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Radiation shield, thermal regulation, weather</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Hydrosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>Oceans ($97.5\%$), Glaciers ($1.75\%$), Groundwater ($0.75\%$)</td><td class='p-3 border-r border-emerald-900 font-mono'>$1.4 \times 10^{21}\,\text{kg}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Huge thermal inertia ($C_p \approx 4184\,\text{J/kg K}$), ocean conveyor</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Lithosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>Crust & Upper Mantle ($SiO_2, Al_2O_3, Fe, Ca$)</td><td class='p-3 border-r border-emerald-900 font-mono'>$2.4 \times 10^{22}\,\text{kg}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Nutrient reservoir, plate tectonics, geochemical carbon sink</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Biosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>Living organic matter (carbon mass $\sim 550\,\text{Gt C}$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Global living biomass</td><td class='p-3 border-r border-emerald-900 font-mono'>Biogeochemical flux catalyst, photosynthesis/respiration</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Atmosphere</td> <td class='p-3 border-r border-emerald-900 font-mono'>$N_2 (78.08\%), O_2 (20.95\%), Ar (0.93\%), CO_2 (0.042\%)$</td> <td class='p-3 border-r border-emerald-900 font-mono'>$5.15 \times 10^{18}\,\text{kg}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Radiation shield, thermal regulation, weather</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Hydrosphere</td> <td class='p-3 border-r border-emerald-900 font-mono'>Oceans ($97.5\%$), Glaciers ($1.75\%$), Groundwater ($0.75\%$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$1.4 \times 10^{21}\,\text{kg}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Huge thermal inertia ($C_p \approx 4184\,\text{J/kg K}$), ocean conveyor</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Lithosphere</td> <td class='p-3 border-r border-emerald-900 font-mono'>Crust & Upper Mantle ($SiO_2, Al_2O_3, Fe, Ca$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$2.4 \times 10^{22}\,\text{kg}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Nutrient reservoir, plate tectonics, geochemical carbon sink</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Biosphere</td> <td class='p-3 border-r border-emerald-900 font-mono'>Living organic matter (carbon mass $\sim 550\,\text{Gt C}$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Global living biomass</td> <td class='p-3 border-r border-emerald-900 font-mono'>Biogeochemical flux catalyst, photosynthesis/respiration</td> </tr>
+
             </tbody>
           </table>
         </div>

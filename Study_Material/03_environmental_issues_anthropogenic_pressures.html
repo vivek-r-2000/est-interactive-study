@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -305,110 +305,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_03/slide_03.jpg', 'Slide 3: Problems from Human Impact on')">
-            <img src="assets/slides/lec_03/slide_03.jpg" alt="Slide 3" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Kubuqi Model: Ecosystem Restoration & Desert Greening</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-3 Enviromental issues-Part-2.pdf, Slide 3</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_03/diagram_01.jpeg', 'Kubuqi Model: Ecosystem Restoration &amp; Desert Greening')">
+              <img src="assets/diagrams/lec_03/diagram_01.jpeg" alt="Kubuqi Model: Ecosystem Restoration &amp; Desert Greening" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A schematic of multi-tiered ecological engineered barriers: solar photovoltaic arrays on sand dunes, drought-tolerant legume plantings (licorice/salix), and livestock integration.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Solar PV panels provide shade, reducing soil evapotranspiration and surface temperatures. Condensate dripping from panel washing irrigates nitrogen-fixing leguminous herbs below, whose roots secrete organic glues that stabilize mobile sand particles and generate fertile topsoil.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Soil water retention increases exponentially with organic matter: $\theta_s = \theta_0 (1 + \gamma \cdot \text{SOC})$, while surface albedo shifts from high-reflectance sand ($\alpha \approx 0.40$) to dark productive vegetation ($\alpha \approx 0.18$), altering local boundary-layer microclimates.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #3)</span>
-              <span class="text-slate-400">Class-3 Enviromental issues-Part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Problems from Human Impact on</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_03/slide_10.jpg', 'Slide 10: A bird’s eye view of the impact of oil pollution in the Niger ...')">
-            <img src="assets/slides/lec_03/slide_10.jpg" alt="Slide 10" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #10)</span>
-              <span class="text-slate-400">Class-3 Enviromental issues-Part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">A bird’s eye view of the impact of oil pollution in the Niger ...</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_03/slide_01.jpg', 'Slide 1: Environmental issues')">
-            <img src="assets/slides/lec_03/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #1)</span>
-              <span class="text-slate-400">Class-3 Enviromental issues-Part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Environmental issues</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Desertification is NOT simply the physical expansion of existing deserts; it is the degradation of fertile dryland ecosystems into non-productive soil driven by overgrazing, deforestation, and poor agricultural irrigation.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_03/slide_09.jpg', 'Slide 9: Gulf of Mexico Oil Spill')">
-            <img src="assets/slides/lec_03/slide_09.jpg" alt="Slide 9" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">Atmospheric Thermal Inversion & Smog Entrapment</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-3 Enviromental issues-Part-1.pdf, Slide 5</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_03/diagram_02.jpeg', 'Atmospheric Thermal Inversion &amp; Smog Entrapment')">
+              <img src="assets/diagrams/lec_03/diagram_02.jpeg" alt="Atmospheric Thermal Inversion &amp; Smog Entrapment" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">Shows the vertical atmospheric temperature profile during a radiation inversion layer, trapping particulate matter ($PM_{2.5}$) and $NO_x$ close to the urban floor.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Under normal conditions, air temperature decreases with altitude (environmental lapse rate $\Gamma \approx -6.5^\circ\text{C/km}$), allowing warm, buoyant emissions to disperse upward. During calm, clear winter nights, rapid radiative cooling of the ground creates a cold layer beneath warmer air aloft (temperature inversion). Vertical mixing ceases, producing hazardous pollution episodes.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Governed by the atmospheric stability parameter: $S = \frac{dT}{dz} - \Gamma_d$. When $\frac{dT}{dz} > \Gamma_d$ (where $\Gamma_d = -9.8^\circ\text{C/km}$ is the dry adiabatic lapse rate), the atmosphere is stable, vertical eddy diffusivity $K_z \to 0$, and pollutants accumulate.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #9)</span>
-              <span class="text-slate-400">Class-3 Enviromental issues-Part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Gulf of Mexico Oil Spill</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_03/slide_17.jpg', 'Slide 17: Desertification')">
-            <img src="assets/slides/lec_03/slide_17.jpg" alt="Slide 17" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 5 (Slide #17)</span>
-              <span class="text-slate-400">Class-3 Enviromental issues-Part-2.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Desertification</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_03/slide_25.jpg', 'Slide 25: Waste Disposal')">
-            <img src="assets/slides/lec_03/slide_25.jpg" alt="Slide 25" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 6 (Slide #25)</span>
-              <span class="text-slate-400">Class-3 Enviromental issues-Part-2.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Waste Disposal</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Do not assume sunlight is needed for radiation inversions. Radiation inversions occur at <em>night</em> due to terrestrial infrared cooling to clear skies.
           </div>
         </div>
         
@@ -432,10 +422,14 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Pollutant</th><th class='p-3 border-r border-emerald-900'>Origin / Source</th><th class='p-3 border-r border-emerald-900'>Threshold Standard (24h)</th><th class='p-3 border-r border-emerald-900'>Environmental / Health Impact</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Pollutant</th> <th class='p-3 border-r border-emerald-900'>Origin / Source</th> <th class='p-3 border-r border-emerald-900'>Threshold Standard (24h)</th> <th class='p-3 border-r border-emerald-900'>Environmental / Health Impact</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>$PM_{2.5}$</td><td class='p-3 border-r border-emerald-900 font-mono'>Combustion, vehicle exhaust, biomass burning</td><td class='p-3 border-r border-emerald-900 font-mono'>$60\,\mu\text{g/m}^3$ (CPCB) / $15$ (WHO)</td><td class='p-3 border-r border-emerald-900 font-mono'>Cardiovascular diseases, lung carcinoma, reduced visibility</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>$NO_x$ ($NO + NO_2$)</td><td class='p-3 border-r border-emerald-900 font-mono'>High-temperature internal combustion engines</td><td class='p-3 border-r border-emerald-900 font-mono'>$80\,\mu\text{g/m}^3$ (CPCB)</td><td class='p-3 border-r border-emerald-900 font-mono'>Acid rain precursor, photochemical smog catalyst, lung inflammation</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>$SO_2$</td><td class='p-3 border-r border-emerald-900 font-mono'>Coal-fired thermal plants, metal smelting</td><td class='p-3 border-r border-emerald-900 font-mono'>$80\,\mu\text{g/m}^3$ (CPCB)</td><td class='p-3 border-r border-emerald-900 font-mono'>Sulfuric acid aerosols, building corrosion, respiratory bronchoconstriction</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Tropospheric $O_3$</td><td class='p-3 border-r border-emerald-900 font-mono'>Secondary: $VOCs + NO_x + \text{UV}$</td><td class='p-3 border-r border-emerald-900 font-mono'>$100\,\mu\text{g/m}^3$ (8h)</td><td class='p-3 border-r border-emerald-900 font-mono'>Potent cellular oxidant, crop yield reduction, asthma exacerbation</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>$PM_{2.5}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Combustion, vehicle exhaust, biomass burning</td> <td class='p-3 border-r border-emerald-900 font-mono'>$60\,\mu\text{g/m}^3$ (CPCB) / $15$ (WHO)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Cardiovascular diseases, lung carcinoma, reduced visibility</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>$NO_x$ ($NO + NO_2$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>High-temperature internal combustion engines</td> <td class='p-3 border-r border-emerald-900 font-mono'>$80\,\mu\text{g/m}^3$ (CPCB)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Acid rain precursor, photochemical smog catalyst, lung inflammation</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>$SO_2$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Coal-fired thermal plants, metal smelting</td> <td class='p-3 border-r border-emerald-900 font-mono'>$80\,\mu\text{g/m}^3$ (CPCB)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Sulfuric acid aerosols, building corrosion, respiratory bronchoconstriction</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Tropospheric $O_3$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Secondary: $VOCs + NO_x + \text{UV}$</td> <td class='p-3 border-r border-emerald-900 font-mono'>$100\,\mu\text{g/m}^3$ (8h)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Potent cellular oxidant, crop yield reduction, asthma exacerbation</td> </tr>
+
             </tbody>
           </table>
         </div>

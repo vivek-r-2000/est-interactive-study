@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -307,78 +307,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_01.jpg', 'Slide 1: Topic -5')">
-            <img src="assets/slides/lec_05/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Global Distillation & Persistent Organic Pollutant (POP) Migration</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-5 -Environmental Events.pdf, Slide 8</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_05/diagram_02.jpeg', 'Global Distillation &amp; Persistent Organic Pollutant (POP) Migration')">
+              <img src="assets/diagrams/lec_05/diagram_02.jpeg" alt="Global Distillation &amp; Persistent Organic Pollutant (POP) Migration" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">The 'Grasshopper Effect' illustrating how volatile persistent toxic chemicals evaporate in warm tropical latitudes and condense in cold polar regions.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Semivolatile organic pollutants (such as DDT, PCBs, and dioxins) undergo repeated cycles of volatilization during warm seasons and atmospheric transport via prevailing winds, followed by condensation and deposition during cold seasons. Because polar regions are perpetual cold condensation sinks, POPs concentrate in Arctic ice and fat-rich marine mammals.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Governed by temperature-dependent vapor pressure (Clausius-Clapeyron relation): $\ln\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{\text{vap}}}{R} \left( \frac{1}{T_2} - \frac{1}{T_1} \right)$. Lower temperatures drive partitioning from gas phase into condensed environmental matrices.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #1)</span>
-              <span class="text-slate-400">Class-5 -Environmental Events.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Topic -5</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_08.jpg', 'Slide 8: Both global dimming and global')">
-            <img src="assets/slides/lec_05/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #8)</span>
-              <span class="text-slate-400">Class-5 -Environmental Events.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Both global dimming and global</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_15.jpg', 'Slide 15: AZOLLA..')">
-            <img src="assets/slides/lec_05/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #15)</span>
-              <span class="text-slate-400">Class-5 -Environmental Events.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">AZOLLA..</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Thinking polar regions are clean because there are no local factories. The Arctic Paradox demonstrates that the highest concentrations of lipophilic bioaccumulative toxics occur in Arctic Inuit populations and polar bears.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_22.jpg', 'Slide 22: Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian vol...')">
-            <img src="assets/slides/lec_05/slide_22.jpg" alt="Slide 22" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">Biomagnification Trophic Cascade in Aquatic Ecosystems</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-5 -Environmental Events.pdf, Slide 14</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_05/diagram_03.jpeg', 'Biomagnification Trophic Cascade in Aquatic Ecosystems')">
+              <img src="assets/diagrams/lec_05/diagram_03.jpeg" alt="Biomagnification Trophic Cascade in Aquatic Ecosystems" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A multi-level food web showing concentration amplification of methylmercury from water (parts per trillion) to apex predators and humans (parts per million).</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Methylmercury ($[CH_3Hg]^+$) is lipid-soluble and binds covalently to sulfhydryl ($-SH$) groups in muscle protein. Organisms absorb it much faster than they can metabolize or excrete it (half-life in humans is ~70 days). Each successive trophic level consumes multiple prey organisms, compounding toxic concentration.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Trophic Magnification Factor: $TMF = 10^{\beta}$, where $\beta$ is the slope of the regression $\log(C) = \alpha + \beta \times TL$ ($TL$ = trophic level). For methylmercury, $TMF$ typically exceeds 3.5 to 5.0 per trophic transfer.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #22)</span>
-              <span class="text-slate-400">Class-5 -Environmental Events.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Napoleon's defeat at Waterloo caused in part by Indonesian vol...</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Confusing elemental inorganic mercury ($Hg^0$) with methylmercury. Metallic mercury swallowed passes through digestive systems largely unabsorbed; microbial methylation in anoxic sediment is what creates the lethal neurotoxin.
           </div>
         </div>
         
@@ -402,10 +424,15 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Landmark Event</th><th class='p-3 border-r border-emerald-900'>Year / Location</th><th class='p-3 border-r border-emerald-900'>Primary Contaminant</th><th class='p-3 border-r border-emerald-900'>Policy & Regulatory Outcome</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Landmark Event</th> <th class='p-3 border-r border-emerald-900'>Year / Location</th> <th class='p-3 border-r border-emerald-900'>Primary Contaminant</th> <th class='p-3 border-r border-emerald-900'>Policy & Regulatory Outcome</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>London Great Smog</td><td class='p-3 border-r border-emerald-900 font-mono'>1952 (UK)</td><td class='p-3 border-r border-emerald-900 font-mono'>Coal smoke, $SO_2$, Sulfuric acid mist ($H_2SO_4$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Clean Air Act 1956 (first systemic air quality legislation)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Minamata Disease</td><td class='p-3 border-r border-emerald-900 font-mono'>1956 (Japan)</td><td class='p-3 border-r border-emerald-900 font-mono'>Methylmercury ($CH_3Hg^+$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Minamata Convention on Mercury (2013 global treaty)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Love Canal</td><td class='p-3 border-r border-emerald-900 font-mono'>1978 (USA)</td><td class='p-3 border-r border-emerald-900 font-mono'>21,000 tons of toxic industrial organic waste</td><td class='p-3 border-r border-emerald-900 font-mono'>CERCLA / Superfund Act 1980</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Bhopal Gas Tragedy</td><td class='p-3 border-r border-emerald-900 font-mono'>1984 (India)</td><td class='p-3 border-r border-emerald-900 font-mono'>Methyl Isocyanate (MIC), $HCN$, Phosgene</td><td class='p-3 border-r border-emerald-900 font-mono'>Environment (Protection) Act 1986, Public Liability Insurance Act 1991</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Chernobyl</td><td class='p-3 border-r border-emerald-900 font-mono'>1986 (USSR)</td><td class='p-3 border-r border-emerald-900 font-mono'>Iodine-131 ($t_{1/2}=8d$), Cesium-137 ($t_{1/2}=30yr$)</td><td class='p-3 border-r border-emerald-900 font-mono'>International Nuclear Event Scale (INES), IAEA safety conventions</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>London Great Smog</td> <td class='p-3 border-r border-emerald-900 font-mono'>1952 (UK)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Coal smoke, $SO_2$, Sulfuric acid mist ($H_2SO_4$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Clean Air Act 1956 (first systemic air quality legislation)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Minamata Disease</td> <td class='p-3 border-r border-emerald-900 font-mono'>1956 (Japan)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Methylmercury ($CH_3Hg^+$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Minamata Convention on Mercury (2013 global treaty)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Love Canal</td> <td class='p-3 border-r border-emerald-900 font-mono'>1978 (USA)</td> <td class='p-3 border-r border-emerald-900 font-mono'>21,000 tons of toxic industrial organic waste</td> <td class='p-3 border-r border-emerald-900 font-mono'>CERCLA / Superfund Act 1980</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Bhopal Gas Tragedy</td> <td class='p-3 border-r border-emerald-900 font-mono'>1984 (India)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Methyl Isocyanate (MIC), $HCN$, Phosgene</td> <td class='p-3 border-r border-emerald-900 font-mono'>Environment (Protection) Act 1986, Public Liability Insurance Act 1991</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Chernobyl</td> <td class='p-3 border-r border-emerald-900 font-mono'>1986 (USSR)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Iodine-131 ($t_{1/2}=8d$), Cesium-137 ($t_{1/2}=30yr$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>International Nuclear Event Scale (INES), IAEA safety conventions</td> </tr>
+
             </tbody>
           </table>
         </div>

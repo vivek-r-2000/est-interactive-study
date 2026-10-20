@@ -5,3 +5,14 @@ node_modules/
 .tools/
 __pycache__/
 *.pyc
+
+# Local Moodle Raw Archives
+Assignments/
+Course_Materials/
+Discussions/
+Lecture_Slides/
+Research_Papers_Study/
+
+# Scratch Inspection Scripts
+inspect_*.py
+

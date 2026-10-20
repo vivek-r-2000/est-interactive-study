@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -307,110 +307,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_08.jpg', 'Slide 8: Carbon Pools and Fluxes')">
-            <img src="assets/slides/lec_09/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Glacial Recession & Terrestrial Cryosphere Mass Loss</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-9- Carbon sequestration.pdf, Slide 4</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_09/diagram_01.jpeg', 'Glacial Recession &amp; Terrestrial Cryosphere Mass Loss')">
+              <img src="assets/diagrams/lec_09/diagram_01.jpeg" alt="Glacial Recession &amp; Terrestrial Cryosphere Mass Loss" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">Historical photographic and topographic comparative transect of Muir Glacier showing dramatic multi-kilometer retreat between 1941 and modern times.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Visualizes the physical reality of cryospheric shrinkage. Glaciers act as natural freshwater storage towers; recession alters seasonal river discharge hydrographs from summer melt-dominated flows to flash winter floods followed by severe summer water shortages.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Glacier Mass Balance: $B_n = \int (A - M)\,dt$, where $A$ is accumulation (snowfall) and $M$ is ablation (melting and sublimation). Negative mass balance shifts the Equilibrium Line Altitude (ELA) upslope.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #8)</span>
-              <span class="text-slate-400">Class-9- Carbon sequestration.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Carbon Pools and Fluxes</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_10.jpg', 'Slide 10: Global Forest Extent &amp; Carbon Storage')">
-            <img src="assets/slides/lec_09/slide_10.jpg" alt="Slide 10" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #10)</span>
-              <span class="text-slate-400">Class-9- Carbon sequestration.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Global Forest Extent & Carbon Storage</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_14.jpg', 'Slide 14: Forests as a Carbon Sink')">
-            <img src="assets/slides/lec_09/slide_14.jpg" alt="Slide 14" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #14)</span>
-              <span class="text-slate-400">Class-9- Carbon sequestration.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Forests as a Carbon Sink</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Glacial retreat initially causes a temporary <em>increase</em> in downstream river discharge ('peak water') before experiencing permanent, irreversible flow collapse.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_15.jpg', 'Slide 15: Forest extent, structure, and dynamics for each 1 × 1° grid ce...')">
-            <img src="assets/slides/lec_09/slide_15.jpg" alt="Slide 15" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">Terrestrial Forest Carbon Stock & Flux Dynamics</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-9- Carbon sequestration.pdf, Slide 15</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_09/diagram_02.jpeg', 'Terrestrial Forest Carbon Stock &amp; Flux Dynamics')">
+              <img src="assets/diagrams/lec_09/diagram_02.jpeg" alt="Terrestrial Forest Carbon Stock &amp; Flux Dynamics" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A global 1° × 1° spatial modeling grid evaluating above-ground biomass, root carbon, and soil organic carbon flux across diverse forest biomes.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Quantifies Net Ecosystem Productivity ($NEP = GPP - R_a - R_h$), where $GPP$ is gross primary productivity, $R_a$ is autotrophic plant respiration, and $R_h$ is heterotrophic microbial soil respiration. In mature climax forests, $NEP \to 0$ (carbon saturation), whereas young, actively growing secondary forests exhibit high net sequestration rates.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Carbon residence time in woody biomass: $\tau = \frac{B_{\text{woody}}}{NPP}$. For tropical rainforests, $\tau \approx 30 - 50\,\text{years}$; for boreal conifer forests, $\tau \approx 80 - 120\,\text{years}$.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #15)</span>
-              <span class="text-slate-400">Class-9- Carbon sequestration.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Forest extent, structure, and dynamics for each 1 × 1° grid ce...</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_16.jpg', 'Slide 16: Carbon Facts')">
-            <img src="assets/slides/lec_09/slide_16.jpg" alt="Slide 16" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 5 (Slide #16)</span>
-              <span class="text-slate-400">Class-9- Carbon sequestration.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Carbon Facts</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_18.jpg', 'Slide 18: (A) soil organic carbon to 1')">
-            <img src="assets/slides/lec_09/slide_18.jpg" alt="Slide 18" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 6 (Slide #18)</span>
-              <span class="text-slate-400">Class-9- Carbon sequestration.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">(A) soil organic carbon to 1</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Planting trees in high-latitude snow-covered tundra (afforestation) can actually cause planetary <em>warming</em> by replacing high-albedo bright snow with dark tree canopies, outweighing the carbon sequestration benefit.
           </div>
         </div>
         
@@ -434,10 +424,15 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Sequestration Method</th><th class='p-3 border-r border-emerald-900'>Capture Cost ($/t $CO_2$)</th><th class='p-3 border-r border-emerald-900'>Global Potential (Gt $CO_2$/yr)</th><th class='p-3 border-r border-emerald-900'>Permanence / Residence Time</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Sequestration Method</th> <th class='p-3 border-r border-emerald-900'>Capture Cost ($/t $CO_2$)</th> <th class='p-3 border-r border-emerald-900'>Global Potential (Gt $CO_2$/yr)</th> <th class='p-3 border-r border-emerald-900'>Permanence / Residence Time</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Afforestation & Reforestation</td><td class='p-3 border-r border-emerald-900 font-mono'>$10 - $50</td><td class='p-3 border-r border-emerald-900 font-mono'>1.5 – 3.5 Gt</td><td class='p-3 border-r border-emerald-900 font-mono'>Decades to centuries (vulnerable to wildfires & pests)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Soil Carbon Enhancement (SOC)</td><td class='p-3 border-r border-emerald-900 font-mono'>$20 - $80</td><td class='p-3 border-r border-emerald-900 font-mono'>1.0 – 2.0 Gt</td><td class='p-3 border-r border-emerald-900 font-mono'>Decades (sensitive to tillage and soil temperature)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Biochar Soil Amendment</td><td class='p-3 border-r border-emerald-900 font-mono'>$50 - $150</td><td class='p-3 border-r border-emerald-900 font-mono'>0.5 – 1.8 Gt</td><td class='p-3 border-r border-emerald-900 font-mono'>Centuries to millennia (highly recalcitrant)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Geological CCS (Saline Aquifers)</td><td class='p-3 border-r border-emerald-900 font-mono'>$60 - $120</td><td class='p-3 border-r border-emerald-900 font-mono'>2.0 – 5.0 Gt</td><td class='p-3 border-r border-emerald-900 font-mono'>Thousands of years (>99% retained over 1000 yr)</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>In-situ Basalt Mineralization</td><td class='p-3 border-r border-emerald-900 font-mono'>$100 - $200</td><td class='p-3 border-r border-emerald-900 font-mono'>Enormous capacity (>1000 Gt)</td><td class='p-3 border-r border-emerald-900 font-mono'>Permanent (>100,000 yr, thermodynamically stable rock)</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Afforestation & Reforestation</td> <td class='p-3 border-r border-emerald-900 font-mono'>$10 - $50</td> <td class='p-3 border-r border-emerald-900 font-mono'>1.5 – 3.5 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Decades to centuries (vulnerable to wildfires & pests)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Soil Carbon Enhancement (SOC)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$20 - $80</td> <td class='p-3 border-r border-emerald-900 font-mono'>1.0 – 2.0 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Decades (sensitive to tillage and soil temperature)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Biochar Soil Amendment</td> <td class='p-3 border-r border-emerald-900 font-mono'>$50 - $150</td> <td class='p-3 border-r border-emerald-900 font-mono'>0.5 – 1.8 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Centuries to millennia (highly recalcitrant)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Geological CCS (Saline Aquifers)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$60 - $120</td> <td class='p-3 border-r border-emerald-900 font-mono'>2.0 – 5.0 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Thousands of years (>99% retained over 1000 yr)</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>In-situ Basalt Mineralization</td> <td class='p-3 border-r border-emerald-900 font-mono'>$100 - $200</td> <td class='p-3 border-r border-emerald-900 font-mono'>Enormous capacity (>1000 Gt)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Permanent (>100,000 yr, thermodynamically stable rock)</td> </tr>
+
             </tbody>
           </table>
         </div>

@@ -197,7 +197,7 @@
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Visuals & Slide Figures</span>
+          <span class="truncate">3. Diagram Breakdown & Analysis</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
@@ -308,110 +308,100 @@
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Slide Visuals">
+    <section class="card-screen" data-title="Extracted Diagram Breakdown">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Direct Slide Visualizations</span>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
           <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Key Diagrams & Figures from Lecture Slides</h2>
-        <p class="text-xs text-slate-300 mb-6">Click any diagram to inspect in full resolution lightbox.</p>
+        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
+        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_06/slide_01.jpg', 'Slide 1: Earth System and its')">
-            <img src="assets/slides/lec_06/slide_01.jpg" alt="Slide 1" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
+              <h3 class="text-base font-bold text-white">Interactive Earth System Spheres & Geochemical Couplings</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-6 Earth components-part-1.pdf, Slide 8</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_06/diagram_01.png', 'Interactive Earth System Spheres &amp; Geochemical Couplings')">
+              <img src="assets/diagrams/lec_06/diagram_01.png" alt="Interactive Earth System Spheres &amp; Geochemical Couplings" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">A systems flow diagram detailing mass and energy feedback loops linking the Atmosphere, Hydrosphere, Cryosphere, Lithosphere, and Biosphere.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Demonstrates that environmental science cannot analyze components in isolation. For instance, volcanic eruptions in the Lithosphere emit $SO_2$ into the Atmosphere, altering cloud albedo, cooling the Hydrosphere, and perturbing primary productivity in the Biosphere.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Mass balance for any geochemical reservoir $i$: $\frac{dM_i}{dt} = \sum F_{\text{in}} - \sum F_{\text{out}}$. At steady state, residence time is $\tau_i = \frac{M_i}{\sum F_{\text{out}}}$.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 1 (Slide #1)</span>
-              <span class="text-slate-400">Class-6 Earth components-part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Earth System and its</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_06/slide_02.jpg', 'Slide 2: Earth Systems Overview')">
-            <img src="assets/slides/lec_06/slide_02.jpg" alt="Slide 2" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 2 (Slide #2)</span>
-              <span class="text-slate-400">Class-6 Earth components-part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Earth Systems Overview</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_06/slide_03.jpg', 'Slide 3: Layers of Earth')">
-            <img src="assets/slides/lec_06/slide_03.jpg" alt="Slide 3" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 3 (Slide #3)</span>
-              <span class="text-slate-400">Class-6 Earth components-part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Layers of Earth</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Do not overlook that residence time is reservoir-dependent: water in the atmosphere has a residence time of ~9 days, but in deep oceans it exceeds 3,000 years.
           </div>
         </div>
         
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_06/slide_06.jpg', 'Slide 6: Earth System Science is the study of')">
-            <img src="assets/slides/lec_06/slide_06.jpg" alt="Slide 6" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
+        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+            <div class="flex items-center gap-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
+              <h3 class="text-base font-bold text-white">The Global Nitrogen Cycle & Anthropogenic Haber-Bosch Forcing</h3>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-6 Earth components-Part-2.pdf, Slide 28</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
+            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
+            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_06/diagram_02.jpeg', 'The Global Nitrogen Cycle &amp; Anthropogenic Haber-Bosch Forcing')">
+              <img src="assets/diagrams/lec_06/diagram_02.jpeg" alt="The Global Nitrogen Cycle &amp; Anthropogenic Haber-Bosch Forcing" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
+              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                <span>🔍</span> Click diagram to zoom in full lightbox
+              </div>
+            </div>
+
+            <!-- Deep Scientific & Pedagogical Explanation -->
+            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
+                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
+                <span class="text-slate-300">The complete biogeochemical pathway of Nitrogen, detailing biological fixation, Haber-Bosch synthesis, nitrification, plant uptake, and anaerobic denitrification.</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
+                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
+                <span class="text-slate-300">Industrial Haber-Bosch synthesis ($N_2 + 3H_2 \to 2NH_3$) currently fixes $\sim 150\,\text{Tg N/yr}$, rivaling all natural terrestrial fixation combined. Excess fertilizer drains into rivers, creating eutrophication, while soil nitrification/denitrification leaks nitrous oxide ($N_2O$, a potent greenhouse gas).</span>
+              </div>
+
+              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
+                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
+                <span class="text-slate-300">Stoichiometric Nitrification: $NH_4^+ + 2O_2 \longrightarrow NO_3^- + 2H^+ + H_2O$. Notice that 2 moles of $H^+$ are released per mole of ammonium oxidized, explaining why heavy ammonium fertilizer usage severely acidifies agricultural soils.</span>
+              </div>
             </div>
           </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 4 (Slide #6)</span>
-              <span class="text-slate-400">Class-6 Earth components-part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Earth System Science is the study of</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_06/slide_07.jpg', 'Slide 7: Earth System Science')">
-            <img src="assets/slides/lec_06/slide_07.jpg" alt="Slide 7" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 5 (Slide #7)</span>
-              <span class="text-slate-400">Class-6 Earth components-part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">Earth System Science</div>
-          </div>
-        </div>
-        
-        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/40 w-full flex items-center justify-center p-1 mb-2 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_06/slide_08.jpg', 'Slide 8: What is Earth System Modelling?')">
-            <img src="assets/slides/lec_06/slide_08.jpg" alt="Slide 8" class="w-full h-48 object-contain group-hover:scale-105 transition-all" loading="lazy">
-            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono mb-1">
-              <span>Figure 6 (Slide #8)</span>
-              <span class="text-slate-400">Class-6 Earth components-part-1.pdf</span>
-            </div>
-            <div class="text-xs font-bold text-slate-200 line-clamp-1">What is Earth System Modelling?</div>
+
+          <!-- Exam Trap Callout Box -->
+          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
+            ⚠️ <strong>Exam Trap:</strong> Nitrification is an <strong>acidifying aerobic</strong> oxidation process, whereas Denitrification is an <strong>alkalizing anaerobic</strong> reduction process requiring organic carbon.
           </div>
         </div>
         
@@ -435,10 +425,14 @@
         <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
           <table class="w-full text-xs text-left text-slate-300">
             <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Cycle</th><th class='p-3 border-r border-emerald-900'>Major Reservoir</th><th class='p-3 border-r border-emerald-900'>Anthropogenic Flux Perturbation</th><th class='p-3 border-r border-emerald-900'>Consequence of Disruption</th></tr>
+              <tr><th class='p-3 border-r border-emerald-900'>Cycle</th> <th class='p-3 border-r border-emerald-900'>Major Reservoir</th> <th class='p-3 border-r border-emerald-900'>Anthropogenic Flux Perturbation</th> <th class='p-3 border-r border-emerald-900'>Consequence of Disruption</th> </tr>
             </thead>
             <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Carbon ($C$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Ocean DIC, Lithosphere</td><td class='p-3 border-r border-emerald-900 font-mono'>$+10.5\,\text{Gt C/yr}$ (fossil fuels + deforestation)</td><td class='p-3 border-r border-emerald-900 font-mono'>Ocean acidification, atmospheric greenhouse warming</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Nitrogen ($N$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Atmosphere ($N_2$)</td><td class='p-3 border-r border-emerald-900 font-mono'>$+150\,\text{Tg N/yr}$ (Haber-Bosch fertilizer)</td><td class='p-3 border-r border-emerald-900 font-mono'>Coastal eutrophication, hypoxic dead zones, $N_2O$ greenhouse forcing</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Phosphorus ($P$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Apatite rocks (no gas phase)</td><td class='p-3 border-r border-emerald-900 font-mono'>$+25\,\text{Tg P/yr}$ (phosphate mining)</td><td class='p-3 border-r border-emerald-900 font-mono'>Irreversible freshwater eutrophication, peak phosphorus resource depletion</td></tr><tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Sulfur ($S$)</td><td class='p-3 border-r border-emerald-900 font-mono'>Sedimentary pyrite & evaporites</td><td class='p-3 border-r border-emerald-900 font-mono'>$+100\,\text{Tg S/yr}$ (coal/oil refining)</td><td class='p-3 border-r border-emerald-900 font-mono'>Acid deposition ($H_2SO_4$), soil cation leaching, forest decline</td></tr>
+              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Carbon ($C$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Ocean DIC, Lithosphere</td> <td class='p-3 border-r border-emerald-900 font-mono'>$+10.5\,\text{Gt C/yr}$ (fossil fuels + deforestation)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Ocean acidification, atmospheric greenhouse warming</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Nitrogen ($N$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Atmosphere ($N_2$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$+150\,\text{Tg N/yr}$ (Haber-Bosch fertilizer)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Coastal eutrophication, hypoxic dead zones, $N_2O$ greenhouse forcing</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Phosphorus ($P$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Apatite rocks (no gas phase)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$+25\,\text{Tg P/yr}$ (phosphate mining)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Irreversible freshwater eutrophication, peak phosphorus resource depletion</td> </tr>
+<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Sulfur ($S$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Sedimentary pyrite & evaporites</td> <td class='p-3 border-r border-emerald-900 font-mono'>$+100\,\text{Tg S/yr}$ (coal/oil refining)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Acid deposition ($H_2SO_4$), soil cation leaching, forest decline</td> </tr>
+
             </tbody>
           </table>
         </div>
