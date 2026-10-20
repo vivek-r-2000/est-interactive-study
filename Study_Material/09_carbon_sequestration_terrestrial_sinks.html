@@ -48,11 +48,6 @@
     box-shadow: 0 10px 30px -10px var(--primary-glow);
     transform: translateY(-2px);
   }
-  .eco-card-static {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-  }
 
   /* Badges */
   .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
@@ -123,7 +118,7 @@
   /* Layout */
   #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
   #sidebar {
-    width: 250px; min-width: 250px; background: #040b08;
+    width: 270px; min-width: 270px; background: #040b08;
     border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
     display: flex; flex-direction: column; gap: 2px;
   }
@@ -142,13 +137,13 @@
     flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
     display: flex; flex-direction: column; align-items: center;
   }
-  .card-screen { display: none; width: 100%; max-width: 900px; animation: fadeIn .25s ease; }
+  .card-screen { display: none; width: 100%; max-width: 950px; animation: fadeIn .25s ease; }
   .card-screen.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
 
   /* Nav Bar */
   #nav-bar {
-    position: fixed; bottom: 0; left: 250px; right: 0;
+    position: fixed; bottom: 0; left: 270px; right: 0;
     background: #040a07; border-top: 1px solid var(--border);
     display: flex; align-items: center; justify-content: center; gap: 16px;
     padding: 12px 24px; z-index: 40;
@@ -187,32 +182,32 @@
       
         <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
           <span class="sidebar-dot"></span>
-          <span class="truncate">1. Big Picture & Intuition</span>
+          <span class="truncate">1. Lecture Scope & Roadmap</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
           <span class="sidebar-dot"></span>
-          <span class="truncate">2. Scientific Foundations</span>
+          <span class="truncate">2. [Slides 01–08] Glacial Retreat, Atmospheric CO2 & Global Carbon Budget Partitioning</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Diagram Breakdown & Analysis</span>
+          <span class="truncate">3. [Slides 09–15] Forest Carbon Stocks, Gross Deforestation & Landsat Grid Monitoring</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
           <span class="sidebar-dot"></span>
-          <span class="truncate">4. Math & Empirical Tables</span>
+          <span class="truncate">4. [Slides 16–25] Soil Organic Carbon & Agroforestry Practices</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
           <span class="sidebar-dot"></span>
-          <span class="truncate">5. Video Masterclass</span>
+          <span class="truncate">5. [Slides 26–34] Forest Productivity vs. Age, India's Afforestation & Infapro / Plan Vivo</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
           <span class="sidebar-dot"></span>
-          <span class="truncate">6. Interactive Simulator</span>
+          <span class="truncate">6. Interactive Simulator Lab</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
@@ -232,7 +227,7 @@
         
         <div class="sidebar-link " onclick="goToCard(9)" id="slink_9">
           <span class="sidebar-dot"></span>
-          <span class="truncate">10. Complete Slide Gallery (34 Slides)</span>
+          <span class="truncate">10. Slide Quick-Jump Index (34 Slides)</span>
         </div>
         
     </nav>
@@ -240,253 +235,678 @@
     <!-- MAIN VIEW -->
     <main id="main">
       
-    <section class="card-screen active" data-title="Big Picture & Intuition">
+    <section class="card-screen active" data-title="1. Lecture Scope & Roadmap">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 09 • Fundamental Concept</span>
-          <span class="text-xs text-slate-400">• Intermediate • 45 mins</span>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 09 • Syllabus Roadmap</span>
+            <span class="text-xs text-slate-400">• Intermediate • 45 mins</span>
+          </div>
+          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 34 Slides Covered Across 4 Study Units</span>
         </div>
+
         <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Carbon Sequestration & Terrestrial Sinks</h2>
         <div class="text-emerald-400 text-sm font-semibold mb-4">Biological Pumping, Soil Humification, Biochar, and Geological Mineralization</div>
         
-        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-sm leading-relaxed">
-          <strong>💡 Why This Topic Matters:</strong><br/>
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-xs md:text-sm leading-relaxed">
+          <strong class="text-emerald-300 block mb-1">💡 Why This Lecture Matters:</strong>
           Reaching global and national net-zero targets requires both emissions abatement and active carbon removal. Terrestrial ecosystems currently absorb approximately 30% of anthropogenic $CO_2$ emissions. Maximizing biological sinks (afforestation, soil organic carbon enhancement, biochar addition) and engineered geological carbon capture and storage (CCS) provides the technical toolkit for net-negative emissions.
         </div>
 
-        <div class="space-y-2">
-          
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Biosphere</span>
-            <strong class="text-emerald-300 text-sm">Biological Terrestrial Sinks</strong>
+        <div class="mb-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Lecture Slide Study Units</span>
+            <span class="text-[11px] text-slate-400">Click any unit to jump directly to its slides</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Photosynthetic assimilation: $6CO_2 + 6H_2O + h\nu \to C_6H_{12}O_6 + 6O_2$. Carbon is allocated to above-ground woody biomass, fine roots, and exudates into the rhizosphere.</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Soil</span>
-            <strong class="text-emerald-300 text-sm">Soil Organic Carbon (SOC)</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Soils hold $>1500\,\text{Gt C}$, more than the atmosphere and vegetation combined. Humification converts labile organic matter into recalcitrant organo-mineral complexes with decadal-to-century permanence.</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Geology</span>
-            <strong class="text-emerald-300 text-sm">Geological CCS & Mineralization</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Capturing $CO_2$ from flue gases, compressing into supercritical fluid ($P > 73.9\,\text{bar}, T > 31.1^\circ\text{C}$), and injecting into deep saline formations or basalt rocks where in-situ mineral carbonation locks it permanently as solid calcite ($CaCO_3$).</p>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Scientific Foundations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-teal inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Core Mechanics</div>
-        <h2 class="text-2xl font-black text-white mb-4">Thermodynamics of Mineral Carbonation & Geological Trapping</h2>
-        <div class="text-sm leading-relaxed text-slate-200">
-          
-            <p class="mb-3">In geological storage, four progressive trapping mechanisms ensure containment security over time:</p>
-            <ol class="list-decimal pl-5 space-y-2 mb-4 text-emerald-200/90 text-sm">
-              <li><strong>Structural & Stratigraphic Trapping:</strong> Physical capping beneath an impermeable caprock shale or clay layer (immediate security).</li>
-              <li><strong>Residual Trapping:</strong> Capillary forces trap disconnected microscopic droplets of supercritical $CO_2$ in pore throats (decades).</li>
-              <li><strong>Solubility Trapping:</strong> Supercritical $CO_2$ dissolves into formation brine ($CO_2 + H_2O \leftrightarrow H_2CO_3$), increasing brine density and causing it to sink downward, eliminating buoyancy risk (centuries).</li>
-              <li><strong>Mineral Trapping (Permanent):</strong> Dissolved carbonic acid reacts with divalent metal cations in basalt / ultramafic formations ($Ca^{2+}, Mg^{2+}, Fe^{2+}$) to precipitate solid carbonate minerals (e.g. the Carbfix process in Iceland):
-                <br/>$$\text{Basalt: } (Ca, Mg)SiO_3 + CO_2 \longrightarrow (Ca, Mg)CO_3 \downarrow + SiO_2$$
-              </li>
-            </ol>
-            <p class="text-sm">Biochar produced via slow pyrolysis ($450-600^\circ\text{C}$) of biomass converts labile cellulose and lignin into condensed aromatic carbon rings with a mean residence time exceeding 500–1000 years.</p>
+          <div class="space-y-2">
             
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(1)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 01–08</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Glacial Retreat, Atmospheric CO2 & Global Carbon Budget Partitioning</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Quantifies empirical cryosphere retreat (Muir Glacier) and the global partitioning of anthropogenic carbon emissions.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(2)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 09–15</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Forest Carbon Stocks, Gross Deforestation & Landsat Grid Monitoring</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Formulates forest biomass carbon conversion, global forest extent (4.06B ha), and satellite carbon stock tracking.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(3)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 16–25</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Soil Organic Carbon & Agroforestry Practices</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Analyzes the massive soil carbon reservoir and agricultural sequestration techniques: windbreaks, riparian buffers, and silvopasture.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(4)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 26–34</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Forest Productivity vs. Age, India's Afforestation & Infapro / Plan Vivo</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Examines forest growth maturation curves, India's 65.45 Mha potential, and international carbon projects in Malaysia and Mexico.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+          </div>
         </div>
       </div>
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Diagram Breakdown">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
-          <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
-        </div>
-        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
-        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
-        
-        <div>
-          
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
-              <h3 class="text-base font-bold text-white">Glacial Recession & Terrestrial Cryosphere Mass Loss</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-9- Carbon sequestration.pdf, Slide 4</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_09/diagram_01.jpeg', 'Glacial Recession &amp; Terrestrial Cryosphere Mass Loss')">
-              <img src="assets/diagrams/lec_09/diagram_01.jpeg" alt="Glacial Recession &amp; Terrestrial Cryosphere Mass Loss" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
-              </div>
-            </div>
-
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">Historical photographic and topographic comparative transect of Muir Glacier showing dramatic multi-kilometer retreat between 1941 and modern times.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Visualizes the physical reality of cryospheric shrinkage. Glaciers act as natural freshwater storage towers; recession alters seasonal river discharge hydrographs from summer melt-dominated flows to flash winter floods followed by severe summer water shortages.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Glacier Mass Balance: $B_n = \int (A - M)\,dt$, where $A$ is accumulation (snowfall) and $M$ is ablation (melting and sublimation). Negative mass balance shifts the Equilibrium Line Altitude (ELA) upslope.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Glacial retreat initially causes a temporary <em>increase</em> in downstream river discharge ('peak water') before experiencing permanent, irreversible flow collapse.
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
-              <h3 class="text-base font-bold text-white">Terrestrial Forest Carbon Stock & Flux Dynamics</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-9- Carbon sequestration.pdf, Slide 15</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_09/diagram_02.jpeg', 'Terrestrial Forest Carbon Stock &amp; Flux Dynamics')">
-              <img src="assets/diagrams/lec_09/diagram_02.jpeg" alt="Terrestrial Forest Carbon Stock &amp; Flux Dynamics" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
-              </div>
-            </div>
-
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">A global 1° × 1° spatial modeling grid evaluating above-ground biomass, root carbon, and soil organic carbon flux across diverse forest biomes.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Quantifies Net Ecosystem Productivity ($NEP = GPP - R_a - R_h$), where $GPP$ is gross primary productivity, $R_a$ is autotrophic plant respiration, and $R_h$ is heterotrophic microbial soil respiration. In mature climax forests, $NEP \to 0$ (carbon saturation), whereas young, actively growing secondary forests exhibit high net sequestration rates.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Carbon residence time in woody biomass: $\tau = \frac{B_{\text{woody}}}{NPP}$. For tropical rainforests, $\tau \approx 30 - 50\,\text{years}$; for boreal conifer forests, $\tau \approx 80 - 120\,\text{years}$.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Planting trees in high-latitude snow-covered tundra (afforestation) can actually cause planetary <em>warming</em> by replacing high-albedo bright snow with dark tree canopies, outweighing the carbon sequestration benefit.
-          </div>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Mathematical Formulations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Rigorous Quantitative Model</div>
-        <h2 class="text-2xl font-black text-white mb-4">Sequestration Flux & Permanence Mathematics</h2>
-        
-        <div class="p-4 bg-[#05120c] border border-emerald-900/80 rounded-xl text-center my-4 overflow-x-auto">
-          <div class="text-lg md:text-xl font-mono text-emerald-300">
-            $$C_{\text{permanence}}(t) = C_0 \cdot e^{-k_{\text{decomp}} t}, \quad \Delta C_{\text{geo}} = \int_0^T \dot{m}_{CO_2}(t)\,dt$$
-          </div>
-        </div>
-        <p class="text-xs text-slate-300 mb-6">Where $k_{\text{decomp}}$ is the microbial decomposition rate constant. Labile soil carbon has half-life $t_{1/2} \sim 1-5\,\text{years}$; biochar has $t_{1/2} > 500\,\text{years}$; mineralized calcite has permanence $> 100,000\,\text{years}$.</p>
-
-        <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
-          <table class="w-full text-xs text-left text-slate-300">
-            <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Sequestration Method</th> <th class='p-3 border-r border-emerald-900'>Capture Cost ($/t $CO_2$)</th> <th class='p-3 border-r border-emerald-900'>Global Potential (Gt $CO_2$/yr)</th> <th class='p-3 border-r border-emerald-900'>Permanence / Residence Time</th> </tr>
-            </thead>
-            <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Afforestation & Reforestation</td> <td class='p-3 border-r border-emerald-900 font-mono'>$10 - $50</td> <td class='p-3 border-r border-emerald-900 font-mono'>1.5 – 3.5 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Decades to centuries (vulnerable to wildfires & pests)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Soil Carbon Enhancement (SOC)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$20 - $80</td> <td class='p-3 border-r border-emerald-900 font-mono'>1.0 – 2.0 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Decades (sensitive to tillage and soil temperature)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Biochar Soil Amendment</td> <td class='p-3 border-r border-emerald-900 font-mono'>$50 - $150</td> <td class='p-3 border-r border-emerald-900 font-mono'>0.5 – 1.8 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Centuries to millennia (highly recalcitrant)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Geological CCS (Saline Aquifers)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$60 - $120</td> <td class='p-3 border-r border-emerald-900 font-mono'>2.0 – 5.0 Gt</td> <td class='p-3 border-r border-emerald-900 font-mono'>Thousands of years (>99% retained over 1000 yr)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>In-situ Basalt Mineralization</td> <td class='p-3 border-r border-emerald-900 font-mono'>$100 - $200</td> <td class='p-3 border-r border-emerald-900 font-mono'>Enormous capacity (>1000 Gt)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Permanent (>100,000 yr, thermodynamically stable rock)</td> </tr>
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    
-
-        <section class="card-screen" data-title="Video Masterclass">
+        <section class="card-screen" data-title="Unit 1: Slides 01–08">
           <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-            <div class="badge-cyan inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Audiovisual Deep-Dive</div>
-            <h2 class="text-2xl font-black text-white mb-2">Lecture Videos & Multimedia Documentaries</h2>
-            <p class="text-xs text-slate-300 mb-6">Referenced directly from the course slides for active conceptual reinforcement.</p>
-            
-            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
-              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
-                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
-                </span>
-                <a href="https://www.youtube.com/watch?v=-xhpzV34ovA" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 01–08</span>
+                <span class="text-xs text-slate-400">• Unit 1 of 4 • Topic Walkthrough</span>
               </div>
-              <div class="relative w-full aspect-video bg-black">
-                <iframe src="https://www.youtube-nocookie.com/embed/-xhpzV34ovA" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 09: Carbon Sequestration & Sinks</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Glacial Retreat, Atmospheric CO2 & Global Carbon Budget Partitioning</h2>
+            <p class="text-xs text-slate-300 mb-6">Quantifies empirical cryosphere retreat (Muir Glacier) and the global partitioning of anthropogenic carbon emissions.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u09_1" class="text-emerald-400 font-bold font-mono">#1</span> of 8 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_1', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_1', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u09_1 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 0)">
+              <span>#1</span> <span class="hidden sm:inline text-[11px] opacity-80">Class-9</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 1)">
+              <span>#2</span> <span class="hidden sm:inline text-[11px] opacity-80">Muir Glacier, August...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 2)">
+              <span>#3</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 3</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 3)">
+              <span>#4</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 4</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 4)">
+              <span>#5</span> <span class="hidden sm:inline text-[11px] opacity-80">Source: https://www....</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 5)">
+              <span>#6</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 6</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 6)">
+              <span>#7</span> <span class="hidden sm:inline text-[11px] opacity-80">Annual fluxes of CO₂...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_1', 7)">
+              <span>#8</span> <span class="hidden sm:inline text-[11px] opacity-80">Carbon Pools and Flu...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u09_1_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_09/slide_01.jpg', 'Slide 1: Class-9')">
+                  <img id="u09_1_slide_img" src="assets/slides/lec_09/slide_01.jpg" alt="Slide 1" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u09_1_slide_title" class="text-sm md:text-base font-bold text-white">Slide 1: Class-9</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u09_1_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Carbon Sequestration</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">5th October 2026</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u09_1_slide_takeaway" class="text-slate-300 leading-relaxed">Class-9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Glacial Retreat, Atmospheric CO2 & Global Carbon Budget Partitioning</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Empirical Cryosphere Evidence (Slide 2):</strong> Paired historical photography of Alaska's Muir Glacier shows catastrophic retreat: in August 1941, the glacier filled the entire bay with ice >100 meters thick; by August 2004, the glacier had retreated over 12 kilometers out of the field of view, replaced by ocean water and recolonizing temperate vegetation.</p>
+          <p><strong>2. Atmospheric Carbon Acceleration (Slide 5):</strong> Continuous measurements at Mauna Loa show atmospheric $CO_2$ surging from pre-industrial levels of ~280 ppm to over 419 ppm today, rising at an unprecedented rate of >2.5 ppm/year.</p>
+          <p><strong>3. The Global Carbon Budget Partitioning (Slides 7–8):</strong> Anthropogenic emissions from fossil fuels and land-use change (~40 Gt $CO_2$/yr) are partitioned among three major Earth system sinks:
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Atmosphere:</strong> Absorbs approximately 40% of emissions, driving ongoing global radiative forcing.</li>
+              <li><strong>Oceanic Sink:</strong> Absorbs ~30% via chemical dissolution and the solubility pump, mitigating atmospheric warming at the cost of ocean acidification.</li>
+              <li><strong>Terrestrial Biosphere Sink:</strong> Absorbs ~30% through forest growth and vegetation carbon fertilization.</li>
+            </ul>
+          </p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\Delta C_{\text{atm}} = E_{\text{fossil}} + E_{\text{LUC}} - S_{\text{ocean}} - S_{\text{land}} \quad (40\% \text{ atm}, 30\% \text{ ocean}, 30\% \text{ land})$$
               </div>
             </div>
             
-            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
-              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
-                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
-                </span>
-                <a href="https://www.youtube.com/watch?v=wQzlhDzuWas" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
-              </div>
-              <div class="relative w-full aspect-video bg-black">
-                <iframe src="https://www.youtube-nocookie.com/embed/wQzlhDzuWas" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">State the exact global carbon emission partitioning: ~40% remains in the atmosphere, ~30% goes to oceans, and ~30% is taken up by terrestrial vegetation.</p>
               </div>
             </div>
-            
-            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
-              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
-                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
-                </span>
-                <a href="https://www.youtube.com/watch?v=CVwn0GkJvjI" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
-              </div>
-              <div class="relative w-full aspect-video bg-black">
-                <iframe src="https://www.youtube-nocookie.com/embed/CVwn0GkJvjI" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-            
           </div>
         </section>
         
 
-    <section class="card-screen" data-title="Interactive Simulator">
+        <section class="card-screen" data-title="Unit 2: Slides 09–15">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 09–15</span>
+                <span class="text-xs text-slate-400">• Unit 2 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 09: Carbon Sequestration & Sinks</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Forest Carbon Stocks, Gross Deforestation & Landsat Grid Monitoring</h2>
+            <p class="text-xs text-slate-300 mb-6">Formulates forest biomass carbon conversion, global forest extent (4.06B ha), and satellite carbon stock tracking.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u09_2" class="text-emerald-400 font-bold font-mono">#9</span> of 7 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_2', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_2', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u09_2 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 0)">
+              <span>#9</span> <span class="hidden sm:inline text-[11px] opacity-80">Forest scale: Stocks...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 1)">
+              <span>#10</span> <span class="hidden sm:inline text-[11px] opacity-80">Global Forest Extent...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 2)">
+              <span>#11</span> <span class="hidden sm:inline text-[11px] opacity-80">Forest Loss and Defo...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 3)">
+              <span>#12</span> <span class="hidden sm:inline text-[11px] opacity-80">Most deforestation o...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 4)">
+              <span>#13</span> <span class="hidden sm:inline text-[11px] opacity-80">•Tropical deforestat...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 5)">
+              <span>#14</span> <span class="hidden sm:inline text-[11px] opacity-80">Forests as a Carbon ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_2', 6)">
+              <span>#15</span> <span class="hidden sm:inline text-[11px] opacity-80">Forest extent, struc...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u09_2_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_09/slide_09.jpg', 'Slide 9: Forest scale: Stocks and fluxes')">
+                  <img id="u09_2_slide_img" src="assets/slides/lec_09/slide_09.jpg" alt="Slide 9" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u09_2_slide_title" class="text-sm md:text-base font-bold text-white">Slide 9: Forest scale: Stocks and fluxes</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u09_2_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">A forest = carbon stocks</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">1 kilogram of dry wood ≈ 0.5 kg of</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">carbon</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Aboveground biomass: 65 to 430 tC/ha</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Soils: 44 to 130 tC/ha</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Leaves</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Branches</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Dead wood</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u09_2_slide_takeaway" class="text-slate-300 leading-relaxed">Forest scale: Stocks and fluxes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Forest Carbon Stocks, Gross Deforestation & Landsat Grid Monitoring</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Forest Biomass Allometry (Slide 9):</strong> A living forest is an active carbon stock. In dry wood biomass, carbon content is remarkably constant: <strong>1 kilogram of dry wood contains $\approx 0.5$ kilograms of elemental carbon</strong> (the 50% carbon fraction rule). To convert dry biomass to $CO_2$ equivalents, multiply by the stoichiometric ratio $\frac{44}{12} \approx 3.67$.</p>
+          <p><strong>2. Global Forest Coverage & Emissions (Slides 10–14):</strong>
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li>Forests cover 4.06 billion hectares (31% of Earth's total land area).</li>
+              <li>Total forest carbon storage stands at 662 billion tonnes of carbon (equivalent to ~2.4 trillion tonnes of $CO_2$).</li>
+              <li>Net forest loss between 2010 and 2020 averaged 4.7 million hectares/year, with gross tropical deforestation reaching ~10 million hectares/year.</li>
+              <li>Tropical deforestation releases 5.6 billion tonnes of $CO_2$ annually, while undisturbed forest regeneration sequestered 14.4 billion tonnes of $CO_2$/yr.</li>
+            </ul>
+          </p>
+          <p><strong>3. High-Resolution Landsat 1° Grid Cell Carbon Monitoring (Slide 15):</strong> Combining Landsat Analysis Ready Data (ARD) with spaceborne LiDAR (GEDI) enables automated tracking of mean canopy height (meters), net forest area change, and degradation across global $1^\circ \times 1^\circ$ spatial grids.</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$C_{\text{stock}} = \text{Biomass} \times 0.50 \quad | \quad CO_2e = C_{\text{stock}} \times \frac{44}{12} = C_{\text{stock}} \times 3.667$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Memorize the dry wood-to-carbon ratio (0.50) and the stoichiometric conversion factor to $CO_2$ (3.67). Know the global forest area: 4.06 billion hectares.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 3: Slides 16–25">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 16–25</span>
+                <span class="text-xs text-slate-400">• Unit 3 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 09: Carbon Sequestration & Sinks</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Soil Organic Carbon & Agroforestry Practices</h2>
+            <p class="text-xs text-slate-300 mb-6">Analyzes the massive soil carbon reservoir and agricultural sequestration techniques: windbreaks, riparian buffers, and silvopasture.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u09_3" class="text-emerald-400 font-bold font-mono">#16</span> of 10 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_3', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_3', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u09_3 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 0)">
+              <span>#16</span> <span class="hidden sm:inline text-[11px] opacity-80">Carbon Facts</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 1)">
+              <span>#17</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 17</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 2)">
+              <span>#18</span> <span class="hidden sm:inline text-[11px] opacity-80">(A) soil organic car...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 3)">
+              <span>#19</span> <span class="hidden sm:inline text-[11px] opacity-80">Carbon Sequestration...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 4)">
+              <span>#20</span> <span class="hidden sm:inline text-[11px] opacity-80">Activities to Increa...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 5)">
+              <span>#21</span> <span class="hidden sm:inline text-[11px] opacity-80">Globally forestry ha...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 6)">
+              <span>#22</span> <span class="hidden sm:inline text-[11px] opacity-80">Increase Agroforestry</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 7)">
+              <span>#23</span> <span class="hidden sm:inline text-[11px] opacity-80">Riparian forest buff...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 8)">
+              <span>#24</span> <span class="hidden sm:inline text-[11px] opacity-80">Silvopasture stores ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_3', 9)">
+              <span>#25</span> <span class="hidden sm:inline text-[11px] opacity-80">Short-rotation plant...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u09_3_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_09/slide_16.jpg', 'Slide 16: Carbon Facts')">
+                  <img id="u09_3_slide_img" src="assets/slides/lec_09/slide_16.jpg" alt="Slide 16" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u09_3_slide_title" class="text-sm md:text-base font-bold text-white">Slide 16: Carbon Facts</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u09_3_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">• Carbon dioxide concentrations have increased substantially</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">since the beginning of the industrial era, rising from an</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">annual average of 280 ppm in the late 1700s to 419 ppm</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">in 2023 -a 49 percent increase. Almost all of this increase</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">is due to human activities..</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">• Soils store about 3-4X as much carbon as does terrestrial</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">vegetation</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">• 27% of this carbon is found in tundra and boreal forest</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u09_3_slide_takeaway" class="text-slate-300 leading-relaxed">Carbon Facts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Soil Organic Carbon & Agroforestry Practices</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Soil Organic Carbon (SOC) Reservoir (Slide 18):</strong> The Harmonized World Soil Database (HWSD) reveals that topsoil (0–1 meter depth) stores approximately 1,500 to 2,000 gigatons of carbon—more than double the entire carbon content of the atmosphere. Agricultural tilling aerates soil, accelerating microbial decomposition of humus and venting huge pulses of $CO_2$.</p>
+          <p><strong>2. Agroforestry Sequestration Systems (Slides 21–25):</strong>
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Windbreaks (Slide 22):</strong> Linear rows of trees and shrubs protecting crops from wind erosion while accumulating woody biomass carbon.</li>
+              <li><strong>Riparian Forest Buffers (Slide 23):</strong> Multi-canopy vegetated strips along streams that intercept agrochemical nitrogen runoff while building root biomass.</li>
+              <li><strong>Silvopasture (Slide 24):</strong> The intentional integration of trees, forage, and grazing livestock on the same land parcel; sequesters up to 5–10 times more carbon per hectare than open pasture.</li>
+              <li><strong>Short-Rotation Eucalyptus Plantations (Slide 25):</strong> Fast-growing species with high photosynthetic carbon capture velocity under intensive rotation cycles.</li>
+            </ul>
+          </p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\text{SOC Stock } (tC/ha) = \text{SOC}\% \times \text{Bulk Density } (g/cm^3) \times \text{Depth } (cm) \times (1 - \text{Gravel}\%/100)$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Why does soil store more carbon than the atmosphere and living vegetation combined? Be prepared to define the four major agroforestry practices: windbreaks, riparian buffers, silvopasture, and alley cropping.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 4: Slides 26–34">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 26–34</span>
+                <span class="text-xs text-slate-400">• Unit 4 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 09: Carbon Sequestration & Sinks</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Forest Productivity vs. Age, India's Afforestation & Infapro / Plan Vivo</h2>
+            <p class="text-xs text-slate-300 mb-6">Examines forest growth maturation curves, India's 65.45 Mha potential, and international carbon projects in Malaysia and Mexico.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u09_4" class="text-emerald-400 font-bold font-mono">#26</span> of 9 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_4', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u09_4', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u09_4 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 0)">
+              <span>#26</span> <span class="hidden sm:inline text-[11px] opacity-80">A forest that is gro...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 1)">
+              <span>#27</span> <span class="hidden sm:inline text-[11px] opacity-80">CARBON SEQUESTRATION...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 2)">
+              <span>#28</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 28</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 3)">
+              <span>#29</span> <span class="hidden sm:inline text-[11px] opacity-80">The productivity of ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 4)">
+              <span>#30</span> <span class="hidden sm:inline text-[11px] opacity-80">In India, there is a...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 5)">
+              <span>#31</span> <span class="hidden sm:inline text-[11px] opacity-80">Infapro, Malaysia</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 6)">
+              <span>#32</span> <span class="hidden sm:inline text-[11px] opacity-80">Plan Vivo, Mexico</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 7)">
+              <span>#33</span> <span class="hidden sm:inline text-[11px] opacity-80">Plan Vivo Activities...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u09_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u09_4', 8)">
+              <span>#34</span> <span class="hidden sm:inline text-[11px] opacity-80">https://www.facebook...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u09_4_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_09/slide_26.jpg', 'Slide 26: A forest that is growing can remove 5-11 tons CO2 per hectare')">
+                  <img id="u09_4_slide_img" src="assets/slides/lec_09/slide_26.jpg" alt="Slide 26" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u09_4_slide_title" class="text-sm md:text-base font-bold text-white">Slide 26: A forest that is growing can remove 5-11 tons CO2 per hectare</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u09_4_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">per year,</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Forest plantations could sequester up to 10.7 billion tons CO2</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">per year for less than $2 per ton CO2 (Sedjo 1989 – first</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">analysis)</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">0.7 – 2.2 billion tons CO2 can be sequestered globally per year</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">for $8-$30 per ton CO2 (Sohngen and Mendelsohn , 2003,</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">2007)</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">7.0 billion tons CO2 per year may be sequestered globally, but</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u09_4_slide_takeaway" class="text-slate-300 leading-relaxed">A forest that is growing can remove 5-11 tons CO2 per hectare</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Forest Productivity vs. Age, India's Afforestation & Infapro / Plan Vivo</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Forest Productivity vs. Age Curve (Slide 29):</strong> A young, growing forest acts as a vigorous net carbon sink, sequestering 5–11 tons of $CO_2$/ha/year. Sequestration rate peaks between 25 and 75 years of age depending on forest type. At biological maturity (climax forest), gross primary productivity ($GPP$) is balanced by autotrophic and heterotrophic respiration ($NPP \approx 0$), reaching a steady-state carbon pool rather than a net accumulator.</p>
+          <p><strong>2. India's Carbon Sequestration Potential (Slides 27, 30):</strong> Total forest biomass in Indian forests was estimated at 8,357.9 Mt (1986). India possesses 65.45 million hectares (Mha) of land categories available for afforestation, with degraded open forests comprising 25% of this land base.</p>
+          <p><strong>3. Landmark International Forestry Carbon Projects (Slides 31–33):</strong>
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Infapro Project, Sabah, Malaysia (Slide 31):</strong> 25,000 hectares of logged lowland dipterocarp rainforest rehabilitated via enrichment planting of native species, funded by the Dutch FACE Foundation (Forests Absorbing Carbon dioxide Emissions).</li>
+              <li><strong>Plan Vivo, Chiapas, Mexico (Slides 32–33):</strong> A community-led forest carbon initiative in southern Mexico where local indigenous farmer cooperatives were paid directly for reforestation and agroforestry ($15 million investment).</li>
+            </ul>
+          </p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$NEP = GPP - R_{\text{autotrophic}} - R_{\text{heterotrophic}} \quad (NEP \to 0 \text{ as forest reaches climax maturity})$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+                <div class="mt-4 p-4 bg-[#05120d] border border-emerald-900/80 rounded-xl">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-emerald-300 font-mono flex items-center gap-1.5">
+                      <span>▶️</span> Recommended Video Reference
+                    </span>
+                    <a href="https://www.youtube.com/watch?v=-xhpzV34ovA" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+                  </div>
+                  <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                    <iframe src="https://www.youtube-nocookie.com/embed/-xhpzV34ovA" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+                
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Why do mature climax forests cease to be strong net carbon sinks? (NEP approaches zero because total ecosystem respiration balances photosynthesis). Know the net available afforestation land in India: 65.45 Mha.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+    <section class="card-screen" data-title="6. Interactive Simulator Lab">
       <div class="mb-6">
         
     <div class="eco-card p-6 border-emerald-800/60">
@@ -556,23 +976,23 @@
     </section>
     
 
-    <section class="card-screen" data-title="Active Recall Flashcards">
+    <section class="card-screen" data-title="7. Active Recall Flashcards">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
         <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
-        <p class="text-xs text-slate-300 mb-6">Test yourself on essential definitions, reactions, and principles before flipping.</p>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential slide definitions, reactions, and principles before flipping.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
         <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What are the critical temperature and pressure conditions for supercritical $CO_2$?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What are the critical temperature and pressure conditions for supercritical $CO_2$?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Critical temperature $T_c = 31.1^\circ\text{C}$ and critical pressure $P_c = 73.9\,\text{bar}$ ($7.39\,\text{MPa}$). Under these reservoir conditions, $CO_2$ has gas-like diffusivity and liquid-like density.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Critical temperature $T_c = 31.1^\circ\text{C}$ and critical pressure $P_c = 73.9\,\text{bar}$ ($7.39\,\text{MPa}$). Under these reservoir conditions, $CO_2$ has gas-like diffusivity and liquid-like density.</div>
             </div>
           </div>
         </div>
@@ -581,12 +1001,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What is the mineral carbonation reaction between olivine and carbon dioxide?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What is the mineral carbonation reaction between olivine and carbon dioxide?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">$Mg_2SiO_4 + 2CO_2 \longrightarrow 2MgCO_3 + SiO_2 + \text{Heat}$. This exothermic reaction permanently binds $CO_2$ into magnesite stone.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">$Mg_2SiO_4 + 2CO_2 \longrightarrow 2MgCO_3 + SiO_2 + \text{Heat}$. This exothermic reaction permanently binds $CO_2$ into magnesite stone.</div>
             </div>
           </div>
         </div>
@@ -595,12 +1015,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">Why does dissolved $CO_2$ in brine enhance geological storage safety over time?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">Why does dissolved $CO_2$ in brine enhance geological storage safety over time?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Because $CO_2$-saturated formation brine is approximately 1% denser than pristine brine. It naturally sinks toward the bottom of the geological reservoir rather than rising toward the surface.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Because $CO_2$-saturated formation brine is approximately 1% denser than pristine brine. It naturally sinks toward the bottom of the geological reservoir rather than rising toward the surface.</div>
             </div>
           </div>
         </div>
@@ -610,7 +1030,7 @@
     </section>
     
 
-    <section class="card-screen" data-title="Exam Traps & Pitfalls">
+    <section class="card-screen" data-title="8. High-Yield Exam Traps">
       <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
         <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
         <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
@@ -622,11 +1042,11 @@
     </section>
     
 
-    <section class="card-screen" data-title="Concept Check Quiz">
+    <section class="card-screen" data-title="9. Concept Check Quiz">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
         <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
-        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions.</p>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions from the lecture slides.</p>
         <div>
           
         <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
@@ -696,562 +1116,562 @@
     </section>
     
 
-    <section class="card-screen" data-title="Slide Reference Gallery">
+    <section class="card-screen" data-title="10. Slide Quick-Jump Index">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
           <div>
-            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Primary Course Slides</div>
-            <h2 class="text-2xl font-black text-white">Complete Slide Reference Gallery</h2>
-            <p class="text-xs text-slate-300">All 34 slides from the lecture presentations for instant reference and review.</p>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Master Slide Reference</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Index</h2>
+            <p class="text-xs text-slate-300">Quick visual reference of all 34 slides across this lecture deck with PDF downloads.</p>
           </div>
           <div class="flex flex-wrap gap-2">
             <a href='../Lecture_Slides/Class-9- Carbon sequestration.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-9- Carbon sequestration.pdf</span></a>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_01.jpg', 'Slide 1: Class-9')">
-            <img src="assets/slides/lec_09/slide_01.jpg" alt="Slide 1" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_01.jpg" alt="Slide 1" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #1</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Class-9">Class-9</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Class-9">Class-9</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_02.jpg', 'Slide 2: Muir Glacier, August, 1941')">
-            <img src="assets/slides/lec_09/slide_02.jpg" alt="Slide 2" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_02.jpg" alt="Slide 2" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #2</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Muir Glacier, August, 1941">Muir Glacier, August, 1941</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Muir Glacier, August, 1941">Muir Glacier, August, 1941</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_03.jpg', 'Slide 3: Slide 3')">
-            <img src="assets/slides/lec_09/slide_03.jpg" alt="Slide 3" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_03.jpg" alt="Slide 3" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #3</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 3">Slide 3</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 3">Slide 3</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_04.jpg', 'Slide 4: Slide 4')">
-            <img src="assets/slides/lec_09/slide_04.jpg" alt="Slide 4" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_04.jpg" alt="Slide 4" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #4</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 4">Slide 4</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 4">Slide 4</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_05.jpg', 'Slide 5: Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing...')">
-            <img src="assets/slides/lec_09/slide_05.jpg" alt="Slide 5" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_05.jpg', 'Slide 5: Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-...')">
+            <img src="assets/slides/lec_09/slide_05.jpg" alt="Slide 5" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #5</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing...">Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-...">Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_06.jpg', 'Slide 6: Slide 6')">
-            <img src="assets/slides/lec_09/slide_06.jpg" alt="Slide 6" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_06.jpg" alt="Slide 6" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #6</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 6">Slide 6</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 6">Slide 6</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_07.jpg', 'Slide 7: Annual fluxes of CO₂ and their changing sources (e.g. fossil f...')">
-            <img src="assets/slides/lec_09/slide_07.jpg" alt="Slide 7" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_07.jpg', 'Slide 7: Annual fluxes of CO₂ and their changing sources (e.g. fossil fuels)...')">
+            <img src="assets/slides/lec_09/slide_07.jpg" alt="Slide 7" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #7</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Annual fluxes of CO₂ and their changing sources (e.g. fossil f...">Annual fluxes of CO₂ and their changing sources (e.g. fossil f...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Annual fluxes of CO₂ and their changing sources (e.g. fossil fuels)...">Annual fluxes of CO₂ and their changing sources (e.g. fossil fuels)...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_08.jpg', 'Slide 8: Carbon Pools and Fluxes')">
-            <img src="assets/slides/lec_09/slide_08.jpg" alt="Slide 8" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_08.jpg" alt="Slide 8" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #8</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Carbon Pools and Fluxes">Carbon Pools and Fluxes</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Carbon Pools and Fluxes">Carbon Pools and Fluxes</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_09.jpg', 'Slide 9: Forest scale: Stocks and fluxes')">
-            <img src="assets/slides/lec_09/slide_09.jpg" alt="Slide 9" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_09.jpg" alt="Slide 9" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #9</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Forest scale: Stocks and fluxes">Forest scale: Stocks and fluxes</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Forest scale: Stocks and fluxes">Forest scale: Stocks and fluxes</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_10.jpg', 'Slide 10: Global Forest Extent &amp; Carbon Storage')">
-            <img src="assets/slides/lec_09/slide_10.jpg" alt="Slide 10" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_10.jpg" alt="Slide 10" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #10</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global Forest Extent &amp; Carbon Storage">Global Forest Extent & Carbon Storage</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Global Forest Extent &amp; Carbon Storage">Global Forest Extent & Carbon Storage</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_11.jpg', 'Slide 11: Forest Loss and Deforestation')">
-            <img src="assets/slides/lec_09/slide_11.jpg" alt="Slide 11" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_11.jpg" alt="Slide 11" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #11</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Forest Loss and Deforestation">Forest Loss and Deforestation</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Forest Loss and Deforestation">Forest Loss and Deforestation</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_12.jpg', 'Slide 12: Most deforestation occurs in the tropics')">
-            <img src="assets/slides/lec_09/slide_12.jpg" alt="Slide 12" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_12.jpg" alt="Slide 12" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #12</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Most deforestation occurs in the tropics">Most deforestation occurs in the tropics</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Most deforestation occurs in the tropics">Most deforestation occurs in the tropics</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_13.jpg', 'Slide 13: •Tropical deforestation emits 5.6 billion tonnes of CO₂ annually.')">
-            <img src="assets/slides/lec_09/slide_13.jpg" alt="Slide 13" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_13.jpg" alt="Slide 13" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #13</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="•Tropical deforestation emits 5.6 billion tonnes of CO₂ annually.">•Tropical deforestation emits 5.6 billion tonnes of CO₂ annually.</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="•Tropical deforestation emits 5.6 billion tonnes of CO₂ annually.">•Tropical deforestation emits 5.6 billion tonnes of CO₂ annually.</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_14.jpg', 'Slide 14: Forests as a Carbon Sink')">
-            <img src="assets/slides/lec_09/slide_14.jpg" alt="Slide 14" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_14.jpg" alt="Slide 14" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #14</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Forests as a Carbon Sink">Forests as a Carbon Sink</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Forests as a Carbon Sink">Forests as a Carbon Sink</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_15.jpg', 'Slide 15: Forest extent, structure, and dynamics for each 1 × 1° grid ce...')">
-            <img src="assets/slides/lec_09/slide_15.jpg" alt="Slide 15" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_15.jpg', 'Slide 15: Forest extent, structure, and dynamics for each 1 × 1° grid cell. (...')">
+            <img src="assets/slides/lec_09/slide_15.jpg" alt="Slide 15" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #15</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Forest extent, structure, and dynamics for each 1 × 1° grid ce...">Forest extent, structure, and dynamics for each 1 × 1° grid ce...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Forest extent, structure, and dynamics for each 1 × 1° grid cell. (...">Forest extent, structure, and dynamics for each 1 × 1° grid cell. (...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_16.jpg', 'Slide 16: Carbon Facts')">
-            <img src="assets/slides/lec_09/slide_16.jpg" alt="Slide 16" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_16.jpg" alt="Slide 16" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #16</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Carbon Facts">Carbon Facts</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Carbon Facts">Carbon Facts</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_17.jpg', 'Slide 17: Slide 17')">
-            <img src="assets/slides/lec_09/slide_17.jpg" alt="Slide 17" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_17.jpg" alt="Slide 17" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #17</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 17">Slide 17</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 17">Slide 17</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_18.jpg', 'Slide 18: (A) soil organic carbon to 1')">
-            <img src="assets/slides/lec_09/slide_18.jpg" alt="Slide 18" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_18.jpg" alt="Slide 18" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #18</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="(A) soil organic carbon to 1">(A) soil organic carbon to 1</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="(A) soil organic carbon to 1">(A) soil organic carbon to 1</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_19.jpg', 'Slide 19: Carbon Sequestration-What Is It?')">
-            <img src="assets/slides/lec_09/slide_19.jpg" alt="Slide 19" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_19.jpg" alt="Slide 19" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #19</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Carbon Sequestration-What Is It?">Carbon Sequestration-What Is It?</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Carbon Sequestration-What Is It?">Carbon Sequestration-What Is It?</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_20.jpg', 'Slide 20: Activities to Increase C Sequestration Above Baseline')">
-            <img src="assets/slides/lec_09/slide_20.jpg" alt="Slide 20" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_20.jpg" alt="Slide 20" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #20</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Activities to Increase C Sequestration Above Baseline">Activities to Increase C Sequestration Above Baseline</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Activities to Increase C Sequestration Above Baseline">Activities to Increase C Sequestration Above Baseline</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_21.jpg', 'Slide 21: Globally forestry has taken central stage as one of the')">
-            <img src="assets/slides/lec_09/slide_21.jpg" alt="Slide 21" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_21.jpg" alt="Slide 21" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #21</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Globally forestry has taken central stage as one of the">Globally forestry has taken central stage as one of the</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Globally forestry has taken central stage as one of the">Globally forestry has taken central stage as one of the</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_22.jpg', 'Slide 22: Increase Agroforestry')">
-            <img src="assets/slides/lec_09/slide_22.jpg" alt="Slide 22" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_22.jpg" alt="Slide 22" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #22</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Increase Agroforestry">Increase Agroforestry</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Increase Agroforestry">Increase Agroforestry</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_23.jpg', 'Slide 23: Riparian forest buffers store carbon')">
-            <img src="assets/slides/lec_09/slide_23.jpg" alt="Slide 23" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_23.jpg" alt="Slide 23" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #23</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Riparian forest buffers store carbon">Riparian forest buffers store carbon</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Riparian forest buffers store carbon">Riparian forest buffers store carbon</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_24.jpg', 'Slide 24: Silvopasture stores carbon while producing livestock')">
-            <img src="assets/slides/lec_09/slide_24.jpg" alt="Slide 24" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_24.jpg" alt="Slide 24" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #24</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Silvopasture stores carbon while producing livestock">Silvopasture stores carbon while producing livestock</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Silvopasture stores carbon while producing livestock">Silvopasture stores carbon while producing livestock</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_25.jpg', 'Slide 25: Short-rotation plantation systems with fast growing Eucalyptus...')">
-            <img src="assets/slides/lec_09/slide_25.jpg" alt="Slide 25" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_25.jpg', 'Slide 25: Short-rotation plantation systems with fast growing Eucalyptus sp. ...')">
+            <img src="assets/slides/lec_09/slide_25.jpg" alt="Slide 25" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #25</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Short-rotation plantation systems with fast growing Eucalyptus...">Short-rotation plantation systems with fast growing Eucalyptus...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Short-rotation plantation systems with fast growing Eucalyptus sp. ...">Short-rotation plantation systems with fast growing Eucalyptus sp. ...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_26.jpg', 'Slide 26: A forest that is growing can remove 5-11 tons CO2 per hectare')">
-            <img src="assets/slides/lec_09/slide_26.jpg" alt="Slide 26" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_26.jpg" alt="Slide 26" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #26</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="A forest that is growing can remove 5-11 tons CO2 per hectare">A forest that is growing can remove 5-11 tons CO2 per hectare</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="A forest that is growing can remove 5-11 tons CO2 per hectare">A forest that is growing can remove 5-11 tons CO2 per hectare</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_27.jpg', 'Slide 27: CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS')">
-            <img src="assets/slides/lec_09/slide_27.jpg" alt="Slide 27" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_27.jpg" alt="Slide 27" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #27</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS">CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS">CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_28.jpg', 'Slide 28: Slide 28')">
-            <img src="assets/slides/lec_09/slide_28.jpg" alt="Slide 28" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_28.jpg" alt="Slide 28" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #28</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 28">Slide 28</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 28">Slide 28</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_29.jpg', 'Slide 29: The productivity of any forest depends on the age of its veget...')">
-            <img src="assets/slides/lec_09/slide_29.jpg" alt="Slide 29" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_29.jpg', 'Slide 29: The productivity of any forest depends on the age of its vegetation...')">
+            <img src="assets/slides/lec_09/slide_29.jpg" alt="Slide 29" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #29</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The productivity of any forest depends on the age of its veget...">The productivity of any forest depends on the age of its veget...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The productivity of any forest depends on the age of its vegetation...">The productivity of any forest depends on the age of its vegetation...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_30.jpg', 'Slide 30: In India, there is a large potential for expanding plantation ...')">
-            <img src="assets/slides/lec_09/slide_30.jpg" alt="Slide 30" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_30.jpg', 'Slide 30: In India, there is a large potential for expanding plantation fores...')">
+            <img src="assets/slides/lec_09/slide_30.jpg" alt="Slide 30" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #30</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="In India, there is a large potential for expanding plantation ...">In India, there is a large potential for expanding plantation ...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="In India, there is a large potential for expanding plantation fores...">In India, there is a large potential for expanding plantation fores...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_31.jpg', 'Slide 31: Infapro, Malaysia')">
-            <img src="assets/slides/lec_09/slide_31.jpg" alt="Slide 31" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_31.jpg" alt="Slide 31" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #31</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Infapro, Malaysia">Infapro, Malaysia</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Infapro, Malaysia">Infapro, Malaysia</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_32.jpg', 'Slide 32: Plan Vivo, Mexico')">
-            <img src="assets/slides/lec_09/slide_32.jpg" alt="Slide 32" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_32.jpg" alt="Slide 32" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #32</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Plan Vivo, Mexico">Plan Vivo, Mexico</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Plan Vivo, Mexico">Plan Vivo, Mexico</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_33.jpg', 'Slide 33: Plan Vivo Activities: plantations,')">
-            <img src="assets/slides/lec_09/slide_33.jpg" alt="Slide 33" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_33.jpg" alt="Slide 33" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #33</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Plan Vivo Activities: plantations,">Plan Vivo Activities: plantations,</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Plan Vivo Activities: plantations,">Plan Vivo Activities: plantations,</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_09/slide_34.jpg', 'Slide 34: https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi')">
-            <img src="assets/slides/lec_09/slide_34.jpg" alt="Slide 34" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_09/slide_34.jpg" alt="Slide 34" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #34</span>
-              <span>Class-9- Carbon sequestration.pdf</span>
+              <span class="truncate max-w-[100px]">Class-9- Carbon sequestration.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi">https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi">https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi</div>
           </div>
         </div>
         
@@ -1264,9 +1684,9 @@
 
   <!-- BOTTOM NAVIGATION BAR -->
   <nav id="nav-bar">
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all" onclick="prevCard()">← Previous</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all cursor-pointer" onclick="prevCard()">← Previous</button>
     <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 10</span>
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950" onclick="nextCard()">Next Card →</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950 cursor-pointer" onclick="nextCard()">Next Card →</button>
   </nav>
 
   <!-- LIGHTBOX MODAL -->
@@ -1274,7 +1694,7 @@
     <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
       <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
         <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
-        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded" onclick="closeLightbox()">✕ Close</button>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded cursor-pointer" onclick="closeLightbox()">✕ Close</button>
       </div>
       <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
         <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
@@ -1283,6 +1703,74 @@
   </div>
 
   <script>
+    const ALL_UNITS_DATA = {"u09_1": {"slides": [{"slide_num": 1, "title": "Class-9", "image": "assets/slides/lec_09/slide_01.jpg", "bullets": ["Carbon Sequestration", "5th October 2026"], "takeaway": "Class-9"}, {"slide_num": 2, "title": "Muir Glacier, August, 1941", "image": "assets/slides/lec_09/slide_02.jpg", "bullets": ["Muir Glacier, August, 2004"], "takeaway": "Muir Glacier, August, 1941"}, {"slide_num": 3, "title": "Slide 3", "image": "assets/slides/lec_09/slide_03.jpg", "bullets": [], "takeaway": "Slide 3"}, {"slide_num": 4, "title": "Slide 4", "image": "assets/slides/lec_09/slide_04.jpg", "bullets": [], "takeaway": "Slide 4"}, {"slide_num": 5, "title": "Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-...", "image": "assets/slides/lec_09/slide_05.jpg", "bullets": [], "takeaway": "Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-..."}, {"slide_num": 6, "title": "Slide 6", "image": "assets/slides/lec_09/slide_06.jpg", "bullets": [], "takeaway": "Slide 6"}, {"slide_num": 7, "title": "Annual fluxes of CO\u2082 and their changing sources (e.g. fossil fuels)...", "image": "assets/slides/lec_09/slide_07.jpg", "bullets": ["absorbing CO\u2082). About 30 % of the anthropogenic CO\u2082 emissions have been taken up by the", "ocean and about 30 % by land. The remaining 40 % of emissions have led to an increase in", "the concentration of CO\u2082 in the atmosphere. Data: CDIAC/NOAA-ESRL/GCP/Joos et al.,", "2013 and Khatiwala et al., 2013. \u00a9CSIR"], "takeaway": "Annual fluxes of CO\u2082 and their changing sources (e.g. fossil fuels)..."}, {"slide_num": 8, "title": "Carbon Pools and Fluxes", "image": "assets/slides/lec_09/slide_08.jpg", "bullets": ["Atmospheric CO2", "Photosynthesis", "CO2 Removal", "CO2 Release", "Respiration", "Decomposition", "Combustion", "Atmospheric"], "takeaway": "Carbon Pools and Fluxes"}], "currentIdx": 0}, "u09_2": {"slides": [{"slide_num": 9, "title": "Forest scale: Stocks and fluxes", "image": "assets/slides/lec_09/slide_09.jpg", "bullets": ["A forest = carbon stocks", "1 kilogram of dry wood \u2248 0.5 kg of", "carbon", "\uf0a7Aboveground biomass: 65 to 430 tC/ha", "\uf0a7Soils: 44 to 130 tC/ha", "Leaves", "Branches", "Dead wood"], "takeaway": "Forest scale: Stocks and fluxes"}, {"slide_num": 10, "title": "Global Forest Extent & Carbon Storage", "image": "assets/slides/lec_09/slide_10.jpg", "bullets": ["\u2022Forests cover 4.06 billion hectares (31% of land) [(FAO 2020]", "\u2022Forests store 662 billion tonnes of carbon (\u22482.4 trillion tonnes CO\u2082)."], "takeaway": "Global Forest Extent & Carbon Storage"}, {"slide_num": 11, "title": "Forest Loss and Deforestation", "image": "assets/slides/lec_09/slide_11.jpg", "bullets": ["\u2022Net forest loss: about 4.7 million hectares per year (2010\u20132020).", "\u2022Gross deforestation: around 10 million hectares per year."], "takeaway": "Forest Loss and Deforestation"}, {"slide_num": 12, "title": "Most deforestation occurs in the tropics", "image": "assets/slides/lec_09/slide_12.jpg", "bullets": ["(Amazon, Southeast Asia, Central Africa)", "Global forest loss and gain across decades from 1960 to 2019. (a) Map showing the spatial", "distribution of forest loss and gain, with insets A, B and C showing parts of South America,", "Africa and Southeast Asia, respectively (b) Extent of total forest loss, gain and net change", "between 1960 and 2019. Total forest loss includes both persistent forest loss and non-", "persistent forest loss; total forest gain includes both persistent forest gain and non-persistent", "forest gain."], "takeaway": "Most deforestation occurs in the tropics"}, {"slide_num": 13, "title": "\u2022Tropical deforestation emits 5.6 billion tonnes of CO\u2082 annually.", "image": "assets/slides/lec_09/slide_13.jpg", "bullets": ["\u2022Deforestation", "and", "land-use", "change", "cause", "12\u201320%", "global", "greenhouse gas emissions. Brazil and Indonesia are top contributors"], "takeaway": "\u2022Tropical deforestation emits 5.6 billion tonnes of CO\u2082 annually."}, {"slide_num": 14, "title": "Forests as a Carbon Sink", "image": "assets/slides/lec_09/slide_14.jpg", "bullets": ["\u2022Forests remove 14.4 billion tonnes of CO\u2082", "annually through growth and regeneration.", "\u2022Disturbances (deforestation, degradation, fires)", "release 9.2 billion tonnes annually.", "\u2022Net balance: forests are a sink of 5.2 billion tonnes", "of CO\u2082 per year.", "\u2022Boreal, temperate, and tropical forests all", "contribute to global carbon storage."], "takeaway": "Forests as a Carbon Sink"}, {"slide_num": 15, "title": "Forest extent, structure, and dynamics for each 1 \u00d7 1\u00b0 grid cell. (...", "image": "assets/slides/lec_09/slide_15.jpg", "bullets": ["area. Forest defined as Landsat ARD pixels with \u22655 m canopy height. (B) Mean forest height", "2020, meters. (C) Net forest area change, 2000\u20132020, % cell area. (D) Forest loss,", "disturbance, and degradation 2000\u20132020, % year 2000 forest area within a cell."], "takeaway": "Forest extent, structure, and dynamics for each 1 \u00d7 1\u00b0 grid cell. (..."}], "currentIdx": 0}, "u09_3": {"slides": [{"slide_num": 16, "title": "Carbon Facts", "image": "assets/slides/lec_09/slide_16.jpg", "bullets": ["\u2022 Carbon dioxide concentrations have increased substantially", "since the beginning of the industrial era, rising from an", "annual average of 280 ppm in the late 1700s to 419 ppm", "in 2023 -a 49 percent increase. Almost all of this increase", "is due to human activities..", "\u2022 Soils store about 3-4X as much carbon as does terrestrial", "vegetation", "\u2022 27% of this carbon is found in tundra and boreal forest"], "takeaway": "Carbon Facts"}, {"slide_num": 17, "title": "Slide 17", "image": "assets/slides/lec_09/slide_17.jpg", "bullets": [], "takeaway": "Slide 17"}, {"slide_num": 18, "title": "(A) soil organic carbon to 1", "image": "assets/slides/lec_09/slide_18.jpg", "bullets": ["m depth based on", "Harmonized World Soil", "Database version 1.1", "B) above- and below-", "ground phytomass", "C) SOC as a percentage of total carbon stocks", "in soil and phytomass, showing areas in dark", "green where SOC constitutes less than 50% of"], "takeaway": "(A) soil organic carbon to 1"}, {"slide_num": 19, "title": "Carbon Sequestration-What Is It?", "image": "assets/slides/lec_09/slide_19.jpg", "bullets": ["\u2022 Also known as \u201ccarbon capture\u201d - The process through", "which CO2 from the atmosphere is absorbed naturally", "through photosynthesis & stored as carbon in biomass &", "soils.", "\u2022 A geoengineering technique for the long-term storage of", "CO2 (or other forms of carbon) for the mitigation of", "global warming", "\u2022 More than 33 billion tons of carbon emissions (annual"], "takeaway": "Carbon Sequestration-What Is It?"}, {"slide_num": 20, "title": "Activities to Increase C Sequestration Above Baseline", "image": "assets/slides/lec_09/slide_20.jpg", "bullets": ["\u2022 Increase Sequestration", "\u2013 Afforest marginal cropland and pasture", "\u2013 Reduce conversion of forestland to non-forest use", "\u2013 Improve forest management", "\u2013 Reduce harvest", "\u2013 Increase agroforestry", "\u2022 Increase Sequestration Plus Reduce Emissions", "\u2013 Substitute renewable biomass for fossil fuel energy"], "takeaway": "Activities to Increase C Sequestration Above Baseline"}, {"slide_num": 21, "title": "Globally forestry has taken central stage as one of the", "image": "assets/slides/lec_09/slide_21.jpg", "bullets": ["options to mitigate climate change.", "Total global technical potential for afforestation and reforestation", "activities for the period 1995-2050 is between 1.1\u20131.6 GtC/yr", "Agroforestry is an attractive option for carbon mitigation as", "(i) it sequesters carbon in vegetation and soil depending on the pre-", "conversion vegetation and soil carbon", "(ii) the wood products produced serve as substitute for similar", "products unsustainably harvested from natural forests and"], "takeaway": "Globally forestry has taken central stage as one of the"}, {"slide_num": 22, "title": "Increase Agroforestry", "image": "assets/slides/lec_09/slide_22.jpg", "bullets": ["\u2022 Windbreaks store carbon while protecting farmsteads,", "livestock,  soils, and crops", "Designed Forests in Agricultural Landscapes"], "takeaway": "Increase Agroforestry"}, {"slide_num": 23, "title": "Riparian forest buffers store carbon", "image": "assets/slides/lec_09/slide_23.jpg", "bullets": ["while protecting water quality"], "takeaway": "Riparian forest buffers store carbon"}, {"slide_num": 24, "title": "Silvopasture stores carbon while producing livestock", "image": "assets/slides/lec_09/slide_24.jpg", "bullets": ["benefits if both trees and grass are properly managed"], "takeaway": "Silvopasture stores carbon while producing livestock"}, {"slide_num": 25, "title": "Short-rotation plantation systems with fast growing Eucalyptus sp. ...", "image": "assets/slides/lec_09/slide_25.jpg", "bullets": ["agricultural", "practices", "(weed", "control,", "fertilizers", "application", "and", "irrigation)"], "takeaway": "Short-rotation plantation systems with fast growing Eucalyptus sp. ..."}], "currentIdx": 0}, "u09_4": {"slides": [{"slide_num": 26, "title": "A forest that is growing can remove 5-11 tons CO2 per hectare", "image": "assets/slides/lec_09/slide_26.jpg", "bullets": ["per year,", "Forest plantations could sequester up to 10.7 billion tons CO2", "per year for less than $2 per ton CO2 (Sedjo 1989 \u2013 first", "analysis)", "0.7 \u2013 2.2 billion tons CO2 can be sequestered globally per year", "for $8-$30 per ton CO2 (Sohngen and Mendelsohn , 2003,", "2007)", "7.0 billion tons CO2 per year may be sequestered globally, but"], "takeaway": "A forest that is growing can remove 5-11 tons CO2 per hectare"}, {"slide_num": 27, "title": "CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS", "image": "assets/slides/lec_09/slide_27.jpg", "bullets": ["The total forest biomass and carbon storage in Indian forest was 8357.9", "Mt and 4178.95 Mt, respectively (for1986) and 4503.82 Mt and 2026.72", "Mt respectively (1995) \u2013 accounting 14 forest types of India.", "Rai and Pathak (1995) divided the total forest cover of India into seven", "main agro-ecological zones and estimated - lowest productivity of 1.35", "m3 /ha/ annum for the hot and cold desert area and the highest", "productivity > 7 m3/ha/annum for the tropical rain forest.", "The annual productivity strictly refers to the longterm storage of carbon in"], "takeaway": "CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS"}, {"slide_num": 28, "title": "Slide 28", "image": "assets/slides/lec_09/slide_28.jpg", "bullets": [], "takeaway": "Slide 28"}, {"slide_num": 29, "title": "The productivity of any forest depends on the age of its vegetation...", "image": "assets/slides/lec_09/slide_29.jpg", "bullets": ["plantations sequester carbon till maturity which would vary from 25 to 75 years", "depending upon the type of forests. At later stages, there is only marginal carbon", "sequestration.", "In natural forests, there is a net addition to standing biomass leading to carbon", "storage only until maturity. In mature forests all of", "the gross primary", "productivity is either used up in respiration or returned to soil as litter with no", "net addition to the standing biomass."], "takeaway": "The productivity of any forest depends on the age of its vegetation..."}, {"slide_num": 30, "title": "In India, there is a large potential for expanding plantation fores...", "image": "assets/slides/lec_09/slide_30.jpg", "bullets": ["possible land categories available for afforestation today stand at 65.45", "Mha. The degraded forests cover almost 25% of the total available land", "and can be appropriately exploited for afforestation.", "with modest efforts towards afforestation, the Indian forests will continue to", "act as a net carbon sink in future"], "takeaway": "In India, there is a large potential for expanding plantation fores..."}, {"slide_num": 31, "title": "Infapro, Malaysia", "image": "assets/slides/lec_09/slide_31.jpg", "bullets": ["\u2022 Location: 25,000 ha logged dipterocarp forest in Eastern Sabah", "\u2022 Parties: (1) Face Foundation (Forests Absorbing Carbon dioxide", "Emissions); (2) Innoprise Corporation, Malaysian governmental", "forestry organisation", "\u2022 Activities: rainforest rehabilitation with enrichment planting using", "35 indigenous tree species", "International Examples of Carbon Sequestration", "Projects in the Forestry Sector"], "takeaway": "Infapro, Malaysia"}, {"slide_num": 32, "title": "Plan Vivo, Mexico", "image": "assets/slides/lec_09/slide_32.jpg", "bullets": ["\u2022 Location: Chiapas, Southern Mexico", "\u2022 Parties: (1) FIA, Formula One Foundation; (2) Ambio,", "cooperative of Foresters; (3) local community groups and small", "farmers associations", "\u2022 Objectives", "\u2022 To sequester carbon", "with sustainable", "forestry"], "takeaway": "Plan Vivo, Mexico"}, {"slide_num": 33, "title": "Plan Vivo Activities: plantations,", "image": "assets/slides/lec_09/slide_33.jpg", "bullets": ["agroforestry, communal reforestation", "Carbon Sequestered tC/ha", "Investment: US $15 million", "Sequestration: 5000 to 13000", "tons of CO2 per year", "Average price: US$ 3.6 per ton", "of CO2"], "takeaway": "Plan Vivo Activities: plantations,"}, {"slide_num": 34, "title": "https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi", "image": "assets/slides/lec_09/slide_34.jpg", "bullets": ["bextid=xfxF2i", "Top cities end", "china", "FACE", "carbon-project/"], "takeaway": "https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi"}], "currentIdx": 0}};
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function switchUnitSlide(unitId, slideIdx) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit || !unit.slides[slideIdx]) return;
+      unit.currentIdx = slideIdx;
+      const s = unit.slides[slideIdx];
+      
+      const imgEl = document.getElementById(unitId + '_slide_img');
+      if (imgEl) {
+        imgEl.src = s.image;
+        imgEl.alt = s.title;
+      }
+      const wrapEl = document.getElementById(unitId + '_slide_wrap');
+      if (wrapEl) {
+        wrapEl.setAttribute('onclick', "openLightbox('" + s.image + "', 'Slide " + s.slide_num + ": " + escapeHtml(s.title) + "')");
+      }
+      const titleEl = document.getElementById(unitId + '_slide_title');
+      if (titleEl) {
+        titleEl.textContent = 'Slide ' + s.slide_num + ': ' + s.title;
+      }
+      const bulletsEl = document.getElementById(unitId + '_slide_bullets');
+      if (bulletsEl) {
+        if (s.bullets && s.bullets.length > 0) {
+          bulletsEl.innerHTML = s.bullets.map(b => '<div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">' + escapeHtml(b) + '</span></div>').join('');
+        } else {
+          bulletsEl.innerHTML = '<p class="text-slate-400 italic text-xs">Visual figure / diagram slide. Inspect the high-resolution render on the left.</p>';
+        }
+      }
+      const takeawayEl = document.getElementById(unitId + '_slide_takeaway');
+      if (takeawayEl) {
+        takeawayEl.textContent = s.takeaway || s.title;
+      }
+      const indEl = document.getElementById('cur_slide_indicator_' + unitId);
+      if (indEl) {
+        indEl.textContent = '#' + s.slide_num;
+      }
+      
+      const btns = document.querySelectorAll('.slide-btn-' + unitId);
+      btns.forEach((btn, idx) => {
+        if (idx === slideIdx) {
+          btn.className = 'slide-btn-' + unitId + ' active px-3 py-1.5 rounded-lg text-xs font-mono bg-emerald-600 border border-emerald-400 text-white font-bold flex-shrink-0 shadow-lg shadow-emerald-950/50';
+        } else {
+          btn.className = 'slide-btn-' + unitId + ' px-3 py-1.5 rounded-lg text-xs font-mono bg-[#071610] border border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 flex-shrink-0 transition-all';
+        }
+      });
+    }
+
+    function navUnitSlide(unitId, delta) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit) return;
+      let cur = unit.currentIdx || 0;
+      let next = cur + delta;
+      if (next >= 0 && next < unit.slides.length) {
+        switchUnitSlide(unitId, next);
+      }
+    }
+
     let currentCard = 0;
     const screens = document.querySelectorAll('.card-screen');
     const totalCards = screens.length;
@@ -1292,13 +1780,11 @@
         s.classList.toggle('active', i === currentCard);
       });
 
-      // Update sidebar
       for (let i = 0; i < totalCards; i++) {
         const el = document.getElementById('slink_' + i);
         if (el) el.classList.toggle('active', i === currentCard);
       }
 
-      // Counter & Progress
       document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
       const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
       document.getElementById('progress-bar-fill').style.width = pct + '%';
@@ -1307,7 +1793,6 @@
       const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
       document.getElementById('section-label').innerText = title;
 
-      // Scroll to top
       document.getElementById('main').scrollTop = 0;
     }
 
@@ -1332,14 +1817,12 @@
       }
     }
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') nextCard();
       else if (e.key === 'ArrowLeft') prevCard();
       else if (e.key === 'Escape') closeLightbox();
     });
 
-    // Lightbox Modal
     function openLightbox(imgSrc, title) {
       document.getElementById('modal_img').src = imgSrc;
       document.getElementById('modal_title').innerText = title || 'Slide Figure';
@@ -1349,7 +1832,6 @@
       document.getElementById('lightbox_modal').classList.remove('show');
     }
 
-    // Quiz evaluation
     function handleQuiz(el, isCorrect, feedbackId) {
       const parent = el.parentElement;
       const opts = parent.querySelectorAll('.quiz-option');
@@ -1359,7 +1841,6 @@
         el.classList.add('correct');
       } else {
         el.classList.add('wrong');
-        // highlight correct option
         opts.forEach(o => {
           if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
             o.classList.add('correct');
@@ -1370,7 +1851,6 @@
       if (fb) fb.classList.remove('hidden');
     }
 
-    // Pomodoro Timer
     let timerSec = 25 * 60;
     let timerRunning = false;
     let timerInterval = null;
@@ -1398,7 +1878,6 @@
       }
     }
 
-    // Initialize
     updateCardView();
   </script>
 </body>

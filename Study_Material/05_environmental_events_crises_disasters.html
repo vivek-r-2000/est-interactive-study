@@ -48,11 +48,6 @@
     box-shadow: 0 10px 30px -10px var(--primary-glow);
     transform: translateY(-2px);
   }
-  .eco-card-static {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-  }
 
   /* Badges */
   .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
@@ -123,7 +118,7 @@
   /* Layout */
   #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
   #sidebar {
-    width: 250px; min-width: 250px; background: #040b08;
+    width: 270px; min-width: 270px; background: #040b08;
     border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
     display: flex; flex-direction: column; gap: 2px;
   }
@@ -142,13 +137,13 @@
     flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
     display: flex; flex-direction: column; align-items: center;
   }
-  .card-screen { display: none; width: 100%; max-width: 900px; animation: fadeIn .25s ease; }
+  .card-screen { display: none; width: 100%; max-width: 950px; animation: fadeIn .25s ease; }
   .card-screen.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
 
   /* Nav Bar */
   #nav-bar {
-    position: fixed; bottom: 0; left: 250px; right: 0;
+    position: fixed; bottom: 0; left: 270px; right: 0;
     background: #040a07; border-top: 1px solid var(--border);
     display: flex; align-items: center; justify-content: center; gap: 16px;
     padding: 12px 24px; z-index: 40;
@@ -187,32 +182,32 @@
       
         <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
           <span class="sidebar-dot"></span>
-          <span class="truncate">1. Big Picture & Intuition</span>
+          <span class="truncate">1. Lecture Scope & Roadmap</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
           <span class="sidebar-dot"></span>
-          <span class="truncate">2. Scientific Foundations</span>
+          <span class="truncate">2. [Slides 01–05] Arctic Indigenous Poisoning, Global Distillation & Svalbard Debris</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Diagram Breakdown & Analysis</span>
+          <span class="truncate">3. [Slides 06–13] Global Dimming vs. Global Warming & The Pan Evaporation Paradox</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
           <span class="sidebar-dot"></span>
-          <span class="truncate">4. Math & Empirical Tables</span>
+          <span class="truncate">4. [Slides 14–21] The Azolla Event, Three Gorges Dam Geophysics & Groundwater Axis Shift</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
           <span class="sidebar-dot"></span>
-          <span class="truncate">5. Video Masterclass</span>
+          <span class="truncate">5. [Slides 22–30] Volcanic Forcing, Waterloo Weather & Nuclear Winter Theory</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
           <span class="sidebar-dot"></span>
-          <span class="truncate">6. Interactive Simulator</span>
+          <span class="truncate">6. Interactive Simulator Lab</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
@@ -232,7 +227,7 @@
         
         <div class="sidebar-link " onclick="goToCard(9)" id="slink_9">
           <span class="sidebar-dot"></span>
-          <span class="truncate">10. Complete Slide Gallery (30 Slides)</span>
+          <span class="truncate">10. Slide Quick-Jump Index (30 Slides)</span>
         </div>
         
     </nav>
@@ -240,241 +235,638 @@
     <!-- MAIN VIEW -->
     <main id="main">
       
-    <section class="card-screen active" data-title="Big Picture & Intuition">
+    <section class="card-screen active" data-title="1. Lecture Scope & Roadmap">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 05 • Fundamental Concept</span>
-          <span class="text-xs text-slate-400">• Intermediate • 45 mins</span>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 05 • Syllabus Roadmap</span>
+            <span class="text-xs text-slate-400">• Intermediate • 45 mins</span>
+          </div>
+          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 30 Slides Covered Across 4 Study Units</span>
         </div>
+
         <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Landmark Environmental Events, Crises & Disasters</h2>
         <div class="text-emerald-400 text-sm font-semibold mb-4">Catastrophic Failures, Toxicological Lessons, and Environmental Governance</div>
         
-        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-sm leading-relaxed">
-          <strong>💡 Why This Topic Matters:</strong><br/>
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-xs md:text-sm leading-relaxed">
+          <strong class="text-emerald-300 block mb-1">💡 Why This Lecture Matters:</strong>
           Modern environmental jurisprudence and safety protocols were largely forged in the wake of catastrophic industrial and technological failures. The Bhopal Gas Tragedy (1984), Chernobyl nuclear disaster (1986), Minamata disease (1956), and London Great Smog (1952) exposed critical flaws in risk assessment, containment engineering, and corporate accountability, catalyzing landmark legislation such as India's Environment (Protection) Act, 1986.
         </div>
 
-        <div class="space-y-2">
-          
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Chemical Catastrophe</span>
-            <strong class="text-emerald-300 text-sm">Bhopal Gas Tragedy (1984)</strong>
+        <div class="mb-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Lecture Slide Study Units</span>
+            <span class="text-[11px] text-slate-400">Click any unit to jump directly to its slides</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Exothermic runaway reaction in Tank 610 at Union Carbide India Limited (UCIL). Water ingress reacted with 42 tonnes of Methyl Isocyanate (MIC), generating temperatures >200°C and bursting rupture discs, releasing lethal toxic gas over sleeping Bhopal.</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Nuclear</span>
-            <strong class="text-emerald-300 text-sm">Chernobyl Disaster (1986)</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Explosion of Reactor 4 (RBMK-1000). Fatal design flaw: positive void coefficient of reactivity and graphite-tipped control rods caused catastrophic power surge during an unauthorized turbine test, contaminating large parts of Europe.</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Bioaccumulation</span>
-            <strong class="text-emerald-300 text-sm">Minamata Disease (1956)</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Chisso Corporation dumped industrial wastewater containing inorganic and methylmercury into Minamata Bay. Biomagnification through marine food chains caused severe neurological damage, ataxia, and congenital deformities in local populations.</p>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Scientific Foundations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-teal inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Core Mechanics</div>
-        <h2 class="text-2xl font-black text-white mb-4">Chemical Kinetics & Toxicological Pathways</h2>
-        <div class="text-sm leading-relaxed text-slate-200">
-          
-            <p class="mb-3">The Bhopal tragedy centered on the vigorous exothermic hydrolysis of Methyl Isocyanate (MIC, $CH_3NCO$):</p>
-            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
-              $$CH_3NCO + H_2O \longrightarrow CH_3NH_2 + CO_2 + \Delta H \; (\Delta H = -85\,\text{kJ/mol})$$
-            </div>
-            <p class="text-sm">The release of heat accelerated secondary reactions producing phosgene, hydrogen cyanide ($HCN$), and carbon dioxide, rapidly raising tank pressure above 40 psi and rupturing safety valves.</p>
-            <p class="text-sm mt-3">Minamata disease demonstrated biological magnification. Inorganic mercury ($Hg^{2+}$) was methylated by anaerobic sulfate-reducing bacteria in bay sediments into lipophilic <strong>methylmercury</strong> ($[CH_3Hg]^+$):</p>
-            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
-              $$Hg^{2+} + \text{Methylcobalamin (B}_{12}\text{)} \xrightarrow{\text{Desulfovibrio}} [CH_3Hg]^+$$
-            </div>
-            <p class="text-sm">Methylmercury binds to cysteine amino acids, passes through the blood-brain and placental barriers, and concentrates millions-fold in apex marine predators and human brain tissue.</p>
+          <div class="space-y-2">
             
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(1)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 01–05</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Arctic Indigenous Poisoning, Global Distillation & Svalbard Debris</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Explains the 'Grasshopper Effect' transporting volatile persistent toxins to high latitudes and the Arctic Paradox in Inuit communities.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(2)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 06–13</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Global Dimming vs. Global Warming & The Pan Evaporation Paradox</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Examines the masking of greenhouse warming by anthropogenic sulfate aerosols and the reversal documented by Wild et al. (2005).</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(3)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 14–21</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">The Azolla Event, Three Gorges Dam Geophysics & Groundwater Axis Shift</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Analyzes how biological events drew down atmospheric carbon, and how megaprojects and groundwater pumping altered Earth's rotation.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(4)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 22–30</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Volcanic Forcing, Waterloo Weather & Nuclear Winter Theory</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Investigates cataclysmic volcanic aerosol cooling, historical battles influenced by climate anomalies, and the TTAPS nuclear winter model.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+          </div>
         </div>
       </div>
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Diagram Breakdown">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
-          <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
-        </div>
-        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
-        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
-        
-        <div>
-          
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
-              <h3 class="text-base font-bold text-white">Global Distillation & Persistent Organic Pollutant (POP) Migration</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-5 -Environmental Events.pdf, Slide 8</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_05/diagram_02.jpeg', 'Global Distillation &amp; Persistent Organic Pollutant (POP) Migration')">
-              <img src="assets/diagrams/lec_05/diagram_02.jpeg" alt="Global Distillation &amp; Persistent Organic Pollutant (POP) Migration" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
-              </div>
-            </div>
-
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">The 'Grasshopper Effect' illustrating how volatile persistent toxic chemicals evaporate in warm tropical latitudes and condense in cold polar regions.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Semivolatile organic pollutants (such as DDT, PCBs, and dioxins) undergo repeated cycles of volatilization during warm seasons and atmospheric transport via prevailing winds, followed by condensation and deposition during cold seasons. Because polar regions are perpetual cold condensation sinks, POPs concentrate in Arctic ice and fat-rich marine mammals.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Governed by temperature-dependent vapor pressure (Clausius-Clapeyron relation): $\ln\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{\text{vap}}}{R} \left( \frac{1}{T_2} - \frac{1}{T_1} \right)$. Lower temperatures drive partitioning from gas phase into condensed environmental matrices.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Thinking polar regions are clean because there are no local factories. The Arctic Paradox demonstrates that the highest concentrations of lipophilic bioaccumulative toxics occur in Arctic Inuit populations and polar bears.
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
-              <h3 class="text-base font-bold text-white">Biomagnification Trophic Cascade in Aquatic Ecosystems</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-5 -Environmental Events.pdf, Slide 14</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_05/diagram_03.jpeg', 'Biomagnification Trophic Cascade in Aquatic Ecosystems')">
-              <img src="assets/diagrams/lec_05/diagram_03.jpeg" alt="Biomagnification Trophic Cascade in Aquatic Ecosystems" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
-              </div>
-            </div>
-
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">A multi-level food web showing concentration amplification of methylmercury from water (parts per trillion) to apex predators and humans (parts per million).</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Methylmercury ($[CH_3Hg]^+$) is lipid-soluble and binds covalently to sulfhydryl ($-SH$) groups in muscle protein. Organisms absorb it much faster than they can metabolize or excrete it (half-life in humans is ~70 days). Each successive trophic level consumes multiple prey organisms, compounding toxic concentration.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Trophic Magnification Factor: $TMF = 10^{\beta}$, where $\beta$ is the slope of the regression $\log(C) = \alpha + \beta \times TL$ ($TL$ = trophic level). For methylmercury, $TMF$ typically exceeds 3.5 to 5.0 per trophic transfer.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Confusing elemental inorganic mercury ($Hg^0$) with methylmercury. Metallic mercury swallowed passes through digestive systems largely unabsorbed; microbial methylation in anoxic sediment is what creates the lethal neurotoxin.
-          </div>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Mathematical Formulations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Rigorous Quantitative Model</div>
-        <h2 class="text-2xl font-black text-white mb-4">Toxicological Metrics & Biomagnification Factors</h2>
-        
-        <div class="p-4 bg-[#05120c] border border-emerald-900/80 rounded-xl text-center my-4 overflow-x-auto">
-          <div class="text-lg md:text-xl font-mono text-emerald-300">
-            $$\text{Biomagnification Factor (BMF)} = \frac{C_{\text{predator}}}{C_{\text{prey}}} > 1.0, \quad \text{BCF} = \frac{C_{\text{organism}}}{C_{\text{water}}}$$
-          </div>
-        </div>
-        <p class="text-xs text-slate-300 mb-6">Bioaccumulation Factor (BAF) accounts for all uptake routes including dietary intake, whereas Bioconcentration Factor (BCF) measures direct uptake from water.</p>
-
-        <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
-          <table class="w-full text-xs text-left text-slate-300">
-            <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Landmark Event</th> <th class='p-3 border-r border-emerald-900'>Year / Location</th> <th class='p-3 border-r border-emerald-900'>Primary Contaminant</th> <th class='p-3 border-r border-emerald-900'>Policy & Regulatory Outcome</th> </tr>
-            </thead>
-            <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>London Great Smog</td> <td class='p-3 border-r border-emerald-900 font-mono'>1952 (UK)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Coal smoke, $SO_2$, Sulfuric acid mist ($H_2SO_4$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Clean Air Act 1956 (first systemic air quality legislation)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Minamata Disease</td> <td class='p-3 border-r border-emerald-900 font-mono'>1956 (Japan)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Methylmercury ($CH_3Hg^+$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Minamata Convention on Mercury (2013 global treaty)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Love Canal</td> <td class='p-3 border-r border-emerald-900 font-mono'>1978 (USA)</td> <td class='p-3 border-r border-emerald-900 font-mono'>21,000 tons of toxic industrial organic waste</td> <td class='p-3 border-r border-emerald-900 font-mono'>CERCLA / Superfund Act 1980</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Bhopal Gas Tragedy</td> <td class='p-3 border-r border-emerald-900 font-mono'>1984 (India)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Methyl Isocyanate (MIC), $HCN$, Phosgene</td> <td class='p-3 border-r border-emerald-900 font-mono'>Environment (Protection) Act 1986, Public Liability Insurance Act 1991</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Chernobyl</td> <td class='p-3 border-r border-emerald-900 font-mono'>1986 (USSR)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Iodine-131 ($t_{1/2}=8d$), Cesium-137 ($t_{1/2}=30yr$)</td> <td class='p-3 border-r border-emerald-900 font-mono'>International Nuclear Event Scale (INES), IAEA safety conventions</td> </tr>
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    
-
-        <section class="card-screen" data-title="Video Masterclass">
+        <section class="card-screen" data-title="Unit 1: Slides 01–05">
           <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-            <div class="badge-cyan inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Audiovisual Deep-Dive</div>
-            <h2 class="text-2xl font-black text-white mb-2">Lecture Videos & Multimedia Documentaries</h2>
-            <p class="text-xs text-slate-300 mb-6">Referenced directly from the course slides for active conceptual reinforcement.</p>
-            
-            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
-              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
-                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
-                </span>
-                <a href="https://www.youtube.com/watch?v=USDCATD89oY" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 01–05</span>
+                <span class="text-xs text-slate-400">• Unit 1 of 4 • Topic Walkthrough</span>
               </div>
-              <div class="relative w-full aspect-video bg-black">
-                <iframe src="https://www.youtube-nocookie.com/embed/USDCATD89oY" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 05: Landmark Crises & Disasters</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Arctic Indigenous Poisoning, Global Distillation & Svalbard Debris</h2>
+            <p class="text-xs text-slate-300 mb-6">Explains the 'Grasshopper Effect' transporting volatile persistent toxins to high latitudes and the Arctic Paradox in Inuit communities.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u05_1" class="text-emerald-400 font-bold font-mono">#1</span> of 5 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_1', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_1', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u05_1 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_1', 0)">
+              <span>#1</span> <span class="hidden sm:inline text-[11px] opacity-80">Topic -5</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_1', 1)">
+              <span>#2</span> <span class="hidden sm:inline text-[11px] opacity-80">NEWSPAPER HEADLINES</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_1', 2)">
+              <span>#3</span> <span class="hidden sm:inline text-[11px] opacity-80">Global Distillation</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_1', 3)">
+              <span>#4</span> <span class="hidden sm:inline text-[11px] opacity-80">Arctic  Paradox</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_1', 4)">
+              <span>#5</span> <span class="hidden sm:inline text-[11px] opacity-80">Buoys and garbage li...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u05_1_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_05/slide_01.jpg', 'Slide 1: Topic -5')">
+                  <img id="u05_1_slide_img" src="assets/slides/lec_05/slide_01.jpg" alt="Slide 1" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u05_1_slide_title" class="text-sm md:text-base font-bold text-white">Slide 1: Topic -5</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u05_1_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Environmental Events</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Dr. P. Rama Chandra</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Lab for Spatial Informatics, IIIT-H</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">24th August 2026</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u05_1_slide_takeaway" class="text-slate-300 leading-relaxed">Topic -5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Arctic Indigenous Poisoning, Global Distillation & Svalbard Debris</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Global Distillation / The Grasshopper Effect (Slide 3):</strong> Persistent Organic Pollutants (POPs) such as polychlorinated biphenyls (PCBs), DDT, and dioxins have high chemical stability and semi-volatility. In warm tropical/temperate agricultural zones, POPs evaporate into the atmosphere. Prevailing atmospheric circulation transports them poleward. As air masses cool at high latitudes, POPs condense and precipitate out ('cold condensation'). Repeating cycles of evaporation and deposition act like a fractional distillation column, causing POPs to systematically accumulate in the Arctic.</p>
+          <p><strong>2. The Arctic Paradox (Slide 4):</strong> Arctic indigenous peoples (Inuit) live thousands of miles away from industrial manufacturing centers, yet their blood and breast milk contain some of the highest concentrations of organochlorines on Earth. Because the Arctic food web is lipid-rich (blubber of ringed seals, walruses, beluga whales), lipophilic POPs undergo extreme biomagnification up long food chains.</p>
+          <p><strong>3. Svalbard Marine Debris & Transboundary Drift (Slide 5):</strong> Svalbard has no trees and virtually zero local manufacturing, yet its coastlines are strewn with drift logs from Russian logging rivers and plastic fishing buoys transported by North Atlantic ocean currents. Slide 5 also highlights transboundary case studies: Belgian dioxin contamination, Chinese acid rain, and British industrial emissions causing lake acidification in Sweden.</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$K_{OA} = \frac{C_{octanol}}{C_{air}} \quad | \quad \text{Biomagnification Factor: } BMF = \frac{C_{\text{predator}}}{C_{\text{prey}}} > 1$$
               </div>
             </div>
             
-            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
-              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
-                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
-                </span>
-                <a href="https://www.youtube.com/watch?v=2Pp-W1Va5gE" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
-              </div>
-              <div class="relative w-full aspect-video bg-black">
-                <iframe src="https://www.youtube-nocookie.com/embed/2Pp-W1Va5gE" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Explain the thermodynamic mechanism of Global Distillation. Why do lipophilic POPs concentrate in apex Arctic mammals despite zero local emission sources?</p>
               </div>
             </div>
-            
           </div>
         </section>
         
 
-    <section class="card-screen" data-title="Interactive Simulator">
+        <section class="card-screen" data-title="Unit 2: Slides 06–13">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 06–13</span>
+                <span class="text-xs text-slate-400">• Unit 2 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 05: Landmark Crises & Disasters</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Global Dimming vs. Global Warming & The Pan Evaporation Paradox</h2>
+            <p class="text-xs text-slate-300 mb-6">Examines the masking of greenhouse warming by anthropogenic sulfate aerosols and the reversal documented by Wild et al. (2005).</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u05_2" class="text-emerald-400 font-bold font-mono">#6</span> of 8 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_2', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_2', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u05_2 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 0)">
+              <span>#6</span> <span class="hidden sm:inline text-[11px] opacity-80">Global Dimming</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 1)">
+              <span>#7</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 7</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 2)">
+              <span>#8</span> <span class="hidden sm:inline text-[11px] opacity-80">Both global dimming ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 3)">
+              <span>#9</span> <span class="hidden sm:inline text-[11px] opacity-80">• Decline in solar r...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 4)">
+              <span>#10</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 10</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 5)">
+              <span>#11</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 11</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 6)">
+              <span>#12</span> <span class="hidden sm:inline text-[11px] opacity-80">Wild et al. Science ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_2', 7)">
+              <span>#13</span> <span class="hidden sm:inline text-[11px] opacity-80">Global Dimming and G...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u05_2_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_05/slide_06.jpg', 'Slide 6: Global Dimming')">
+                  <img id="u05_2_slide_img" src="assets/slides/lec_05/slide_06.jpg" alt="Slide 6" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u05_2_slide_title" class="text-sm md:text-base font-bold text-white">Slide 6: Global Dimming</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u05_2_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Global dimming is defined as the decrease in the amounts of solar</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">radiation reaching the surface of the Earth.</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Causes of Global Dimming</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">1. Aerosols</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">brown clouds</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">2. contrails</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">How ??: 1950; NH&gt;SH</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u05_2_slide_takeaway" class="text-slate-300 leading-relaxed">Global Dimming</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Global Dimming vs. Global Warming & The Pan Evaporation Paradox</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Global Dimming Mechanics (Slide 6):</strong> Global dimming is the gradual reduction in surface solar irradiance reaching Earth's surface between the 1950s and 1990 (documented as a 4–10% drop by 24 surface radiometric stations). It is caused by particulate air pollution: sulfate aerosols, soot, and ash from fossil fuel combustion act as cloud condensation nuclei (CCN). Clouds with higher droplet counts reflect more incoming solar radiation back to space (Twomey Effect / First Aerosol Indirect Effect).</p>
+          <p><strong>2. The Pan Evaporation Paradox:</strong> Despite rising global mean temperatures, standard pan evaporation rates systematically dropped worldwide over the same period. Pan evaporation is governed primarily by solar radiative flux and wind speed rather than temperature alone; reduced surface irradiance directly lowered evaporation rates.</p>
+          <p><strong>3. Reversal & Climate Masking (Wild et al. 2005, Science, Slide 12):</strong> Following international clean air regulations (1990 US Clean Air Act amendments, European flue-gas desulfurization), particulate emissions dropped. Solar radiation at land surfaces 'brightened' after 1990. Crucially, global dimming had partially masked underlying greenhouse gas warming; as the aerosol veil cleared, global warming accelerated dramatically.</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\tau_{\text{cloud}} \propto N_d^{1/3} \cdot L^{2/3} \quad \text{(Twomey Effect)} \quad | \quad \Delta F_{\text{net}} = \Delta F_{\text{GHG}} - \Delta F_{\text{aerosol}}$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Prof. Prasad emphasizes the Wild et al. (Science 2005) paper: know the timeline of the dimming-to-brightening transition (1990) and why cleaning up air pollution paradoxically accelerates surface warming.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 3: Slides 14–21">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 14–21</span>
+                <span class="text-xs text-slate-400">• Unit 3 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 05: Landmark Crises & Disasters</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">The Azolla Event, Three Gorges Dam Geophysics & Groundwater Axis Shift</h2>
+            <p class="text-xs text-slate-300 mb-6">Analyzes how biological events drew down atmospheric carbon, and how megaprojects and groundwater pumping altered Earth's rotation.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u05_3" class="text-emerald-400 font-bold font-mono">#14</span> of 8 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_3', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_3', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u05_3 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 0)">
+              <span>#14</span> <span class="hidden sm:inline text-[11px] opacity-80">Differences Between ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 1)">
+              <span>#15</span> <span class="hidden sm:inline text-[11px] opacity-80">AZOLLA..</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 2)">
+              <span>#16</span> <span class="hidden sm:inline text-[11px] opacity-80">CHANGE IN EARTH’S RO...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 3)">
+              <span>#17</span> <span class="hidden sm:inline text-[11px] opacity-80">China’s Monster</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 4)">
+              <span>#18</span> <span class="hidden sm:inline text-[11px] opacity-80">One of the few man m...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 5)">
+              <span>#19</span> <span class="hidden sm:inline text-[11px] opacity-80">MASS SHIFT CHANGES R...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 6)">
+              <span>#20</span> <span class="hidden sm:inline text-[11px] opacity-80">The ship lift at the...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_3', 7)">
+              <span>#21</span> <span class="hidden sm:inline text-[11px] opacity-80">How Groundwater Extr...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u05_3_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_05/slide_14.jpg', 'Slide 14: Differences Between Now and Then')">
+                  <img id="u05_3_slide_img" src="assets/slides/lec_05/slide_14.jpg" alt="Slide 14" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u05_3_slide_title" class="text-sm md:text-base font-bold text-white">Slide 14: Differences Between Now and Then</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u05_3_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">But, why so warm ?</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">So, why did it get cold ?</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">The Eocene</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u05_3_slide_takeaway" class="text-slate-300 leading-relaxed">Differences Between Now and Then</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: The Azolla Event, Three Gorges Dam Geophysics & Groundwater Axis Shift</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. The Azolla Event (49 Million Years Ago, Slides 14–15):</strong> During the early Eocene epoch, atmospheric $CO_2$ stood at ~3,500 ppm and polar regions were sub-tropical. Over an 800,000-year period, mats of the floating freshwater fern *Azolla* proliferated across the freshwater-capped, stagnant Arctic Ocean basin. When *Azolla* died, anoxic bottom waters prevented decay, sequestering trillions of tons of carbon into organic seabed sediments. This biological carbon pump dropped $CO_2$ to ~650 ppm, transitioning Earth from an ice-free 'greenhouse' into our modern glaciated 'icehouse' regime.</p>
+          <p><strong>2. China's Three Gorges Dam Geophysics (Slides 16–20):</strong> Spanning the Yangtze River at $30^\circ 44'\text{N}, 111^\circ 16'\text{E}$. The reservoir holds 39.3 billion cubic meters (39 trillion kilograms) of water elevated 175 meters above sea level. This monumental shift of mass away from Earth's rotational axis increased Earth's moment of inertia ($I = \sum m r^2$). By conservation of angular momentum ($L = I\omega$), Earth's rotational velocity slowed, lengthening the day by approximately 0.06 microseconds and shifting the pole position by ~2 centimeters.</p>
+          <p><strong>3. Groundwater Extraction Axis Shift (Slide 21):</strong> Between 1993 and 2010, humanity pumped out approximately 2,150 gigatons of groundwater for irrigation and consumption, the majority of which drained into the oceans. This global redistribution of water mass shifted Earth's rotational pole by nearly 80 centimeters toward $64.16^\circ\text{E}$ longitude.</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$L = I \cdot \omega = \text{constant} \implies \Delta I > 0 \implies \Delta \omega < 0 \implies \Delta T_{\text{day}} \approx +0.06\,\mu s$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Both the Three Gorges Dam and groundwater extraction are classic physical geography exam questions. Explain the physical principle (Conservation of Angular Momentum) and cite the exact figures: $39\,\text{trillion kg}$ and $0.06\,\mu s$.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 4: Slides 22–30">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 22–30</span>
+                <span class="text-xs text-slate-400">• Unit 4 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 05: Landmark Crises & Disasters</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Volcanic Forcing, Waterloo Weather & Nuclear Winter Theory</h2>
+            <p class="text-xs text-slate-300 mb-6">Investigates cataclysmic volcanic aerosol cooling, historical battles influenced by climate anomalies, and the TTAPS nuclear winter model.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u05_4" class="text-emerald-400 font-bold font-mono">#22</span> of 9 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_4', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u05_4', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u05_4 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 0)">
+              <span>#22</span> <span class="hidden sm:inline text-[11px] opacity-80">Napoleon&#x27;s defeat at...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 1)">
+              <span>#23</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 23</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 2)">
+              <span>#24</span> <span class="hidden sm:inline text-[11px] opacity-80">Carl Sagan and other...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 3)">
+              <span>#25</span> <span class="hidden sm:inline text-[11px] opacity-80">Nuclear winter theor...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 4)">
+              <span>#26</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 26</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 5)">
+              <span>#27</span> <span class="hidden sm:inline text-[11px] opacity-80">Nuclear winter is th...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 6)">
+              <span>#28</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 28</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 7)">
+              <span>#29</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 29</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u05_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u05_4', 8)">
+              <span>#30</span> <span class="hidden sm:inline text-[11px] opacity-80">https://www.youtube....</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u05_4_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_05/slide_22.jpg', 'Slide 22: Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian volcanic...')">
+                  <img id="u05_4_slide_img" src="assets/slides/lec_05/slide_22.jpg" alt="Slide 22" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u05_4_slide_title" class="text-sm md:text-base font-bold text-white">Slide 22: Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian volcanic...</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u05_4_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Toba catastrophe theory</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u05_4_slide_takeaway" class="text-slate-300 leading-relaxed">Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian volcanic...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Volcanic Forcing, Waterloo Weather & Nuclear Winter Theory</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Volcanic Forcing & The Waterloo Connection (Slide 22):</strong> The colossal April 1815 eruption of Mount Tambora in Indonesia (VEI-7) injected 100 million metric tons of sulfur dioxide into the stratosphere, forming a global sulfate aerosol veil. This triggered 1816's 'Year Without a Summer'. In June 1815, atmospheric instability and unseasonal monsoonal downpours in Belgium turned the Waterloo battlefield into deep mud, preventing Napoleon from maneuvering his superior artillery and contributing to his defeat.</p>
+          <p><strong>2. The Toba Catastrophe (Slide 22):</strong> Supervolcano eruption ~74,000 years ago in Sumatra; injected thousands of cubic kilometers of ash, triggering a 6-to-10-year volcanic winter and an estimated genetic bottleneck reducing human population to a few thousand individuals.</p>
+          <p><strong>3. Nuclear Winter Theory (Carl Sagan & TTAPS 1983, Slides 24–27):</strong> In a full-scale thermonuclear exchange, nuclear firestorms raging through dense urban and industrial centers would inject 50–150 million metric tons of black, highly absorbing carbonaceous soot directly into the upper stratosphere. Unlike tropospheric aerosols, stratospheric soot is not washed out by precipitation and would persist for over a decade. Solar heating of the black soot lofted it globally, blocking 90–99% of sunlight, collapsing surface temperatures by $10^\circ\text{C}$ to $25^\circ\text{C}$, decimating global agricultural yields, and destroying stratospheric ozone.</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$I(z) = I_0 \cdot e^{-\tau(z)} \quad | \quad \tau = \int \kappa_{\text{soot}} \cdot \rho_{\text{soot}}\, dz \implies \text{Surface Insolation Collapse}$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+                <div class="mt-4 p-4 bg-[#05120d] border border-emerald-900/80 rounded-xl">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-emerald-300 font-mono flex items-center gap-1.5">
+                      <span>▶️</span> Recommended Video Reference
+                    </span>
+                    <a href="https://www.youtube.com/watch?v=USDCATD89oY" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+                  </div>
+                  <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                    <iframe src="https://www.youtube-nocookie.com/embed/USDCATD89oY" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+                
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Be prepared to explain the physical mechanism of Nuclear Winter (stratospheric black soot residence time vs. tropospheric rainout) and distinguish it from volcanic sulfate cooling.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+    <section class="card-screen" data-title="6. Interactive Simulator Lab">
       <div class="mb-6">
         
     <div class="eco-card p-6 border-emerald-800/60">
@@ -551,23 +943,23 @@
     </section>
     
 
-    <section class="card-screen" data-title="Active Recall Flashcards">
+    <section class="card-screen" data-title="7. Active Recall Flashcards">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
         <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
-        <p class="text-xs text-slate-300 mb-6">Test yourself on essential definitions, reactions, and principles before flipping.</p>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential slide definitions, reactions, and principles before flipping.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
         <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What specific gas was primarily responsible for the casualties in the Bhopal Gas Tragedy?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What specific gas was primarily responsible for the casualties in the Bhopal Gas Tragedy?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Methyl Isocyanate (MIC, $CH_3NCO$), an intermediate chemical used in the synthesis of the carbamate pesticide carbaryl (Sevin).</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Methyl Isocyanate (MIC, $CH_3NCO$), an intermediate chemical used in the synthesis of the carbamate pesticide carbaryl (Sevin).</div>
             </div>
           </div>
         </div>
@@ -576,12 +968,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What is the difference between Bioaccumulation and Biomagnification?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What is the difference between Bioaccumulation and Biomagnification?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Bioaccumulation is the increase in contaminant concentration in an organism over time compared to the environmental medium. Biomagnification is the progressive increase in contaminant concentration across successive trophic levels in a food web.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Bioaccumulation is the increase in contaminant concentration in an organism over time compared to the environmental medium. Biomagnification is the progressive increase in contaminant concentration across successive trophic levels in a food web.</div>
             </div>
           </div>
         </div>
@@ -590,12 +982,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">Which Indian Act was enacted as a direct constitutional response to the Bhopal Gas Disaster?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">Which Indian Act was enacted as a direct constitutional response to the Bhopal Gas Disaster?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">The Environment (Protection) Act, 1986 (an umbrella legislative framework enacted under Article 253 of the Indian Constitution).</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">The Environment (Protection) Act, 1986 (an umbrella legislative framework enacted under Article 253 of the Indian Constitution).</div>
             </div>
           </div>
         </div>
@@ -605,7 +997,7 @@
     </section>
     
 
-    <section class="card-screen" data-title="Exam Traps & Pitfalls">
+    <section class="card-screen" data-title="8. High-Yield Exam Traps">
       <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
         <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
         <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
@@ -617,11 +1009,11 @@
     </section>
     
 
-    <section class="card-screen" data-title="Concept Check Quiz">
+    <section class="card-screen" data-title="9. Concept Check Quiz">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
         <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
-        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions.</p>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions from the lecture slides.</p>
         <div>
           
         <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
@@ -691,498 +1083,498 @@
     </section>
     
 
-    <section class="card-screen" data-title="Slide Reference Gallery">
+    <section class="card-screen" data-title="10. Slide Quick-Jump Index">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
           <div>
-            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Primary Course Slides</div>
-            <h2 class="text-2xl font-black text-white">Complete Slide Reference Gallery</h2>
-            <p class="text-xs text-slate-300">All 30 slides from the lecture presentations for instant reference and review.</p>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Master Slide Reference</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Index</h2>
+            <p class="text-xs text-slate-300">Quick visual reference of all 30 slides across this lecture deck with PDF downloads.</p>
           </div>
           <div class="flex flex-wrap gap-2">
             <a href='../Lecture_Slides/Class-5 -Environmental Events.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-5 -Environmental Events.pdf</span></a>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_01.jpg', 'Slide 1: Topic -5')">
-            <img src="assets/slides/lec_05/slide_01.jpg" alt="Slide 1" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_01.jpg" alt="Slide 1" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #1</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Topic -5">Topic -5</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Topic -5">Topic -5</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_02.jpg', 'Slide 2: NEWSPAPER HEADLINES')">
-            <img src="assets/slides/lec_05/slide_02.jpg" alt="Slide 2" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_02.jpg" alt="Slide 2" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #2</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="NEWSPAPER HEADLINES">NEWSPAPER HEADLINES</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="NEWSPAPER HEADLINES">NEWSPAPER HEADLINES</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_03.jpg', 'Slide 3: Global Distillation')">
-            <img src="assets/slides/lec_05/slide_03.jpg" alt="Slide 3" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_03.jpg" alt="Slide 3" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #3</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global Distillation">Global Distillation</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Global Distillation">Global Distillation</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_04.jpg', 'Slide 4: Arctic  Paradox')">
-            <img src="assets/slides/lec_05/slide_04.jpg" alt="Slide 4" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_04.jpg" alt="Slide 4" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #4</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Arctic  Paradox">Arctic  Paradox</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Arctic  Paradox">Arctic  Paradox</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_05.jpg', 'Slide 5: Buoys and garbage litter a beach along the coast of Svalbard, ...')">
-            <img src="assets/slides/lec_05/slide_05.jpg" alt="Slide 5" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_05.jpg', 'Slide 5: Buoys and garbage litter a beach along the coast of Svalbard, Norway.')">
+            <img src="assets/slides/lec_05/slide_05.jpg" alt="Slide 5" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #5</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Buoys and garbage litter a beach along the coast of Svalbard, ...">Buoys and garbage litter a beach along the coast of Svalbard, ...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Buoys and garbage litter a beach along the coast of Svalbard, Norway.">Buoys and garbage litter a beach along the coast of Svalbard, Norway.</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_06.jpg', 'Slide 6: Global Dimming')">
-            <img src="assets/slides/lec_05/slide_06.jpg" alt="Slide 6" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_06.jpg" alt="Slide 6" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #6</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global Dimming">Global Dimming</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Global Dimming">Global Dimming</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_07.jpg', 'Slide 7: Slide 7')">
-            <img src="assets/slides/lec_05/slide_07.jpg" alt="Slide 7" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_07.jpg" alt="Slide 7" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #7</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 7">Slide 7</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 7">Slide 7</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_08.jpg', 'Slide 8: Both global dimming and global')">
-            <img src="assets/slides/lec_05/slide_08.jpg" alt="Slide 8" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_08.jpg" alt="Slide 8" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #8</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Both global dimming and global">Both global dimming and global</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Both global dimming and global">Both global dimming and global</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_09.jpg', 'Slide 9: • Decline in solar radiation at land surfaces documented in')">
-            <img src="assets/slides/lec_05/slide_09.jpg" alt="Slide 9" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_09.jpg" alt="Slide 9" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #9</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="• Decline in solar radiation at land surfaces documented in">• Decline in solar radiation at land surfaces documented in</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="• Decline in solar radiation at land surfaces documented in">• Decline in solar radiation at land surfaces documented in</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_10.jpg', 'Slide 10: Slide 10')">
-            <img src="assets/slides/lec_05/slide_10.jpg" alt="Slide 10" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_10.jpg" alt="Slide 10" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #10</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 10">Slide 10</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 10">Slide 10</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_11.jpg', 'Slide 11: Slide 11')">
-            <img src="assets/slides/lec_05/slide_11.jpg" alt="Slide 11" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_11.jpg" alt="Slide 11" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #11</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 11">Slide 11</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 11">Slide 11</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_12.jpg', 'Slide 12: Wild et al. Science 308, 847-850 (2005)')">
-            <img src="assets/slides/lec_05/slide_12.jpg" alt="Slide 12" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_12.jpg" alt="Slide 12" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #12</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Wild et al. Science 308, 847-850 (2005)">Wild et al. Science 308, 847-850 (2005)</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Wild et al. Science 308, 847-850 (2005)">Wild et al. Science 308, 847-850 (2005)</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_13.jpg', 'Slide 13: Global Dimming and Global Warming')">
-            <img src="assets/slides/lec_05/slide_13.jpg" alt="Slide 13" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_13.jpg" alt="Slide 13" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #13</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Global Dimming and Global Warming">Global Dimming and Global Warming</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Global Dimming and Global Warming">Global Dimming and Global Warming</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_14.jpg', 'Slide 14: Differences Between Now and Then')">
-            <img src="assets/slides/lec_05/slide_14.jpg" alt="Slide 14" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_14.jpg" alt="Slide 14" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #14</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Differences Between Now and Then">Differences Between Now and Then</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Differences Between Now and Then">Differences Between Now and Then</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_15.jpg', 'Slide 15: AZOLLA..')">
-            <img src="assets/slides/lec_05/slide_15.jpg" alt="Slide 15" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_15.jpg" alt="Slide 15" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #15</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="AZOLLA..">AZOLLA..</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="AZOLLA..">AZOLLA..</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_16.jpg', 'Slide 16: CHANGE IN EARTH’S ROTATION')">
-            <img src="assets/slides/lec_05/slide_16.jpg" alt="Slide 16" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_16.jpg" alt="Slide 16" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #16</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="CHANGE IN EARTH’S ROTATION">CHANGE IN EARTH’S ROTATION</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="CHANGE IN EARTH’S ROTATION">CHANGE IN EARTH’S ROTATION</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_17.jpg', 'Slide 17: China’s Monster')">
-            <img src="assets/slides/lec_05/slide_17.jpg" alt="Slide 17" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_17.jpg" alt="Slide 17" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #17</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="China’s Monster">China’s Monster</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="China’s Monster">China’s Monster</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_18.jpg', 'Slide 18: One of the few man made objects that can be seen clearly from')">
-            <img src="assets/slides/lec_05/slide_18.jpg" alt="Slide 18" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_18.jpg" alt="Slide 18" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #18</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="One of the few man made objects that can be seen clearly from">One of the few man made objects that can be seen clearly from</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="One of the few man made objects that can be seen clearly from">One of the few man made objects that can be seen clearly from</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_19.jpg', 'Slide 19: MASS SHIFT CHANGES ROTATION!!!!!!')">
-            <img src="assets/slides/lec_05/slide_19.jpg" alt="Slide 19" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_19.jpg" alt="Slide 19" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #19</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="MASS SHIFT CHANGES ROTATION!!!!!!">MASS SHIFT CHANGES ROTATION!!!!!!</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="MASS SHIFT CHANGES ROTATION!!!!!!">MASS SHIFT CHANGES ROTATION!!!!!!</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_20.jpg', 'Slide 20: The ship lift at the Three Gorges Dam in China is the world’s ...')">
-            <img src="assets/slides/lec_05/slide_20.jpg" alt="Slide 20" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_20.jpg', 'Slide 20: The ship lift at the Three Gorges Dam in China is the world’s largest')">
+            <img src="assets/slides/lec_05/slide_20.jpg" alt="Slide 20" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #20</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The ship lift at the Three Gorges Dam in China is the world’s ...">The ship lift at the Three Gorges Dam in China is the world’s ...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The ship lift at the Three Gorges Dam in China is the world’s largest">The ship lift at the Three Gorges Dam in China is the world’s largest</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_21.jpg', 'Slide 21: How Groundwater Extraction Has Shifted the Earth’s Axis?')">
-            <img src="assets/slides/lec_05/slide_21.jpg" alt="Slide 21" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_21.jpg" alt="Slide 21" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #21</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="How Groundwater Extraction Has Shifted the Earth’s Axis?">How Groundwater Extraction Has Shifted the Earth’s Axis?</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="How Groundwater Extraction Has Shifted the Earth’s Axis?">How Groundwater Extraction Has Shifted the Earth’s Axis?</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_22.jpg', 'Slide 22: Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian vol...')">
-            <img src="assets/slides/lec_05/slide_22.jpg" alt="Slide 22" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_22.jpg', 'Slide 22: Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian volcanic...')">
+            <img src="assets/slides/lec_05/slide_22.jpg" alt="Slide 22" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #22</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian vol...">Napoleon's defeat at Waterloo caused in part by Indonesian vol...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Napoleon&#x27;s defeat at Waterloo caused in part by Indonesian volcanic...">Napoleon's defeat at Waterloo caused in part by Indonesian volcanic...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_23.jpg', 'Slide 23: Slide 23')">
-            <img src="assets/slides/lec_05/slide_23.jpg" alt="Slide 23" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_23.jpg" alt="Slide 23" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #23</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 23">Slide 23</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 23">Slide 23</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_24.jpg', 'Slide 24: Carl Sagan and others conducted additional studies and found t...')">
-            <img src="assets/slides/lec_05/slide_24.jpg" alt="Slide 24" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_24.jpg', 'Slide 24: Carl Sagan and others conducted additional studies and found that soot')">
+            <img src="assets/slides/lec_05/slide_24.jpg" alt="Slide 24" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #24</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Carl Sagan and others conducted additional studies and found t...">Carl Sagan and others conducted additional studies and found t...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Carl Sagan and others conducted additional studies and found that soot">Carl Sagan and others conducted additional studies and found that soot</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_25.jpg', 'Slide 25: Nuclear winter theory is supported by observational evidence')">
-            <img src="assets/slides/lec_05/slide_25.jpg" alt="Slide 25" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_25.jpg" alt="Slide 25" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #25</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Nuclear winter theory is supported by observational evidence">Nuclear winter theory is supported by observational evidence</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Nuclear winter theory is supported by observational evidence">Nuclear winter theory is supported by observational evidence</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_26.jpg', 'Slide 26: Slide 26')">
-            <img src="assets/slides/lec_05/slide_26.jpg" alt="Slide 26" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_26.jpg" alt="Slide 26" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #26</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 26">Slide 26</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 26">Slide 26</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_27.jpg', 'Slide 27: Nuclear winter is the term for a theory describing the climati...')">
-            <img src="assets/slides/lec_05/slide_27.jpg" alt="Slide 27" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_27.jpg', 'Slide 27: Nuclear winter is the term for a theory describing the climatic eff...')">
+            <img src="assets/slides/lec_05/slide_27.jpg" alt="Slide 27" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #27</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Nuclear winter is the term for a theory describing the climati...">Nuclear winter is the term for a theory describing the climati...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Nuclear winter is the term for a theory describing the climatic eff...">Nuclear winter is the term for a theory describing the climatic eff...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_28.jpg', 'Slide 28: Slide 28')">
-            <img src="assets/slides/lec_05/slide_28.jpg" alt="Slide 28" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_28.jpg" alt="Slide 28" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #28</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 28">Slide 28</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 28">Slide 28</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_29.jpg', 'Slide 29: Slide 29')">
-            <img src="assets/slides/lec_05/slide_29.jpg" alt="Slide 29" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_29.jpg" alt="Slide 29" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #29</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 29">Slide 29</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 29">Slide 29</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_05/slide_30.jpg', 'Slide 30: https://www.youtube.com/watch?v=USDCATD89oY - Toba')">
-            <img src="assets/slides/lec_05/slide_30.jpg" alt="Slide 30" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_05/slide_30.jpg" alt="Slide 30" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #30</span>
-              <span>Class-5 -Environmental Events.pdf</span>
+              <span class="truncate max-w-[100px]">Class-5 -Environmental Events.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://www.youtube.com/watch?v=USDCATD89oY - Toba">https://www.youtube.com/watch?v=USDCATD89oY - Toba</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="https://www.youtube.com/watch?v=USDCATD89oY - Toba">https://www.youtube.com/watch?v=USDCATD89oY - Toba</div>
           </div>
         </div>
         
@@ -1195,9 +1587,9 @@
 
   <!-- BOTTOM NAVIGATION BAR -->
   <nav id="nav-bar">
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all" onclick="prevCard()">← Previous</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all cursor-pointer" onclick="prevCard()">← Previous</button>
     <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 10</span>
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950" onclick="nextCard()">Next Card →</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950 cursor-pointer" onclick="nextCard()">Next Card →</button>
   </nav>
 
   <!-- LIGHTBOX MODAL -->
@@ -1205,7 +1597,7 @@
     <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
       <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
         <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
-        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded" onclick="closeLightbox()">✕ Close</button>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded cursor-pointer" onclick="closeLightbox()">✕ Close</button>
       </div>
       <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
         <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
@@ -1214,6 +1606,74 @@
   </div>
 
   <script>
+    const ALL_UNITS_DATA = {"u05_1": {"slides": [{"slide_num": 1, "title": "Topic -5", "image": "assets/slides/lec_05/slide_01.jpg", "bullets": ["Environmental Events", "Dr. P. Rama Chandra", "Lab for Spatial Informatics, IIIT-H", "24th August 2026"], "takeaway": "Topic -5"}, {"slide_num": 2, "title": "NEWSPAPER HEADLINES", "image": "assets/slides/lec_05/slide_02.jpg", "bullets": ["\u201cArctic Indigenous Peoples Being Poisoned", "by Industry Thousands of Miles Away\u201d", "Bioaccumulation of pollutants", "Pollution", "Sinks", "\u2022 The pollution is the result of what scientists call the", "\u201cgrasshopper effect\u201d, in which transboundary pollution", "dispersing at the point of origin and driven by wind, re-"], "takeaway": "NEWSPAPER HEADLINES"}, {"slide_num": 3, "title": "Global Distillation", "image": "assets/slides/lec_05/slide_03.jpg", "bullets": ["Persistent organic pollutants (POPs) are among the most dangerous and", "are used as pesticides and also occurring as by-products from various", "industrial processes and from combustion."], "takeaway": "Global Distillation"}, {"slide_num": 4, "title": "Arctic  Paradox", "image": "assets/slides/lec_05/slide_04.jpg", "bullets": ["Inuit concern"], "takeaway": "Arctic  Paradox"}, {"slide_num": 5, "title": "Buoys and garbage litter a beach along the coast of Svalbard, Norway.", "image": "assets/slides/lec_05/slide_05.jpg", "bullets": ["Svalbard does not have trees and the logs that have washed up on the beach", "are from neighboring Russia.", "Case studies: Belgium-dioxin; China;-acid rains; Britian-Sweden- Acid rains"], "takeaway": "Buoys and garbage litter a beach along the coast of Svalbard, Norway."}], "currentIdx": 0}, "u05_2": {"slides": [{"slide_num": 6, "title": "Global Dimming", "image": "assets/slides/lec_05/slide_06.jpg", "bullets": ["Global dimming is defined as the decrease in the amounts of solar", "radiation reaching the surface of the Earth.", "Causes of Global Dimming", "1. Aerosols", "brown clouds", "2. contrails", "How ??: 1950; NH>SH"], "takeaway": "Global Dimming"}, {"slide_num": 7, "title": "Slide 7", "image": "assets/slides/lec_05/slide_07.jpg", "bullets": [], "takeaway": "Slide 7"}, {"slide_num": 8, "title": "Both global dimming and global", "image": "assets/slides/lec_05/slide_08.jpg", "bullets": ["warming have been happening all", "over the world and together they", "have caused severe changes in the", "rainfall patterns", "1984 Saharan drought"], "takeaway": "Both global dimming and global"}, {"slide_num": 9, "title": "\u2022 Decline in solar radiation at land surfaces documented in", "image": "assets/slides/lec_05/slide_09.jpg", "bullets": ["observational records up to 1990, by 24 stations distributed", "globally", "\u2022 Global dimming has reversed since 1990. New data from", "1990 to the present (mostly from the Northern Hemisphere)", "show that the dimming did not persist into the 1990s (Data", "from 300 stations available)", "\u2022 Studies of the amount of sunlight making it through the", "atmosphere suggest that our air is getting cleaner"], "takeaway": "\u2022 Decline in solar radiation at land surfaces documented in"}, {"slide_num": 10, "title": "Slide 10", "image": "assets/slides/lec_05/slide_10.jpg", "bullets": [], "takeaway": "Slide 10"}, {"slide_num": 11, "title": "Slide 11", "image": "assets/slides/lec_05/slide_11.jpg", "bullets": [], "takeaway": "Slide 11"}, {"slide_num": 12, "title": "Wild et al. Science 308, 847-850 (2005)", "image": "assets/slides/lec_05/slide_12.jpg", "bullets": [], "takeaway": "Wild et al. Science 308, 847-850 (2005)"}, {"slide_num": 13, "title": "Global Dimming and Global Warming", "image": "assets/slides/lec_05/slide_13.jpg", "bullets": [], "takeaway": "Global Dimming and Global Warming"}], "currentIdx": 0}, "u05_3": {"slides": [{"slide_num": 14, "title": "Differences Between Now and Then", "image": "assets/slides/lec_05/slide_14.jpg", "bullets": ["But, why so warm ?", "So, why did it get cold ?", "The Eocene"], "takeaway": "Differences Between Now and Then"}, {"slide_num": 15, "title": "AZOLLA..", "image": "assets/slides/lec_05/slide_15.jpg", "bullets": ["IMPACT", "Pest"], "takeaway": "AZOLLA.."}, {"slide_num": 16, "title": "CHANGE IN EARTH\u2019S ROTATION", "image": "assets/slides/lec_05/slide_16.jpg", "bullets": ["DUE TO CONSTRUCTION OF DAMS", "\u27a2Days are shorter in past\u2026.!!!!", "\u27a2Atomic Clocks show that a modern day is longer by about 1.7", "milli sec than a century ago", "\u27a2Many reasons and many theories like\u2026\u2026.", "\u25cbdue to gravitational interactions with the Moon,", "\u25cbconstruction of sky scrapers, construction of dams\u2026.etc", "THE MYTH"], "takeaway": "CHANGE IN EARTH\u2019S ROTATION"}, {"slide_num": 17, "title": "China\u2019s Monster", "image": "assets/slides/lec_05/slide_17.jpg", "bullets": ["\u201cTHE THREE GORGES DAM\u201d", "\u279430\u00b044'18\" North, 111\u00b016'27\" East.", "\u2794Biggest, most expensive dam", "\u2794Crosses the Yangtze River in Hubei province, China.", "\u2794Height : 185 m.", "\u2794Goals :", "\u25c6Flood control", "\u25c6Power Generation"], "takeaway": "China\u2019s Monster"}, {"slide_num": 18, "title": "One of the few man made objects that can be seen clearly from", "image": "assets/slides/lec_05/slide_18.jpg", "bullets": ["space. Dam is build in the middle of an earthquake zone!!", "Project used 27.2 million cubic meters of concrete (mainly for", "the dam wall), 463,000 tonnes of steel (enough to build 63", "Eiffel Towers) , Moved about 102.6 million cubic meters of", "Earth. Conc dam wall is 181m above rock basis.", "The reservoir created by the dam is about 660 km in length and", "1.12 km in width , The total surface area of the reservoir is", "1045 km2, and it will flood a total area of 632 km2, of land."], "takeaway": "One of the few man made objects that can be seen clearly from"}, {"slide_num": 19, "title": "MASS SHIFT CHANGES ROTATION!!!!!!", "image": "assets/slides/lec_05/slide_19.jpg", "bullets": ["\u2605Thus by shifting a significant mass of water, the dam will", "literally SLOW THE ROTATION OF THE EARTH. This is", "because (a shift in mass) raising about 39 trillion kilograms", "of water, 175 meters above sea level will increase the Earth\u2019s", "moment of inertia and thus slow its rotation.", "However, the", "effect would extremely small.", "\u2605As per NASA scientists, the shift of such mass would"], "takeaway": "MASS SHIFT CHANGES ROTATION!!!!!!"}, {"slide_num": 20, "title": "The ship lift at the Three Gorges Dam in China is the world\u2019s largest", "image": "assets/slides/lec_05/slide_20.jpg", "bullets": ["China's Three Gorges Dam: An Environmental Catastrophe?"], "takeaway": "The ship lift at the Three Gorges Dam in China is the world\u2019s largest"}, {"slide_num": 21, "title": "How Groundwater Extraction Has Shifted the Earth\u2019s Axis?", "image": "assets/slides/lec_05/slide_21.jpg", "bullets": ["Excessive extraction of groundwater for drinking and", "irrigation has shifted the Earth\u2019s axis of rotation.", "Humans pumped out around 2,150 gigatons of", "groundwater between 1993 and 2010 and this has led", "the planet\u2019s axis to drift at the rate of 4.36 cm per", "year towards the east.", "Polar Motion", "Redistribution of groundwater as the largest contributor to the drift of"], "takeaway": "How Groundwater Extraction Has Shifted the Earth\u2019s Axis?"}], "currentIdx": 0}, "u05_4": {"slides": [{"slide_num": 22, "title": "Napoleon's defeat at Waterloo caused in part by Indonesian volcanic...", "image": "assets/slides/lec_05/slide_22.jpg", "bullets": ["Toba catastrophe theory"], "takeaway": "Napoleon's defeat at Waterloo caused in part by Indonesian volcanic..."}, {"slide_num": 23, "title": "Slide 23", "image": "assets/slides/lec_05/slide_23.jpg", "bullets": [], "takeaway": "Slide 23"}, {"slide_num": 24, "title": "Carl Sagan and others conducted additional studies and found that soot", "image": "assets/slides/lec_05/slide_24.jpg", "bullets": ["from cities and dust from the explosions themselves were also climatically", "significant and could cool the surface of the earth"], "takeaway": "Carl Sagan and others conducted additional studies and found that soot"}, {"slide_num": 25, "title": "Nuclear winter theory is supported by observational evidence", "image": "assets/slides/lec_05/slide_25.jpg", "bullets": ["from natural catastrophic events"], "takeaway": "Nuclear winter theory is supported by observational evidence"}, {"slide_num": 26, "title": "Slide 26", "image": "assets/slides/lec_05/slide_26.jpg", "bullets": [], "takeaway": "Slide 26"}, {"slide_num": 27, "title": "Nuclear winter is the term for a theory describing the climatic eff...", "image": "assets/slides/lec_05/slide_27.jpg", "bullets": ["war. Smoke from the fires started by nuclear weapons, especially the black, sooty", "smoke from cities and industrial facilities, would be heated by the Sun, lofted into", "the upper stratosphere, and spread globally , lasting for years.", "The resulting cool, dark, dry conditions at Earth\u2019s surface would prevent crop", "growth for at least one growing season, resulting in mass starvation over most of", "the world.", "In addition, there would be massive ozone depletion, allowing enhanced", "ultraviolet radiation. More people could die in the noncombatant countries than"], "takeaway": "Nuclear winter is the term for a theory describing the climatic eff..."}, {"slide_num": 28, "title": "Slide 28", "image": "assets/slides/lec_05/slide_28.jpg", "bullets": [], "takeaway": "Slide 28"}, {"slide_num": 29, "title": "Slide 29", "image": "assets/slides/lec_05/slide_29.jpg", "bullets": [], "takeaway": "Slide 29"}, {"slide_num": 30, "title": "https://www.youtube.com/watch?v=USDCATD89oY - Toba", "image": "assets/slides/lec_05/slide_30.jpg", "bullets": ["winter-200622132211696.html", "dam/documents/edu/courses/radiation_and_climate_change/WildBAMS.pdf"], "takeaway": "https://www.youtube.com/watch?v=USDCATD89oY - Toba"}], "currentIdx": 0}};
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function switchUnitSlide(unitId, slideIdx) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit || !unit.slides[slideIdx]) return;
+      unit.currentIdx = slideIdx;
+      const s = unit.slides[slideIdx];
+      
+      const imgEl = document.getElementById(unitId + '_slide_img');
+      if (imgEl) {
+        imgEl.src = s.image;
+        imgEl.alt = s.title;
+      }
+      const wrapEl = document.getElementById(unitId + '_slide_wrap');
+      if (wrapEl) {
+        wrapEl.setAttribute('onclick', "openLightbox('" + s.image + "', 'Slide " + s.slide_num + ": " + escapeHtml(s.title) + "')");
+      }
+      const titleEl = document.getElementById(unitId + '_slide_title');
+      if (titleEl) {
+        titleEl.textContent = 'Slide ' + s.slide_num + ': ' + s.title;
+      }
+      const bulletsEl = document.getElementById(unitId + '_slide_bullets');
+      if (bulletsEl) {
+        if (s.bullets && s.bullets.length > 0) {
+          bulletsEl.innerHTML = s.bullets.map(b => '<div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">' + escapeHtml(b) + '</span></div>').join('');
+        } else {
+          bulletsEl.innerHTML = '<p class="text-slate-400 italic text-xs">Visual figure / diagram slide. Inspect the high-resolution render on the left.</p>';
+        }
+      }
+      const takeawayEl = document.getElementById(unitId + '_slide_takeaway');
+      if (takeawayEl) {
+        takeawayEl.textContent = s.takeaway || s.title;
+      }
+      const indEl = document.getElementById('cur_slide_indicator_' + unitId);
+      if (indEl) {
+        indEl.textContent = '#' + s.slide_num;
+      }
+      
+      const btns = document.querySelectorAll('.slide-btn-' + unitId);
+      btns.forEach((btn, idx) => {
+        if (idx === slideIdx) {
+          btn.className = 'slide-btn-' + unitId + ' active px-3 py-1.5 rounded-lg text-xs font-mono bg-emerald-600 border border-emerald-400 text-white font-bold flex-shrink-0 shadow-lg shadow-emerald-950/50';
+        } else {
+          btn.className = 'slide-btn-' + unitId + ' px-3 py-1.5 rounded-lg text-xs font-mono bg-[#071610] border border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 flex-shrink-0 transition-all';
+        }
+      });
+    }
+
+    function navUnitSlide(unitId, delta) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit) return;
+      let cur = unit.currentIdx || 0;
+      let next = cur + delta;
+      if (next >= 0 && next < unit.slides.length) {
+        switchUnitSlide(unitId, next);
+      }
+    }
+
     let currentCard = 0;
     const screens = document.querySelectorAll('.card-screen');
     const totalCards = screens.length;
@@ -1223,13 +1683,11 @@
         s.classList.toggle('active', i === currentCard);
       });
 
-      // Update sidebar
       for (let i = 0; i < totalCards; i++) {
         const el = document.getElementById('slink_' + i);
         if (el) el.classList.toggle('active', i === currentCard);
       }
 
-      // Counter & Progress
       document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
       const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
       document.getElementById('progress-bar-fill').style.width = pct + '%';
@@ -1238,7 +1696,6 @@
       const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
       document.getElementById('section-label').innerText = title;
 
-      // Scroll to top
       document.getElementById('main').scrollTop = 0;
     }
 
@@ -1263,14 +1720,12 @@
       }
     }
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') nextCard();
       else if (e.key === 'ArrowLeft') prevCard();
       else if (e.key === 'Escape') closeLightbox();
     });
 
-    // Lightbox Modal
     function openLightbox(imgSrc, title) {
       document.getElementById('modal_img').src = imgSrc;
       document.getElementById('modal_title').innerText = title || 'Slide Figure';
@@ -1280,7 +1735,6 @@
       document.getElementById('lightbox_modal').classList.remove('show');
     }
 
-    // Quiz evaluation
     function handleQuiz(el, isCorrect, feedbackId) {
       const parent = el.parentElement;
       const opts = parent.querySelectorAll('.quiz-option');
@@ -1290,7 +1744,6 @@
         el.classList.add('correct');
       } else {
         el.classList.add('wrong');
-        // highlight correct option
         opts.forEach(o => {
           if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
             o.classList.add('correct');
@@ -1301,7 +1754,6 @@
       if (fb) fb.classList.remove('hidden');
     }
 
-    // Pomodoro Timer
     let timerSec = 25 * 60;
     let timerRunning = false;
     let timerInterval = null;
@@ -1329,7 +1781,6 @@
       }
     }
 
-    // Initialize
     updateCardView();
   </script>
 </body>

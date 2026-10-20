@@ -44,11 +44,6 @@
     box-shadow: 0 10px 30px -10px var(--primary-glow);
     transform: translateY(-2px);
   }
-  .eco-card-static {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-  }
 
   /* Badges */
   .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
@@ -123,29 +118,24 @@
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-semibold mb-3">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            12 Interactive Lecture Modules • 444 Primary Slides
+            12 Interactive Lecture Modules • 444 Primary Slides Systematically Taught
           </div>
           <h1 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-2">
-            Curriculum Roadmap & Study Navigator
+            Curriculum Roadmap & Slide Navigator
           </h1>
           <p class="text-xs md:text-sm text-slate-300 max-w-2xl leading-relaxed">
-            Every lecture deck is transformed into a structured, ADHD-friendly, and mathematically rigorous study suite featuring extracted slide diagrams, KaTeX formulas, active recall flashcards, and playable videos.
+            All 444 slides across the 12 primary lecture presentations are systematically mapped into interactive learning units, with high-res slide viewers, professor bullet points, deep pedagogical breakdowns, KaTeX formulas, and active recall testing.
           </p>
         </div>
 
-        <!-- CIRCULAR PROGRESS RING -->
-        <div class="bg-[#05140d] border border-emerald-900 rounded-xl p-4 flex items-center gap-4 flex-shrink-0">
-          <div class="relative w-20 h-20">
-            <svg class="w-full h-full transform -rotate-90">
-              <circle cx="40" cy="40" r="32" stroke="#132b20" stroke-width="6" fill="transparent" />
-              <circle cx="40" cy="40" r="32" stroke="#10b981" stroke-width="6" fill="transparent" stroke-dasharray="201" stroke-dashoffset="150" class="transition-all duration-500" id="progress_circle" />
-            </svg>
-            <span class="absolute inset-0 flex items-center justify-center text-xs font-black text-emerald-400 font-mono" id="progress_pct">25%</span>
+        <div class="flex items-center gap-4 bg-[#05130d] border border-emerald-900/80 p-4 rounded-xl">
+          <div class="w-16 h-16 rounded-full border-4 border-emerald-500/20 border-t-emerald-400 flex items-center justify-center font-black text-emerald-300 text-base">
+            100%
           </div>
-          <div>
-            <div class="text-xs font-bold text-white mb-0.5">Course Completion</div>
-            <div class="text-[11px] text-slate-400">3 of 12 Modules Mastered</div>
-            <div class="text-[10px] text-emerald-400 mt-1 font-mono">Status: Midsem Ready</div>
+          <div class="text-xs">
+            <div class="font-bold text-white mb-0.5">Slide Curriculum</div>
+            <div class="text-slate-400">12 of 12 Modules Ready</div>
+            <div class="text-emerald-400 text-[10px] font-mono mt-1">444 Slides • Zero Gaps</div>
           </div>
         </div>
       </div>
@@ -175,7 +165,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 54 Slides</span>
-              <span>🎨 126 Visuals</span>
+              <span>🧩 5 Units</span>
               <span>⏱️ 40 mins</span>
             </div>
             <a href="01_course_overview_vision_2070.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -205,7 +195,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 57 Slides</span>
-              <span>🎨 133 Visuals</span>
+              <span>🧩 5 Units</span>
               <span>⏱️ 55 mins</span>
             </div>
             <a href="02_comprehending_environment_spheres.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -235,7 +225,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 34 Slides</span>
-              <span>🎨 68 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 45 mins</span>
             </div>
             <a href="03_environmental_issues_anthropogenic_pressures.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -265,7 +255,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 18 Slides</span>
-              <span>🎨 92 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 60 mins</span>
             </div>
             <a href="04_remote_sensing_gis_monitoring.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -295,7 +285,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 30 Slides</span>
-              <span>🎨 56 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 45 mins</span>
             </div>
             <a href="05_environmental_events_crises_disasters.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -325,7 +315,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 41 Slides</span>
-              <span>🎨 74 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 50 mins</span>
             </div>
             <a href="06_earth_components_biogeochemical_cycles.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -355,7 +345,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 31 Slides</span>
-              <span>🎨 43 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 50 mins</span>
             </div>
             <a href="07_climate_change_impacts_vulnerability.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -385,7 +375,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 30 Slides</span>
-              <span>🎨 20 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 55 mins</span>
             </div>
             <a href="08_unexpected_climate_changes_tipping_points.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -415,7 +405,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 34 Slides</span>
-              <span>🎨 56 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 45 mins</span>
             </div>
             <a href="09_carbon_sequestration_terrestrial_sinks.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -445,7 +435,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 54 Slides</span>
-              <span>🎨 43 Visuals</span>
+              <span>🧩 5 Units</span>
               <span>⏱️ 50 mins</span>
             </div>
             <a href="10_cdm_carbon_markets_ocean_sequestration.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -475,7 +465,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 29 Slides</span>
-              <span>🎨 57 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 45 mins</span>
             </div>
             <a href="11_climate_technology_solutions_cleantech.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -505,7 +495,7 @@
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
               <span>📚 32 Slides</span>
-              <span>🎨 3 Visuals</span>
+              <span>🧩 4 Units</span>
               <span>⏱️ 50 mins</span>
             </div>
             <a href="12_eia_framework_methodology_protocols.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
@@ -516,9 +506,5 @@
         
     </div>
   </div>
-
-  <footer class="mt-12 py-6 border-t border-emerald-950 text-center text-xs text-slate-500">
-    Environmental Science & Technology (ES1.101) • IIIT Hyderabad • Built with Course Website Builder
-  </footer>
 </body>
 </html>

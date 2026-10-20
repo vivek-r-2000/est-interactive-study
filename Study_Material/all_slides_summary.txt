@@ -1,0 +1,492 @@
+=== LECTURE 01: Course Overview & Planetary Vision (Year 2070) (54 slides) ===
+Files: ['Class-1 Overview.pdf', 'Class-1-Year_2070 - Compatibility Mode.pdf']
+  Slide 1: [ENVIRONMENTAL SCIENCE] ENVIRONMENTAL SCIENCE - OVERVIEW Dr . Rama Chandra  Prasad Pillutla Lab for Spatial Informatics
+  Slide 2: [Course Content] Course Content Basics of Environmental  Science and Ecosystem Major Environmental Issues – Global and IT related Involvement of IT to address Environmental Problems
+  Slide 3: [Describe environmental problems of your area] Describe environmental problems of your area Are there signs of hope for solving those problems? Imagine a situation of  “an earth without people”
+  Slide 4: [10 AWESOME ENVIRONMENTAL ADS] 10 AWESOME ENVIRONMENTAL ADS 10. UNICEF Clean Drinking Water Campaign http://www.ecorazzi.com/2012/03/21/10-awesome-environmental-ads/
+  Slide 5: [IFAW.org Save the Elephant Campaign] IFAW.org Save the Elephant Campaign
+  Slide 6: [8. Greenpeace “The Greatest] 8. Greenpeace “The Greatest Wonder of the Sea” Campaign
+  Slide 7: [7. Ecoeduca Global] 7. Ecoeduca Global Warming Campaign
+  Slide 8: [6. World Wildlife Fund] 6. World Wildlife Fund “Preserve Your World” Campaign
+  Slide 9: [5. Goias, Brazil “Fist”] 5. Goias, Brazil “Fist” Environmental Awareness Campaign
+  Slide 10: [4. Greenpeace “Stop the Catastrophe”] 4. Greenpeace “Stop the Catastrophe”
+  Slide 11: [3. Friends of the Earth, Belgium Global] 3. Friends of the Earth, Belgium Global Warming Campaign
+  Slide 12: [2. World Wildlife Fund “Rubbish”] 2. World Wildlife Fund “Rubbish”
+  Slide 13: [1. World Wildlife Fund] 1. World Wildlife Fund “Stop Climate Change”
+  Slide 14: [Slide 14] 
+  Slide 15: [Slide 15] 
+  Slide 16: [Slide 16] 
+  Slide 17: [Slide 17] 
+  Slide 18: [Slide 18] 
+  Slide 19: [Slide 19] 
+  Slide 20: [Slide 20] 
+  Slide 21: [Slide 21] 
+  Slide 22: [Slide 22] 
+  Slide 23: [Slide 23] 
+  Slide 24: [Slide 24] 
+  Slide 25: [Slide 25] 
+  Slide 26: [Slide 26] 
+  Slide 27: [Slide 27] 
+  Slide 28: [Slide 28] 
+  Slide 29: [Slide 29] 
+  Slide 30: [Slide 30] 
+  Slide 31: [Government Schemes/policies – impact on Environment] Government Schemes/policies – impact on Environment Landscape history – Spatial changes – evolution- current state Project Topics Environment and AI: Ensemble learning, deep learning
+  Slide 32: [Slide 32] 
+  Slide 33: [Assessment methods] Assessment methods 1. Assignments 20% 2. Project
+  Slide 34: [LETTER WRITTEN] LETTER WRITTEN IN THE YEAR 2070 LETTER WRITTEN IN THE YEAR 2070
+  Slide 35: [This is the year 2070] This is the year 2070 I have just turned 50, but I my appearance is of somebody of 85. I suffer from serious kidney problems,
+  Slide 36: [I remember when I was a child of 5.] I remember when I was a child of 5. I remember when I was a child of 5. There were lots of trees in the parks, houses with beautiful gardens, and I could enjoy having a shower for half an hour.
+  Slide 37: [Before,  women had beautiful hair.] Before,  women had beautiful hair. Before,  women had beautiful hair. Then, my father washed his car with water coming out of a hosepipe.
+  Slide 38: [I remember there were] I remember there were SAVE WATER warnings on outside posters, radio and TV, but nobody paid attention.
+  Slide 39: [Industry came virtually to a standstill and unemployment] Industry came virtually to a standstill and unemployment reached dramatic proportions. Desalination plants are the main source of employment and workers receive part of their salary in drinkable water.
+  Slide 40: [Assaults at gun point on the streets for a jerrycan of water a...] Assaults at gun point on the streets for a jerrycan of water are very common. Assaults at gun point on the streets for a jerrycan of water are very common. Food is 80% synthetic. Food is 80% synthetic.
+  Slide 41: [Before, the recommended quantity of water to drink] Before, the recommended quantity of water to drink for an adult was 8 glasses a day. Nowadays, I am only allowed half a glass. Before, the recommended quantity of water to drink
+  Slide 42: [The outside appearance of the population is horrible: wrinkled...] The outside appearance of the population is horrible: wrinkled, emaciated bodies, due to dehydration, full of sores caused by ultra violet radiation, now stronger without the protective shield of the ozone layer. Skin cancer, gastrointestinal infections and of the urinary tracts
+  Slide 43: [Due to the excessive drying of the skin young people of 20 loo...] Due to the excessive drying of the skin young people of 20 look like 40. Due to the excessive drying of the skin young people of 20 look like 40. Water cannot be produced, oxygen is also degraded due to the lack of trees and vegetation, and the intellectual capacity of the
+  Slide 44: [The morphology of spermatozoa in many men has changed.] The morphology of spermatozoa in many men has changed. The morphology of spermatozoa in many men has changed. As a consequence, babies are born with deficiencies, mutations and
+  Slide 45: [Government makes us pay for the air we breathe,] Government makes us pay for the air we breathe, 137 m3 per day per adult person. Government makes us pay for the air we breathe, 137 m3 per day per adult person.
+  Slide 46: [In some countries, where there are still some green zones cros...] In some countries, where there are still some green zones crossed by rivers, these are guarded by heavy armed soldiers. In some countries, where there are still some green zones crossed by rivers, these are guarded by heavy armed soldiers.
+  Slide 47: [Where I live, there are no trees, because it seldom rains.] Where I live, there are no trees, because it seldom rains. When it happens to register some precipitation, it is of acid rain. Where I live, there are no trees, because it seldom rains. When it happens to register some precipitation, it is of acid rain.
+  Slide 48: [When my son asks me to talk about my youth, I tell him about t...] When my son asks me to talk about my youth, I tell him about the green fields, the beauty of the flowers, the rain, how pleasant was to swim and fish in the rivers and dams, to drink all the water we could, and how healthy people was. When my son asks me to talk about my youth, I tell him about the green fields,
+  Slide 49: [Then, I feel a lump in my throat!] Then, I feel a lump in my throat! Then, I feel a lump in my throat! He asks: Daddy! Why there is no water? He asks: Daddy! Why there is no water?
+  Slide 50: [I cannot help feeling guilty, because] I cannot help feeling guilty, because I belong to the generation who contributed to the destruction of the environment or simply did not take into
+  Slide 51: [Now our children] Now our children pay a very high price! Now our children pay a very high price!
+  Slide 52: [I sincerely believe that within a short time life on earth wil...] I sincerely believe that within a short time life on earth will not be possible, as the destruction of nature reached now an irreversible stage. I sincerely believe that within a short time life on earth will not be possible, as the destruction of nature reached now an irreversible stage.
+  Slide 53: [How I would like to go back and make mankind understand…] How I would like to go back and make mankind understand… How I would like to go back and make mankind understand… ...that we still had time to save our Planet Earth. ...that we still had time to save our Planet Earth.
+  Slide 54: [This show was made by a] This show was made by a very talented person, named A P J Abdul Kalam.
+
+
+=== LECTURE 02: Comprehending Our Environment: Earth Spheres & Thermodynamics (57 slides) ===
+Files: ['Class-2-Comprehend our Environment-Part-1.pdf', 'Class-2-Comprehend our environment-Part-2.pdf', 'Class-2-Comprehend our Environment-Part-3.pdf']
+  Slide 1: [Comprehend Environment] Comprehend Environment and its issues Dr . P. Rama Chandra Prasad Lab for Spatial Informatics
+  Slide 2: [Environmental] Environmental Science Air Pollution Global climate
+  Slide 3: [Understanding Our Environment] Understanding Our Environment • The conditions Earth are unique.
+  Slide 4: [Introduction] Introduction • Environment • Ecology • Environmental Science /
+  Slide 5: [Fig. 1-2, p. 7] Fig. 1-2, p. 7 Air (atmosphere) ENVIRONMENTAL SCIENCE
+  Slide 6: [• Garrett Hardin, 1968:] • Garrett Hardin, 1968: • In a “commons” open to all, unregulated use will deplete limited
+  Slide 7: [Fig. 1-10, p. 17] Fig. 1-10, p. 17 Depletion of nonrenewable resources SOLAR
+  Slide 8: [Natural capital degradation] Natural capital degradation • The exponential increasing flow of material resources through the world’s economic systems depletes, degrades and pollutes the environment.
+  Slide 9: [Global Outlook] Global Outlook • Comparison of developed and developing countries.
+  Slide 10: [Slide 10] 
+  Slide 11: [Fig. 1-14, p. 20] Fig. 1-14, p. 20 Developing Countries Population (P) Consumption
+  Slide 12: [Environmental science can help us avoid] Environmental science can help us avoid mistakes  made  by past civilizations .The lesson of Easter Island: ~  300 AD first inhabited, lush forests & other resources
+  Slide 13: [What is an “environmental problem”?] What is an “environmental problem”? - The perception of what constitutes a problem varies between individuals and
+  Slide 14: [What is environmental science?] What is environmental science? • Environmental science is the systematic study of our environment and our
+  Slide 15: [https://www.sciencedirect.com/science/article/abs/pii/S0006320...] https://www.sciencedirect.com/science/article/abs/pii/S0006320721003591
+  Slide 16: [Slide 16] 
+  Slide 17: [Surface accumulations of cyanobacteria Nodularia in] Surface accumulations of cyanobacteria Nodularia in the Baltic Sea as detected by enhanced "true-color" MODIS imagery on July 30, 2003 HAB
+  Slide 18: [Environmental Problems] Environmental Problems Clean Water Air Quality Food Supplies
+  Slide 19: [Slide 19] 
+  Slide 20: [Slide 20] 
+  Slide 21: [Slide 21] 
+  Slide 22: [https://hakaimagazine.com/article-short/in-india-sacred-groves...] https://hakaimagazine.com/article-short/in-india-sacred-groves-are-helping-resurrect-a- near-extinct-forest-ecosystem/ In India, Sacred Groves Are Helping Resurrect a Near-Extinct Forest Ecosystem
+  Slide 23: [Slide 23] 
+  Slide 24: [Slide 24] 
+  Slide 25: [Slide 25] 
+  Slide 26: [ICRISAT - Genebank] ICRISAT - Genebank
+  Slide 27: [Food Supply Problems] Food Supply Problems • Overgrazing • Farmland loss and  degradation • Wetlands loss and degradation
+  Slide 28: [KOLLERU  LAKE] KOLLERU  LAKE Toposheet of 1955: 231.22 Sq.Km
+  Slide 29: [Slide 29] 
+  Slide 30: [The “ecological footprint”] The “ecological footprint” • The total area of  land & water needed to produce the resource a person uses, plus the total amount
+  Slide 31: [Source: https://www.footprintnetwork.org/our-work/ecological-f...] Source: https://www.footprintnetwork.org/our-work/ecological-footprint/
+  Slide 32: [https://worldpopulationreview.com/country-] https://worldpopulationreview.com/country- rankings/ecological-footprint-by-country Biocapacity is the capacity of a given biologically productive area to generate a supply of renewable resources and to absorb
+  Slide 33: [Our Ecological Footprint] Our Ecological Footprint • Humanity’s ecological footprint has exceeded earths ecological capacity.
+  Slide 34: [Slide 34] 
+  Slide 35: [Earth Overshoot Day] Earth Overshoot Day It is the date when humanity annual demand on nature exceeds what earth can regenerate over the entire year In 2018, nature budget for the entire year has already been
+  Slide 36: [http://www.tnpscthervupettagam.com/earth-overshoot-day/] http://www.tnpscthervupettagam.com/earth-overshoot-day/
+  Slide 37: [In 2020, Earth Overshoot Day is August 22,] In 2020, Earth Overshoot Day is August 22, more than three weeks later than last year Earth Overshoot Day 2022 fell on July 28 Earth Overshoot Day 2024 fell on August 1
+  Slide 38: [Slide 38] 
+  Slide 39: [Figure Countries’ positions in terms of relative income and do...] Figure Countries’ positions in terms of relative income and domestic food biocapacity. Countries in the bottom left quadrant generate less per person income than the world average, and consume more food than its agricultural biocapacity provides. For example, Nepal only produces 78% of the amount of food that it consumes. This risk is amplified by the country’s financial disadvantage: its income per person is
+  Slide 40: [Human Dimensions of  Environmental Science] Human Dimensions of  Environmental Science Every year, Americans throw away some 160 million tons of garbage, including 50 million tons of paper, 67 billion cans and bottles, 25 billion styrofoam cups, 18 billion disposable diapers, and 2 billion disposable razors
+  Slide 41: [Waste colonialism] Waste colonialism
+  Slide 42: [Slide 42] 
+  Slide 43: [Floristic structure, composition and diversity of dry evergree...] Floristic structure, composition and diversity of dry evergreen reserve forest of Kondapalli, Eastern Ghats, southern India Floristic structure, composition and diversity of dry evergreen reserve forest of Kondapalli, Eastern Ghats, southern India
+  Slide 44: [Slide 44] 
+  Slide 45: [Slide 45] 
+  Slide 46: [Slide 46] 
+  Slide 47: [Slide 47] 
+  Slide 48: [Human Development Index] Human Development Index The UNDP defines the HDI as “a composite index measuring average achievement in three basic dimensions of human development — a long and healthy life,
+  Slide 49: [How is the HDI calculated?] How is the HDI calculated? Creating the dimensional indices from the indicators. Aggregating these dimensional indices ‘goalposts – index value 0-1
+  Slide 50: [Aggregating the dimensional indices to produce the HDI] Aggregating the dimensional indices to produce the HDI The HDI is then calculated as the geometric mean of the three dimensional indices using Equation (2), below: Equation (1),
+  Slide 51: [Slide 51] 
+  Slide 52: [https://ourworldindata.org/grapher/human-development-index?tim...] https://ourworldindata.org/grapher/human-development-index?time=2023
+  Slide 53: [Slide 53] 
+  Slide 54: [IHDI - how unequally those] IHDI - how unequally those achievements are distributed among its people
+  Slide 55: [Indigenous peoples are guardians] Indigenous peoples are guardians of much of the world’s biodiversity • Often, the 500 million indigenous people who
+  Slide 56: [Importance of Indigenous Peoples’ lands for the conservation of] Importance of Indigenous Peoples’ lands for the conservation of Intact Forest Landscapes Frontiers in Ecol & Environ, Volume: 18, Issue: 3, Pages: 135-140, First published: 06 January 2020, DOI: (10.1002/fee.2148)
+  Slide 57: [Conservation and Environmental Thought] Conservation and Environmental Thought Pragmatic Resource Conservation (Utilitarian Conservation) Global Environmental Citizenship
+
+
+=== LECTURE 03: Environmental Issues, Anthropogenic Pressures & Pollution (34 slides) ===
+Files: ['Class-3 Enviromental issues-Part-1.pdf', 'Class-3 Enviromental issues-Part-2.pdf']
+  Slide 1: [Environmental issues] Environmental issues Dr . P. Rama Chandra Prasad Lab for Spatial Informatics Class-3:
+  Slide 2: [Slide 2] 
+  Slide 3: [Problems from Human Impact on] Problems from Human Impact on Environment A. Aquatic Environment Issues –Water pollution, Ocean Dead Zones, Water Diversion, Overfishing
+  Slide 4: [• Water pollution – Eutrophication -Ocean Dead Zones] • Water pollution – Eutrophication -Ocean Dead Zones Aquatic Environmental Issues Eutrophication is magnified as rivers lead into larger rivers and eventually into the ocean – as the Mississippi River network.  This leads to ocean dead zones.
+  Slide 5: [Slide 5] 
+  Slide 6: [Pollution] Pollution • organic pollution decomposition
+  Slide 7: [Spills or Dumping in] Spills or Dumping in Oceans Thermal Pollution & Rising Ocean temperatures
+  Slide 8: [Aral Sea] Aral Sea
+  Slide 9: [Gulf of Mexico Oil Spill] Gulf of Mexico Oil Spill On April 20, 2010 the Deepwater Horizon offshore oil rig in the Gulf of Mexico exploded, killing 11 workers
+  Slide 10: [A bird’s eye view of the impact of oil pollution in the Niger ...] A bird’s eye view of the impact of oil pollution in the Niger delta creeks. Woman search the oily creek for fish, edible snails, or kindling – but they find nothing they can use. Everything is coated in oil
+  Slide 11: [Thermal Pollution: Warm Water Kills] Thermal Pollution: Warm Water Kills Fishermen row a boat in the algae- filled Chaohu Lake in Hefei, Anhui province, China. Power plants and
+  Slide 12: [Slide 12] 
+  Slide 13: [Rising ocean temperatures] Rising ocean temperatures
+  Slide 14: [Slide 14] 
+  Slide 15: [Acid Rain] Acid Rain Air Pollution Fukushima Daiichi Disaster Nuclear Pollution
+  Slide 16: [Climate Change Issues] Climate Change Issues Ozone Hole over Antartica
+  Slide 17: [Desertification] Desertification Thar desert Process of turning the productive land into desert A land degradation process that involves a continuum of
+  Slide 18: [Kubuqi a successful example of desert greening] Kubuqi a successful example of desert greening "Kubuqi model"
+  Slide 19: [Deforestation] Deforestation Deforestation – the permanent destruction of indigenous forests and woodlands. Causes include
+  Slide 20: [Shifting cultivation] Shifting cultivation Advantages • Natural Nutrient Cycling:. • Preservation of Soil Structure:
+  Slide 21: [Slide 21] 
+  Slide 22: [SHIFTING CULTIVATION DYNAMICS IN BARAK BASIN OF NORTHEAST] SHIFTING CULTIVATION DYNAMICS IN BARAK BASIN OF NORTHEAST INDIA- A GEOSPATIAL APPROACH
+  Slide 23: [Acid Deposition and Forest Decline] Acid Deposition and Forest Decline
+  Slide 24: [Soil Pollution] Soil Pollution Ways that soil can become polluted, such as: • Seepage from a landfill • Discharge of industrial waste into the soil
+  Slide 25: [Waste Disposal] Waste Disposal Waste, or rubbish, trash, junk, garbage is an unwanted or undesired material or substance. It may consist of the unwanted materials left over from a
+  Slide 26: [Urbanization] Urbanization Concerns: oPublic Health oFood Supply
+  Slide 27: [Habitat Fragmentation] Habitat Fragmentation & Destruction Habitat destruction and fragmentation is a process that describes
+  Slide 28: [Biodiversity] Biodiversity Threats • Habitat loss & Fragmentation
+  Slide 29: [Farming Practices] Farming Practices Negative environmental impacts from unsustainable farming practices include: Land conversion & habitat loss
+  Slide 30: [Fertilizers and] Fertilizers and Pesticides Bioaccumulation Biomagnification
+  Slide 31: [Are things getting better or worse?] Are things getting better or worse? • Many people think environmental conditions are better • Cornucopians:
+  Slide 32: [Slide 32] 
+  Slide 33: [Slide 33] 
+  Slide 34: [https://uk-air.defra.gov.uk/research/ozone-] https://uk-air.defra.gov.uk/research/ozone- uv/moreinfo?view=antarctica-hole-explained https://www.thehindubusinessline.com/news/science/thar-desert- was-once-tropical-forest-new-fossil-discovery-
+
+
+=== LECTURE 04: Remote Sensing & GIS in Environmental Technology (18 slides) ===
+Files: ['Class-4-RS-EVS-upload.pdf']
+  Slide 1: [Remote sensing] Remote sensing Applications In Environmental Sciences 20th  August 2026
+  Slide 2: [Remote sensing] Remote sensing
+  Slide 3: [EMS] EMS
+  Slide 4: [Slide 4] 
+  Slide 5: [Satellite images] Satellite images
+  Slide 6: [FOREST TYPE] FOREST TYPE MAPPING SEG MANGROVE
+  Slide 7: [Forest Change Detection] Forest Change Detection Analysis of the 1976 (MSS) and 1999 (LISS III) images showed a loss of 12.5 % (5.0 % interior and 7.5 % coastal) of forest with a corresponding increase in non-forest area
+  Slide 8: [Slide 8] 
+  Slide 9: [Katchal] Katchal
+  Slide 10: [Slide 10] 
+  Slide 11: [Slide 11] 
+  Slide 12: [Assessing the water quality dynamics] Assessing the water quality dynamics in the coastal waters of Kollam (Kerala, India) using Sentinel images
+  Slide 13: [ANALYTICAL HIERARCHY PROCESS FOR MAPPING OF] ANALYTICAL HIERARCHY PROCESS FOR MAPPING OF LANDSLIDE SUSCEPTIBILITY IN NILAMBUR TALUK, KERALA
+  Slide 14: [Quantifying urban green space impact on land surface] Quantifying urban green space impact on land surface temperature and heat mitigation– A case study of Greater Hyderabad Municipal Corporation, Telangana, India Figure 1: Location Map of GHMC
+  Slide 15: [Modeling Forest Dynamics, Fragmentation, and Carbon] Modeling Forest Dynamics, Fragmentation, and Carbon Sequestration in Idukki District, Kerala, India
+  Slide 16: [Forest Depletion and Ecosystem Service Valuation Under] Forest Depletion and Ecosystem Service Valuation Under Mining Pressure: A Multi-Decadal Remote Sensing Study Of Manuguru Coal Belt, Telangana, India
+  Slide 17: [Predicting Pea Aphid (Acyrthosiphon pisum) Distribution Under ...] Predicting Pea Aphid (Acyrthosiphon pisum) Distribution Under Climate Change Using MaxEnt
+  Slide 18: [Assessing the impact of land use and land cover changes on the...] Assessing the impact of land use and land cover changes on the remnant patches of Kondapalli reserve forest of the Eastern Ghats, Andhra Pradesh, India
+
+
+=== LECTURE 05: Landmark Environmental Events, Crises & Disasters (30 slides) ===
+Files: ['Class-5 -Environmental Events.pdf']
+  Slide 1: [Topic -5] Topic -5 Environmental Events Dr. P. Rama Chandra Lab for Spatial Informatics, IIIT-H
+  Slide 2: [NEWSPAPER HEADLINES] NEWSPAPER HEADLINES “Arctic Indigenous Peoples Being Poisoned by Industry Thousands of Miles Away” Bioaccumulation of pollutants
+  Slide 3: [Global Distillation] Global Distillation Persistent organic pollutants (POPs) are among the most dangerous and are used as pesticides and also occurring as by-products from various industrial processes and from combustion.
+  Slide 4: [Arctic  Paradox] Arctic  Paradox Inuit concern
+  Slide 5: [Buoys and garbage litter a beach along the coast of Svalbard, ...] Buoys and garbage litter a beach along the coast of Svalbard, Norway. Svalbard does not have trees and the logs that have washed up on the beach are from neighboring Russia. Case studies: Belgium-dioxin; China;-acid rains; Britian-Sweden- Acid rains
+  Slide 6: [Global Dimming] Global Dimming Global dimming is defined as the decrease in the amounts of solar radiation reaching the surface of the Earth. Causes of Global Dimming
+  Slide 7: [Slide 7] 
+  Slide 8: [Both global dimming and global] Both global dimming and global warming have been happening all over the world and together they have caused severe changes in the
+  Slide 9: [• Decline in solar radiation at land surfaces documented in] • Decline in solar radiation at land surfaces documented in observational records up to 1990, by 24 stations distributed globally • Global dimming has reversed since 1990. New data from
+  Slide 10: [Slide 10] 
+  Slide 11: [Slide 11] 
+  Slide 12: [Wild et al. Science 308, 847-850 (2005)] Wild et al. Science 308, 847-850 (2005)
+  Slide 13: [Global Dimming and Global Warming] Global Dimming and Global Warming
+  Slide 14: [Differences Between Now and Then] Differences Between Now and Then But, why so warm ? So, why did it get cold ? The Eocene
+  Slide 15: [AZOLLA..] AZOLLA.. IMPACT Pest
+  Slide 16: [CHANGE IN EARTH’S ROTATION] CHANGE IN EARTH’S ROTATION DUE TO CONSTRUCTION OF DAMS ➢Days are shorter in past….!!!! ➢Atomic Clocks show that a modern day is longer by about 1.7
+  Slide 17: [China’s Monster] China’s Monster “THE THREE GORGES DAM” ➔30°44'18" North, 111°16'27" East. ➔Biggest, most expensive dam
+  Slide 18: [One of the few man made objects that can be seen clearly from] One of the few man made objects that can be seen clearly from space. Dam is build in the middle of an earthquake zone!! Project used 27.2 million cubic meters of concrete (mainly for the dam wall), 463,000 tonnes of steel (enough to build 63
+  Slide 19: [MASS SHIFT CHANGES ROTATION!!!!!!] MASS SHIFT CHANGES ROTATION!!!!!! ★Thus by shifting a significant mass of water, the dam will literally SLOW THE ROTATION OF THE EARTH. This is because (a shift in mass) raising about 39 trillion kilograms
+  Slide 20: [The ship lift at the Three Gorges Dam in China is the world’s ...] The ship lift at the Three Gorges Dam in China is the world’s largest China's Three Gorges Dam: An Environmental Catastrophe?
+  Slide 21: [How Groundwater Extraction Has Shifted the Earth’s Axis?] How Groundwater Extraction Has Shifted the Earth’s Axis? Excessive extraction of groundwater for drinking and irrigation has shifted the Earth’s axis of rotation. Humans pumped out around 2,150 gigatons of
+  Slide 22: [Napoleon's defeat at Waterloo caused in part by Indonesian vol...] Napoleon's defeat at Waterloo caused in part by Indonesian volcanic eruption Toba catastrophe theory
+  Slide 23: [Slide 23] 
+  Slide 24: [Carl Sagan and others conducted additional studies and found t...] Carl Sagan and others conducted additional studies and found that soot from cities and dust from the explosions themselves were also climatically significant and could cool the surface of the earth
+  Slide 25: [Nuclear winter theory is supported by observational evidence] Nuclear winter theory is supported by observational evidence from natural catastrophic events
+  Slide 26: [Slide 26] 
+  Slide 27: [Nuclear winter is the term for a theory describing the climati...] Nuclear winter is the term for a theory describing the climatic effects of nuclear war. Smoke from the fires started by nuclear weapons, especially the black, sooty smoke from cities and industrial facilities, would be heated by the Sun, lofted into the upper stratosphere, and spread globally , lasting for years.
+  Slide 28: [Slide 28] 
+  Slide 29: [Slide 29] 
+  Slide 30: [https://www.youtube.com/watch?v=USDCATD89oY - Toba] https://www.youtube.com/watch?v=USDCATD89oY - Toba https://www.youtube.com/watch?v=2Pp-W1Va5gE - Krakatoa https://www.aljazeera.com/indepth/features/project-force-world-survive-nuclear- winter-200622132211696.html
+
+
+=== LECTURE 06: Earth Components, Biogeochemical Cycles & Ecological Systems (41 slides) ===
+Files: ['Class-6 Earth components-part-1.pdf', 'Class-6 Earth components-Part-2.pdf']
+  Slide 1: [Earth System and its] Earth System and its Components 4th September 2026 Class-6
+  Slide 2: [Earth Systems Overview] Earth Systems Overview Earth Systems Overview
+  Slide 3: [Layers of Earth] Layers of Earth Layers of Earth Core- center, mostly iron Inner core- 1220 km thick, T & P
+  Slide 4: [Continental drift theory] Continental drift theory Evidence: Continents “fit together” like puzzle pieces
+  Slide 5: [Fossil Evidence] Fossil Evidence Climate Evidence Which way? 50 million years
+  Slide 6: [Earth System Science is the study of] Earth System Science is the study of how the four spheres of the Earth system interact
+  Slide 7: [Earth System Science] Earth System Science • … treats the entire Earth as a system • this system evolves as a result of positive and negative feedbacks between many different systems
+  Slide 8: [What is Earth System Modelling?] What is Earth System Modelling? Interacting components on the environment are modeled in unison understand
+  Slide 9: [The GAIA hypothesis:] The GAIA hypothesis: James Lovelock Lovelock’s “Discovery” of Gaia Mars
+  Slide 10: [GAIA HYPOTHESIS] GAIA HYPOTHESIS Hypothesis: that the entire mass of living matter on Earth (the biosphere) functions as a single and vast superorganism that actively modifies its planet to produce the environment that suits its needs.
+  Slide 11: [The inner workings of Gaia, therefore, can be viewed as a study] The inner workings of Gaia, therefore, can be viewed as a study of the physiology of the Earth, where the oceans and rivers are the Earth's blood, the atmosphere is the Earth's lungs, the land is the Earth's bones, and the living organisms are the Earth's
+  Slide 12: [What is Gaia?] What is Gaia? GAIA (if it exists!) is a collection of negative feedback loops These loops stabilize the Earth’s physical environment The physical environment is maintained in a condition favorable
+  Slide 13: [Daisy world] Daisy world Lovelock used this
+  Slide 14: [Daisy world simulation] Daisy world simulation First, run the model long enough for Daisy world temperature to reach equilibrium Then, apply a sudden change in solar input
+  Slide 15: [When Daisy world is warm…] When Daisy world is warm… Air temperature over the black patches is higher White patches grow more
+  Slide 16: [Hypothesis] Hypothesis One of the reasons that the Gaia Hypothesis sparked debate in scientific circles has to do with scientists' ability to test hypotheses. The traditional scientific method relies on refuting a hypothesis,
+  Slide 17: [When the activity of an organism favors the] When the activity of an organism favors the environment as well as the organism itself, then its spread will be assisted; eventually the organism and the environmental
+  Slide 18: [Ecology is the scientific study of the interactions between] Ecology is the scientific study of the interactions between organisms and their environment. Interactions determine distribution and abundance of organisms.
+  Slide 19: [Slide 19] 
+  Slide 20: [Slide 20] 
+  Slide 21: [Cpyright  2002 Pears Educati Ic pubishig as Bea...] Cpyright  2002 Pears Educati Ic pubishig as Beai Cuigs Local and seasonal effects on climate. Bodies of water and topographic features such as mountain ranges can affect local climates.
+  Slide 22: [Aquatic and terrestrial biomes] Aquatic and terrestrial biomes (Biome = major ecosystem type) - Wetlands - Lakes
+  Slide 23: [Oligotrophic Lake:] Oligotrophic Lake: Eutrophic lake Rivers and Streams: Wetlands
+  Slide 24: [Marine environment with] Marine environment with zonation.
+  Slide 25: [B. Terrestrial biomes] B. Terrestrial biomes
+  Slide 26: [Tropical Forest:] Tropical Forest: Tropical, Dry Forest
+  Slide 27: [Desert: Sparse rainfall (< 30 cm per year), plants and animals...] Desert: Sparse rainfall (< 30 cm per year), plants and animals adapted for water storage and conservation.  Can be either very, very hot, or very cold (e.g. Antarctica)
+  Slide 28: [Chaparral:] Chaparral: Temperate Grassland Temperate Deciduous Forest Tundra
+  Slide 29: [Coniferous forest: Largest terrestrial biome on earth, old growth] Coniferous forest: Largest terrestrial biome on earth, old growth forests rapidly disappearing, usually receives lots of moisture as rain or snow.
+  Slide 30: [Slide 30] 
+  Slide 31: [Food Chains] Food Chains The concept of food chains was developed by Charles Elton based on his observations on Spitzbergen
+  Slide 32: [Ecological Pyramids] Ecological Pyramids Energy Trophic cascade? Biomass
+  Slide 33: [Models of ecological energy flow] Models of ecological energy flow Models of ecological energy flow A single trophic level A food chain
+  Slide 34: [Lindeman 10% Law] Lindeman 10% Law
+  Slide 35: [SINGLE CHANNEL ENERGY FLOW MODEL] SINGLE CHANNEL ENERGY FLOW MODEL DOUBLE CHANNEL OR Y-SHAPED ENERGY  FLOW MODEL
+  Slide 36: [Hydrologic (Water) Cycle] Hydrologic (Water) Cycle Hydrologic (Water) Cycle Matter Cycling in Ecosystems : Biogeochemical cycles
+  Slide 37: [The Carbon Cycle (Terrestrial)] The Carbon Cycle (Terrestrial) The Carbon Cycle (Terrestrial)
+  Slide 38: [The Carbon Cycle (Marine): Group] The Carbon Cycle (Marine): Group The Carbon Cycle (Marine): Group
+  Slide 39: [The Nitrogen Cycle] The Nitrogen Cycle The Nitrogen Cycle
+  Slide 40: [The Phosphorus Cycle] The Phosphorus Cycle The Phosphorus Cycle
+  Slide 41: [Africa splitting] Africa splitting https://www.youtube.com/watch?v=_Rxp3HQDUvY Daisy worldsimulation https://www.youtube.com/watch?v=XVB2VNxRuHM
+
+
+=== LECTURE 07: Climate Change Impacts, Global Warming & Vulnerability (31 slides) ===
+Files: ['Class-7 Climate Change impacts.pdf']
+  Slide 1: [Climate system - Impact] Climate system - Impact 17th September 2026 Class-7
+  Slide 2: [Climate] Climate Derived from Greek terms: klima + logos slope (reflecting the early idea that distance from the equator alone drove climate) + study
+  Slide 3: [Climatic Controls] Climatic Controls The world's many climates are controlled by the
+  Slide 4: [The Climate System Components] The Climate System Components
+  Slide 5: [Climate: Forcing and Response] Climate: Forcing and Response Input Machine Output
+  Slide 6: [Feedbacks] Feedbacks Feedbacks A feedback is a mechanism whereby an initial change in a process will tend to either reinforce the
+  Slide 7: [Example of a positive feedback] Example of a positive feedback Example of a positive feedback If this were the only mechanism acting, we’d get a runaway temperature increase
+  Slide 8: [Snow and ice] Snow and ice albedo feedbacks in the polar regions
+  Slide 9: [Example of a negative feedback] Example of a negative feedback Warm temperatures More evaporation More clouds
+  Slide 10: [Climate Change] Climate Change
+  Slide 11: [Climate Change – and dealing with it] Climate Change – and dealing with it Climate Change – and dealing with it Source: Stern Review on the Economics of Climate Change, 2006
+  Slide 12: [Global Distribution of Vegetation 18,000 years ago] Global Distribution of Vegetation 18,000 years ago conifers tundra taiga
+  Slide 13: [taiga] taiga temperate deciduous woods & scrub conifers
+  Slide 14: [18 kya] 18 kya 9 kya Present Distribution of spruce and oak forests in Northern Hemisphere since the
+  Slide 15: [Potential distribution of the major world] Potential distribution of the major world biomes under current climate conditions Projected distribution of the major world biomes by simulating the effects of 2xCO2-equivalent concentrations
+  Slide 16: [As climate warms we expect northern and mountain regions to] As climate warms we expect northern and mountain regions to become greener, to photosynthesize more rapidly and to grow faster We expect that in the north especially, there will be widespread
+  Slide 17: [Effects on species’ distributions] Effects on species’ distributions Lenoir et al. 2008, plants in western Europe Lenoir et al. 2008, plants in western Europe Studied forest plants in six mountain ranges in Europe, from
+  Slide 18: [Based on how many times] Based on how many times each plant species
+  Slide 19: [CLIMATE CHANGE – SPECIES DIVERSITY] CLIMATE CHANGE – SPECIES DIVERSITY Effects on Plant Diversity Species ‘left behind’ as they are unable to change distribution fast enough. Species with long life cycles and/or slow dispersal are particularly vulnerable.
+  Slide 20: [PROBABLE IMPACT ON BIODIVERSITY OF] PROBABLE IMPACT ON BIODIVERSITY OF SUNDERBANS DUE TO SEA LEVEL RISE “Royal Bengal Tigers may go extinct by turn of century - reveals study” says a report by prominent English daily THE DAILY
+  Slide 21: [Lost Protection] Lost Protection The Sundarbans spans nearly 10360 km2 of India and Bangladesh along the Bay of Bengal. The world’s largest continuous mangrove forest, it’s home to a wide variety of species. For the 7.5 million people
+  Slide 22: [Causes of Sea Level Rise] Causes of Sea Level Rise
+  Slide 23: [Sea Level Change in India, Bangladesh &] Sea Level Change in India, Bangladesh & Vietnam Sea Level Change in India, Bangladesh & Vietnam
+  Slide 24: [Sea Level Rise in Bangladesh] Sea Level Rise in Bangladesh Sea Level Rise in Bangladesh
+  Slide 25: [Sea level rise] Sea level rise Sea level rise 2100 2050
+  Slide 26: [Slide 26] 
+  Slide 27: [The main impact of sea level rise on water resources is the re...] The main impact of sea level rise on water resources is the reduction off fresh water available due to salinity intrusion. Both water and soil salinity along the coast will be increased with the rise in sea level Increased salinity will change the habitat pattern of the forest. Sundari, the
+  Slide 28: [Bengal tiger could go extinct as Sundarban habitats entirely] Bengal tiger could go extinct as Sundarban habitats entirely vanish by 2070 because of climate change The reasons behind so many species of tigers dying out are:
+  Slide 29: [Slide 29] 
+  Slide 30: [Climate change on Forests of India] Climate change on Forests of India (Sukumar & Ravindran 1995) Shift in vegetation type boundaries i.e in Western Ghats the moist
+  Slide 31: [https://www.youtube.com/watch?v=9BP2XV-_1V8] https://www.youtube.com/watch?v=9BP2XV-_1V8 https://www.youtube.com/watch?v=S2gesipk7lY https://www.youtube.com/watch?v=OuHUx5Y6mK0
+
+
+=== LECTURE 08: Unexpected Climate Changes, Non-Linear Tipping Points & Feedback Loops (30 slides) ===
+Files: ['Class-8 Unexpected climate changes.pdf']
+  Slide 1: [Class: 8] Class: 8 Global Catastrophic risks Unexpected Climate Changes 28th September 2026
+  Slide 2: [Tipping points in climate system] Tipping points in climate system Climate change may be triggering events that would dramatically alter Earth as we know it. A tipping point in the climate system is a threshold that, when
+  Slide 3: [The top six climate events scientists worry about today] The top six climate events scientists worry about today 1. The Arctic sea ice melts The melting of the Arctic summer ice is considered to be the single greatest threat, and some scientists think we’ve already passed the
+  Slide 4: [3. The West Antarctic ice sheet disintegrates] 3. The West Antarctic ice sheet disintegrates Scientists expect the West Antarctic ice sheet to “tip” this century, and there is evidence that it already began happening in 2014.
+  Slide 5: [5. The Amazon rain forest dies back] 5. The Amazon rain forest dies back Rainfall in the Amazon is threatened by deforestation, a longer dry season, and rising summer temperatures. Half of the Amazon rainforest could turn into savannah and grassland,
+  Slide 6: [Global catastrophic risk] Global catastrophic risk A hypothetical future event which could damage human well-being on a global scale An event that could cause human extinction
+  Slide 7: [Black swan Theory] Black swan Theory Describe the impact of events that come as a surprise in societal aspects (Nassim Nicholas Taleb) Combination of mathematical and philosophical reasoning to
+  Slide 8: [Term was first used by molecular nanotechnology pioneer Eric] Term was first used by molecular nanotechnology pioneer Eric Drexler. Drexler envisioned a future in which tiny machines called assemblers could build materials molecule-by-molecule.
+  Slide 9: [The Doomsday Clock] The Doomsday Clock A symbol which represents the likelihood of a man-made global catastrophe. Maintained since 1947 by the members of the Bulletin of the Atomic Scientists.
+  Slide 10: [The factors influencing the Clock are nuclear risk and climate...] The factors influencing the Clock are nuclear risk and climate change. The Clock's original setting in 1947 was seven minutes to midnight. It has been set backward and forward more than 23 times since then, the smallest-ever number of minutes to midnight being 100 sec (in 1953 and
+  Slide 11: [Slide 11] 
+  Slide 12: [Atomic scientists have kept their] Atomic scientists have kept their Doomsday Clock set at 90 seconds to midnight as they did last year (2023), citing worry about Russia’s
+  Slide 13: [•Nuclear Proliferation: Nations continue to modernize and expa...] •Nuclear Proliferation: Nations continue to modernize and expand their nuclear arsenals, eroding arms-control norms. •Instability: Ongoing conflicts like the war in Ukraine and tensions in the Middle East heighten the risk of escalation or miscalculation.
+  Slide 14: [Geopolitical tensions and nuclear risks: Growing rivalry among...] Geopolitical tensions and nuclear risks: Growing rivalry among major powers, regional conflicts involving nuclear states, nuclear modernisation, and weakening arms-control agreements. Climate change: Record temperatures, rising CO₂ and sea levels, and
+  Slide 15: [Global Terrestrial Stilling] Global Terrestrial Stilling GTS is the decrease of wind speed near the Earth's surface (~10-meter height) over the last three decades, originally termed "stilling".
+  Slide 16: [Hypercane] Hypercane A hypothetical class of extreme tropical cyclone that could form if ocean temperatures reached approximately 50 °C Such an increase could be caused by a large asteroid or comet
+  Slide 17: [1. Volcanic] 1. Volcanic eruptions will become
+  Slide 18: [2. Oceans will darken] 2. Oceans will darken Climate change will lead to an increase in rainfall in some regions of the globe, making the rivers more affluent. Big rivers will carry the flow of silt and debris, which eventually will get
+  Slide 19: [3. Sunlight will reach the seabed at the North Pole] 3. Sunlight will reach the seabed at the North Pole As the sea ice melt, water in the shallow coastal areas near both poles will become noticeably lighter, in particular, the light can reach the seabed at the North Pole. Deep-water worms, sponges and other
+  Slide 20: [4. The invasion of ants will slow down] 4. The invasion of ants will slow down Pheidole megacephala, also known as big-headed ants are one of the most dangerous invasive species on Earth. There are colonies of these insects in South America, Australia and Africa, which multiply
+  Slide 21: [5. Decline of desert bacteria] 5. Decline of desert bacteria The soil in the desert may seem uninhabitable, but in fact it is teeming with bacteria: bacterial colonies spread all over the place there so that they form a solid layer that protects the soil from erosion.
+  Slide 22: [6. Disappearing Beaches] 6. Disappearing Beaches As the sea level rises, it makes sense that beaches are the first to go. Already, 70 to 90 percent of beaches are being wiped away by this rising waters, exacerbated by major
+  Slide 23: [7. Faster-Growing Trees] 7. Faster-Growing Trees Over the past 50 years, trees in Europe have been growing faster. Researchers from
+  Slide 24: [8. More Lightning] 8. More Lightning Lightning strikes will
+  Slide 25: [9. Deteriorating Mummies] 9. Deteriorating Mummies The world’s oldest man-made mummies aren’t Egyptian—they’re Chinchorro, a fishing people that lived along the coast of present-day Chile and Peru. For upwards of
+  Slide 26: [10. Hot (Human) Tempers] 10. Hot (Human) Tempers Could rising temperatures also bring rising tempers? Recent research suggests they might. According to the analysis of 56 research papers on the subject, increased temperatures and fluctuating precipitation
+  Slide 27: [Cricket and Climate change] Cricket and Climate change
+  Slide 28: [cricket authorities to introduce "heat rules" including postpo...] cricket authorities to introduce "heat rules" including postponing games in response to climate change calls for extra care around youth players and for manufacturers to develop equipment that enhances air flow, as extreme heat becomes
+  Slide 29: [They argue "safety-related heat stress guidelines" are now nee...] They argue "safety-related heat stress guidelines" are now needed, and that more games may need to be postponed or rearranged to cooler times of the day "Above 35 degrees (Celsius) the body runs out of options to cool itself,"
+  Slide 30: [https://www.youtube.com/watch?v=mpyiyEazodM] https://www.youtube.com/watch?v=mpyiyEazodM lightning https://www.youtube.com/watch?v=2o2AapO6rK8 Carter island
+
+
+=== LECTURE 09: Carbon Sequestration & Terrestrial Sinks (34 slides) ===
+Files: ['Class-9- Carbon sequestration.pdf']
+  Slide 1: [Class-9] Class-9 Carbon Sequestration 5th October 2026
+  Slide 2: [Muir Glacier, August, 1941] Muir Glacier, August, 1941 Muir Glacier, August, 2004
+  Slide 3: [Slide 3] 
+  Slide 4: [Slide 4] 
+  Slide 5: [Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing...] Source: https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-climate/State-of-the-Climate-2016/Greenhouse-gases
+  Slide 6: [Slide 6] 
+  Slide 7: [Annual fluxes of CO₂ and their changing sources (e.g. fossil f...] Annual fluxes of CO₂ and their changing sources (e.g. fossil fuels) and sinks (e.g. the ocean absorbing CO₂). About 30 % of the anthropogenic CO₂ emissions have been taken up by the ocean and about 30 % by land. The remaining 40 % of emissions have led to an increase in the concentration of CO₂ in the atmosphere. Data: CDIAC/NOAA-ESRL/GCP/Joos et al.,
+  Slide 8: [Carbon Pools and Fluxes] Carbon Pools and Fluxes Atmospheric CO2 Photosynthesis CO2 Removal
+  Slide 9: [Forest scale: Stocks and fluxes] Forest scale: Stocks and fluxes A forest = carbon stocks 1 kilogram of dry wood ≈ 0.5 kg of carbon
+  Slide 10: [Global Forest Extent & Carbon Storage] Global Forest Extent & Carbon Storage •Forests cover 4.06 billion hectares (31% of land) [(FAO 2020] •Forests store 662 billion tonnes of carbon (≈2.4 trillion tonnes CO₂).
+  Slide 11: [Forest Loss and Deforestation] Forest Loss and Deforestation •Net forest loss: about 4.7 million hectares per year (2010–2020). •Gross deforestation: around 10 million hectares per year.
+  Slide 12: [Most deforestation occurs in the tropics] Most deforestation occurs in the tropics (Amazon, Southeast Asia, Central Africa) Global forest loss and gain across decades from 1960 to 2019. (a) Map showing the spatial distribution of forest loss and gain, with insets A, B and C showing parts of South America,
+  Slide 13: [•Tropical deforestation emits 5.6 billion tonnes of CO₂ annually.] •Tropical deforestation emits 5.6 billion tonnes of CO₂ annually. •Deforestation and land-use
+  Slide 14: [Forests as a Carbon Sink] Forests as a Carbon Sink •Forests remove 14.4 billion tonnes of CO₂ annually through growth and regeneration. •Disturbances (deforestation, degradation, fires)
+  Slide 15: [Forest extent, structure, and dynamics for each 1 × 1° grid ce...] Forest extent, structure, and dynamics for each 1 × 1° grid cell. (A) Forest area 2020, % cell area. Forest defined as Landsat ARD pixels with ≥5 m canopy height. (B) Mean forest height 2020, meters. (C) Net forest area change, 2000–2020, % cell area. (D) Forest loss, disturbance, and degradation 2000–2020, % year 2000 forest area within a cell.
+  Slide 16: [Carbon Facts] Carbon Facts • Carbon dioxide concentrations have increased substantially since the beginning of the industrial era, rising from an annual average of 280 ppm in the late 1700s to 419 ppm
+  Slide 17: [Slide 17] 
+  Slide 18: [(A) soil organic carbon to 1] (A) soil organic carbon to 1 m depth based on Harmonized World Soil Database version 1.1
+  Slide 19: [Carbon Sequestration-What Is It?] Carbon Sequestration-What Is It? • Also known as “carbon capture” - The process through which CO2 from the atmosphere is absorbed naturally through photosynthesis & stored as carbon in biomass &
+  Slide 20: [Activities to Increase C Sequestration Above Baseline] Activities to Increase C Sequestration Above Baseline • Increase Sequestration – Afforest marginal cropland and pasture – Reduce conversion of forestland to non-forest use
+  Slide 21: [Globally forestry has taken central stage as one of the] Globally forestry has taken central stage as one of the options to mitigate climate change. Total global technical potential for afforestation and reforestation activities for the period 1995-2050 is between 1.1–1.6 GtC/yr
+  Slide 22: [Increase Agroforestry] Increase Agroforestry • Windbreaks store carbon while protecting farmsteads, livestock,  soils, and crops Designed Forests in Agricultural Landscapes
+  Slide 23: [Riparian forest buffers store carbon] Riparian forest buffers store carbon while protecting water quality
+  Slide 24: [Silvopasture stores carbon while producing livestock] Silvopasture stores carbon while producing livestock benefits if both trees and grass are properly managed
+  Slide 25: [Short-rotation plantation systems with fast growing Eucalyptus...] Short-rotation plantation systems with fast growing Eucalyptus sp. grown under intensive agricultural practices (weed
+  Slide 26: [A forest that is growing can remove 5-11 tons CO2 per hectare] A forest that is growing can remove 5-11 tons CO2 per hectare per year, Forest plantations could sequester up to 10.7 billion tons CO2 per year for less than $2 per ton CO2 (Sedjo 1989 – first
+  Slide 27: [CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS] CARBON SEQUESTRATION POTENTIAL OF INDIAN FORESTS The total forest biomass and carbon storage in Indian forest was 8357.9 Mt and 4178.95 Mt, respectively (for1986) and 4503.82 Mt and 2026.72 Mt respectively (1995) – accounting 14 forest types of India.
+  Slide 28: [Slide 28] 
+  Slide 29: [The productivity of any forest depends on the age of its veget...] The productivity of any forest depends on the age of its vegetation. forest plantations sequester carbon till maturity which would vary from 25 to 75 years depending upon the type of forests. At later stages, there is only marginal carbon sequestration.
+  Slide 30: [In India, there is a large potential for expanding plantation ...] In India, there is a large potential for expanding plantation forests. The net possible land categories available for afforestation today stand at 65.45 Mha. The degraded forests cover almost 25% of the total available land and can be appropriately exploited for afforestation.
+  Slide 31: [Infapro, Malaysia] Infapro, Malaysia • Location: 25,000 ha logged dipterocarp forest in Eastern Sabah • Parties: (1) Face Foundation (Forests Absorbing Carbon dioxide Emissions); (2) Innoprise Corporation, Malaysian governmental
+  Slide 32: [Plan Vivo, Mexico] Plan Vivo, Mexico • Location: Chiapas, Southern Mexico • Parties: (1) FIA, Formula One Foundation; (2) Ambio, cooperative of Foresters; (3) local community groups and small
+  Slide 33: [Plan Vivo Activities: plantations,] Plan Vivo Activities: plantations, agroforestry, communal reforestation Carbon Sequestered tC/ha Investment: US $15 million
+  Slide 34: [https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi] https://www.facebook.com/share/v/X48ygZE3a1D61mDz/?mi bextid=xfxF2i Top cities end https://www.youtube.com/watch?v=-xhpzV34ovA
+
+
+=== LECTURE 10: Clean Development Mechanism (CDM) & Ocean Sequestration (54 slides) ===
+Files: ['Class-10- CDM.pdf', 'Class-10b-Ocean Sequestration.pdf']
+  Slide 1: [Dr. P. Rama Chandra Prasad] Dr. P. Rama Chandra Prasad Lab for Spatial Informatics, IIIT-H 8th October 2026 Clean Development
+  Slide 2: [Scientific Evidence of] Scientific Evidence of Climate Change/Global Warming The 4th Assessment Report of IPCC (2007) indicate that Global temperature rises of 2 – 4.5 0C are almost inevitable due
+  Slide 3: [United Nations Framework Convention on] United Nations Framework Convention on Climate Change (UNFCC) Objective of the Convention “Stabilization of greenhouse gas concentrations in
+  Slide 4: [Principles of UNFCCC] Principles of UNFCCC Based on the principle of common  but differentiated roles On one hand it recognises the Primary Responsibility of  developed Countries for higher
+  Slide 5: [Slide 5] 
+  Slide 6: [Kyoto Protocol] Kyoto Protocol • A global legal instrument (international agreement) to protect the climate system and stabilize GHG emissions • Status of participation: 192 Parties
+  Slide 7: [The Kyoto Protocol of UNFCCC] The Kyoto Protocol of UNFCCC The Kyoto Protocol was adopted at COP-3 in December, 1997 (Japan), in accordance with “Berlin Mandate” of COP-1 and ratified in February 2005 The Kyoto Protocol is an international treaty that commits State Parties to
+  Slide 8: [The Kyoto Protocol Mitigation Options] The Kyoto Protocol Mitigation Options Source oriented measures Energy conservation and efficiency improvement Fossils fuel switching
+  Slide 9: [Clean Development Mechanism (CDM)] Clean Development Mechanism (CDM) CDM is a market based instrument under the Kyoto Protocol of UNFCCC: Assists
+  Slide 10: [Concept of CERs/ Carbon Credits] Concept of CERs/ Carbon Credits Developing Country (host) GHG Emission Projections Baseline Scenario
+  Slide 11: [Areas addressed by Kyoto Protocol] Areas addressed by Kyoto Protocol The KPs emissions targets cover the six main GHGs: Name Formula
+  Slide 12: [CDM Incentive for Developed Countries] CDM Incentive for Developed Countries Developed countries have been subjected to legally binding emission targets…..2008/12. Due to un-localized nature of CO2…it does not
+  Slide 13: [Kyoto Protocol and CDM at a glance] Kyoto Protocol and CDM at a glance How the CDM Works • Annex I country invests in GHG reduction project in non-Annex I country
+  Slide 14: [Developed countries] Developed countries • Government wants reduce GHGs emissions:
+  Slide 15: [Clean Development Mechanism] Clean Development Mechanism Purpose of CDM: 1. To support
+  Slide 16: [Basic Rules for CDM:] Basic Rules for CDM: • Emission reductions from CDM project must be additional in developing country. • Use of CERs can only supplement emission reduction at home in
+  Slide 17: [Clean Development Mechanism] Clean Development Mechanism Where CDM is applicable? Meaning what all kinds of projects are available: • Energy efficiency
+  Slide 18: [Renewable energy] Renewable energy • Solar power , Hydro power, Wind power, Geothermal • Biomass, Tidal / Wave power
+  Slide 19: [Fuel switching] Fuel switching • For industrial facilities From steam or compressed air to electricity For buildings
+  Slide 20: [Agriculture] Agriculture • Reducing emissions from agricultural soils Use of ammonium sulfate instead of urea (One ton of urea will emit about 0.73 tons of CO2)
+  Slide 21: [Industrial processes] Industrial processes • Methane (CH4) recovery and avoidance from landfills, coal mines, agro-industries, wastewater treatment facilities • Cement production (CO2)
+  Slide 22: [Sink projects] Sink projects • Afforestation Planting trees on agricultural land Reforestation
+  Slide 23: [Jul 20, 2004] Jul 20, 2004 Indian villages in global carbon trading Powerguda Village in Adilabad District, Andhra Pradesh became the first village in India to sell carbon credits directly to the World
+  Slide 24: [In 2015, at the sustainable development summit held in Paris,] In 2015, at the sustainable development summit held in Paris, all UNFCCC participants signed yet another pact, the Paris Climate Agreement, which effectively replaced the KP Unlike the KP, which established top-
+  Slide 25: [Slide 25] 
+  Slide 26: [Slide 26] 
+  Slide 27: [Class-10b] Class-10b Carbon Sequestration-2 12th October 2026
+  Slide 28: [Biological processes – Azolla (32.54 metric tonnes CO2/ha/year...] Biological processes – Azolla (32.54 metric tonnes CO2/ha/year after 18 days growth with 10% initial cover of A. filiculoides) Peat Production (store about 455 billion tonnes of carbon) Reforestation
+  Slide 29: [Geological Sequestration] Geological Sequestration • Storing of CO2 underground in rock formations able to retain large amounts of CO2 over a
+  Slide 30: [The Illinois Basin –] The Illinois Basin – Decatur Project (IBDP) (2007-2021) was carried out by the Midwest
+  Slide 31: [Ocean Sequestration] Ocean Sequestration “Carbon is naturally stored in the ocean via two pumps, solubility and biological, There are analogous man-made methods, direct injection and
+  Slide 32: [1988] 1988 The “Iron Hypothesis” gains prominence Nature 331 p341-343 1988
+  Slide 33: [1990] 1990 First surge of publicity
+  Slide 34: [Ocean Iron Fertilization?] Ocean Iron Fertilization? Urea fertilization In 2007, Sydney-based ONC (Ocean Nourishment Corporation ) completed an experiment involving 1 tonne of nitrogen in the Sulu Sea
+  Slide 35: [If cea fertiiati is t] If cea fertiiati is t sigificaty ifuece atspheric carb dixide the prect budary is the whe cea
+  Slide 36: [C2  utriets      ] C2  utriets       rgaic atter C2  utriets       rgaic atter
+  Slide 37: [C2  utriets      ] C2  utriets       rgaic atter C2  utriets       rgaic atter
+  Slide 38: [Proposition:] Proposition: Ocean fertilization for carbon offsets cannot be verified so it is not a viable technology for climate mitigation.
+  Slide 39: [Few Diatoms, lots of flagellates.] Few Diatoms, lots of flagellates. Flagellates were stimulated to grow Respire at > 90% of carbon The resulting phytoplankton are a bit suspect
+  Slide 40: [Responsible for] Responsible for Paralytic Shellfish Poisoning (PSP)
+  Slide 41: [Another was Pseudo-nitzschia …] Another was Pseudo-nitzschia … a toxigenic diatom which produces
+  Slide 42: [IAGE  ASA Gddard Space Fight Ceter] IAGE  ASA Gddard Space Fight Ceter Increased deep ocean concentrations of CO2, N and P Decreased deep ocean
+  Slide 43: [Organic N] Organic N Phytoplankton Bloom NH4
+  Slide 44: [What are the effects] What are the effects of large scale ocean fertilization? Three Central Questions
+  Slide 45: [Ocean Acidification] Ocean Acidification Decrease in ocean pH over decades or more that is caused primarily by uptake of CO2 from the atmosphere This is causing global ocean chemistry to change more quickly
+  Slide 46: [Issues with lower pH] Issues with lower pH Issues with lower pH Shells dissolving in lab-simulated ocean acidification conditions Changes in ocean chemistry
+  Slide 47: [Slide 47] 
+  Slide 48: [Storage of CO2 in coal beds] Storage of CO2 in coal beds • Coal usually contains methane that is adsorbed onto the surfaces of micro-pores • This methane is call coal-bed methane, and there can be up
+  Slide 49: [Storage in coal beds] Storage in coal beds • A given mass of methane is 72 times as effective as CO2 in warming the climate over a 25-year time span, so if only a small fraction of displaced methane leaks to the
+  Slide 50: [Physical processes] Physical processes Burial, Ocean storage Chemical processes Reacting
+  Slide 51: [The big win is that if] The big win is that if Novacem completely replaced Portland, cement would absorb about 5% of man-made CO 2 emissions rather than generate 5% (http://www3.imperial.ac.uk/pls/portallive/docs/1/50161701.PDF)
+  Slide 52: [Offset Greenhouse Gas Emissions?] Offset Greenhouse Gas Emissions? At the global level, the IPCC Third Assessment Report estimates that ~100 billion metric tons of carbon over the next 50 years could be sequestered through forest preservation, tree
+  Slide 53: [Slide 53] 
+  Slide 54: [https://netl.doe.gov/sites/default/files/netl-file/1100-Greenb...] https://netl.doe.gov/sites/default/files/netl-file/1100-Greenberg-2019-Pittsburgh- MGSC.pdf Illinois basin https://www.sciencedirect.com/science/article/pii/S1876610211004486
+
+
+=== LECTURE 11: Climate Change Technology Solutions & Clean Tech Innovations (29 slides) ===
+Files: ['Class-11-Climate Change-Technology Solutions.pdf']
+  Slide 1: [Class-11] Class-11 Climate change: Technology solutions 15th October 2026
+  Slide 2: [Ways ‘negative emissions’ could slow] Ways ‘negative emissions’ could slow climate change The Paris Agreement, adopted at the COP21 sets out a global aim to limit average global surface temperatures to 1.5 0C
+  Slide 3: [2. Biochar] 2. Biochar The potential to sequester up to 4.8bn tonnes of CO2 per year - Advantages / Disadvantages? Biochar is generally produced through pyrolysis, a process that involves heating renewable biomass at high temperature
+  Slide 4: [3. Blue carbon’ habitat restoration] 3. Blue carbon’ habitat restoration What is blue carbon? Emissions from
+  Slide 5: [4. Building with biomass] 4. Building with biomass Timber and bamboo - structural elements, hemp and wool - insulation, and hemp-lime for walling.
+  Slide 6: [5. Cloud or ocean treatment with alkali] 5. Cloud or ocean treatment with alkali CO2 emissions could be offset by spraying 56m tonnes of KOH into clouds across 0.4% of the Earth’s surface (the area of Greenland. (ocean acidification…..: 2.5bn T of lime stone: 8 bn T/year)
+  Slide 7: [6. Enhanced weathering] 6. Enhanced weathering Natural rock weathering absorbs around 3% of global fossil fuel emissions. EW ramps up this process
+  Slide 8: [7. DIRECT AIR CAPTURE] 7. DIRECT AIR CAPTURE 1. DAC + STORAGE PLANTS STANDALONE GEOLOGIC STORAGE
+  Slide 9: [2. AIR TO FUELS PLANTS] 2. AIR TO FUELS PLANTS CE’s process delivers synthetic, low carbon intensity fuels – such as gasoline, diesel, and jet-A – out of air, water and renewable electricity.
+  Slide 10: [Slide 10] 
+  Slide 11: [Where to Bury the CO 2] Where to Bury the CO 2
+  Slide 12: [Scaling to Gigatonnes a Year] Scaling to Gigatonnes a Year
+  Slide 13: [Carbon-capture technology scrubs CO2 from] Carbon-capture technology scrubs CO2 from power plants like scuba-diving gear CO2 release by mild heating of the BIG-bicarbonate solid. The released CO2 gas is trapped in the orange balloon, while the released water vapors
+  Slide 14: [Companies with the most developed technologies today] Companies with the most developed technologies today include . Together these companies have 18 plants of varying sizes (1 tCO2/yr up to 4,000 tCO2/yr capacity, the largest plant in
+  Slide 15: [Aether: In A First, Diamonds Made From Air] Aether: In A First, Diamonds Made From Air Pollution Certified As Vegan 1. Purchasing Co2 from Climeworks’-shipping it to the US, where the diamonds are grown.
+  Slide 16: [NZT Project] NZT Project Carbon captured by Net Zero Teeside will be buried beneath the North Sea Net Zero Teesside aims to sequester
+  Slide 17: [The meat and dairy industries create 7.1] The meat and dairy industries create 7.1 gigatons of GHG annually—that’s 14.5% of total man-made emissions. But beef is by far the biggest offender, generating 60
+  Slide 18: [Feeding cows seaweed] Feeding cows seaweed Cows are a major methane polluter Feeding cows seaweed could help reduce methane emissions
+  Slide 19: [Delicious insects] Delicious insects Burgers made from insects such as grasshoppers could tackle cattle farming emissions – Beef replacement??? Insects farmed without the demands on land or water that
+  Slide 20: [Climate repair] Climate repair Refreezing the poles has been suggested as a climate repair tactic (Marine Cloud
+  Slide 21: [Remote working] Remote working Remote working from home could address transport emissions
+  Slide 22: [Energy-efficient datacentres could provide more efficient] Energy-efficient datacentres could provide more efficient computation Cloud platforms – Internet?? Greater use of data centres
+  Slide 23: [Hydrogen Ships] Hydrogen Ships Tree Corridors Electric Planes Floating Solar
+  Slide 24: [Blockchain to revolutionize the commodity markets] Blockchain to revolutionize the commodity markets (Illegal Tuna fishing – RS-GPS) Remote sensing in planning and monitoring (deforestation - Palm oil expansion….)
+  Slide 25: [Vertical Farming] Vertical Farming Vertical farming / Greenhouse Farming It is a modern farming
+  Slide 26: [Four essential aspects] Four essential aspects Physical arrangement: Crops are grown in a tower-like living structure. Lighting : Combination of natural and artificial light Growth medium: Aeroponics, hydroponics, Aquaponics –
+  Slide 27: [How Vertical Farming Can Benefit Our Environment] How Vertical Farming Can Benefit Our Environment •Saved space: Reduce water consumption: •Diversification of crops: Controlled environment: Plants That Grow Well Vertically
+  Slide 28: [Trap cropping] Trap cropping Climate change has
+  Slide 29: [https://www.xprize.org/prizes/elonmusk] https://www.xprize.org/prizes/elonmusk
+
+
+=== LECTURE 12: Environmental Impact Assessment (EIA): Framework & Protocols (32 slides) ===
+Files: ['Class-12 EIA.pdf']
+  Slide 1: [Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www...] Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.encapafrica.org Basic Concepts for Assessing Environmental Impacts 19th October 2026
+  Slide 2: [Slide 2] 
+  Slide 3: [The baseline situation] The baseline situation In characterizing the baseline situation, many environmental
+  Slide 4: [The baseline situation] The baseline situation The baseline situation is not simply a “snapshot.” Describing the baseline
+  Slide 5: [Types of impacts & their attributes] Types of impacts & their attributes Direct & indirect impacts Short-term & long-term
+  Slide 6: [What is an activity?] What is an activity? ACTIONS: Survey, grading, culvert construction, compaction, etc.
+  Slide 7: [The EIA process] The EIA process • Scope • Evaluate baseline situation • Identify & choose alternatives
+  Slide 8: [Phase 1 of the EIA Process] Phase 1 of the EIA Process Screen the activity Based on the
+  Slide 9: [Phase 1 of the EIA process:] Phase 1 of the EIA process: Understand the proposed activity Understand the proposed
+  Slide 10: [Phase 1 of the EIA process:] Phase 1 of the EIA process: Understand the proposed activity Understand the proposed
+  Slide 11: [Phase 1 of the EIA process:] Phase 1 of the EIA process: Screen the activity Screen each activity
+  Slide 12: [ENCAP EA-ESD Course:] ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.encapafrica.org Phase 1 of the EIA process:
+  Slide 13: [Phase 1 of the EIA process:] Phase 1 of the EIA process: The Preliminary Assessment Conduct a Preliminary
+  Slide 14: [Phase 1 of the EIA process:] Phase 1 of the EIA process: The Preliminary Assessment Typical Preliminary Assessment outline
+  Slide 15: [To arrive at findings:] To arrive at findings: Identify, Predict and Judge Identify potential impacts
+  Slide 16: [ENCAP EA-ESD Course:] ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.encapafrica.org We only proceed to
+  Slide 17: [Phase 2 of the EIA process:] Phase 2 of the EIA process: The Full EIA study The full EIA study has
+  Slide 18: [ENCAP EA-ESD Course:] ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.encapafrica.org Phase 2 of the EIA process:
+  Slide 19: [ENCAP EA-ESD Course:] ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.encapafrica.org In summary,
+  Slide 20: [Who is involved in EIA?] Who is involved in EIA? Sponsor of the activity (usually commissions/conducts the EIA) Regulatory agencies/
+  Slide 21: [EIA is undertaken early enough to] EIA is undertaken early enough to affect project design Mitigation and monitoring developed in the EIA process is
+  Slide 22: [Those which can significantly alter the land use pattern, lan...] Those which can significantly alter the land use pattern, landscape and local habitation; Those involving manufacture, handling and use of hazardous
+  Slide 23: [Environmental Impact Assessment Notification in India] Environmental Impact Assessment Notification in India EIA is of comparatively recent origin in India and has become an integral part of Environmental Management by EIA notification of
+  Slide 24: [THE ENVIRONMENTAL IMPACT] THE ENVIRONMENTAL IMPACT ASSESSMENT NOTIFICATION 1994 • Composition of expert committee – Ecosystem management
+  Slide 25: [THE ENVIRONMENTAL IMPACT] THE ENVIRONMENTAL IMPACT ASSESSMENT NOTIFICATION 1994 Application form contents – Name, address, location of the project, alternate sites examined
+  Slide 26: [SCHEDULE - 1] SCHEDULE - 1 LIST OF PROJECTS REQUIRING ENVIRONMENTAL CLEARANCE FROM THE CENTRAL GOVERNMENT Nuclear Power and related projects such as heavy water plants, nuclear fuel complex,
+  Slide 27: [10.] 10. Synthetic Rubber 11. Asbestos and Asbestos products
+  Slide 28: [19.] 19. Thermal Power plants. 20. Mining projects (major minerals) with leases more than 5
+  Slide 29: [Environment Siting Rules] Environment Siting Rules Prohibition for setting up of certain industries(Annexure I) • Within any municipal areas
+  Slide 30: [Environment Siting Rules] Environment Siting Rules Establishment of new units with certain conditions Allowed in 7 km to 25 km zone around wetlands only
+  Slide 31: [Conclusions] Conclusions EIA study is a valuable tool for identifying the potential impacts on Environment and to source appropriate technologies for mitigating the impacts to tolerable levels.
+  Slide 32: [https://www.drishtiias.com/to-the-] https://www.drishtiias.com/to-the- points/paper3/environmental-impact-assessment-eia-draft- 2020 https://www.youtube.com/watch?v=dJa8LMGS8cs
+
+

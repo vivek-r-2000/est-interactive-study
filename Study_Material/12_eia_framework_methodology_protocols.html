@@ -48,11 +48,6 @@
     box-shadow: 0 10px 30px -10px var(--primary-glow);
     transform: translateY(-2px);
   }
-  .eco-card-static {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-  }
 
   /* Badges */
   .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
@@ -123,7 +118,7 @@
   /* Layout */
   #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
   #sidebar {
-    width: 250px; min-width: 250px; background: #040b08;
+    width: 270px; min-width: 270px; background: #040b08;
     border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
     display: flex; flex-direction: column; gap: 2px;
   }
@@ -142,13 +137,13 @@
     flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
     display: flex; flex-direction: column; align-items: center;
   }
-  .card-screen { display: none; width: 100%; max-width: 900px; animation: fadeIn .25s ease; }
+  .card-screen { display: none; width: 100%; max-width: 950px; animation: fadeIn .25s ease; }
   .card-screen.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
 
   /* Nav Bar */
   #nav-bar {
-    position: fixed; bottom: 0; left: 250px; right: 0;
+    position: fixed; bottom: 0; left: 270px; right: 0;
     background: #040a07; border-top: 1px solid var(--border);
     display: flex; align-items: center; justify-content: center; gap: 16px;
     padding: 12px 24px; z-index: 40;
@@ -187,32 +182,32 @@
       
         <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
           <span class="sidebar-dot"></span>
-          <span class="truncate">1. Big Picture & Intuition</span>
+          <span class="truncate">1. Lecture Scope & Roadmap</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
           <span class="sidebar-dot"></span>
-          <span class="truncate">2. Scientific Foundations</span>
+          <span class="truncate">2. [Slides 01–07] EIA Foundations, Baseline Environmental Dynamics & Activity Mapping</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Diagram Breakdown & Analysis</span>
+          <span class="truncate">3. [Slides 08–16] Phase 1 EIA Protocols: Screening, Scoping & Preliminary Assessment</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
           <span class="sidebar-dot"></span>
-          <span class="truncate">4. Math & Empirical Tables</span>
+          <span class="truncate">4. [Slides 17–22] Phase 2 Full EIA Study, Stakeholder Participation & Mitigation</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
           <span class="sidebar-dot"></span>
-          <span class="truncate">5. Video Masterclass</span>
+          <span class="truncate">5. [Slides 23–32] Indian EIA Notification (1994, 2006), Schedule-1 & Buffer Siting Rules</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
           <span class="sidebar-dot"></span>
-          <span class="truncate">6. Interactive Simulator</span>
+          <span class="truncate">6. Interactive Simulator Lab</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
@@ -232,7 +227,7 @@
         
         <div class="sidebar-link " onclick="goToCard(9)" id="slink_9">
           <span class="sidebar-dot"></span>
-          <span class="truncate">10. Complete Slide Gallery (32 Slides)</span>
+          <span class="truncate">10. Slide Quick-Jump Index (32 Slides)</span>
         </div>
         
     </nav>
@@ -240,229 +235,672 @@
     <!-- MAIN VIEW -->
     <main id="main">
       
-    <section class="card-screen active" data-title="Big Picture & Intuition">
+    <section class="card-screen active" data-title="1. Lecture Scope & Roadmap">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 12 • Fundamental Concept</span>
-          <span class="text-xs text-slate-400">• Advanced • 50 mins</span>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 12 • Syllabus Roadmap</span>
+            <span class="text-xs text-slate-400">• Advanced • 50 mins</span>
+          </div>
+          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 32 Slides Covered Across 4 Study Units</span>
         </div>
+
         <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Environmental Impact Assessment (EIA): Framework & Protocols</h2>
         <div class="text-emerald-400 text-sm font-semibold mb-4">Screening, Scoping, Leopold Matrices, Public Hearings, and Environmental Clearance</div>
         
-        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-sm leading-relaxed">
-          <strong>💡 Why This Topic Matters:</strong><br/>
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-xs md:text-sm leading-relaxed">
+          <strong class="text-emerald-300 block mb-1">💡 Why This Lecture Matters:</strong>
           Environmental Impact Assessment (EIA) is the formal statutory planning tool used to identify, predict, and evaluate the environmental consequences of proposed developmental projects prior to major decision-making. In India, EIA is legally mandated under the Environment (Protection) Act, 1986 and governed by the EIA Notification 2006. Mastering the 8-stage EIA lifecycle and quantitative matrices is mandatory for environmental engineering professionals.
         </div>
 
-        <div class="space-y-2">
-          
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Lifecycle</span>
-            <strong class="text-emerald-300 text-sm">The 8-Stage EIA Lifecycle</strong>
+        <div class="mb-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Lecture Slide Study Units</span>
+            <span class="text-[11px] text-slate-400">Click any unit to jump directly to its slides</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed">1. Screening. 2. Scoping (TOR). 3. Baseline Data Collection. 4. Impact Prediction. 5. Mitigation & EMP. 6. Public Hearing. 7. Appraisal (EAC/SEAC). 8. Post-Project Compliance Monitoring.</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Jurisdiction</span>
-            <strong class="text-emerald-300 text-sm">Categorization (Category A vs B)</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Category A projects (national scale, river valley, nuclear, large thermal plants) evaluated at central MoEFCC level. Category B projects evaluated at state level (SEIAA) and subdivided into B1 (mandatory EIA) and B2 (EIA exempt).</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Methodology</span>
-            <strong class="text-emerald-300 text-sm">The Leopold Interaction Matrix</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">A two-dimensional matrix crossing 100 developmental project actions along the horizontal axis with 88 environmental characteristics along the vertical axis. Each cell receives a score for Magnitude ($1-10$) and Importance ($1-10$).</p>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Scientific Foundations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-teal inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Core Mechanics</div>
-        <h2 class="text-2xl font-black text-white mb-4">Leopold Matrix & Batelle Environmental Evaluation System</h2>
-        <div class="text-sm leading-relaxed text-slate-200">
-          
-            <p class="mb-3">The <strong>Leopold Matrix</strong> (1971) uses a double-score format in each interaction cell:</p>
-            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
-              $$\text{Cell Score} = \frac{\text{Magnitude } (M)}{\text{Importance } (I)} \quad (M \in [-10, +10], \; I \in [1, 10])$$
-            </div>
-            <p class="text-sm"><strong>Magnitude ($M$)</strong> represents the physical scale, degree, or extensiveness of the impact (positive for beneficial, negative for adverse). <strong>Importance ($I$)</strong> represents the social, ecological, and policy significance of that impact.</p>
-            <p class="text-sm mt-3">The <strong>Batelle Environmental Evaluation System (BEES)</strong> provides a hierarchical quantitative metric across 78 environmental parameters. Each parameter $i$ is assigned a Parameter Importance Unit ($PIU_i$, where $\sum PIU_i = 1000$). The Environmental Impact ($EI$) is computed as:</p>
-            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
-              $$EI = \sum_{i=1}^{78} PIU_i \times \left( EQ_{i, \text{with}} - EQ_{i, \text{without}} \right)$$
-            </div>
-            <p class="text-sm">Where $EQ_i \in [0, 1]$ is the Environmental Quality index derived from value functions.</p>
+          <div class="space-y-2">
             
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(1)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 01–07</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">EIA Foundations, Baseline Environmental Dynamics & Activity Mapping</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Defines Environmental Impact Assessment (EIA), characterization of dynamic baseline environments, and the decomposition of activities into specific actions.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(2)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 08–16</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Phase 1 EIA Protocols: Screening, Scoping & Preliminary Assessment</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Examines project screening criteria, scoping terms of reference (ToR), and preliminary environmental assessment (PEA) thresholds.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(3)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 17–22</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Phase 2 Full EIA Study, Stakeholder Participation & Mitigation</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Details the multi-disciplinary full EIA execution, public hearing protocols, the mitigation hierarchy, and the Environmental Management Plan (EMP).</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(4)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 23–32</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Indian EIA Notification (1994, 2006), Schedule-1 & Buffer Siting Rules</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Analyzes Indian statutory frameworks under the Environmental Protection Act 1986, Schedule-1 clearance lists, and strict buffer siting zones.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+          </div>
         </div>
       </div>
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Diagram Breakdown">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
-          <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
-        </div>
-        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
-        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
-        
-        <div>
-          
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
-              <h3 class="text-base font-bold text-white">Environmental Baseline & Impact Prediction Trajectory</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-12 EIA.pdf, Slide 10</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_12/diagram_03.jpeg', 'Environmental Baseline &amp; Impact Prediction Trajectory')">
-              <img src="assets/diagrams/lec_12/diagram_03.jpeg" alt="Environmental Baseline &amp; Impact Prediction Trajectory" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
-              </div>
-            </div>
-
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">A temporal trend chart comparing the future environmental quality trajectory 'Without Project' (baseline trend) versus 'With Project' (adverse degradation) versus 'With EMP Mitigation'.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Demonstrates the core philosophy of EIA: an environmental impact is NOT measured by comparing environmental quality after the project against the initial state ($T_0$). It must be measured against what the environment <em>would have been</em> at time $T$ in the absence of the project.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">True Environmental Impact: $\Delta EI(t) = EQ_{\text{with project}}(t) - EQ_{\text{without project}}(t)$. Mitigation efficiency: $\eta_{\text{EMP}} = \frac{EQ_{\text{mitigated}} - EQ_{\text{unmitigated}}}{EQ_{\text{baseline}} - EQ_{\text{unmitigated}}} \times 100\%$.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Evaluating impact purely as post-project status minus pre-project status. If the baseline environment was already deteriorating independently (e.g. existing urban groundwater depletion), failing to model the 'Without Project' baseline skews the assessment.
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
-              <h3 class="text-base font-bold text-white">EIA Statutory Clearance Flowchart & Review Matrix</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-12 EIA.pdf, Slide 2</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_12/diagram_01.png', 'EIA Statutory Clearance Flowchart &amp; Review Matrix')">
-              <img src="assets/diagrams/lec_12/diagram_01.png" alt="EIA Statutory Clearance Flowchart &amp; Review Matrix" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
-              </div>
-            </div>
-
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">The complete statutory workflow under India's EIA Notification 2006, from Application (Form 1) through Screening, Scoping, Draft EIA, Public Consultation, Final EIA, and Expert Appraisal Committee (EAC) clearance.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Provides institutional governance checkpoints ensuring public transparency and engineering accountability. The State Pollution Control Board (SPCB) facilitates the public hearing and submits the verbatim video and proceedings to MoEFCC within 45 days.</span>
-              </div>
-
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Statutory timeline: Scoping (TOR issued within 60 days), Public Hearing (45 days), Final Appraisal by EAC (60 days), Total regulatory turnaround target: 105 to 180 days.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Category B2 projects are exempt from EIA studies, but they are NOT exempt from obtaining Environmental Clearance (EC) from the SEIAA based on Form 1 and EMP.
-          </div>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Mathematical Formulations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Rigorous Quantitative Model</div>
-        <h2 class="text-2xl font-black text-white mb-4">Environmental Management Plan (EMP) Architecture</h2>
-        
-        <div class="p-4 bg-[#05120c] border border-emerald-900/80 rounded-xl text-center my-4 overflow-x-auto">
-          <div class="text-lg md:text-xl font-mono text-emerald-300">
-            $$EI = \sum_{i=1}^n PIU_i \cdot \Delta EQ_i, \quad \sum_{i=1}^{78} PIU_i = 1000$$
-          </div>
-        </div>
-        <p class="text-xs text-slate-300 mb-6">An Environmental Management Plan (EMP) must specify for every identified negative impact: mitigation measures, monitoring parameter, frequency of sampling, institutional responsibility, and capital/recurring cost allocation.</p>
-
-        <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
-          <table class="w-full text-xs text-left text-slate-300">
-            <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>EIA Stage</th> <th class='p-3 border-r border-emerald-900'>Key Activities Involved</th> <th class='p-3 border-r border-emerald-900'>Responsible Entity</th> <th class='p-3 border-r border-emerald-900'>Statutory Outcome</th> </tr>
-            </thead>
-            <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>1. Screening</td> <td class='p-3 border-r border-emerald-900 font-mono'>Determine whether project requires EIA based on investment and threshold criteria</td> <td class='p-3 border-r border-emerald-900 font-mono'>SEIAA / MoEFCC</td> <td class='p-3 border-r border-emerald-900 font-mono'>Classification into Category A, B1, or B2</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>2. Scoping</td> <td class='p-3 border-r border-emerald-900 font-mono'>Determine spatial and temporal boundaries and formulate Terms of Reference (TOR)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Expert Appraisal Committee (EAC)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Approved Terms of Reference (TOR)</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>3. Baseline Study</td> <td class='p-3 border-r border-emerald-900 font-mono'>Collect 1 full season (non-monsoon) air, water, soil, noise, biodiversity data</td> <td class='p-3 border-r border-emerald-900 font-mono'>Accredited EIA Consultant (NABET)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Baseline Environmental Status Report</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>4. Public Consultation</td> <td class='p-3 border-r border-emerald-900 font-mono'>Notice published in national & local language newspapers; public hearing</td> <td class='p-3 border-r border-emerald-900 font-mono'>State Pollution Control Board (SPCB)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Recorded Public Hearing Proceedings & Video</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>5. Appraisal</td> <td class='p-3 border-r border-emerald-900 font-mono'>Detailed scrutiny of final EIA and public concerns by expert committee</td> <td class='p-3 border-r border-emerald-900 font-mono'>EAC / SEAC</td> <td class='p-3 border-r border-emerald-900 font-mono'>Grant or Rejection of Environmental Clearance (EC)</td> </tr>
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    
-
-        <section class="card-screen" data-title="Video Masterclass">
+        <section class="card-screen" data-title="Unit 1: Slides 01–07">
           <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-            <div class="badge-cyan inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Audiovisual Deep-Dive</div>
-            <h2 class="text-2xl font-black text-white mb-2">Lecture Videos & Multimedia Documentaries</h2>
-            <p class="text-xs text-slate-300 mb-6">Referenced directly from the course slides for active conceptual reinforcement.</p>
-            
-            <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl overflow-hidden mb-6">
-              <div class="p-3 bg-[#0a1f15] border-b border-emerald-900/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
-                  <span>▶️</span> Recommended Video Lecture / Documentary Reference
-                </span>
-                <a href="https://www.youtube.com/watch?v=dJa8LMGS8cs" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 01–07</span>
+                <span class="text-xs text-slate-400">• Unit 1 of 4 • Topic Walkthrough</span>
               </div>
-              <div class="relative w-full aspect-video bg-black">
-                <iframe src="https://www.youtube-nocookie.com/embed/dJa8LMGS8cs" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 12: EIA Framework & Practice</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">EIA Foundations, Baseline Environmental Dynamics & Activity Mapping</h2>
+            <p class="text-xs text-slate-300 mb-6">Defines Environmental Impact Assessment (EIA), characterization of dynamic baseline environments, and the decomposition of activities into specific actions.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u12_1" class="text-emerald-400 font-bold font-mono">#1</span> of 7 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_1', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_1', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u12_1 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 0)">
+              <span>#1</span> <span class="hidden sm:inline text-[11px] opacity-80">Source: ENCAP EA-ESD...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 1)">
+              <span>#2</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 2</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 2)">
+              <span>#3</span> <span class="hidden sm:inline text-[11px] opacity-80">The baseline situation</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 3)">
+              <span>#4</span> <span class="hidden sm:inline text-[11px] opacity-80">The baseline situation</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 4)">
+              <span>#5</span> <span class="hidden sm:inline text-[11px] opacity-80">Types of impacts &amp; t...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 5)">
+              <span>#6</span> <span class="hidden sm:inline text-[11px] opacity-80">6</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_1', 6)">
+              <span>#7</span> <span class="hidden sm:inline text-[11px] opacity-80">The EIA process</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u12_1_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_12/slide_01.jpg', 'Slide 1: Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...')">
+                  <img id="u12_1_slide_img" src="assets/slides/lec_12/slide_01.jpg" alt="Slide 1" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u12_1_slide_title" class="text-sm md:text-base font-bold text-white">Slide 1: Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u12_1_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Basic Concepts for</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Assessing Environmental Impacts</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">19th October 2026</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Class-12</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u12_1_slide_takeaway" class="text-slate-300 leading-relaxed">Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: EIA Foundations, Baseline Environmental Dynamics & Activity Mapping</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Definition & Core Purpose of EIA (Slides 1, 7):</strong> Environmental Impact Assessment (EIA) is a systematic formal planning process used to identify, predict, evaluate, and mitigate the biophysical, social, and economic effects of proposed development projects <em>prior</em> to major decisions and commitments being made.</p>
+          <p><strong>2. The Baseline Environment is Dynamic (Slides 3–4):</strong> A fundamental EIA error is treating the baseline situation as a static 'snapshot' in time. The baseline environment exhibits natural cyclical variations (seasonal monsoons, tidal cycles, annual temperature swings) and long-term evolutionary trends. The EIA must project the future state of the environment <em>without</em> the project versus <em>with</em> the project.</p>
+          <p><strong>3. Activity Breakdown (Slide 6):</strong> An 'activity' is not analyzed in aggregate. It must be decomposed into discrete physical actions across all project phases (Pre-construction, Construction, Operation, Decommissioning): surveying, land clearing, grading, blasting, culvert construction, soil compaction, and hazardous effluent disposal.</p>
+          <p><strong>4. Impact Attributes (Slide 5):</strong> Impacts are categorized across multiple dimensions: Direct (primary cause-effect, e.g. habitat destruction from road building) vs. Indirect (secondary/tertiary, e.g. subsequent illegal logging enabled by road access), Short-term vs. Long-term, Reversible vs. Irreversible, and Cumulative impacts.</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\text{Net Impact} = \text{Future State with Project} - \text{Future Projected Baseline without Project}$$
               </div>
             </div>
             
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Explain why the baseline environment in an EIA cannot be treated as a static snapshot. Distinguish with concrete examples between Direct and Indirect environmental impacts.</p>
+              </div>
+            </div>
           </div>
         </section>
         
 
-    <section class="card-screen" data-title="Interactive Simulator">
+        <section class="card-screen" data-title="Unit 2: Slides 08–16">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 08–16</span>
+                <span class="text-xs text-slate-400">• Unit 2 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 12: EIA Framework & Practice</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Phase 1 EIA Protocols: Screening, Scoping & Preliminary Assessment</h2>
+            <p class="text-xs text-slate-300 mb-6">Examines project screening criteria, scoping terms of reference (ToR), and preliminary environmental assessment (PEA) thresholds.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u12_2" class="text-emerald-400 font-bold font-mono">#8</span> of 9 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_2', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_2', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u12_2 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 0)">
+              <span>#8</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 1 of the EIA P...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 1)">
+              <span>#9</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 1 of the EIA p...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 2)">
+              <span>#10</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 1 of the EIA p...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 3)">
+              <span>#11</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 1 of the EIA p...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 4)">
+              <span>#12</span> <span class="hidden sm:inline text-[11px] opacity-80">ENCAP EA-ESD Course:</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 5)">
+              <span>#13</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 1 of the EIA p...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 6)">
+              <span>#14</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 1 of the EIA p...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 7)">
+              <span>#15</span> <span class="hidden sm:inline text-[11px] opacity-80">To arrive at findings:</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_2', 8)">
+              <span>#16</span> <span class="hidden sm:inline text-[11px] opacity-80">ENCAP EA-ESD Course:</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u12_2_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_12/slide_08.jpg', 'Slide 8: Phase 1 of the EIA Process')">
+                  <img id="u12_2_slide_img" src="assets/slides/lec_12/slide_08.jpg" alt="Slide 8" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u12_2_slide_title" class="text-sm md:text-base font-bold text-white">Slide 8: Phase 1 of the EIA Process</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u12_2_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Screen the</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">activity</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Based on the</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">nature of the</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">activity what</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">level of</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">environmental</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">review is</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u12_2_slide_takeaway" class="text-slate-300 leading-relaxed">Phase 1 of the EIA Process</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Phase 1 EIA Protocols: Screening, Scoping & Preliminary Assessment</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Screening (Slides 8, 11):</strong> The initial phase that determines whether a proposed project requires an EIA and at what level of detail. Projects are sorted into statutory categories:
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Category A:</strong> Projects with significant, irreversible, transboundary, or unprecedented adverse environmental impacts (e.g. nuclear power, large dams, chemical refineries); full EIA mandatory.</li>
+              <li><strong>Category B:</strong> Projects with site-specific, largely reversible impacts; requires an Initial Environmental Examination (IEE) / Preliminary Assessment. May be escalated to Category A if sensitive receptors exist.</li>
+              <li><strong>Category C:</strong> Projects with negligible environmental footprint; exempt from formal assessment.</li>
+            </ul>
+          </p>
+          <p><strong>2. Scoping & Terms of Reference (ToR):</strong> Scoping defines the spatial boundaries, temporal horizons, key environmental issues, and methodologies to be investigated, ensuring the study focuses strictly on critical impacts.</p>
+          <p><strong>3. Preliminary Environmental Assessment (PEA, Slides 13–15):</strong> A rapid, preliminary study conducted when impacts are uncertain. It identifies, predicts, and judges potential impacts against regulatory standards. Only if significant uncertainties or unmitigated impacts persist does the project advance to a Full EIA Study (Slide 16).</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\text{Screening Decision: } \text{Project Type} + \text{Scale/Investment} + \text{Site Sensitivity} \implies \text{Cat A / B1 / B2 / C}$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Differentiate clearly between 'Screening' (determining if an EIA is required) and 'Scoping' (defining the spatial, temporal, and methodological boundaries of the study).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 3: Slides 17–22">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 17–22</span>
+                <span class="text-xs text-slate-400">• Unit 3 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 12: EIA Framework & Practice</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Phase 2 Full EIA Study, Stakeholder Participation & Mitigation</h2>
+            <p class="text-xs text-slate-300 mb-6">Details the multi-disciplinary full EIA execution, public hearing protocols, the mitigation hierarchy, and the Environmental Management Plan (EMP).</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u12_3" class="text-emerald-400 font-bold font-mono">#17</span> of 6 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_3', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_3', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u12_3 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_3', 0)">
+              <span>#17</span> <span class="hidden sm:inline text-[11px] opacity-80">Phase 2 of the EIA p...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_3', 1)">
+              <span>#18</span> <span class="hidden sm:inline text-[11px] opacity-80">ENCAP EA-ESD Course:</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_3', 2)">
+              <span>#19</span> <span class="hidden sm:inline text-[11px] opacity-80">ENCAP EA-ESD Course:</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_3', 3)">
+              <span>#20</span> <span class="hidden sm:inline text-[11px] opacity-80">Who is involved in E...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_3', 4)">
+              <span>#21</span> <span class="hidden sm:inline text-[11px] opacity-80">EIA is undertaken ea...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_3', 5)">
+              <span>#22</span> <span class="hidden sm:inline text-[11px] opacity-80">Those which can sig...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u12_3_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_12/slide_17.jpg', 'Slide 17: Phase 2 of the EIA process:')">
+                  <img id="u12_3_slide_img" src="assets/slides/lec_12/slide_17.jpg" alt="Slide 17" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u12_3_slide_title" class="text-sm md:text-base font-bold text-white">Slide 17: Phase 2 of the EIA process:</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u12_3_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">The Full EIA study</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">The full EIA study</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">has</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">very</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">similar</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">objectives</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">and</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">structure</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u12_3_slide_takeaway" class="text-slate-300 leading-relaxed">Phase 2 of the EIA process:</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Phase 2 Full EIA Study, Stakeholder Participation & Mitigation</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Full EIA Study Components (Slides 17–19):</strong> Involves baseline environmental monitoring (air quality sampling, seasonal water quality, terrestrial floristic/faunistic surveys, socio-economic baseline), mathematical dispersion modeling, and multi-criteria evaluation of project alternatives (including the 'No-Action' baseline alternative).</p>
+          <p><strong>2. Stakeholder Involvement (Slide 20):</strong> Genuine EIA requires transparent participation of three key groups:
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Project Proponent:</strong> Commissions and funds the EIA study.</li>
+              <li><strong>Regulatory Agencies:</strong> Review, issue Terms of Reference, and grant/deny Environmental Clearance.</li>
+              <li><strong>Affected Public & Civil Society:</strong> Mandatory Public Hearings ensure local indigenous and resident concerns regarding displacement and pollution are addressed.</li>
+            </ul>
+          </p>
+          <p><strong>3. Timing & The Mitigation Hierarchy (Slide 21):</strong> EIA must be undertaken early enough in the feasibility stage to fundamentally influence project engineering design and site selection. Follows the strict <strong>Mitigation Hierarchy</strong>: Avoid $\to$ Minimize $\to$ Rehabilitate $\to$ Compensate/Offset. Formulates an enforceable Environmental Management Plan (EMP).</p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\text{Leopold Matrix Impact Score: } S = \sum_{i=1}^{m} \sum_{j=1}^{n} M_{ij} \times I_{ij} \quad (M \in [-10, 10], \, I \in [1, 10])$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Name the four levels of the Mitigation Hierarchy in exact order: 1. Avoid, 2. Minimize, 3. Rehabilitate, 4. Offset. Explain the role of the Environmental Management Plan (EMP).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 4: Slides 23–32">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 23–32</span>
+                <span class="text-xs text-slate-400">• Unit 4 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 12: EIA Framework & Practice</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Indian EIA Notification (1994, 2006), Schedule-1 & Buffer Siting Rules</h2>
+            <p class="text-xs text-slate-300 mb-6">Analyzes Indian statutory frameworks under the Environmental Protection Act 1986, Schedule-1 clearance lists, and strict buffer siting zones.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u12_4" class="text-emerald-400 font-bold font-mono">#23</span> of 10 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_4', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u12_4', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u12_4 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 0)">
+              <span>#23</span> <span class="hidden sm:inline text-[11px] opacity-80">Environmental Impact...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 1)">
+              <span>#24</span> <span class="hidden sm:inline text-[11px] opacity-80">THE ENVIRONMENTAL IM...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 2)">
+              <span>#25</span> <span class="hidden sm:inline text-[11px] opacity-80">THE ENVIRONMENTAL IM...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 3)">
+              <span>#26</span> <span class="hidden sm:inline text-[11px] opacity-80">SCHEDULE - 1</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 4)">
+              <span>#27</span> <span class="hidden sm:inline text-[11px] opacity-80">10.</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 5)">
+              <span>#28</span> <span class="hidden sm:inline text-[11px] opacity-80">.</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 6)">
+              <span>#29</span> <span class="hidden sm:inline text-[11px] opacity-80">Environment Siting R...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 7)">
+              <span>#30</span> <span class="hidden sm:inline text-[11px] opacity-80">Environment Siting R...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 8)">
+              <span>#31</span> <span class="hidden sm:inline text-[11px] opacity-80">Conclusions</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u12_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u12_4', 9)">
+              <span>#32</span> <span class="hidden sm:inline text-[11px] opacity-80">https://www.drishtii...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u12_4_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_12/slide_23.jpg', 'Slide 23: Environmental Impact Assessment Notification in India')">
+                  <img id="u12_4_slide_img" src="assets/slides/lec_12/slide_23.jpg" alt="Slide 23" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u12_4_slide_title" class="text-sm md:text-base font-bold text-white">Slide 23: Environmental Impact Assessment Notification in India</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u12_4_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">EIA is of</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">comparatively recent origin in India and has become an</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">integral part of Environmental Management by EIA notification of</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">1994 and its subsequent amendments by Ministry of Environment &amp;</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Forests (MoEF), Govt. of India. The notification specifies 30 categories</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">of projects with potential risks to degrade the Environment.</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">In exercise of powers conferred by Environment Protection Act, 1986</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">and sub rule of the Environment Protection Rules 1986, the Central</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u12_4_slide_takeaway" class="text-slate-300 leading-relaxed">Environmental Impact Assessment Notification in India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Indian EIA Notification (1994, 2006), Schedule-1 & Buffer Siting Rules</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Statutory Evolution in India (Slides 23–25):</strong> Promulgated by the Ministry of Environment, Forest and Climate Change (MoEFCC) under the landmark Environment (Protection) Act, 1986. The first formal EIA Notification in 1994 made environmental clearance mandatory for 29 project categories, subsequently overhauled by the EIA Notification 2006 which decentralized clearances into Category A (Central MoEFCC appraisal) and Category B (State Environment Impact Assessment Authority - SEIAA).</p>
+          <p><strong>2. Schedule-1 Mandatory Clearance List (Slides 26–28):</strong> Specific project categories requiring mandatory Environmental Clearance from the Central Government:
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li>Nuclear power plants and nuclear fuel complexes.</li>
+              <li>Thermal power plants (>500 MW central, lower thresholds for coal).</li>
+              <li>Mining projects (major minerals with lease area $>50$ hectares).</li>
+              <li>Synthetic rubber, asbestos and asbestos-based manufacturing, chemical refineries, and pesticide manufacturing.</li>
+            </ul>
+          </p>
+          <p><strong>3. Strict Environmental Siting Rules (Slides 29–30):</strong> Statutory spatial prohibitions:
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li>Absolute prohibition on setting up polluting red-category industries within municipal limits.</li>
+              <li>Mandatory 25 km buffer zone from ecologically sensitive areas (National Parks, Sanctuaries).</li>
+              <li>Allowed in <strong>7 km to 25 km zone</strong> around wetlands and coastal ecosystems only with stringent effluent treatment conditions.</li>
+            </ul>
+          </p>
+        </div>
+        
+              </div>
+            </div>
+
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\text{Clearance Path: } \begin{cases} \text{Category A} \implies \text{EAC (MoEFCC Central)} \\ \text{Category B1} \implies \text{SEAC / SEIAA (State Level)} \\ \text{Category B2} \implies \text{No Full EIA (State Level)} \end{cases}$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+                <div class="mt-4 p-4 bg-[#05120d] border border-emerald-900/80 rounded-xl">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-emerald-300 font-mono flex items-center gap-1.5">
+                      <span>▶️</span> Recommended Video Reference
+                    </span>
+                    <a href="https://www.youtube.com/watch?v=dJa8LMGS8cs" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
+                  </div>
+                  <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                    <iframe src="https://www.youtube-nocookie.com/embed/dJa8LMGS8cs" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+                
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Know the parent act for EIA in India (Environment Protection Act, 1986). List 3 Schedule-1 project categories and cite the exact siting buffer rule (7 km to 25 km zone around wetlands with special clearances).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+    <section class="card-screen" data-title="6. Interactive Simulator Lab">
       <div class="mb-6">
         
     <div class="eco-card p-6 border-emerald-800/60">
@@ -541,23 +979,23 @@
     </section>
     
 
-    <section class="card-screen" data-title="Active Recall Flashcards">
+    <section class="card-screen" data-title="7. Active Recall Flashcards">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
         <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
-        <p class="text-xs text-slate-300 mb-6">Test yourself on essential definitions, reactions, and principles before flipping.</p>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential slide definitions, reactions, and principles before flipping.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
         <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What is the primary difference between Category A and Category B projects under the Indian EIA Notification 2006?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What is the primary difference between Category A and Category B projects under the Indian EIA Notification 2006?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Category A projects require mandatory EIA and clearance at the Central Government level (MoEFCC). Category B projects are appraised at the State level (SEIAA); Category B1 requires EIA, while Category B2 is exempt from EIA.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Category A projects require mandatory EIA and clearance at the Central Government level (MoEFCC). Category B projects are appraised at the State level (SEIAA); Category B1 requires EIA, while Category B2 is exempt from EIA.</div>
             </div>
           </div>
         </div>
@@ -566,12 +1004,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What two numbers are assigned to each interacting cell in a Leopold Matrix?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What two numbers are assigned to each interacting cell in a Leopold Matrix?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Magnitude (from 1 to 10, often with +/- sign, measuring the physical scale of impact) and Importance (from 1 to 10, measuring the ecological or social weight).</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Magnitude (from 1 to 10, often with +/- sign, measuring the physical scale of impact) and Importance (from 1 to 10, measuring the ecological or social weight).</div>
             </div>
           </div>
         </div>
@@ -580,12 +1018,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">How long must baseline environmental data be collected for a standard EIA in India?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">How long must baseline environmental data be collected for a standard EIA in India?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">One full season (three months), excluding the monsoon season (which dilutes pollutants and skews ecological baselines).</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">One full season (three months), excluding the monsoon season (which dilutes pollutants and skews ecological baselines).</div>
             </div>
           </div>
         </div>
@@ -595,7 +1033,7 @@
     </section>
     
 
-    <section class="card-screen" data-title="Exam Traps & Pitfalls">
+    <section class="card-screen" data-title="8. High-Yield Exam Traps">
       <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
         <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
         <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
@@ -607,11 +1045,11 @@
     </section>
     
 
-    <section class="card-screen" data-title="Concept Check Quiz">
+    <section class="card-screen" data-title="9. Concept Check Quiz">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
         <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
-        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions.</p>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions from the lecture slides.</p>
         <div>
           
         <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
@@ -681,530 +1119,530 @@
     </section>
     
 
-    <section class="card-screen" data-title="Slide Reference Gallery">
+    <section class="card-screen" data-title="10. Slide Quick-Jump Index">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
           <div>
-            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Primary Course Slides</div>
-            <h2 class="text-2xl font-black text-white">Complete Slide Reference Gallery</h2>
-            <p class="text-xs text-slate-300">All 32 slides from the lecture presentations for instant reference and review.</p>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Master Slide Reference</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Index</h2>
+            <p class="text-xs text-slate-300">Quick visual reference of all 32 slides across this lecture deck with PDF downloads.</p>
           </div>
           <div class="flex flex-wrap gap-2">
             <a href='../Lecture_Slides/Class-12 EIA.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-12 EIA.pdf</span></a>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_01.jpg', 'Slide 1: Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www...')">
-            <img src="assets/slides/lec_12/slide_01.jpg" alt="Slide 1" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_01.jpg', 'Slide 1: Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...')">
+            <img src="assets/slides/lec_12/slide_01.jpg" alt="Slide 1" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #1</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www...">Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...">Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_02.jpg', 'Slide 2: Slide 2')">
-            <img src="assets/slides/lec_12/slide_02.jpg" alt="Slide 2" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_02.jpg" alt="Slide 2" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #2</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 2">Slide 2</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 2">Slide 2</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_03.jpg', 'Slide 3: The baseline situation')">
-            <img src="assets/slides/lec_12/slide_03.jpg" alt="Slide 3" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_03.jpg" alt="Slide 3" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #3</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The baseline situation">The baseline situation</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The baseline situation">The baseline situation</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_04.jpg', 'Slide 4: The baseline situation')">
-            <img src="assets/slides/lec_12/slide_04.jpg" alt="Slide 4" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_04.jpg" alt="Slide 4" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #4</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The baseline situation">The baseline situation</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The baseline situation">The baseline situation</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_05.jpg', 'Slide 5: Types of impacts &amp; their attributes')">
-            <img src="assets/slides/lec_12/slide_05.jpg" alt="Slide 5" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_05.jpg" alt="Slide 5" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #5</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Types of impacts &amp; their attributes">Types of impacts & their attributes</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Types of impacts &amp; their attributes">Types of impacts & their attributes</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_06.jpg', 'Slide 6: What is an activity?')">
-            <img src="assets/slides/lec_12/slide_06.jpg" alt="Slide 6" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_06.jpg', 'Slide 6: 6')">
+            <img src="assets/slides/lec_12/slide_06.jpg" alt="Slide 6" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #6</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="What is an activity?">What is an activity?</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="6">6</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_07.jpg', 'Slide 7: The EIA process')">
-            <img src="assets/slides/lec_12/slide_07.jpg" alt="Slide 7" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_07.jpg" alt="Slide 7" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #7</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The EIA process">The EIA process</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The EIA process">The EIA process</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_08.jpg', 'Slide 8: Phase 1 of the EIA Process')">
-            <img src="assets/slides/lec_12/slide_08.jpg" alt="Slide 8" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_08.jpg" alt="Slide 8" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #8</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 1 of the EIA Process">Phase 1 of the EIA Process</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 1 of the EIA Process">Phase 1 of the EIA Process</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_09.jpg', 'Slide 9: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_09.jpg" alt="Slide 9" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_09.jpg" alt="Slide 9" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #9</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_10.jpg', 'Slide 10: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_10.jpg" alt="Slide 10" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_10.jpg" alt="Slide 10" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #10</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_11.jpg', 'Slide 11: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_11.jpg" alt="Slide 11" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_11.jpg" alt="Slide 11" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #11</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_12.jpg', 'Slide 12: ENCAP EA-ESD Course:')">
-            <img src="assets/slides/lec_12/slide_12.jpg" alt="Slide 12" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_12.jpg" alt="Slide 12" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #12</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_13.jpg', 'Slide 13: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_13.jpg" alt="Slide 13" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_13.jpg" alt="Slide 13" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #13</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_14.jpg', 'Slide 14: Phase 1 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_14.jpg" alt="Slide 14" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_14.jpg" alt="Slide 14" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #14</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 1 of the EIA process:">Phase 1 of the EIA process:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_15.jpg', 'Slide 15: To arrive at findings:')">
-            <img src="assets/slides/lec_12/slide_15.jpg" alt="Slide 15" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_15.jpg" alt="Slide 15" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #15</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="To arrive at findings:">To arrive at findings:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="To arrive at findings:">To arrive at findings:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_16.jpg', 'Slide 16: ENCAP EA-ESD Course:')">
-            <img src="assets/slides/lec_12/slide_16.jpg" alt="Slide 16" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_16.jpg" alt="Slide 16" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #16</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_17.jpg', 'Slide 17: Phase 2 of the EIA process:')">
-            <img src="assets/slides/lec_12/slide_17.jpg" alt="Slide 17" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_17.jpg" alt="Slide 17" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #17</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Phase 2 of the EIA process:">Phase 2 of the EIA process:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Phase 2 of the EIA process:">Phase 2 of the EIA process:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_18.jpg', 'Slide 18: ENCAP EA-ESD Course:')">
-            <img src="assets/slides/lec_12/slide_18.jpg" alt="Slide 18" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_18.jpg" alt="Slide 18" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #18</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_19.jpg', 'Slide 19: ENCAP EA-ESD Course:')">
-            <img src="assets/slides/lec_12/slide_19.jpg" alt="Slide 19" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_19.jpg" alt="Slide 19" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #19</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="ENCAP EA-ESD Course:">ENCAP EA-ESD Course:</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_20.jpg', 'Slide 20: Who is involved in EIA?')">
-            <img src="assets/slides/lec_12/slide_20.jpg" alt="Slide 20" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_20.jpg" alt="Slide 20" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #20</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Who is involved in EIA?">Who is involved in EIA?</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Who is involved in EIA?">Who is involved in EIA?</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_21.jpg', 'Slide 21: EIA is undertaken early enough to')">
-            <img src="assets/slides/lec_12/slide_21.jpg" alt="Slide 21" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_21.jpg" alt="Slide 21" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #21</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="EIA is undertaken early enough to">EIA is undertaken early enough to</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="EIA is undertaken early enough to">EIA is undertaken early enough to</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_22.jpg', 'Slide 22: Those which can significantly alter the land use pattern, lan...')">
-            <img src="assets/slides/lec_12/slide_22.jpg" alt="Slide 22" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_22.jpg', 'Slide 22: Those which can significantly alter the land use pattern, landscape')">
+            <img src="assets/slides/lec_12/slide_22.jpg" alt="Slide 22" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #22</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Those which can significantly alter the land use pattern, lan...">Those which can significantly alter the land use pattern, lan...</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Those which can significantly alter the land use pattern, landscape">Those which can significantly alter the land use pattern, landscape</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_23.jpg', 'Slide 23: Environmental Impact Assessment Notification in India')">
-            <img src="assets/slides/lec_12/slide_23.jpg" alt="Slide 23" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_23.jpg" alt="Slide 23" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #23</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Environmental Impact Assessment Notification in India">Environmental Impact Assessment Notification in India</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Environmental Impact Assessment Notification in India">Environmental Impact Assessment Notification in India</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_24.jpg', 'Slide 24: THE ENVIRONMENTAL IMPACT')">
-            <img src="assets/slides/lec_12/slide_24.jpg" alt="Slide 24" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_24.jpg" alt="Slide 24" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #24</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="THE ENVIRONMENTAL IMPACT">THE ENVIRONMENTAL IMPACT</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="THE ENVIRONMENTAL IMPACT">THE ENVIRONMENTAL IMPACT</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_25.jpg', 'Slide 25: THE ENVIRONMENTAL IMPACT')">
-            <img src="assets/slides/lec_12/slide_25.jpg" alt="Slide 25" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_25.jpg" alt="Slide 25" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #25</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="THE ENVIRONMENTAL IMPACT">THE ENVIRONMENTAL IMPACT</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="THE ENVIRONMENTAL IMPACT">THE ENVIRONMENTAL IMPACT</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_26.jpg', 'Slide 26: SCHEDULE - 1')">
-            <img src="assets/slides/lec_12/slide_26.jpg" alt="Slide 26" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_26.jpg" alt="Slide 26" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #26</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="SCHEDULE - 1">SCHEDULE - 1</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="SCHEDULE - 1">SCHEDULE - 1</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_27.jpg', 'Slide 27: 10.')">
-            <img src="assets/slides/lec_12/slide_27.jpg" alt="Slide 27" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_27.jpg" alt="Slide 27" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #27</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="10.">10.</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="10.">10.</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_28.jpg', 'Slide 28: 19.')">
-            <img src="assets/slides/lec_12/slide_28.jpg" alt="Slide 28" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_28.jpg', 'Slide 28: .')">
+            <img src="assets/slides/lec_12/slide_28.jpg" alt="Slide 28" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #28</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="19.">19.</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title=".">.</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_29.jpg', 'Slide 29: Environment Siting Rules')">
-            <img src="assets/slides/lec_12/slide_29.jpg" alt="Slide 29" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_29.jpg" alt="Slide 29" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #29</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Environment Siting Rules">Environment Siting Rules</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Environment Siting Rules">Environment Siting Rules</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_30.jpg', 'Slide 30: Environment Siting Rules')">
-            <img src="assets/slides/lec_12/slide_30.jpg" alt="Slide 30" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_30.jpg" alt="Slide 30" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #30</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Environment Siting Rules">Environment Siting Rules</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Environment Siting Rules">Environment Siting Rules</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_31.jpg', 'Slide 31: Conclusions')">
-            <img src="assets/slides/lec_12/slide_31.jpg" alt="Slide 31" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_31.jpg" alt="Slide 31" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #31</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Conclusions">Conclusions</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Conclusions">Conclusions</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_12/slide_32.jpg', 'Slide 32: https://www.drishtiias.com/to-the-')">
-            <img src="assets/slides/lec_12/slide_32.jpg" alt="Slide 32" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_12/slide_32.jpg" alt="Slide 32" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #32</span>
-              <span>Class-12 EIA.pdf</span>
+              <span class="truncate max-w-[100px]">Class-12 EIA.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://www.drishtiias.com/to-the-">https://www.drishtiias.com/to-the-</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="https://www.drishtiias.com/to-the-">https://www.drishtiias.com/to-the-</div>
           </div>
         </div>
         
@@ -1217,9 +1655,9 @@
 
   <!-- BOTTOM NAVIGATION BAR -->
   <nav id="nav-bar">
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all" onclick="prevCard()">← Previous</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all cursor-pointer" onclick="prevCard()">← Previous</button>
     <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 10</span>
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950" onclick="nextCard()">Next Card →</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950 cursor-pointer" onclick="nextCard()">Next Card →</button>
   </nav>
 
   <!-- LIGHTBOX MODAL -->
@@ -1227,7 +1665,7 @@
     <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
       <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
         <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
-        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded" onclick="closeLightbox()">✕ Close</button>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded cursor-pointer" onclick="closeLightbox()">✕ Close</button>
       </div>
       <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
         <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
@@ -1236,6 +1674,74 @@
   </div>
 
   <script>
+    const ALL_UNITS_DATA = {"u12_1": {"slides": [{"slide_num": 1, "title": "Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca...", "image": "assets/slides/lec_12/slide_01.jpg", "bullets": ["Basic Concepts for", "Assessing Environmental Impacts", "19th October 2026", "Class-12"], "takeaway": "Source: ENCAP EA-ESD Course: Basic Concepts for EIA. Visit www.enca..."}, {"slide_num": 2, "title": "Slide 2", "image": "assets/slides/lec_12/slide_02.jpg", "bullets": [], "takeaway": "Slide 2"}, {"slide_num": 3, "title": "The baseline situation", "image": "assets/slides/lec_12/slide_03.jpg", "bullets": ["In characterizing the", "baseline situation,", "many environmental", "components MAY be", "of interest", "Water", "Quantity, quality,", "reliability, accessibility"], "takeaway": "The baseline situation"}, {"slide_num": 4, "title": "The baseline situation", "image": "assets/slides/lec_12/slide_04.jpg", "bullets": ["The baseline situation is not", "simply a \u201csnapshot.\u201d", "Describing the baseline", "situation requires describing", "both the normal variability in", "environmental components &", "current trends in these", "components."], "takeaway": "The baseline situation"}, {"slide_num": 5, "title": "Types of impacts & their attributes", "image": "assets/slides/lec_12/slide_05.jpg", "bullets": ["Direct & indirect", "impacts", "Short-term & long-term", "impacts", "Adverse & beneficial", "impacts", "Cumulative impacts", "The EIA process is concerned with"], "takeaway": "Types of impacts & their attributes"}, {"slide_num": 6, "title": "6", "image": "assets/slides/lec_12/slide_06.jpg", "bullets": ["What is an activity?", "ACTIONS:", "Survey, grading, culvert", "construction, compaction, etc.", ". .", "ACTIVITY:", "market access", "road"], "takeaway": "6"}, {"slide_num": 7, "title": "The EIA process", "image": "assets/slides/lec_12/slide_07.jpg", "bullets": ["\u2022 Scope", "\u2022 Evaluate baseline situation", "\u2022 Identify & choose alternatives", "\u2022 Identify and characterize potential", "impacts of proposed activity and", "each alternative", "\u2022 Develop mitigation and  monitoring", "\u2022 Communicate and document"], "takeaway": "The EIA process"}], "currentIdx": 0}, "u12_2": {"slides": [{"slide_num": 8, "title": "Phase 1 of the EIA Process", "image": "assets/slides/lec_12/slide_08.jpg", "bullets": ["Screen the", "activity", "Based on the", "nature of the", "activity what", "level of", "environmental", "review is"], "takeaway": "Phase 1 of the EIA Process"}, {"slide_num": 9, "title": "Phase 1 of the EIA process:", "image": "assets/slides/lec_12/slide_09.jpg", "bullets": ["Understand the proposed activity", "Understand the", "proposed", "activities", "Why is the", "activity being", "proposed?", "What is being"], "takeaway": "Phase 1 of the EIA process:"}, {"slide_num": 10, "title": "Phase 1 of the EIA process:", "image": "assets/slides/lec_12/slide_10.jpg", "bullets": ["Understand the proposed activity", "Understand the", "proposed", "activities", "Why is the", "activity being", "proposed?", "What is being"], "takeaway": "Phase 1 of the EIA process:"}, {"slide_num": 11, "title": "Phase 1 of the EIA process:", "image": "assets/slides/lec_12/slide_11.jpg", "bullets": ["Screen the activity", "Screen each", "activity", "Based on the", "nature of the", "activity, what level", "of environmental", "analysis is"], "takeaway": "Phase 1 of the EIA process:"}, {"slide_num": 12, "title": "ENCAP EA-ESD Course:", "image": "assets/slides/lec_12/slide_12.jpg", "bullets": ["Basic Concepts for EIA. Visit", "www.encapafrica.org", "Phase 1 of the EIA process:", "Screen the activity", "Screen each", "activity", "Based on the", "nature of the"], "takeaway": "ENCAP EA-ESD Course:"}, {"slide_num": 13, "title": "Phase 1 of the EIA process:", "image": "assets/slides/lec_12/slide_13.jpg", "bullets": ["The Preliminary Assessment", "Conduct a", "Preliminary", "Assessment", "A rapid,", "simplified EIA", "study using", "simple tools"], "takeaway": "Phase 1 of the EIA process:"}, {"slide_num": 14, "title": "Phase 1 of the EIA process:", "image": "assets/slides/lec_12/slide_14.jpg", "bullets": ["The Preliminary Assessment", "Typical Preliminary", "Assessment outline", "1. Background (Development", "objective, list of activities)", "2. Description of the baseline", "situation", "3. Evaluation of potential"], "takeaway": "Phase 1 of the EIA process:"}, {"slide_num": 15, "title": "To arrive at findings:", "image": "assets/slides/lec_12/slide_15.jpg", "bullets": ["Identify, Predict and Judge", "Identify potential", "impacts", "Judge the", "significance of", "potential impacts", "Predict potential", "impacts"], "takeaway": "To arrive at findings:"}, {"slide_num": 16, "title": "ENCAP EA-ESD Course:", "image": "assets/slides/lec_12/slide_16.jpg", "bullets": ["Basic Concepts for EIA. Visit", "www.encapafrica.org", "We only proceed to", "Phase II of the EIA process", "Phase I indicates that", "a FULL EIA STUDY", "is required", "Most small-scale activities do not"], "takeaway": "ENCAP EA-ESD Course:"}], "currentIdx": 0}, "u12_3": {"slides": [{"slide_num": 17, "title": "Phase 2 of the EIA process:", "image": "assets/slides/lec_12/slide_17.jpg", "bullets": ["The Full EIA study", "The full EIA study", "has", "very", "similar", "objectives", "and", "structure"], "takeaway": "Phase 2 of the EIA process:"}, {"slide_num": 18, "title": "ENCAP EA-ESD Course:", "image": "assets/slides/lec_12/slide_18.jpg", "bullets": ["Basic Concepts for EIA. Visit", "www.encapafrica.org", "Phase 2 of the EIA process:", "The Full EIA study", "With a few additions, the basic", "outline of the preliminary", "assessment is the template for", "the steps involved in a full EIA"], "takeaway": "ENCAP EA-ESD Course:"}, {"slide_num": 19, "title": "ENCAP EA-ESD Course:", "image": "assets/slides/lec_12/slide_19.jpg", "bullets": ["Basic Concepts for EIA. Visit", "www.encapafrica.org", "In summary,", "The full EIA study is a far more", "significant", "effort", "than", "the"], "takeaway": "ENCAP EA-ESD Course:"}, {"slide_num": 20, "title": "Who is involved in EIA?", "image": "assets/slides/lec_12/slide_20.jpg", "bullets": ["Sponsor of the activity", "(usually commissions/conducts the EIA)", "Regulatory agencies/", "Review authorities", "Broad-based public", "Public consultation is usually only", "REQUIRED for full EIA studies.", "However, it is good practice for"], "takeaway": "Who is involved in EIA?"}, {"slide_num": 21, "title": "EIA is undertaken early enough to", "image": "assets/slides/lec_12/slide_21.jpg", "bullets": ["affect project design", "Mitigation and monitoring", "developed in the EIA process is", "implemented.", "Making EIA effective", "To be an effective tool", "for ESD, EIA must be:", "\u2013a integral part of the"], "takeaway": "EIA is undertaken early enough to"}, {"slide_num": 22, "title": "\uf0b7Those which can significantly alter the land use pattern, landscape", "image": "assets/slides/lec_12/slide_22.jpg", "bullets": ["and local habitation;", "\uf0b7Those involving manufacture, handling and use of", "hazardous", "chemicals", "\uf0b7Those which are sited near ecologically sensitive areas, urban centers,", "hill resorts, places of scientific, historic and religious importance.", "\uf0b7Industrial Estates with constituent units of", "various types which"], "takeaway": "\uf0b7Those which can significantly alter the land use pattern, landscape"}], "currentIdx": 0}, "u12_4": {"slides": [{"slide_num": 23, "title": "Environmental Impact Assessment Notification in India", "image": "assets/slides/lec_12/slide_23.jpg", "bullets": ["EIA is of", "comparatively recent origin in India and has become an", "integral part of Environmental Management by EIA notification of", "1994 and its subsequent amendments by Ministry of Environment &", "Forests (MoEF), Govt. of India. The notification specifies 30 categories", "of projects with potential risks to degrade the Environment.", "In exercise of powers conferred by Environment Protection Act, 1986", "and sub rule of the Environment Protection Rules 1986, the Central"], "takeaway": "Environmental Impact Assessment Notification in India"}, {"slide_num": 24, "title": "THE ENVIRONMENTAL IMPACT", "image": "assets/slides/lec_12/slide_24.jpg", "bullets": ["ASSESSMENT NOTIFICATION 1994", "\u2022 Composition of expert committee", "\u2013 Ecosystem management", "\u2013 Air/water pollution control", "\u2013 Water resource management", "\u2013 Flora/fauna conservation and management", "\u2013 Land use planning", "\u2013 Social sciences / rehabilitation"], "takeaway": "THE ENVIRONMENTAL IMPACT"}, {"slide_num": 25, "title": "THE ENVIRONMENTAL IMPACT", "image": "assets/slides/lec_12/slide_25.jpg", "bullets": ["ASSESSMENT NOTIFICATION 1994", "Application form contents", "\u2013 Name, address, location of the project, alternate sites examined", "\u2013 Objectives of the project", "\u2013 Land use patterns", "\u2013 Climate and air quality", "\u2013 Water balance", "\u2013 Solid wastes"], "takeaway": "THE ENVIRONMENTAL IMPACT"}, {"slide_num": 26, "title": "SCHEDULE - 1", "image": "assets/slides/lec_12/slide_26.jpg", "bullets": ["LIST OF PROJECTS REQUIRING ENVIRONMENTAL CLEARANCE FROM THE", "CENTRAL GOVERNMENT", "Nuclear Power and related projects such as heavy water plants, nuclear fuel complex,", "rare earths.", "River Valley projects including hydel power, major irrigation and their combination", "including flood control.", "Ports, Harbours, Airports (except minor ports and harbours).", "Petroleum Refineries including crude and product pipelines."], "takeaway": "SCHEDULE - 1"}, {"slide_num": 27, "title": "10.", "image": "assets/slides/lec_12/slide_27.jpg", "bullets": ["Synthetic Rubber", "11.", "Asbestos and Asbestos products", "12.", "Hydrocyanic acid and its derivatives.", "13.", "(a)", "Primary metallurgical industries (such as production of Iron"], "takeaway": "10."}, {"slide_num": 28, "title": ".", "image": "assets/slides/lec_12/slide_28.jpg", "bullets": ["19.", "Thermal Power plants.", "20.", "Mining projects (major minerals) with leases more than 5", "hectares.", "21.", "Highway Projects", "22."], "takeaway": "."}, {"slide_num": 29, "title": "Environment Siting Rules", "image": "assets/slides/lec_12/slide_29.jpg", "bullets": ["Prohibition for setting up of certain", "industries(Annexure I)", "\u2022 Within any municipal areas", "\u2022 25 km belt around cities having population more than 1", "million", "\u2022 7 km around periphery of the wetlands (Annexure II)", "\u2022 0.5 km wide strip on both sides of highways & rail lines"], "takeaway": "Environment Siting Rules"}, {"slide_num": 30, "title": "Environment Siting Rules", "image": "assets/slides/lec_12/slide_30.jpg", "bullets": ["Establishment of new units with certain", "conditions", "Allowed in 7 km to 25 km zone around wetlands only", "after careful assessment of", "adverse ecological &", "environmental impacts", "New units(Annexure III) not allowed within 7 km", "periphery"], "takeaway": "Environment Siting Rules"}, {"slide_num": 31, "title": "Conclusions", "image": "assets/slides/lec_12/slide_31.jpg", "bullets": ["\uf0b7EIA study is a valuable tool for identifying the potential impacts on", "Environment and to source appropriate technologies for mitigating the", "impacts to tolerable levels.", "The effort put in by professionals in collecting as much technical details as", "possible about the project, the Baseline Data, Meteorological Data etc., will", "be of great use in defining a problem with better clarity for a realistic", "solution.", "EIA is a legal document and any attempt to provide wrong facts or down"], "takeaway": "Conclusions"}, {"slide_num": 32, "title": "https://www.drishtiias.com/to-the-", "image": "assets/slides/lec_12/slide_32.jpg", "bullets": ["points/paper3/environmental-impact-assessment-eia-draft-", "nicobar-mega-project-settlers-demand-", "indigenous-rights-environmental-risks/", "an-ambitious-step-9242344"], "takeaway": "https://www.drishtiias.com/to-the-"}], "currentIdx": 0}};
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function switchUnitSlide(unitId, slideIdx) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit || !unit.slides[slideIdx]) return;
+      unit.currentIdx = slideIdx;
+      const s = unit.slides[slideIdx];
+      
+      const imgEl = document.getElementById(unitId + '_slide_img');
+      if (imgEl) {
+        imgEl.src = s.image;
+        imgEl.alt = s.title;
+      }
+      const wrapEl = document.getElementById(unitId + '_slide_wrap');
+      if (wrapEl) {
+        wrapEl.setAttribute('onclick', "openLightbox('" + s.image + "', 'Slide " + s.slide_num + ": " + escapeHtml(s.title) + "')");
+      }
+      const titleEl = document.getElementById(unitId + '_slide_title');
+      if (titleEl) {
+        titleEl.textContent = 'Slide ' + s.slide_num + ': ' + s.title;
+      }
+      const bulletsEl = document.getElementById(unitId + '_slide_bullets');
+      if (bulletsEl) {
+        if (s.bullets && s.bullets.length > 0) {
+          bulletsEl.innerHTML = s.bullets.map(b => '<div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">' + escapeHtml(b) + '</span></div>').join('');
+        } else {
+          bulletsEl.innerHTML = '<p class="text-slate-400 italic text-xs">Visual figure / diagram slide. Inspect the high-resolution render on the left.</p>';
+        }
+      }
+      const takeawayEl = document.getElementById(unitId + '_slide_takeaway');
+      if (takeawayEl) {
+        takeawayEl.textContent = s.takeaway || s.title;
+      }
+      const indEl = document.getElementById('cur_slide_indicator_' + unitId);
+      if (indEl) {
+        indEl.textContent = '#' + s.slide_num;
+      }
+      
+      const btns = document.querySelectorAll('.slide-btn-' + unitId);
+      btns.forEach((btn, idx) => {
+        if (idx === slideIdx) {
+          btn.className = 'slide-btn-' + unitId + ' active px-3 py-1.5 rounded-lg text-xs font-mono bg-emerald-600 border border-emerald-400 text-white font-bold flex-shrink-0 shadow-lg shadow-emerald-950/50';
+        } else {
+          btn.className = 'slide-btn-' + unitId + ' px-3 py-1.5 rounded-lg text-xs font-mono bg-[#071610] border border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 flex-shrink-0 transition-all';
+        }
+      });
+    }
+
+    function navUnitSlide(unitId, delta) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit) return;
+      let cur = unit.currentIdx || 0;
+      let next = cur + delta;
+      if (next >= 0 && next < unit.slides.length) {
+        switchUnitSlide(unitId, next);
+      }
+    }
+
     let currentCard = 0;
     const screens = document.querySelectorAll('.card-screen');
     const totalCards = screens.length;
@@ -1245,13 +1751,11 @@
         s.classList.toggle('active', i === currentCard);
       });
 
-      // Update sidebar
       for (let i = 0; i < totalCards; i++) {
         const el = document.getElementById('slink_' + i);
         if (el) el.classList.toggle('active', i === currentCard);
       }
 
-      // Counter & Progress
       document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
       const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
       document.getElementById('progress-bar-fill').style.width = pct + '%';
@@ -1260,7 +1764,6 @@
       const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
       document.getElementById('section-label').innerText = title;
 
-      // Scroll to top
       document.getElementById('main').scrollTop = 0;
     }
 
@@ -1285,14 +1788,12 @@
       }
     }
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') nextCard();
       else if (e.key === 'ArrowLeft') prevCard();
       else if (e.key === 'Escape') closeLightbox();
     });
 
-    // Lightbox Modal
     function openLightbox(imgSrc, title) {
       document.getElementById('modal_img').src = imgSrc;
       document.getElementById('modal_title').innerText = title || 'Slide Figure';
@@ -1302,7 +1803,6 @@
       document.getElementById('lightbox_modal').classList.remove('show');
     }
 
-    // Quiz evaluation
     function handleQuiz(el, isCorrect, feedbackId) {
       const parent = el.parentElement;
       const opts = parent.querySelectorAll('.quiz-option');
@@ -1312,7 +1812,6 @@
         el.classList.add('correct');
       } else {
         el.classList.add('wrong');
-        // highlight correct option
         opts.forEach(o => {
           if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
             o.classList.add('correct');
@@ -1323,7 +1822,6 @@
       if (fb) fb.classList.remove('hidden');
     }
 
-    // Pomodoro Timer
     let timerSec = 25 * 60;
     let timerRunning = false;
     let timerInterval = null;
@@ -1351,7 +1849,6 @@
       }
     }
 
-    // Initialize
     updateCardView();
   </script>
 </body>

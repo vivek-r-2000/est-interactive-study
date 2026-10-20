@@ -48,11 +48,6 @@
     box-shadow: 0 10px 30px -10px var(--primary-glow);
     transform: translateY(-2px);
   }
-  .eco-card-static {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-  }
 
   /* Badges */
   .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
@@ -123,7 +118,7 @@
   /* Layout */
   #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
   #sidebar {
-    width: 250px; min-width: 250px; background: #040b08;
+    width: 270px; min-width: 270px; background: #040b08;
     border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
     display: flex; flex-direction: column; gap: 2px;
   }
@@ -142,13 +137,13 @@
     flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
     display: flex; flex-direction: column; align-items: center;
   }
-  .card-screen { display: none; width: 100%; max-width: 900px; animation: fadeIn .25s ease; }
+  .card-screen { display: none; width: 100%; max-width: 950px; animation: fadeIn .25s ease; }
   .card-screen.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
 
   /* Nav Bar */
   #nav-bar {
-    position: fixed; bottom: 0; left: 250px; right: 0;
+    position: fixed; bottom: 0; left: 270px; right: 0;
     background: #040a07; border-top: 1px solid var(--border);
     display: flex; align-items: center; justify-content: center; gap: 16px;
     padding: 12px 24px; z-index: 40;
@@ -187,47 +182,52 @@
       
         <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
           <span class="sidebar-dot"></span>
-          <span class="truncate">1. Big Picture & Intuition</span>
+          <span class="truncate">1. Lecture Scope & Roadmap</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
           <span class="sidebar-dot"></span>
-          <span class="truncate">2. Scientific Foundations</span>
+          <span class="truncate">2. [Slides 01–07] Negative Emission Technologies, Biochar Pyrolysis & Enhanced Weathering</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
           <span class="sidebar-dot"></span>
-          <span class="truncate">3. Diagram Breakdown & Analysis</span>
+          <span class="truncate">3. [Slides 08–16] Direct Air Capture (DAC), Air-to-Fuels & Net Zero Teesside</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
           <span class="sidebar-dot"></span>
-          <span class="truncate">4. Math & Empirical Tables</span>
+          <span class="truncate">4. [Slides 17–22] Cattle Methane Abatement, Insect Protein & Marine Cloud Brightening</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
           <span class="sidebar-dot"></span>
-          <span class="truncate">5. Interactive Simulator</span>
+          <span class="truncate">5. [Slides 23–29] Hydrogen Maritime Ships, Blockchain Tracking & Vertical Aeroponics</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
           <span class="sidebar-dot"></span>
-          <span class="truncate">6. Active Recall Flashcards</span>
+          <span class="truncate">6. Interactive Simulator Lab</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
           <span class="sidebar-dot"></span>
-          <span class="truncate">7. High-Yield Exam Traps</span>
+          <span class="truncate">7. Active Recall Flashcards</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(7)" id="slink_7">
           <span class="sidebar-dot"></span>
-          <span class="truncate">8. Concept Check Quiz</span>
+          <span class="truncate">8. High-Yield Exam Traps</span>
         </div>
         
         <div class="sidebar-link " onclick="goToCard(8)" id="slink_8">
           <span class="sidebar-dot"></span>
-          <span class="truncate">9. Complete Slide Gallery (29 Slides)</span>
+          <span class="truncate">9. Concept Check Quiz</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(9)" id="slink_9">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">10. Slide Quick-Jump Index (29 Slides)</span>
         </div>
         
     </nav>
@@ -235,202 +235,634 @@
     <!-- MAIN VIEW -->
     <main id="main">
       
-    <section class="card-screen active" data-title="Big Picture & Intuition">
+    <section class="card-screen active" data-title="1. Lecture Scope & Roadmap">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 11 • Fundamental Concept</span>
-          <span class="text-xs text-slate-400">• Intermediate • 45 mins</span>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 11 • Syllabus Roadmap</span>
+            <span class="text-xs text-slate-400">• Intermediate • 45 mins</span>
+          </div>
+          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 29 Slides Covered Across 4 Study Units</span>
         </div>
+
         <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Climate Change Technology Solutions & Clean Tech Innovations</h2>
         <div class="text-emerald-400 text-sm font-semibold mb-4">Direct Air Capture, Geoengineering, Green Hydrogen, and Circular Economy</div>
         
-        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-sm leading-relaxed">
-          <strong>💡 Why This Topic Matters:</strong><br/>
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-xs md:text-sm leading-relaxed">
+          <strong class="text-emerald-300 block mb-1">💡 Why This Lecture Matters:</strong>
           Halting climate change requires an unprecedented deployment of scalable clean technologies. These encompass active carbon dioxide removal (Direct Air Capture and mineralization), zero-emission energy carriers (green hydrogen electrolysis), electrochemical grid storage, and potentially contentious solar radiation management (SRM). Evaluating the thermodynamic limits, energy penalties, and lifecycle footprints of these clean technologies is a core engineering imperative.
         </div>
 
-        <div class="space-y-2">
-          
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">DAC</span>
-            <strong class="text-emerald-300 text-sm">Direct Air Capture (DAC)</strong>
+        <div class="mb-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Lecture Slide Study Units</span>
+            <span class="text-[11px] text-slate-400">Click any unit to jump directly to its slides</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Removing $CO_2$ from ambient air ($0.042\%$ concentration). Two dominant architectures: Solid sorbents (amine-functionalized filters regenerated at 100°C) and Liquid solvents (KOH and Calcium looping regenerated at 900°C).</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Hydrogen</span>
-            <strong class="text-emerald-300 text-sm">Green Hydrogen Ecosystem</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Electrolysis of water using 100% renewable electricity ($2H_2O \to 2H_2 + O_2$). Replaces fossil coal and gas in hard-to-abate sectors like steelmaking, ammonia synthesis, and heavy transport.</p>
-        </div>
-        
-        <div class="p-4 rounded-xl bg-[#081610] border border-emerald-900/60 mb-3">
-          <div class="flex items-center gap-2 mb-1">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-bold font-mono">Geoengineering</span>
-            <strong class="text-emerald-300 text-sm">Solar Radiation Management (SRM)</strong>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">Deliberate modification of Earth's shortwave radiation balance (e.g. Stratospheric Aerosol Injection of $SO_2$ particles to mimic volcanic cooling, or Marine Cloud Brightening via sea-salt aerosols).</p>
-        </div>
-        
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="card-screen" data-title="Scientific Foundations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-teal inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Core Mechanics</div>
-        <h2 class="text-2xl font-black text-white mb-4">Thermodynamics of Direct Air Capture & Minimum Separation Work</h2>
-        <div class="text-sm leading-relaxed text-slate-200">
-          
-            <p class="mb-3">From the Second Law of Thermodynamics, the minimum reversible work ($W_{\min}$) required to separate a gas from a mixture at ambient temperature $T_0$ is given by:</p>
-            <div class="p-3 my-2 bg-[#06110d] border border-emerald-900/60 rounded text-center font-mono text-emerald-300">
-              $$W_{\min} = -R T_0 \left[ \ln y_{CO_2} + \frac{1 - y_{CO_2}}{y_{CO_2}} \ln(1 - y_{CO_2}) \right]$$
-            </div>
-            <p class="text-sm">Because ambient $CO_2$ concentration is dilute ($y_{CO_2} \approx 420\,\text{ppm} = 0.00042$), $W_{\min} \approx 20\,\text{kJ/mol } CO_2$ ($455\,\text{kJ/kg } CO_2 = 126\,\text{kWh/tonne } CO_2$).</p>
-            <p class="text-sm mt-3">In real-world DAC systems, thermodynamic irreversibilities, fan pressure drops, and thermal regeneration heat require <strong>$1500 - 2500\,\text{kWh}$ of thermal energy</strong> plus <strong>$300 - 500\,\text{kWh}$ of electricity</strong> per tonne of $CO_2$ captured. Consequently, DAC must be powered strictly by zero-carbon surplus renewable or waste thermal energy to avoid net-positive emissions.</p>
+          <div class="space-y-2">
             
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(1)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 01–07</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Negative Emission Technologies, Biochar Pyrolysis & Enhanced Weathering</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Formulates negative emission pathways required to limit global warming to 1.5°C under the Paris Agreement.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(2)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 08–16</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Direct Air Capture (DAC), Air-to-Fuels & Net Zero Teesside</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Examines industrial carbon removal engineering: solid-sorbent and liquid-solvent DAC plants, synthetic hydrocarbon fuels, and subsea North Sea storage.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(3)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 17–22</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Cattle Methane Abatement, Insect Protein & Marine Cloud Brightening</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Analyzes enteric fermentation mitigation via seaweed, alternate insect proteins, marine cloud brightening, and low-PUE green datacenters.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(4)">
+          <div class="flex items-center gap-3">
+            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">Slides 23–29</span>
+            <div>
+              <strong class="text-white text-xs md:text-sm block">Hydrogen Maritime Ships, Blockchain Tracking & Vertical Aeroponics</strong>
+              <p class="text-[11px] text-slate-400 line-clamp-1">Evaluates zero-emission hydrogen transport, blockchain supply chain verification, vertical farming, and the XPRIZE Carbon Removal challenge.</p>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+        </div>
+        
+          </div>
         </div>
       </div>
     </section>
     
 
-    <section class="card-screen" data-title="Extracted Diagram Breakdown">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="flex items-center justify-between mb-3">
-          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">🎨 Detailed Diagram Breakdown</span>
-          <span class="text-xs text-slate-400">Extracted from instructor slide decks</span>
+        <section class="card-screen" data-title="Unit 1: Slides 01–07">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 01–07</span>
+                <span class="text-xs text-slate-400">• Unit 1 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 11: Tech Solutions & Clean Tech</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Negative Emission Technologies, Biochar Pyrolysis & Enhanced Weathering</h2>
+            <p class="text-xs text-slate-300 mb-6">Formulates negative emission pathways required to limit global warming to 1.5°C under the Paris Agreement.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u11_1" class="text-emerald-400 font-bold font-mono">#1</span> of 7 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_1', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_1', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u11_1 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 0)">
+              <span>#1</span> <span class="hidden sm:inline text-[11px] opacity-80">Class-11</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 1)">
+              <span>#2</span> <span class="hidden sm:inline text-[11px] opacity-80">Ways ‘negative emiss...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 2)">
+              <span>#3</span> <span class="hidden sm:inline text-[11px] opacity-80">2. Biochar</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 3)">
+              <span>#4</span> <span class="hidden sm:inline text-[11px] opacity-80">3. Blue carbon’ habi...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 4)">
+              <span>#5</span> <span class="hidden sm:inline text-[11px] opacity-80">4. Building with bio...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 5)">
+              <span>#6</span> <span class="hidden sm:inline text-[11px] opacity-80">5. Cloud or ocean tr...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_1 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_1', 6)">
+              <span>#7</span> <span class="hidden sm:inline text-[11px] opacity-80">6. Enhanced weathering</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u11_1_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_11/slide_01.jpg', 'Slide 1: Class-11')">
+                  <img id="u11_1_slide_img" src="assets/slides/lec_11/slide_01.jpg" alt="Slide 1" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u11_1_slide_title" class="text-sm md:text-base font-bold text-white">Slide 1: Class-11</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u11_1_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Climate change:</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Technology solutions</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">15th October 2026</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u11_1_slide_takeaway" class="text-slate-300 leading-relaxed">Class-11</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Negative Emission Technologies, Biochar Pyrolysis & Enhanced Weathering</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Negative Emission Technologies (NETs) Overview (Slide 2):</strong> IPCC climate models indicate that emissions reductions alone are insufficient to meet the Paris Agreement $1.5^\circ\text{C}$ threshold; humanity must actively remove 100–1,000 Gt $CO_2$ from the atmosphere over the 21st century.</p>
+          <p><strong>2. Biochar Pyrolysis (Slide 3):</strong> Thermal decomposition of biomass in the absence of oxygen ($400^\circ\text{C}$ to $700^\circ\text{C}$) converts labile organic carbon into highly stable, recalcitrant polycyclic aromatic carbon (biochar) with a soil mean residence time exceeding 1,000 years. Potential to sequester up to 4.8 billion tonnes of $CO_2$/year while enhancing soil moisture retention and cation exchange capacity.</p>
+          <p><strong>3. Blue Carbon Restoration & Biomass Building (Slides 4–5):</strong> Coastal wetland restoration (mangroves, salt marshes, seagrasses) sequesters carbon up to 40 times faster per unit area than terrestrial forests. Engineered mass timber and cross-laminated bamboo in architecture lock carbon permanently into urban infrastructure.</p>
+          <p><strong>4. Enhanced Rock Weathering & Ocean Liming (Slides 6–7):</strong> Natural silicate rock weathering absorbs ~3% of fossil emissions over geological epochs. Enhanced weathering pulverizes olivine or basalt into micro-particles ($<50\,\mu m$) spread across agricultural soils, reacting with rainwater to convert dissolved $CO_2$ into stable aqueous bicarbonate ($HCO_3^-$). Slide 6 also notes ocean treatment with potassium hydroxide (KOH) or 2.5 billion tonnes of limestone.</p>
         </div>
-        <h2 class="text-2xl font-black text-white mb-2">Scientific Diagrams & Structural Analysis</h2>
-        <p class="text-xs text-slate-300 mb-6">In-depth explanations of the isolated figures, flowcharts, and empirical curves from this lecture.</p>
         
-        <div>
-          
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 1</span>
-              <h3 class="text-base font-bold text-white">Biochar Pyrolysis & Recalcitrant Carbon Chemistry</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-11-Climate Change-Technology Solutions.pdf, Slide 5</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_11/diagram_01.jpeg', 'Biochar Pyrolysis &amp; Recalcitrant Carbon Chemistry')">
-              <img src="assets/diagrams/lec_11/diagram_01.jpeg" alt="Biochar Pyrolysis &amp; Recalcitrant Carbon Chemistry" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
               </div>
             </div>
 
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">A molecular and process schematic illustrating the thermochemical conversion of labile plant biomass into polycyclic aromatic biochar under oxygen-free pyrolysis.</span>
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$Mg_2SiO_4 \text{ (Olivine)} + 4CO_2 + 4H_2O \to 2Mg^{2+} + 4HCO_3^- + H_4SiO_4 \quad (\text{Enhanced Weathering Reaction})$$
               </div>
+            </div>
+            
 
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Raw plant biomass decomposes in soil within 2–5 years, releasing $CO_2$ back to the atmosphere. Pyrolysis at 500–600°C removes hydrogen and oxygen, condensing aliphatic carbon chains into fused aromatic benzene-ring clusters that soil microbes cannot readily enzymatically cleave.</span>
-              </div>
+            <!-- Video Reference (if any) -->
+            
 
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Carbon stability index: $O:C$ molar ratio. Fresh biomass has $O:C \approx 0.6 - 0.8$. Quality biochar achieved via pyrolysis has $O:C < 0.20$, guaranteeing a soil half-life $>1000\,\text{years}$.</span>
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">State the chemical reaction for Enhanced Silicate Weathering using olivine. Know the annual sequestration potential of biochar (up to 4.8 Gt CO2/year).</p>
               </div>
             </div>
           </div>
+        </section>
+        
 
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Slow pyrolysis yields ~35% biochar, 30% bio-oil, and 35% syngas. Fast pyrolysis (seconds) maximizes liquid bio-oil, NOT solid biochar.
-          </div>
+        <section class="card-screen" data-title="Unit 2: Slides 08–16">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 08–16</span>
+                <span class="text-xs text-slate-400">• Unit 2 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 11: Tech Solutions & Clean Tech</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Direct Air Capture (DAC), Air-to-Fuels & Net Zero Teesside</h2>
+            <p class="text-xs text-slate-300 mb-6">Examines industrial carbon removal engineering: solid-sorbent and liquid-solvent DAC plants, synthetic hydrocarbon fuels, and subsea North Sea storage.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u11_2" class="text-emerald-400 font-bold font-mono">#8</span> of 9 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_2', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_2', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u11_2 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 0)">
+              <span>#8</span> <span class="hidden sm:inline text-[11px] opacity-80">7. DIRECT AIR CAPTURE</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 1)">
+              <span>#9</span> <span class="hidden sm:inline text-[11px] opacity-80">2. AIR TO FUELS PLANTS</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 2)">
+              <span>#10</span> <span class="hidden sm:inline text-[11px] opacity-80">Slide 10</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 3)">
+              <span>#11</span> <span class="hidden sm:inline text-[11px] opacity-80">Where to Bury the CO 2</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 4)">
+              <span>#12</span> <span class="hidden sm:inline text-[11px] opacity-80">Scaling to Gigatonne...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 5)">
+              <span>#13</span> <span class="hidden sm:inline text-[11px] opacity-80">Carbon-capture techn...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 6)">
+              <span>#14</span> <span class="hidden sm:inline text-[11px] opacity-80">Companies with the m...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 7)">
+              <span>#15</span> <span class="hidden sm:inline text-[11px] opacity-80">Aether: In A First, ...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_2 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_2', 8)">
+              <span>#16</span> <span class="hidden sm:inline text-[11px] opacity-80">NZT Project</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u11_2_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_11/slide_08.jpg', 'Slide 8: 7. DIRECT AIR CAPTURE')">
+                  <img id="u11_2_slide_img" src="assets/slides/lec_11/slide_08.jpg" alt="Slide 8" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u11_2_slide_title" class="text-sm md:text-base font-bold text-white">Slide 8: 7. DIRECT AIR CAPTURE</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u11_2_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">1. DAC + STORAGE PLANTS</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">STANDALONE</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">GEOLOGIC STORAGE</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">ENHANCED OIL</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">RECOVERY</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u11_2_slide_takeaway" class="text-slate-300 leading-relaxed">7. DIRECT AIR CAPTURE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Direct Air Capture (DAC), Air-to-Fuels & Net Zero Teesside</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Direct Air Capture Engineering (Slides 8, 13–14):</strong> DAC chemically extracts $CO_2$ directly from ambient air where concentration is dilute (~420 ppm or 0.042%). Two primary architectures dominate:</p>
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Solid Sorbent Systems (Climeworks Orca/Mammoth):</strong> Ambient air passes over amine-functionalized chemical filter matrices; mild thermal desorption ($100^\circ\text{C}$) releases concentrated $CO_2$.</li>
+              <li><strong>Liquid Solvent Systems (Carbon Engineering):</strong> Uses potassium hydroxide (KOH) contactors reacting to form $K_2CO_3$, precipitated with calcium to form $CaCO_3$, then calcined at $900^\circ\text{C}$ in an oxy-fired kiln.</li>
+            </ul>
+          <p><strong>2. Air-to-Fuels & Air-Captured Diamonds (Slides 9, 15):</strong> Combining captured $CO_2$ with green hydrogen ($H_2$ produced via water electrolysis powered by renewables) through Fischer-Tropsch synthesis yields drop-in synthetic aviation fuels (SAF), diesel, and kerosene. Slide 15 highlights Aether Diamonds, which synthesizes certified vegan diamonds using $CO_2$ extracted directly from the atmosphere by Climeworks.</p>
+          <p><strong>3. Net Zero Teesside Project (NZT, UK, Slide 16):</strong> A flagship industrial decarbonization cluster capturing up to 10 million tonnes of $CO_2$/year from industrial emitters, compressed into supercritical fluid, transported via pipeline, and sequestered permanently in saline aquifers deep beneath the North Sea.</p>
         </div>
         
-        <div class="eco-card p-5 border-emerald-800/80 mb-6 bg-[#071711]">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-            <div class="flex items-center gap-2">
-              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Figure 2</span>
-              <h3 class="text-base font-bold text-white">Blue Carbon Coastal Ecosystem Sequestration</h3>
-            </div>
-            <span class="text-[11px] text-emerald-400 font-mono">📍 Class-11-Climate Change-Technology Solutions.pdf, Slide 8</span>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center mb-4">
-            <!-- Isolated Extracted Diagram Image with Click-to-Zoom -->
-            <div class="lg:col-span-5 bg-black/60 border border-emerald-900/80 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/diagrams/lec_11/diagram_02.jpeg', 'Blue Carbon Coastal Ecosystem Sequestration')">
-              <img src="assets/diagrams/lec_11/diagram_02.jpeg" alt="Blue Carbon Coastal Ecosystem Sequestration" class="max-h-64 w-auto object-contain rounded group-hover:scale-105 transition-all" loading="lazy">
-              <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                <span>🔍</span> Click diagram to zoom in full lightbox
               </div>
             </div>
 
-            <!-- Deep Scientific & Pedagogical Explanation -->
-            <div class="lg:col-span-7 space-y-3 text-xs leading-relaxed">
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-emerald-400 rounded-r-lg">
-                <strong class="text-emerald-300 font-bold block mb-1">👁️ What the Diagram Shows:</strong>
-                <span class="text-slate-300">Cross-section of coastal mangrove, tidal salt marsh, and seagrass meadow ecosystems detailing sediment carbon accumulation.</span>
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$CO_2 + 3H_2 \xrightarrow{\text{Catalyst, } \Delta} -(\text{CH}_2)-_n + 2H_2O \quad \text{(Fischer-Tropsch Synthetic Fuel)}$$
               </div>
+            </div>
+            
 
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-teal-400 rounded-r-lg">
-                <strong class="text-teal-300 font-bold block mb-1">🔬 Scientific & Environmental Mechanism:</strong>
-                <span class="text-slate-300">Coastal wetlands sequester carbon at rates up to 10 times higher per hectare than terrestrial tropical forests. Their soils are perpetually waterlogged and anoxic, preventing microbial oxidation and allowing organic sediment to accumulate continuously over millennia without saturating.</span>
-              </div>
+            <!-- Video Reference (if any) -->
+            
 
-              <div class="p-3 bg-[#0a1e16] border-l-2 border-cyan-400 rounded-r-lg">
-                <strong class="text-cyan-300 font-bold block mb-1">📊 Quantitative / Mathematical Model:</strong>
-                <span class="text-slate-300">Carbon burial rate: $C_{\text{burial}} = \rho_{\text{bulk}} \times \text{SAR} \times \%C_{\text{org}}$, where $\rho_{\text{bulk}}$ is soil bulk density, $\text{SAR}$ is sediment accretion rate ($2 - 10\,\text{mm/yr}$), and $\%C_{\text{org}}$ is organic carbon percentage.</span>
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Explain why DAC requires significantly higher thermodynamic energy than flue-gas scrubbing (ambient air is ~0.04% CO2 vs. coal flue gas at ~12-15% CO2, requiring higher minimum work of separation).</p>
               </div>
             </div>
           </div>
+        </section>
+        
 
-          <!-- Exam Trap Callout Box -->
-          <div class="p-3 bg-[#17130b] border border-amber-900/80 rounded-xl text-xs text-amber-200">
-            ⚠️ <strong>Exam Trap:</strong> Draining coastal mangroves for shrimp farming or real estate exposes centuries of anoxic carbon to air, causing massive immediate $CO_2$ pulse releases.
-          </div>
+        <section class="card-screen" data-title="Unit 3: Slides 17–22">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 17–22</span>
+                <span class="text-xs text-slate-400">• Unit 3 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 11: Tech Solutions & Clean Tech</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Cattle Methane Abatement, Insect Protein & Marine Cloud Brightening</h2>
+            <p class="text-xs text-slate-300 mb-6">Analyzes enteric fermentation mitigation via seaweed, alternate insect proteins, marine cloud brightening, and low-PUE green datacenters.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u11_3" class="text-emerald-400 font-bold font-mono">#17</span> of 6 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_3', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_3', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u11_3 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_3', 0)">
+              <span>#17</span> <span class="hidden sm:inline text-[11px] opacity-80">The meat and dairy i...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_3', 1)">
+              <span>#18</span> <span class="hidden sm:inline text-[11px] opacity-80">Feeding cows seaweed</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_3', 2)">
+              <span>#19</span> <span class="hidden sm:inline text-[11px] opacity-80">Delicious insects</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_3', 3)">
+              <span>#20</span> <span class="hidden sm:inline text-[11px] opacity-80">Climate repair</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_3', 4)">
+              <span>#21</span> <span class="hidden sm:inline text-[11px] opacity-80">Remote working</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_3 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_3', 5)">
+              <span>#22</span> <span class="hidden sm:inline text-[11px] opacity-80">Energy-efficient dat...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u11_3_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_11/slide_17.jpg', 'Slide 17: The meat and dairy industries create 7.1')">
+                  <img id="u11_3_slide_img" src="assets/slides/lec_11/slide_17.jpg" alt="Slide 17" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u11_3_slide_title" class="text-sm md:text-base font-bold text-white">Slide 17: The meat and dairy industries create 7.1</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u11_3_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">gigatons of GHG annually—that’s 14.5%</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">of total man-made emissions. But beef is</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">by far the biggest offender, generating 60</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">kgs of GHG emissions per kg of meat</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">produced—that’s</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">more</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">than</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">twice</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u11_3_slide_takeaway" class="text-slate-300 leading-relaxed">The meat and dairy industries create 7.1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Cattle Methane Abatement, Insect Protein & Marine Cloud Brightening</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Livestock Decarbonization (Slides 17–18):</strong> Ruminant livestock produce 7.1 gigatons of GHG annually (~14.5% of total anthropogenic emissions), with beef cattle responsible for the vast majority via enteric fermentation. Feeding cattle tiny supplements (0.2–0.5% of feed) of red marine macroalgae (*Asparagopsis taxiformis*) inhibits the enzymatic pathway of methanogenic archaea in the rumen, reducing enteric methane emissions by up to 80% without affecting animal productivity.</p>
+          <p><strong>2. Entomophagy & Alternative Protein (Slide 19):</strong> Replacing cattle feed and human meat consumption with farmed insects (e.g. grasshopper and black soldier fly larvae meal). Insect farming requires 90% less land, 80% less water, and produces a tiny fraction of GHG emissions per gram of protein compared to industrial beef.</p>
+          <p><strong>3. Marine Cloud Brightening for Climate Repair (Slide 20):</strong> Geoengineering proposal to deploy autonomous ocean vessels that spray microscopic sub-micron sea-salt aerosol droplets into marine stratocumulus cloud decks over the oceans. The sea-salt crystals act as cloud condensation nuclei, brightening clouds and reflecting sunlight to refreeze polar ice.</p>
+          <p><strong>4. Sustainable IT & Green Datacenters (Slide 22):</strong> Cloud platforms and machine learning infrastructure consume massive electrical power. Transitioning datacenters to liquid immersion cooling, locating them in cold climates, and optimizing Power Usage Effectiveness ($PUE = \frac{\text{Total Energy}}{\text{IT Equipment Energy}} \to 1.0$) drastically reduces computational carbon footprints.</p>
         </div>
         
-        </div>
-      </div>
-    </section>
-    
+              </div>
+            </div>
 
-    <section class="card-screen" data-title="Mathematical Formulations">
-      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Rigorous Quantitative Model</div>
-        <h2 class="text-2xl font-black text-white mb-4">Clean Tech Metrics & Energy Efficiencies</h2>
-        
-        <div class="p-4 bg-[#05120c] border border-emerald-900/80 rounded-xl text-center my-4 overflow-x-auto">
-          <div class="text-lg md:text-xl font-mono text-emerald-300">
-            $$\eta_{\text{electrolyzer}} = \frac{\text{HHV of } H_2}{\text{Electricity Input}} \approx 65\% - 80\%, \quad \text{HHV} = 141.8\,\text{MJ/kg } H_2$$
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$PUE = \frac{\text{Total Facility Energy}}{\text{IT Equipment Energy}} \quad (\text{Ideal: } PUE = 1.0; \quad \text{Average: } 1.5 - 1.8)$$
+              </div>
+            </div>
+            
+
+            <!-- Video Reference (if any) -->
+            
+
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Name the marine red algae (*Asparagopsis taxiformis*) used to suppress bovine enteric methane. Define Power Usage Effectiveness (PUE) in green datacenter design.</p>
+              </div>
+            </div>
           </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Unit 4: Slides 23–29">
+          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+            <!-- Unit Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slides 23–29</span>
+                <span class="text-xs text-slate-400">• Unit 4 of 4 • Topic Walkthrough</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono">Lecture 11: Tech Solutions & Clean Tech</div>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-black text-white mb-2">Hydrogen Maritime Ships, Blockchain Tracking & Vertical Aeroponics</h2>
+            <p class="text-xs text-slate-300 mb-6">Evaluates zero-emission hydrogen transport, blockchain supply chain verification, vertical farming, and the XPRIZE Carbon Removal challenge.</p>
+
+            <!-- Interactive Slide Explorer -->
+            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
+                <div class="flex items-center gap-2">
+                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
+                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_u11_4" class="text-emerald-400 font-bold font-mono">#23</span> of 7 in this unit</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_4', -1)">◀ Prev Slide</button>
+                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('u11_4', 1)">Next Slide ▶</button>
+                </div>
+              </div>
+
+              <!-- Slide Selector Buttons Strip -->
+              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+                
+            <button type="button" class="slide-btn-u11_4 active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 0)">
+              <span>#23</span> <span class="hidden sm:inline text-[11px] opacity-80">Hydrogen Ships</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 1)">
+              <span>#24</span> <span class="hidden sm:inline text-[11px] opacity-80">Blockchain to revolu...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 2)">
+              <span>#25</span> <span class="hidden sm:inline text-[11px] opacity-80">Vertical Farming</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 3)">
+              <span>#26</span> <span class="hidden sm:inline text-[11px] opacity-80">Four essential aspects</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 4)">
+              <span>#27</span> <span class="hidden sm:inline text-[11px] opacity-80">How Vertical Farming...</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 5)">
+              <span>#28</span> <span class="hidden sm:inline text-[11px] opacity-80">Trap cropping</span>
+            </button>
+            
+            <button type="button" class="slide-btn-u11_4 bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('u11_4', 6)">
+              <span>#29</span> <span class="hidden sm:inline text-[11px] opacity-80">https://www.xprize.o...</span>
+            </button>
+            
+              </div>
+
+              <!-- Active Slide Inspector Showcase -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <!-- Left: Slide Render -->
+                <div id="u11_4_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_11/slide_23.jpg', 'Slide 23: Hydrogen Ships')">
+                  <img id="u11_4_slide_img" src="assets/slides/lec_11/slide_23.jpg" alt="Slide 23" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
+                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
+                    <span>🔍</span> Click slide to zoom in full lightbox
+                  </div>
+                </div>
+
+                <!-- Right: Extracted Content & Professor Notes -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
+                    <h4 id="u11_4_slide_title" class="text-sm md:text-base font-bold text-white">Slide 23: Hydrogen Ships</h4>
+                  </div>
+
+                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
+                    <div id="u11_4_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
+                      <div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Tree Corridors</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Electric Planes</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Floating Solar</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Tidal Energy</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Maritime shipping emissions</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">contribute 2.5 percent of global CO2</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Colombia planted more than</span></div><div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">350,000 trees (3C)</span></div>
+                    </div>
+                  </div>
+
+                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
+                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
+                    <p id="u11_4_slide_takeaway" class="text-slate-300 leading-relaxed">Hydrogen Ships</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Thematic Synthesis for this Unit -->
+            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
+                <h3 class="text-base font-bold text-white">Topic Synthesis: Hydrogen Maritime Ships, Blockchain Tracking & Vertical Aeroponics</h3>
+              </div>
+              <div class="text-xs text-slate-200 leading-relaxed">
+                
+        <div class="space-y-3">
+          <p><strong>1. Hydrogen Propulsion & Floating Solar (Slide 23):</strong> Replacing heavy bunker fuel oil in maritime cargo shipping with green liquid hydrogen fuel cells. Floating Photovoltaic (FPV) arrays installed on water reservoirs reduce land competition while water cooling improves solar cell semiconductor efficiency by 5–15%.</p>
+          <p><strong>2. Blockchain for Commodity Provenance (Slide 24):</strong> Integrating satellite remote sensing and GPS transponders with immutable distributed ledgers (blockchain) to verify that commodities (tuna catches, timber, palm oil) originate strictly from legal, non-deforested concessions, eradicating illegal supply chain laundering.</p>
+          <p><strong>3. Vertical Urban Farming (Slides 25–27):</strong> Controlled Environment Agriculture (CEA) utilizing vertical tower modular structures. Combines LED targeted photosynthetically active radiation (PAR) spectra with soil-free cultivation:
+            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-300">
+              <li><strong>Hydroponics:</strong> Roots submerged in mineral-enriched circulating water.</li>
+              <li><strong>Aeroponics:</strong> Roots suspended in air and misted with nutrient solution; saves 95% water and 90% land compared to conventional open-field agriculture.</li>
+            </ul>
+          </p>
+          <p><strong>4. XPRIZE Carbon Removal (Slide 29):</strong> The $100 million XPRIZE funded by Elon Musk, challenging global innovators to demonstrate working carbon dioxide removal solutions with verifiable gigatonne-per-year scaling potential by 2050.</p>
         </div>
-        <p class="text-xs text-slate-300 mb-6">Where HHV is the Higher Heating Value of hydrogen. A modern PEM electrolyzer requires $\sim 50 - 55\,\text{kWh}$ of renewable electricity to generate $1\,\text{kg}$ of green hydrogen.</p>
+        
+              </div>
+            </div>
 
-        <div class="overflow-x-auto rounded-xl border border-emerald-900/80">
-          <table class="w-full text-xs text-left text-slate-300">
-            <thead class="bg-[#05140d] text-emerald-400 uppercase text-[10px] tracking-wider border-b border-emerald-900">
-              <tr><th class='p-3 border-r border-emerald-900'>Technology</th> <th class='p-3 border-r border-emerald-900'>TRL (Technology Readiness Level)</th> <th class='p-3 border-r border-emerald-900'>Levelized Cost</th> <th class='p-3 border-r border-emerald-900'>Primary Engineering Bottleneck</th> </tr>
-            </thead>
-            <tbody class="divide-y divide-emerald-950 font-sans">
-              <tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Direct Air Capture (Solid Sorbent)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 7 – 8 (Climeworks Orca/Mammoth)</td> <td class='p-3 border-r border-emerald-900 font-mono'>$400 - $600 / t $CO_2$</td> <td class='p-3 border-r border-emerald-900 font-mono'>Huge thermal desorption energy and sorbent degradation</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Green Hydrogen (PEM Electrolysis)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 8 – 9</td> <td class='p-3 border-r border-emerald-900 font-mono'>$4 - $6 / kg $H_2$ (targeting $1-2)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Iridium and Platinum catalyst scarcity, electricity tariffs</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Stratospheric Aerosol Injection (SRM)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 3 – 4</td> <td class='p-3 border-r border-emerald-900 font-mono'>Low economic cost (~$10-20B/yr)</td> <td class='p-3 border-r border-emerald-900 font-mono'>Ozone depletion, monsoon rainfall termination shock, moral hazard</td> </tr>
-<tr class='hover:bg-emerald-950/20'><td class='p-3 border-r border-emerald-900 font-mono'>Carbon Capture & Utilization (CCU)</td> <td class='p-3 border-r border-emerald-900 font-mono'>TRL 6 – 8</td> <td class='p-3 border-r border-emerald-900 font-mono'>Varies by end product</td> <td class='p-3 border-r border-emerald-900 font-mono'>High thermodynamic reduction energy needed to turn $CO_2$ into hydrocarbons</td> </tr>
+            <!-- Quantitative Formula (if any) -->
+            
+            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
+              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
+              <div class="text-sm md:text-base font-mono text-emerald-300">
+                $$\text{Water Efficiency Gain: } \Delta W = \frac{W_{\text{field}} - W_{\text{aeroponics}}}{W_{\text{field}}} \times 100\% \approx 95\%$$
+              </div>
+            </div>
+            
 
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    
+            <!-- Video Reference (if any) -->
+            
 
-    <section class="card-screen" data-title="Interactive Simulator">
+            <!-- Exam Checkpoint Box -->
+            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
+              <span class="text-base flex-shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
+                <p class="text-amber-100/90 leading-relaxed">Contrast Hydroponics vs. Aeroponics in vertical farming. Explain how blockchain paired with satellite remote sensing enforces zero-deforestation commodity verification.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+    <section class="card-screen" data-title="6. Interactive Simulator Lab">
       <div class="mb-6">
         
     <div class="eco-card p-6 border-emerald-800/60">
@@ -508,23 +940,23 @@
     </section>
     
 
-    <section class="card-screen" data-title="Active Recall Flashcards">
+    <section class="card-screen" data-title="7. Active Recall Flashcards">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
         <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
-        <p class="text-xs text-slate-300 mb-6">Test yourself on essential definitions, reactions, and principles before flipping.</p>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential slide definitions, reactions, and principles before flipping.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
         <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What is the 'Termination Shock' risk of Solar Radiation Management (SRM)?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What is the 'Termination Shock' risk of Solar Radiation Management (SRM)?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">If stratospheric aerosol injection is suddenly halted (due to war, geopolitical conflict, or technical failure), the accumulated greenhouse gases would trigger rapid, catastrophic catch-up warming at unprecedented rates.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">If stratospheric aerosol injection is suddenly halted (due to war, geopolitical conflict, or technical failure), the accumulated greenhouse gases would trigger rapid, catastrophic catch-up warming at unprecedented rates.</div>
             </div>
           </div>
         </div>
@@ -533,12 +965,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">What distinguishes Green, Grey, and Blue Hydrogen?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What distinguishes Green, Grey, and Blue Hydrogen?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Grey: Produced from methane via Steam Methane Reforming (SMR) with fossil emissions ($CO_2$ vented). Blue: SMR with Carbon Capture and Storage. Green: Electrolysis of water using 100% renewable electricity with zero emissions.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Grey: Produced from methane via Steam Methane Reforming (SMR) with fossil emissions ($CO_2$ vented). Blue: SMR with Carbon Capture and Storage. Green: Electrolysis of water using 100% renewable electricity with zero emissions.</div>
             </div>
           </div>
         </div>
@@ -547,12 +979,12 @@
           <div class="flip-card-inner">
             <div class="flip-face flip-front">
               <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
-              <div class="text-base font-bold text-white mb-2">Why does Direct Air Capture require substantially more energy than flue gas capture?</div>
+              <div class="text-sm md:text-base font-bold text-white mb-2">Why does Direct Air Capture require substantially more energy than flue gas capture?</div>
               <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
             </div>
             <div class="flip-face flip-back">
               <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
-              <div class="text-sm font-semibold text-emerald-100 leading-relaxed">Flue gas contains 12-15% $CO_2$ (coal) or 4-8% (gas), whereas ambient air contains only 0.042% $CO_2$ (~300 times more dilute). The thermodynamic minimum separation work scales logarithmically with dilution.</div>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Flue gas contains 12-15% $CO_2$ (coal) or 4-8% (gas), whereas ambient air contains only 0.042% $CO_2$ (~300 times more dilute). The thermodynamic minimum separation work scales logarithmically with dilution.</div>
             </div>
           </div>
         </div>
@@ -562,7 +994,7 @@
     </section>
     
 
-    <section class="card-screen" data-title="Exam Traps & Pitfalls">
+    <section class="card-screen" data-title="8. High-Yield Exam Traps">
       <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
         <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
         <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
@@ -574,11 +1006,11 @@
     </section>
     
 
-    <section class="card-screen" data-title="Concept Check Quiz">
+    <section class="card-screen" data-title="9. Concept Check Quiz">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
         <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
-        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions.</p>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions from the lecture slides.</p>
         <div>
           
         <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
@@ -648,482 +1080,482 @@
     </section>
     
 
-    <section class="card-screen" data-title="Slide Reference Gallery">
+    <section class="card-screen" data-title="10. Slide Quick-Jump Index">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
           <div>
-            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Primary Course Slides</div>
-            <h2 class="text-2xl font-black text-white">Complete Slide Reference Gallery</h2>
-            <p class="text-xs text-slate-300">All 29 slides from the lecture presentations for instant reference and review.</p>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Master Slide Reference</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Index</h2>
+            <p class="text-xs text-slate-300">Quick visual reference of all 29 slides across this lecture deck with PDF downloads.</p>
           </div>
           <div class="flex flex-wrap gap-2">
             <a href='../Lecture_Slides/Class-11-Climate Change-Technology Solutions.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-11-Climate Change-Technology Solutions.pdf</span></a>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_01.jpg', 'Slide 1: Class-11')">
-            <img src="assets/slides/lec_11/slide_01.jpg" alt="Slide 1" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_01.jpg" alt="Slide 1" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #1</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Class-11">Class-11</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Class-11">Class-11</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_02.jpg', 'Slide 2: Ways ‘negative emissions’ could slow')">
-            <img src="assets/slides/lec_11/slide_02.jpg" alt="Slide 2" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_02.jpg" alt="Slide 2" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #2</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Ways ‘negative emissions’ could slow">Ways ‘negative emissions’ could slow</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Ways ‘negative emissions’ could slow">Ways ‘negative emissions’ could slow</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_03.jpg', 'Slide 3: 2. Biochar')">
-            <img src="assets/slides/lec_11/slide_03.jpg" alt="Slide 3" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_03.jpg" alt="Slide 3" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #3</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="2. Biochar">2. Biochar</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="2. Biochar">2. Biochar</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_04.jpg', 'Slide 4: 3. Blue carbon’ habitat restoration')">
-            <img src="assets/slides/lec_11/slide_04.jpg" alt="Slide 4" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_04.jpg" alt="Slide 4" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #4</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="3. Blue carbon’ habitat restoration">3. Blue carbon’ habitat restoration</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="3. Blue carbon’ habitat restoration">3. Blue carbon’ habitat restoration</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_05.jpg', 'Slide 5: 4. Building with biomass')">
-            <img src="assets/slides/lec_11/slide_05.jpg" alt="Slide 5" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_05.jpg" alt="Slide 5" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #5</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="4. Building with biomass">4. Building with biomass</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="4. Building with biomass">4. Building with biomass</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_06.jpg', 'Slide 6: 5. Cloud or ocean treatment with alkali')">
-            <img src="assets/slides/lec_11/slide_06.jpg" alt="Slide 6" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_06.jpg" alt="Slide 6" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #6</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="5. Cloud or ocean treatment with alkali">5. Cloud or ocean treatment with alkali</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="5. Cloud or ocean treatment with alkali">5. Cloud or ocean treatment with alkali</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_07.jpg', 'Slide 7: 6. Enhanced weathering')">
-            <img src="assets/slides/lec_11/slide_07.jpg" alt="Slide 7" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_07.jpg" alt="Slide 7" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #7</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="6. Enhanced weathering">6. Enhanced weathering</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="6. Enhanced weathering">6. Enhanced weathering</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_08.jpg', 'Slide 8: 7. DIRECT AIR CAPTURE')">
-            <img src="assets/slides/lec_11/slide_08.jpg" alt="Slide 8" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_08.jpg" alt="Slide 8" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #8</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="7. DIRECT AIR CAPTURE">7. DIRECT AIR CAPTURE</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="7. DIRECT AIR CAPTURE">7. DIRECT AIR CAPTURE</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_09.jpg', 'Slide 9: 2. AIR TO FUELS PLANTS')">
-            <img src="assets/slides/lec_11/slide_09.jpg" alt="Slide 9" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_09.jpg" alt="Slide 9" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #9</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="2. AIR TO FUELS PLANTS">2. AIR TO FUELS PLANTS</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="2. AIR TO FUELS PLANTS">2. AIR TO FUELS PLANTS</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_10.jpg', 'Slide 10: Slide 10')">
-            <img src="assets/slides/lec_11/slide_10.jpg" alt="Slide 10" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_10.jpg" alt="Slide 10" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #10</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Slide 10">Slide 10</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 10">Slide 10</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_11.jpg', 'Slide 11: Where to Bury the CO 2')">
-            <img src="assets/slides/lec_11/slide_11.jpg" alt="Slide 11" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_11.jpg" alt="Slide 11" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #11</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Where to Bury the CO 2">Where to Bury the CO 2</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Where to Bury the CO 2">Where to Bury the CO 2</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_12.jpg', 'Slide 12: Scaling to Gigatonnes a Year')">
-            <img src="assets/slides/lec_11/slide_12.jpg" alt="Slide 12" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_12.jpg" alt="Slide 12" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #12</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Scaling to Gigatonnes a Year">Scaling to Gigatonnes a Year</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Scaling to Gigatonnes a Year">Scaling to Gigatonnes a Year</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_13.jpg', 'Slide 13: Carbon-capture technology scrubs CO2 from')">
-            <img src="assets/slides/lec_11/slide_13.jpg" alt="Slide 13" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_13.jpg" alt="Slide 13" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #13</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Carbon-capture technology scrubs CO2 from">Carbon-capture technology scrubs CO2 from</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Carbon-capture technology scrubs CO2 from">Carbon-capture technology scrubs CO2 from</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_14.jpg', 'Slide 14: Companies with the most developed technologies today')">
-            <img src="assets/slides/lec_11/slide_14.jpg" alt="Slide 14" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_14.jpg" alt="Slide 14" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #14</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Companies with the most developed technologies today">Companies with the most developed technologies today</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Companies with the most developed technologies today">Companies with the most developed technologies today</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_15.jpg', 'Slide 15: Aether: In A First, Diamonds Made From Air')">
-            <img src="assets/slides/lec_11/slide_15.jpg" alt="Slide 15" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_15.jpg" alt="Slide 15" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #15</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Aether: In A First, Diamonds Made From Air">Aether: In A First, Diamonds Made From Air</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Aether: In A First, Diamonds Made From Air">Aether: In A First, Diamonds Made From Air</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_16.jpg', 'Slide 16: NZT Project')">
-            <img src="assets/slides/lec_11/slide_16.jpg" alt="Slide 16" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_16.jpg" alt="Slide 16" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #16</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="NZT Project">NZT Project</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="NZT Project">NZT Project</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_17.jpg', 'Slide 17: The meat and dairy industries create 7.1')">
-            <img src="assets/slides/lec_11/slide_17.jpg" alt="Slide 17" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_17.jpg" alt="Slide 17" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #17</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="The meat and dairy industries create 7.1">The meat and dairy industries create 7.1</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The meat and dairy industries create 7.1">The meat and dairy industries create 7.1</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_18.jpg', 'Slide 18: Feeding cows seaweed')">
-            <img src="assets/slides/lec_11/slide_18.jpg" alt="Slide 18" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_18.jpg" alt="Slide 18" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #18</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Feeding cows seaweed">Feeding cows seaweed</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Feeding cows seaweed">Feeding cows seaweed</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_19.jpg', 'Slide 19: Delicious insects')">
-            <img src="assets/slides/lec_11/slide_19.jpg" alt="Slide 19" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_19.jpg" alt="Slide 19" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #19</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Delicious insects">Delicious insects</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Delicious insects">Delicious insects</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_20.jpg', 'Slide 20: Climate repair')">
-            <img src="assets/slides/lec_11/slide_20.jpg" alt="Slide 20" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_20.jpg" alt="Slide 20" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #20</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Climate repair">Climate repair</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Climate repair">Climate repair</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_21.jpg', 'Slide 21: Remote working')">
-            <img src="assets/slides/lec_11/slide_21.jpg" alt="Slide 21" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_21.jpg" alt="Slide 21" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #21</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Remote working">Remote working</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Remote working">Remote working</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_22.jpg', 'Slide 22: Energy-efficient datacentres could provide more efficient')">
-            <img src="assets/slides/lec_11/slide_22.jpg" alt="Slide 22" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_22.jpg" alt="Slide 22" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #22</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Energy-efficient datacentres could provide more efficient">Energy-efficient datacentres could provide more efficient</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Energy-efficient datacentres could provide more efficient">Energy-efficient datacentres could provide more efficient</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_23.jpg', 'Slide 23: Hydrogen Ships')">
-            <img src="assets/slides/lec_11/slide_23.jpg" alt="Slide 23" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_23.jpg" alt="Slide 23" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #23</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Hydrogen Ships">Hydrogen Ships</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Hydrogen Ships">Hydrogen Ships</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_24.jpg', 'Slide 24: Blockchain to revolutionize the commodity markets')">
-            <img src="assets/slides/lec_11/slide_24.jpg" alt="Slide 24" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_24.jpg" alt="Slide 24" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #24</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Blockchain to revolutionize the commodity markets">Blockchain to revolutionize the commodity markets</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Blockchain to revolutionize the commodity markets">Blockchain to revolutionize the commodity markets</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_25.jpg', 'Slide 25: Vertical Farming')">
-            <img src="assets/slides/lec_11/slide_25.jpg" alt="Slide 25" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_25.jpg" alt="Slide 25" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #25</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Vertical Farming">Vertical Farming</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Vertical Farming">Vertical Farming</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_26.jpg', 'Slide 26: Four essential aspects')">
-            <img src="assets/slides/lec_11/slide_26.jpg" alt="Slide 26" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_26.jpg" alt="Slide 26" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #26</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Four essential aspects">Four essential aspects</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Four essential aspects">Four essential aspects</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_27.jpg', 'Slide 27: How Vertical Farming Can Benefit Our Environment')">
-            <img src="assets/slides/lec_11/slide_27.jpg" alt="Slide 27" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_27.jpg" alt="Slide 27" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #27</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="How Vertical Farming Can Benefit Our Environment">How Vertical Farming Can Benefit Our Environment</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="How Vertical Farming Can Benefit Our Environment">How Vertical Farming Can Benefit Our Environment</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_28.jpg', 'Slide 28: Trap cropping')">
-            <img src="assets/slides/lec_11/slide_28.jpg" alt="Slide 28" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_28.jpg" alt="Slide 28" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #28</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="Trap cropping">Trap cropping</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Trap cropping">Trap cropping</div>
           </div>
         </div>
         
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
           <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('assets/slides/lec_11/slide_29.jpg', 'Slide 29: https://www.xprize.org/prizes/elonmusk')">
-            <img src="assets/slides/lec_11/slide_29.jpg" alt="Slide 29" class="w-full h-36 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <img src="assets/slides/lec_11/slide_29.jpg" alt="Slide 29" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-mono">🔍 Click to Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
             </div>
           </div>
           <div class="pt-2 px-1">
             <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
               <span class="text-emerald-400 font-bold">Slide #29</span>
-              <span>Class-11-Climate Change-Technology Solutions.pdf</span>
+              <span class="truncate max-w-[100px]">Class-11-Climate Change-Technology Solutions.pdf</span>
             </div>
-            <div class="text-xs font-semibold text-slate-200 line-clamp-2" title="https://www.xprize.org/prizes/elonmusk">https://www.xprize.org/prizes/elonmusk</div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="https://www.xprize.org/prizes/elonmusk">https://www.xprize.org/prizes/elonmusk</div>
           </div>
         </div>
         
@@ -1136,9 +1568,9 @@
 
   <!-- BOTTOM NAVIGATION BAR -->
   <nav id="nav-bar">
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all" onclick="prevCard()">← Previous</button>
-    <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 9</span>
-    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950" onclick="nextCard()">Next Card →</button>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all cursor-pointer" onclick="prevCard()">← Previous</button>
+    <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 10</span>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950 cursor-pointer" onclick="nextCard()">Next Card →</button>
   </nav>
 
   <!-- LIGHTBOX MODAL -->
@@ -1146,7 +1578,7 @@
     <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
       <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
         <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
-        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded" onclick="closeLightbox()">✕ Close</button>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded cursor-pointer" onclick="closeLightbox()">✕ Close</button>
       </div>
       <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
         <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
@@ -1155,6 +1587,74 @@
   </div>
 
   <script>
+    const ALL_UNITS_DATA = {"u11_1": {"slides": [{"slide_num": 1, "title": "Class-11", "image": "assets/slides/lec_11/slide_01.jpg", "bullets": ["Climate change:", "Technology solutions", "15th October 2026"], "takeaway": "Class-11"}, {"slide_num": 2, "title": "Ways \u2018negative emissions\u2019 could slow", "image": "assets/slides/lec_11/slide_02.jpg", "bullets": ["climate change", "The Paris Agreement, adopted at the COP21 sets out a global", "aim to limit average global surface temperatures to 1.5 0C", "To get to net-zero emissions, we need \u201cnegative emissions\u201d", "technologies (NETs), or things which will suck the CO2 out of the", "air to compensate for the ongoing release.\u201d", "1. Afforestation and reforestation", "A/R-sequester CO2 at a rate of 3.7 tonnes/ ha/ year, and"], "takeaway": "Ways \u2018negative emissions\u2019 could slow"}, {"slide_num": 3, "title": "2. Biochar", "image": "assets/slides/lec_11/slide_03.jpg", "bullets": ["The potential to sequester up to 4.8bn tonnes of CO2 per year", "- Advantages / Disadvantages?", "Biochar is generally produced through pyrolysis, a process that involves heating renewable biomass at high temperature", "in an oxygen-limited environment. In the absence of pyrolysis, the biomass would either be burned in the open air or left", "to decompose, resulting in much higher GHG emissions than those occurring during the production of biochar. In", "addition, biochar is a stable form of carbon which can be stored in the soil and improve its fertility."], "takeaway": "2. Biochar"}, {"slide_num": 4, "title": "3. Blue carbon\u2019 habitat restoration", "image": "assets/slides/lec_11/slide_04.jpg", "bullets": ["What is blue carbon?", "Emissions", "from", "degraded", "mangroves,", "tidal", "marshes", "and"], "takeaway": "3. Blue carbon\u2019 habitat restoration"}, {"slide_num": 5, "title": "4. Building with biomass", "image": "assets/slides/lec_11/slide_05.jpg", "bullets": ["Timber and bamboo - structural elements, hemp and wool -", "insulation, and hemp-lime for walling."], "takeaway": "4. Building with biomass"}, {"slide_num": 6, "title": "5. Cloud or ocean treatment with alkali", "image": "assets/slides/lec_11/slide_06.jpg", "bullets": ["CO2 emissions could be offset by spraying 56m tonnes of KOH into", "clouds across 0.4% of the Earth\u2019s surface (the area of Greenland.", "(ocean acidification\u2026..: 2.5bn T of lime stone: 8 bn T/year)"], "takeaway": "5. Cloud or ocean treatment with alkali"}, {"slide_num": 7, "title": "6. Enhanced weathering", "image": "assets/slides/lec_11/slide_07.jpg", "bullets": ["Natural rock weathering absorbs around 3% of global fossil fuel", "emissions.", "EW ramps up this process", "Partially counteracting ocean acidification.", "EW could be used to sequester up to 3.7bn tonnes of CO2eq per", "year globally"], "takeaway": "6. Enhanced weathering"}], "currentIdx": 0}, "u11_2": {"slides": [{"slide_num": 8, "title": "7. DIRECT AIR CAPTURE", "image": "assets/slides/lec_11/slide_08.jpg", "bullets": ["1. DAC + STORAGE PLANTS", "STANDALONE", "GEOLOGIC STORAGE", "ENHANCED OIL", "RECOVERY"], "takeaway": "7. DIRECT AIR CAPTURE"}, {"slide_num": 9, "title": "2. AIR TO FUELS PLANTS", "image": "assets/slides/lec_11/slide_09.jpg", "bullets": ["CE\u2019s process delivers synthetic, low carbon intensity fuels \u2013 such as", "gasoline, diesel, and jet-A \u2013 out of air, water and renewable", "electricity."], "takeaway": "2. AIR TO FUELS PLANTS"}, {"slide_num": 10, "title": "Slide 10", "image": "assets/slides/lec_11/slide_10.jpg", "bullets": [], "takeaway": "Slide 10"}, {"slide_num": 11, "title": "Where to Bury the CO 2", "image": "assets/slides/lec_11/slide_11.jpg", "bullets": [], "takeaway": "Where to Bury the CO 2"}, {"slide_num": 12, "title": "Scaling to Gigatonnes a Year", "image": "assets/slides/lec_11/slide_12.jpg", "bullets": [], "takeaway": "Scaling to Gigatonnes a Year"}, {"slide_num": 13, "title": "Carbon-capture technology scrubs CO2 from", "image": "assets/slides/lec_11/slide_13.jpg", "bullets": ["power plants like scuba-diving gear", "CO2 release by mild heating of the BIG-bicarbonate solid. The released", "CO2 gas is trapped in the orange balloon, while the released water vapors", "are trapped by condensation in the ice-cooled U-shaped tube. Credit: Neil J.", "Williams and Erick Holguin."], "takeaway": "Carbon-capture technology scrubs CO2 from"}, {"slide_num": 14, "title": "Companies with the most developed technologies today", "image": "assets/slides/lec_11/slide_14.jpg", "bullets": ["include .", "Together these companies have 18 plants of varying sizes (1", "tCO2/yr up to 4,000 tCO2/yr capacity, the largest plant in", "operation today) capturing a total of just under 8,000 tCO2/yr", "Around half of that is sequestered permanently \u2014 similar to", "the annual emissions from 870 cars \u2014 while the other half is", "sold for use in various products."], "takeaway": "Companies with the most developed technologies today"}, {"slide_num": 15, "title": "Aether: In A First, Diamonds Made From Air", "image": "assets/slides/lec_11/slide_15.jpg", "bullets": ["Pollution Certified As Vegan", "1. Purchasing Co2 from Climeworks\u2019-shipping it to", "the US, where the diamonds are grown.", "2. CO2 is put through a proprietary process to convert", "it into high purity CH4.", "3.CH4 is then injected directly into the diamond", "reactors, where \u201cchemical vapor deposition\u201d is used", "to grow rough diamond material over the course of"], "takeaway": "Aether: In A First, Diamonds Made From Air"}, {"slide_num": 16, "title": "NZT Project", "image": "assets/slides/lec_11/slide_16.jpg", "bullets": ["Carbon captured by Net Zero Teeside", "will be buried beneath the North Sea", "Net Zero Teesside aims to sequester", "carbon emissions under the sea", "NZT aims to capture CO2 produced in industrial processes and", "power plants and transport these emissions by pipeline to offshore", "storage sites several km beneath the North Sea", "The aim, as the NZT project's name suggests, will be to reduce"], "takeaway": "NZT Project"}], "currentIdx": 0}, "u11_3": {"slides": [{"slide_num": 17, "title": "The meat and dairy industries create 7.1", "image": "assets/slides/lec_11/slide_17.jpg", "bullets": ["gigatons of GHG annually\u2014that\u2019s 14.5%", "of total man-made emissions. But beef is", "by far the biggest offender, generating 60", "kgs of GHG emissions per kg of meat", "produced\u2014that\u2019s", "more", "than", "twice"], "takeaway": "The meat and dairy industries create 7.1"}, {"slide_num": 18, "title": "Feeding cows seaweed", "image": "assets/slides/lec_11/slide_18.jpg", "bullets": ["Cows are a major methane polluter", "Feeding cows seaweed could help reduce", "methane emissions", "1. A red seaweed which grows in the tropics", "can reduce methane emissions by 80% in", "cows when it is added as a supplement to", "cattle feed. (1.5 billion head of cattle", "globally- seaweed?)"], "takeaway": "Feeding cows seaweed"}, {"slide_num": 19, "title": "Delicious insects", "image": "assets/slides/lec_11/slide_19.jpg", "bullets": ["Burgers made from insects such as grasshoppers could tackle", "cattle farming emissions \u2013 Beef replacement???", "Insects farmed without the demands on land or water that", "cattle farming requires"], "takeaway": "Delicious insects"}, {"slide_num": 20, "title": "Climate repair", "image": "assets/slides/lec_11/slide_20.jpg", "bullets": ["Refreezing the poles has", "been suggested as a climate", "repair tactic (Marine Cloud", "Brightening and Greening", "Oceans)", "A conceptualized image", "of an unmanned, wind-", "powered, remotely"], "takeaway": "Climate repair"}, {"slide_num": 21, "title": "Remote working", "image": "assets/slides/lec_11/slide_21.jpg", "bullets": ["Remote working from home could address transport", "emissions"], "takeaway": "Remote working"}, {"slide_num": 22, "title": "Energy-efficient datacentres could provide more efficient", "image": "assets/slides/lec_11/slide_22.jpg", "bullets": ["computation", "Cloud platforms \u2013 Internet??", "Greater use of data centres"], "takeaway": "Energy-efficient datacentres could provide more efficient"}], "currentIdx": 0}, "u11_4": {"slides": [{"slide_num": 23, "title": "Hydrogen Ships", "image": "assets/slides/lec_11/slide_23.jpg", "bullets": ["Tree Corridors", "Electric Planes", "Floating Solar", "Tidal Energy", "Maritime shipping emissions", "contribute 2.5 percent of global CO2", "Colombia planted more than", "350,000 trees (3C)"], "takeaway": "Hydrogen Ships"}, {"slide_num": 24, "title": "Blockchain to revolutionize the commodity markets", "image": "assets/slides/lec_11/slide_24.jpg", "bullets": ["(Illegal Tuna fishing \u2013 RS-GPS)", "Remote sensing in planning and monitoring", "(deforestation - Palm oil expansion\u2026.)", "Drones and crowdsourcing help monitor forest health and", "detect illegal logging", "(WRI- Global Forest Watch (GFW)", "Thermal imaging to combat poaching", "(Savanna of Kenya NP \u2013 poachers from Tanzania)"], "takeaway": "Blockchain to revolutionize the commodity markets"}, {"slide_num": 25, "title": "Vertical Farming", "image": "assets/slides/lec_11/slide_25.jpg", "bullets": ["Vertical farming /", "Greenhouse Farming", "It is a modern farming", "technology that", "uses environmentally", "controlled agricultural", "technology to make the most", "of indoor farming"], "takeaway": "Vertical Farming"}, {"slide_num": 26, "title": "Four essential aspects", "image": "assets/slides/lec_11/slide_26.jpg", "bullets": ["Physical arrangement: Crops are grown in a tower-like living structure.", "Lighting : Combination of natural and artificial light", "Growth medium: Aeroponics, hydroponics, Aquaponics \u2013", "sphagnum moss, coconut shells", "Sustainability qualities. -Includes above \u2013 95%  water  consumption", "Vertical farm in Finland.", "Photo: Wikimedia Commons"], "takeaway": "Four essential aspects"}, {"slide_num": 27, "title": "How Vertical Farming Can Benefit Our Environment", "image": "assets/slides/lec_11/slide_27.jpg", "bullets": ["\u2022Saved space: Reduce water consumption:", "\u2022Diversification of crops: Controlled environment:", "Plants That Grow Well Vertically", "Vegetables:  tomatoes, bell peppers, lettuce, and broccoli", "Woody herbs, mint, and basil are some of the other options.", "Succulents", "Vertical Farming \u2013 Future Farming", "Example: Aerofarms : Indoor aeroponic technology, a soilless"], "takeaway": "How Vertical Farming Can Benefit Our Environment"}, {"slide_num": 28, "title": "Trap cropping", "image": "assets/slides/lec_11/slide_28.jpg", "bullets": ["Climate", "change", "has", "raised", "temperatures", "and", "humidity,", "leading to increased pest attack."], "takeaway": "Trap cropping"}, {"slide_num": 29, "title": "https://www.xprize.org/prizes/elonmusk", "image": "assets/slides/lec_11/slide_29.jpg", "bullets": [], "takeaway": "https://www.xprize.org/prizes/elonmusk"}], "currentIdx": 0}};
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function switchUnitSlide(unitId, slideIdx) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit || !unit.slides[slideIdx]) return;
+      unit.currentIdx = slideIdx;
+      const s = unit.slides[slideIdx];
+      
+      const imgEl = document.getElementById(unitId + '_slide_img');
+      if (imgEl) {
+        imgEl.src = s.image;
+        imgEl.alt = s.title;
+      }
+      const wrapEl = document.getElementById(unitId + '_slide_wrap');
+      if (wrapEl) {
+        wrapEl.setAttribute('onclick', "openLightbox('" + s.image + "', 'Slide " + s.slide_num + ": " + escapeHtml(s.title) + "')");
+      }
+      const titleEl = document.getElementById(unitId + '_slide_title');
+      if (titleEl) {
+        titleEl.textContent = 'Slide ' + s.slide_num + ': ' + s.title;
+      }
+      const bulletsEl = document.getElementById(unitId + '_slide_bullets');
+      if (bulletsEl) {
+        if (s.bullets && s.bullets.length > 0) {
+          bulletsEl.innerHTML = s.bullets.map(b => '<div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">' + escapeHtml(b) + '</span></div>').join('');
+        } else {
+          bulletsEl.innerHTML = '<p class="text-slate-400 italic text-xs">Visual figure / diagram slide. Inspect the high-resolution render on the left.</p>';
+        }
+      }
+      const takeawayEl = document.getElementById(unitId + '_slide_takeaway');
+      if (takeawayEl) {
+        takeawayEl.textContent = s.takeaway || s.title;
+      }
+      const indEl = document.getElementById('cur_slide_indicator_' + unitId);
+      if (indEl) {
+        indEl.textContent = '#' + s.slide_num;
+      }
+      
+      const btns = document.querySelectorAll('.slide-btn-' + unitId);
+      btns.forEach((btn, idx) => {
+        if (idx === slideIdx) {
+          btn.className = 'slide-btn-' + unitId + ' active px-3 py-1.5 rounded-lg text-xs font-mono bg-emerald-600 border border-emerald-400 text-white font-bold flex-shrink-0 shadow-lg shadow-emerald-950/50';
+        } else {
+          btn.className = 'slide-btn-' + unitId + ' px-3 py-1.5 rounded-lg text-xs font-mono bg-[#071610] border border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 flex-shrink-0 transition-all';
+        }
+      });
+    }
+
+    function navUnitSlide(unitId, delta) {
+      const unit = ALL_UNITS_DATA[unitId];
+      if (!unit) return;
+      let cur = unit.currentIdx || 0;
+      let next = cur + delta;
+      if (next >= 0 && next < unit.slides.length) {
+        switchUnitSlide(unitId, next);
+      }
+    }
+
     let currentCard = 0;
     const screens = document.querySelectorAll('.card-screen');
     const totalCards = screens.length;
@@ -1164,13 +1664,11 @@
         s.classList.toggle('active', i === currentCard);
       });
 
-      // Update sidebar
       for (let i = 0; i < totalCards; i++) {
         const el = document.getElementById('slink_' + i);
         if (el) el.classList.toggle('active', i === currentCard);
       }
 
-      // Counter & Progress
       document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
       const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
       document.getElementById('progress-bar-fill').style.width = pct + '%';
@@ -1179,7 +1677,6 @@
       const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
       document.getElementById('section-label').innerText = title;
 
-      // Scroll to top
       document.getElementById('main').scrollTop = 0;
     }
 
@@ -1204,14 +1701,12 @@
       }
     }
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') nextCard();
       else if (e.key === 'ArrowLeft') prevCard();
       else if (e.key === 'Escape') closeLightbox();
     });
 
-    // Lightbox Modal
     function openLightbox(imgSrc, title) {
       document.getElementById('modal_img').src = imgSrc;
       document.getElementById('modal_title').innerText = title || 'Slide Figure';
@@ -1221,7 +1716,6 @@
       document.getElementById('lightbox_modal').classList.remove('show');
     }
 
-    // Quiz evaluation
     function handleQuiz(el, isCorrect, feedbackId) {
       const parent = el.parentElement;
       const opts = parent.querySelectorAll('.quiz-option');
@@ -1231,7 +1725,6 @@
         el.classList.add('correct');
       } else {
         el.classList.add('wrong');
-        // highlight correct option
         opts.forEach(o => {
           if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
             o.classList.add('correct');
@@ -1242,7 +1735,6 @@
       if (fb) fb.classList.remove('hidden');
     }
 
-    // Pomodoro Timer
     let timerSec = 25 * 60;
     let timerRunning = false;
     let timerInterval = null;
@@ -1270,7 +1762,6 @@
       }
     }
 
-    // Initialize
     updateCardView();
   </script>
 </body>
