@@ -61,9 +61,9 @@ LECTURE_DETAILS_4 = {
             {"q": "Who founded the Bishnoi faith and what was their sacrifice in 1730?", "a": "Guru Jambheshwar (15th century). In 1730, Amrita Devi and 362 Bishnois were martyred defending sacred Khejri trees from the Maharaja of Jodhpur's woodcutters."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing Chipko (Uttarakhand Himalayas, Hindi) with Appiko (Western Ghats Karnataka, Kannada). Appiko was inspired by Chipko a decade later in 1983.",
-            "⚠️ <strong>Trap:</strong> Assuming Silent Valley was fought for human displacement. Unlike Narmada, Silent Valley had no human settlement; it was fought purely for ecological and genetic biodiversity preservation.",
-            "⚠️ <strong>Exam Tip:</strong> Be prepared to list the 5 Fs of the Appiko movement and identify the Kunthipuzha River as the contested watercourse in Silent Valley."
+            "<strong>Exam trap:</strong> Confusing Chipko (Uttarakhand Himalayas, Hindi) with Appiko (Western Ghats Karnataka, Kannada). Appiko was inspired by Chipko a decade later in 1983.",
+            "<strong>Exam trap:</strong> Assuming Silent Valley was fought for human displacement. Unlike Narmada, Silent Valley had no human settlement; it was fought purely for ecological and genetic biodiversity preservation.",
+            "<strong>Exam note:</strong> Be prepared to list the 5 Fs of the Appiko movement and identify the Kunthipuzha River as the contested watercourse in Silent Valley."
         ],
         "quiz": [
             {
@@ -153,8 +153,8 @@ LECTURE_DETAILS_4 = {
             {"q": "What international treaty regulates cross-border export of electronic waste?", "a": "The Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and Their Disposal."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Assuming operational power is the largest component of a laptop's carbon footprint. Over 70% of a laptop's lifetime carbon footprint is embodied during manufacturing, making device longevity the #1 green priority.",
-            "⚠️ <strong>Trap:</strong> Confusing low PUE with low overall energy consumption. An inefficient datacenter running wasteful algorithms can still achieve a low PUE if its cooling overhead is low. True efficiency requires algorithmic efficiency combined with low PUE."
+            "<strong>Exam trap:</strong> Assuming operational power is the largest component of a laptop's carbon footprint. Over 70% of a laptop's lifetime carbon footprint is embodied during manufacturing, making device longevity the #1 green priority.",
+            "<strong>Exam trap:</strong> Confusing low PUE with low overall energy consumption. An inefficient datacenter running wasteful algorithms can still achieve a low PUE if its cooling overhead is low. True efficiency requires algorithmic efficiency combined with low PUE."
         ],
         "quiz": [
             {
@@ -252,8 +252,8 @@ LECTURE_DETAILS_4 = {
             {"q": "How does the Kalundborg eco-industrial park demonstrate industrial symbiosis?", "a": "Waste heat, steam, sulfur byproducts, and wastewater from the power plant and oil refinery serve as direct raw feedstocks for neighboring gypsum wallboard plants, pharmaceutical facilities, and farms."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing Atom Economy with Chemical Yield. A reaction can have a 100% yield but a low atom economy if most reactant atoms end up in unwanted stoichiometric byproducts.",
-            "⚠️ <strong>Trap:</strong> Assuming that designing a product to last forever is always green. Principle 7 specifies 'Targeted Durability'—materials should be designed to degrade or disassemble after their useful life rather than persisting immortally in landfills."
+            "<strong>Exam trap:</strong> Confusing Atom Economy with Chemical Yield. A reaction can have a 100% yield but a low atom economy if most reactant atoms end up in unwanted stoichiometric byproducts.",
+            "<strong>Exam trap:</strong> Assuming that designing a product to last forever is always green. Principle 7 specifies 'Targeted Durability'—materials should be designed to degrade or disassemble after their useful life rather than persisting immortally in landfills."
         ],
         "quiz": [
             {

@@ -45,9 +45,9 @@ LECTURE_DETAILS = {
             {"q": "What are the Planetary Boundaries defined by Rockström et al.?", "a": "A set of 9 quantitative planetary safe-operating boundaries (including Climate Change, Biosphere Integrity, Nitrogen/Phosphorus flows, and Ocean Acidification) that delineate the Holocene-like stability zone."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing 'Net-Zero' with 'Absolute Zero Emissions'. Net-Zero permits residual emissions in hard-to-abate sectors (steel, cement, aviation) as long as they are balanced 1:1 by active carbon removal.",
-            "⚠️ <strong>Trap:</strong> Assuming increasing population $P$ is the sole driver of environmental degradation. In the IPAT equation, per-capita affluence $A$ and carbon intensity $T$ frequently outweigh population growth in total footprint.",
-            "⚠️ <strong>Exam Tip:</strong> Be ready to state all 5 Panchamrit targets from COP26, including the 500 GW renewable target and 2070 net-zero year."
+            "<strong>Exam trap:</strong> Confusing 'Net-Zero' with 'Absolute Zero Emissions'. Net-Zero permits residual emissions in hard-to-abate sectors (steel, cement, aviation) as long as they are balanced 1:1 by active carbon removal.",
+            "<strong>Exam trap:</strong> Assuming increasing population $P$ is the sole driver of environmental degradation. In the IPAT equation, per-capita affluence $A$ and carbon intensity $T$ frequently outweigh population growth in total footprint.",
+            "<strong>Exam note:</strong> Be ready to state all 5 Panchamrit targets from COP26, including the 500 GW renewable target and 2070 net-zero year."
         ],
         "quiz": [
             {
@@ -123,8 +123,8 @@ LECTURE_DETAILS = {
             {"q": "What would Earth's surface temperature be without any natural greenhouse gases?", "a": "Approximately $255\\,\\text{K}$ ($-18^\\circ\\text{C}$), rendering Earth an entirely frozen ice ball."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing solar constant $S_0$ with average incident flux. Solar constant is measured perpendicular to beam ($1361\\,\\text{W/m}^2$), but Earth's surface area ($4\\pi R^2$) is 4 times its cross-sectional area ($\\pi R^2$), making average incident flux $S_0 / 4 \\approx 340\\,\\text{W/m}^2$.",
-            "⚠️ <strong>Trap:</strong> Misidentifying the atmospheric window. The atmospheric window is in the thermal infrared spectrum ($8 - 12\\,\\mu\\text{m}$), where clear atmosphere absorbs little radiation, allowing heat to escape directly to space."
+            "<strong>Exam trap:</strong> Confusing solar constant $S_0$ with average incident flux. Solar constant is measured perpendicular to beam ($1361\\,\\text{W/m}^2$), but Earth's surface area ($4\\pi R^2$) is 4 times its cross-sectional area ($\\pi R^2$), making average incident flux $S_0 / 4 \\approx 340\\,\\text{W/m}^2$.",
+            "<strong>Exam trap:</strong> Misidentifying the atmospheric window. The atmospheric window is in the thermal infrared spectrum ($8 - 12\\,\\mu\\text{m}$), where clear atmosphere absorbs little radiation, allowing heat to escape directly to space."
         ],
         "quiz": [
             {
@@ -195,8 +195,8 @@ LECTURE_DETAILS = {
             {"q": "What is cultural eutrophication?", "a": "Accelerated nutrient enrichment of water bodies (primarily phosphorus and nitrogen from fertilizers/sewage) leading to dense algal blooms, water deoxygenation, and aquatic ecosystem collapse."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Assuming Ozone ($O_3$) is emitted directly from car tailpipes. Ground-level ozone is purely a secondary pollutant generated via sunlight-induced reactions between $NO_2$ and hydrocarbons.",
-            "⚠️ <strong>Exam Trap:</strong> In the Streeter-Phelps oxygen sag curve, the minimum dissolved oxygen concentration is NOT at the point of discharge ($t=0$). It occurs downstream at the critical time $t_c$ where the rate of deoxygenation equals the rate of reaeration."
+            "<strong>Exam trap:</strong> Assuming Ozone ($O_3$) is emitted directly from car tailpipes. Ground-level ozone is purely a secondary pollutant generated via sunlight-induced reactions between $NO_2$ and hydrocarbons.",
+            "<strong>Exam trap:</strong> In the Streeter-Phelps oxygen sag curve, the minimum dissolved oxygen concentration is NOT at the point of discharge ($t=0$). It occurs downstream at the critical time $t_c$ where the rate of deoxygenation equals the rate of reaeration."
         ],
         "quiz": [
             {
@@ -266,8 +266,8 @@ LECTURE_DETAILS = {
             {"q": "What is the formula for Normalized Difference Water Index (NDWI)?", "a": "$NDWI = \\frac{\\text{Green} - \\text{NIR}}{\\text{Green} + \\text{NIR}}$. It enhances open water bodies while suppressing soil and vegetation features."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing Spatial Resolution with Temporal Resolution. High spatial resolution (e.g. 0.5m WorldView) often comes with poor temporal revisit (weeks), whereas MODIS offers daily revisit at coarse 250m-1km spatial resolution.",
-            "⚠️ <strong>Exam Trap:</strong> Thinking water has high NDVI. Water absorbs almost 100% of NIR radiation, making $\\rho_{\\text{NIR}} \\approx 0$, which results in a distinctly negative NDVI."
+            "<strong>Exam trap:</strong> Confusing Spatial Resolution with Temporal Resolution. High spatial resolution (e.g. 0.5m WorldView) often comes with poor temporal revisit (weeks), whereas MODIS offers daily revisit at coarse 250m-1km spatial resolution.",
+            "<strong>Exam trap:</strong> Thinking water has high NDVI. Water absorbs almost 100% of NIR radiation, making $\\rho_{\\text{NIR}} \\approx 0$, which results in a distinctly negative NDVI."
         ],
         "quiz": [
             {

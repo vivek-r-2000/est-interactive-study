@@ -5,7 +5,7 @@ SIMULATORS_2 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">⚠️ Toxic Chemical Plume & Exposure Hazard Calculator</h3>
+          <h3 class="text-lg font-bold text-emerald-400">️ Toxic Chemical Plume & Exposure Hazard Calculator</h3>
           <p class="text-xs text-slate-300">Model atmospheric downwind gas dispersion (Bhopal MIC scenario) using the Gaussian Plume Model.</p>
         </div>
         <span class="badge-amber px-2.5 py-1 rounded text-xs font-mono font-bold">Industrial Hazard</span>
@@ -77,7 +77,7 @@ SIMULATORS_2 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🔄 Biogeochemical Flux & Nutrient Homeostasis Model</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Biogeochemical Flux & Nutrient Homeostasis Model</h3>
           <p class="text-xs text-slate-300">Simulate perturbations to natural Carbon and Nitrogen cycles through fertilizer synthesis and fossil combustion.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Biogeochemical</span>
@@ -136,7 +136,7 @@ SIMULATORS_2 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🌡️ Sea Level Rise & Thermal Expansion Model</h3>
+          <h3 class="text-lg font-bold text-emerald-400">️ Sea Level Rise & Thermal Expansion Model</h3>
           <p class="text-xs text-slate-300">Calculate global mean sea level rise driven by steric ocean warming and continental ice sheet mass discharge.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Climate Impact</span>
@@ -194,7 +194,7 @@ SIMULATORS_2 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">⚡ AMOC & Climate Tipping Element Hysteresis Explorer</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> AMOC & Climate Tipping Element Hysteresis Explorer</h3>
           <p class="text-xs text-slate-300">Simulate Stommel's two-box model of thermohaline circulation and discover saddle-node bifurcation tipping points.</p>
         </div>
         <span class="badge-amber px-2.5 py-1 rounded text-xs font-mono font-bold">Non-Linear Dynamics</span>
@@ -247,7 +247,7 @@ SIMULATORS_2 = {
           amocEl.className = 'text-3xl font-black text-red-400 my-1';
           stateEl.innerText = 'State: Tipped / Collapsed (Bistable Regime)';
           stateEl.className = 'text-xs text-red-300 font-bold';
-          impactEl.innerText = '⚠️ Severe European cooling (-8°C), ITCZ shifts southward, severe Indian monsoon disruption.';
+          impactEl.innerText = '️ Severe European cooling (-8°C), ITCZ shifts southward, severe Indian monsoon disruption.';
         }
       }
       setTimeout(runSim08, 100);

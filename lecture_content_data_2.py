@@ -47,8 +47,8 @@ LECTURE_DETAILS_2 = {
             {"q": "Which Indian Act was enacted as a direct constitutional response to the Bhopal Gas Disaster?", "a": "The Environment (Protection) Act, 1986 (an umbrella legislative framework enacted under Article 253 of the Indian Constitution)."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing the causes of the London 1952 Smog with Los Angeles Photochemical Smog. London smog was a reducing 'sulfurous' winter smog driven by coal combustion and $SO_2$ trapped by a radiation inversion, NOT automobile photochemical reactions.",
-            "⚠️ <strong>Exam Tip:</strong> Be prepared to describe the runaway exothermic hydrolysis of MIC ($CH_3NCO + H_2O$) and the failure of safety scrubbers and flare towers at UCIL Bhopal."
+            "<strong>Exam trap:</strong> Confusing the causes of the London 1952 Smog with Los Angeles Photochemical Smog. London smog was a reducing 'sulfurous' winter smog driven by coal combustion and $SO_2$ trapped by a radiation inversion, NOT automobile photochemical reactions.",
+            "<strong>Exam note:</strong> Be prepared to describe the runaway exothermic hydrolysis of MIC ($CH_3NCO + H_2O$) and the failure of safety scrubbers and flare towers at UCIL Bhopal."
         ],
         "quiz": [
             {
@@ -122,8 +122,8 @@ LECTURE_DETAILS_2 = {
             {"q": "Which bacteria perform the conversion of Nitrite ($NO_2^-$) to Nitrate ($NO_3^-$)?", "a": "Chemoautotrophic bacteria belonging to the genus *Nitrobacter*."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing Ammonification with Nitrification. Ammonification is the decomposition of organic nitrogen (proteins) into ammonia ($NH_3/NH_4^+$). Nitrification is the biological oxidation of ammonia into nitrite and nitrate.",
-            "⚠️ <strong>Exam Tip:</strong> Remember that denitrification occurs under <strong>anoxic / anaerobic</strong> conditions (e.g. waterlogged wetland soils or deep benthic sediments) when bacteria use nitrate as an alternate electron acceptor."
+            "<strong>Exam trap:</strong> Confusing Ammonification with Nitrification. Ammonification is the decomposition of organic nitrogen (proteins) into ammonia ($NH_3/NH_4^+$). Nitrification is the biological oxidation of ammonia into nitrite and nitrate.",
+            "<strong>Exam note:</strong> Remember that denitrification occurs under <strong>anoxic / anaerobic</strong> conditions (e.g. waterlogged wetland soils or deep benthic sediments) when bacteria use nitrate as an alternate electron acceptor."
         ],
         "quiz": [
             {
@@ -192,8 +192,8 @@ LECTURE_DETAILS_2 = {
             {"q": "What are the two primary mechanisms responsible for Global Mean Sea Level Rise?", "a": "1. Thermal expansion of warming ocean water (thermosteric expansion). 2. Mass addition from melting terrestrial glaciers and polar ice sheets (Greenland and Antarctica)."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing the melting of sea ice with sea level rise. Melting of floating Arctic sea ice does NOT directly raise sea levels (Archimedes' principle). Sea level rise is driven by land-based ice sheets (Greenland, Antarctica, alpine glaciers) and thermal expansion.",
-            "⚠️ <strong>Exam Tip:</strong> Remember that Radiative Forcing for $CO_2$ scales <strong>logarithmically</strong> with concentration due to saturation of the central $15\\,\\mu\\text{m}$ absorption band."
+            "<strong>Exam trap:</strong> Confusing the melting of sea ice with sea level rise. Melting of floating Arctic sea ice does NOT directly raise sea levels (Archimedes' principle). Sea level rise is driven by land-based ice sheets (Greenland, Antarctica, alpine glaciers) and thermal expansion.",
+            "<strong>Exam note:</strong> Remember that Radiative Forcing for $CO_2$ scales <strong>logarithmically</strong> with concentration due to saturation of the central $15\\,\\mu\\text{m}$ absorption band."
         ],
         "quiz": [
             {
@@ -262,8 +262,8 @@ LECTURE_DETAILS_2 = {
             {"q": "What would happen to the Indian Summer Monsoon if AMOC were to collapse?", "a": "AMOC collapse causes inter-hemispheric temperature reorganization, shifting the Intertropical Convergence Zone (ITCZ) southward and severely disrupting or weakening the Indian monsoon rainfall."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Assuming an AMOC collapse means the entire Earth cools. AMOC collapse causes profound regional cooling in Northern Europe and the North Atlantic, but leads to exacerbated heating in the Southern Hemisphere and tropical oceans.",
-            "⚠️ <strong>Exam Trap:</strong> Believing all tipping points happen instantaneously. While the 'tipping decision' can occur in years, the resulting transition (e.g. melting of Greenland or West Antarctica) can unfold over decades to centuries."
+            "<strong>Exam trap:</strong> Assuming an AMOC collapse means the entire Earth cools. AMOC collapse causes profound regional cooling in Northern Europe and the North Atlantic, but leads to exacerbated heating in the Southern Hemisphere and tropical oceans.",
+            "<strong>Exam trap:</strong> Believing all tipping points happen instantaneously. While the 'tipping decision' can occur in years, the resulting transition (e.g. melting of Greenland or West Antarctica) can unfold over decades to centuries."
         ],
         "quiz": [
             {

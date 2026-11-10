@@ -5,7 +5,7 @@ SIMULATORS = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">⚡ Planetary Decarbonization & Emissions Pathway Simulator (2020–2070)</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Planetary Decarbonization & Emissions Pathway Simulator (2020–2070)</h3>
           <p class="text-xs text-slate-300">Simulate India's and global emission trajectories under policy, technology, and clean energy interventions.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Interactive Tool</span>
@@ -49,7 +49,7 @@ SIMULATORS = {
       <!-- DYNAMIC CANVAS -->
       <div class="bg-[#040806] border border-emerald-950 rounded-xl p-3">
         <div class="text-xs text-slate-400 mb-2 flex justify-between">
-          <span>📉 Projected CO₂ Emissions Trajectory (2020 – 2070)</span>
+          <span>Projected CO2 emissions trajectory (2020–2070)</span>
           <span class="text-emerald-400 font-mono">Net-Zero Target Line: 0 Gt</span>
         </div>
         <canvas id="canvas_sim01" width="700" height="180" class="w-full h-44 rounded bg-[#030605]"></canvas>
@@ -133,7 +133,7 @@ SIMULATORS = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🌐 Earth Radiation Budget & Greenhouse Equilibrium Calculator</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Earth Radiation Budget & Greenhouse Equilibrium Calculator</h3>
           <p class="text-xs text-slate-300">Compute effective emitting temperature and surface greenhouse temperature by adjusting fundamental radiation parameters.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Physics Model</span>
@@ -178,7 +178,7 @@ SIMULATORS = {
       </div>
 
       <div id="sim02_status" class="p-3 bg-[#0a1913] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
-        💡 <strong>Earth Baseline:</strong> Under natural conditions ($S_0=1361, \\alpha=0.30, \\epsilon=0.77$), Earth's surface temperature is a hospitable 15°C. Increasing greenhouse gases raises $\\epsilon$, trapping extra infrared heat and elevating surface temperature.
+        <strong>Earth baseline:</strong> Under natural conditions ($S_0=1361, \\alpha=0.30, \\epsilon=0.77$), Earth's surface temperature is a hospitable 15°C. Increasing greenhouse gases raises $\\epsilon$, trapping extra infrared heat and elevating surface temperature.
       </div>
     </div>
     <script>
@@ -214,7 +214,7 @@ SIMULATORS = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🏭 Air Quality Index (AQI) & Plume Dispersion Calculator</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Air Quality Index (AQI) & Plume Dispersion Calculator</h3>
           <p class="text-xs text-slate-300">Compute CPCB / US-EPA sub-indices for PM₂.₅ and PM₁₀ with Gaussian industrial chimney plume dispersion.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Environmental Math</span>
@@ -253,7 +253,7 @@ SIMULATORS = {
         </div>
       </div>
       <div id="out_health" class="p-3 bg-[#11190f] border border-amber-800/80 rounded-xl text-xs text-amber-200">
-        ⚠️ Breathing discomfort to people with lungs, asthma and heart diseases.
+        ️ Breathing discomfort to people with lungs, asthma and heart diseases.
       </div>
     </div>
     <script>
@@ -307,13 +307,13 @@ SIMULATORS = {
           h.innerText = 'Minor breathing discomfort to sensitive people.';
         } else if (aqi <= 200) {
           cat.innerText = 'Moderate'; cat.className = 'inline-block px-3 py-0.5 rounded-full text-xs font-bold bg-amber-950 text-amber-300 border border-amber-800';
-          h.innerText = '⚠️ Breathing discomfort to the people with lungs, asthma and heart diseases.';
+          h.innerText = '️ Breathing discomfort to the people with lungs, asthma and heart diseases.';
         } else if (aqi <= 300) {
           cat.innerText = 'Poor'; cat.className = 'inline-block px-3 py-0.5 rounded-full text-xs font-bold bg-orange-950 text-orange-300 border border-orange-800';
-          h.innerText = '🚨 Breathing discomfort to most people on prolonged exposure.';
+          h.innerText = ' Breathing discomfort to most people on prolonged exposure.';
         } else {
           cat.innerText = 'Severe / Hazardous'; cat.className = 'inline-block px-3 py-0.5 rounded-full text-xs font-bold bg-red-950 text-red-300 border border-red-800';
-          h.innerText = '⛔ Emergency conditions. Serious risk of respiratory effects in general population.';
+          h.innerText = ' Emergency conditions. Serious risk of respiratory effects in general population.';
         }
 
         const dist = (7.2 / wind).toFixed(1);
@@ -327,7 +327,7 @@ SIMULATORS = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🛰️ Multispectral Remote Sensing & NDVI Vegetation Index Visualizer</h3>
+          <h3 class="text-lg font-bold text-emerald-400">️ Multispectral Remote Sensing & NDVI Vegetation Index Visualizer</h3>
           <p class="text-xs text-slate-300">Simulate spectral reflectance in Red and NIR bands, calculate NDVI, and determine land cover classification.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Remote Sensing</span>

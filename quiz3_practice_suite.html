@@ -18,7 +18,7 @@
       --border-accent: #23523f;
       --primary: #10b981;
       --primary-light: #34d399;
-      --primary-glow: rgba(16, 185, 129, 0.35);
+      --primary-border: #1a2620;
       --teal: #14b8a6;
       --cyan: #06b6d4;
       --amber: #f59e0b;
@@ -40,7 +40,7 @@
     }
     .eco-card:hover {
       border-color: var(--primary);
-      box-shadow: 0 10px 30px -10px var(--primary-glow);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
     .nav-tab.active {
       background: rgba(16, 185, 129, 0.15);
@@ -95,10 +95,10 @@
   <header class="sticky top-0 z-50 bg-[#040a07]/95 backdrop-blur-md border-b border-[var(--border)] px-4 py-3">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-3">
-        <span class="text-2xl">⚡</span>
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block mr-2"></span>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-black text-sm md:text-base text-white tracking-tight">Quiz 3 Exam Practice Suite</span>
+            <span class="font-semibold text-sm md:text-base text-white tracking-tight">Quiz 3 Exam Practice Suite</span>
             <span class="text-xs text-emerald-400 font-mono bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800">Lectures 8–11</span>
           </div>
           <p class="text-[11px] text-slate-400">Environmental Science & Technology • IIIT Hyderabad</p>
@@ -109,11 +109,11 @@
           ← Back to Hub
         </a>
         <a href="Study_Material/00_home.html" class="text-xs bg-[#0b1a14] hover:bg-[#12281f] text-emerald-400 font-medium px-3 py-1.5 rounded-lg border border-emerald-800 transition-all">
-          📘 Slide Modules
+          Slide modules
         </a>
-        <a href="Quiz3_Exam_Preparation_Pack.pdf" download class="text-xs bg-red-700 hover:bg-red-600 text-white font-bold px-3 py-1.5 rounded-lg transition-all shadow-md flex items-center gap-1 mr-1"><span>📄 Download PDF (14 Pages)</span></a>
+        <a href="Quiz3_Exam_Preparation_Pack.pdf" download class="text-xs bg-red-700 hover:bg-red-600 text-white font-bold px-3 py-1.5 rounded-lg transition-all shadow-md flex items-center gap-1 mr-1"><span>Download PDF (14 pages)</span></a>
         <a href="QUIZ3_QUESTION_BANK.md" download class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg transition-all shadow-md shadow-emerald-950 flex items-center gap-1">
-          <span>📥 Question Bank (.md)</span>
+          <span>Question bank (MD)</span>
         </a>
       </div>
     </div>
@@ -123,19 +123,19 @@
   <nav class="bg-[#07130e] border-b border-[var(--border)] sticky top-[57px] z-40">
     <div class="max-w-7xl mx-auto px-4 flex items-center gap-2 overflow-x-auto py-2.5 no-scrollbar">
       <button onclick="switchTab('mock')" id="tab-btn-mock" class="nav-tab active flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-transparent text-slate-300 hover:text-white transition-all whitespace-nowrap cursor-pointer">
-        <span>⏱️ Timed Mock Exam</span>
+        <span>Timed mock exam</span>
       </button>
       <button onclick="switchTab('blanks')" id="tab-btn-blanks" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-transparent text-slate-300 hover:text-white transition-all whitespace-nowrap cursor-pointer">
-        <span>🎯 Rapid Fill-in-the-Blanks Drill</span>
+        <span>Fill-in-the-blanks drill</span>
       </button>
       <button onclick="switchTab('flashcards')" id="tab-btn-flashcards" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-transparent text-slate-300 hover:text-white transition-all whitespace-nowrap cursor-pointer">
-        <span>🗂️ 3D Active Recall Flashcards</span>
+        <span>Active recall flashcards</span>
       </button>
       <button onclick="switchTab('formulas')" id="tab-btn-formulas" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-transparent text-slate-300 hover:text-white transition-all whitespace-nowrap cursor-pointer">
-        <span>⚗️ Reactions & Formulas Lab</span>
+        <span>Reactions and formulas lab</span>
       </button>
       <button onclick="switchTab('bank')" id="tab-btn-bank" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-transparent text-slate-300 hover:text-white transition-all whitespace-nowrap cursor-pointer">
-        <span>📖 Question Bank Browser</span>
+        <span>Question bank browser</span>
       </button>
     </div>
   </nav>
@@ -153,14 +153,14 @@
           <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-mono mb-2">
             IIIT-H Exam Simulator
           </div>
-          <h2 class="text-xl md:text-2xl font-black text-white">Quiz 3 Standard Mock Examination</h2>
+          <h2 class="text-xl md:text-2xl font-semibold text-white">Quiz 3 Standard Mock Examination</h2>
           <p class="text-xs text-slate-400 mt-1">Simulates the official 45-minute, 25-mark format with auto-scoring and model answer rubrics.</p>
         </div>
 
         <div class="flex items-center gap-4">
           <div class="text-center px-4 py-2 rounded-xl bg-[#040a07] border border-emerald-900">
             <span class="block text-[10px] uppercase font-mono text-slate-400">Time Remaining</span>
-            <span id="exam-timer" class="text-2xl font-mono font-black text-emerald-400">45:00</span>
+            <span id="exam-timer" class="text-2xl font-mono font-semibold text-emerald-400">45:00</span>
           </div>
           <div class="flex flex-col gap-1.5">
             <button onclick="toggleExamTimer()" id="timer-btn" class="px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold transition-all cursor-pointer">
@@ -238,8 +238,8 @@
 
         <!-- Submit & Results -->
         <div class="flex flex-col items-center justify-center p-6 bg-[#081711] border border-emerald-900 rounded-2xl gap-4">
-          <button type="submit" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-sm tracking-wide shadow-lg shadow-emerald-950 transition-all transform hover:scale-[1.02] cursor-pointer">
-            🚀 Submit Mock Exam & Check Evaluation
+          <button type="submit" class="px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm tracking-wide shadow-lg shadow-emerald-950 transition-all transform hover:scale-[1.02] cursor-pointer">
+            Submit mock exam and check evaluation
           </button>
           <p class="text-xs text-slate-400">Your answers will be checked against the official IIIT-H grading key with model solutions.</p>
         </div>
@@ -250,11 +250,11 @@
       <div id="exam-results-card" class="hidden eco-card p-6 md:p-8 border-emerald-500 bg-[#071912] space-y-6">
         <div class="flex items-center justify-between border-b border-emerald-800 pb-4">
           <div>
-            <h3 class="text-2xl font-black text-white">Examination Scorecard</h3>
+            <h3 class="text-2xl font-semibold text-white">Examination Scorecard</h3>
             <p class="text-xs text-emerald-300">Evaluation against official professor grading criteria</p>
           </div>
           <div class="text-right">
-            <span class="text-3xl font-black font-mono text-emerald-400" id="final-score-display">0 / 25</span>
+            <span class="text-3xl font-semibold font-mono text-emerald-400" id="final-score-display">0 / 25</span>
             <span class="block text-xs font-mono text-slate-400" id="percentage-display">0%</span>
           </div>
         </div>
@@ -274,17 +274,17 @@
           <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-mono mb-2">
             Active Recall Trainer
           </div>
-          <h2 class="text-xl md:text-2xl font-black text-white">Rapid-Fire Fill-in-the-Blanks Drill</h2>
+          <h2 class="text-xl md:text-2xl font-semibold text-white">Rapid-Fire Fill-in-the-Blanks Drill</h2>
           <p class="text-xs text-slate-400 mt-1">Directly trains the exact numerical constants, keywords, and blanks that appear in exam papers.</p>
         </div>
         <div class="flex items-center gap-4 text-center">
           <div class="px-4 py-2 rounded-xl bg-[#040a07] border border-emerald-900">
             <span class="block text-[10px] uppercase font-mono text-slate-400">Score Streak</span>
-            <span id="blanks-streak" class="text-2xl font-mono font-black text-emerald-400">0</span>
+            <span id="blanks-streak" class="text-2xl font-mono font-semibold text-emerald-400">0</span>
           </div>
           <div class="px-4 py-2 rounded-xl bg-[#040a07] border border-emerald-900">
             <span class="block text-[10px] uppercase font-mono text-slate-400">Total Solved</span>
-            <span id="blanks-total" class="text-2xl font-mono font-black text-teal-400">0 / 20</span>
+            <span id="blanks-total" class="text-2xl font-mono font-semibold text-teal-400">0 / 20</span>
           </div>
         </div>
       </div>
@@ -304,7 +304,7 @@
           <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-mono mb-2">
             Spaced Repetition Deck
           </div>
-          <h2 class="text-xl md:text-2xl font-black text-white">Active-Recall 3D Flashcards (45 Cards)</h2>
+          <h2 class="text-xl md:text-2xl font-semibold text-white">Active-Recall 3D Flashcards (45 Cards)</h2>
           <p class="text-xs text-slate-400 mt-1">Click any card to flip. Categorized across high-frequency exam traps, constants, and mechanisms.</p>
         </div>
 
@@ -332,7 +332,7 @@
         <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-mono mb-2">
           Chemical & Physical Laws
         </div>
-        <h2 class="text-xl md:text-2xl font-black text-white">Reactions, Thermodynamics & Quantitative Constants</h2>
+        <h2 class="text-xl md:text-2xl font-semibold text-white">Reactions, Thermodynamics & Quantitative Constants</h2>
         <p class="text-xs text-slate-400 mt-1">Key mathematical relationships and chemical reactions tested in Quiz 3.</p>
       </div>
 
@@ -426,7 +426,7 @@
           <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-mono mb-2">
             Archival Repository
           </div>
-          <h2 class="text-xl md:text-2xl font-black text-white">Searchable Past Papers Question Bank</h2>
+          <h2 class="text-xl md:text-2xl font-semibold text-white">Searchable Past Papers Question Bank</h2>
           <p class="text-xs text-slate-400 mt-1">Extracted from 14 past IIIT-H exam papers (2018–2024). Filter by lecture or search by keyword.</p>
         </div>
 
@@ -740,7 +740,7 @@
           <div class="flex gap-2">
             <input type="text" id="blank-input-${idx}" placeholder="Your answer..." class="flex-1 px-3 py-1.5 rounded-lg bg-[#040a07] border border-[var(--border)] text-xs text-emerald-300 focus:outline-none focus:border-emerald-500">
             <button onclick="checkBlank(${idx})" class="px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold transition-all cursor-pointer">Check</button>
-            <button onclick="revealBlank(${idx})" class="px-2.5 py-1.5 rounded-lg bg-[#0b1a14] hover:bg-[#152e22] text-slate-400 hover:text-white border border-[var(--border)] text-xs transition-all cursor-pointer">👁️</button>
+            <button onclick="revealBlank(${idx})" class="px-2.5 py-1.5 rounded-lg bg-[#0b1a14] hover:bg-[#152e22] text-slate-400 hover:text-white border border-[var(--border)] text-xs transition-all cursor-pointer">Reveal</button>
           </div>
           <div id="blank-feedback-${idx}" class="text-xs hidden"></div>
         </div>
@@ -873,7 +873,7 @@
             <p class="text-sm font-semibold text-white">${item.q}</p>
             <div class="pt-2 border-t border-[var(--border)] flex items-center justify-between">
               <button onclick="document.getElementById('bank-ans-${idx}').classList.toggle('hidden')" class="text-xs text-emerald-400 hover:text-emerald-300 font-bold transition-all cursor-pointer">
-                👁️ Toggle Model Solution
+                Toggle model solution
               </button>
             </div>
             <div id="bank-ans-${idx}" class="hidden p-3 rounded-xl bg-[#040a07] border border-emerald-900 text-xs text-slate-200">

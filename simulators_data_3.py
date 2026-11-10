@@ -5,7 +5,7 @@ SIMULATORS_3 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🌲 Terrestrial Carbon Sink & Soil Sequestration Calculator</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Terrestrial Carbon Sink & Soil Sequestration Calculator</h3>
           <p class="text-xs text-slate-300">Model carbon removal flux across afforestation hectares, biochar amendment, and soil organic carbon (SOC) conservation.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Terrestrial Sinks</span>
@@ -70,7 +70,7 @@ SIMULATORS_3 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">🌊 Clean Development Mechanism (CDM) Additionality & Ocean Chemistry</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Clean Development Mechanism (CDM) Additionality & Ocean Chemistry</h3>
           <p class="text-xs text-slate-300">Calculate Certified Emission Reductions (CERs), carbon finance revenue, and oceanic pH impact of deep-sea CO₂ sequestration.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Carbon Markets</span>
@@ -134,7 +134,7 @@ SIMULATORS_3 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">⚡ Direct Air Capture (DAC) & Clean Tech Energy Efficacy Evaluator</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> Direct Air Capture (DAC) & Clean Tech Energy Efficacy Evaluator</h3>
           <p class="text-xs text-slate-300">Compute net-carbon removal efficiency and energy penalties across solid sorbent and liquid solvent DAC systems.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Clean Tech</span>
@@ -207,7 +207,7 @@ SIMULATORS_3 = {
     <div class="eco-card p-6 border-emerald-800/60">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900/60">
         <div>
-          <h3 class="text-lg font-bold text-emerald-400">📋 EIA Leopold Interaction Matrix & Impact Significance Evaluator</h3>
+          <h3 class="text-lg font-bold text-emerald-400"> EIA Leopold Interaction Matrix & Impact Significance Evaluator</h3>
           <p class="text-xs text-slate-300">Evaluate developmental project actions against environmental receptors with interactive Magnitude and Importance scores.</p>
         </div>
         <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">EIA Tool</span>

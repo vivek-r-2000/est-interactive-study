@@ -47,8 +47,8 @@ LECTURE_DETAILS_3 = {
             {"q": "Why does dissolved $CO_2$ in brine enhance geological storage safety over time?", "a": "Because $CO_2$-saturated formation brine is approximately 1% denser than pristine brine. It naturally sinks toward the bottom of the geological reservoir rather than rising toward the surface."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Assuming tree planting alone can permanently solve fossil fuel emissions. Biological terrestrial sinks can saturate, and stored forest carbon can be released back to the atmosphere via wildfires, drought, or logging.",
-            "⚠️ <strong>Exam Tip:</strong> Be sure to distinguish between Point-Source CCS (capturing from high-concentration industrial smokestacks) and Direct Air Capture (capturing from ambient 420 ppm air)."
+            "<strong>Exam trap:</strong> Assuming tree planting alone can permanently solve fossil fuel emissions. Biological terrestrial sinks can saturate, and stored forest carbon can be released back to the atmosphere via wildfires, drought, or logging.",
+            "<strong>Exam note:</strong> Be sure to distinguish between Point-Source CCS (capturing from high-concentration industrial smokestacks) and Direct Air Capture (capturing from ambient 420 ppm air)."
         ],
         "quiz": [
             {
@@ -124,8 +124,8 @@ LECTURE_DETAILS_3 = {
             {"q": "Why does liquid $CO_2$ sink only below ~3,000 meters in the ocean?", "a": "Because liquid $CO_2$ is more compressible than seawater. Above ~3,000 m it is buoyant and rises; below ~3,000 m (pressure $> 30\\,\\text{MPa}$), its density exceeds that of seawater, allowing it to sink."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing CDM with Joint Implementation (JI). CDM involves developed Annex I nations investing in <em>non-Annex I developing nations</em>. Joint Implementation involves developed nations investing in <em>other Annex I nations</em> (typically economies in transition).",
-            "⚠️ <strong>Exam Tip:</strong> Be ready to write out the carbonate equilibrium equations showing that adding $CO_2$ decreases free carbonate ion $[CO_3^{2-}]$ concentration, harming calcifying marine organisms."
+            "<strong>Exam trap:</strong> Confusing CDM with Joint Implementation (JI). CDM involves developed Annex I nations investing in <em>non-Annex I developing nations</em>. Joint Implementation involves developed nations investing in <em>other Annex I nations</em> (typically economies in transition).",
+            "<strong>Exam note:</strong> Be ready to write out the carbonate equilibrium equations showing that adding $CO_2$ decreases free carbonate ion $[CO_3^{2-}]$ concentration, harming calcifying marine organisms."
         ],
         "quiz": [
             {
@@ -194,8 +194,8 @@ LECTURE_DETAILS_3 = {
             {"q": "Why does Direct Air Capture require substantially more energy than flue gas capture?", "a": "Flue gas contains 12-15% $CO_2$ (coal) or 4-8% (gas), whereas ambient air contains only 0.042% $CO_2$ (~300 times more dilute). The thermodynamic minimum separation work scales logarithmically with dilution."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing Carbon Capture and Storage (CCS) with Direct Air Capture (DAC). CCS captures $CO_2$ from concentrated industrial emissions before it enters the atmosphere; DAC removes $CO_2$ that is already dispersed in ambient air.",
-            "⚠️ <strong>Exam Tip:</strong> Be sure to emphasize that Solar Radiation Management (SRM) does NOT solve ocean acidification, because it only masks planetary temperature without reducing atmospheric $CO_2$ concentrations."
+            "<strong>Exam trap:</strong> Confusing Carbon Capture and Storage (CCS) with Direct Air Capture (DAC). CCS captures $CO_2$ from concentrated industrial emissions before it enters the atmosphere; DAC removes $CO_2$ that is already dispersed in ambient air.",
+            "<strong>Exam note:</strong> Be sure to emphasize that Solar Radiation Management (SRM) does NOT solve ocean acidification, because it only masks planetary temperature without reducing atmospheric $CO_2$ concentrations."
         ],
         "quiz": [
             {
@@ -269,8 +269,8 @@ LECTURE_DETAILS_3 = {
             {"q": "How long must baseline environmental data be collected for a standard EIA in India?", "a": "One full season (three months), excluding the monsoon season (which dilutes pollutants and skews ecological baselines)."}
         ],
         "traps": [
-            "⚠️ <strong>Trap:</strong> Confusing Scoping with Screening. Screening asks: <em>'Does this project need an EIA?'</em> Scoping asks: <em>'What specific environmental topics and boundaries must the EIA investigate?'</em>",
-            "⚠️ <strong>Exam Tip:</strong> Remember that Public Consultation consists of two components: 1. A public hearing at the site for locally affected persons. 2. Obtaining written responses from other concerned stakeholders."
+            "<strong>Exam trap:</strong> Confusing Scoping with Screening. Screening asks: <em>'Does this project need an EIA?'</em> Scoping asks: <em>'What specific environmental topics and boundaries must the EIA investigate?'</em>",
+            "<strong>Exam note:</strong> Remember that Public Consultation consists of two components: 1. A public hearing at the site for locally affected persons. 2. Obtaining written responses from other concerned stakeholders."
         ],
         "quiz": [
             {
