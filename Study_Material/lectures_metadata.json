@@ -1398,14 +1398,7 @@
         "title": "Fig. 1-2, p. 7",
         "image": "assets/slides/lec_02/slide_05.jpg",
         "text_snippet": "Fig. 1-2, p. 7 Air (atmosphere) ENVIRONMENTAL SCIENCE",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_07.jpeg",
-            "width": 1000,
-            "height": 614,
-            "size_kb": 48.4
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 6,
@@ -1462,20 +1455,7 @@
         "title": "Global Outlook",
         "image": "assets/slides/lec_02/slide_09.jpg",
         "text_snippet": "Global Outlook \u2022 Comparison of developed and developing countries.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_11.jpeg",
-            "width": 1000,
-            "height": 597,
-            "size_kb": 43.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_12.jpeg",
-            "width": 583,
-            "height": 768,
-            "size_kb": 34.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 10,
@@ -1638,18 +1618,6 @@
             "width": 511,
             "height": 740,
             "size_kb": 61.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_27.jpeg",
-            "width": 1067,
-            "height": 972,
-            "size_kb": 79.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_28.jpeg",
-            "width": 480,
-            "height": 231,
-            "size_kb": 15.9
           }
         ]
       },
@@ -1734,52 +1702,10 @@
         "text_snippet": "",
         "diagrams": [
           {
-            "rel_path": "assets/diagrams/lec_02/diag_36.jpeg",
-            "width": 2481,
-            "height": 377,
-            "size_kb": 45.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_37.jpeg",
-            "width": 2481,
-            "height": 379,
-            "size_kb": 76.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_38.jpeg",
-            "width": 2481,
-            "height": 379,
-            "size_kb": 69.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_39.jpeg",
-            "width": 2481,
-            "height": 379,
-            "size_kb": 62.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_40.jpeg",
-            "width": 2481,
-            "height": 379,
-            "size_kb": 59.9
-          },
-          {
             "rel_path": "assets/diagrams/lec_02/diag_41.jpeg",
             "width": 2481,
             "height": 379,
             "size_kb": 66.4
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_42.jpeg",
-            "width": 2481,
-            "height": 379,
-            "size_kb": 43.4
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_43.jpeg",
-            "width": 2481,
-            "height": 379,
-            "size_kb": 58.5
           }
         ]
       },
@@ -1840,20 +1766,7 @@
         "title": "Slide 24",
         "image": "assets/slides/lec_02/slide_24.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_49.jpeg",
-            "width": 1024,
-            "height": 313,
-            "size_kb": 64.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_50.jpeg",
-            "width": 1024,
-            "height": 690,
-            "size_kb": 148.1
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 25,
@@ -1924,14 +1837,7 @@
         "title": "Food Supply Problems",
         "image": "assets/slides/lec_02/slide_27.jpg",
         "text_snippet": "Food Supply Problems \u2022 Overgrazing \u2022 Farmland loss and  degradation \u2022 Wetlands loss and degradation",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_58.jpeg",
-            "width": 515,
-            "height": 359,
-            "size_kb": 44.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 28,
@@ -2026,14 +1932,7 @@
         "title": "The \u201cecological footprint\u201d",
         "image": "assets/slides/lec_02/slide_30.jpg",
         "text_snippet": "The \u201cecological footprint\u201d \u2022 The total area of  land & water needed to produce the resource a person uses, plus the total amount",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_70.jpeg",
-            "width": 956,
-            "height": 1014,
-            "size_kb": 96.1
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 31,
@@ -2101,20 +2000,7 @@
         "title": "Slide 34",
         "image": "assets/slides/lec_02/slide_34.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_76.jpeg",
-            "width": 550,
-            "height": 392,
-            "size_kb": 25.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_77.jpeg",
-            "width": 550,
-            "height": 403,
-            "size_kb": 21.6
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 35,
@@ -2123,14 +2009,7 @@
         "title": "Earth Overshoot Day",
         "image": "assets/slides/lec_02/slide_35.jpg",
         "text_snippet": "Earth Overshoot Day It is the date when humanity annual demand on nature exceeds what earth can regenerate over the entire year In 2018, nature budget for the entire year has already been",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_78.jpeg",
-            "width": 640,
-            "height": 360,
-            "size_kb": 24.6
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 36,
@@ -2201,18 +2080,6 @@
             "width": 1893,
             "height": 506,
             "size_kb": 89.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_86.jpeg",
-            "width": 1156,
-            "height": 900,
-            "size_kb": 124.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_87.jpeg",
-            "width": 1000,
-            "height": 824,
-            "size_kb": 92.7
           }
         ]
       },
@@ -2256,18 +2123,6 @@
         "image": "assets/slides/lec_02/slide_41.jpg",
         "text_snippet": "Waste colonialism",
         "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_90.jpeg",
-            "width": 2287,
-            "height": 409,
-            "size_kb": 74.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_91.jpeg",
-            "width": 2287,
-            "height": 411,
-            "size_kb": 64.9
-          },
           {
             "rel_path": "assets/diagrams/lec_02/diag_92.jpeg",
             "width": 2287,
@@ -2451,12 +2306,6 @@
             "width": 2066,
             "height": 474,
             "size_kb": 53.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_111.jpeg",
-            "width": 2066,
-            "height": 474,
-            "size_kb": 41.1
           }
         ]
       },
@@ -2518,12 +2367,6 @@
         "image": "assets/slides/lec_02/slide_51.jpg",
         "text_snippet": "",
         "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_02/diag_117.png",
-            "width": 1720,
-            "height": 606,
-            "size_kb": 185.0
-          },
           {
             "rel_path": "assets/diagrams/lec_02/diag_118.jpeg",
             "width": 1720,
@@ -2716,56 +2559,7 @@
         "title": "Slide 2",
         "image": "assets/slides/lec_03/slide_02.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_01.jpeg",
-            "width": 1091,
-            "height": 642,
-            "size_kb": 63.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_02.jpeg",
-            "width": 1039,
-            "height": 628,
-            "size_kb": 68.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_03.jpeg",
-            "width": 1084,
-            "height": 619,
-            "size_kb": 104.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_04.jpeg",
-            "width": 1100,
-            "height": 624,
-            "size_kb": 40.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_05.jpeg",
-            "width": 1056,
-            "height": 636,
-            "size_kb": 46.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_06.jpeg",
-            "width": 1120,
-            "height": 628,
-            "size_kb": 62.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_07.jpeg",
-            "width": 1112,
-            "height": 544,
-            "size_kb": 105.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_08.jpeg",
-            "width": 1016,
-            "height": 624,
-            "size_kb": 63.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 3,
@@ -2811,32 +2605,7 @@
         "title": "Slide 5",
         "image": "assets/slides/lec_03/slide_05.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_12.jpeg",
-            "width": 2243,
-            "height": 407,
-            "size_kb": 45.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_13.jpeg",
-            "width": 2243,
-            "height": 408,
-            "size_kb": 52.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_14.jpeg",
-            "width": 2243,
-            "height": 408,
-            "size_kb": 53.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_15.jpeg",
-            "width": 2243,
-            "height": 408,
-            "size_kb": 62.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 6,
@@ -2916,20 +2685,7 @@
         "title": "Gulf of Mexico Oil Spill",
         "image": "assets/slides/lec_03/slide_09.jpg",
         "text_snippet": "Gulf of Mexico Oil Spill On April 20, 2010 the Deepwater Horizon offshore oil rig in the Gulf of Mexico exploded, killing 11 workers",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_23.jpeg",
-            "width": 654,
-            "height": 420,
-            "size_kb": 18.6
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_24.jpeg",
-            "width": 654,
-            "height": 420,
-            "size_kb": 17.5
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 10,
@@ -3078,26 +2834,7 @@
         "title": "Acid Rain",
         "image": "assets/slides/lec_03/slide_15.jpg",
         "text_snippet": "Acid Rain Air Pollution Fukushima Daiichi Disaster Nuclear Pollution",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_40.jpeg",
-            "width": 500,
-            "height": 333,
-            "size_kb": 25.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_41.jpeg",
-            "width": 1448,
-            "height": 458,
-            "size_kb": 49.6
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_42.jpeg",
-            "width": 603,
-            "height": 345,
-            "size_kb": 24.5
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 16,
@@ -3258,20 +2995,7 @@
         "title": "Acid Deposition and Forest Decline",
         "image": "assets/slides/lec_03/slide_23.jpg",
         "text_snippet": "Acid Deposition and Forest Decline",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_57.jpeg",
-            "width": 1304,
-            "height": 500,
-            "size_kb": 60.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_58.jpeg",
-            "width": 1304,
-            "height": 500,
-            "size_kb": 77.0
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 24,
@@ -3316,14 +3040,7 @@
         "title": "Biodiversity",
         "image": "assets/slides/lec_03/slide_28.jpg",
         "text_snippet": "Biodiversity Threats \u2022 Habitat loss & Fragmentation",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_03/diag_59.jpeg",
-            "width": 801,
-            "height": 557,
-            "size_kb": 49.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 29,
@@ -3494,14 +3211,7 @@
         "title": "EMS",
         "image": "assets/slides/lec_04/slide_03.jpg",
         "text_snippet": "EMS",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_03.jpeg",
-            "width": 500,
-            "height": 346,
-            "size_kb": 25.3
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 4,
@@ -3630,18 +3340,6 @@
             "width": 362,
             "height": 699,
             "size_kb": 60.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_19.jpeg",
-            "width": 1164,
-            "height": 950,
-            "size_kb": 145.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_20.jpeg",
-            "width": 976,
-            "height": 884,
-            "size_kb": 113.1
           }
         ]
       },
@@ -3714,26 +3412,7 @@
         "title": "Slide 10",
         "image": "assets/slides/lec_04/slide_10.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_28.jpeg",
-            "width": 652,
-            "height": 756,
-            "size_kb": 81.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_29.jpeg",
-            "width": 564,
-            "height": 747,
-            "size_kb": 70.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_30.jpeg",
-            "width": 573,
-            "height": 760,
-            "size_kb": 49.6
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 11,
@@ -4046,24 +3725,6 @@
             "size_kb": 40.0
           },
           {
-            "rel_path": "assets/diagrams/lec_04/diag_73.jpeg",
-            "width": 699,
-            "height": 514,
-            "size_kb": 40.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_74.jpeg",
-            "width": 718,
-            "height": 503,
-            "size_kb": 42.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_75.jpeg",
-            "width": 712,
-            "height": 507,
-            "size_kb": 46.2
-          },
-          {
             "rel_path": "assets/diagrams/lec_04/diag_76.png",
             "width": 840,
             "height": 227,
@@ -4120,70 +3781,10 @@
         "text_snippet": "Assessing the impact of land use and land cover changes on the remnant patches of Kondapalli reserve forest of the Eastern Ghats, Andhra Pradesh, India",
         "diagrams": [
           {
-            "rel_path": "assets/diagrams/lec_04/diag_82.jpeg",
-            "width": 783,
-            "height": 634,
-            "size_kb": 60.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_83.jpeg",
-            "width": 296,
-            "height": 381,
-            "size_kb": 25.4
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_84.jpeg",
-            "width": 554,
-            "height": 755,
-            "size_kb": 69.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_85.jpeg",
-            "width": 474,
-            "height": 741,
-            "size_kb": 84.6
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_86.jpeg",
-            "width": 504,
-            "height": 703,
-            "size_kb": 81.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_87.jpeg",
-            "width": 620,
-            "height": 572,
-            "size_kb": 75.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_88.jpeg",
-            "width": 627,
-            "height": 455,
-            "size_kb": 62.4
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_89.jpeg",
-            "width": 597,
-            "height": 522,
-            "size_kb": 72.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_90.jpeg",
-            "width": 425,
-            "height": 577,
-            "size_kb": 61.7
-          },
-          {
             "rel_path": "assets/diagrams/lec_04/diag_91.png",
             "width": 834,
             "height": 599,
             "size_kb": 103.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_04/diag_92.png",
-            "width": 392,
-            "height": 552,
-            "size_kb": 115.5
           }
         ]
       }
@@ -4237,14 +3838,7 @@
         "title": "Global Distillation",
         "image": "assets/slides/lec_05/slide_03.jpg",
         "text_snippet": "Global Distillation Persistent organic pollutants (POPs) are among the most dangerous and are used as pesticides and also occurring as by-products from various industrial processes and from combustion.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_02.jpeg",
-            "width": 960,
-            "height": 720,
-            "size_kb": 57.9
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 4,
@@ -4313,14 +3907,7 @@
         "title": "Slide 7",
         "image": "assets/slides/lec_05/slide_07.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_08.jpeg",
-            "width": 624,
-            "height": 424,
-            "size_kb": 38.2
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 8,
@@ -4382,14 +3969,7 @@
         "title": "Slide 11",
         "image": "assets/slides/lec_05/slide_11.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_13.jpeg",
-            "width": 624,
-            "height": 512,
-            "size_kb": 57.1
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 12,
@@ -4472,28 +4052,10 @@
         "text_snippet": "AZOLLA.. IMPACT Pest",
         "diagrams": [
           {
-            "rel_path": "assets/diagrams/lec_05/diag_21.jpeg",
-            "width": 460,
-            "height": 463,
-            "size_kb": 20.3
-          },
-          {
             "rel_path": "assets/diagrams/lec_05/diag_22.png",
             "width": 220,
             "height": 165,
             "size_kb": 99.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_23.jpeg",
-            "width": 498,
-            "height": 374,
-            "size_kb": 40.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_24.jpeg",
-            "width": 640,
-            "height": 480,
-            "size_kb": 49.9
           }
         ]
       },
@@ -4554,44 +4116,7 @@
         "title": "The ship lift at the Three Gorges Dam in China is the world\u2019s ...",
         "image": "assets/slides/lec_05/slide_20.jpg",
         "text_snippet": "The ship lift at the Three Gorges Dam in China is the world\u2019s largest China's Three Gorges Dam: An Environmental Catastrophe?",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_27.jpeg",
-            "width": 2023,
-            "height": 388,
-            "size_kb": 31.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_28.jpeg",
-            "width": 2023,
-            "height": 390,
-            "size_kb": 33.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_29.jpeg",
-            "width": 2023,
-            "height": 390,
-            "size_kb": 35.4
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_30.jpeg",
-            "width": 2023,
-            "height": 390,
-            "size_kb": 30.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_31.jpeg",
-            "width": 800,
-            "height": 458,
-            "size_kb": 35.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_32.jpeg",
-            "width": 500,
-            "height": 335,
-            "size_kb": 24.7
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 21,
@@ -4760,14 +4285,7 @@
         "title": "Nuclear winter theory is supported by observational evidence",
         "image": "assets/slides/lec_05/slide_25.jpg",
         "text_snippet": "Nuclear winter theory is supported by observational evidence from natural catastrophic events",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_53.jpeg",
-            "width": 803,
-            "height": 584,
-            "size_kb": 67.3
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 26,
@@ -4817,14 +4335,7 @@
         "title": "Slide 29",
         "image": "assets/slides/lec_05/slide_29.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_05/diag_56.jpeg",
-            "width": 624,
-            "height": 448,
-            "size_kb": 30.5
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 30,
@@ -4891,12 +4402,6 @@
             "width": 500,
             "height": 216,
             "size_kb": 38.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_04.jpeg",
-            "width": 991,
-            "height": 1036,
-            "size_kb": 58.5
           }
         ]
       },
@@ -5115,14 +4620,7 @@
         "title": "Daisy world simulation",
         "image": "assets/slides/lec_06/slide_14.jpg",
         "text_snippet": "Daisy world simulation First, run the model long enough for Daisy world temperature to reach equilibrium Then, apply a sudden change in solar input",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_22.jpeg",
-            "width": 284,
-            "height": 246,
-            "size_kb": 16.2
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 15,
@@ -5336,14 +4834,7 @@
         "title": "B. Terrestrial biomes",
         "image": "assets/slides/lec_06/slide_25.jpg",
         "text_snippet": "B. Terrestrial biomes",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_41.png",
-            "width": 800,
-            "height": 546,
-            "size_kb": 40.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 26,
@@ -5402,32 +4893,7 @@
         "title": "Chaparral:",
         "image": "assets/slides/lec_06/slide_28.jpg",
         "text_snippet": "Chaparral: Temperate Grassland Temperate Deciduous Forest Tundra",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_47.jpeg",
-            "width": 800,
-            "height": 533,
-            "size_kb": 63.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_48.jpeg",
-            "width": 800,
-            "height": 530,
-            "size_kb": 70.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_49.jpeg",
-            "width": 800,
-            "height": 530,
-            "size_kb": 39.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_50.jpeg",
-            "width": 800,
-            "height": 550,
-            "size_kb": 102.6
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 29,
@@ -5468,20 +4934,7 @@
         "title": "Food Chains",
         "image": "assets/slides/lec_06/slide_31.jpg",
         "text_snippet": "Food Chains The concept of food chains was developed by Charles Elton based on his observations on Spitzbergen",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_53.jpeg",
-            "width": 523,
-            "height": 442,
-            "size_kb": 59.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_54.jpeg",
-            "width": 720,
-            "height": 420,
-            "size_kb": 42.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 32,
@@ -5530,26 +4983,7 @@
         "title": "Models of ecological energy flow",
         "image": "assets/slides/lec_06/slide_33.jpg",
         "text_snippet": "Models of ecological energy flow Models of ecological energy flow A single trophic level A food chain",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_60.jpeg",
-            "width": 1400,
-            "height": 525,
-            "size_kb": 46.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_61.jpeg",
-            "width": 1400,
-            "height": 526,
-            "size_kb": 38.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_62.jpeg",
-            "width": 1400,
-            "height": 607,
-            "size_kb": 51.9
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 34,
@@ -5558,38 +4992,7 @@
         "title": "Lindeman 10% Law",
         "image": "assets/slides/lec_06/slide_34.jpg",
         "text_snippet": "Lindeman 10% Law",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_63.jpeg",
-            "width": 430,
-            "height": 588,
-            "size_kb": 15.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_64.jpeg",
-            "width": 1352,
-            "height": 440,
-            "size_kb": 48.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_65.jpeg",
-            "width": 1352,
-            "height": 441,
-            "size_kb": 36.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_66.jpeg",
-            "width": 2145,
-            "height": 445,
-            "size_kb": 43.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_67.jpeg",
-            "width": 2145,
-            "height": 445,
-            "size_kb": 45.2
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 35,
@@ -5636,14 +5039,7 @@
         "title": "The Carbon Cycle (Terrestrial)",
         "image": "assets/slides/lec_06/slide_37.jpg",
         "text_snippet": "The Carbon Cycle (Terrestrial) The Carbon Cycle (Terrestrial)",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_06/diag_71.jpeg",
-            "width": 720,
-            "height": 334,
-            "size_kb": 43.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 38,
@@ -5766,32 +5162,7 @@
         "title": "The Climate System Components",
         "image": "assets/slides/lec_07/slide_04.jpg",
         "text_snippet": "The Climate System Components",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_02.jpeg",
-            "width": 2387,
-            "height": 403,
-            "size_kb": 66.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_03.jpeg",
-            "width": 2387,
-            "height": 405,
-            "size_kb": 58.4
-          },
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_04.jpeg",
-            "width": 2387,
-            "height": 405,
-            "size_kb": 43.9
-          },
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_05.jpeg",
-            "width": 2387,
-            "height": 405,
-            "size_kb": 48.7
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 5,
@@ -5912,26 +5283,7 @@
         "title": "Climate Change \u2013 and dealing with it",
         "image": "assets/slides/lec_07/slide_11.jpg",
         "text_snippet": "Climate Change \u2013 and dealing with it Climate Change \u2013 and dealing with it Source: Stern Review on the Economics of Climate Change, 2006",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_15.jpeg",
-            "width": 1907,
-            "height": 476,
-            "size_kb": 66.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_16.jpeg",
-            "width": 1907,
-            "height": 478,
-            "size_kb": 71.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_17.jpeg",
-            "width": 1907,
-            "height": 478,
-            "size_kb": 70.0
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 12,
@@ -5978,14 +5330,7 @@
         "title": "18 kya",
         "image": "assets/slides/lec_07/slide_14.jpg",
         "text_snippet": "18 kya 9 kya Present Distribution of spruce and oak forests in Northern Hemisphere since the",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_21.jpeg",
-            "width": 600,
-            "height": 811,
-            "size_kb": 48.1
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 15,
@@ -6203,14 +5548,7 @@
         "title": "Bengal tiger could go extinct as Sundarban habitats entirely",
         "image": "assets/slides/lec_07/slide_28.jpg",
         "text_snippet": "Bengal tiger could go extinct as Sundarban habitats entirely vanish by 2070 because of climate change The reasons behind so many species of tigers dying out are:",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_07/diag_36.jpeg",
-            "width": 560,
-            "height": 513,
-            "size_kb": 34.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 29,
@@ -6411,20 +5749,7 @@
         "title": "The Doomsday Clock",
         "image": "assets/slides/lec_08/slide_09.jpg",
         "text_snippet": "The Doomsday Clock A symbol which represents the likelihood of a man-made global catastrophe. Maintained since 1947 by the members of the Bulletin of the Atomic Scientists.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_08/diag_05.png",
-            "width": 1200,
-            "height": 666,
-            "size_kb": 46.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_08/diag_06.png",
-            "width": 409,
-            "height": 374,
-            "size_kb": 24.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 10,
@@ -6482,12 +5807,6 @@
         "image": "assets/slides/lec_08/slide_13.jpg",
         "text_snippet": "\u2022Nuclear Proliferation: Nations continue to modernize and expand their nuclear arsenals, eroding arms-control norms. \u2022Instability: Ongoing conflicts like the war in Ukraine and tensions in the Middle East heighten the risk of escalation or miscalculation.",
         "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_08/diag_10.png",
-            "width": 2017,
-            "height": 378,
-            "size_kb": 106.7
-          },
           {
             "rel_path": "assets/diagrams/lec_08/diag_11.png",
             "width": 2017,
@@ -6586,14 +5905,7 @@
         "title": "5. Decline of desert bacteria",
         "image": "assets/slides/lec_08/slide_21.jpg",
         "text_snippet": "5. Decline of desert bacteria The soil in the desert may seem uninhabitable, but in fact it is teeming with bacteria: bacterial colonies spread all over the place there so that they form a solid layer that protects the soil from erosion.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_08/diag_15.jpeg",
-            "width": 663,
-            "height": 440,
-            "size_kb": 63.0
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 22,
@@ -6935,20 +6247,7 @@
         "title": "Annual fluxes of CO\u2082 and their changing sources (e.g. fossil f...",
         "image": "assets/slides/lec_09/slide_07.jpg",
         "text_snippet": "Annual fluxes of CO\u2082 and their changing sources (e.g. fossil fuels) and sinks (e.g. the ocean absorbing CO\u2082). About 30 % of the anthropogenic CO\u2082 emissions have been taken up by the ocean and about 30 % by land. The remaining 40 % of emissions have led to an increase in the concentration of CO\u2082 in the atmosphere. Data: CDIAC/NOAA-ESRL/GCP/Joos et al.,",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_24.png",
-            "width": 1355,
-            "height": 420,
-            "size_kb": 37.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_25.jpeg",
-            "width": 1355,
-            "height": 421,
-            "size_kb": 46.6
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 8,
@@ -7016,26 +6315,7 @@
         "title": "Forest Loss and Deforestation",
         "image": "assets/slides/lec_09/slide_11.jpg",
         "text_snippet": "Forest Loss and Deforestation \u2022Net forest loss: about 4.7 million hectares per year (2010\u20132020). \u2022Gross deforestation: around 10 million hectares per year.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_31.jpeg",
-            "width": 2030,
-            "height": 477,
-            "size_kb": 41.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_32.jpeg",
-            "width": 2030,
-            "height": 479,
-            "size_kb": 59.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_33.jpeg",
-            "width": 2030,
-            "height": 479,
-            "size_kb": 67.9
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 12,
@@ -7091,14 +6371,7 @@
         "title": "Forest extent, structure, and dynamics for each 1 \u00d7 1\u00b0 grid ce...",
         "image": "assets/slides/lec_09/slide_15.jpg",
         "text_snippet": "Forest extent, structure, and dynamics for each 1 \u00d7 1\u00b0 grid cell. (A) Forest area 2020, % cell area. Forest defined as Landsat ARD pixels with \u22655 m canopy height. (B) Mean forest height 2020, meters. (C) Net forest area change, 2000\u20132020, % cell area. (D) Forest loss, disturbance, and degradation 2000\u20132020, % year 2000 forest area within a cell.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_37.jpeg",
-            "width": 892,
-            "height": 466,
-            "size_kb": 73.6
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 16,
@@ -7255,14 +6528,7 @@
         "title": "Silvopasture stores carbon while producing livestock",
         "image": "assets/slides/lec_09/slide_24.jpg",
         "text_snippet": "Silvopasture stores carbon while producing livestock benefits if both trees and grass are properly managed",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_50.jpeg",
-            "width": 805,
-            "height": 575,
-            "size_kb": 49.9
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 25,
@@ -7305,14 +6571,7 @@
         "title": "Slide 28",
         "image": "assets/slides/lec_09/slide_28.jpg",
         "text_snippet": "",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_52.jpeg",
-            "width": 480,
-            "height": 568,
-            "size_kb": 40.7
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 29,
@@ -7362,14 +6621,7 @@
         "title": "Plan Vivo, Mexico",
         "image": "assets/slides/lec_09/slide_32.jpg",
         "text_snippet": "Plan Vivo, Mexico \u2022 Location: Chiapas, Southern Mexico \u2022 Parties: (1) FIA, Formula One Foundation; (2) Ambio, cooperative of Foresters; (3) local community groups and small",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_55.jpeg",
-            "width": 408,
-            "height": 390,
-            "size_kb": 25.9
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 33,
@@ -7378,14 +6630,7 @@
         "title": "Plan Vivo Activities: plantations,",
         "image": "assets/slides/lec_09/slide_33.jpg",
         "text_snippet": "Plan Vivo Activities: plantations, agroforestry, communal reforestation Carbon Sequestered tC/ha Investment: US $15 million",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_09/diag_56.png",
-            "width": 178,
-            "height": 292,
-            "size_kb": 25.5
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 34,
@@ -7783,14 +7028,7 @@
         "title": "Ocean Sequestration",
         "image": "assets/slides/lec_10/slide_31.jpg",
         "text_snippet": "Ocean Sequestration \u201cCarbon is naturally stored in the ocean via two pumps, solubility and biological, There are analogous man-made methods, direct injection and",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_10/diag_14.jpeg",
-            "width": 600,
-            "height": 354,
-            "size_kb": 21.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 32,
@@ -7849,26 +7087,7 @@
         "title": "Ocean Iron Fertilization?",
         "image": "assets/slides/lec_10/slide_34.jpg",
         "text_snippet": "Ocean Iron Fertilization? Urea fertilization In 2007, Sydney-based ONC (Ocean Nourishment Corporation ) completed an experiment involving 1 tonne of nitrogen in the Sulu Sea",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_10/diag_20.jpeg",
-            "width": 1209,
-            "height": 567,
-            "size_kb": 38.7
-          },
-          {
-            "rel_path": "assets/diagrams/lec_10/diag_21.jpeg",
-            "width": 1209,
-            "height": 568,
-            "size_kb": 37.0
-          },
-          {
-            "rel_path": "assets/diagrams/lec_10/diag_22.jpeg",
-            "width": 992,
-            "height": 748,
-            "size_kb": 39.7
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 35,
@@ -7927,14 +7146,7 @@
         "title": "Few Diatoms, lots of flagellates.",
         "image": "assets/slides/lec_10/slide_39.jpg",
         "text_snippet": "Few Diatoms, lots of flagellates. Flagellates were stimulated to grow Respire at > 90% of carbon The resulting phytoplankton are a bit suspect",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_10/diag_25.jpeg",
-            "width": 1078,
-            "height": 371,
-            "size_kb": 58.8
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 40,
@@ -7981,14 +7193,7 @@
         "title": "I\u001cAGE  \u0001ASA G\u0006ddard Space F\u000eight Ce\u0014ter",
         "image": "assets/slides/lec_10/slide_42.jpg",
         "text_snippet": "I\u001cAGE  \u0001ASA G\u0006ddard Space F\u000eight Ce\u0014ter Increased deep ocean concentrations of CO2, N and P Decreased deep ocean",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_10/diag_29.jpeg",
-            "width": 995,
-            "height": 995,
-            "size_kb": 99.1
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 43,
@@ -8265,26 +7470,7 @@
         "title": "4. Building with biomass",
         "image": "assets/slides/lec_11/slide_05.jpg",
         "text_snippet": "4. Building with biomass Timber and bamboo - structural elements, hemp and wool - insulation, and hemp-lime for walling.",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_03.jpeg",
-            "width": 2036,
-            "height": 153,
-            "size_kb": 38.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_04.jpeg",
-            "width": 1628,
-            "height": 597,
-            "size_kb": 89.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_05.jpeg",
-            "width": 1628,
-            "height": 598,
-            "size_kb": 68.4
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 6,
@@ -8331,32 +7517,7 @@
         "title": "7. DIRECT AIR CAPTURE",
         "image": "assets/slides/lec_11/slide_08.jpg",
         "text_snippet": "7. DIRECT AIR CAPTURE 1. DAC + STORAGE PLANTS STANDALONE GEOLOGIC STORAGE",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_09.jpeg",
-            "width": 725,
-            "height": 512,
-            "size_kb": 28.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_10.jpeg",
-            "width": 375,
-            "height": 506,
-            "size_kb": 17.5
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_11.png",
-            "width": 2128,
-            "height": 306,
-            "size_kb": 115.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_12.png",
-            "width": 2128,
-            "height": 307,
-            "size_kb": 132.2
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 9,
@@ -8461,38 +7622,7 @@
         "title": "Scaling to Gigatonnes a Year",
         "image": "assets/slides/lec_11/slide_12.jpg",
         "text_snippet": "Scaling to Gigatonnes a Year",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_24.png",
-            "width": 2425,
-            "height": 346,
-            "size_kb": 100.3
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_25.jpeg",
-            "width": 2425,
-            "height": 348,
-            "size_kb": 23.6
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_26.jpeg",
-            "width": 2425,
-            "height": 348,
-            "size_kb": 35.1
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_27.jpeg",
-            "width": 2425,
-            "height": 348,
-            "size_kb": 21.2
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_28.jpeg",
-            "width": 2425,
-            "height": 348,
-            "size_kb": 26.3
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 13,
@@ -8629,20 +7759,7 @@
         "title": "Climate repair",
         "image": "assets/slides/lec_11/slide_20.jpg",
         "text_snippet": "Climate repair Refreezing the poles has been suggested as a climate repair tactic (Marine Cloud",
-        "diagrams": [
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_39.jpeg",
-            "width": 709,
-            "height": 973,
-            "size_kb": 41.8
-          },
-          {
-            "rel_path": "assets/diagrams/lec_11/diag_40.jpeg",
-            "width": 768,
-            "height": 432,
-            "size_kb": 27.2
-          }
-        ]
+        "diagrams": []
       },
       {
         "slide_num": 21,
@@ -9164,5 +8281,1230 @@
     "videos": [
       "https://www.youtube.com/watch?v=dJa8LMGS8cs"
     ]
+  },
+  {
+    "id": "13",
+    "title": "Environmental Movements: Grassroots Ecology & Forest Conservation",
+    "slug": "13_environmental_movements_grassroots_ecology",
+    "short_title": "Environmental Movements",
+    "description": "Bishnoi movement (sacred Khejri trees), Chipko movement (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt), Appiko movement in Western Ghats, Silent Valley agitation, Narmada Bachao Andolan (Medha Patkar), and legal-ecological citizen activism.",
+    "files": [
+      "Class-13-Environmental Movements.pdf"
+    ],
+    "icon": "\ud83c\udf33",
+    "difficulty": "Beginner",
+    "duration": "35 mins",
+    "slide_count": 15,
+    "diagram_count": 34,
+    "slides": [
+      {
+        "slide_num": 1,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 1,
+        "title": "Class-13",
+        "image": "assets/slides/lec_13/slide_01.jpg",
+        "text_snippet": "Class-13 Environmental Movements 26th October 2026",
+        "diagrams": []
+      },
+      {
+        "slide_num": 2,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 2,
+        "title": "Bishnoi- the ecological stewards",
+        "image": "assets/slides/lec_13/slide_02.jpg",
+        "text_snippet": "Bishnoi- the ecological stewards Rules: Not to cut trees Be compassionate to all living beings",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_01.jpeg",
+            "width": 624,
+            "height": 408,
+            "size_kb": 40.5
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_02.jpeg",
+            "width": 608,
+            "height": 424,
+            "size_kb": 30.4
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_03.jpeg",
+            "width": 544,
+            "height": 408,
+            "size_kb": 24.3
+          }
+        ]
+      },
+      {
+        "slide_num": 3,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 3,
+        "title": "http://www.bishnoism.com/thefirst.php",
+        "image": "assets/slides/lec_13/slide_03.jpg",
+        "text_snippet": "http://www.bishnoism.com/thefirst.php",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_04.jpeg",
+            "width": 748,
+            "height": 499,
+            "size_kb": 68.4
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_05.jpeg",
+            "width": 400,
+            "height": 384,
+            "size_kb": 20.2
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_06.jpeg",
+            "width": 624,
+            "height": 451,
+            "size_kb": 45.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_07.jpeg",
+            "width": 352,
+            "height": 408,
+            "size_kb": 20.2
+          }
+        ]
+      },
+      {
+        "slide_num": 4,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 4,
+        "title": "The Chipko Movement",
+        "image": "assets/slides/lec_13/slide_04.jpg",
+        "text_snippet": "The Chipko Movement Government's decision to allot forest trees to a sports goods company. The local residents in Gopeshwar were denied the",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_08.jpeg",
+            "width": 725,
+            "height": 405,
+            "size_kb": 32.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_09.jpeg",
+            "width": 1100,
+            "height": 515,
+            "size_kb": 72.2
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_10.png",
+            "width": 672,
+            "height": 587,
+            "size_kb": 66.2
+          }
+        ]
+      },
+      {
+        "slide_num": 5,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 5,
+        "title": "Founder of Chipko",
+        "image": "assets/slides/lec_13/slide_05.jpg",
+        "text_snippet": "Founder of Chipko movement. Organized rallies to protect the",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_11.png",
+            "width": 381,
+            "height": 466,
+            "size_kb": 188.6
+          }
+        ]
+      },
+      {
+        "slide_num": 6,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 6,
+        "title": "The spreading of movement",
+        "image": "assets/slides/lec_13/slide_06.jpg",
+        "text_snippet": "The spreading of movement Sunder Lal Bahuguna (Environmentalist) Enlightened the country and out world about the movement, its success and environmental",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_12.jpeg",
+            "width": 448,
+            "height": 384,
+            "size_kb": 15.0
+          }
+        ]
+      },
+      {
+        "slide_num": 7,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 7,
+        "title": "Slide 7",
+        "image": "assets/slides/lec_13/slide_07.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_13.jpeg",
+            "width": 638,
+            "height": 431,
+            "size_kb": 39.5
+          }
+        ]
+      },
+      {
+        "slide_num": 8,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 8,
+        "title": "Appiko  movement",
+        "image": "assets/slides/lec_13/slide_08.jpg",
+        "text_snippet": "Appiko  movement Objectives of Appiko Preservation Restoration (5F\u2019s)",
+        "diagrams": []
+      },
+      {
+        "slide_num": 9,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 9,
+        "title": "The Kunthipuzha River",
+        "image": "assets/slides/lec_13/slide_09.jpg",
+        "text_snippet": "The Kunthipuzha River 1970: the Kerala State Electricity Board (KSEB) (submergence of 8.3 sq km of moist EG forest ) 1971 \u2013 72: Steven Green -Rom Whitaker (BNHS)",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_15.jpeg",
+            "width": 720,
+            "height": 405,
+            "size_kb": 30.3
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_16.jpeg",
+            "width": 800,
+            "height": 533,
+            "size_kb": 98.8
+          }
+        ]
+      },
+      {
+        "slide_num": 10,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 10,
+        "title": "Kali Bachao Andolan",
+        "image": "assets/slides/lec_13/slide_10.jpg",
+        "text_snippet": "Kali Bachao Andolan The river is 184 kms. long \u2013 flow- Arabian Sea. There are 6 major hydroelectric dams that have submerged over 32,000 acres of the rich forests",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_17.jpeg",
+            "width": 668,
+            "height": 418,
+            "size_kb": 22.7
+          }
+        ]
+      },
+      {
+        "slide_num": 11,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 11,
+        "title": "Narmada Bachao Andolan",
+        "image": "assets/slides/lec_13/slide_11.jpg",
+        "text_snippet": "Narmada Bachao Andolan Conceived in the mid-1960s under  Nehru Building postponed due to disagreement between three states impacted by project:",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_18.jpeg",
+            "width": 450,
+            "height": 270,
+            "size_kb": 22.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_19.png",
+            "width": 650,
+            "height": 325,
+            "size_kb": 106.8
+          }
+        ]
+      },
+      {
+        "slide_num": 12,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 12,
+        "title": "Coffer",
+        "image": "assets/slides/lec_13/slide_12.jpg",
+        "text_snippet": "Coffer Dam",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_20.jpeg",
+            "width": 585,
+            "height": 452,
+            "size_kb": 33.1
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_21.jpeg",
+            "width": 296,
+            "height": 447,
+            "size_kb": 17.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_22.png",
+            "width": 572,
+            "height": 304,
+            "size_kb": 59.9
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_23.png",
+            "width": 576,
+            "height": 296,
+            "size_kb": 61.8
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_24.jpeg",
+            "width": 584,
+            "height": 400,
+            "size_kb": 32.8
+          }
+        ]
+      },
+      {
+        "slide_num": 13,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 13,
+        "title": "Slide 13",
+        "image": "assets/slides/lec_13/slide_13.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_25.png",
+            "width": 552,
+            "height": 272,
+            "size_kb": 39.8
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_26.png",
+            "width": 568,
+            "height": 384,
+            "size_kb": 70.5
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_27.png",
+            "width": 560,
+            "height": 312,
+            "size_kb": 64.0
+          }
+        ]
+      },
+      {
+        "slide_num": 14,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 14,
+        "title": "Slide 14",
+        "image": "assets/slides/lec_13/slide_14.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_28.png",
+            "width": 576,
+            "height": 337,
+            "size_kb": 103.9
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_29.png",
+            "width": 568,
+            "height": 360,
+            "size_kb": 91.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_30.png",
+            "width": 544,
+            "height": 336,
+            "size_kb": 59.4
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_31.jpeg",
+            "width": 600,
+            "height": 463,
+            "size_kb": 43.3
+          }
+        ]
+      },
+      {
+        "slide_num": 15,
+        "source_file": "Class-13-Environmental Movements.pdf",
+        "page_in_file": 15,
+        "title": "Slide 15",
+        "image": "assets/slides/lec_13/slide_15.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_32.jpeg",
+            "width": 568,
+            "height": 416,
+            "size_kb": 22.5
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_33.png",
+            "width": 560,
+            "height": 376,
+            "size_kb": 105.4
+          },
+          {
+            "rel_path": "assets/diagrams/lec_13/diag_34.jpeg",
+            "width": 600,
+            "height": 456,
+            "size_kb": 38.4
+          }
+        ]
+      }
+    ],
+    "videos": []
+  },
+  {
+    "id": "14",
+    "title": "Green Computing, IT Environmental Impacts & Sustainable Electronics",
+    "slug": "14_green_computing_sustainable_ict",
+    "short_title": "Green Computing",
+    "description": "Life cycle of IT hardware: conflict mineral extraction (coltan, neodymium), manufacturing energy, Moore's Law vs. Wirth's Law, embodied carbon, data center energy efficiency, Power Usage Effectiveness (PUE), virtualization, dynamic voltage scaling (DVFS), and global e-waste management (Basel Convention).",
+    "files": [
+      "Class-14-Green computing.pdf"
+    ],
+    "icon": "\ud83d\udcbb",
+    "difficulty": "Intermediate",
+    "duration": "45 mins",
+    "slide_count": 35,
+    "diagram_count": 44,
+    "slides": [
+      {
+        "slide_num": 1,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 1,
+        "title": "29th October 2026",
+        "image": "assets/slides/lec_14/slide_01.jpg",
+        "text_snippet": "29th October 2026 Class-14",
+        "diagrams": []
+      },
+      {
+        "slide_num": 2,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 2,
+        "title": "Negative Impact of Technology on the Environment",
+        "image": "assets/slides/lec_14/slide_02.jpg",
+        "text_snippet": "Negative Impact of Technology on the Environment 1. Mining For Minerals Mining responsible",
+        "diagrams": []
+      },
+      {
+        "slide_num": 3,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 3,
+        "title": "Slide 3",
+        "image": "assets/slides/lec_14/slide_03.jpg",
+        "text_snippet": "",
+        "diagrams": []
+      },
+      {
+        "slide_num": 4,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 4,
+        "title": "The construction of an average 24-kg",
+        "image": "assets/slides/lec_14/slide_04.jpg",
+        "text_snippet": "The construction of an average 24-kg computer and 27-cm monitor requires at least 240 kg of fossil fuel, 22 kg of chemicals and 1,500 kgs of water \u2013 or",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_06.png",
+            "width": 454,
+            "height": 340,
+            "size_kb": 93.2
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_07.png",
+            "width": 536,
+            "height": 192,
+            "size_kb": 46.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_08.png",
+            "width": 529,
+            "height": 298,
+            "size_kb": 75.2
+          }
+        ]
+      },
+      {
+        "slide_num": 5,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 5,
+        "title": "Challenges",
+        "image": "assets/slides/lec_14/slide_05.jpg",
+        "text_snippet": "Challenges Research in Green ICT \"Moore's law\u201c: Gordon Moore,",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_09.jpeg",
+            "width": 417,
+            "height": 697,
+            "size_kb": 17.2
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_10.jpeg",
+            "width": 450,
+            "height": 302,
+            "size_kb": 28.2
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_11.jpeg",
+            "width": 396,
+            "height": 426,
+            "size_kb": 28.5
+          }
+        ]
+      },
+      {
+        "slide_num": 6,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 6,
+        "title": "Green Computing",
+        "image": "assets/slides/lec_14/slide_06.jpg",
+        "text_snippet": "Green Computing The term green computing was coined shortly after energy star began Green computing is the environmentally responsible and",
+        "diagrams": []
+      },
+      {
+        "slide_num": 7,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 7,
+        "title": "Green Computing",
+        "image": "assets/slides/lec_14/slide_07.jpg",
+        "text_snippet": "Green Computing Toxicity \u2022There are toxic chemicals used in the manufacturing",
+        "diagrams": []
+      },
+      {
+        "slide_num": 8,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 8,
+        "title": "Reducing waste",
+        "image": "assets/slides/lec_14/slide_08.jpg",
+        "text_snippet": "Reducing waste Using computers to reduce the use of natural resources. Purchase/Disposal Responsible computer purchase and",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_14.jpeg",
+            "width": 529,
+            "height": 339,
+            "size_kb": 19.1
+          }
+        ]
+      },
+      {
+        "slide_num": 9,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 9,
+        "title": "Approaches To Green Computing",
+        "image": "assets/slides/lec_14/slide_09.jpg",
+        "text_snippet": "Approaches To Green Computing 1. Virtualization : The process running",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_15.jpeg",
+            "width": 1310,
+            "height": 659,
+            "size_kb": 62.5
+          }
+        ]
+      },
+      {
+        "slide_num": 10,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 10,
+        "title": "\u2022 Turn off computers and printers",
+        "image": "assets/slides/lec_14/slide_10.jpg",
+        "text_snippet": "\u2022 Turn off computers and printers when not in use. \u2022 Make sure computer is set to sleep when not in use.",
+        "diagrams": []
+      },
+      {
+        "slide_num": 11,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 11,
+        "title": "3. Algorithm Efficiency : The efficiency of algorithms has an",
+        "image": "assets/slides/lec_14/slide_11.jpg",
+        "text_snippet": "3. Algorithm Efficiency : The efficiency of algorithms has an impact on the amount of computer resources required for any given computing function Co2 Released per search:",
+        "diagrams": []
+      },
+      {
+        "slide_num": 12,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 12,
+        "title": "Slide 12",
+        "image": "assets/slides/lec_14/slide_12.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_17.jpeg",
+            "width": 638,
+            "height": 479,
+            "size_kb": 35.7
+          }
+        ]
+      },
+      {
+        "slide_num": 13,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 13,
+        "title": "As of July 2023, Blackle claims to have saved over 10.07 MWh of",
+        "image": "assets/slides/lec_14/slide_13.jpg",
+        "text_snippet": "As of July 2023, Blackle claims to have saved over 10.07 MWh of electrical energy.",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_18.jpeg",
+            "width": 638,
+            "height": 479,
+            "size_kb": 27.4
+          }
+        ]
+      },
+      {
+        "slide_num": 14,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 14,
+        "title": "Thick and Thin Client ?",
+        "image": "assets/slides/lec_14/slide_14.jpg",
+        "text_snippet": "Thick and Thin Client ? \u201cThin Clients are small, silent devices that communicate with a central server",
+        "diagrams": []
+      },
+      {
+        "slide_num": 15,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 15,
+        "title": "Smaller, lighter equipment that uses fewer",
+        "image": "assets/slides/lec_14/slide_15.jpg",
+        "text_snippet": "Smaller, lighter equipment that uses fewer 1. materials : plastics, precious metals, 2. energy : (kWh) : during its use and manufacture (embodied energy)",
+        "diagrams": []
+      },
+      {
+        "slide_num": 16,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 16,
+        "title": "Purchase Price of Thin V\u2019s Thick",
+        "image": "assets/slides/lec_14/slide_16.jpg",
+        "text_snippet": "Purchase Price of Thin V\u2019s Thick low spec PC costs \u00a3400 : Thin client costs \u00a3210 Assume PC life = 5yrs, thin client life = 7yrs. Energy Savings of Thin V\u2019s Thick",
+        "diagrams": []
+      },
+      {
+        "slide_num": 17,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 17,
+        "title": "Slide 17",
+        "image": "assets/slides/lec_14/slide_17.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_19.jpeg",
+            "width": 569,
+            "height": 379,
+            "size_kb": 28.6
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_20.jpeg",
+            "width": 592,
+            "height": 336,
+            "size_kb": 32.8
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_21.jpeg",
+            "width": 601,
+            "height": 390,
+            "size_kb": 35.3
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_22.jpeg",
+            "width": 638,
+            "height": 321,
+            "size_kb": 27.3
+          }
+        ]
+      },
+      {
+        "slide_num": 18,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 18,
+        "title": "How can I make my computer Green?",
+        "image": "assets/slides/lec_14/slide_18.jpg",
+        "text_snippet": "How can I make my computer Green? Develop a sustainable green computing plan. ... Recycle. ... Make environmentally sound purchase decisions. .",
+        "diagrams": []
+      },
+      {
+        "slide_num": 19,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 19,
+        "title": "Refers to",
+        "image": "assets/slides/lec_14/slide_19.jpg",
+        "text_snippet": "Refers to environmentally sustainable computing",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_23.jpeg",
+            "width": 470,
+            "height": 355,
+            "size_kb": 17.9
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_24.jpeg",
+            "width": 589,
+            "height": 327,
+            "size_kb": 18.1
+          }
+        ]
+      },
+      {
+        "slide_num": 20,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 20,
+        "title": "What is E-waste?",
+        "image": "assets/slides/lec_14/slide_20.jpg",
+        "text_snippet": "What is E-waste? Electronic Waste (e-Waste) - waste electronic/electrical goods which are not fit for their originally intended use. such as computers, cellular phones, stereos, refrigerators, air conditioners, other consumer durables, etc.",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_25.png",
+            "width": 430,
+            "height": 286,
+            "size_kb": 336.8
+          }
+        ]
+      },
+      {
+        "slide_num": 21,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 21,
+        "title": "COMPONENTS",
+        "image": "assets/slides/lec_14/slide_21.jpg",
+        "text_snippet": "COMPONENTS CONSTITUENTS \uf0d8Printed circuit boards Lead & cadmium",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_26.png",
+            "width": 1459,
+            "height": 214,
+            "size_kb": 102.4
+          }
+        ]
+      },
+      {
+        "slide_num": 22,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 22,
+        "title": "\uf0d8E-waste recycling is presently concentrated in",
+        "image": "assets/slides/lec_14/slide_22.jpg",
+        "text_snippet": "\uf0d8E-waste recycling is presently concentrated in the informal (unorganized) sector \uf0d8No organized collection system prevails \uf0d8Operations are mostly illegal",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_27.jpeg",
+            "width": 450,
+            "height": 600,
+            "size_kb": 41.8
+          }
+        ]
+      },
+      {
+        "slide_num": 23,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 23,
+        "title": "Concerns: Informal Recycling",
+        "image": "assets/slides/lec_14/slide_23.jpg",
+        "text_snippet": "Concerns: Informal Recycling \uf0d8High-risk backyard operation \uf0d8Non- efficient and Non- environmentally sound technologies",
+        "diagrams": []
+      },
+      {
+        "slide_num": 24,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 24,
+        "title": "Rotten eggs: e-waste from Europe poisons Ghana's food chain",
+        "image": "assets/slides/lec_14/slide_24.jpg",
+        "text_snippet": "Rotten eggs: e-waste from Europe poisons Ghana's food chain Toxins from old computers, fridges and other electronic goods are polluting chicken eggs [dioxins & PCB] in an area where 80,000 people live A man carries electronic waste at the Agbogbloshie dumpsite in Accra",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_29.jpeg",
+            "width": 700,
+            "height": 420,
+            "size_kb": 20.7
+          }
+        ]
+      },
+      {
+        "slide_num": 25,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 25,
+        "title": "\uf0d8E-waste is \u2018distinct\u2019 as it is an end-of-consumption waste while",
+        "image": "assets/slides/lec_14/slide_25.jpg",
+        "text_snippet": "\uf0d8E-waste is \u2018distinct\u2019 as it is an end-of-consumption waste while hazardous waste results from a distinct industrial process \uf0d8Environment Protection Act provides for separate regulations for waste with \u2018distinct\u2019 characteristics - Biomedical Wastes (M&H)",
+        "diagrams": []
+      },
+      {
+        "slide_num": 26,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 26,
+        "title": "\uf0d8Various legislations cover different aspects of e-waste",
+        "image": "assets/slides/lec_14/slide_26.jpg",
+        "text_snippet": "\uf0d8Various legislations cover different aspects of e-waste \uf0a7The hazardous waste (management and handling ) rules, 1998 amended 2008",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_30.png",
+            "width": 1562,
+            "height": 175,
+            "size_kb": 94.6
+          }
+        ]
+      },
+      {
+        "slide_num": 27,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 27,
+        "title": "\uf0d8The guidelines notified in April 2008 - basic guidance document",
+        "image": "assets/slides/lec_14/slide_27.jpg",
+        "text_snippet": "\uf0d8The guidelines notified in April 2008 - basic guidance document identifying and recognizing fundamental principles: \uf0a7Producer Responsibility \uf0a7RoHS (Restriction on Hazardous Substances)",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_31.png",
+            "width": 1325,
+            "height": 172,
+            "size_kb": 61.7
+          }
+        ]
+      },
+      {
+        "slide_num": 28,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 28,
+        "title": "Slide 28",
+        "image": "assets/slides/lec_14/slide_28.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_32.jpeg",
+            "width": 2011,
+            "height": 443,
+            "size_kb": 51.6
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_33.jpeg",
+            "width": 2011,
+            "height": 445,
+            "size_kb": 44.2
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_34.jpeg",
+            "width": 2011,
+            "height": 445,
+            "size_kb": 35.3
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_35.jpeg",
+            "width": 2011,
+            "height": 445,
+            "size_kb": 60.2
+          }
+        ]
+      },
+      {
+        "slide_num": 29,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 29,
+        "title": "Sustainable concept computers for green computing in the future",
+        "image": "assets/slides/lec_14/slide_29.jpg",
+        "text_snippet": "Sustainable concept computers for green computing in the future Its skin composed of biodegradable polymers made",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_36.jpeg",
+            "width": 600,
+            "height": 777,
+            "size_kb": 22.6
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_37.jpeg",
+            "width": 600,
+            "height": 440,
+            "size_kb": 19.6
+          }
+        ]
+      },
+      {
+        "slide_num": 30,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 30,
+        "title": "3. Solar laptop concept by Nikola Knezevic:",
+        "image": "assets/slides/lec_14/slide_30.jpg",
+        "text_snippet": "3. Solar laptop concept by Nikola Knezevic: Laptop has attached to its top half a solar panel. This can be folded out to catch sunlight irrespective of whether",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_38.jpeg",
+            "width": 600,
+            "height": 400,
+            "size_kb": 22.4
+          }
+        ]
+      },
+      {
+        "slide_num": 31,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 31,
+        "title": "5. Igglu modular PC concept makes upgrading simple and clean",
+        "image": "assets/slides/lec_14/slide_31.jpg",
+        "text_snippet": "5. Igglu modular PC concept makes upgrading simple and clean Designed from standard reusable and recyclable products",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_40.jpeg",
+            "width": 600,
+            "height": 399,
+            "size_kb": 19.5
+          }
+        ]
+      },
+      {
+        "slide_num": 32,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 32,
+        "title": "7. Ecofriendly desktop computer that never",
+        "image": "assets/slides/lec_14/slide_32.jpg",
+        "text_snippet": "7. Ecofriendly desktop computer that never becomes obsolete has no screws within its inside which therefore minimizes waste and saves space. With",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_41.jpeg",
+            "width": 600,
+            "height": 421,
+            "size_kb": 21.6
+          },
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_42.jpeg",
+            "width": 570,
+            "height": 548,
+            "size_kb": 17.6
+          }
+        ]
+      },
+      {
+        "slide_num": 33,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 33,
+        "title": "9. Recyclable paper laptop for green computing",
+        "image": "assets/slides/lec_14/slide_33.jpg",
+        "text_snippet": "9. Recyclable paper laptop for green computing Made from pulp",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_43.jpeg",
+            "width": 562,
+            "height": 398,
+            "size_kb": 21.3
+          }
+        ]
+      },
+      {
+        "slide_num": 34,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 34,
+        "title": "11. Power Flower PC concept for an eco friendly geek!",
+        "image": "assets/slides/lec_14/slide_34.jpg",
+        "text_snippet": "11. Power Flower PC concept for an eco friendly geek! Getting its feed from the hydrogen fuel cell, the components extend upward, like daises growing towards the sky. The clean, pure, white base of the CPU and fuel cell power supply screws",
+        "diagrams": []
+      },
+      {
+        "slide_num": 35,
+        "source_file": "Class-14-Green computing.pdf",
+        "page_in_file": 35,
+        "title": "12. Solar-powered clamshell PC might urbanize rural India",
+        "image": "assets/slides/lec_14/slide_35.jpg",
+        "text_snippet": "12. Solar-powered clamshell PC might urbanize rural India Designed for rural India, this mini PC has a small LCD screen that can roll out of the main body, this solar powered mini PC has facilities for providing online help to the farmers.",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_14/diag_44.jpeg",
+            "width": 495,
+            "height": 427,
+            "size_kb": 23.0
+          }
+        ]
+      }
+    ],
+    "videos": []
+  },
+  {
+    "id": "15",
+    "title": "Green Engineering: Principles, Frameworks & Industrial Ecology",
+    "slug": "15_green_engineering_industrial_ecology",
+    "short_title": "Green Engineering",
+    "description": "Paul Anastas & Julie Zimmerman's 12 Principles of Green Engineering: inherently non-hazardous design, life cycle assessment (LCA), atom economy, waste minimization, renewable feedstocks, industrial symbiosis (Kalundborg model), and cradle-to-cradle material circularity.",
+    "files": [
+      "Class-15-Green engineering.pdf"
+    ],
+    "icon": "\u2699\ufe0f",
+    "difficulty": "Intermediate",
+    "duration": "45 mins",
+    "slide_count": 28,
+    "diagram_count": 11,
+    "slides": [
+      {
+        "slide_num": 1,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 1,
+        "title": "2nd November 2026",
+        "image": "assets/slides/lec_15/slide_01.jpg",
+        "text_snippet": "2nd November 2026 Green Engineering: Principles and Practice",
+        "diagrams": []
+      },
+      {
+        "slide_num": 2,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 2,
+        "title": "Slide 2",
+        "image": "assets/slides/lec_15/slide_02.jpg",
+        "text_snippet": "",
+        "diagrams": []
+      },
+      {
+        "slide_num": 3,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 3,
+        "title": "Water pollution",
+        "image": "assets/slides/lec_15/slide_03.jpg",
+        "text_snippet": "Water pollution The three processes that cause water pollution are the growing of cotton, dyeing and finishing the material and texturizing and finishing the product. The use of chemical dyes in the production of \u2018distressed\u2019 denim is intensive.",
+        "diagrams": []
+      },
+      {
+        "slide_num": 4,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 4,
+        "title": "\u2022 According to EPA: \u2016Green Engineering\u2016 embraces the",
+        "image": "assets/slides/lec_15/slide_04.jpg",
+        "text_snippet": "\u2022 According to EPA: \u2016Green Engineering\u2016 embraces the concept that decisions to protect human health and the environment can have the greatest impact and cost effectiveness when applied early to the design and",
+        "diagrams": []
+      },
+      {
+        "slide_num": 5,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 5,
+        "title": "Green Engineering is the process and design of products",
+        "image": "assets/slides/lec_15/slide_05.jpg",
+        "text_snippet": "Green Engineering is the process and design of products aiming to conserve natural resources leading to sustainability goals. Also, green engineering aims to reduce the impact of",
+        "diagrams": []
+      },
+      {
+        "slide_num": 6,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 6,
+        "title": "12 Principles of Green Engineering",
+        "image": "assets/slides/lec_15/slide_06.jpg",
+        "text_snippet": "12 Principles of Green Engineering Inherent rather than circumstantial Prevention rather than treatment Design for separation",
+        "diagrams": []
+      },
+      {
+        "slide_num": 7,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 7,
+        "title": "\u2022 Inherent rather than circumstantial",
+        "image": "assets/slides/lec_15/slide_07.jpg",
+        "text_snippet": "\u2022 Inherent rather than circumstantial \u2022 \u201cdesigners should evaluate the inherent nature of the selected material and energy inputs to ensure that they are as benign as possible as a first step toward a",
+        "diagrams": []
+      },
+      {
+        "slide_num": 8,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 8,
+        "title": "\u2022 Tre\u0005e\u0006d\bus $$ spe\u0006t \b\u0006 waste treat\u0005e\u0006t\u0011",
+        "image": "assets/slides/lec_15/slide_08.jpg",
+        "text_snippet": "\u2022 Tre\u0005e\u0006d\bus $$ spe\u0006t \b\u0006 waste treat\u0005e\u0006t\u0011 disp\bsa\u0013 a\u0006d re\u0005ediati\b\u0006\u0014 \u2022 Prevention rather than treatment \u201cit is better to prevent waste than to treat or clean up waste after",
+        "diagrams": []
+      },
+      {
+        "slide_num": 9,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 9,
+        "title": "\u2022 Design strategy for separation and purification.;",
+        "image": "assets/slides/lec_15/slide_09.jpg",
+        "text_snippet": "\u2022 Design strategy for separation and purification.; \u201cmany traditional methods for separation require large amounts of hazardous solvents, whereas others consume large quantities of energy as heat or pressure.",
+        "diagrams": []
+      },
+      {
+        "slide_num": 10,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 10,
+        "title": "\u2022Maximize mass, energy, space and time efficiency.",
+        "image": "assets/slides/lec_15/slide_10.jpg",
+        "text_snippet": "\u2022Maximize mass, energy, space and time efficiency. \u201cproducts, processes, and systems should be designed to maximize mass, energy, space and time efficiency\u201d Principle 4",
+        "diagrams": []
+      },
+      {
+        "slide_num": 11,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 11,
+        "title": "\u2022 Ouput-pulled rather than input-pushed",
+        "image": "assets/slides/lec_15/slide_11.jpg",
+        "text_snippet": "\u2022 Ouput-pulled rather than input-pushed \u201cMore energy or material (\u201cinput-pushed\u201d) can increase output, but the same output can be achieved by new designing where chemical processes are \u201cpulled\u201d (e.g.",
+        "diagrams": []
+      },
+      {
+        "slide_num": 12,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 12,
+        "title": "\u2022Conserve complexity",
+        "image": "assets/slides/lec_15/slide_12.jpg",
+        "text_snippet": "\u2022Conserve complexity \u201cProducts with high complexity should correspond to reuse, products with minimal complexity are favoured for value-conserving recycling or beneficial disposition.\u201d",
+        "diagrams": []
+      },
+      {
+        "slide_num": 13,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 13,
+        "title": "\u2022 IBM PC\u2019s used to be made with 15 different types of",
+        "image": "assets/slides/lec_15/slide_13.jpg",
+        "text_snippet": "\u2022 IBM PC\u2019s used to be made with 15 different types of screws (unnecessary  complexity) \u2022 Replaced with 1 type of screw \u2022 Easier to disassemble & recycle",
+        "diagrams": []
+      },
+      {
+        "slide_num": 14,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 14,
+        "title": "\u2022 Durability rather than immortality;",
+        "image": "assets/slides/lec_15/slide_14.jpg",
+        "text_snippet": "\u2022 Durability rather than immortality; \u201cIt is therefore necessary to design products with a targeted lifetime to avoid immortality of undesirable materials in the environment.",
+        "diagrams": []
+      },
+      {
+        "slide_num": 15,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 15,
+        "title": "\u2022Meet Need, Not Excess",
+        "image": "assets/slides/lec_15/slide_15.jpg",
+        "text_snippet": "\u2022Meet Need, Not Excess \u201cdesign for unnecessary capacity or capability (e.g., \u201cone size fits all\u201d) solutions should be considered a design flaw\u201d",
+        "diagrams": []
+      },
+      {
+        "slide_num": 16,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 16,
+        "title": "\u2022 Minimize material diversity",
+        "image": "assets/slides/lec_15/slide_16.jpg",
+        "text_snippet": "\u2022 Minimize material diversity \u201coptions for final disposition are increased through upfront designs that minimize material diversity yet accomplish the needed functions\u201d",
+        "diagrams": []
+      },
+      {
+        "slide_num": 17,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 17,
+        "title": "\u2022Integrate Material and Energy Flows",
+        "image": "assets/slides/lec_15/slide_17.jpg",
+        "text_snippet": "\u2022Integrate Material and Energy Flows \u201cdesign of products, processes, and systems must include integration and interconnectivity with available energy and materials flows\u201d",
+        "diagrams": []
+      },
+      {
+        "slide_num": 18,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 18,
+        "title": "\u2022 Design for commercial afterlife",
+        "image": "assets/slides/lec_15/slide_18.jpg",
+        "text_snippet": "\u2022 Design for commercial afterlife \u201cTo reduce waste, components that remain functional and valuable can be recovered for reuse and/or reconfiguration\u201d. Various other big industrial companies have introduced green engineering design",
+        "diagrams": []
+      },
+      {
+        "slide_num": 19,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 19,
+        "title": "\u2022Renewable rather than depleting",
+        "image": "assets/slides/lec_15/slide_19.jpg",
+        "text_snippet": "\u2022Renewable rather than depleting \u201cMaterial and energy inputs should be renewable rather than depleting\u201d \u2022 Don\u2019t want to deplete our natural resources",
+        "diagrams": []
+      },
+      {
+        "slide_num": 20,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 20,
+        "title": "GE: Defining the Principles",
+        "image": "assets/slides/lec_15/slide_20.jpg",
+        "text_snippet": "GE: Defining the Principles Engineer processes and products holistically, use systems analysis, and integrate environmental impact assessment tools Conserve and improve natural ecosystems while protecting human",
+        "diagrams": []
+      },
+      {
+        "slide_num": 21,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 21,
+        "title": "Green Building / Architecture",
+        "image": "assets/slides/lec_15/slide_21.jpg",
+        "text_snippet": "Green Building / Architecture Green building is the practice of creating structures and using processes that are environmentally responsible and resource- efficient throughout a building\u2019s life-cycle from siting to design,",
+        "diagrams": []
+      },
+      {
+        "slide_num": 22,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 22,
+        "title": "Process of systematic identification, quantification, recording,",
+        "image": "assets/slides/lec_15/slide_22.jpg",
+        "text_snippet": "Process of systematic identification, quantification, recording, reporting and analysis of components of environmental diversity of various establishments. It aims to analyze environmental practices within and outside of the concerned sites, which will have an",
+        "diagrams": []
+      },
+      {
+        "slide_num": 23,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 23,
+        "title": "https://betterbuildingssolutioncenter.energy.gov/sites/default...",
+        "image": "assets/slides/lec_15/slide_23.jpg",
+        "text_snippet": "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/Green_Banks_FINAL.pdf",
+        "diagrams": []
+      },
+      {
+        "slide_num": 24,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 24,
+        "title": "A tradable asset which proves that electricity has been generated",
+        "image": "assets/slides/lec_15/slide_24.jpg",
+        "text_snippet": "A tradable asset which proves that electricity has been generated by a renewable (green) energy source. . Green Certificate Synchronizing the electricity produced from renewable resources,",
+        "diagrams": []
+      },
+      {
+        "slide_num": 25,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 25,
+        "title": "Slide 25",
+        "image": "assets/slides/lec_15/slide_25.jpg",
+        "text_snippet": "",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_15/diag_06.jpeg",
+            "width": 1514,
+            "height": 606,
+            "size_kb": 64.0
+          },
+          {
+            "rel_path": "assets/diagrams/lec_15/diag_07.jpeg",
+            "width": 1514,
+            "height": 606,
+            "size_kb": 76.1
+          },
+          {
+            "rel_path": "assets/diagrams/lec_15/diag_08.jpeg",
+            "width": 1514,
+            "height": 606,
+            "size_kb": 57.3
+          }
+        ]
+      },
+      {
+        "slide_num": 26,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 26,
+        "title": "One Central Park (Sydney, Australia)",
+        "image": "assets/slides/lec_15/slide_26.jpg",
+        "text_snippet": "One Central Park (Sydney, Australia) https://edition.cnn.com/style/article/green-buildings-world-sustainable-design/index.html",
+        "diagrams": []
+      },
+      {
+        "slide_num": 27,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 27,
+        "title": "The twin towers of the World Trade Center in Manama, capital c...",
+        "image": "assets/slides/lec_15/slide_27.jpg",
+        "text_snippet": "The twin towers of the World Trade Center in Manama, capital city of Bahrain, use the wind to full advantage https://edition.cnn.com/style/article/green-buildings-world-sustainable-design/index.html",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_15/diag_10.jpeg",
+            "width": 727,
+            "height": 501,
+            "size_kb": 32.3
+          }
+        ]
+      },
+      {
+        "slide_num": 28,
+        "source_file": "Class-15-Green engineering.pdf",
+        "page_in_file": 28,
+        "title": "Suzlon One Earth was built using only recycled and nontoxic ma...",
+        "image": "assets/slides/lec_15/slide_28.jpg",
+        "text_snippet": "Suzlon One Earth was built using only recycled and nontoxic materials. The design lets in fresh air and natural light to all parts of the campus https://edition.cnn.com/style/article/green-buildings-world-sustainable-design/index.html",
+        "diagrams": [
+          {
+            "rel_path": "assets/diagrams/lec_15/diag_11.jpeg",
+            "width": 727,
+            "height": 516,
+            "size_kb": 46.4
+          }
+        ]
+      }
+    ],
+    "videos": []
   }
 ]

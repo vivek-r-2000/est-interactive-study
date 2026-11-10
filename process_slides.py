@@ -138,6 +138,39 @@ LECTURE_MAPPING = [
         "icon": "📋",
         "difficulty": "Advanced",
         "duration": "50 mins"
+    },
+    {
+        "id": "13",
+        "title": "Environmental Movements: Grassroots Ecology & Forest Conservation",
+        "slug": "13_environmental_movements_grassroots_ecology",
+        "short_title": "Environmental Movements",
+        "description": "Bishnoi movement (sacred Khejri trees), Chipko movement (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt), Appiko movement in Western Ghats, Silent Valley agitation, Narmada Bachao Andolan (Medha Patkar), and legal-ecological citizen activism.",
+        "files": ["Class-13-Environmental Movements.pdf"],
+        "icon": "🌳",
+        "difficulty": "Beginner",
+        "duration": "35 mins"
+    },
+    {
+        "id": "14",
+        "title": "Green Computing, IT Environmental Impacts & Sustainable Electronics",
+        "slug": "14_green_computing_sustainable_ict",
+        "short_title": "Green Computing",
+        "description": "Life cycle of IT hardware: conflict mineral extraction (coltan, neodymium), manufacturing energy, Moore's Law vs. Wirth's Law, embodied carbon, data center energy efficiency, Power Usage Effectiveness (PUE), virtualization, dynamic voltage scaling (DVFS), and global e-waste management (Basel Convention).",
+        "files": ["Class-14-Green computing.pdf"],
+        "icon": "💻",
+        "difficulty": "Intermediate",
+        "duration": "45 mins"
+    },
+    {
+        "id": "15",
+        "title": "Green Engineering: Principles, Frameworks & Industrial Ecology",
+        "slug": "15_green_engineering_industrial_ecology",
+        "short_title": "Green Engineering",
+        "description": "Paul Anastas & Julie Zimmerman's 12 Principles of Green Engineering: inherently non-hazardous design, life cycle assessment (LCA), atom economy, waste minimization, renewable feedstocks, industrial symbiosis (Kalundborg model), and cradle-to-cradle material circularity.",
+        "files": ["Class-15-Green engineering.pdf"],
+        "icon": "⚙️",
+        "difficulty": "Intermediate",
+        "duration": "45 mins"
     }
 ]
 

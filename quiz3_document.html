@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 3 Master Preparation Pack — ES1.101</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+    *, *:before, *:after { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.55;
+      font-size: 10pt;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3, h4 { color: #064e3b; font-weight: 800; margin-top: 0; }
+    h1 { font-size: 20pt; line-height: 1.2; border-bottom: 3px solid #059669; padding-bottom: 6px; margin-bottom: 12px; }
+    h2 { font-size: 14pt; border-bottom: 1.5px solid #10b981; padding-bottom: 4px; margin-top: 22px; margin-bottom: 10px; page-break-after: avoid; }
+    h3 { font-size: 11pt; color: #0f766e; margin-top: 14px; margin-bottom: 6px; page-break-after: avoid; }
+    p { margin-top: 0; margin-bottom: 8px; text-align: justify; }
+    
+    .avoid-break { page-break-inside: avoid; margin-bottom: 14px; }
+    .page-break { page-break-before: always; }
+    
+    /* Callout & Card Boxes */
+    .card-box {
+      border: 1px solid #cbd5e1;
+      border-left: 4px solid #059669;
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+    .question-title {
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .meta-tag {
+      display: inline-block;
+      font-size: 8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #e6fffa;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      border-radius: 4px;
+      padding: 1px 6px;
+      margin-bottom: 6px;
+    }
+    .source-tag {
+      font-size: 8pt;
+      font-family: monospace;
+      color: #64748b;
+      margin-left: 6px;
+    }
+    .answer-box {
+      background: #ffffff;
+      border: 1px dashed #94a3b8;
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin-top: 6px;
+      font-size: 9.5pt;
+      color: #334155;
+    }
+    .answer-box strong { color: #065f46; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      margin-bottom: 14px;
+      font-size: 9pt;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: #064e3b;
+      font-weight: 700;
+    }
+    tr:nth-child(even) td { background: #f8fafc; }
+
+    .header-banner {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+      color: #ffffff;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 18px;
+    }
+    .header-banner h1 {
+      color: #ffffff;
+      border-bottom: 2px solid #34d399;
+      margin-bottom: 6px;
+    }
+    .header-banner p { color: #d1fae5; font-size: 9.5pt; margin-bottom: 2px; }
+  </style>
+</head>
+<body>
+
+  <!-- COVER / HEADER -->
+  <div class="header-banner">
+    <h1>Quiz 3 Master Preparation Pack (Lectures 8 to 11)</h1>
+    <p><strong>Course:</strong> Environmental Science and Technology (ES1.101) • <strong>Institute:</strong> IIIT Hyderabad</p>
+    <p><strong>Syllabus Scope:</strong> Lecture 8 (Tipping Points & Planetary Risks) • Lecture 9 (Carbon Budget & Terrestrial Sinks) • Lecture 10 (Kyoto Protocol, CERs & Ocean Sinks) • Lecture 11 (Negative Emission Technologies, DAC & Abatement)</p>
+    <p><strong>Contents:</strong> Complete Past Papers Question Bank (2018–2024), 2 Timed Mock Exams with Answer Keys, and Active-Recall Checklist.</p>
+  </div>
+
+  <!-- QUICK REFERENCE TABLE -->
+  <div class="avoid-break">
+    <h2>🎯 High-Frequency Quantitative Constants Quick-Check</h2>
+    <p>These exact numerical values and constants are repeatedly tested across past IIIT-H exam papers:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Metric / Concept</th>
+          <th>Exact Value Expected</th>
+          <th>Syllabus Reference</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Wood Biomass to Elemental Carbon</strong></td>
+          <td><strong>50% (0.5 kg C per 1 kg dry wood)</strong>. 2 tonnes biomass = 1 tonne C.</td>
+          <td>Lecture 09 (Forest Stocks)</td>
+        </tr>
+        <tr>
+          <td><strong>Soil vs. Terrestrial Vegetation Carbon</strong></td>
+          <td><strong>3 to 4 times</strong> (~1,500–2,400 Gt C in soils vs ~500 Gt C in vegetation).</td>
+          <td>Lecture 09 (Soil Reservoirs)</td>
+        </tr>
+        <tr>
+          <td><strong>Tundra & Boreal Soil Carbon Share</strong></td>
+          <td><strong>~33% to 40%</strong> of global soil carbon pool.</td>
+          <td>Lecture 09 (Permafrost Sinks)</td>
+        </tr>
+        <tr>
+          <td><strong>Annual Young Forest CO2 Sequestration</strong></td>
+          <td><strong>2 to 5 tonnes of $CO_2$ per hectare per year</strong>.</td>
+          <td>Lecture 09 (Afforestation)</td>
+        </tr>
+        <tr>
+          <td><strong>1 CER (Certified Emission Reduction)</strong></td>
+          <td><strong>1 metric tonne of $CO_2$-equivalent</strong> avoided or sequestered.</td>
+          <td>Lecture 10 (Kyoto Mechanisms)</td>
+        </tr>
+        <tr>
+          <td><strong>CDM Ineligible Project Type</strong></td>
+          <td><strong>Nuclear energy/power projects</strong> (Marrakech Accords ban).</td>
+          <td>Lecture 10 (CDM Rules)</td>
+        </tr>
+        <tr>
+          <td><strong>Global Warming Potential of $SF_6$</strong></td>
+          <td><strong>23,900</strong> (highest industrial gas GWP).</td>
+          <td>Lecture 10 (Greenhouse Gases)</td>
+        </tr>
+        <tr>
+          <td><strong>Global Warming Potential of $N_2O$</strong></td>
+          <td><strong>265 to 310</strong> (AR5: 265; AR4: 310).</td>
+          <td>Lecture 10 (Greenhouse Gases)</td>
+        </tr>
+        <tr>
+          <td><strong>Global Warming Potential of $CH_4$</strong></td>
+          <td><strong>21 to 28</strong> (SAR: 21; AR5: 28).</td>
+          <td>Lecture 10 (Greenhouse Gases)</td>
+        </tr>
+        <tr>
+          <td><strong>Hypercane Formation Ocean Temp</strong></td>
+          <td><strong>Approximately 50 °C</strong> (winds $>800	ext{ km/h}$; penetrates stratosphere).</td>
+          <td>Lecture 08 (Planetary Risks)</td>
+        </tr>
+        <tr>
+          <td><strong>Doomsday Clock Current Setting</strong></td>
+          <td><strong>90 seconds to midnight</strong> (driven by nuclear risk & climate change).</td>
+          <td>Lecture 08 (Existential Risks)</td>
+        </tr>
+        <tr>
+          <td><strong>Biochar Pyrolysis Sequestration Potential</strong></td>
+          <td><strong>Up to 4.8 Gt $CO_2$/year</strong> (soil half-life $>1000	ext{ years}$).</td>
+          <td>Lecture 11 (NETs)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PART I -->
+  <div class="page-break"></div>
+  <h1>Part I: Complete Extracted Past Papers Question Bank</h1>
+  <p>Extracted from 14 official past examination papers (2018–2024), organized strictly by lecture with complete model solutions.</p>
+
+  <!-- LECTURE 8 -->
+  <h2>Lecture 8: Tipping Points, Catastrophic Risks & Feedback Anomalies</h2>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EVS End Sem 2022</span>
+    <div class="question-title">1. Hypercane Sea Surface Temperature Threshold</div>
+    <p><em>"Hypercane is a hypothetical class of extreme tropical cyclone that could form if ocean temperatures reach approximately _____ °C."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>50 °C</strong>. A hypercane would generate wind speeds exceeding $800	ext{ km/h}$ and central pressures below $650	ext{ hPa}$.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EST Mid 1 2024</span>
+    <div class="question-title">2. Primary Factors Influencing the Doomsday Clock</div>
+    <p><em>"______ and ______ are two major factors influencing the Doomsday Clock."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>Nuclear risk / nuclear weapons proliferation</strong> and <strong>Climate change</strong> (along with disruptive technologies). Maintained at 90 seconds to midnight by the Bulletin of the Atomic Scientists.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Mechanisms</span><span class="source-tag">EST Mid 1 2024, EVS Mid 2 2018</span>
+    <div class="question-title">3. Why do volcanic eruptions become more frequent when glaciers melt?</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> Continental ice sheets exert immense weight compressing the Earth's lithosphere. As glaciers melt rapidly, this mass is removed (isostatic rebound). The resulting lithospheric depressurization lowers the melting point of mantle rock and allows trapped magma chambers to expand and gas bubbles to nucleate, sharply accelerating explosive volcanic eruption frequencies.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Mechanisms</span><span class="source-tag">EVS End Sem 2023, EST Mid 1 2024</span>
+    <div class="question-title">4. How do Hypercanes differ from present-day hurricanes, and how do they impact Earth's Ozone layer?</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>Difference:</strong> Normal hurricanes require water $\ge 26.5^\circ	ext{C}$, reach $\sim 300	ext{ km/h}$, and are confined to the troposphere ($\sim 15	ext{ km}$). Hypercanes require ocean waters reaching $\sim 50^\circ	ext{C}$, reach extreme winds $>800	ext{ km/h}$, and have vertical storm columns penetrating $40	ext{–}50	ext{ km}$ into the stratosphere.</li>
+        <li><strong>Ozone Impact:</strong> The column lofts colossal amounts of water vapor and sea-salt aerosol chlorine radicals directly into the stratosphere, which catalytically break down stratospheric ozone ($O_3$), destroying Earth's UV-protective layer.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Definitions</span><span class="source-tag">EST Mid 1 2024, EVS Mid 2019</span>
+    <div class="question-title">5. Define: (a) Tipping Point, (b) Gray Goo, (c) Global Terrestrial Stilling, (d) Nuclear Winter</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>Tipping Point:</strong> A critical threshold where a tiny additional perturbation triggers a self-reinforcing, non-linear, and irreversible regime shift in the Earth system.</li>
+        <li><strong>Gray Goo:</strong> An existential disaster in molecular nanotechnology where synthetic self-replicating nanobots multiply out of control, consuming all planetary carbon into copies of themselves.</li>
+        <li><strong>Global Terrestrial Stilling:</strong> A multi-decadal decrease in near-surface wind speeds (~0.3 m/s drop per decade) caused by increased land surface roughness (urbanization, afforestation) and reduced equator-to-pole temperature gradients.</li>
+        <li><strong>Nuclear Winter:</strong> Global cooling caused by firestorms after nuclear detonations; black carbon smoke is lofted into the stratosphere, blocking sunlight for months, freezing continents, and halting photosynthesis.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Mechanisms</span><span class="source-tag">EVS End Sem 2023</span>
+    <div class="question-title">6. Why is melting of Arctic summer ice considered the single greatest planetary threat?</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> Melting white sea ice (albedo 0.6–0.85) exposes dark ocean water (albedo 0.06), absorbing $>90\%$ of solar radiation. This ice-albedo positive feedback causes polar amplification, disrupting the polar jet stream, destabilizing Greenland glaciers, and triggering subsea permafrost thaw that risks venting massive subterranean methane hydrates.
+    </div>
+  </div>
+
+  <!-- LECTURE 9 -->
+  <div class="page-break"></div>
+  <h2>Lecture 9: Carbon Budget Partitioning, Forests & Soil Sequestration</h2>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EVS Quiz 3 2020, Mid 2 2018, End 2019, End 2022</span>
+    <div class="question-title">1. Elemental Carbon Content of Tree Biomass</div>
+    <p><em>"One kilogram of dry wood contains _____ kg of carbon" / "If the dry biomass of a tree is 2 tonnes, it contains _____ tonne of carbon."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>0.5 kg</strong> (or <strong>50%</strong>). A 2-tonne dry tree holds exactly <strong>1 tonne</strong> of carbon.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EVS Quiz 3 2020, Mid 2 2018, End 2019</span>
+    <div class="question-title">2. Carbon Saturation in Climax Mature Forests</div>
+    <p><em>"In mature forests, all gross primary productivity is either used up in _____ or returned to soil as _____ with no net addition to standing biomass."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>Plant / autotrophic respiration</strong>; <strong>litterfall / dead organic debris</strong>. In mature forests, photosynthetic gains equal plant respiration plus heterotrophic litter decomposition ($GPP pprox R_{	ext{auto}} + R_{	ext{hetero}}$), reaching carbon saturation.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EVS Quiz 3 2020, Mid 2 2018</span>
+    <div class="question-title">3. Soil vs. Terrestrial Vegetation Carbon Reservoir Ratio</div>
+    <p><em>"Soils store about _____ times as much carbon as does living terrestrial vegetation."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>3 times</strong> (approx. 1,500–2,400 Gt C in soil vs. ~500 Gt C in living vegetation).
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Core Concepts</span><span class="source-tag">EVS Quiz 3 2020, End Sem 2019, Quiz 4 2020</span>
+    <div class="question-title">4. Differentiate between Afforestation and Reforestation</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>Afforestation:</strong> Planting trees on land that historically has <em>not</em> contained forest cover for at least 50 years under UNFCCC rules (e.g. barren lands, degraded drylands).</li>
+        <li><strong>Reforestation:</strong> Re-establishing trees on land that historically supported forests but was recently converted or cleared through deforestation, logging, or fire.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Applied Ecology</span><span class="source-tag">EVS Quiz 3 2020, End Sem 2019</span>
+    <div class="question-title">5. Why is Agroforestry an attractive option for carbon mitigation?</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ol>
+        <li><strong>Deep Subsoil Storage:</strong> Tree root networks deposit carbon into deep subsoil horizons resistant to oxidation and tilling disturbance.</li>
+        <li><strong>Food Security Synergy:</strong> Combines trees with crops/livestock without removing fertile agricultural land from food production.</li>
+        <li><strong>Fertilizer & $N_2O$ Reduction:</strong> Leguminous trees fix atmospheric nitrogen, enhancing soil fertility while lowering synthetic nitrogen fertilizer requirements.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Case Studies</span><span class="source-tag">EVS Quiz 3 2020, End Sem 2019</span>
+    <div class="question-title">6. Describe any one International Carbon Sequestration Project</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>INFAPRO Project (Sabah, Malaysia):</strong> Partnership between Innoprise Corp and the Dutch FACE Foundation. Rehabilitated 25,000 hectares of logged, degraded Dipterocarp rainforest through enrichment planting with native wildings, sequestering millions of tonnes of carbon over a 60-year concession while restoring endangered wildlife habitats.</li>
+        <li><em>(Alternative)</em> <strong>Plan Vivo / Scolel'te Project (Chiapas, Mexico):</strong> Community agroforestry initiative where Mayan farmers manage native timber (cedar, mahogany) and shade-grown coffee, selling verified carbon credits to support rural livelihoods.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LECTURE 10 -->
+  <div class="page-break"></div>
+  <h2>Lecture 10: Kyoto Architecture, CERs, Ocean Acidification & Geoengineering</h2>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EVS Quiz 3 2020, Mid 2 2018, End 2022</span>
+    <div class="question-title">1. Projects Explicitly Ineligible under CDM</div>
+    <p><em>"_____ projects are not eligible under CDM."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>Nuclear</strong> (or Nuclear energy/power projects). Explicitly excluded under the Marrakech Accords due to proliferation hazards, safety, and nuclear waste storage concerns.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Comparative Analysis</span><span class="source-tag">EVS Quiz 3 2020, Mid 2 2018, End 2023</span>
+    <div class="question-title">2. Differentiate between Annex I and Annex II Countries</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>Annex I:</strong> Industrialized OECD countries plus Economies in Transition (EITs like Russia and Eastern Europe) that committed to binding emission reduction caps under Kyoto.</li>
+        <li><strong>Annex II:</strong> A subset of Annex I (OECD members only, excluding EITs) legally mandated to provide financial resources and technology transfer to Non-Annex I developing nations.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Flexible Mechanisms</span><span class="source-tag">EVS End Sem 2023, Mid 2 2018, End 2022</span>
+    <div class="question-title">3. Explain the Market-Based Flexible Mechanisms under the Kyoto Protocol</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ol>
+        <li><strong>Clean Development Mechanism (CDM):</strong> Annex I countries invest in green emission-reduction projects in Non-Annex I developing nations, generating <strong>Certified Emission Reductions (CERs)</strong> ($1	ext{ CER} = 1	ext{ t } CO_2	ext{e}$).</li>
+        <li><strong>Joint Implementation (JI):</strong> Annex I countries invest in emission-reduction projects in other Annex I countries (mainly EITs), earning <strong>Emission Reduction Units (ERUs)</strong>.</li>
+        <li><strong>International Emissions Trading (IET):</strong> Annex I nations trade assigned surplus allowance units (AAUs) directly among themselves.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Marine Chemistry</span><span class="source-tag">EVS Quiz 3 2020, End Sem 2023</span>
+    <div class="question-title">4. Ocean Acidification & Logarithmic Sensitivity</div>
+    <p><em>"What are the effects of ocean acidification, and why be concerned with a small change in ocean pH?"</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> Dissolved $CO_2$ produces carbonic acid ($CO_2 + H_2O ightleftharpoons H_2CO_3 ightleftharpoons H^+ + HCO_3^-$). Surplus $H^+$ reacts with carbonate: $H^+ + CO_3^{2-} ightleftharpoons HCO_3^-$.
+      <br/>Because pH is a logarithmic scale ($-\log_{10}[H^+]$), a 0.1 unit drop represents a <strong>~30% increase in $[H^+]$</strong>. Consuming carbonate drops the saturation state ($\Omega < 1$) of aragonite and calcite, dissolving shells of corals, pteropods, and mollusks.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Geoengineering Hazards</span><span class="source-tag">EVS Mid 2 2018, End 2019, End 2023</span>
+    <div class="question-title">5. John Martin's Ocean Iron Hypothesis & Ecological Hazards of Ocean Fertilization (Sulu Sea)</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>Iron Hypothesis:</strong> Iron is the limiting micronutrient in High-Nutrient Low-Chlorophyll (HNLC) oceans. Seeding iron triggers diatom blooms that sequester carbon to deep sediments (<em>"Give me half a tanker of iron, and I'll give you an ice age"</em>).</li>
+        <li><strong>Ecological Hazards (Sulu Sea):</strong> Stimulates toxic diatoms (<em>Pseudo-nitzschia</em>) that produce lethal <strong>domoic acid</strong> (amnesic shellfish poisoning); sinking biomass decomposition creates deep-water anoxia; anoxic decay emits potent GHGs ($N_2O$ and $CH_4$).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Cleantech Materials</span><span class="source-tag">EVS End 2023, End 2019, Mid 2 2018</span>
+    <div class="question-title">6. Difference between Portland Cement and Novacem Cement</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ul>
+        <li><strong>Portland Cement:</strong> Made from limestone ($CaCO_3$) calcined at $1,450^\circ	ext{C}$; releases decarbonation and fuel emissions of $0.8	ext{–}1.0	ext{ t } CO_2$ per ton cement produced.</li>
+        <li><strong>Novacem Cement:</strong> Uses magnesium silicates calcined at $650^\circ	ext{C}$. Absorbs $CO_2$ during curing ($MgO + CO_2 	o MgCO_3$), sequestering $0.6	ext{ t } CO_2$ per ton produced (net carbon negative).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LECTURE 11 -->
+  <div class="page-break"></div>
+  <h2>Lecture 11: Negative Emission Technologies, DAC & Cleantech Solutions</h2>
+
+  <div class="card-box">
+    <span class="meta-tag">Core Concepts</span><span class="source-tag">EVS End Sem 2022, End Sem 2023</span>
+    <div class="question-title">1. Blue Carbon Habitat Restoration & 3 Key Advantages</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> Blue carbon is carbon stored by coastal marine ecosystems (mangroves, tidal salt marshes, seagrass meadows).
+      <br/><strong>Three Key Advantages:</strong>
+      <ol>
+        <li><strong>No Saturation:</strong> Sequestration rate is 3 to 5 times (and up to 40x per unit area) higher than terrestrial forests; sediments remain anoxic and saline, locking carbon for millennia without saturating.</li>
+        <li><strong>Coastal Protection:</strong> Buffers shorelines by attenuating wave energy from storm surges and cyclones.</li>
+        <li><strong>Marine Habitat:</strong> Serves as critical breeding and nursery grounds for commercial fish and crustaceans.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Fill in the Blank</span><span class="source-tag">EVS End Sem 2022</span>
+    <div class="question-title">2. Livestock Enteric Methane Mitigation via Seaweed</div>
+    <p><em>"Methane reduction from livestock can be achieved by adding _____ to cattle feed."</em></p>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> <strong>Seaweed</strong> (specifically the red macroalga <em>Asparagopsis taxiformis</em>). Contains <strong>bromoform</strong> ($CHBr_3$) which inhibits methyl-coenzyme M reductase in rumen methanogenic archaea, reducing methane emissions by $80	ext{–}90\%$.
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Exotic Cleantech</span><span class="source-tag">EVS End Sem 2022, End Sem 2023</span>
+    <div class="question-title">3. Diamonds from Air Pollution (Aether Diamonds Manufacturing Process)</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong>
+      <ol>
+        <li><strong>Capture:</strong> Ambient $CO_2$ is captured directly from air via Direct Air Capture (Climeworks).</li>
+        <li><strong>Methanation:</strong> $CO_2$ is combined with green hydrogen ($H_2$) via the Sabatier reaction ($CO_2 + 4H_2 	o CH_4 + 2H_2O$) to produce high-purity methane.</li>
+        <li><strong>Chemical Vapor Deposition (CVD):</strong> Methane is cracked in microwave plasma CVD reactors, depositing carbon atom-by-atom to grow gem-grade diamonds.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card-box">
+    <span class="meta-tag">Chemical Reaction</span><span class="source-tag">Lecture 11 Core Syllabus</span>
+    <div class="question-title">4. Enhanced Silicate Rock Weathering (Olivine Reaction)</div>
+    <div class="answer-box">
+      <strong>Model Answer:</strong> Spreading micro-pulverized olivine on agricultural soils reacts with soil rainwater and carbonic acid:
+      $$Mg_2SiO_4 + 4CO_2 + 4H_2O 	o 2Mg^{2+} + 4HCO_3^- + H_4SiO_4$$
+      Converts gaseous $CO_2$ into stable aqueous bicarbonate ($HCO_3^-$) washed to the ocean, sequestering carbon for $>100,000	ext{ years}$.
+    </div>
+  </div>
+
+  <!-- PART II -->
+  <div class="page-break"></div>
+  <h1>Part II: Official Mock Examination 1 (25 Marks)</h1>
+  <p><strong>Time:</strong> 45 Minutes | <strong>Syllabus:</strong> Lectures 8 to 11 | <strong>Format:</strong> Official IIIT-H Quiz 3</p>
+
+  <div class="card-box">
+    <h3>Section 1: Fill in the Blanks (10 × 0.5 = 5.0 Marks)</h3>
+    <ol style="margin-left: -20px; font-size: 9.5pt;">
+      <li><code>____________________</code> projects are explicitly NOT eligible for carbon credits under CDM.</li>
+      <li>In mature forests, all gross primary productivity is either used up in <code>____________________</code> or returned to soil as <code>____________________</code> with no net addition to standing biomass.</li>
+      <li><code>____________________</code> is the single major source of agricultural enteric methane emissions globally.</li>
+      <li><code>____________________</code> stores carbon while simultaneously intercepting agricultural nutrient runoff to protect water quality.</li>
+      <li>A growing young forest can remove approximately <code>____________________</code> tonnes of $CO_2$ per hectare per year.</li>
+      <li>Soils store approximately <code>____________________</code> times as much organic carbon as does living terrestrial vegetation.</li>
+      <li>One kilogram of dry wood contains <code>____________________</code> kg of elemental carbon.</li>
+      <li>Approximately <code>____________________</code> % of global soil carbon is locked in tundra and boreal permafrost ecosystems.</li>
+      <li>Nitrous Oxide ($N_2O$) has a Global Warming Potential (GWP) of <code>____________________</code> times that of $CO_2$.</li>
+      <li>Hypercanes are hypothetical super-cyclones that form when sea surface temperatures reach approximately <code>____________________</code> °C.</li>
+    </ol>
+  </div>
+
+  <div class="card-box">
+    <h3>Section 2: Expand the Abbreviations (5 × 1.0 = 5.0 Marks)</h3>
+    <p>1. <strong>IPCC</strong> &nbsp;&nbsp;|&nbsp;&nbsp; 2. <strong>UNFCCC</strong> &nbsp;&nbsp;|&nbsp;&nbsp; 3. <strong>CER</strong> &nbsp;&nbsp;|&nbsp;&nbsp; 4. <strong>GWP</strong> &nbsp;&nbsp;|&nbsp;&nbsp; 5. <strong>CDM</strong></p>
+  </div>
+
+  <div class="card-box">
+    <h3>Section 3: Differentiate Between (2 × 2.0 = 4.0 Marks)</h3>
+    <p>1. <strong>Afforestation</strong> vs. <strong>Reforestation</strong></p>
+    <p>2. <strong>Annex I</strong> vs. <strong>Annex II</strong> countries under the UNFCCC / Kyoto Protocol</p>
+  </div>
+
+  <div class="card-box">
+    <h3>Section 4: Technical & Ecological Mechanisms (2 × 2.5 = 5.0 Marks)</h3>
+    <p>1. <strong>Ocean Acidification:</strong> Write the chemical equilibrium reaction when $CO_2$ dissolves in seawater, and explain why calcifying organisms face shell dissolution even under slight pH shifts.</p>
+    <p>2. <strong>Urea Fertilization:</strong> Explain the mechanism of ocean nitrogen fertilization and detail two major ecological hazards caused by sinking organic matter.</p>
+  </div>
+
+  <div class="card-box">
+    <h3>Section 5 & 6: Applied Systems & Case Studies (2 × 3.0 = 6.0 Marks)</h3>
+    <p>1. Define <strong>Agroforestry</strong> and list three scientific reasons why it represents an attractive carbon mitigation strategy.</p>
+    <p>2. Describe either the <strong>INFAPRO Project</strong> in Malaysia or the <strong>Plan Vivo Project</strong> in Mexico.</p>
+  </div>
+
+  <!-- MOCK 1 SOLUTIONS -->
+  <div class="avoid-break" style="margin-top: 18px;">
+    <h2>📋 Mock Exam 1: Official Answer Key & Grading Scheme</h2>
+    <div class="answer-box">
+      <strong>Section 1 Answers (0.5M each):</strong>
+      <ol style="margin-left: -20px;">
+        <li><strong>Nuclear</strong> (or Nuclear power / Nuclear energy projects).</li>
+        <li><strong>Plant / autotrophic respiration</strong>; <strong>litterfall / dead organic debris</strong>.</li>
+        <li><strong>Enteric fermentation in ruminant livestock</strong> (cattle/sheep).</li>
+        <li><strong>Riparian forest buffers</strong> (or Riparian buffers).</li>
+        <li><strong>2 to 5 tonnes</strong> of $CO_2$/ha/year.</li>
+        <li><strong>3 times</strong> (accept 3 to 4 times; ~1500–2400 Gt in soil vs ~500 Gt in vegetation).</li>
+        <li><strong>0.5 kg</strong> (50% carbon fraction).</li>
+        <li><strong>33% to 40%</strong> (approx. one-third).</li>
+        <li><strong>265 to 310</strong> (265 under IPCC AR5; 310 under AR4).</li>
+        <li><strong>50 °C</strong>.</li>
+      </ol>
+      <br/>
+      <strong>Section 2 Expansions (1.0M each):</strong>
+      <ol style="margin-left: -20px;">
+        <li><strong>IPCC:</strong> Intergovernmental Panel on Climate Change.</li>
+        <li><strong>UNFCCC:</strong> United Nations Framework Convention on Climate Change.</li>
+        <li><strong>CER:</strong> Certified Emission Reduction ($1	ext{ CER} = 1	ext{ t } CO_2	ext{e}$).</li>
+        <li><strong>GWP:</strong> Global Warming Potential.</li>
+        <li><strong>CDM:</strong> Clean Development Mechanism.</li>
+      </ol>
+      <br/>
+      <strong>Section 3 Differences (2.0M each):</strong>
+      <p>1. <em>Afforestation:</em> planting on land without forest for $\ge 50	ext{ years}$. <em>Reforestation:</em> replanting on land cleared recently.</p>
+      <p>2. <em>Annex I:</em> OECD nations + Economies in Transition (EITs). <em>Annex II:</em> OECD only, legally mandated to fund developing nations.</p>
+      <br/>
+      <strong>Section 4 Mechanisms (2.5M each):</strong>
+      <p>1. $CO_2 + H_2O ightleftharpoons H_2CO_3 ightleftharpoons H^+ + HCO_3^- ightleftharpoons 2H^+ + CO_3^{2-}$. Excess $H^+$ consumes $CO_3^{2-}$, dropping $\Omega < 1$ so shells dissolve. Logarithmic scale means 0.1 pH drop = ~30% increase in $[H^+]$.</p>
+      <p>2. Supplies nitrogen to trigger algal blooms. Hazards: (1) Sinking decay by aerobic bacteria exhausts oxygen, causing hypoxia/dead zones; (2) Triggers toxigenic diatoms (*Pseudo-nitzschia*) secreting domoic acid neurotoxin.</p>
+      <br/>
+      <strong>Section 5 & 6 Applied (3.0M each):</strong>
+      <p>1. Integrating woody trees with crops/livestock. Advantages: deep subsoil carbon storage; food security synergy; nitrogen-fixing trees reduce synthetic fertilizer $N_2O$.</p>
+      <p>2. <em>INFAPRO (Sabah, Malaysia):</em> Innoprise + FACE Foundation; enrichment planting of 25,000 ha logged Dipterocarp forest. <em>(OR) Plan Vivo (Mexico):</em> Mayan community agroforestry with native timber and coffee shade.</p>
+    </div>
+  </div>
+
+  <!-- PART III -->
+  <div class="page-break"></div>
+  <h1>Part III: Mock Examination 2 (35 Marks — Mid-Sem Format)</h1>
+  <p><strong>Time:</strong> 60 Minutes | <strong>Syllabus:</strong> Lectures 8 to 11 | <strong>Format:</strong> High-Yield Comprehensive Exam</p>
+
+  <div class="card-box">
+    <h3>Section I: Rapid Technical Questions (5 × 2.0 = 10 Marks)</h3>
+    <p>1. Why do explosive volcanic eruptions become significantly more frequent when continental glaciers retreat? (2M)</p>
+    <p>2. Explain the process by which a Hypercane damages the Earth's stratospheric ozone layer. (2M)</p>
+    <p>3. What is <strong>Global Terrestrial Stilling</strong>, and what are the two primary planetary causes? (2M)</p>
+    <p>4. State the <strong>Sherwood Plot rule</strong> for Direct Air Capture and explain why capturing $CO_2$ from ambient air consumes more thermodynamic work than flue gas capture. (2M)</p>
+    <p>5. How does the red seaweed <em>Asparagopsis taxiformis</em> suppress bovine enteric methane emissions? Name the key active compound. (2M)</p>
+  </div>
+
+  <div class="card-box">
+    <h3>Section II: Comparative Analysis (10 Marks)</h3>
+    <p>1. Differentiate between the three flexible mechanisms of the Kyoto Protocol: <strong>CDM</strong>, <strong>Joint Implementation (JI)</strong>, and <strong>International Emissions Trading (IET)</strong>. (3M)</p>
+    <p>2. Compare conventional <strong>Portland Cement</strong> with <strong>Novacem Cement</strong> in terms of raw materials, calcination temperature, and net carbon balance. (3M)</p>
+    <p>3. Contrast <strong>John Martin's Ocean Iron Hypothesis</strong> with <strong>Enhanced Silicate Rock Weathering</strong> on agricultural lands. Give the chemical equation for olivine weathering. (4M)</p>
+  </div>
+
+  <div class="card-box">
+    <h3>Section III: Deep Technical & Case Studies (3 × 5.0 = 15 Marks)</h3>
+    <p>1. <strong>Direct Air Capture & Carbon Utilization:</strong> Detail the 3-step technological pipeline used by <strong>Aether Diamonds</strong> to convert ambient air pollution into certified gem-grade diamonds. Name two leading commercial DAC companies. (5M)</p>
+    <p>2. <strong>Planetary Tipping Cascades & Black Swan Risks:</strong> Define Taleb's <strong>Black Swan</strong> concept. Describe the three major planetary tipping elements: Arctic Summer Sea Ice Loss, WAIS Collapse, and Amazon Savannization. (5M)</p>
+    <p>3. <strong>Blue Carbon & Biochar Pyrolysis:</strong> Define <strong>Blue Carbon</strong> and explain why coastal salt marshes/mangroves sequester carbon without saturation. Detail the process of <strong>Biochar Pyrolysis</strong> (temperature range, soil residence time, global annual potential). (5M)</p>
+  </div>
+
+  <!-- MOCK 2 SOLUTIONS -->
+  <div class="avoid-break" style="margin-top: 18px;">
+    <h2>📋 Mock Exam 2: Model Answers & Rubric</h2>
+    <div class="answer-box">
+      <strong>Section I:</strong>
+      <p>1. <em>Glacial Isostatic Rebound:</em> Mass unloading causes mantle depressurization, lowering rock melting points and venting magma chambers.</p>
+      <p>2. <em>Hypercane Ozone Decay:</em> $50	ext{ km}$ vertical column injects water vapor and chlorine radicals into stratosphere, catalytically destroying $O_3$.</p>
+      <p>3. <em>Stilling:</em> Surface wind slowdown (~0.3 m/s drop per decade) due to surface roughness and reduced equator-to-pole thermal gradient.</p>
+      <p>4. <em>Sherwood Rule:</em> Minimum work $W_{\min} = -RT[\ln x + rac{1-x}{x}\ln(1-x)]$. Atmospheric $CO_2$ is dilute ($420	ext{ ppm} = 0.042\%$), requiring $\sim 3	imes$ higher theoretical energy and massive contactor fans.</p>
+      <p>5. <em>Seaweed:</em> Active compound is <strong>bromoform</strong> ($CHBr_3$); inhibits methyl-coenzyme M reductase in rumen archaea, cutting methane by $80	ext{–}90\%$.</p>
+      <br/>
+      <strong>Section II:</strong>
+      <p>1. <em>CDM:</em> Annex I $	o$ Non-Annex I (CERs). <em>JI:</em> Annex I $	o$ Annex I (ERUs). <em>IET:</em> Trading AAUs among Annex I nations.</p>
+      <p>2. <em>Portland:</em> Limestone ($CaCO_3$) calcined at $1450^\circ	ext{C}$; emits $+0.8	ext{–}1.0	ext{ t } CO_2/	ext{t}$. <em>Novacem:</em> Magnesium silicate calcined at $650^\circ	ext{C}$; absorbs $CO_2$ during curing, netting $-0.6	ext{ t } CO_2/	ext{t}$.</p>
+      <p>3. <em>Iron Hypothesis:</em> Fe micronutrient in HNLC ocean stimulates diatom sink. <em>Enhanced Weathering:</em> Micro-pulverized olivine on soil: $Mg_2SiO_4 + 4CO_2 + 4H_2O 	o 2Mg^{2+} + 4HCO_3^- + H_4SiO_4$.</p>
+      <br/>
+      <strong>Section III:</strong>
+      <p>1. <em>Aether Pipeline:</em> (1) DAC CO2 capture; (2) Sabatier methanation ($CO_2 + 4H_2 	o CH_4 + 2H_2O$); (3) Microwave plasma CVD diamond reactor. DAC companies: Climeworks (solid amine) & Carbon Engineering (liquid KOH).</p>
+      <p>2. <em>Black Swan:</em> Unpredictable outlier with extreme impact, rationalized in hindsight. 3 Tipping elements: Arctic ice (albedo drop), WAIS (marine ice sheet instability commits 3–5m sea level rise), Amazon (loss of biotic pump converts to scrubland, venting 100 Gt C).</p>
+      <p>3. <em>Blue Carbon:</em> Coastal wetlands build soil vertically in saline anoxic water without microbial decay. <em>Biochar:</em> $400	ext{–}700^\circ	ext{C}$ anoxic pyrolysis; $>1000	ext{ yr}$ soil residence time; up to $4.8	ext{ Gt } CO_2/	ext{yr}$ potential.</p>
+    </div>
+  </div>
+
+</body>
+</html>

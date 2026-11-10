@@ -13,43 +13,30 @@ with open(METADATA_PATH, "r", encoding="utf-8") as f:
 with open(os.path.join(STUDY_DIR, "full_slide_database.json"), "r", encoding="utf-8") as f:
     SLIDE_DB = json.load(f)
 
-# Import lecture contents, simulators, and slide units
+# Import lecture contents and simulators for all 15 lectures
 from lecture_content_data_1 import LECTURE_DETAILS as D1
 from lecture_content_data_2 import LECTURE_DETAILS_2 as D2
 from lecture_content_data_3 import LECTURE_DETAILS_3 as D3
+from lecture_content_data_4 import LECTURE_DETAILS_4 as D4
+
 from simulators_data import SIMULATORS as S1
 from simulators_data_2 import SIMULATORS_2 as S2
 from simulators_data_3 import SIMULATORS_3 as S3
+from simulators_data_4 import SIMULATORS_4 as S4
+
 from diagram_explanations import DIAGRAM_EXPLANATIONS
-
-from lecture_slide_units_1 import UNITS_LEC_01, UNITS_LEC_02, UNITS_LEC_03, UNITS_LEC_04
-from lecture_slide_units_2 import UNITS_LEC_05, UNITS_LEC_06, UNITS_LEC_07, UNITS_LEC_08
-from lecture_slide_units_3 import UNITS_LEC_09, UNITS_LEC_10, UNITS_LEC_11, UNITS_LEC_12
-
-ALL_SLIDE_UNITS = {
-    "01": UNITS_LEC_01,
-    "02": UNITS_LEC_02,
-    "03": UNITS_LEC_03,
-    "04": UNITS_LEC_04,
-    "05": UNITS_LEC_05,
-    "06": UNITS_LEC_06,
-    "07": UNITS_LEC_07,
-    "08": UNITS_LEC_08,
-    "09": UNITS_LEC_09,
-    "10": UNITS_LEC_10,
-    "11": UNITS_LEC_11,
-    "12": UNITS_LEC_12
-}
 
 ALL_DETAILS = {}
 ALL_DETAILS.update(D1)
 ALL_DETAILS.update(D2)
 ALL_DETAILS.update(D3)
+ALL_DETAILS.update(D4)
 
 ALL_SIMS = {}
 ALL_SIMS.update(S1)
 ALL_SIMS.update(S2)
 ALL_SIMS.update(S3)
+ALL_SIMS.update(S4)
 
 def get_youtube_embed(url):
     m = re.search(r'(?:v=|youtu\.be/|embed/)([a-zA-Z0-9_-]{11})', url)
@@ -93,7 +80,6 @@ SHARED_CSS = """
   .eco-card:hover {
     border-color: var(--primary);
     box-shadow: 0 10px 30px -10px var(--primary-glow);
-    transform: translateY(-2px);
   }
 
   /* Badges */
@@ -147,13 +133,11 @@ def generate_lecture_page(lec):
     lec_slug = lec["slug"]
     lec_title = lec["title"]
     lec_short = lec.get("short_title", lec_title)
-    lec_meta = lec
     details = ALL_DETAILS.get(lec_id, {})
     sim_html = ALL_SIMS.get(f"sim_{lec_id}", ALL_SIMS.get(lec_id, "<p class='text-slate-400'>Interactive model loaded.</p>"))
 
-    total_slides = len(lec["slides"])
     all_lec_slides = SLIDE_DB.get(lec_id, {}).get("slides", [])
-    slide_units = ALL_SLIDE_UNITS.get(lec_id, [])
+    total_slides = len(all_lec_slides)
 
     videos = lec.get("videos", [])
     video_embeds = []
@@ -164,26 +148,46 @@ def generate_lecture_page(lec):
 
     screens = []
     sidebar_links = []
-    all_units_client_data = {}
 
     # ========================================================
     # SCREEN 0: LECTURE OVERVIEW & SYLLABUS ROADMAP
     # ========================================================
     int_info = details.get("intuition", {})
     
-    # Table of contents for the slide units
-    toc_html = ""
-    for u_idx, u in enumerate(slide_units, 1):
-        toc_html += f"""
-        <div class="p-3.5 rounded-xl bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-3 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard({u_idx})">
-          <div class="flex items-center gap-3">
-            <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold flex-shrink-0">{u['slide_range']}</span>
-            <div>
-              <strong class="text-white text-xs md:text-sm block">{u['title']}</strong>
-              <p class="text-[11px] text-slate-400 line-clamp-1">{u['takeaway']}</p>
-            </div>
+    # Quick visual slide table
+    quick_slides_html = ""
+    for idx, s in enumerate(all_lec_slides[:12]):
+        quick_slides_html += f"""
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard({idx + 1})">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#{s['slide_num']}</span>
+            <span class="text-xs text-white truncate">{html.escape(s['title'])}</span>
           </div>
-          <span class="text-xs text-emerald-400 font-mono flex-shrink-0">Launch Unit →</span>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        """
+
+    video_section_html = ""
+    if video_embeds:
+        v_cards = ""
+        for v in video_embeds:
+            v_cards += f"""
+            <div class="p-3 bg-[#05120d] border border-emerald-900/80 rounded-xl">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-emerald-300 font-mono">▶️ Professor Lecture Video</span>
+                <a href="{v['url']}" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open YouTube ↗</a>
+              </div>
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe src="{v['embed']}" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            """
+        video_section_html = f"""
+        <div class="mb-6">
+          <div class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider mb-2">📹 Lecture Video Reference</div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {v_cards}
+          </div>
         </div>
         """
 
@@ -195,7 +199,7 @@ def generate_lecture_page(lec):
             <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture {lec_id} • Syllabus Roadmap</span>
             <span class="text-xs text-slate-400">• {lec['difficulty']} • {lec['duration']}</span>
           </div>
-          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 {total_slides} Slides Covered Across {len(slide_units)} Study Units</span>
+          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 {total_slides} Slides Covered Slidewise</span>
         </div>
 
         <h2 class="text-2xl md:text-3xl font-black text-white mb-2">{int_info.get('title', lec_title)}</h2>
@@ -206,208 +210,141 @@ def generate_lecture_page(lec):
           {int_info.get('why', '')}
         </div>
 
+        {video_section_html}
+
         <div class="mb-4">
           <div class="flex items-center justify-between mb-3">
-            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Lecture Slide Study Units</span>
-            <span class="text-[11px] text-slate-400">Click any unit to jump directly to its slides</span>
+            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Slide Navigation Directory</span>
+            <button onclick="goToCard(1)" class="text-xs font-bold text-emerald-400 hover:underline">Start Slide 1 →</button>
           </div>
-          <div class="space-y-2">
-            {toc_html}
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+            {quick_slides_html}
+          </div>
+          <div class="text-center mt-3">
+            <button onclick="goToCard(1)" class="px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-emerald-950 transition-all cursor-pointer">
+              Launch Slidewise Learning (Slide 1 of {total_slides}) →
+            </button>
           </div>
         </div>
       </div>
     </section>
     """)
-    sidebar_links.append((0, "1. Lecture Scope & Roadmap"))
+    sidebar_links.append((0, "📌 1. Lecture Overview & Roadmap"))
 
     # ========================================================
-    # SCREENS 1 to K: THEMATIC SLIDE UNITS (100% SLIDES COVERED)
+    # SCREENS 1 to N: DEDICATED SLIDE-BY-SLIDE LEARNING CARDS
     # ========================================================
-    for u_idx, u in enumerate(slide_units, 1):
-        range_nums = re.findall(r'\d+', u["slide_range"])
-        if len(range_nums) >= 2:
-            s_start, s_end = int(range_nums[0]), int(range_nums[1])
-        elif len(range_nums) == 1:
-            s_start = s_end = int(range_nums[0])
+    for s_idx, s in enumerate(all_lec_slides):
+        card_num = s_idx + 1
+        slide_num = s["slide_num"]
+        title_esc = html.escape(s["title"])
+        img_path = s["image"]
+        bullets = s.get("bullets", [])
+        deep_exp = s.get("deep_explanation", "")
+
+        # Bullets formatting
+        if bullets:
+            bullets_html = "".join([f'<li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">{html.escape(b)}</span></li>' for b in bullets])
+            bullets_wrap = f'<ul class="space-y-2 text-xs md:text-sm">{bullets_html}</ul>'
         else:
-            s_start, s_end = 1, 1
+            bullets_wrap = '<p class="text-slate-400 italic text-xs">Visual figure / diagram presentation slide. Review the high-resolution render on the left.</p>'
 
-        u_slides = [s for s in all_lec_slides if s_start <= s["slide_num"] <= s_end]
-        if not u_slides:
-            continue
+        # Build Slide Dropdown options
+        dropdown_opts = ""
+        for opt_idx, opt_s in enumerate(all_lec_slides):
+            sel = "selected" if opt_idx == s_idx else ""
+            opt_title = opt_s['title'][:32] + "..." if len(opt_s['title']) > 35 else opt_s['title']
+            dropdown_opts += f'<option value="{opt_idx + 1}" {sel}>Slide {opt_s["slide_num"]}: {html.escape(opt_title)}</option>'
 
-        first_slide = u_slides[0]
+        # Next / Prev labels
+        prev_card_idx = card_num - 1
+        next_card_idx = card_num + 1
 
-        # Prepare client-side data for this unit
-        all_units_client_data[u["unit_id"]] = {
-            "slides": [
-                {
-                    "slide_num": s["slide_num"],
-                    "title": s["title"],
-                    "image": s["image"],
-                    "bullets": s.get("bullets", []),
-                    "takeaway": s["title"]
-                }
-                for s in u_slides
-            ],
-            "currentIdx": 0
-        }
-
-        # Build Slide Tab buttons
-        tabs_html = ""
-        for s_idx, s in enumerate(u_slides):
-            act = "active bg-emerald-600 border-emerald-400 text-white font-bold shadow-lg shadow-emerald-950/50" if s_idx == 0 else "bg-[#071610] border-emerald-900/80 text-emerald-300 hover:bg-emerald-900"
-            title_short = s["title"][:20] + "..." if len(s["title"]) > 22 else s["title"]
-            tabs_html += f"""
-            <button type="button" class="slide-btn-{u['unit_id']} {act} px-3 py-1.5 rounded-lg text-xs font-mono border flex-shrink-0 transition-all cursor-pointer" onclick="switchUnitSlide('{u['unit_id']}', {s_idx})">
-              <span>#{s['slide_num']}</span> <span class="hidden sm:inline text-[11px] opacity-80">{html.escape(title_short)}</span>
-            </button>
-            """
-
-        first_bullets_html = ""
-        if first_slide.get("bullets"):
-            first_bullets_html = "".join([f'<div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">{html.escape(b)}</span></div>' for b in first_slide["bullets"]])
-        else:
-            first_bullets_html = '<p class="text-slate-400 italic text-xs">Visual figure / diagram slide. Inspect the high-resolution render on the left.</p>'
-
-        formula_html = ""
-        if u.get("math_formula"):
-            formula_html = f"""
-            <div class="p-3.5 bg-[#05140e] border border-emerald-900/80 rounded-xl text-center my-3 overflow-x-auto">
-              <div class="text-[10px] text-emerald-400 font-mono uppercase tracking-wider mb-1">Governing Quantitative Model</div>
-              <div class="text-sm md:text-base font-mono text-emerald-300">
-                $${u['math_formula']}$$
-              </div>
-            </div>
-            """
-
-        # Contextual video embed (if relevant for this unit)
-        unit_video_html = ""
-        for v in video_embeds:
-            # Match videos to specific units
-            if (u_idx == len(slide_units) and lec_id in ["05", "07", "08", "09", "12"]) or (u_idx == 2 and lec_id == "06"):
-                unit_video_html = f"""
-                <div class="mt-4 p-4 bg-[#05120d] border border-emerald-900/80 rounded-xl">
-                  <div class="flex items-center justify-between mb-2">
-                    <span class="text-xs font-bold text-emerald-300 font-mono flex items-center gap-1.5">
-                      <span>▶️</span> Recommended Video Reference
-                    </span>
-                    <a href="{v['url']}" target="_blank" rel="noopener noreferrer" class="text-[11px] text-emerald-400 hover:underline">Open on YouTube ↗</a>
-                  </div>
-                  <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-                    <iframe src="{v['embed']}" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                </div>
-                """
-                break
+        nav_footer_html = f"""
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard({prev_card_idx})" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous {f"(Slide {slide_num-1})" if s_idx > 0 else "(Overview)"}
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide {slide_num} of {total_slides}
+          </div>
+          <button onclick="goToCard({next_card_idx})" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            {f"Next (Slide {slide_num+1}) →" if s_idx < total_slides - 1 else "Continue to Interactive Lab →"}
+          </button>
+        </div>
+        """
 
         screens.append(f"""
-        <section class="card-screen" data-title="Unit {u_idx}: {u['slide_range']}">
-          <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
-            <!-- Unit Header -->
-            <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/60">
+        <section class="card-screen" data-title="Slide {slide_num}: {title_esc[:25]}">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
               <div class="flex items-center gap-2">
-                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">{u['slide_range']}</span>
-                <span class="text-xs text-slate-400">• Unit {u_idx} of {len(slide_units)} • Topic Walkthrough</span>
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide {slide_num} of {total_slides}</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">{s['source_file']}</span>
               </div>
-              <div class="text-xs text-emerald-400 font-mono">Lecture {lec_id}: {lec_short}</div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_{slide_num}" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_{slide_num}" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  {dropdown_opts}
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
             </div>
 
-            <h2 class="text-xl md:text-2xl font-black text-white mb-2">{u['title']}</h2>
-            <p class="text-xs text-slate-300 mb-6">{u['takeaway']}</p>
-
-            <!-- Interactive Slide Explorer -->
-            <div class="bg-[#05140e] border border-emerald-900/80 rounded-2xl p-4 md:p-6 mb-6">
-              <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-emerald-900/60">
-                <div class="flex items-center gap-2">
-                  <span class="badge-emerald px-2 py-0.5 rounded text-[11px] font-mono font-bold">Slide Explorer</span>
-                  <span class="text-xs text-slate-300">Viewing slide <span id="cur_slide_indicator_{u['unit_id']}" class="text-emerald-400 font-bold font-mono">#{first_slide['slide_num']}</span> of {len(u_slides)} in this unit</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('{u['unit_id']}', -1)">◀ Prev Slide</button>
-                  <button type="button" class="px-2.5 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 hover:bg-emerald-800 text-xs font-mono transition-all" onclick="navUnitSlide('{u['unit_id']}', 1)">Next Slide ▶</button>
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('{img_path}', 'Slide {slide_num}: {title_esc}')">
+                <img src="{img_path}" alt="Slide {slide_num}: {title_esc}" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
                 </div>
               </div>
 
-              <!-- Slide Selector Buttons Strip -->
-              <div class="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
-                {tabs_html}
-              </div>
-
-              <!-- Active Slide Inspector Showcase -->
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
-                <!-- Left: Slide Render -->
-                <div id="{u['unit_id']}_slide_wrap" class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('{first_slide['image']}', 'Slide {first_slide['slide_num']}: {html.escape(first_slide['title'])}')">
-                  <img id="{u['unit_id']}_slide_img" src="{first_slide['image']}" alt="Slide {first_slide['slide_num']}" class="w-full h-auto max-h-72 object-contain rounded group-hover:scale-[1.02] transition-all" loading="lazy">
-                  <div class="text-[10px] text-emerald-400 font-mono mt-2 flex items-center gap-1">
-                    <span>🔍</span> Click slide to zoom in full lightbox
-                  </div>
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">{title_esc}</h3>
                 </div>
 
-                <!-- Right: Extracted Content & Professor Notes -->
-                <div class="lg:col-span-6 space-y-3">
-                  <div class="p-3 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
-                    <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block">Slide Title</span>
-                    <h4 id="{u['unit_id']}_slide_title" class="text-sm md:text-base font-bold text-white">Slide {first_slide['slide_num']}: {html.escape(first_slide['title'])}</h4>
-                  </div>
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  {bullets_wrap}
+                </div>
 
-                  <div class="p-3.5 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
-                    <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-1.5">📝 Slide Text & Key Bullets</span>
-                    <div id="{u['unit_id']}_slide_bullets" class="text-xs text-slate-200 space-y-1.5 leading-relaxed max-h-48 overflow-y-auto">
-                      {first_bullets_html}
-                    </div>
-                  </div>
-
-                  <div class="p-3 bg-[#0d241a] border border-emerald-800/80 rounded-xl text-xs text-emerald-200">
-                    <strong class="text-emerald-300 block mb-1">💡 What This Slide Teaches:</strong>
-                    <p id="{u['unit_id']}_slide_takeaway" class="text-slate-300 leading-relaxed">{html.escape(first_slide['title'])}</p>
-                  </div>
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">{deep_exp}</p>
                 </div>
               </div>
             </div>
 
-            <!-- Deep Thematic Synthesis for this Unit -->
-            <div class="eco-card p-5 bg-[#071912] border-emerald-900/80 rounded-xl mb-4">
-              <div class="flex items-center gap-2 mb-2">
-                <span class="badge-teal px-2 py-0.5 rounded text-[11px] font-mono font-bold">Deep Dive</span>
-                <h3 class="text-base font-bold text-white">Topic Synthesis: {u['title']}</h3>
-              </div>
-              <div class="text-xs text-slate-200 leading-relaxed">
-                {u['synthesis']}
-              </div>
-            </div>
-
-            <!-- Quantitative Formula (if any) -->
-            {formula_html}
-
-            <!-- Video Reference (if any) -->
-            {unit_video_html}
-
-            <!-- Exam Checkpoint Box -->
-            <div class="p-4 bg-[#18130b] border border-amber-900/80 rounded-xl text-xs text-amber-200 flex items-start gap-3 mt-4">
-              <span class="text-base flex-shrink-0">⚠️</span>
-              <div>
-                <strong class="text-amber-300 block mb-1">Midsem/Endsem Exam Checkpoint for These Slides:</strong>
-                <p class="text-amber-100/90 leading-relaxed">{u['exam_checkpoint']}</p>
-              </div>
-            </div>
+            <!-- Footer navigation -->
+            {nav_footer_html}
           </div>
         </section>
         """)
-        sidebar_links.append((u_idx, f"{u_idx+1}. [{u['slide_range']}] {u['title']}"))
+        sidebar_links.append((card_num, f"Slide {slide_num}: {s['title'][:26]}"))
 
     # ========================================================
     # SCREEN: INTERACTIVE SIMULATOR LAB
     # ========================================================
     cur_idx = len(screens)
     screens.append(f"""
-    <section class="card-screen" data-title="{cur_idx+1}. Interactive Simulator Lab">
+    <section class="card-screen" data-title="🧪 Interactive Simulator Lab">
       <div class="mb-6">
         {sim_html}
       </div>
     </section>
     """)
-    sidebar_links.append((cur_idx, f"{cur_idx+1}. Interactive Simulator Lab"))
+    sidebar_links.append((cur_idx, "🧪 Interactive Simulator Lab"))
 
     # ========================================================
     # SCREEN: ACTIVE RECALL FLASHCARDS
@@ -432,7 +369,7 @@ def generate_lecture_page(lec):
         """
 
     screens.append(f"""
-    <section class="card-screen" data-title="{cur_idx+1}. Active Recall Flashcards">
+    <section class="card-screen" data-title="🗂️ Active Recall Flashcards">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
         <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
@@ -443,7 +380,7 @@ def generate_lecture_page(lec):
       </div>
     </section>
     """)
-    sidebar_links.append((cur_idx, f"{cur_idx+1}. Active Recall Flashcards"))
+    sidebar_links.append((cur_idx, "🗂️ Active Recall Flashcards"))
 
     # ========================================================
     # SCREEN: HIGH-YIELD EXAM TRAPS
@@ -451,7 +388,7 @@ def generate_lecture_page(lec):
     cur_idx = len(screens)
     traps_html = "".join([f"<li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>{t}</li>" for t in details.get("traps", [])])
     screens.append(f"""
-    <section class="card-screen" data-title="{cur_idx+1}. High-Yield Exam Traps">
+    <section class="card-screen" data-title="⚠️ High-Yield Exam Traps">
       <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
         <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
         <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
@@ -462,7 +399,7 @@ def generate_lecture_page(lec):
       </div>
     </section>
     """)
-    sidebar_links.append((cur_idx, f"{cur_idx+1}. High-Yield Exam Traps"))
+    sidebar_links.append((cur_idx, "⚠️ High-Yield Exam Traps"))
 
     # ========================================================
     # SCREEN: CONCEPT CHECK QUIZ
@@ -494,7 +431,7 @@ def generate_lecture_page(lec):
         """
 
     screens.append(f"""
-    <section class="card-screen" data-title="{cur_idx+1}. Concept Check Quiz">
+    <section class="card-screen" data-title="📝 Concept Check Quiz">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
         <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
@@ -505,20 +442,20 @@ def generate_lecture_page(lec):
       </div>
     </section>
     """)
-    sidebar_links.append((cur_idx, f"{cur_idx+1}. Concept Check Quiz"))
+    sidebar_links.append((cur_idx, "📝 Concept Check Quiz"))
 
     # ========================================================
-    # SCREEN: COMPLETE SLIDE DECK QUICK-JUMP INDEX
+    # SCREEN: COMPLETE SLIDE DECK QUICK-JUMP GALLERY
     # ========================================================
     cur_idx = len(screens)
     slides_grid = ""
-    for s in all_lec_slides:
+    for idx, s in enumerate(all_lec_slides):
         slides_grid += f"""
         <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
-          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="openLightbox('{s['image']}', 'Slide {s['slide_num']}: {html.escape(s['title'])}')">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard({idx + 1})">
             <img src="{s['image']}" alt="Slide {s['slide_num']}" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
             <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">🔍 Zoom</span>
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
             </div>
           </div>
           <div class="pt-2 px-1">
@@ -534,12 +471,12 @@ def generate_lecture_page(lec):
     file_badges = " ".join([f"<a href='../Lecture_Slides/{f}' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download {f}</span></a>" for f in lec['files']])
 
     screens.append(f"""
-    <section class="card-screen" data-title="{cur_idx+1}. Slide Quick-Jump Index">
+    <section class="card-screen" data-title="📚 Slide Quick-Jump Gallery">
       <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
           <div>
             <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Master Slide Reference</div>
-            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Index</h2>
+            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Gallery</h2>
             <p class="text-xs text-slate-300">Quick visual reference of all {total_slides} slides across this lecture deck with PDF downloads.</p>
           </div>
           <div class="flex flex-wrap gap-2">
@@ -553,7 +490,7 @@ def generate_lecture_page(lec):
       </div>
     </section>
     """)
-    sidebar_links.append((cur_idx, f"{cur_idx+1}. Slide Quick-Jump Index ({total_slides} Slides)"))
+    sidebar_links.append((cur_idx, f"📚 Slide Gallery ({total_slides} Slides)"))
 
     # Build Sidebar links HTML
     nav_links_html = ""
@@ -567,7 +504,6 @@ def generate_lecture_page(lec):
         """
 
     all_screens_html = "\n".join(screens)
-    json_client_data = json.dumps(all_units_client_data).replace("</script>", "<\\/script>")
 
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
@@ -578,7 +514,7 @@ def generate_lecture_page(lec):
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {{delimiters: [{{left: '$$', right: '$$', display: true}}, {{left: '$', right: '$', display: false}}]}});"></script>
 
 <style>
 {SHARED_CSS}
@@ -606,7 +542,7 @@ def generate_lecture_page(lec):
   /* Layout */
   #layout {{ display: flex; margin-top: 54px; height: calc(100vh - 54px); }}
   #sidebar {{
-    width: 270px; min-width: 270px; background: #040b08;
+    width: 280px; min-width: 280px; background: #040b08;
     border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
     display: flex; flex-direction: column; gap: 2px;
   }}
@@ -622,16 +558,16 @@ def generate_lecture_page(lec):
 
   /* Main */
   #main {{
-    flex: 1; overflow-y: auto; padding: 28px 24px 100px 24px;
+    flex: 1; overflow-y: auto; padding: 24px 20px 100px 20px;
     display: flex; flex-direction: column; align-items: center;
   }}
-  .card-screen {{ display: none; width: 100%; max-width: 950px; animation: fadeIn .25s ease; }}
+  .card-screen {{ display: none; width: 100%; max-width: 1050px; animation: fadeIn .2s ease; }}
   .card-screen.active {{ display: block; }}
-  @keyframes fadeIn {{ from {{ opacity:0; transform:translateY(8px); }} to {{ opacity:1; transform:translateY(0); }} }}
+  @keyframes fadeIn {{ from {{ opacity:0; transform:translateY(6px); }} to {{ opacity:1; transform:translateY(0); }} }}
 
   /* Nav Bar */
   #nav-bar {{
-    position: fixed; bottom: 0; left: 270px; right: 0;
+    position: fixed; bottom: 0; left: 280px; right: 0;
     background: #040a07; border-top: 1px solid var(--border);
     display: flex; align-items: center; justify-content: center; gap: 16px;
     padding: 12px 24px; z-index: 40;
@@ -681,6 +617,7 @@ def generate_lecture_page(lec):
     <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all cursor-pointer" onclick="prevCard()">← Previous</button>
     <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of {len(screens)}</span>
     <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950 cursor-pointer" onclick="nextCard()">Next Card →</button>
+    <span class="text-[11px] text-slate-500 font-mono hidden md:inline ml-2">Keys: <kbd class="px-1 bg-emerald-950 border border-emerald-800 rounded text-emerald-300">←</kbd> <kbd class="px-1 bg-emerald-950 border border-emerald-800 rounded text-emerald-300">→</kbd> <kbd class="px-1 bg-emerald-950 border border-emerald-800 rounded text-emerald-300">Z</kbd></span>
   </nav>
 
   <!-- LIGHTBOX MODAL -->
@@ -697,74 +634,6 @@ def generate_lecture_page(lec):
   </div>
 
   <script>
-    const ALL_UNITS_DATA = {json_client_data};
-
-    function escapeHtml(str) {{
-      if (!str) return '';
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
-    }}
-
-    function switchUnitSlide(unitId, slideIdx) {{
-      const unit = ALL_UNITS_DATA[unitId];
-      if (!unit || !unit.slides[slideIdx]) return;
-      unit.currentIdx = slideIdx;
-      const s = unit.slides[slideIdx];
-      
-      const imgEl = document.getElementById(unitId + '_slide_img');
-      if (imgEl) {{
-        imgEl.src = s.image;
-        imgEl.alt = s.title;
-      }}
-      const wrapEl = document.getElementById(unitId + '_slide_wrap');
-      if (wrapEl) {{
-        wrapEl.setAttribute('onclick', "openLightbox('" + s.image + "', 'Slide " + s.slide_num + ": " + escapeHtml(s.title) + "')");
-      }}
-      const titleEl = document.getElementById(unitId + '_slide_title');
-      if (titleEl) {{
-        titleEl.textContent = 'Slide ' + s.slide_num + ': ' + s.title;
-      }}
-      const bulletsEl = document.getElementById(unitId + '_slide_bullets');
-      if (bulletsEl) {{
-        if (s.bullets && s.bullets.length > 0) {{
-          bulletsEl.innerHTML = s.bullets.map(b => '<div class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">' + escapeHtml(b) + '</span></div>').join('');
-        }} else {{
-          bulletsEl.innerHTML = '<p class="text-slate-400 italic text-xs">Visual figure / diagram slide. Inspect the high-resolution render on the left.</p>';
-        }}
-      }}
-      const takeawayEl = document.getElementById(unitId + '_slide_takeaway');
-      if (takeawayEl) {{
-        takeawayEl.textContent = s.takeaway || s.title;
-      }}
-      const indEl = document.getElementById('cur_slide_indicator_' + unitId);
-      if (indEl) {{
-        indEl.textContent = '#' + s.slide_num;
-      }}
-      
-      const btns = document.querySelectorAll('.slide-btn-' + unitId);
-      btns.forEach((btn, idx) => {{
-        if (idx === slideIdx) {{
-          btn.className = 'slide-btn-' + unitId + ' active px-3 py-1.5 rounded-lg text-xs font-mono bg-emerald-600 border border-emerald-400 text-white font-bold flex-shrink-0 shadow-lg shadow-emerald-950/50';
-        }} else {{
-          btn.className = 'slide-btn-' + unitId + ' px-3 py-1.5 rounded-lg text-xs font-mono bg-[#071610] border border-emerald-900/80 text-emerald-300 hover:bg-emerald-900 flex-shrink-0 transition-all';
-        }}
-      }});
-    }}
-
-    function navUnitSlide(unitId, delta) {{
-      const unit = ALL_UNITS_DATA[unitId];
-      if (!unit) return;
-      let cur = unit.currentIdx || 0;
-      let next = cur + delta;
-      if (next >= 0 && next < unit.slides.length) {{
-        switchUnitSlide(unitId, next);
-      }}
-    }}
-
     let currentCard = 0;
     const screens = document.querySelectorAll('.card-screen');
     const totalCards = screens.length;
@@ -776,7 +645,12 @@ def generate_lecture_page(lec):
 
       for (let i = 0; i < totalCards; i++) {{
         const el = document.getElementById('slink_' + i);
-        if (el) el.classList.toggle('active', i === currentCard);
+        if (el) {{
+          el.classList.toggle('active', i === currentCard);
+          if (i === currentCard) {{
+            el.scrollIntoView({{ block: 'nearest', behavior: 'smooth' }});
+          }}
+        }}
       }}
 
       document.getElementById('card-counter').innerText = `Card ${{currentCard + 1}} of ${{totalCards}}`;
@@ -815,6 +689,18 @@ def generate_lecture_page(lec):
       if (e.key === 'ArrowRight') nextCard();
       else if (e.key === 'ArrowLeft') prevCard();
       else if (e.key === 'Escape') closeLightbox();
+      else if (e.key === 'z' || e.key === 'Z') {{
+        const modal = document.getElementById('lightbox_modal');
+        if (modal.classList.contains('show')) {{
+          closeLightbox();
+        }} else {{
+          const activeScreen = screens[currentCard];
+          const img = activeScreen.querySelector('img');
+          if (img) {{
+            openLightbox(img.src, img.alt);
+          }}
+        }}
+      }}
     }});
 
     function openLightbox(imgSrc, title) {{
@@ -880,17 +766,17 @@ def generate_lecture_page(lec):
     out_file = os.path.join(STUDY_DIR, f"{lec_slug}.html")
     with open(out_file, "w", encoding="utf-8") as f:
         f.write(html_content)
-    print(f"  [+] Generated {out_file} ({len(screens)} screens, {total_slides} slides covered in {len(slide_units)} units)")
+    print(f"  [+] Generated {out_file} ({len(screens)} screens, {total_slides} slides covered slidewise)")
     return out_file
 
 def generate_curriculum_home():
+    total_slides_all = sum(len(lec["slides"]) for lec in METADATA)
     cards_html = ""
     for idx, lec in enumerate(METADATA, 1):
         slides_count = len(lec["slides"])
         diags_count = lec.get("diagram_count", 0)
         v_count = len(lec.get("videos", []))
         v_badge = f"<span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ {v_count} Video(s)</span>" if v_count > 0 else ""
-        units_count = len(ALL_SLIDE_UNITS.get(lec["id"], []))
 
         cards_html += f"""
         <div class="eco-card p-5 flex flex-col justify-between group">
@@ -913,12 +799,12 @@ def generate_curriculum_home():
 
           <div class="pt-3 border-t border-emerald-950/80">
             <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
-              <span>📚 {slides_count} Slides</span>
-              <span>🧩 {units_count} Units</span>
+              <span>📚 {slides_count} Slides Slidewise</span>
+              <span>🧪 1 Simulator Lab</span>
               <span>⏱️ {lec['duration']}</span>
             </div>
             <a href="{lec['slug']}.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
-              Launch Lecture Module →
+              Launch Lecture Module ({slides_count} Slides) →
             </a>
           </div>
         </div>
@@ -948,6 +834,7 @@ def generate_curriculum_home():
         </div>
       </div>
       <div class="flex items-center gap-2">
+        <a href="../quiz3_practice_suite.html" class="text-xs bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm mr-1"><span>⚡ Quiz 3 Prep Suite</span></a>
         <a href="../index.html" class="text-xs bg-slate-900 hover:bg-slate-800 text-slate-300 font-bold px-3 py-1.5 rounded-lg border border-slate-700">← Master Portal</a>
         <a href="https://courses.iiit.ac.in/course/view.php?id=5826" target="_blank" class="text-xs bg-amber-600/90 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg">🏛️ Moodle</a>
       </div>
@@ -961,13 +848,13 @@ def generate_curriculum_home():
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-semibold mb-3">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            12 Interactive Lecture Modules • 444 Primary Slides Systematically Taught
+            15 Interactive Lecture Modules • {total_slides_all} Slides Systematically Taught Slidewise
           </div>
           <h1 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-2">
             Curriculum Roadmap & Slide Navigator
           </h1>
           <p class="text-xs md:text-sm text-slate-300 max-w-2xl leading-relaxed">
-            All 444 slides across the 12 primary lecture presentations are systematically mapped into interactive learning units, with high-res slide viewers, professor bullet points, deep pedagogical breakdowns, KaTeX formulas, and active recall testing.
+            Every single slide across all 15 lectures (including Classes 13, 14, 15) is covered with dedicated high-resolution slide renders, verbatim bullets, and deep pedagogical explanations, accompanied by 15 interactive simulators.
           </p>
         </div>
 
@@ -977,8 +864,8 @@ def generate_curriculum_home():
           </div>
           <div class="text-xs">
             <div class="font-bold text-white mb-0.5">Slide Curriculum</div>
-            <div class="text-slate-400">12 of 12 Modules Ready</div>
-            <div class="text-emerald-400 text-[10px] font-mono mt-1">444 Slides • Zero Gaps</div>
+            <div class="text-slate-400">15 of 15 Modules Ready</div>
+            <div class="text-emerald-400 text-[10px] font-mono mt-1">{total_slides_all} Slides • Zero Gaps</div>
           </div>
         </div>
       </div>
@@ -998,14 +885,256 @@ def generate_curriculum_home():
     print(f"[+] Generated Curriculum Roadmap: {out_home}")
     return out_home
 
+def generate_master_index():
+    total_slides_all = sum(len(lec["slides"]) for lec in METADATA)
+    lec_cards_html = ""
+    for idx, lec in enumerate(METADATA, 1):
+        slides_count = len(lec["slides"])
+        v_count = len(lec.get("videos", []))
+        v_badge = f"<span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ {v_count} Video</span>" if v_count > 0 else ""
+
+        lec_cards_html += f"""
+        <div class="eco-card p-5 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module {lec['id']}</span>
+              <div class="flex items-center gap-1.5">
+                {v_badge}
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">{lec['difficulty']}</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
+              <span>{lec['icon']}</span>
+              <span>{lec['title']}</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              {lec['description']}
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 {slides_count} Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ {lec['duration']}</span>
+            </div>
+            <a href="Study_Material/{lec['slug']}.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
+            </a>
+          </div>
+        </div>
+        """
+
+    index_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Environmental Science & Technology (ES1.101) — Interactive Learning Hub 🌿</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<style>
+{SHARED_CSS}
+</style>
+</head>
+<body class="selection:bg-emerald-600 selection:text-white min-h-screen">
+
+  <!-- TOP APP BAR -->
+  <header class="sticky top-0 z-50 bg-[#040a07]/90 backdrop-blur-md border-b border-[var(--border)] px-4 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🌍</span>
+        <div>
+          <span class="font-black text-sm md:text-base text-white tracking-tight">Environmental Science & Technology</span>
+          <span class="hidden md:inline-block ml-2 text-xs text-emerald-400 font-mono bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800">ES1.101 • Monsoon 2026</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="quiz3_practice_suite.html" class="text-xs bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm border border-emerald-400/40 mr-1"><span>⚡ Quiz 3 Prep Suite</span></a>
+        <a href="https://courses.iiit.ac.in/course/view.php?id=5826" target="_blank" rel="noopener noreferrer" class="text-xs bg-amber-600/90 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm">
+          <span>🏛️ Moodle Portal</span>
+        </a>
+        <a href="Study_Material/00_home.html" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm">
+          <span>📘 All Lectures (15)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-7xl mx-auto px-4 pt-8 pb-6">
+    <div class="p-6 md:p-10 bg-gradient-to-br from-[#0c241b] via-[#091a13] to-[#040f0b] border border-emerald-800/80 rounded-2xl relative overflow-hidden">
+      <div class="relative z-10 max-w-4xl">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Interactive Eco-Tech Learning Platform
+          </div>
+          <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-950/80 border border-amber-800 text-amber-300 text-xs font-semibold">
+            <span>🏛️ IIIT Hyderabad</span>
+          </div>
+        </div>
+        
+        <h1 class="text-3xl md:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
+          Environmental Science & Technology <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
+            Interactive Study Suite & Visual Archive
+          </span>
+        </h1>
+        <p class="text-sm md:text-base text-emerald-100/90 leading-relaxed mb-3">
+          Instructor: <strong class="text-white">Prof. Ramachandra Prasad P</strong> • Teaching Assistants: Nemani Dedeepya, Vastava Kurumeti, Kalakuntla Rishika, Himank Singhvi
+        </p>
+        <p class="text-xs md:text-sm text-slate-300 leading-relaxed mb-6">
+          Every single slide across all 15 lectures is systematically mapped into dedicated slide learning cards with verbatim text, deep pedagogical breakdowns, 15 interactive simulators, active recall flashcards, and live Moodle announcements.
+        </p>
+
+        <!-- STATS BAR -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-emerald-900/60">
+          <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
+            <div class="text-xs text-slate-400">Lecture Modules</div>
+            <div class="text-xl font-black text-emerald-400 mt-1">15 Topics</div>
+          </div>
+          <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
+            <div class="text-xs text-slate-400">Primary Slides</div>
+            <div class="text-xl font-black text-teal-400 mt-1">{total_slides_all} Slides</div>
+          </div>
+          <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
+            <div class="text-xs text-slate-400">Interactive Labs</div>
+            <div class="text-xl font-black text-cyan-400 mt-1">15 Simulators</div>
+          </div>
+          <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
+            <div class="text-xs text-slate-400">Moodle Synced</div>
+            <div class="text-xl font-black text-amber-400 mt-1">22 Threads</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ 3 ANNOUNCEMENT & PREP SUITE BANNER -->
+  <section class="max-w-7xl mx-auto px-4 pb-6">
+    <div class="p-6 bg-gradient-to-r from-[#0d2a1f] via-[#0b1f17] to-[#071711] border-2 border-emerald-500/80 rounded-2xl relative overflow-hidden shadow-xl shadow-emerald-950/50">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 relative z-10">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500 text-black text-xs font-black uppercase tracking-wide">Exam Prep</span>
+            <span class="text-xs font-mono text-emerald-300">Lectures 8 to 11 Syllabus</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-black text-white">⚡ Quiz 3 Master Preparation Suite & Past Papers Question Bank</h2>
+          <p class="text-xs md:text-sm text-slate-300 mt-1 max-w-3xl">
+            Complete question extraction from past exam papers, featuring timed mock exams with grading rubrics, active-recall 3D flashcards, rapid-fire fill-in-the-blank drills, and chemical reactions lab.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 w-full lg:w-auto">
+          <a href="quiz3_practice_suite.html" class="flex-1 lg:flex-none text-center text-xs md:text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-black px-5 py-3 rounded-xl transition-all shadow-lg shadow-emerald-950 flex items-center justify-center gap-2">
+            <span>🚀 Open Quiz 3 Exam Suite</span>
+          </a>
+          <a href="Quiz3_Exam_Preparation_Pack.pdf" download class="text-xs bg-red-700 hover:bg-red-600 text-white font-bold px-4 py-3 rounded-xl transition-all shadow-md flex items-center justify-center gap-1.5 mr-2"><span>📄 PDF Pack</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAM & ANNOUNCEMENTS DIGEST -->
+  <section class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Midsem & Endsem Syllabus -->
+      <div class="eco-card p-6 border-emerald-800">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">📋</span>
+          <h3 class="text-lg font-bold text-white">Official Exam Syllabus Breakdown</h3>
+        </div>
+        <div class="space-y-3 text-xs">
+          <div class="p-3 bg-[#06140e] border border-emerald-900/80 rounded-xl">
+            <div class="flex justify-between items-center mb-1">
+              <strong class="text-emerald-400 font-bold">Midsem Exam Syllabus (Covered)</strong>
+              <span class="badge-emerald px-2 py-0.5 rounded text-[10px]">Lectures 1–7</span>
+            </div>
+            <p class="text-slate-300">Overview & 2070 Vision, Earth Spheres & Thermodynamics, Pollution & Particulates, Remote Sensing & GIS, Landmark Events (Bhopal, Chernobyl, Minamata), Biogeochemical Cycles, Climate Impacts.</p>
+          </div>
+          <div class="p-3 bg-[#06140e] border border-teal-900/80 rounded-xl">
+            <div class="flex justify-between items-center mb-1">
+              <strong class="text-teal-300 font-bold">Quiz-2 Exam Syllabus (Completed)</strong>
+              <span class="badge-teal px-2 py-0.5 rounded text-[10px]">Lectures 1–10b</span>
+            </div>
+            <p class="text-slate-300">Biogeochemical cycles, Ocean Carbon Sequestration, Terrestrial Sinks, Biochar chemistry, and Clean Development Mechanism (CDM).</p>
+          </div>
+          <div class="p-3 bg-[#06140e] border border-amber-900/80 rounded-xl">
+            <div class="flex justify-between items-center mb-1">
+              <strong class="text-amber-300 font-bold">Course Project Presentations & Deadlines</strong>
+              <span class="badge-amber px-2 py-0.5 rounded text-[10px]">Nov 17–18, 2026</span>
+            </div>
+            <p class="text-slate-300">Presentations in <strong>LSI conference Room</strong> on 17th and 18th November 2026 (11:00 AM – 4:00 PM). Strictly 25 mins presentation + 5 mins Q&A. Final Project Report due 22nd November 2026, 5:00 PM.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Announcements Digest -->
+      <div class="eco-card p-6 border-emerald-800">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">📢</span>
+            <h3 class="text-lg font-bold text-white">Moodle Announcements Digest</h3>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono">22 Threads Synced</span>
+        </div>
+        <div class="space-y-2 text-xs max-h-56 overflow-y-auto pr-1">
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Final Project Presentations Venue & Schedule</div>
+            <div class="text-slate-400 text-[11px]">Prof. Ramachandra Prasad P: Presentations on 17th and 18th November in LSI conference Room. Over-time presentations will be stopped immediately.</div>
+          </div>
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Final Project Report Submission Deadline</div>
+            <div class="text-slate-400 text-[11px]">Submission deadline: 22nd November 2026, 5:00 PM via Moodle portal.</div>
+          </div>
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Quiz-2 Exam Announcement</div>
+            <div class="text-slate-400 text-[11px]">Nemani Dedeepya: Quiz-2 syllabus covers Lectures 1–10b with numerical problems and concept check.</div>
+          </div>
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Midsem Paper Showing & Makeup Exam Syllabus</div>
+            <div class="text-slate-400 text-[11px]">Prof. Ramachandra Prasad P: Confirmed makeup exam covers Lectures 1–7.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ALL 15 MODULES GRID -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+      <div>
+        <h2 class="text-2xl font-black text-white">All 15 Lecture Modules</h2>
+        <p class="text-xs text-slate-300">Complete slidewise learning cards covering all {total_slides_all} slides across the semester.</p>
+      </div>
+      <a href="Study_Material/00_home.html" class="text-xs text-emerald-400 font-mono font-bold hover:underline">View Detailed Curriculum Roadmap →</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {lec_cards_html}
+    </div>
+  </section>
+
+</body>
+</html>
+"""
+    out_index = os.path.join(WORKSPACE, "index.html")
+    with open(out_index, "w", encoding="utf-8") as f:
+        f.write(index_html)
+    print(f"[+] Generated Master Portal: {out_index}")
+    return out_index
+
 def main():
     print("==================================================")
-    print("  [EST] REGENERATING EST INTERACTIVE STUDY SUITE")
-    print("  Teaching Slide Contents in Every Single Card")
+    print("  [EST] REGENERATING FULL EST STUDY SUITE")
+    print("  Covering 100% of 522 Slides Across 15 Modules")
     print("==================================================")
     for lec in METADATA:
         generate_lecture_page(lec)
     generate_curriculum_home()
+    generate_master_index()
     print("\n[OK] Website regeneration complete!")
 
 if __name__ == "__main__":

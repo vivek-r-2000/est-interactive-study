@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lecture 13: Environmental Movements: Grassroots Ecology & Forest Conservation — EST Study Suite 🌿</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+
+<style>
+
+  :root {
+    --bg-main: #060f0b;
+    --bg-card: #0b1a14;
+    --bg-card-hover: #10241c;
+    --border: #183327;
+    --border-accent: #23523f;
+    --primary: #10b981;
+    --primary-light: #34d399;
+    --primary-glow: rgba(16, 185, 129, 0.35);
+    --teal: #14b8a6;
+    --cyan: #06b6d4;
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --text: #f0fdf4;
+    --muted: #94a3b8;
+    --muted-green: #a7f3d0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg-main);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Eco Glassmorphism & Cards */
+  .eco-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.25s ease;
+  }
+  .eco-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px -10px var(--primary-glow);
+  }
+
+  /* Badges */
+  .badge-emerald { background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; }
+  .badge-teal    { background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.3); color: #5eead4; }
+  .badge-amber   { background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); color: #fcd34d; }
+  .badge-cyan    { background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.3); color: #67e8f9; }
+
+  /* 3D Flip Card */
+  .flip-card-wrap { perspective: 900px; height: 210px; cursor: pointer; }
+  .flip-card-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1); }
+  .flip-card-wrap.flipped .flip-card-inner { transform: rotateY(180deg); }
+  .flip-face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border-radius: 14px; border: 1px dashed var(--border-accent);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .flip-front { background: rgba(16, 185, 129, 0.05); }
+  .flip-back  { background: rgba(20, 184, 166, 0.12); border-color: var(--teal); transform: rotateY(180deg); }
+
+  /* Quiz */
+  .quiz-option {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; border-radius: 10px;
+    border: 1px solid var(--border); margin-bottom: 10px;
+    cursor: pointer; font-size: 14px; transition: all .2s;
+    background: rgba(255,255,255,0.02);
+  }
+  .quiz-option:hover { border-color: var(--primary); background: rgba(16, 185, 129, 0.08); }
+  .quiz-option.correct { border-color: #10b981!important; background: rgba(16, 185, 129, 0.18)!important; color: #a7f3d0; }
+  .quiz-option.wrong   { border-color: #ef4444!important; background: rgba(239, 68, 68, 0.18)!important; color: #fca5a5; }
+  .quiz-option.disabled { pointer-events: none; }
+  .q-letter {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--border-accent); display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+  }
+
+  /* Slide Lightbox Modal */
+  .slide-modal-backdrop {
+    display: none; position: fixed; inset: 0; z-index: 1000;
+    background: rgba(3, 7, 5, 0.94); backdrop-filter: blur(8px);
+    align-items: center; justify-content: center; padding: 24px;
+  }
+  .slide-modal-backdrop.show { display: flex; }
+
+
+  /* Top Bar */
+  #topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    background: #040a07; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 12px;
+    padding: 0 16px; height: 54px;
+  }
+  #topbar a { color: var(--primary-light); font-size: 13px; text-decoration: none; font-weight: 600; }
+  #module-title { font-weight: 800; font-size: 13px; color: #fff; white-space: nowrap; }
+  #progress-bar-bg { background: var(--border); border-radius: 99px; height: 6px; width: 100%; }
+  #progress-bar-fill { background: linear-gradient(90deg, #10b981, #14b8a6); height: 6px; border-radius: 99px; transition: width .3s ease; width: 0%; }
+
+  /* Pomodoro */
+  #pomodoro {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 4px 12px; cursor: pointer; white-space: nowrap;
+  }
+  #timer-display { font-size: 13px; font-weight: 700; color: #f59e0b; font-variant-numeric: tabular-nums; }
+
+  /* Layout */
+  #layout { display: flex; margin-top: 54px; height: calc(100vh - 54px); }
+  #sidebar {
+    width: 280px; min-width: 280px; background: #040b08;
+    border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .sidebar-link {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 16px; font-size: 12px; color: var(--muted);
+    cursor: pointer; transition: all .2s; border-left: 3px solid transparent;
+  }
+  .sidebar-link:hover { background: rgba(16, 185, 129, 0.08); color: #fff; }
+  .sidebar-link.active { background: rgba(16, 185, 129, 0.15); color: #34d399; border-left-color: #10b981; font-weight: 700; }
+  .sidebar-dot { width: 6px; height: 6px; border-radius: 50%; background: #334155; flex-shrink: 0; }
+  .sidebar-link.active .sidebar-dot { background: #10b981; box-shadow: 0 0 8px #10b981; }
+
+  /* Main */
+  #main {
+    flex: 1; overflow-y: auto; padding: 24px 20px 100px 20px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .card-screen { display: none; width: 100%; max-width: 1050px; animation: fadeIn .2s ease; }
+  .card-screen.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+
+  /* Nav Bar */
+  #nav-bar {
+    position: fixed; bottom: 0; left: 280px; right: 0;
+    background: #040a07; border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    padding: 12px 24px; z-index: 40;
+  }
+  @media (max-width: 768px) {
+    #sidebar { display: none; }
+    #nav-bar { left: 0; }
+  }
+</style>
+</head>
+<body class="selection:bg-emerald-600 selection:text-white">
+
+  <!-- TOP BAR -->
+  <header id="topbar">
+    <a href="00_home.html" class="flex items-center gap-1">← <span class="hidden sm:inline">All Modules</span></a>
+    <span style="color:var(--border)">|</span>
+    <span id="module-title">Lec 13: Environmental Movements</span>
+    <div class="flex-1 flex flex-col gap-1 mx-2 min-w-0">
+      <div class="flex justify-between text-[11px]">
+        <span id="section-label" class="text-emerald-400 font-semibold truncate">Section 1</span>
+        <span id="progress-label" class="text-slate-400 font-mono">0%</span>
+      </div>
+      <div id="progress-bar-bg"><div id="progress-bar-fill"></div></div>
+    </div>
+    <div id="pomodoro" onclick="togglePomodoro()">
+      <span>⏱️</span>
+      <span id="timer-display">25:00</span>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div id="layout">
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+      <div class="text-[10px] font-bold tracking-widest text-emerald-400/80 uppercase px-4 py-2">Lecture Curriculum</div>
+      
+        <div class="sidebar-link active" onclick="goToCard(0)" id="slink_0">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">📌 1. Lecture Overview & Roadmap</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(1)" id="slink_1">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 1: Class-13</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(2)" id="slink_2">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 2: Bishnoi- the ecological st</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(3)" id="slink_3">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 3: http://www.bishnoism.com/t</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(4)" id="slink_4">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 4: The Chipko Movement</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(5)" id="slink_5">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 5: Founder of Chipko</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(6)" id="slink_6">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 6: The spreading of movement</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(7)" id="slink_7">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 7: Slide 7</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(8)" id="slink_8">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 8: Appiko  movement</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(9)" id="slink_9">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 9: The Kunthipuzha River</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(10)" id="slink_10">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 10: Kali Bachao Andolan</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(11)" id="slink_11">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 11: Narmada Bachao Andolan</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(12)" id="slink_12">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 12: Coffer</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(13)" id="slink_13">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 13: Slide 13</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(14)" id="slink_14">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 14: Slide 14</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(15)" id="slink_15">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">Slide 15: Slide 15</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(16)" id="slink_16">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">🧪 Interactive Simulator Lab</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(17)" id="slink_17">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">🗂️ Active Recall Flashcards</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(18)" id="slink_18">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">⚠️ High-Yield Exam Traps</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(19)" id="slink_19">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">📝 Concept Check Quiz</span>
+        </div>
+        
+        <div class="sidebar-link " onclick="goToCard(20)" id="slink_20">
+          <span class="sidebar-dot"></span>
+          <span class="truncate">📚 Slide Gallery (15 Slides)</span>
+        </div>
+        
+    </nav>
+
+    <!-- MAIN VIEW -->
+    <main id="main">
+      
+    <section class="card-screen active" data-title="1. Lecture Scope & Roadmap">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Lecture 13 • Syllabus Roadmap</span>
+            <span class="text-xs text-slate-400">• Beginner • 35 mins</span>
+          </div>
+          <span class="badge-teal px-2.5 py-1 rounded text-xs font-mono">📚 15 Slides Covered Slidewise</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Environmental Movements: Grassroots Ecology & Citizen Action</h2>
+        <div class="text-emerald-400 text-sm font-semibold mb-4">From Sacred Groves and Bishnoi Martyrdom to Chipko and Anti-Dam Agitations</div>
+        
+        <div class="p-4 bg-[#05140d] border-l-4 border-emerald-500 rounded-r-xl mb-6 text-emerald-100 text-xs md:text-sm leading-relaxed">
+          <strong class="text-emerald-300 block mb-1">💡 Why This Lecture Matters:</strong>
+          Environmental governance is not merely top-down statutory regulation; historically, the most transformative conservation victories emerged from grassroots citizen activism. In India, indigenous and rural communities—whose immediate livelihoods depend directly on intact forests, rivers, and common pastures—have pioneered non-violent resistance strategies that forced national policy shifts, protected biodiversity hotspots, and highlighted environmental justice.
+        </div>
+
+        
+
+        <div class="mb-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-emerald-300 font-mono uppercase tracking-wider">Slide Navigation Directory</span>
+            <button onclick="goToCard(1)" class="text-xs font-bold text-emerald-400 hover:underline">Start Slide 1 →</button>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+            
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(1)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#1</span>
+            <span class="text-xs text-white truncate">Class-13</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(2)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#2</span>
+            <span class="text-xs text-white truncate">Bishnoi- the ecological stewards</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(3)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#3</span>
+            <span class="text-xs text-white truncate">http://www.bishnoism.com/thefirst.php</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(4)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#4</span>
+            <span class="text-xs text-white truncate">The Chipko Movement</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(5)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#5</span>
+            <span class="text-xs text-white truncate">Founder of Chipko</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(6)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#6</span>
+            <span class="text-xs text-white truncate">The spreading of movement</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(7)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#7</span>
+            <span class="text-xs text-white truncate">Slide 7</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(8)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#8</span>
+            <span class="text-xs text-white truncate">Appiko  movement</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(9)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#9</span>
+            <span class="text-xs text-white truncate">The Kunthipuzha River</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(10)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#10</span>
+            <span class="text-xs text-white truncate">Kali Bachao Andolan</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(11)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#11</span>
+            <span class="text-xs text-white truncate">Narmada Bachao Andolan</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+        <div class="p-2.5 rounded-lg bg-[#081711] border border-emerald-900/60 flex items-center justify-between gap-2 hover:border-emerald-600 transition-all cursor-pointer" onclick="goToCard(12)">
+          <div class="flex items-center gap-2 truncate">
+            <span class="badge-emerald px-1.5 py-0.5 rounded text-[10px] font-mono font-bold flex-shrink-0">#12</span>
+            <span class="text-xs text-white truncate">Coffer</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-mono flex-shrink-0">Study →</span>
+        </div>
+        
+          </div>
+          <div class="text-center mt-3">
+            <button onclick="goToCard(1)" class="px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-emerald-950 transition-all cursor-pointer">
+              Launch Slidewise Learning (Slide 1 of 15) →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+        <section class="card-screen" data-title="Slide 1: Class-13">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 1 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_1" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_1" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" selected>Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_01.jpg', 'Slide 1: Class-13')">
+                <img src="assets/slides/lec_13/slide_01.jpg" alt="Slide 1: Class-13" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Class-13</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Class-13 Environmental Movements 26th October 2026</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide presents essential concepts in Lecture 13: Class-13. Specifically, it examines Class-13 Environmental Movements 26th October 2026. In the broader context of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., mastering this material is critical for analyzing ecological tradeoffs, regulatory frameworks, and exam questions on environmental system dynamics.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(0)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Overview)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 1 of 15
+          </div>
+          <button onclick="goToCard(2)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 2) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 2: Bishnoi- the ecological s">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 2 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_2" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_2" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" selected>Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_02.jpg', 'Slide 2: Bishnoi- the ecological stewards')">
+                <img src="assets/slides/lec_13/slide_02.jpg" alt="Slide 2: Bishnoi- the ecological stewards" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Bishnoi- the ecological stewards</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Bishnoi- the ecological stewards Rules: Not to cut trees Be compassionate to all living beings</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide examines the historic Bishnoi community of Rajasthan, renowned as India's first ecological stewards. Founded by Guru Jambheshwar in the 15th century with 29 rules (including strict prohibitions against cutting green trees and harming wild animals), the Bishnois sacrificed 363 lives in 1730 led by Amrita Devi to protect sacred Khejri (Prosopis cineraria) trees from the Maharaja of Jodhpur's axemen, establishing the historical antecedent for modern forest conservation.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(1)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 1)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 2 of 15
+          </div>
+          <button onclick="goToCard(3)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 3) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 3: http://www.bishnoism.com/">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 3 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_3" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_3" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" selected>Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_03.jpg', 'Slide 3: http://www.bishnoism.com/thefirst.php')">
+                <img src="assets/slides/lec_13/slide_03.jpg" alt="Slide 3: http://www.bishnoism.com/thefirst.php" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">http://www.bishnoism.com/thefirst.php</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <p class="text-slate-400 italic text-xs">Visual figure / diagram presentation slide. Review the high-resolution render on the left.</p>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide examines the historic Bishnoi community of Rajasthan, renowned as India's first ecological stewards. Founded by Guru Jambheshwar in the 15th century with 29 rules (including strict prohibitions against cutting green trees and harming wild animals), the Bishnois sacrificed 363 lives in 1730 led by Amrita Devi to protect sacred Khejri (Prosopis cineraria) trees from the Maharaja of Jodhpur's axemen, establishing the historical antecedent for modern forest conservation.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(2)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 2)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 3 of 15
+          </div>
+          <button onclick="goToCard(4)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 4) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 4: The Chipko Movement">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 4 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_4" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_4" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" selected>Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_04.jpg', 'Slide 4: The Chipko Movement')">
+                <img src="assets/slides/lec_13/slide_04.jpg" alt="Slide 4: The Chipko Movement" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">The Chipko Movement</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">The Chipko Movement Government&#x27;s decision to allot forest trees to a sports goods company. The local residents in Gopeshwar were denied the</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide covers the landmark Chipko Movement initiated in the 1970s in the Garhwal Himalayas of Uttarakhand (Reni village). When the state forest department allotted ash trees to a commercial sports goods manufacturer while denying local agricultural access, rural women led by Gaura Devi and environmentalists Sunderlal Bahuguna and Chandi Prasad Bhatt physically clung to trees ('Chipko' = to hug/cling). The movement forced a 15-year commercial logging moratorium across Himalayan catchment forests.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(3)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 3)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 4 of 15
+          </div>
+          <button onclick="goToCard(5)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 5) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 5: Founder of Chipko">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 5 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_5" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_5" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" selected>Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_05.jpg', 'Slide 5: Founder of Chipko')">
+                <img src="assets/slides/lec_13/slide_05.jpg" alt="Slide 5: Founder of Chipko" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Founder of Chipko</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Founder of Chipko movement. Organized rallies to protect the</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide covers the landmark Chipko Movement initiated in the 1970s in the Garhwal Himalayas of Uttarakhand (Reni village). When the state forest department allotted ash trees to a commercial sports goods manufacturer while denying local agricultural access, rural women led by Gaura Devi and environmentalists Sunderlal Bahuguna and Chandi Prasad Bhatt physically clung to trees ('Chipko' = to hug/cling). The movement forced a 15-year commercial logging moratorium across Himalayan catchment forests.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(4)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 4)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 5 of 15
+          </div>
+          <button onclick="goToCard(6)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 6) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 6: The spreading of movement">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 6 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_6" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_6" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" selected>Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_06.jpg', 'Slide 6: The spreading of movement')">
+                <img src="assets/slides/lec_13/slide_06.jpg" alt="Slide 6: The spreading of movement" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">The spreading of movement</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">The spreading of movement Sunder Lal Bahuguna (Environmentalist) Enlightened the country and out world about the movement, its success and environmental</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide covers the landmark Chipko Movement initiated in the 1970s in the Garhwal Himalayas of Uttarakhand (Reni village). When the state forest department allotted ash trees to a commercial sports goods manufacturer while denying local agricultural access, rural women led by Gaura Devi and environmentalists Sunderlal Bahuguna and Chandi Prasad Bhatt physically clung to trees ('Chipko' = to hug/cling). The movement forced a 15-year commercial logging moratorium across Himalayan catchment forests.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(5)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 5)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 6 of 15
+          </div>
+          <button onclick="goToCard(7)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 7) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 7: Slide 7">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 7 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_7" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_7" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" selected>Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_07.jpg', 'Slide 7: Slide 7')">
+                <img src="assets/slides/lec_13/slide_07.jpg" alt="Slide 7: Slide 7" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Slide 7</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <p class="text-slate-400 italic text-xs">Visual figure / diagram presentation slide. Review the high-resolution render on the left.</p>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This visual slide in Lecture 13 illustrates core structural mechanisms and empirical data for Slide 7. It provides essential visual context within the curriculum of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., directly connecting theoretical principles with real-world environmental technology observations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(6)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 6)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 7 of 15
+          </div>
+          <button onclick="goToCard(8)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 8) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 8: Appiko  movement">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 8 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_8" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_8" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" selected>Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_08.jpg', 'Slide 8: Appiko  movement')">
+                <img src="assets/slides/lec_13/slide_08.jpg" alt="Slide 8: Appiko  movement" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Appiko  movement</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Appiko movement Objectives of Appiko Preservation Restoration (5F’s)</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide details the Appiko Movement, the southern counterpart to Chipko launched in September 1983 in Salkani forest, Uttara Kannada (Karnataka). Villagers embraced trees to halt clear-cutting in the Western Ghats biodiversity hotspot. Appiko articulated three operational objectives encapsulated as 'Ubbesu' (save/protect), 'Belessu' (grow/plant), and 'Balesu' (rational use), focusing on the 5 Fs of rural subsistence: Food, Fodder, Fuel, Fertilizer, and Fiber.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(7)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 7)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 8 of 15
+          </div>
+          <button onclick="goToCard(9)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 9) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 9: The Kunthipuzha River">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 9 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_9" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_9" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" selected>Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_09.jpg', 'Slide 9: The Kunthipuzha River')">
+                <img src="assets/slides/lec_13/slide_09.jpg" alt="Slide 9: The Kunthipuzha River" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">The Kunthipuzha River</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">The Kunthipuzha River 1970: the Kerala State Electricity Board (KSEB) (submergence of 8.3 sq km of moist EG forest ) 1971 – 72: Steven Green -Rom Whitaker (BNHS)</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide analyzes the Save Silent Valley Movement (1970s–1980s) in Palakkad, Kerala. The Kerala State Electricity Board (KSEB) proposed a 120 MW hydroelectric dam across the Kunthipuzha River that would submerge 8.3 sq km of pristine tropical evergreen rainforest. Led by the Kerala Sastra Sahitya Parishad (KSSP) and poet-activist Sugathakumari, the struggle successfully mobilized public opinion and scientific surveys of the endangered Lion-tailed Macaque, culminating in the cancellation of the dam and declaration of Silent Valley National Park in 1984.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(8)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 8)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 9 of 15
+          </div>
+          <button onclick="goToCard(10)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 10) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 10: Kali Bachao Andolan">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 10 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_10" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_10" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" selected>Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_10.jpg', 'Slide 10: Kali Bachao Andolan')">
+                <img src="assets/slides/lec_13/slide_10.jpg" alt="Slide 10: Kali Bachao Andolan" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Kali Bachao Andolan</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Kali Bachao Andolan The river is 184 kms. long – flow- Arabian Sea. There are 6 major hydroelectric dams that have submerged over 32,000 acres of the rich forests</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide presents essential concepts in Lecture 13: Kali Bachao Andolan. Specifically, it examines Kali Bachao Andolan The river is 184 kms. long – flow- Arabian Sea. There are 6 major hydroelectric dams that have submerged over 32,000 acres of the rich forests. In the broader context of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., mastering this material is critical for analyzing ecological tradeoffs, regulatory frameworks, and exam questions on environmental system dynamics.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(9)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 9)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 10 of 15
+          </div>
+          <button onclick="goToCard(11)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 11) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 11: Narmada Bachao Andolan">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 11 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_11" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_11" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" selected>Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_11.jpg', 'Slide 11: Narmada Bachao Andolan')">
+                <img src="assets/slides/lec_13/slide_11.jpg" alt="Slide 11: Narmada Bachao Andolan" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Narmada Bachao Andolan</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Narmada Bachao Andolan Conceived in the mid-1960s under Nehru Building postponed due to disagreement between three states impacted by project:</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This slide focuses on the Narmada Bachao Andolan (NBA), founded in 1985 by Medha Patkar and Baba Amte to oppose massive multi-purpose dam projects (particularly the Sardar Sarovar Dam in Gujarat and Narmada Sagar in MP). The movement challenged conventional developmental models by highlighting the involuntary displacement of over 250,000 predominantly tribal people without adequate rehabilitation, environmental submergence of fertile agricultural valleys, and questionable cost-benefit accounting.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(10)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 10)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 11 of 15
+          </div>
+          <button onclick="goToCard(12)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 12) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 12: Coffer">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 12 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_12" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_12" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" selected>Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_12.jpg', 'Slide 12: Coffer')">
+                <img src="assets/slides/lec_13/slide_12.jpg" alt="Slide 12: Coffer" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Coffer</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <ul class="space-y-2 text-xs md:text-sm"><li class="flex items-start gap-2 text-slate-200"><span class="text-emerald-400 font-bold mt-0.5">•</span><span class="leading-relaxed">Coffer Dam</span></li></ul>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This visual slide in Lecture 13 illustrates core structural mechanisms and empirical data for Coffer. It provides essential visual context within the curriculum of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., directly connecting theoretical principles with real-world environmental technology observations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(11)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 11)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 12 of 15
+          </div>
+          <button onclick="goToCard(13)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 13) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 13: Slide 13">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 13 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_13" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_13" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" selected>Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_13.jpg', 'Slide 13: Slide 13')">
+                <img src="assets/slides/lec_13/slide_13.jpg" alt="Slide 13: Slide 13" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Slide 13</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <p class="text-slate-400 italic text-xs">Visual figure / diagram presentation slide. Review the high-resolution render on the left.</p>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This visual slide in Lecture 13 illustrates core structural mechanisms and empirical data for Slide 13. It provides essential visual context within the curriculum of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., directly connecting theoretical principles with real-world environmental technology observations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(12)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 12)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 13 of 15
+          </div>
+          <button onclick="goToCard(14)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 14) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 14: Slide 14">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 14 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_14" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_14" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" selected>Slide 14: Slide 14</option><option value="15" >Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_14.jpg', 'Slide 14: Slide 14')">
+                <img src="assets/slides/lec_13/slide_14.jpg" alt="Slide 14: Slide 14" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Slide 14</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <p class="text-slate-400 italic text-xs">Visual figure / diagram presentation slide. Review the high-resolution render on the left.</p>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This visual slide in Lecture 13 illustrates core structural mechanisms and empirical data for Slide 14. It provides essential visual context within the curriculum of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., directly connecting theoretical principles with real-world environmental technology observations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(13)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 13)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 14 of 15
+          </div>
+          <button onclick="goToCard(15)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Next (Slide 15) →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+        <section class="card-screen" data-title="Slide 15: Slide 15">
+          <div class="eco-card p-5 md:p-7 border-emerald-800/80 mb-6">
+            <!-- Header bar with Jump selector -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-900/60">
+              <div class="flex items-center gap-2">
+                <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Slide 15 of 15</span>
+                <span class="text-xs text-slate-400 font-mono hidden sm:inline">Class-13-Environmental Movements.pdf</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <label for="slide_select_15" class="text-[11px] text-slate-400 font-mono hidden md:inline">Jump to:</label>
+                <select id="slide_select_15" onchange="goToCard(parseInt(this.value))" class="bg-[#05140e] border border-emerald-800 text-emerald-300 text-xs rounded px-2.5 py-1 font-mono focus:outline-none focus:border-emerald-500">
+                  <option value="1" >Slide 1: Class-13</option><option value="2" >Slide 2: Bishnoi- the ecological stewards</option><option value="3" >Slide 3: http://www.bishnoism.com/thefirs...</option><option value="4" >Slide 4: The Chipko Movement</option><option value="5" >Slide 5: Founder of Chipko</option><option value="6" >Slide 6: The spreading of movement</option><option value="7" >Slide 7: Slide 7</option><option value="8" >Slide 8: Appiko  movement</option><option value="9" >Slide 9: The Kunthipuzha River</option><option value="10" >Slide 10: Kali Bachao Andolan</option><option value="11" >Slide 11: Narmada Bachao Andolan</option><option value="12" >Slide 12: Coffer</option><option value="13" >Slide 13: Slide 13</option><option value="14" >Slide 14: Slide 14</option><option value="15" selected>Slide 15: Slide 15</option>
+                </select>
+                <button onclick="prevCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Previous Slide">◀</button>
+                <button onclick="nextCard()" class="px-2 py-1 rounded bg-[#071a12] border border-emerald-800 text-emerald-300 text-xs hover:bg-emerald-800 font-mono" title="Next Slide">▶</button>
+              </div>
+            </div>
+
+            <!-- Slide Showcase Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Left: Slide Image -->
+              <div class="lg:col-span-6 bg-black/60 border border-emerald-900/80 rounded-xl p-2.5 flex flex-col items-center justify-center cursor-pointer group" onclick="openLightbox('assets/slides/lec_13/slide_15.jpg', 'Slide 15: Slide 15')">
+                <img src="assets/slides/lec_13/slide_15.jpg" alt="Slide 15: Slide 15" class="w-full h-auto max-h-[460px] object-contain rounded group-hover:scale-[1.01] transition-all" loading="lazy">
+                <div class="w-full flex items-center justify-between text-[11px] text-emerald-400 font-mono mt-2.5 px-1">
+                  <span class="flex items-center gap-1"><span>🔍</span> Click or press <kbd class="px-1.5 py-0.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-mono text-[10px]">Z</kbd> for lightbox</span>
+                  <span class="text-slate-400 text-[10px]">High-Res Render</span>
+                </div>
+              </div>
+
+              <!-- Right: Bullets & Deep Explanation -->
+              <div class="lg:col-span-6 space-y-4">
+                <!-- Official Slide Title -->
+                <div class="p-3.5 bg-[#081a13] border-l-4 border-emerald-500 rounded-r-xl">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-0.5">Slide Title</span>
+                  <h3 class="text-base md:text-lg font-bold text-white leading-snug">Slide 15</h3>
+                </div>
+
+                <!-- Verbatim Slide Content & Bullets -->
+                <div class="p-4 bg-[#0a2017] border border-emerald-900/60 rounded-xl">
+                  <span class="text-[10px] uppercase font-bold text-teal-300 font-mono block mb-2">📝 Slide Content & Key Bullet Points</span>
+                  <p class="text-slate-400 italic text-xs">Visual figure / diagram presentation slide. Review the high-resolution render on the left.</p>
+                </div>
+
+                <!-- Deep Pedagogical Breakdown & Professor Explanation -->
+                <div class="p-4 bg-[#071912] border border-emerald-800/80 rounded-xl text-xs md:text-sm text-emerald-100 leading-relaxed">
+                  <span class="text-[10px] uppercase font-bold text-emerald-400 font-mono block mb-1.5">💡 Scientific Breakdown & Teaching Analysis</span>
+                  <p class="text-slate-200">This visual slide in Lecture 13 illustrates core structural mechanisms and empirical data for Slide 15. It provides essential visual context within the curriculum of Environmental movements and grassroots ecology: Bishnoi community conservation ethics in Rajasthan (protection of sacred Khejri trees / Prosopis cineraria, Amrita Devi martyrdom in 1730), the Chipko movement in Uttarakhand (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt - hugging forest trees to prevent commercial sports goods logging), Appiko movement in Uttara Kannada (Western Ghats - 5Fs: Food, Fodder, Fuel, Fertilizer, Fiber), Silent Valley agitation in Kerala (saving the evergreen rainforest and lion-tailed macaque from the KSEB Kunthipuzha hydro project), Kali Bachao Andolan, and Narmada Bachao Andolan (Medha Patkar, Baba Amte - opposing large dams and displacement on the Narmada river)., directly connecting theoretical principles with real-world environmental technology observations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer navigation -->
+            
+        <div class="flex items-center justify-between gap-3 pt-4 border-t border-emerald-900/60 mt-4">
+          <button onclick="goToCard(14)" class="px-4 py-2 rounded-lg bg-[#071912] border border-emerald-900 text-slate-300 hover:text-white hover:border-emerald-500 text-xs font-mono transition-all">
+            ← Previous (Slide 14)
+          </button>
+          <div class="text-xs font-mono text-emerald-400">
+            Slide 15 of 15
+          </div>
+          <button onclick="goToCard(16)" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950">
+            Continue to Interactive Lab →
+          </button>
+        </div>
+        
+          </div>
+        </section>
+        
+
+    <section class="card-screen" data-title="🧪 Interactive Simulator Lab">
+      <div class="mb-6">
+        
+    <div class="eco-card p-6 border-emerald-800 bg-[#06150e]">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-emerald-900/80">
+        <div>
+          <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Simulator 13</span>
+          <h3 class="text-xl font-black text-white mt-1">Hydroelectric Dam Submergence vs Ecological Valuation</h3>
+        </div>
+        <span class="text-xs text-emerald-400 font-mono">Silent Valley & Narmada Tradeoff Model</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-6">
+        Simulate the techno-ecological conflict of large river valley projects. Adjust dam reservoir height to observe installed hydroelectric capacity, forest submergence area, displaced population, and the environmental resistance index.
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Controls -->
+        <div class="lg:col-span-5 space-y-4 bg-[#081a12] p-4 rounded-xl border border-emerald-900/60">
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span class="text-slate-300">Dam Wall Height ($H$):</span>
+              <span id="dam_h_val" class="text-emerald-400 font-mono font-bold">85 m</span>
+            </div>
+            <input type="range" id="dam_h_slider" min="30" max="140" step="5" value="85" class="w-full accent-emerald-500" oninput="updateDamSim()">
+            <div class="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
+              <span>30 m (Low Run-of-River)</span>
+              <span>140 m (Mega Dam)</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span class="text-slate-300">Ecosystem Sensitivity Factor:</span>
+              <span id="dam_sens_val" class="text-teal-400 font-mono font-bold">High (Silent Valley Rainforest)</span>
+            </div>
+            <select id="dam_sens_select" class="w-full bg-[#05120c] border border-emerald-800 text-xs text-emerald-200 rounded-lg p-2 font-mono" onchange="updateDamSim()">
+              <option value="1.0">Low (Degraded Scrubland / Sparse)</option>
+              <option value="2.5">Moderate (Deciduous River Valley)</option>
+              <option value="5.0" selected>High (Endemic Pristine Evergreen Forest)</option>
+            </select>
+          </div>
+
+          <div class="p-3 bg-[#05120c] rounded-lg border border-emerald-900 text-xs text-slate-300 space-y-1 font-mono">
+            <div>• Hydropower Power Formula: $P = \eta \cdot \rho \cdot g \cdot Q \cdot H$</div>
+            <div>• Submergence scaling: $\text{Area} \propto H^{1.85}$</div>
+          </div>
+        </div>
+
+        <!-- Live Outputs -->
+        <div class="lg:col-span-7 grid grid-cols-2 gap-3">
+          <div class="p-4 bg-[#081a12] border border-emerald-900/80 rounded-xl flex flex-col justify-between">
+            <span class="text-[11px] font-bold text-slate-400 uppercase font-mono">Installed Power</span>
+            <div id="dam_power_out" class="text-2xl font-black text-emerald-400 font-mono my-2">120 MW</div>
+            <span class="text-[10px] text-slate-400">Clean electrical grid output</span>
+          </div>
+
+          <div class="p-4 bg-[#081a12] border border-emerald-900/80 rounded-xl flex flex-col justify-between">
+            <span class="text-[11px] font-bold text-slate-400 uppercase font-mono">Forest Submerged</span>
+            <div id="dam_area_out" class="text-2xl font-black text-amber-400 font-mono my-2">8.3 sq km</div>
+            <span class="text-[10px] text-slate-400">Canopy lost beneath water</span>
+          </div>
+
+          <div class="p-4 bg-[#081a12] border border-emerald-900/80 rounded-xl flex flex-col justify-between">
+            <span class="text-[11px] font-bold text-slate-400 uppercase font-mono">Displaced People</span>
+            <div id="dam_disp_out" class="text-2xl font-black text-red-400 font-mono my-2">3,400</div>
+            <span class="text-[10px] text-slate-400">Rural / tribal villagers</span>
+          </div>
+
+          <div class="p-4 bg-[#081a12] border border-emerald-900/80 rounded-xl flex flex-col justify-between">
+            <span class="text-[11px] font-bold text-slate-400 uppercase font-mono">Protest & Agitation Index</span>
+            <div id="dam_protest_out" class="text-2xl font-black text-purple-400 font-mono my-2">Severe (85/100)</div>
+            <span class="text-[10px] text-slate-400">Civil society resistance likelihood</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function updateDamSim() {
+        const h = parseFloat(document.getElementById('dam_h_slider').value);
+        const sens = parseFloat(document.getElementById('dam_sens_select').value);
+        document.getElementById('dam_h_val').innerText = h + ' m';
+        
+        // Power calculation (approx 1.4 MW per meter of head for 100 m3/s flow)
+        const mw = Math.round(1.41 * h);
+        // Submergence area scales non-linearly
+        const sqkm = (0.0018 * Math.pow(h, 1.88)).toFixed(1);
+        // Displacement
+        const disp = Math.round(12 * Math.pow(h, 1.35));
+        // Protest index
+        const protestScore = Math.min(100, Math.round((sqkm * sens * 2.2) + (disp / 80)));
+        let protestText = 'Low (30/100)';
+        if (protestScore > 75) protestText = 'Extreme (' + protestScore + '/100)';
+        else if (protestScore > 50) protestText = 'High (' + protestScore + '/100)';
+        else if (protestScore > 25) protestText = 'Moderate (' + protestScore + '/100)';
+
+        document.getElementById('dam_power_out').innerText = mw + ' MW';
+        document.getElementById('dam_area_out').innerText = sqkm + ' sq km';
+        document.getElementById('dam_disp_out').innerText = disp.toLocaleString();
+        document.getElementById('dam_protest_out').innerText = protestText;
+      }
+    </script>
+    
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="🗂️ Active Recall Flashcards">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Spaced Repetition</div>
+        <h2 class="text-2xl font-black text-white mb-2">Active Recall Flashcards</h2>
+        <p class="text-xs text-slate-300 mb-6">Test yourself on essential slide definitions, reactions, and principles before flipping.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What are the '5 Fs' articulated by the Appiko movement?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Food, Fodder, Fuel, Fertilizer, and Fiber—representing the essential material requirements supplied by natural diverse forests to rural agrarian ecosystems.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-sm md:text-base font-bold text-white mb-2">Which endangered primate species was central to the Save Silent Valley campaign?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">The Lion-tailed Macaque (*Macaca silenus*), endemic to the rainforest canopy of the Western Ghats.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-sm md:text-base font-bold text-white mb-2">What was the landmark outcome of the Chipko movement in 1980?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Prime Minister Indira Gandhi enforced a 15-year moratorium on commercial felling of green trees above 1,000 meters altitude in the Himalayan region.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card-wrap mb-4" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-face flip-front">
+              <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-2">Question (Click / Space to Flip)</span>
+              <div class="text-sm md:text-base font-bold text-white mb-2">Who founded the Bishnoi faith and what was their sacrifice in 1730?</div>
+              <span class="text-[11px] text-slate-400 mt-2">🔄 Click card to reveal answer</span>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="text-xs uppercase font-bold text-teal-300 tracking-wider mb-2">Answer</span>
+              <div class="text-xs md:text-sm font-semibold text-emerald-100 leading-relaxed">Guru Jambheshwar (15th century). In 1730, Amrita Devi and 362 Bishnois were martyred defending sacred Khejri trees from the Maharaja of Jodhpur's woodcutters.</div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="⚠️ High-Yield Exam Traps">
+      <div class="eco-card p-6 md:p-8 border-amber-800/80 mb-6">
+        <div class="badge-amber inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">High-Yield Insights</div>
+        <h2 class="text-2xl font-black text-white mb-2">Exam Traps, Fallacies & Professor Emphasis Points</h2>
+        <p class="text-xs text-slate-300 mb-6">Common student misconceptions and subtle distinctions tested in Midsem and Endsem exams.</p>
+        <ul class="space-y-1">
+          <li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Trap:</strong> Confusing Chipko (Uttarakhand Himalayas, Hindi) with Appiko (Western Ghats Karnataka, Kannada). Appiko was inspired by Chipko a decade later in 1983.</li><li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Trap:</strong> Assuming Silent Valley was fought for human displacement. Unlike Narmada, Silent Valley had no human settlement; it was fought purely for ecological and genetic biodiversity preservation.</li><li class='p-3 bg-[#05140d] border border-amber-900/60 rounded-xl text-xs text-slate-200 leading-relaxed mb-3'>⚠️ <strong>Exam Tip:</strong> Be prepared to list the 5 Fs of the Appiko movement and identify the Kunthipuzha River as the contested watercourse in Silent Valley.</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="📝 Concept Check Quiz">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-3">Knowledge Verification</div>
+        <h2 class="text-2xl font-black text-white mb-2">Concept Check Quiz</h2>
+        <p class="text-xs text-slate-300 mb-6">Instant feedback on core conceptual and quantitative questions from the lecture slides.</p>
+        <div>
+          
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 1</div>
+          <div class="text-sm font-bold text-white mb-4">The historic 1730 sacrifice led by Amrita Devi to protect sacred Khejri trees occurred in which Indian state?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_13_0')">
+              <span class="q-letter">A</span>
+              <span>Rajasthan</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_0')">
+              <span class="q-letter">B</span>
+              <span>Madhya Pradesh</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_0')">
+              <span class="q-letter">C</span>
+              <span>Gujarat</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_0')">
+              <span class="q-letter">D</span>
+              <span>Haryana</span>
+            </div>
+            
+          </div>
+          <div id="q_13_0" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> The Khejarli massacre occurred near Jodhpur, Rajasthan, where 363 Bishnoi community members sacrificed their lives defending sacred Khejri trees.
+          </div>
+        </div>
+        
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 2</div>
+          <div class="text-sm font-bold text-white mb-4">Which organization spearheaded the scientific public education campaign against the Silent Valley hydroelectric project in Kerala?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_13_1')">
+              <span class="q-letter">A</span>
+              <span>Kerala Sastra Sahitya Parishad (KSSP)</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_1')">
+              <span class="q-letter">B</span>
+              <span>Bombay Natural History Society (BNHS)</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_1')">
+              <span class="q-letter">C</span>
+              <span>Chipko Information Centre</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_1')">
+              <span class="q-letter">D</span>
+              <span>Narmada Navnirman Abhiyan</span>
+            </div>
+            
+          </div>
+          <div id="q_13_1" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> KSSP (Kerala Sastra Sahitya Parishad), a peoples' science movement, produced techno-economic studies and organized mass rallies proving the dam was ecologically destructive and economically flawed.
+          </div>
+        </div>
+        
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 3</div>
+          <div class="text-sm font-bold text-white mb-4">The Appiko movement slogan 'Ubbesu, Belessu, Balesu' translates respectively to which principles?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_13_2')">
+              <span class="q-letter">A</span>
+              <span>Save/Protect, Grow/Plant, and Use Rationally</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_2')">
+              <span class="q-letter">B</span>
+              <span>Cut, Burn, and Harvest</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_2')">
+              <span class="q-letter">C</span>
+              <span>Survey, Mine, and Export</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_2')">
+              <span class="q-letter">D</span>
+              <span>Electrify, Dam, and Irrigate</span>
+            </div>
+            
+          </div>
+          <div id="q_13_2" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> Appiko articulated three core operational rules in Kannada: Ubbesu (to protect existing natural forests), Belessu (to plant and regenerate trees), and Balesu (to utilize forest resources rationally).
+          </div>
+        </div>
+        
+        <div class="p-5 bg-[#05140d] border border-emerald-900/80 rounded-xl mb-6">
+          <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Question 4</div>
+          <div class="text-sm font-bold text-white mb-4">Which of the following dams was the central focus of opposition by the Narmada Bachao Andolan in Gujarat?</div>
+          <div class="space-y-1">
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 1, 'q_13_3')">
+              <span class="q-letter">A</span>
+              <span>Sardar Sarovar Dam</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_3')">
+              <span class="q-letter">B</span>
+              <span>Tehri Dam</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_3')">
+              <span class="q-letter">C</span>
+              <span>Hirakud Dam</span>
+            </div>
+            
+            <div class="quiz-option" onclick="handleQuiz(this, 0, 'q_13_3')">
+              <span class="q-letter">D</span>
+              <span>Bhakra Nangal Dam</span>
+            </div>
+            
+          </div>
+          <div id="q_13_3" class="p-3 mt-3 bg-[#0a1e15] border border-emerald-800 rounded-lg text-xs text-emerald-200 hidden">
+            <strong>Explanation:</strong> The Sardar Sarovar Dam on the Narmada River in Gujarat was the epicenter of NBA's long struggle against displacement without adequate rehabilitation.
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="card-screen" data-title="📚 Slide Quick-Jump Gallery">
+      <div class="eco-card p-6 md:p-8 border-emerald-800/80 mb-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-emerald-900/80">
+          <div>
+            <div class="badge-emerald inline-block px-2.5 py-1 rounded text-xs font-mono font-bold mb-1">📚 Master Slide Reference</div>
+            <h2 class="text-2xl font-black text-white">Complete Slide Deck Quick-Jump Gallery</h2>
+            <p class="text-xs text-slate-300">Quick visual reference of all 15 slides across this lecture deck with PDF downloads.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href='../Lecture_Slides/Class-13-Environmental Movements.pdf' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs font-mono hover:bg-emerald-900 transition-all'><span>📄 Download Class-13-Environmental Movements.pdf</span></a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+          
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(1)">
+            <img src="assets/slides/lec_13/slide_01.jpg" alt="Slide 1" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #1</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Class-13">Class-13</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(2)">
+            <img src="assets/slides/lec_13/slide_02.jpg" alt="Slide 2" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #2</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Bishnoi- the ecological stewards">Bishnoi- the ecological stewards</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(3)">
+            <img src="assets/slides/lec_13/slide_03.jpg" alt="Slide 3" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #3</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="http://www.bishnoism.com/thefirst.php">http://www.bishnoism.com/thefirst.php</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(4)">
+            <img src="assets/slides/lec_13/slide_04.jpg" alt="Slide 4" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #4</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The Chipko Movement">The Chipko Movement</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(5)">
+            <img src="assets/slides/lec_13/slide_05.jpg" alt="Slide 5" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #5</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Founder of Chipko">Founder of Chipko</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(6)">
+            <img src="assets/slides/lec_13/slide_06.jpg" alt="Slide 6" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #6</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The spreading of movement">The spreading of movement</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(7)">
+            <img src="assets/slides/lec_13/slide_07.jpg" alt="Slide 7" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #7</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 7">Slide 7</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(8)">
+            <img src="assets/slides/lec_13/slide_08.jpg" alt="Slide 8" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #8</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Appiko  movement">Appiko  movement</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(9)">
+            <img src="assets/slides/lec_13/slide_09.jpg" alt="Slide 9" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #9</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="The Kunthipuzha River">The Kunthipuzha River</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(10)">
+            <img src="assets/slides/lec_13/slide_10.jpg" alt="Slide 10" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #10</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Kali Bachao Andolan">Kali Bachao Andolan</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(11)">
+            <img src="assets/slides/lec_13/slide_11.jpg" alt="Slide 11" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #11</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Narmada Bachao Andolan">Narmada Bachao Andolan</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(12)">
+            <img src="assets/slides/lec_13/slide_12.jpg" alt="Slide 12" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #12</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Coffer">Coffer</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(13)">
+            <img src="assets/slides/lec_13/slide_13.jpg" alt="Slide 13" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #13</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 13">Slide 13</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(14)">
+            <img src="assets/slides/lec_13/slide_14.jpg" alt="Slide 14" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #14</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 14">Slide 14</div>
+          </div>
+        </div>
+        
+        <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-2 flex flex-col justify-between group hover:border-emerald-500 transition-all">
+          <div class="overflow-hidden rounded-lg bg-black/50 cursor-pointer relative" onclick="goToCard(15)">
+            <img src="assets/slides/lec_13/slide_15.jpg" alt="Slide 15" class="w-full h-28 object-contain group-hover:scale-105 transition-all" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+              <span class="bg-black/80 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-mono">📖 Study Card</span>
+            </div>
+          </div>
+          <div class="pt-2 px-1">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono mb-1">
+              <span class="text-emerald-400 font-bold">Slide #15</span>
+              <span class="truncate max-w-[100px]">Class-13-Environmental Movements.pdf</span>
+            </div>
+            <div class="text-[11px] font-semibold text-slate-200 line-clamp-1" title="Slide 15">Slide 15</div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+    </main>
+  </div>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <nav id="nav-bar">
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold border border-emerald-900 bg-[#071710] text-slate-300 hover:border-emerald-500 transition-all cursor-pointer" onclick="prevCard()">← Previous</button>
+    <span id="card-counter" class="text-xs text-slate-400 font-mono">Card 1 of 21</span>
+    <button class="nav-btn px-5 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:opacity-90 transition-all shadow-md shadow-emerald-950 cursor-pointer" onclick="nextCard()">Next Card →</button>
+    <span class="text-[11px] text-slate-500 font-mono hidden md:inline ml-2">Keys: <kbd class="px-1 bg-emerald-950 border border-emerald-800 rounded text-emerald-300">←</kbd> <kbd class="px-1 bg-emerald-950 border border-emerald-800 rounded text-emerald-300">→</kbd> <kbd class="px-1 bg-emerald-950 border border-emerald-800 rounded text-emerald-300">Z</kbd></span>
+  </nav>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox_modal" class="slide-modal-backdrop" onclick="closeLightbox(event)">
+    <div class="relative max-w-5xl w-full bg-[#07130e] border border-emerald-800 rounded-2xl overflow-hidden p-3 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-2 mb-2 border-b border-emerald-900/80">
+        <span id="modal_title" class="text-sm font-bold text-emerald-300 font-mono truncate">Slide Preview</span>
+        <button class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold bg-emerald-950 rounded cursor-pointer" onclick="closeLightbox()">✕ Close</button>
+      </div>
+      <div class="flex items-center justify-center bg-black/60 rounded-xl p-2 max-h-[80vh] overflow-auto">
+        <img id="modal_img" src="" alt="Full view" class="max-h-[75vh] object-contain rounded">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentCard = 0;
+    const screens = document.querySelectorAll('.card-screen');
+    const totalCards = screens.length;
+
+    function updateCardView() {
+      screens.forEach((s, i) => {
+        s.classList.toggle('active', i === currentCard);
+      });
+
+      for (let i = 0; i < totalCards; i++) {
+        const el = document.getElementById('slink_' + i);
+        if (el) {
+          el.classList.toggle('active', i === currentCard);
+          if (i === currentCard) {
+            el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          }
+        }
+      }
+
+      document.getElementById('card-counter').innerText = `Card ${currentCard + 1} of ${totalCards}`;
+      const pct = Math.round(((currentCard) / (totalCards - 1)) * 100);
+      document.getElementById('progress-bar-fill').style.width = pct + '%';
+      document.getElementById('progress-label').innerText = pct + '%';
+      
+      const title = screens[currentCard].getAttribute('data-title') || `Section ${currentCard + 1}`;
+      document.getElementById('section-label').innerText = title;
+
+      document.getElementById('main').scrollTop = 0;
+    }
+
+    function nextCard() {
+      if (currentCard < totalCards - 1) {
+        currentCard++;
+        updateCardView();
+      }
+    }
+
+    function prevCard() {
+      if (currentCard > 0) {
+        currentCard--;
+        updateCardView();
+      }
+    }
+
+    function goToCard(idx) {
+      if (idx >= 0 && idx < totalCards) {
+        currentCard = idx;
+        updateCardView();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextCard();
+      else if (e.key === 'ArrowLeft') prevCard();
+      else if (e.key === 'Escape') closeLightbox();
+      else if (e.key === 'z' || e.key === 'Z') {
+        const modal = document.getElementById('lightbox_modal');
+        if (modal.classList.contains('show')) {
+          closeLightbox();
+        } else {
+          const activeScreen = screens[currentCard];
+          const img = activeScreen.querySelector('img');
+          if (img) {
+            openLightbox(img.src, img.alt);
+          }
+        }
+      }
+    });
+
+    function openLightbox(imgSrc, title) {
+      document.getElementById('modal_img').src = imgSrc;
+      document.getElementById('modal_title').innerText = title || 'Slide Figure';
+      document.getElementById('lightbox_modal').classList.add('show');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox_modal').classList.remove('show');
+    }
+
+    function handleQuiz(el, isCorrect, feedbackId) {
+      const parent = el.parentElement;
+      const opts = parent.querySelectorAll('.quiz-option');
+      opts.forEach(o => o.classList.add('disabled'));
+
+      if (isCorrect) {
+        el.classList.add('correct');
+      } else {
+        el.classList.add('wrong');
+        opts.forEach(o => {
+          if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(', 1,')) {
+            o.classList.add('correct');
+          }
+        });
+      }
+      const fb = document.getElementById(feedbackId);
+      if (fb) fb.classList.remove('hidden');
+    }
+
+    let timerSec = 25 * 60;
+    let timerRunning = false;
+    let timerInterval = null;
+
+    function togglePomodoro() {
+      if (timerRunning) {
+        clearInterval(timerInterval);
+        timerRunning = false;
+      } else {
+        timerRunning = true;
+        timerInterval = setInterval(() => {
+          if (timerSec > 0) {
+            timerSec--;
+            const m = Math.floor(timerSec / 60);
+            const s = timerSec % 60;
+            document.getElementById('timer-display').innerText = `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+          } else {
+            clearInterval(timerInterval);
+            timerRunning = false;
+            alert('🎉 Pomodoro Session Completed! Take a 5-minute breather.');
+            timerSec = 25 * 60;
+            document.getElementById('timer-display').innerText = '25:00';
+          }
+        }, 1000);
+      }
+    }
+
+    updateCardView();
+  </script>
+</body>
+</html>

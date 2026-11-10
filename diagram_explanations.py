@@ -251,6 +251,42 @@ DIAGRAM_EXPLANATIONS = {
             "quantitative_math": "Statutory timeline: Scoping (TOR issued within 60 days), Public Hearing (45 days), Final Appraisal by EAC (60 days), Total regulatory turnaround target: 105 to 180 days.",
             "exam_trap": "⚠️ <strong>Exam Trap:</strong> Category B2 projects are exempt from EIA studies, but they are NOT exempt from obtaining Environmental Clearance (EC) from the SEIAA based on Form 1 and EMP."
         }
+    ],
+
+    "13": [
+        {
+            "image": "assets/slides/lec_13/slide_03.jpg",
+            "title": "Chronology of Indian Grassroots Environmental Movements",
+            "source": "Class-13-Environmental Movements.pdf, Slide 3",
+            "what_it_shows": "Timeline spanning the 1730 Khejarli Bishnoi sacrifice, 1973 Chipko in Uttarakhand, 1983 Appiko in Karnataka, Silent Valley in Kerala, and Narmada Bachao Andolan.",
+            "scientific_mechanism": "Traces the structural evolution of community-led environmental protection in India. Highlights how ecological movements in developing nations differ from Western preservationism: they are fundamentally livelihood and human-rights struggles fought by forest-dependent and agrarian communities whose survival depends directly on common-pool natural resources.",
+            "quantitative_math": "Ecosystem Services Valuation: Total Economic Value ($TEV = UV + NUV$), where use value ($UV$) includes direct provisioning and indirect regulatory services (soil retention, watershed recharge), and non-use value ($NUV$) includes cultural and existence value.",
+            "exam_trap": "⚠️ <strong>Exam Trap:</strong> Do not confuse Chipko (Uttarakhand Himalayas, 1973) with Appiko (Western Ghats, Uttara Kannada, Karnataka, 1983). Appiko was inspired by Chipko but adapted to moist tropical forests and fought monoculture teak plantations."
+        }
+    ],
+
+    "14": [
+        {
+            "image": "assets/slides/lec_14/slide_07.jpg",
+            "title": "IT Hardware Lifecycle & 10:1 Material Footprint",
+            "source": "Class-14-Green computing.pdf, Slide 7",
+            "what_it_shows": "The hidden ecological backpack and embodied footprint of semiconductor fabrication: manufacturing a single 2-gram computer chip consumes over 1.6 kg of fossil fuels, 72 grams of toxic chemicals, and 32 liters of ultra-pure water.",
+            "scientific_mechanism": "Semiconductor manufacturing has one of the highest material intensities of any human industrial process. Over 80% of an electronic device's total lifecycle energy is consumed during upstream manufacturing and silicon purification, rather than during consumer operational use.",
+            "quantitative_math": "Life Cycle Ecological Backpack: Ratio of embodied material input to device mass: $\\text{Backpack Factor} = \\frac{\\text{Total Embodied Resource Input (kg)}}{\\text{Final Product Weight (kg)}} \\approx 10:1 \\text{ to } 600:1$.",
+            "exam_trap": "⚠️ <strong>Exam Trap:</strong> Replacing a functioning computer with an 'energy-efficient' model often increases net lifecycle carbon emissions because the embodied manufacturing emissions exceed the marginal operational energy savings."
+        }
+    ],
+
+    "15": [
+        {
+            "image": "assets/slides/lec_15/slide_08.jpg",
+            "title": "Kalundborg Industrial Symbiosis Closed-Loop Exchange",
+            "source": "Class-15-Green engineering.pdf, Slide 8",
+            "what_it_shows": "The world-famous industrial ecosystem network in Kalundborg, Denmark, where an oil refinery, power station, pharmaceutical plant, gypsum board manufacturer, and municipality exchange waste streams, cooling water, and byproducts.",
+            "scientific_mechanism": "Applies Type III closed-loop industrial ecology. Byproducts from one industrial facility serve as raw feedstocks for adjacent facilities: fly ash replaces cement clinker, flue-gas desulfurization gypsum replaces mined gypsum, and power plant waste steam heats municipal homes and fish farms.",
+            "quantitative_math": "Material Circularity Metric: $\\text{Circularity} = \\frac{\\sum \\text{Recycled Feedstocks} + \\sum \\text{Byproducts Reutilized}}{\\text{Total Raw Mass Throughput}} \\times 100\\%$. Kalundborg avoids $>275,000\\,\\text{tons of } CO_2$ annually.",
+            "exam_trap": "⚠️ <strong>Exam Trap:</strong> End-of-pipe waste treatment is NOT green engineering. Green engineering requires designing processes to be inherently non-hazardous and benign by design (Principle 1: Inherent Rather Than Circumstantial)."
+        }
     ]
 }
 print("Diagram explanations loaded.")

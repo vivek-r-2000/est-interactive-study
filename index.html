@@ -43,12 +43,6 @@
   .eco-card:hover {
     border-color: var(--primary);
     box-shadow: 0 10px 30px -10px var(--primary-glow);
-    transform: translateY(-2px);
-  }
-  .eco-card-static {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
   }
 
   /* Badges */
@@ -111,14 +105,12 @@
         </div>
       </div>
       <div class="flex items-center gap-2">
+        <a href="quiz3_practice_suite.html" class="text-xs bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm border border-emerald-400/40 mr-1"><span>⚡ Quiz 3 Prep Suite</span></a>
         <a href="https://courses.iiit.ac.in/course/view.php?id=5826" target="_blank" rel="noopener noreferrer" class="text-xs bg-amber-600/90 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm">
           <span>🏛️ Moodle Portal</span>
         </a>
         <a href="Study_Material/00_home.html" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm">
-          <span>📘 Lectures (12)</span>
-        </a>
-        <a href="#assignments" class="text-xs bg-teal-700 hover:bg-teal-600 text-white font-bold px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 shadow-sm">
-          <span>📂 Projects & Docs</span>
+          <span>📘 All Lectures (15)</span>
         </a>
       </div>
     </div>
@@ -148,27 +140,51 @@
           Instructor: <strong class="text-white">Prof. Ramachandra Prasad P</strong> • Teaching Assistants: Nemani Dedeepya, Vastava Kurumeti, Kalakuntla Rishika, Himank Singhvi
         </p>
         <p class="text-xs md:text-sm text-slate-300 leading-relaxed mb-6">
-          Bite-sized, ADHD-friendly, and mathematically rigorous. Fully synced with 18 slide decks, 444 primary slides, 770+ extracted figures and diagrams, interactive simulators, active recall flashcards, and Moodle discussion threads.
+          Every single slide across all 15 lectures is systematically mapped into dedicated slide learning cards with verbatim text, deep pedagogical breakdowns, 15 interactive simulators, active recall flashcards, and live Moodle announcements.
         </p>
 
         <!-- STATS BAR -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-emerald-900/60">
           <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
             <div class="text-xs text-slate-400">Lecture Modules</div>
-            <div class="text-xl font-black text-emerald-400 mt-1">12 Topics</div>
+            <div class="text-xl font-black text-emerald-400 mt-1">15 Topics</div>
           </div>
           <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
             <div class="text-xs text-slate-400">Primary Slides</div>
-            <div class="text-xl font-black text-teal-400 mt-1">444 Slides</div>
+            <div class="text-xl font-black text-teal-400 mt-1">522 Slides</div>
           </div>
           <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
-            <div class="text-xs text-slate-400">Extracted Visuals</div>
-            <div class="text-xl font-black text-cyan-400 mt-1">770+ Diagrams</div>
+            <div class="text-xs text-slate-400">Interactive Labs</div>
+            <div class="text-xl font-black text-cyan-400 mt-1">15 Simulators</div>
           </div>
           <div class="bg-[#05140d] border border-emerald-900/80 rounded-xl p-3">
-            <div class="text-xs text-slate-400">Announcements</div>
-            <div class="text-xl font-black text-amber-400 mt-1">18 Synced</div>
+            <div class="text-xs text-slate-400">Moodle Synced</div>
+            <div class="text-xl font-black text-amber-400 mt-1">22 Threads</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ 3 ANNOUNCEMENT & PREP SUITE BANNER -->
+  <section class="max-w-7xl mx-auto px-4 pb-6">
+    <div class="p-6 bg-gradient-to-r from-[#0d2a1f] via-[#0b1f17] to-[#071711] border-2 border-emerald-500/80 rounded-2xl relative overflow-hidden shadow-xl shadow-emerald-950/50">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 relative z-10">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500 text-black text-xs font-black uppercase tracking-wide">Exam Prep</span>
+            <span class="text-xs font-mono text-emerald-300">Lectures 8 to 11 Syllabus</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-black text-white">⚡ Quiz 3 Master Preparation Suite & Past Papers Question Bank</h2>
+          <p class="text-xs md:text-sm text-slate-300 mt-1 max-w-3xl">
+            Complete question extraction from past exam papers, featuring timed mock exams with grading rubrics, active-recall 3D flashcards, rapid-fire fill-in-the-blank drills, and chemical reactions lab.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 w-full lg:w-auto">
+          <a href="quiz3_practice_suite.html" class="flex-1 lg:flex-none text-center text-xs md:text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-black px-5 py-3 rounded-xl transition-all shadow-lg shadow-emerald-950 flex items-center justify-center gap-2">
+            <span>🚀 Open Quiz 3 Exam Suite</span>
+          </a>
+          <a href="Quiz3_Exam_Preparation_Pack.pdf" download class="text-xs bg-red-700 hover:bg-red-600 text-white font-bold px-4 py-3 rounded-xl transition-all shadow-md flex items-center justify-center gap-1.5 mr-2"><span>📄 PDF Pack</span></a>
         </div>
       </div>
     </div>
@@ -188,16 +204,23 @@
           <div class="p-3 bg-[#06140e] border border-emerald-900/80 rounded-xl">
             <div class="flex justify-between items-center mb-1">
               <strong class="text-emerald-400 font-bold">Midsem Exam Syllabus (Covered)</strong>
-              <span class="badge-emerald px-2 py-0.5 rounded text-[10px]">Lectures 1 to 7</span>
+              <span class="badge-emerald px-2 py-0.5 rounded text-[10px]">Lectures 1–7</span>
             </div>
             <p class="text-slate-300">Overview & 2070 Vision, Earth Spheres & Thermodynamics, Pollution & Particulates, Remote Sensing & GIS, Landmark Events (Bhopal, Chernobyl, Minamata), Biogeochemical Cycles, Climate Impacts.</p>
           </div>
           <div class="p-3 bg-[#06140e] border border-teal-900/80 rounded-xl">
             <div class="flex justify-between items-center mb-1">
-              <strong class="text-teal-300 font-bold">Endsem Exam Focus (Advanced)</strong>
-              <span class="badge-teal px-2 py-0.5 rounded text-[10px]">Lectures 8 to 12</span>
+              <strong class="text-teal-300 font-bold">Quiz-2 Exam Syllabus (Completed)</strong>
+              <span class="badge-teal px-2 py-0.5 rounded text-[10px]">Lectures 1–10b</span>
             </div>
-            <p class="text-slate-300">Unexpected Climate Changes & Tipping Points (AMOC), Terrestrial Carbon Sinks & Biochar, Clean Development Mechanism (CDM) & Ocean Injection, Clean Tech Solutions, EIA Framework.</p>
+            <p class="text-slate-300">Biogeochemical cycles, Ocean Carbon Sequestration, Terrestrial Sinks, Biochar chemistry, and Clean Development Mechanism (CDM).</p>
+          </div>
+          <div class="p-3 bg-[#06140e] border border-amber-900/80 rounded-xl">
+            <div class="flex justify-between items-center mb-1">
+              <strong class="text-amber-300 font-bold">Course Project Presentations & Deadlines</strong>
+              <span class="badge-amber px-2 py-0.5 rounded text-[10px]">Nov 17–18, 2026</span>
+            </div>
+            <p class="text-slate-300">Presentations in <strong>LSI conference Room</strong> on 17th and 18th November 2026 (11:00 AM – 4:00 PM). Strictly 25 mins presentation + 5 mins Q&A. Final Project Report due 22nd November 2026, 5:00 PM.</p>
           </div>
         </div>
       </div>
@@ -209,335 +232,495 @@
             <span class="text-xl">📢</span>
             <h3 class="text-lg font-bold text-white">Moodle Announcements Digest</h3>
           </div>
-          <span class="text-xs text-emerald-400 font-mono">18 Threads Synced</span>
+          <span class="text-xs text-emerald-400 font-mono">22 Threads Synced</span>
         </div>
-        <div class="space-y-2 text-xs max-h-48 overflow-y-auto pr-1">
+        <div class="space-y-2 text-xs max-h-56 overflow-y-auto pr-1">
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Final Project Presentations Venue & Schedule</div>
+            <div class="text-slate-400 text-[11px]">Prof. Ramachandra Prasad P: Presentations on 17th and 18th November in LSI conference Room. Over-time presentations will be stopped immediately.</div>
+          </div>
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Final Project Report Submission Deadline</div>
+            <div class="text-slate-400 text-[11px]">Submission deadline: 22nd November 2026, 5:00 PM via Moodle portal.</div>
+          </div>
+          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
+            <div class="font-bold text-slate-200">Quiz-2 Exam Announcement</div>
+            <div class="text-slate-400 text-[11px]">Nemani Dedeepya: Quiz-2 syllabus covers Lectures 1–10b with numerical problems and concept check.</div>
+          </div>
           <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
             <div class="font-bold text-slate-200">Midsem Paper Showing & Makeup Exam Syllabus</div>
             <div class="text-slate-400 text-[11px]">Prof. Ramachandra Prasad P: Confirmed makeup exam covers Lectures 1–7.</div>
           </div>
-          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
-            <div class="font-bold text-slate-200">Course Project Mid-Evaluation Guidelines</div>
-            <div class="text-slate-400 text-[11px]">Kalakuntla Rishika: Expecting 50-60% completion (Problem statement, data, methodology).</div>
-          </div>
-          <div class="p-2.5 bg-[#06140e] border border-emerald-950 rounded-lg">
-            <div class="font-bold text-slate-200">Quiz-1 Paper Showing & Makeup Exam</div>
-            <div class="text-slate-400 text-[11px]">Seating arrangements and evaluation guidelines released.</div>
-          </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- LECTURE MODULES GRID -->
+  <!-- ALL 15 MODULES GRID -->
   <section class="max-w-7xl mx-auto px-4 py-8">
-    <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
       <div>
-        <h2 class="text-2xl font-black text-white">Interactive Lecture Modules (1 to 12)</h2>
-        <p class="text-xs text-slate-400">Complete curriculum with real slide figures, KaTeX math, active recall cards, and interactive simulators.</p>
+        <h2 class="text-2xl font-black text-white">All 15 Lecture Modules</h2>
+        <p class="text-xs text-slate-300">Complete slidewise learning cards covering all 522 slides across the semester.</p>
       </div>
-      <a href="Study_Material/00_home.html" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg flex items-center gap-1 shadow-md">
-        <span>View Full Curriculum Roadmap →</span>
-      </a>
+      <a href="Study_Material/00_home.html" class="text-xs text-emerald-400 font-mono font-bold hover:underline">View Detailed Curriculum Roadmap →</a>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 01</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 40 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 01</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Beginner</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🌍</span>
-              <span class="truncate">Course Overview & Planetary Vision (Year 2070)</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Environmental science fundamentals, global sustainability vision, IPCC scenarios, decarbonization roadmap to Year 2070, and planetary boundaries.</p>
+              <span>Course Overview & Planetary Vision (Year 2070)</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Environmental science fundamentals, global sustainability vision, IPCC scenarios, decarbonization roadmap to Year 2070, and planetary boundaries.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 54 Slides</span>
-            <a href="Study_Material/01_course_overview_vision_2070.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 54 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 40 mins</span>
+            </div>
+            <a href="Study_Material/01_course_overview_vision_2070.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 02</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 55 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 02</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🌐</span>
-              <span class="truncate">Comprehending Our Environment: Earth Spheres & Thermodynamics</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Atmosphere, Hydrosphere, Lithosphere, Biosphere interactions; solar radiation budget, thermodynamic equilibrium, greenhouse effect, and biotic-abiotic couplings.</p>
+              <span>Comprehending Our Environment: Earth Spheres & Thermodynamics</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Atmosphere, Hydrosphere, Lithosphere, Biosphere interactions; solar radiation budget, thermodynamic equilibrium, greenhouse effect, and biotic-abiotic couplings.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 57 Slides</span>
-            <a href="Study_Material/02_comprehending_environment_spheres.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 57 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 55 mins</span>
+            </div>
+            <a href="Study_Material/02_comprehending_environment_spheres.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 03</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 45 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 03</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 1 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🏭</span>
-              <span class="truncate">Environmental Issues, Anthropogenic Pressures & Pollution</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Air and water pollution, soil degradation, industrial effluents, particulate matter ($PM_{2.5}, PM_{10}$), eutrophication, acid rain, and ecological footprint.</p>
+              <span>Environmental Issues, Anthropogenic Pressures & Pollution</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Air and water pollution, soil degradation, industrial effluents, particulate matter ($PM_{2.5}, PM_{10}$), eutrophication, acid rain, and ecological footprint.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 34 Slides</span>
-            <a href="Study_Material/03_environmental_issues_anthropogenic_pressures.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 34 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 45 mins</span>
+            </div>
+            <a href="Study_Material/03_environmental_issues_anthropogenic_pressures.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 04</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 60 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 04</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🛰️</span>
-              <span class="truncate">Remote Sensing & GIS in Environmental Technology</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Electromagnetic spectrum, multispectral satellite sensors (Landsat, Sentinel, MODIS), false color composites (FCC), NDVI vegetation indices, spatial resolution, and GIS mapping.</p>
+              <span>Remote Sensing & GIS in Environmental Technology</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Electromagnetic spectrum, multispectral satellite sensors (Landsat, Sentinel, MODIS), false color composites (FCC), NDVI vegetation indices, spatial resolution, and GIS mapping.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 18 Slides</span>
-            <a href="Study_Material/04_remote_sensing_gis_monitoring.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 18 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 60 mins</span>
+            </div>
+            <a href="Study_Material/04_remote_sensing_gis_monitoring.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 05</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 45 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 05</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 2 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>⚠️</span>
-              <span class="truncate">Landmark Environmental Events, Crises & Disasters</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Bhopal Gas Tragedy (MIC), Chernobyl nuclear disaster, Minamata disease (Mercury bioaccumulation), London Smog 1952, Exxon Valdez, Deepwater Horizon, and policy impacts.</p>
+              <span>Landmark Environmental Events, Crises & Disasters</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Bhopal Gas Tragedy (MIC), Chernobyl nuclear disaster, Minamata disease (Mercury bioaccumulation), London Smog 1952, Exxon Valdez, Deepwater Horizon, and policy impacts.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 30 Slides</span>
-            <a href="Study_Material/05_environmental_events_crises_disasters.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 30 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 45 mins</span>
+            </div>
+            <a href="Study_Material/05_environmental_events_crises_disasters.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 06</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 50 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 06</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 4 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🔄</span>
-              <span class="truncate">Earth Components, Biogeochemical Cycles & Ecological Systems</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Carbon, Nitrogen, Phosphorus, and Hydrological cycles; ecological succession, energy pyramids, trophic levels, homeostasis, and ecosystem resilience.</p>
+              <span>Earth Components, Biogeochemical Cycles & Ecological Systems</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Carbon, Nitrogen, Phosphorus, and Hydrological cycles; ecological succession, energy pyramids, trophic levels, homeostasis, and ecosystem resilience.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 41 Slides</span>
-            <a href="Study_Material/06_earth_components_biogeochemical_cycles.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 41 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 50 mins</span>
+            </div>
+            <a href="Study_Material/06_earth_components_biogeochemical_cycles.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 07</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 50 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 07</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 3 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🌡️</span>
-              <span class="truncate">Climate Change Impacts, Global Warming & Vulnerability</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Radiative forcing, global temperature anomalies, cryosphere melt (Greenland, Antarctica), sea-level rise modeling, extreme weather events, and socioeconomic vulnerability.</p>
+              <span>Climate Change Impacts, Global Warming & Vulnerability</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Radiative forcing, global temperature anomalies, cryosphere melt (Greenland, Antarctica), sea-level rise modeling, extreme weather events, and socioeconomic vulnerability.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 31 Slides</span>
-            <a href="Study_Material/07_climate_change_impacts_vulnerability.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 31 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 50 mins</span>
+            </div>
+            <a href="Study_Material/07_climate_change_impacts_vulnerability.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 08</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 55 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 08</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 4 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>⚡</span>
-              <span class="truncate">Unexpected Climate Changes, Non-Linear Tipping Points & Feedback Loops</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">AMOC collapse risk, permafrost thaw and methane feedback, albedo degradation, runaway greenhouse dynamics, hysteresis loops, and catastrophic shifts.</p>
+              <span>Unexpected Climate Changes, Non-Linear Tipping Points & Feedback Loops</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              AMOC collapse risk, permafrost thaw and methane feedback, albedo degradation, runaway greenhouse dynamics, hysteresis loops, and catastrophic shifts.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 30 Slides</span>
-            <a href="Study_Material/08_unexpected_climate_changes_tipping_points.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 30 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 55 mins</span>
+            </div>
+            <a href="Study_Material/08_unexpected_climate_changes_tipping_points.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 09</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 45 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 09</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 3 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🌲</span>
-              <span class="truncate">Carbon Sequestration & Terrestrial Sinks</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Biological carbon pumps, afforestation/reforestation, soil organic carbon (SOC), biochar, geological carbon capture & storage (CCS), enhanced weathering, and capacity math.</p>
+              <span>Carbon Sequestration & Terrestrial Sinks</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Biological carbon pumps, afforestation/reforestation, soil organic carbon (SOC), biochar, geological carbon capture & storage (CCS), enhanced weathering, and capacity math.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 34 Slides</span>
-            <a href="Study_Material/09_carbon_sequestration_terrestrial_sinks.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 34 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 45 mins</span>
+            </div>
+            <a href="Study_Material/09_carbon_sequestration_terrestrial_sinks.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 10</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 50 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 10</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 2 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>🌊</span>
-              <span class="truncate">Clean Development Mechanism (CDM) & Ocean Sequestration</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Kyoto Protocol Article 12, Certified Emission Reductions (CERs), additionality criteria, carbon trading markets; deep ocean $CO_2$ injection, iron fertilization, and ocean acidification risks.</p>
+              <span>Clean Development Mechanism (CDM) & Ocean Sequestration</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Kyoto Protocol Article 12, Certified Emission Reductions (CERs), additionality criteria, carbon trading markets; deep ocean $CO_2$ injection, iron fertilization, and ocean acidification risks.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 54 Slides</span>
-            <a href="Study_Material/10_cdm_carbon_markets_ocean_sequestration.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 54 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 50 mins</span>
+            </div>
+            <a href="Study_Material/10_cdm_carbon_markets_ocean_sequestration.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 11</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 45 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 11</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>⚡</span>
-              <span class="truncate">Climate Change Technology Solutions & Clean Tech Innovations</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Direct Air Capture (DAC), solar radiation management (SRM), green hydrogen, renewable grids, energy storage thermodynamics, circular bio-economy, and decarbonization metrics.</p>
+              <span>Climate Change Technology Solutions & Clean Tech Innovations</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Direct Air Capture (DAC), solar radiation management (SRM), green hydrogen, renewable grids, energy storage thermodynamics, circular bio-economy, and decarbonization metrics.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 29 Slides</span>
-            <a href="Study_Material/11_climate_technology_solutions_cleantech.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 29 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 45 mins</span>
+            </div>
+            <a href="Study_Material/11_climate_technology_solutions_cleantech.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
         <div class="eco-card p-5 flex flex-col justify-between group">
           <div>
-            <div class="flex items-center justify-between text-xs mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded font-mono font-bold">Lec 12</span>
-              <span class="text-slate-400 text-[11px]">⏱️ 50 mins</span>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 12</span>
+              <div class="flex items-center gap-1.5">
+                <span class='badge-cyan px-2 py-0.5 rounded text-[10px] font-mono'>▶️ 1 Video</span>
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-all mb-1 flex items-center gap-1.5">
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
               <span>📋</span>
-              <span class="truncate">Environmental Impact Assessment (EIA): Framework & Protocols</span>
-            </h4>
-            <p class="text-xs text-slate-400 line-clamp-2 mb-3">Screening, Scoping, Baseline data collection, Impact Prediction, Environmental Management Plan (EMP), public consultation, Leopold matrix, Batelle environmental evaluation, and post-project monitoring.</p>
+              <span>Environmental Impact Assessment (EIA): Framework & Protocols</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Screening, Scoping, Baseline data collection, Impact Prediction, Environmental Management Plan (EMP), public consultation, Leopold matrix, Batelle environmental evaluation, and post-project monitoring.
+            </p>
           </div>
-          <div class="pt-2 border-t border-emerald-950 flex items-center justify-between">
-            <span class="text-[11px] text-emerald-400 font-mono">📚 32 Slides</span>
-            <a href="Study_Material/12_eia_framework_methodology_protocols.html" class="text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1">
-              Explore Module →
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 32 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 50 mins</span>
+            </div>
+            <a href="Study_Material/12_eia_framework_methodology_protocols.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
+            </a>
+          </div>
+        </div>
+        
+        <div class="eco-card p-5 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 13</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Beginner</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
+              <span>🌳</span>
+              <span>Environmental Movements: Grassroots Ecology & Forest Conservation</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Bishnoi movement (sacred Khejri trees), Chipko movement (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt), Appiko movement in Western Ghats, Silent Valley agitation, Narmada Bachao Andolan (Medha Patkar), and legal-ecological citizen activism.
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 15 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 35 mins</span>
+            </div>
+            <a href="Study_Material/13_environmental_movements_grassroots_ecology.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
+            </a>
+          </div>
+        </div>
+        
+        <div class="eco-card p-5 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 14</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
+              <span>💻</span>
+              <span>Green Computing, IT Environmental Impacts & Sustainable Electronics</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Life cycle of IT hardware: conflict mineral extraction (coltan, neodymium), manufacturing energy, Moore's Law vs. Wirth's Law, embodied carbon, data center energy efficiency, Power Usage Effectiveness (PUE), virtualization, dynamic voltage scaling (DVFS), and global e-waste management (Basel Convention).
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 35 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 45 mins</span>
+            </div>
+            <a href="Study_Material/14_green_computing_sustainable_ict.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
+            </a>
+          </div>
+        </div>
+        
+        <div class="eco-card p-5 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="badge-emerald px-2.5 py-1 rounded text-xs font-mono font-bold">Module 15</span>
+              <div class="flex items-center gap-1.5">
+                
+                <span class="badge-teal px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-all mb-2 flex items-center gap-2">
+              <span>⚙️</span>
+              <span>Green Engineering: Principles, Frameworks & Industrial Ecology</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
+              Paul Anastas & Julie Zimmerman's 12 Principles of Green Engineering: inherently non-hazardous design, life cycle assessment (LCA), atom economy, waste minimization, renewable feedstocks, industrial symbiosis (Kalundborg model), and cradle-to-cradle material circularity.
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-emerald-950/80">
+            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+              <span>📚 28 Slides Slidewise</span>
+              <span>🧪 1 Lab</span>
+              <span>⏱️ 45 mins</span>
+            </div>
+            <a href="Study_Material/15_green_engineering_industrial_ecology.html" class="block w-full py-2 px-3 rounded-lg text-center text-xs font-bold bg-[#091a13] border border-emerald-900 group-hover:bg-gradient-to-r group-hover:from-emerald-600 group-hover:to-teal-600 group-hover:text-white text-emerald-300 transition-all">
+              Launch Lecture Module →
             </a>
           </div>
         </div>
         
     </div>
   </section>
-
-  <!-- ASSIGNMENTS & PROJECT TRACKER -->
-  <section id="assignments" class="max-w-7xl mx-auto px-4 py-8">
-    <div class="eco-card p-6 border-emerald-800">
-      <div class="flex items-center justify-between mb-4 pb-3 border-b border-emerald-900">
-        <div>
-          <h2 class="text-xl font-bold text-white flex items-center gap-2">
-            <span>📂</span> Course Project & Literature Review Tracker
-          </h2>
-          <p class="text-xs text-slate-300">Track guidelines, deliverables, and submissions for Monsoon 2026.</p>
-        </div>
-        <span class="badge-emerald px-3 py-1 rounded text-xs font-mono font-bold">Assignments</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-[#05140d] border border-emerald-900 rounded-xl">
-          <div class="flex justify-between items-center mb-2">
-            <strong class="text-emerald-400 text-sm">Course Project (EST 2026)</strong>
-            <span class="badge-amber px-2 py-0.5 rounded text-[10px] font-mono">50-60% Mid-Evaluation</span>
-          </div>
-          <p class="text-xs text-slate-300 mb-3 leading-relaxed">
-            Hands-on environmental modeling project. Focus areas: Paleoclimate reconstruction, pollen binning, and climate trend analysis.
-          </p>
-          <div class="flex flex-wrap gap-2 text-[11px]">
-            <a href="Course_Materials/EVS-Projects-2026.docx" class="text-emerald-300 hover:underline">📄 EVS-Projects-2026.docx</a>
-            <span class="text-slate-500">•</span>
-            <a href="Assignments/EST-PROJECT/" class="text-emerald-300 hover:underline">📁 Project Workspace</a>
-          </div>
-        </div>
-
-        <div class="p-4 bg-[#05140d] border border-emerald-900 rounded-xl">
-          <div class="flex justify-between items-center mb-2">
-            <strong class="text-teal-300 text-sm">Literature Review Assignment</strong>
-            <span class="badge-emerald px-2 py-0.5 rounded text-[10px] font-mono">Format: team_name.pdf</span>
-          </div>
-          <p class="text-xs text-slate-300 mb-3 leading-relaxed">
-            In-depth academic literature review summarizing contemporary research papers on climate change mitigation, remote sensing, and carbon sequestration.
-          </p>
-          <div class="flex flex-wrap gap-2 text-[11px]">
-            <a href="Course_Materials/Literature Review Assignment.docx" class="text-teal-300 hover:underline">📄 Literature Review Assignment.docx</a>
-            <span class="text-slate-500">•</span>
-            <a href="Assignments/Literature Review Submission/instructions.txt" class="text-teal-300 hover:underline">📋 Submission Instructions</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="mt-16 py-8 border-t border-emerald-950 text-center text-xs text-slate-500">
-    <p>Environmental Science & Technology (ES1.101) • Department of Civil & Environmental Engineering • IIIT Hyderabad</p>
-    <p class="mt-1">Generated with Course Website Builder • Zero External Node Dependencies</p>
-  </footer>
 
 </body>
 </html>
