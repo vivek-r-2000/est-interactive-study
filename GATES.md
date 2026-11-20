@@ -33,3 +33,8 @@ Scope: Complete redesign from scratch of Environmental Science & Technology cour
   CHECK: python scripts/verify_class11_slides.py
   EXPECT: CLASS_11_VERIFIED: ALL_29_SLIDES_COVERED_WITH_NARRATIVE_CONTINUITY
   EVIDENCE: automatic-evidence=v1; definition-sha256=9cb06a9ac200fa64b6c41ba1ef55497400eeee2bb0411dde737516b008b1befb; exit=0; EXPECT=matched; output-sha256=8afb12a85b975c2fbee76a3b04a3f76266914afe755ee26fe8cbcc635a2c1eb1; output-bytes=68; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\.gemini\antigravity\scratch\EST; path=65842fce3bf4/36 entries
+
+- [x] G7: Classes 12 to 19 comprehensive slidewise rebuild covering all 232 slides with narrative continuity and zero AI slop
+  CHECK: python scripts/verify_classes_12_to_19.py
+  EXPECT: CLASSES_12_TO_19_VERIFIED: ALL_8_CLASSES_MET_WITH_232_SLIDES
+  EVIDENCE: automatic-evidence=v1; definition-sha256=331cc6af134647773d13a2afd69206542a15ff7928e5c66a88c0eb2c140ff031; exit=0; EXPECT=matched; output-sha256=7346cb284ca652ab0e46fbf425f76c4acf3111cf9449ccb3e807044ac40df51d; output-bytes=62; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\.gemini\antigravity\scratch\EST; path=ee6bd4fcb200/36 entries

@@ -1,0 +1,1151 @@
+{
+  "class_id": 16,
+  "title": "Class 16: Green Accounting & Natural Capital",
+  "total_slides": 45,
+  "slides": [
+    {
+      "slide_num": 1,
+      "title": "Green Accounting & Natural Capital: Overview",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Modern national economies measure success through financial transactions, but this leaves our ecological life-support systems invisible on national balance sheets.",
+      "eli15_takeaway": "Green accounting updates our national scorecards so we stop counting the destruction of nature as pure economic profit.",
+      "key_facts": [
+        "Course: Environmental Science & Technology (Class 16)",
+        "Focus: Integrating environmental degradation and natural resource depletion into national income accounts",
+        "Core premise: Modern GDP ignores natural capital depletion and ecological degradation."
+      ],
+      "mental_model": "Checking your bank account and celebrating high spending, while completely ignoring that you emptied your retirement savings to buy groceries.",
+      "checkpoint": {
+        "question": "What is the primary flaw in conventional economic accounting that Green Accounting attempts to fix?",
+        "options": [
+          "It counts corporate taxes twice.",
+          "It treats the depletion of nature as free income rather than an asset loss.",
+          "It only tracks international exports and ignores domestic sales.",
+          "It fails to record physical currency circulation."
+        ],
+        "correct_index": 1,
+        "explanation": "Standard accounting treats the liquidation of natural capital (like cutting forests or exhausting oil) as pure income without booking asset depreciation."
+      }
+    },
+    {
+      "slide_num": 2,
+      "title": "National Income: The Four Factors of Production",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Before fixing economic scorecards, we must understand how standard national income tracks goods, services, and productive factors.",
+      "eli15_takeaway": "National income tallies the market value of every final good and service a country creates using land, labor, capital, and enterprise.",
+      "key_facts": [
+        "National Income definition: Sum of all final goods and services produced in a country over a given period.",
+        "Calculated across the four classical factors of production: Land, Labor, Capital, and Entrepreneurship.",
+        "Counts final products without duplication after accounting for capital depreciation.",
+        "Combines output from both public and private sectors, covering consumption goods, capital goods, and net foreign trade balance."
+      ],
+      "mental_model": "A household tracking every paycheck earned and product bought during the year to see if the family grew richer.",
+      "checkpoint": {
+        "question": "Why does conventional national income accounting explicitly exclude intermediate goods?",
+        "options": [
+          "To prevent intermediate products from being taxed by customs authorities.",
+          "To avoid double-counting the value already embedded in final retail products.",
+          "Because intermediate goods carry no physical market price.",
+          "Because intermediate production belongs exclusively to foreign nations."
+        ],
+        "correct_index": 1,
+        "explanation": "If you counted raw timber, wholesale lumber, and the final wooden desk separately, you would count the same wood three times. National income counts only final goods."
+      }
+    },
+    {
+      "slide_num": 3,
+      "title": "Core Economic Indicators: GDP, NDP, GNP, and NNP",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "From the broad concept of national income, economists built four precise quantitative yardsticks to track domestic versus national output.",
+      "eli15_takeaway": "GDP measures production inside the borders, GNP measures production by citizens worldwide, and subtracting machine wear-and-tear gives you Net Domestic Product (NDP).",
+      "key_facts": [
+        "GDP (Gross Domestic Product): Market value of final goods and services produced within a country domestic borders over one year (measures production, not sales).",
+        "NDP (Net Domestic Product): GDP - Physical Capital Depreciation (NDP = GDP - D).",
+        "GNP (Gross National Product): Aggregate value of final output produced by a nation citizens and enterprises globally.",
+        "NNP (Net National Product): GNP - Depreciation (NNP = GNP - D)."
+      ],
+      "mental_model": "Gross pay is your full paycheck; net pay is what remains after your company deducts equipment wear, taxes, and mandatory fees.",
+      "checkpoint": {
+        "question": "What is the algebraic difference between Gross Domestic Product (GDP) and Net Domestic Product (NDP)?",
+        "options": [
+          "Net exports (Exports minus Imports).",
+          "Depreciation of physical manufactured capital.",
+          "Taxes paid on foreign remittances.",
+          "Value of unpaid household labor."
+        ],
+        "correct_index": 1,
+        "explanation": "NDP equals GDP minus the depreciation allowance for worn-out manufactured equipment and machinery."
+      }
+    },
+    {
+      "slide_num": 4,
+      "title": "Henderson GNP Dilemma: Growth vs. Social Costs",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "While standard economics celebrates rising Gross National Product, ecological thinkers realized this growth curve hides mounting social and environmental destruction.",
+      "eli15_takeaway": "Hazel Henderson showed that as GNP climbs, a massive layer of uncounted environmental and social damage climbs with it, artificially inflating apparent growth.",
+      "key_facts": [
+        "Hazel Henderson (1978, Creating Alternative Futures): Contrasted Gross GNP growth against true Net GNP growth.",
+        "Conventional GNP measures only prices of goods traded in the formal cash market.",
+        "SNA perversely adds social and environmental cleanup costs into GNP as if they were positive, desirable production.",
+        "True welfare (Net GNP) plateaus or shrinks once mounting pollution, illness, and resource depletion are subtracted."
+      ],
+      "mental_model": "Breaking a window and paying someone $100 to fix it makes the economy look $100 richer on paper, even though no new wealth was created.",
+      "checkpoint": {
+        "question": "According to Hazel Henderson analysis, why is high GNP growth deceptive?",
+        "options": [
+          "It excludes high-tech service industries from calculation.",
+          "It books disaster cleanup and pollution damages as positive economic additions rather than subtractions.",
+          "It records deflation as if it were currency expansion.",
+          "It assumes all foreign trade balances are exactly zero."
+        ],
+        "correct_index": 1,
+        "explanation": "Conventional GNP treats defensive expenditures (oil spill cleanups, hospital visits from smog) as positive economic output rather than costs caused by degradation."
+      }
+    },
+    {
+      "slide_num": 5,
+      "title": "GDP as a Flawed Decision Scorecard",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Despite Henderson critique, governments worldwide continue using GDP as their primary baseline for policy decisions.",
+      "eli15_takeaway": "GDP is blind to natural capital loss and human well-being: it treats oil spills and coal burning as economic wins while assigning zero value to clean air or unpaid elder care.",
+      "key_facts": [
+        "Adopted worldwide following Samuelson and Nordhaus (1995) as the primary indicator for national policy decisions.",
+        "Used by the World Bank System of National Accounts (SNA) as the chief metric of national progress.",
+        "Omits changes in the physical value of natural and human assets: resource depletion is completely ignored.",
+        "Omits quality of life and non-monetary services (e.g., coal mining adds to GDP; grandparent caregiving and law-and-order stability are unpriced or omitted)."
+      ],
+      "mental_model": "Judging an athlete health purely by how much food they eat each day, ignoring whether their arteries are clogging up.",
+      "checkpoint": {
+        "question": "Which of the following activities adds directly to conventional GDP despite degrading ecological or social assets?",
+        "options": [
+          "Volunteering at a community park on weekends.",
+          "Grandparents caring for grandchildren at home without wages.",
+          "Aggressive coal mining that pollutes local groundwater.",
+          "Leaving an ancient forest untouched to protect migratory birds."
+        ],
+        "correct_index": 2,
+        "explanation": "Coal mining generates commercial transactions and wages, adding directly to GDP, while the destruction of clean water and natural capital goes unrecorded."
+      }
+    },
+    {
+      "slide_num": 6,
+      "title": "The Economic Ghost: Unaccounted Ecosystem Services",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Because GDP only records cash moving through formal markets, living ecosystems remain completely invisible until they are destroyed and sold.",
+      "eli15_takeaway": "In traditional economics, a living tree in a forest has zero value. It only gains economic standing the second you chop it down, turn it into timber, and sell it.",
+      "key_facts": [
+        "Foundational economic rule: No Transaction = No Existence; No Money = No Existence.",
+        "Standard economics makes no value judgments on whether an activity restores or destroys life.",
+        "Living forests provide watershed stabilization, oxygen generation, carbon sequestration, and biodiversity habitat at zero recorded price.",
+        "Ecosystem standing only registers once nature is converted into commercial raw material."
+      ],
+      "mental_model": "A free public library that costs zero dollars being treated by economists as worthless compared to a bookstore that sells copies of the same books.",
+      "checkpoint": {
+        "question": "Under the core rules of traditional economic accounting, when does a wild tree acquire economic standing?",
+        "options": [
+          "When it absorbs carbon dioxide and releases oxygen.",
+          "When bees build a hive in its branches.",
+          "When it is cut down, processed into commercial timber, and sold for money.",
+          "When local communities use its shade for cultural gatherings."
+        ],
+        "correct_index": 2,
+        "explanation": "Traditional national accounting requires a market transaction; until nature is harvested and bought with money, its economic value is counted as zero."
+      }
+    },
+    {
+      "slide_num": 7,
+      "title": "The Historical Evolution of National Accounting",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "To understand why natural capital was left out of economics, we must examine the specific 20th-century crises that gave birth to modern national accounting.",
+      "eli15_takeaway": "National accounting was invented in the 1930s to fight the Great Depression and World War II, so it focused purely on industrial factories and assumed nature was infinite and free.",
+      "key_facts": [
+        "1930: Simon Kuznets and colleagues develop the first official measure of the US economy to gauge Great Depression collapse.",
+        "1934: Kuznets presents the first formal set of national accounts to the US Congress (warning against equating GDP with human welfare).",
+        "1940: Intermediate products subtracted to formalize value-added output during wartime industrial planning.",
+        "1950: Wassily Leontief input-output tables integrated to track industrial inter-dependencies.",
+        "1964: US Bureau of Economic Analysis (BEA) formalizes modern GDP accounting.",
+        "Historical blind spot: Post-war planners treated environmental resources as infinite, free gifts of nature."
+      ],
+      "mental_model": "Designing an emergency hospital triage ledger during wartime, where you only track bandages and doctors, never pausing to count the fresh air coming through the windows.",
+      "checkpoint": {
+        "question": "What historic condition led Simon Kuznets and 1930s economists to create national accounts without considering environmental limits?",
+        "options": [
+          "Global oil shortages forcing strict rationing.",
+          "The Great Depression and wartime production imperatives requiring urgent measurement of factory and labor output.",
+          "International treaties demanding carbon emission reporting.",
+          "A complete absence of commercial manufacturing factories."
+        ],
+        "correct_index": 1,
+        "explanation": "Kuznets created national accounts to manage the economic collapse of the Great Depression and wartime mobilization, where maximizing industrial production was the sole priority."
+      }
+    },
+    {
+      "slide_num": 8,
+      "title": "The System of National Accounts (SNA): Global Standard",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "The wartime US bookkeeping system was formalized into an international standard by the United Nations, locking in these accounting blind spots across the globe.",
+      "eli15_takeaway": "The UN System of National Accounts (SNA) is the universal economic rulebook every country uses to calculate GDP, rank national power, and set public policy.",
+      "key_facts": [
+        "System of National Accounts (SNA): Universal standard format managed by the United Nations Statistics Division (UNSTAT).",
+        "Establishes standardized formulas and data collection rules for GDP, GNP, and national balance sheets.",
+        "Used to rank countries globally, determine international borrowing terms, and evaluate economic health.",
+        "Serves as the foundation for state budgets and policy targets focused single-mindedly on gross economic expansion."
+      ],
+      "mental_model": "The official rulebook of FIFA: every country must play by the exact same rules and score goals the exact same way to get ranked on the world leaderboard.",
+      "checkpoint": {
+        "question": "What role does the UN System of National Accounts (SNA) play in international governance?",
+        "options": [
+          "It regulates international carbon credit pricing and forest offsets.",
+          "It provides the standardized statistical framework used by all nations to calculate GDP and direct public policy.",
+          "It determines the military defense budgets of NATO member states.",
+          "It replaces domestic corporate tax filing systems."
+        ],
+        "correct_index": 1,
+        "explanation": "The SNA is the globally accepted standard framework published by the UN to calculate national accounts, GDP, and economic indicators across countries."
+      }
+    },
+    {
+      "slide_num": 9,
+      "title": "The Standard SNA Equations: The Expenditure Formula",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Behind the global SNA standard lies a strict mathematical formula that defines domestic spending and net national production.",
+      "eli15_takeaway": "GDP adds up consumer spending, business investments, government purchases, and net exports (C + I + G + X - M), but contains zero subtraction for environmental destruction.",
+      "key_facts": [
+        "Standard Expenditure Formula: GDP = C + I + G + (X - M)",
+        "GNP = C + I + G + (X - M) + (R - P), where R = Factor receipts from abroad, P = Factor payments to foreigners.",
+        "NNP = GNP - D, where D is physical manufactured capital depreciation.",
+        "C = Personal Consumption, I = Private Investment, G = Government Spending, X = Exports, M = Imports.",
+        "Fundamental flaw: Misleadingly treated as a measure of social welfare despite completely excluding ecological drawdowns."
+      ],
+      "mental_model": "An equation that totals every dollar spent at the register, but has no minus sign for the burning of your house to keep warm.",
+      "checkpoint": {
+        "question": "In the standard macroeconomic equation GDP = C + I + G + (X - M), what is missing that Green Accounting insists on subtracting?",
+        "options": [
+          "Government spending on public defense.",
+          "Foreign debt interest payments.",
+          "The value of natural capital depletion and environmental degradation.",
+          "Corporate dividend payouts."
+        ],
+        "correct_index": 2,
+        "explanation": "The standard formula contains no deductions for depleted natural reserves (oil, timber, fish) or the economic costs of air and water degradation."
+      }
+    },
+    {
+      "slide_num": 10,
+      "title": "The Five Pillars of SNA Dominance",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Given such obvious blind spots, why did the conventional SNA framework remain unchallenged and dominant for over fifty years?",
+      "eli15_takeaway": "SNA stayed dominant because post-war nations were obsessed with rapid factory growth, markets ruled the world, nature seemed infinite, and pricing ecosystems was considered too hard.",
+      "key_facts": [
+        "Five historical reasons for SNA longevity:",
+        "1. Post-war growth urgency: Escaping 1930s depression and rebuilding war-torn nations required maximum physical output.",
+        "2. Environmental ignorance: Planners operated under the myth of boundless ecological sinks.",
+        "3. Market system hegemony: Focus restricted strictly to goods carrying cash price tags.",
+        "4. Measurement complexity: Pricing a car is simple via market auction; pricing clean air or ozone layers lacks market transactions.",
+        "5. Institutional resistance: High bureaucratic friction against altering established national accounting systems."
+      ],
+      "mental_model": "Using an old, clunky gas car for decades because switching to an electric vehicle requires new charging stations, new tools, and retraining all mechanics.",
+      "checkpoint": {
+        "question": "Which of the following is one of the five primary reasons why the conventional SNA persisted for so long without environmental reform?",
+        "options": [
+          "International law banned countries from measuring natural resources.",
+          "Pricing environmental assets (like clean air) is technically difficult compared to pricing manufactured market goods.",
+          "Ecologists proved that industrial growth has zero impact on biodiversity.",
+          "The United Nations dissolved all national statistical agencies in 1950."
+        ],
+        "correct_index": 1,
+        "explanation": "Valuing non-marketed natural goods and ecosystem services is technically complex and lacks visible transaction prices, creating inertia in standard national accounting."
+      }
+    },
+    {
+      "slide_num": 11,
+      "title": "Structural Defects in the Conventional SNA",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Because of this fifty-year institutional inertia, four specific structural defects became hardcoded into our official economic ledger.",
+      "eli15_takeaway": "SNA has four fatal flaws: it ignores cleanup expenses, skips non-market subsistence goods, overlooks life-support services, and treats liquidating natural capital as pure profit.",
+      "key_facts": [
+        "1. Misclassification of Environmental Expenditures: Defensive spending (cleaning toxic spills, building seawalls) is added to GDP instead of subtracted as a maintenance cost.",
+        "2. Omission of Non-Marketed Goods: Wild foods, gathered firewood, and medicinal plants used by rural populations are ignored.",
+        "3. Omission of Non-Marketed Services: Pollination, water filtration, and flood retention receive zero economic valuation.",
+        "4. Consumption of Natural Capital: Clear-cutting ancient forests or pumping dry an oil field is recorded as 100% current income with zero asset depreciation."
+      ],
+      "mental_model": "Emptying your bank account to pay a plumber to fix pipes you broke with a sledgehammer, and claiming you are richer because money changed hands.",
+      "checkpoint": {
+        "question": "How does the conventional SNA perversely record defensive environmental expenditures, such as cleaning up a major toxic spill?",
+        "options": [
+          "It subtracts the cleanup costs from gross corporate profits.",
+          "It records cleanup spending as positive economic activity, increasing GDP.",
+          "It ignores all cleanup payments as illegal transactions.",
+          "It transfers the cleanup cost directly to foreign aid budgets."
+        ],
+        "correct_index": 1,
+        "explanation": "Defensive expenditures (paying contractors, buying chemicals to clean pollution) involve commercial transactions, so the SNA records them as positive contributions to GDP."
+      }
+    },
+    {
+      "slide_num": 12,
+      "title": "Core Methodological Dilemmas in Reforming SNA",
+      "act": "Act 1: The Blind Spots of Standard GDP",
+      "continuity_bridge": "Recognizing these fatal defects forced economists to confront four massive technical questions before they could build a green alternative.",
+      "eli15_takeaway": "To fix GDP, economists had to decide: do we measure nature in kilograms or dollars, rebuild the whole accounting system or use satellite side-tables, and how do we price things money cannot buy?",
+      "key_facts": [
+        "Four core methodological dilemmas in environmental accounting:",
+        "1. Physical vs. Monetary Accounts: Should nature be tracked in physical units (hectares, metric tons of carbon, cubic meters of water) or converted into monetary currency?",
+        "2. Integrated vs. Satellite Accounts: Should green adjustments alter headline GDP directly, or run in separate parallel satellite accounts without touching official GDP?",
+        "3. Defensive & Maintenance Costs: How to identify and isolate expenditures made solely to prevent or repair ecological harm.",
+        "4. Non-Market Valuation: Developing rigorous shadow pricing for ecosystem services that never trade on a commercial exchange."
+      ],
+      "mental_model": "Deciding whether your fitness tracker should report calories burned in raw numbers or convert everything into equivalent slices of pizza.",
+      "checkpoint": {
+        "question": "What is the distinction between Integrated and Satellite environmental accounts?",
+        "options": [
+          "Integrated accounts use satellites in space, while satellite accounts use ground sensors.",
+          "Integrated accounts modify headline GDP directly, while satellite accounts track environmental data in parallel supplementary tables.",
+          "Integrated accounts track private corporations, while satellite accounts track military hardware.",
+          "Integrated accounts cover renewable resources, while satellite accounts cover fossil fuels."
+        ],
+        "correct_index": 1,
+        "explanation": "Satellite accounts sit alongside conventional national accounts without altering core GDP figures, whereas integrated accounts recalculate headline economic indicators directly."
+      }
+    },
+    {
+      "slide_num": 13,
+      "title": "The SEEA Revolution: Rebuilding the National Ledger",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "To resolve these dilemmas, international agencies joined forces in 1993 to construct the first comprehensive green accounting architecture: SEEA.",
+      "eli15_takeaway": "The UN and World Bank created SEEA (System of Integrated Environmental-Economic Accounting) to pair physical nature tracking with monetary adjustments for Green GDP.",
+      "key_facts": [
+        "1993: United Nations, World Bank, European Commission, OECD, and IMF publish the SEEA handbook.",
+        "Expands SNA with dedicated physical flow tables and asset stock balance sheets.",
+        "Provides the formal mathematical foundation for Green GDP (Environmentally Adjusted Domestic Product).",
+        "Two foundational requirements of SEEA: 1. Comprehensive description of the biophysical environment in physical units; 2. Rigorous economic valuation of natural asset stocks and annual depletion flows."
+      ],
+      "mental_model": "Upgrading a company financial software so it tracks physical warehouse inventory and wear-and-tear alongside everyday cash flow.",
+      "checkpoint": {
+        "question": "What major international framework was established in 1993 to provide theoretical and technical guidelines for Green GDP?",
+        "options": [
+          "The Kyoto Protocol Clean Development Mechanism.",
+          "The UN System of Integrated Environmental and Economic Accounting (SEEA).",
+          "The World Trade Organization General Agreement on Tariffs.",
+          "The Basel Convention on Hazardous Wastes."
+        ],
+        "correct_index": 1,
+        "explanation": "In 1993, the UN, World Bank, and partner agencies released the SEEA framework to standardize environmental-economic accounting worldwide."
+      }
+    },
+    {
+      "slide_num": 14,
+      "title": "SEEA Physical Flow Accounts: The 4-Way Material Exchange",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "The first building block of SEEA is mapping the physical metabolism between the human economy and the natural environment.",
+      "eli15_takeaway": "SEEA tracks four material flows moving between the economic and environmental spheres: natural resources, ecosystem inputs, manufactured products, and waste residuals.",
+      "key_facts": [
+        "Tracks physical transactions across two distinct spheres: The Economic Sphere and the Environmental Sphere.",
+        "Four distinct physical flows:",
+        "1. Products: Goods and services produced and traded within the economic sphere.",
+        "2. Natural Resources: Raw materials extracted from nature into the economy (minerals, fossil fuels, timber, soil, water).",
+        "3. Ecosystem Inputs: Biogeochemical support services (oxygen for combustion, natural water filtration).",
+        "4. Residuals: Waste outputs dumped from the economy back into nature (greenhouse gases, toxic effluents, solid municipal waste)."
+      ],
+      "mental_model": "Tracking human metabolism: measuring food and water taken in, useful energy expended, and carbon dioxide and waste excreted.",
+      "checkpoint": {
+        "question": "Under SEEA physical flow accounting, what category do factory smoke emissions and landfill plastic belong to?",
+        "options": [
+          "Products.",
+          "Natural resources.",
+          "Residuals.",
+          "Ecosystem inputs."
+        ],
+        "correct_index": 2,
+        "explanation": "Residuals are unwanted physical outputs—solid waste, liquid effluents, and gaseous emissions—released from the economy back into the environmental sphere."
+      }
+    },
+    {
+      "slide_num": 15,
+      "title": "Economic Assets vs. Natural Assets in SNA",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "Having mapped physical flows, SEEA had to reconcile how standard SNA defines which pieces of nature qualify as economic assets.",
+      "eli15_takeaway": "Under conventional rules, nature only counts as an economic asset if a human owns it and can make money off it; unowned wildlife and open oceans are ignored.",
+      "key_facts": [
+        "Under 1993 SNA, a natural asset qualifies as an Economic Asset ONLY IF it satisfies two strict criteria:",
+        "(a) Legal ownership rights are enforced by institutional units (private individuals, companies, or the state).",
+        "(b) Direct economic benefits (revenues or rents) may be derived from holding or using it.",
+        "Division of natural assets: Produced (cultivated crops, orchard trees, livestock, commercial tree plantations) vs. Non-produced (privately held mineral deposits, commercial agricultural land, licensed ocean fisheries)."
+      ],
+      "mental_model": "A fenced pasture with registered dairy cows is an economic asset; a herd of wild deer grazing in an open national forest has zero financial standing.",
+      "checkpoint": {
+        "question": "What two conditions must a natural resource meet to be classified as an economic asset under the 1993 SNA?",
+        "options": [
+          "It must be photosynthetic and located within national territorial waters.",
+          "It must have legally enforced ownership rights and generate measurable economic benefits for its owner.",
+          "It must be non-renewable and listed on the international commodity exchange.",
+          "It must be certified organic and tax-exempt."
+        ],
+        "correct_index": 1,
+        "explanation": "The 1993 SNA defines economic assets strictly by legal ownership and the ability of that owner to extract economic benefits."
+      }
+    },
+    {
+      "slide_num": 16,
+      "title": "Environmental Assets: The Unpriced Life-Support Web",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "Because standard SNA restricts assets to privately owned cash-generators, SEEA created a separate category for pure environmental assets.",
+      "eli15_takeaway": "Environmental assets are the unowned parts of nature that do not produce commercial commodities, but provide life-saving services like climate regulation and waste absorption.",
+      "key_facts": [
+        "SEEA definition: Non-produced, non-economic natural assets that do not serve as direct physical commodity inputs.",
+        "Three primary life-support functions:",
+        "1. Waste Absorption & Assimilation: Wetlands absorbing nitrogen runoff, atmospheres diluting particulates.",
+        "2. Ecological & Hydrological Regulation: Mangroves buffering coastal storm surges, forests maintaining regional precipitation and soil stability.",
+        "3. Non-Economic Amenities: Recreational access, landscape beauty, physical health, and cultural heritage."
+      ],
+      "mental_model": "The earth atmosphere acting as a free, invisible air conditioning and waste disposal system that runs 24/7 without sending an invoice.",
+      "checkpoint": {
+        "question": "Which of the following functions is characteristic of a SEEA Environmental Asset rather than an SNA Economic Asset?",
+        "options": [
+          "Generating harvestable timber for export markets.",
+          "Absorbing industrial pollutants and regulating regional floodwaters without commercial fees.",
+          "Producing commercial crude oil from deep-sea offshore wells.",
+          "Yielding licensed agricultural wheat crops."
+        ],
+        "correct_index": 1,
+        "explanation": "Environmental assets provide critical regulatory, absorption, and amenity services that sustain life without being harvested as commercial market commodities."
+      }
+    },
+    {
+      "slide_num": 17,
+      "title": "SEEA Environmental Protection Expenditure Accounts (EPEA)",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "To identify how much of conventional GDP is spent merely surviving environmental damage, SEEA established specialized expenditure accounts.",
+      "eli15_takeaway": "EPEA pulls out all money spent on pollution filters, sewage plants, and park management so governments can see the true cost of keeping the economy running.",
+      "key_facts": [
+        "EPEA (Environmental Protection and Resource Management Accounts): Disaggregates conventional national accounts data.",
+        "Isolates expenditures dedicated to environmental protection: wastewater management, air pollution abatement, solid waste treatment, biodiversity conservation.",
+        "Identifies sectoral costs: Reveals which manufacturing industries incur the highest environmental compliance and protection expenses relative to gross value added.",
+        "Prevents defensive expenditures from being mistaken for real improvements in living standards."
+      ],
+      "mental_model": "Looking through your monthly bank statement and highlighting all expenses spent on medicines, security locks, and car repairs to see how much it costs just to stay safe.",
+      "checkpoint": {
+        "question": "What is the primary function of SEEA Environmental Protection Expenditure Accounts (EPEA)?",
+        "options": [
+          "To tax polluting corporations at an internationally uniform rate.",
+          "To separate and track expenditures spent on preventing, reducing, and eliminating pollution from standard economic accounts.",
+          "To subsidize oil exploration in developing countries.",
+          "To eliminate all private ownership of commercial forests."
+        ],
+        "correct_index": 1,
+        "explanation": "EPEA disaggregates conventional accounts to show how much national expenditure is directed toward environmental protection and resource management."
+      }
+    },
+    {
+      "slide_num": 18,
+      "title": "SEEA Natural Resource Asset Accounts: Tracking Stocks",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "Beyond tracking annual expenditure flows, SEEA constructs physical and monetary balance sheets to track natural wealth over time.",
+      "eli15_takeaway": "Asset accounts track opening and closing balance sheets of nature (forests, fish, minerals, water) to calculate exactly how much natural capital was depleted during the year.",
+      "key_facts": [
+        "Tracks opening stock at time t and closing stock at time t+1 (Closing = Opening + Additions - Reductions).",
+        "Compiled in both physical units (tons of ore, cubic meters of timber) and monetary valuations.",
+        "Covers five primary natural resource domains: Mineral/Energy reserves, Soil resources, Timber resources, Aquatic resources (fisheries), and Water resources.",
+        "Critique and limitation: Excludes complex ecosystem services; volatile market prices make monetary balance sheets fluctuate wildly."
+      ],
+      "mental_model": "Taking physical inventory in a retail warehouse on January 1st and December 31st to discover whether stock was stolen or depleted.",
+      "checkpoint": {
+        "question": "How do SEEA Natural Resource Asset Accounts record the status of national assets?",
+        "options": [
+          "By tracking only the daily cash revenues from foreign tourism.",
+          "By measuring opening stock at time t, tracking additions and depletion, and recording closing stock at time t+1 in physical and monetary units.",
+          "By ignoring physical counts and relying solely on consumer opinion surveys.",
+          "By counting only manufactured machines and factory buildings."
+        ],
+        "correct_index": 1,
+        "explanation": "Asset accounts use balance sheets showing opening stocks, additions (growth, discoveries), deductions (extraction, degradation), and closing stocks across time periods."
+      }
+    },
+    {
+      "slide_num": 19,
+      "title": "Environmentally Adjusted Accounts & Genuine Progress",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "Once natural asset balance sheets are established, economists can adjust standard income to derive genuine welfare indicators.",
+      "eli15_takeaway": "Environmentally adjusted accounts fix GDP by adding non-market benefits like housework and subtracting resource depletion and pollution costs, creating the Genuine Progress Indicator (GPI).",
+      "key_facts": [
+        "Evolution of alternative welfare indicators: MEW (Measure of Economic Welfare) -> ISEW (Index of Sustainable Economic Welfare) -> GPI (Genuine Progress Indicator).",
+        "Adds unpriced social benefits: Unpaid domestic labor, parenting, volunteer community service.",
+        "Subtracts environmental damage and capital consumption: Air/water pollution damages, loss of wetlands, depletion of non-renewable fossil reserves, costs of climate change.",
+        "Result: In most developed nations, GDP has tripled since 1970 while GPI has remained stagnant or fallen."
+      ],
+      "mental_model": "Recalculating your business income by subtracting unpaid bills, employee burnout costs, and broken equipment that you ignored all year.",
+      "checkpoint": {
+        "question": "How does the Genuine Progress Indicator (GPI) differ fundamentally from conventional GDP?",
+        "options": [
+          "GPI only counts military and aerospace manufacturing output.",
+          "GPI adds positive non-market contributions (like volunteer work) and deducts environmental degradation and resource depletion.",
+          "GPI excludes all forms of personal consumer spending.",
+          "GPI is calculated solely by commercial banking institutions."
+        ],
+        "correct_index": 1,
+        "explanation": "GPI corrects GDP by adding valuable unpriced social contributions and subtracting environmental destruction, resource depletion, and crime costs."
+      }
+    },
+    {
+      "slide_num": 20,
+      "title": "Redrawing the Boundaries: SEEA vs. SNA Classifications",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "To put these adjustments into practice, SEEA had to redraw the physical boundaries of what counts as air, land, and water.",
+      "eli15_takeaway": "SEEA expands economic boundaries: it includes the atmosphere (air), treats water bodies as living aquatic systems rather than mere real estate, and explicitly tracks ecosystems.",
+      "key_facts": [
+        "Cultivated Assets & Subsoil Minerals: Boundary definitions are identical in both SEEA and SNA.",
+        "Atmospheric Boundary: Air is included as an asset in SEEA (tracking air shed assimilation capacity and greenhouse warming); SNA excludes air entirely.",
+        "Land Classification: SNA lumps lakes and rivers into Land; SEEA separates water bodies into an independent Water asset class and defines Land as functional terrestrial ecosystems.",
+        "Water Resources: SNA restricts water accounting strictly to commercially exploitable groundwater aquifers; SEEA includes all surface waters, rivers, lakes, wetlands, and soil moisture."
+      ],
+      "mental_model": "Upgrading from a flat black-and-white 2D map that only shows property fence lines to a 3D topographic map that displays air currents, rivers, and wildlife habitats.",
+      "checkpoint": {
+        "question": "Which vital natural asset is explicitly incorporated in SEEA accounting boundaries but completely excluded from the conventional SNA?",
+        "options": [
+          "Subsoil petroleum reserves.",
+          "Commercial livestock herds.",
+          "Atmospheric air (air sheds and gas balances).",
+          "Agricultural tractor machinery."
+        ],
+        "correct_index": 2,
+        "explanation": "Conventional SNA ignores atmospheric air entirely, whereas SEEA explicitly includes the atmosphere as an environmental asset to account for air pollution and assimilation."
+      }
+    },
+    {
+      "slide_num": 21,
+      "title": "Valuing Social Costs: The Three SEEA Valuation Methods",
+      "act": "Act 2: The SEEA Framework: Rebuilding the Balance Sheet",
+      "continuity_bridge": "Once SEEA brings these broader natural assets onto the books, how does it assign monetary dollar values to unpriced environmental depletion?",
+      "eli15_takeaway": "SEEA treats environmental destruction as an unbilled social cost in production, valuing it through market prices, maintenance restoration costs, or survey-based willingness to pay.",
+      "key_facts": [
+        "In conventional SNA, only assets with explicit market exchange prices are assigned monetary valuation.",
+        "In SEEA, natural asset depletion is treated as an unrecorded social cost inside the Production Account.",
+        "Three alternative monetary valuation approaches in SEEA:",
+        "1. Market Valuation: Net Present Value (NPV) of future resource rents, Net Price method, and El Serafy User Cost method.",
+        "2. Maintenance Valuation: Estimating the actual capital expenditure required to restore and maintain the environmental asset in its original condition.",
+        "3. Contingent Valuation: Survey-based willingness-to-pay (WTP) to preserve non-market ecological amenities."
+      ],
+      "mental_model": "Calculating the cost of damaging a rented apartment: checking local repair market rates, asking the contractor what restoration costs, or asking tenants what they would pay to live in a clean unit.",
+      "checkpoint": {
+        "question": "Under the SEEA maintenance valuation approach, how is the cost of environmental degradation estimated?",
+        "options": [
+          "By checking the global stock market price of chemical companies.",
+          "By calculating the financial cost required to restore and maintain the natural asset at a sustainable level.",
+          "By conducting phone surveys asking citizens if they enjoy walking in parks.",
+          "By measuring the electricity consumption of local municipal offices."
+        ],
+        "correct_index": 1,
+        "explanation": "Maintenance valuation calculates the hypothetical cost society would have to pay to maintain natural assets in a constant, undamaged condition."
+      }
+    },
+    {
+      "slide_num": 22,
+      "title": "The Global Green Accounting Wave: 20+ Pilot Nations",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "Armed with SEEA theoretical valuation tools, nations around the world began piloting green accounting systems to measure their true wealth.",
+      "eli15_takeaway": "Over 20 nations—including the US, Mexico, Norway, Japan, and Indonesia—ran green accounting pilots to test how resource consumption impacts national balance sheets.",
+      "key_facts": [
+        "Growing international consensus recognized that ignoring environmental degradation produces false macroeconomic signals.",
+        "The United Nations, World Bank, and OECD compiled technical guidance and pilot manuals.",
+        "Over 20 diverse countries tested green accounts: United States, European Union members, Japan, Norway, Mexico, Philippines, Indonesia, Namibia, and Chile.",
+        "Each nation tailored accounts to its most urgent vulnerabilities: minerals in Namibia, forests and soil in Indonesia, air pollution in Norway and the Netherlands."
+      ],
+      "mental_model": "Twenty different test drivers taking a prototype hybrid car out on different terrains—some on rocky mountains, others in deserts—to see how the fuel gauge performs.",
+      "checkpoint": {
+        "question": "Why did over 20 nations pilot green accounting systems in the late 20th century?",
+        "options": [
+          "They were legally required to adopt a single global digital currency.",
+          "They recognized that high conventional GDP growth rates masked severe environmental depletion and needed empirical pilot data.",
+          "The World Bank cancelled all international loans to nations with manufacturing industries.",
+          "They sought to eliminate all commercial forestry and mining activities."
+        ],
+        "correct_index": 1,
+        "explanation": "Nations piloted green accounts because they realized standard GDP was hiding severe resource depletion, requiring new tools to guide policy."
+      }
+    },
+    {
+      "slide_num": 23,
+      "title": "The Dual Purpose of Green Accounting",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "These pilot projects made it clear that green accounting serves two vital strategic purposes for national governments.",
+      "eli15_takeaway": "Green accounting has two jobs: it shows citizens how much environmental wealth was sacrificed to achieve GDP growth, and it proves GDP cannot be the sole yardstick of national success.",
+      "key_facts": [
+        "Rapid GDP growth frequently masks severe environmental degradation and aggressive resource liquidation.",
+        "Two-fold strategic mandate of Green Accounting:",
+        "1. Transparency: Inform the government and citizens of the exact dollar value of natural capital expended to generate that GDP number.",
+        "2. Governance Alert: Provide empirical proof that conventional GDP is inadequate and misleading as the predominant measure of governmental achievement."
+      ],
+      "mental_model": "A nutrition label that shows not just how delicious a meal tastes, but also how much cholesterol and toxic additives it deposits in your bloodstream.",
+      "checkpoint": {
+        "question": "What is the primary warning that a green accounting system provides to public policymakers?",
+        "options": [
+          "That high GDP growth may have been achieved by liquidating irreplaceable natural capital.",
+          "That tax rates on private businesses are too high.",
+          "That paper currency should be replaced by precious gold coins.",
+          "That foreign trade deficits should always be maintained above ten percent."
+        ],
+        "correct_index": 0,
+        "explanation": "Green accounting exposes whether rapid GDP growth is an illusion fueled by depleting finite natural assets and degrading life-support systems."
+      }
+    },
+    {
+      "slide_num": 24,
+      "title": "The Invisible Economy: Unpriced Services & Subsistence Goods",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "To expose this illusion, green accounting must quantify vital subsistence goods and ecological services that currently bypass retail markets.",
+      "eli15_takeaway": "Nature gives us free flood protection, insect pollination, drinking water, and firewood; retail prices only cover pipes and chainsaws, completely ignoring the value of nature itself.",
+      "key_facts": [
+        "Ecosystem Services Excluded: Forest watershed filtration, wild insect pollination, natural soil regeneration, and microclimate stabilization.",
+        "Non-Marketed Physical Goods: Fuelwood gathered in rural forests, bushmeat and wild herbs harvested for direct consumption.",
+        "Infrastructure vs. Resource Pricing: Drinking and irrigation water tariffs reflect distribution pipes, pumps, and treatment plants, but value the raw natural water itself at zero.",
+        "Economic Consequence: Because these services carry no price, policymakers treat their degradation as costing zero dollars."
+      ],
+      "mental_model": "Paying for the plastic cup and ice cubes at a lemonade stand while treating the fresh spring water as having zero monetary value.",
+      "checkpoint": {
+        "question": "When a municipality bills residents for tap water, what does that price typically reflect under conventional accounting?",
+        "options": [
+          "The full ecological replacement cost of the aquifer recharge capacity.",
+          "The financial cost of delivery pipes, pumps, and treatment infrastructure, but not the intrinsic value of the water resource itself.",
+          "The shadow price of future climate change risks.",
+          "The opportunity cost of agricultural irrigation downstream."
+        ],
+        "correct_index": 1,
+        "explanation": "Municipal water tariffs cover the engineering and operational costs of treatment and pipe networks, while the raw natural water resource is treated as free."
+      }
+    },
+    {
+      "slide_num": 25,
+      "title": "The Asymmetry of Depreciation: Factory vs. Forest",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "This mispricing leads to the single most dangerous accounting double standard in the entire System of National Accounts.",
+      "eli15_takeaway": "When a factory machine wears out, economics records it as a cost (depreciation). But when a nation cuts down a 500-year-old forest, economics books it as 100% pure profit!",
+      "key_facts": [
+        "The Fundamental Depreciation Asymmetry:",
+        "Physical Manufactured Capital (buildings, tractors, factories): Systematically depreciated against gross revenue according to standard accounting principles.",
+        "Natural Capital (ancient forests, petroleum reserves, fertile topsoil): 100% of liquidation is booked directly as current income with ZERO asset depreciation.",
+        "Perverse Macroeconomic Incentive: A country clear-cutting its entire virgin forest displays massive GDP growth for several years, hiding the catastrophic destruction of its productive asset base."
+      ],
+      "mental_model": "Selling off the bricks of your house one by one and bragging to your neighbors about your massive weekly income, until you find yourself sleeping in the rain.",
+      "checkpoint": {
+        "question": "Why is the treatment of natural capital in conventional national income accounts described as an asymmetry?",
+        "options": [
+          "Natural resources are taxed at higher rates than manufactured machinery.",
+          "Manufactured capital depreciation is subtracted from income, whereas the depletion of natural capital is booked entirely as current income.",
+          "Only foreign corporations are permitted to depreciate natural assets.",
+          "Natural resources can never be harvested using industrial machines."
+        ],
+        "correct_index": 1,
+        "explanation": "National accounts subtract wear-and-tear of human-made equipment (depreciation) but treat the irreversible depletion of natural assets as pure additions to national income."
+      }
+    },
+    {
+      "slide_num": 26,
+      "title": "Defining Green Accounting: The Lutz & El Serafy Foundation",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "To fix this depreciation asymmetry, World Bank economists formulated the first rigorous definition of Green Accounting.",
+      "eli15_takeaway": "Green Accounting modifies standard national accounts by deducting the depletion and degradation of natural resources from conventional income.",
+      "key_facts": [
+        "Nomenclature: Variously termed Green Accounting, Environmental Accounting, Resource Accounting, or Integrated Economic and Environmental Accounting.",
+        "Core Definition: Modification of the System of National Accounts (SNA) to formally incorporate the use, degradation, and depletion of natural capital.",
+        "Pioneering Research: Ernst Lutz and Salah El Serafy (1988, World Bank) conduct foundational research on incorporating environmental asset depletion into national income.",
+        "El Serafy Method: Divides resource sales revenues into a True Income component and a Capital Consumption component that must be reinvested."
+      ],
+      "mental_model": "Rewriting the family budget rules so that selling off the family jewelry can no longer be recorded as a regular weekly salary.",
+      "checkpoint": {
+        "question": "Who were the pioneering economists that conducted foundational research on Green Accounting for the World Bank in 1988?",
+        "options": [
+          "John Maynard Keynes and Milton Friedman.",
+          "Ernst Lutz and Salah El Serafy.",
+          "Adam Smith and David Ricardo.",
+          "Hazel Henderson and Pavan Sukhdev."
+        ],
+        "correct_index": 1,
+        "explanation": "Ernst Lutz and Salah El Serafy conducted pioneering research at the World Bank in 1988, establishing the formal framework for resource and green accounting."
+      }
+    },
+    {
+      "slide_num": 27,
+      "title": "Integrating Economics and Ecology: A Pluralistic Framework",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "Building on Lutz and El Serafy work, modern green accounting evolved into a pluralistic bridge between legal mandates and ecological science.",
+      "eli15_takeaway": "Green accounting is not just a spreadsheet trick; it is a multi-dimensional system that connects environmental law, biophysical ecology, and economic balance sheets.",
+      "key_facts": [
+        "Evolved continuously since the 1960s to correct systemic flaws in the SNA regarding environmental protection.",
+        "Functions as an analytical tool to quantify the bidirectional feedback loops between macroeconomic expansion and environmental carrying capacity.",
+        "Pluralistic Measurement Architecture: Combines biophysical physical units (mass balances, emission volumes) with monetary valuations.",
+        "Grounded in statutory compliance: Anchored in domestic environmental laws, discharge standards, and international treaties."
+      ],
+      "mental_model": "A modern hospital monitoring dashboard that tracks heart rate, blood oxygen, and brainwaves simultaneously, rather than just asking the patient how happy they feel.",
+      "checkpoint": {
+        "question": "What characterizes the pluralistic measurement approach of Green Accounting?",
+        "options": [
+          "It relies exclusively on subjective consumer satisfaction surveys.",
+          "It combines physical biophysical measurements (mass, volume) with economic monetary values and statutory legal standards.",
+          "It mandates that all economic data be converted into cryptocurrency.",
+          "It eliminates the use of mathematical equations in economic planning."
+        ],
+        "correct_index": 1,
+        "explanation": "Pluralistic measurement combines physical tracking of ecosystem indicators with monetary valuation and statutory environmental boundaries."
+      }
+    },
+    {
+      "slide_num": 28,
+      "title": "The Six Core Elements of a Green Balance Sheet",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "To capture these pluralistic dimensions, a green accounting balance sheet tracks six distinct ecological components.",
+      "eli15_takeaway": "A full green balance sheet monitors six things: ecosystem services, life support networks, landscape beauty, pollution damage, defensive cleanup costs, and resource depletion.",
+      "key_facts": [
+        "Six Fundamental Components of Green Accounting:",
+        "1. Environmental Services: Waste breakdown, water filtration, crop pollination.",
+        "2. Ecosystem Life-Support Systems: Global carbon cycles, hydrological cycles, nutrient recycling.",
+        "3. Landscape & Amenities: Aesthetic value, wilderness recreation, ecotourism value.",
+        "4. Environmental Damages: Quantified pollution flows degrading air, soil, and aquatic ecosystems.",
+        "5. Defensive Expenditures: Money spent on pollution control (fencing national parks, installing catalytic converters, industrial scrubbers).",
+        "6. Resource Depletion: Quantitative drawdown of both non-renewable (minerals, fossil fuels) and renewable stocks (overfished marine zones, clear-cut forests)."
+      ],
+      "mental_model": "A home inspection report that checks the roof, foundation, air conditioning, toxic mold levels, termite damage, and water pipes all in one document.",
+      "checkpoint": {
+        "question": "Which of the following is classified as a defensive expenditure in Green Accounting?",
+        "options": [
+          "Constructing fences and security barriers around a protected national park to prevent illegal poaching.",
+          "Harvesting wild medicinal herbs for local pharmaceutical sales.",
+          "Selling timber rights to an international logging corporation.",
+          "Purchasing imported oil on the open commodities market."
+        ],
+        "correct_index": 0,
+        "explanation": "Defensive expenditures are costs incurred to protect, prevent, or mitigate damage to environmental assets (such as protective park fencing)."
+      }
+    },
+    {
+      "slide_num": 29,
+      "title": "The UN Rationale: Human Welfare is Bounded by Nature",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "The United Nations formalized these six elements because international leaders recognized that industrial expansion cannot outrun ecological boundaries.",
+      "eli15_takeaway": "The UN SEEA Handbook states plainly: all economic growth and human well-being depend entirely on the life-support services provided by the living environment.",
+      "key_facts": [
+        "Source: United Nations Handbook of National Accounting - Integrated Environmental and Economic Accounting.",
+        "Core UN Rationale: Human industrial activity emerged as the defining global policy issue of the late 20th century.",
+        "Growing international recognition that macroeconomic expansion creates severe cross-border externalities (acid rain, ozone depletion, climate disruption).",
+        "Ecological reality: Long-term human welfare is non-viable without maintaining the functional integrity of planetary environmental services."
+      ],
+      "mental_model": "Passengers expanding and redecorating the upper decks of a ship, while ignoring that the hull beneath them is rusting through and taking on water.",
+      "checkpoint": {
+        "question": "What core insight from the UN Handbook on National Accounting drives the rationale for Green Accounting?",
+        "options": [
+          "Economic growth can expand infinitely without requiring physical resources.",
+          "Human welfare and ongoing economic progress are completely dependent on the services provided by the natural environment.",
+          "Manufacturing goods produces zero environmental impacts if conducted in urban areas.",
+          "International trade agreements supersede all planetary ecological limits."
+        ],
+        "correct_index": 1,
+        "explanation": "The UN Handbook emphasizes that human welfare and economic output ultimately depend upon the vital life-support services delivered by the natural environment."
+      }
+    },
+    {
+      "slide_num": 30,
+      "title": "The Pressure-State-Response (PSR) Framework",
+      "act": "Act 3: Depletion Asymmetry & The Green GDP Core",
+      "continuity_bridge": "To translate this UN insight into an actionable operational model, environmental economists developed the Pressure-State-Response loop.",
+      "eli15_takeaway": "The PSR model connects cause and effect: human actions create Pressure, which changes the State of nature, prompting society to Respond with laws and green investments.",
+      "key_facts": [
+        "Framework Model: Developed by Pinter et al. (1999), adopted by UNEP, IISD, and Ecologistics International.",
+        "Three Dynamic Nodes:",
+        "1. Pressure: Human economic activity, trade, and resource consumption (Energy, Transport, Manufacturing, Agriculture, Forestry).",
+        "2. State: Physical condition of the biosphere (Air purity, Water table levels, Soil organic matter, Forest biomass, Wildlife populations).",
+        "3. Response: Societal interventions (Legislation, Economic instruments, Carbon taxes, Environmental protection spending, Changing consumer habits, International treaties).",
+        "Feedback loop: Information on environmental State and Pressures drives societal Responses, which circle back to reduce Pressures."
+      ],
+      "mental_model": "Your car dashboard: driving too fast (Pressure) overheats the engine (State), triggering the temperature warning light, which forces you to pull over and add coolant (Response).",
+      "checkpoint": {
+        "question": "In the UNEP Pressure-State-Response (PSR) framework, where does a newly enacted carbon tax belong?",
+        "options": [
+          "Under Pressure.",
+          "Under State.",
+          "Under Response.",
+          "Under Residuals."
+        ],
+        "correct_index": 2,
+        "explanation": "A carbon tax is an economic policy instrument designed by society to modify behavior, placing it under the Response node."
+      }
+    },
+    {
+      "slide_num": 31,
+      "title": "Pioneering Country Audits: Norway & Indonesia",
+      "act": "Act 4: Real-World Case Studies & Political Friction",
+      "continuity_bridge": "With theoretical models like PSR in place, real-world implementations delivered shocking revelations about actual national wealth.",
+      "eli15_takeaway": "Norway proved tracking physical resources prevents shortages, while Indonesia discovered that once forest and oil depletion were subtracted, its 7% GDP growth crashed to 4%!",
+      "key_facts": [
+        "Norway (1970s): Pioneer of national physical resource accounting; tracked energy reserves, marine fisheries, timber, and minerals to manage national scarcity, later adding air emissions.",
+        "Indonesia Wasting Assets Study (Robert Repetto et al., 1989, World Resources Institute):",
+        "Audited Indonesia rapid economic expansion by deducting the physical depreciation of petroleum reserves, tropical forests, and agricultural soil erosion.",
+        "Empirical shock: Official conventional GDP growth of 7.1% per year collapsed to a net adjusted growth rate of only 4.0% per year!",
+        "Political backlash: Demonstrating that a developing tiger economy was living off liquidated natural capital created fierce political resistance against Green GDP."
+      ],
+      "mental_model": "A tech startup reporting record high revenues, until an outside auditor reveals they achieved those numbers by selling off their server racks and office furniture.",
+      "checkpoint": {
+        "question": "What happened to Indonesia economic growth rate in Robert Repetto 1989 Wasting Assets study after accounting for forest, oil, and soil depletion?",
+        "options": [
+          "It increased from 7.1% to over 12%.",
+          "It dropped dramatically from an official 7.1% down to approximately 4.0%.",
+          "It remained completely unchanged.",
+          "It showed that Indonesia had zero natural resources remaining."
+        ],
+        "correct_index": 1,
+        "explanation": "Repetto showed that when depletion of forests, petroleum, and soil was deducted, Indonesia real net growth was nearly slashed in half."
+      }
+    },
+    {
+      "slide_num": 32,
+      "title": "Global Friction: The Philippines, Namibia, and the US BEA Pushback",
+      "act": "Act 4: Real-World Case Studies & Political Friction",
+      "continuity_bridge": "Indonesia was not alone; other national pilots encountered profound economic insights and intense political resistance.",
+      "eli15_takeaway": "The Philippines tracked unpriced subsistence goods, Namibia optimized scarce desert water, but the US shut down its green accounting pilot after mining lobbies protested.",
+      "key_facts": [
+        "Philippines (1990): Integrated all non-marketed environmental goods into national accounts, including subsistence fuelwood collection and the waste assimilation capacity of rivers.",
+        "Namibia (1994): Applied resource accounting to analyze government rent capture from marine fisheries and mining, optimal water allocation in desert zones, and rangeland degradation on livestock.",
+        "United States BEA (1994): Bureau of Economic Analysis published pilot Integrated Economic and Environmental Satellite Accounts for subsoil minerals.",
+        "Political Pushback: Coal and mineral lobbying groups pressured Congress, arguing green accounting would make American industries look unprofitable; Congress formally defunded and banned BEA from continuing the work."
+      ],
+      "mental_model": "A student threatening to defund the school grading committee because calculating missing homework assignments will lower their grade point average.",
+      "checkpoint": {
+        "question": "Why did the United States Congress halt and defund the Bureau of Economic Analysis (BEA) green accounting program in 1994?",
+        "options": [
+          "The BEA software suffered an irreversible computer virus.",
+          "Intense political lobbying from fossil fuel and mining industries who feared green accounts would show negative net wealth creation.",
+          "The United Nations ordered all developed nations to terminate green accounting.",
+          "The US economy had zero mineral and resource extraction."
+        ],
+        "correct_index": 1,
+        "explanation": "Mining and coal interests lobbied Congress to block BEA green accounting, fearing the accounts would demonstrate environmental liabilities and hurt their industries."
+      }
+    },
+    {
+      "slide_num": 33,
+      "title": "European and Latin American Frontiers: NAMEA, Chile & Costa Rica",
+      "act": "Act 4: Real-World Case Studies & Political Friction",
+      "continuity_bridge": "Despite the US shutdown, European and Latin American nations proved that green accounting could successfully redirect national industrial strategy.",
+      "eli15_takeaway": "The Netherlands built the NAMEA matrix to connect pollution directly to economic sectors, while Chile and Costa Rica revealed their forest exports were unsustainably burning capital.",
+      "key_facts": [
+        "Netherlands NAMEA (National Accounting Matrix Including Environmental Accounts):",
+        "Extended input-output matrix linking economic sectors directly to physical pollutant emissions; tracks how close sectors are to national environmental compliance targets.",
+        "Chile: Central Bank constructed environmental accounts for commercial forestry and copper mining; revealed that its export-led forestry boom was running on unsustainable forest liquidation.",
+        "Costa Rica: Replicated Repetto methodology; proved that massive agricultural expansion was destroying virgin tropical forests at huge unrecorded net economic losses."
+      ],
+      "mental_model": "A restaurant installing smart power meters on every stove and refrigerator to catch exactly which kitchen station is wasting the most electricity.",
+      "checkpoint": {
+        "question": "What unique capability does the Dutch NAMEA system provide for economic and environmental policymakers?",
+        "options": [
+          "It links national input-output economic sectors directly to physical emissions data to monitor environmental target compliance.",
+          "It eliminates the use of physical money in the Netherlands.",
+          "It replaces private corporate balance sheets with government tax forms.",
+          "It prevents Dutch agricultural goods from being exported."
+        ],
+        "correct_index": 0,
+        "explanation": "NAMEA integrates conventional input-output economic matrices with physical pollutant accounts, allowing tracking of sector-specific emissions against policy targets."
+      }
+    },
+    {
+      "slide_num": 34,
+      "title": "The Non-Market Valuation Dilemma: The Cost-Benefit Trap",
+      "act": "Act 4: Real-World Case Studies & Political Friction",
+      "continuity_bridge": "These global pilots brought economists face-to-face with a fundamental controversy: should non-marketed goods like scenic beauty and clean lakes be priced in dollars?",
+      "eli15_takeaway": "Valuing unpriced nature is controversial: if you do not put a dollar value on clean lakes, balance sheets will only record the cost of cleaning pollution, making nature look like a money pit.",
+      "key_facts": [
+        "Intense debate over whether non-marketed environmental goods (scenic vistas, unpolluted lakes, clean air) belong in formal accounts.",
+        "The Accounting Dilemma:",
+        "If non-market values are excluded: Accounts record all defensive costs of environmental protection (spending money on scrubbers, water plants) without recording any of the financial benefits generated by healthy ecosystems.",
+        "Result of exclusion: Environmental protection appears on national ledgers as a pure deadweight drain on the economy.",
+        "If included: Requires economic valuation techniques that can be subjective or volatile."
+      ],
+      "mental_model": "Tracking every single dollar spent on gym memberships, vegetables, and vitamins, but refusing to track your health, making wellness look like an expensive financial mistake.",
+      "checkpoint": {
+        "question": "What severe distortion occurs if national accounts exclude the economic value of unmarketed environmental benefits?",
+        "options": [
+          "Nations will accidentally print too much paper currency.",
+          "Environmental protection appears only as an expensive cost without showing any economic benefits, making conservation look like a pure drain on growth.",
+          "Corporate tax rates drop to zero automatically.",
+          "Physical capital equipment stops depreciating."
+        ],
+        "correct_index": 1,
+        "explanation": "If you only count the monetary expenses of cleanup without counting the value of preserved ecosystem benefits, environmental policy looks like an economic penalty."
+      }
+    },
+    {
+      "slide_num": 35,
+      "title": "The Ecosystem Valuation Toolkit: Three Methodological Families",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "To escape this cost-benefit trap, environmental economists built an empirical valuation toolkit divided into three distinct methodological families.",
+      "eli15_takeaway": "Economists price nature using three tools: direct market prices for harvestable goods, proxy markets (travel costs and house prices), and survey-based willingness to pay.",
+      "key_facts": [
+        "Three Major Valuation Methodologies:",
+        "1. Direct Market Approach: Market Price Method (timber, fish); Productivity Method (crop pollination boosting apple yield; mangrove filtration boosting shrimp yield); Damage Cost Avoided / Replacement Cost / Substitute Cost (mangroves valued by flood damage avoided; wetlands valued by water treatment plant costs; wild pollinators valued by renting beehives).",
+        "2. Surrogate Market Approach (Revealed Preferences / Proxies): Travel Cost Method (valuing national parks by aggregating visitor travel spending); Hedonic Pricing (isolating environmental property premiums between clean and polluted zones).",
+        "3. Hypothetical Market Approach (Stated Preferences): Contingent Valuation Method (CVM) using survey-based Willingness-To-Pay (WTP) or Willingness-To-Accept (WTA)."
+      ],
+      "mental_model": "Valuing an unpriced painting: checking what similar paintings sold for (market price), measuring how much tourists spend traveling to see it (travel cost), or auctioning it in a survey (contingent valuation).",
+      "checkpoint": {
+        "question": "Which environmental valuation technique estimates the value of a mangrove forest based on the cost of building an artificial sea wall to stop storm surges?",
+        "options": [
+          "Travel Cost Method.",
+          "Replacement Cost / Damage Cost Avoided Method.",
+          "Hedonic Pricing Method.",
+          "Contingent Valuation Method."
+        ],
+        "correct_index": 1,
+        "explanation": "The Replacement Cost method values an ecosystem service by calculating what it would cost to construct engineered infrastructure that performs the exact same function."
+      }
+    },
+    {
+      "slide_num": 36,
+      "title": "Sustainable Development: You Cannot Manage What You Cannot Measure",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "Armed with these valuation tools, economists could finally operationalize the concept of sustainable development.",
+      "eli15_takeaway": "As Pavan Sukhdev said, you cannot manage what you do not measure. True national wealth requires balancing natural, human, social, and physical capital.",
+      "key_facts": [
+        "Pavan Sukhdev (GIST / TEEB leader): You cannot manage what you do not measure.",
+        "Holistic National Wealth is composed of four distinct capital stocks: 1. Natural Capital; 2. Human Capital; 3. Social Capital; 4. Produced / Physical Capital.",
+        "Historical milestone: Term Sustainable Development first formally introduced at the 1972 UN Stockholm Conference on the Human Environment.",
+        "Must be benchmarked against the Ecological Footprint to ensure resource use stays within biophysical carrying capacity."
+      ],
+      "mental_model": "A four-legged chair: if you only strengthen one leg (factories) while sawing off the other three (nature, health, community), the chair will inevitably collapse.",
+      "checkpoint": {
+        "question": "According to modern ecological economics, national wealth consists of which four forms of capital?",
+        "options": [
+          "Stocks, bonds, physical cash, and gold reserves.",
+          "Natural capital, Human capital, Social capital, and Produced (physical) capital.",
+          "Military hardware, land acreage, factory machinery, and foreign debt.",
+          "Mining licenses, real estate holdings, copyright patents, and bank deposits."
+        ],
+        "correct_index": 1,
+        "explanation": "Comprehensive wealth accounting requires tracking four interdependent capitals: natural, human, social, and produced physical capital."
+      }
+    },
+    {
+      "slide_num": 37,
+      "title": "The Brundtland Benchmark: Intergenerational Equity",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "The multi-capital framework provided the empirical teeth needed to fulfill the landmark 1987 Brundtland Commission mandate.",
+      "eli15_takeaway": "The Brundtland Commission defined sustainability as meeting our needs today without robbing future generations of the resources they will need to survive.",
+      "key_facts": [
+        "World Commission on Environment and Development (WCED, 1987) - The Brundtland Commission (Our Common Future).",
+        "Classic Definition: Economic and social development that meets the needs of the current generation without undermining the ability of future generations to meet their own needs.",
+        "Role of Green Accounting: Translates this philosophical principle into measurable, policy-relevant, and analytically sound indicators.",
+        "Requires establishing balance sheets that can track whether national asset stocks handed down to future generations are expanding or contracting."
+      ],
+      "mental_model": "Inheriting a productive family farm: you can eat all the crops grown each season, but you cannot sell off the topsoil or poison the water well, or your children will starve.",
+      "checkpoint": {
+        "question": "What is the core principle of sustainable development articulated by the 1987 Brundtland Commission?",
+        "options": [
+          "Maximizing industrial production in the current quarter regardless of long-term consequences.",
+          "Meeting the needs of the present without compromising the ability of future generations to meet their own needs.",
+          "Banning all resource extraction immediately across all nations.",
+          "Replacing all biological agriculture with chemical synthesis."
+        ],
+        "correct_index": 1,
+        "explanation": "The Brundtland standard establishes intergenerational equity: our current consumption must not degrade the productive resource base needed by future generations."
+      }
+    },
+    {
+      "slide_num": 38,
+      "title": "The Economic Yardstick: Non-Declining Welfare Over Time",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "To convert Brundtland broad ethical standard into rigorous economics, theorists established the non-declining welfare criterion.",
+      "eli15_takeaway": "In formal economics, sustainability has a simple mathematical rule: human well-being must never decline over time (dW/dt >= 0).",
+      "key_facts": [
+        "Economic Definition of Sustainability: Non-declining human well-being (utility) over time.",
+        "Mathematical Criterion: dW/dt >= 0, where W represents intertemporal social welfare.",
+        "Why precise definitions matter: A clear mathematical standard enables the creation of straightforward statistical indicators.",
+        "An effective sustainability indicator reveals directly whether an economy is on a non-declining welfare path or liquidating capital to fund temporary consumption."
+      ],
+      "mental_model": "A car cruise control maintaining a steady speed up a mountain hill: if the speed drops below zero, the vehicle is sliding backward.",
+      "checkpoint": {
+        "question": "How do neoclassical economists formally translate sustainable development into a mathematical criterion?",
+        "options": [
+          "By ensuring that inflation remains at exactly two percent.",
+          "As non-declining human well-being or social welfare over time (dW/dt >= 0).",
+          "By maximizing the physical volume of industrial manufacturing output.",
+          "By requiring corporate tax revenues to increase every quarter."
+        ],
+        "correct_index": 1,
+        "explanation": "Economists formalize sustainability as non-declining intertemporal well-being over time, meaning social welfare must not contract across generations."
+      }
+    },
+    {
+      "slide_num": 39,
+      "title": "The Great Theoretical Divide: Strong vs. Weak Sustainability",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "While all economists agree on non-declining welfare, they split into two rival camps over how natural capital should be treated.",
+      "eli15_takeaway": "The sustainability world is split in two: Strong Sustainability insists nature is irreplaceable, while Weak Sustainability claims technology can replace depleted natural resources.",
+      "key_facts": [
+        "The Central Question: Can human-made machinery, software, and concrete substitute for depleted ecosystems?",
+        "Two Competing Paradigms:",
+        "1. Strong Sustainability: Championed by ecologists and ecological economists; natural capital has no technological substitutes.",
+        "2. Weak Sustainability: Championed by neoclassical economists; total capital must not decline, but nature can be converted into machines.",
+        "Green Accounting Alignment: Green accounting primarily adopts the Weak Sustainability framework because pricing nature allows it to integrate directly into existing SNA ledgers."
+      ],
+      "mental_model": "Two approaches to food: one camp says you must protect real fertile farmland; the other says it is fine to pave over all farmland as long as you invent nutrient pills in a lab.",
+      "checkpoint": {
+        "question": "Which sustainability paradigm does Green Accounting primarily conform to in its attempt to repair standard GDP?",
+        "options": [
+          "Strong Sustainability.",
+          "Weak Sustainability.",
+          "Radical Preservationism.",
+          "Biocentric Anti-capitalism."
+        ],
+        "correct_index": 1,
+        "explanation": "Green accounting relies on monetary valuation and capital fungibility, aligning it primarily with the Weak Sustainability framework."
+      }
+    },
+    {
+      "slide_num": 40,
+      "title": "Strong Sustainability vs. Weak Sustainability: Core Principles",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "To understand this split, we must examine the specific operating rules of each paradigm.",
+      "eli15_takeaway": "Strong sustainability says save nature because machines cannot replace clean air; weak sustainability says you can drain an oil field if you use the cash to build schools and roads.",
+      "key_facts": [
+        "Strong Sustainability (Ecological Perspective): Core tenet is that natural capital provides critical, non-substitutable life-support services; operating rule requires physical stocks of critical natural capital to remain constant or grow; invest economic revenues strictly into renewable resources.",
+        "Weak Sustainability (Neoclassical Perspective): Core tenet assumes perfect or high substitutability between natural and manufactured capital; operating rule requires total capital stock (K_total = K_natural + K_produced + K_human) to remain non-declining.",
+        "Implication: Depleting non-renewable resources is acceptable under weak sustainability if proceeds fund equivalent manufactured or human assets."
+      ],
+      "mental_model": "Strong sustainability forbids spending your principal savings; weak sustainability lets you sell your house as long as you buy an equivalent portfolio of dividend-paying stocks.",
+      "checkpoint": {
+        "question": "Under the Strong Sustainability paradigm, what must be held constant over time?",
+        "options": [
+          "The total financial value of all corporate stock markets.",
+          "The physical stock of non-substitutable natural capital.",
+          "The total output of consumer electronics.",
+          "The number of industrial highway miles built."
+        ],
+        "correct_index": 1,
+        "explanation": "Strong sustainability mandates that critical physical natural capital must be preserved directly, rejecting the idea that technology can replace living ecosystems."
+      }
+    },
+    {
+      "slide_num": 41,
+      "title": "Weak Sustainability & The Hartwick Rule",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "Neoclassical economics developed a strict mathematical rule to prove that Weak Sustainability could maintain consumption indefinitely.",
+      "eli15_takeaway": "Hartwick Rule proves a country can consume exhaustible resources like oil without going broke, but ONLY IF it takes 100% of the profits and reinvests them into factories, schools, and research.",
+      "key_facts": [
+        "Hartwick Rule (John Hartwick, 1977):",
+        "Formal Theorem: In an economy dependent on exhaustible natural resources, constant per-capita consumption can be maintained over time IF AND ONLY IF all economic resource rents derived from resource extraction are 100% reinvested into reproducible physical and human capital.",
+        "Mathematical Implication: Net investment must equal zero while total capital stock remains constant.",
+        "Prerequisite: Requires monetary pricing of natural capital so depleted barrels of oil can be mathematically balanced against constructed schools or machinery.",
+        "Failure in practice: Most resource-rich developing nations spend resource rents on immediate consumption rather than capital reinvestment, destroying their wealth."
+      ],
+      "mental_model": "Selling a barrel of oil from your backyard for $100: you are forbidden from spending that $100 on fancy dinners; you must deposit the entire $100 into a university college fund.",
+      "checkpoint": {
+        "question": "What does the Hartwick Rule mandate for an economy extracting non-renewable natural resources?",
+        "options": [
+          "All resource extraction must halt within ten years.",
+          "All economic rents derived from resource extraction must be reinvested into reproducible capital (machines, education, infrastructure).",
+          "Resource extraction revenues must be distributed as immediate cash consumption dividends to citizens.",
+          "The extracted resources must be exported at zero tariff."
+        ],
+        "correct_index": 1,
+        "explanation": "Hartwick Rule requires 100% of resource rents from depleting finite natural assets to be reinvested into reproducible capital to keep total productive capacity constant."
+      }
+    },
+    {
+      "slide_num": 42,
+      "title": "Hicksian Income: Living Off Interest, Not Capital",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "The economic justification for the Hartwick Rule traces directly back to Sir John Hicks classic 1946 definition of sustainable income.",
+      "eli15_takeaway": "Hicksian income is the maximum amount you can spend this week while making sure you are still just as wealthy at the end of the week.",
+      "key_facts": [
+        "Sir John R. Hicks (1946, Value and Capital):",
+        "Classic Definition: The maximum value an individual can consume during a week and still expect to be as well off at the end of the week as he was in the beginning.",
+        "Conceptual foundation of Green Accounting: True economic income is sustainable yield; consuming capital principal is not income, but asset liquidation.",
+        "Application to Macroeconomics: A country true sustainable income is what it can consume while leaving the total productive capital base (including natural capital) fully intact."
+      ],
+      "mental_model": "Living off the monthly interest earned by your retirement investments, while never touching the principal balance in your account.",
+      "checkpoint": {
+        "question": "How did John R. Hicks define income in his foundational 1946 work?",
+        "options": [
+          "The total cash deposited into a commercial bank account in a single month.",
+          "The maximum amount a person can consume over a period and still expect to be as well off at the end of the period as at the beginning.",
+          "The total market value of goods purchased on credit cards.",
+          "The total taxes paid to the federal government."
+        ],
+        "correct_index": 1,
+        "explanation": "Hicksian income defines true income as the maximum consumption possible without eroding the underlying capital stock or future wealth capacity."
+      }
+    },
+    {
+      "slide_num": 43,
+      "title": "Why Green Accounting Conforms to Weak Sustainability",
+      "act": "Act 5: Valuing Ecosystems & The Sustainability Divide",
+      "continuity_bridge": "Connecting Hicksian income to national accounts explains why green accounting adopted the weak sustainability approach.",
+      "eli15_takeaway": "Green accounting conforms to weak sustainability because converting nature into monetary units is politically and practically feasible within modern economic systems.",
+      "key_facts": [
+        "Practical Realism: Strong sustainability demands investing capital solely into renewable natural resources, which industrial economies find practically and politically unfeasible.",
+        "Fungibility of Capital: Weak sustainability allows capital reinvestment into any productive asset (technology, infrastructure, education).",
+        "Reform Strategy: Green Accounting adopts weak sustainability to assign monetary prices to nature, fixing the SNA so economic growth true impact on resource depletion is recognized.",
+        "Policy outcome: Forces macroeconomic balance sheets to obey Hicksian sustainability principles without requiring the total overthrow of the market pricing system."
+      ],
+      "mental_model": "Updating an existing accounting spreadsheet to add a depreciation column, rather than burning the whole office down to build a utopian society from scratch.",
+      "checkpoint": {
+        "question": "Why do architects of Green Accounting rely primarily on the Weak Sustainability framework rather than Strong Sustainability?",
+        "options": [
+          "Because ecological scientists proved that living nature has zero economic value.",
+          "Because monetary pricing and capital reinvestment across diverse assets are practically and politically feasible within established national accounting structures.",
+          "Because international law explicitly bans the measurement of renewable resources.",
+          "Because weak sustainability eliminates all forms of physical industrial manufacturing."
+        ],
+        "correct_index": 1,
+        "explanation": "Weak sustainability enables nature to be assigned monetary values that can be integrated into existing macroeconomic accounting and policy frameworks."
+      }
+    },
+    {
+      "slide_num": 44,
+      "title": "Structural Limitations of Green Accounting",
+      "act": "Act 6: Accounting Limits & The Value vs. Price Paradox",
+      "continuity_bridge": "Despite its immense analytical power, Green Accounting faces serious practical bottlenecks that prevent it from becoming universal.",
+      "eli15_takeaway": "Green accounting is held back by three big hurdles: no single international standard exists, environmental data is difficult to collect, and pricing nature can be subjective.",
+      "key_facts": [
+        "Major Limitations of Environmental Accounting:",
+        "1. Lack of Universal Standardization: Different nations use varying boundary rules and satellite tables, making reliable cross-country comparisons difficult.",
+        "2. Severe Data Deficits: Physical environmental data (soil microbiomes, groundwater recharge rates, pollutant diffusion) is costly, slow, and scarce in developing nations.",
+        "3. High Measurement Uncertainty: Quantifying future environmental damages requires subjective assumptions about discount rates, technological substitution, and ecological tipping points.",
+        "4. Corporate Reporting Inconsistency: Firms use competing ESG standards, creating greenwashing risks without standardized auditing enforcement."
+      ],
+      "mental_model": "Trying to compare grades between two schools when one school grades on a 1-to-100 percentage scale and the other uses letters from A to Z without a conversion chart.",
+      "checkpoint": {
+        "question": "What is a major practical obstacle preventing universal cross-country comparisons using Green Accounting?",
+        "options": [
+          "The complete lack of digital computer hardware in statistical agencies.",
+          "The absence of a single, universally standardized accounting methodology and severe environmental data deficits.",
+          "A global treaty banning countries from recording energy consumption.",
+          "All countries produce the exact same amount of industrial pollution."
+        ],
+        "correct_index": 1,
+        "explanation": "The lack of standardized global accounting protocols combined with sparse biophysical data makes cross-country green comparisons technically challenging."
+      }
+    },
+    {
+      "slide_num": 45,
+      "title": "The Price of Everything and the Value of Nothing",
+      "act": "Act 6: Accounting Limits & The Value vs. Price Paradox",
+      "continuity_bridge": "These technical limits lead directly to the ultimate philosophical dilemma at the heart of environmental economics.",
+      "eli15_takeaway": "We can price a tree as lumber, but we cannot price its role in sustaining biodiversity. As Keith Suter warned, economists know the price of everything and the value of nothing.",
+      "key_facts": [
+        "The Timber Paradox: We can calculate the exact market price of a tree as commercial timber, but we cannot calculate its full ecological value as a habitat for thousands of rainforest species.",
+        "Information Asymmetry: How can economics put a dollar price tag on an ancient ecosystem about which science knows very little (undiscovered medicinal plants, complex fungal networks)?",
+        "Keith Suter Critique (echoing Oscar Wilde): Economists know the price of everything and the value of nothing.",
+        "The Ultimate Philosophical Dilemma: Is nature made for humanity, or is humanity merely a part of nature? Does pricing nature protect it, or commodify its final liquidation?"
+      ],
+      "mental_model": "Calculating the value of your best friend by the dollar market value of the calcium, iron, and water in their physical body.",
+      "checkpoint": {
+        "question": "What core warning did Keith Suter express regarding the economic valuation of nature?",
+        "options": [
+          "Economists should print more paper money to buy rainforests.",
+          "Economists know the price of everything and the value of nothing, risking the reduction of complex life-support systems to mere commodity prices.",
+          "All wild trees should be converted into commercial lumber immediately.",
+          "Only private corporations should determine the value of biodiversity."
+        ],
+        "correct_index": 1,
+        "explanation": "Suter pointed out that pricing nature risks confusing narrow market transaction costs with the irreplaceable, intrinsic life-support value of intact ecosystems."
+      }
+    }
+  ]
+}

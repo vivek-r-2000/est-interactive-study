@@ -1,0 +1,716 @@
+{
+  "class_id": 15,
+  "title": "Class 15: Green Engineering & Industrial Ecology",
+  "total_slides": 28,
+  "slides": [
+    {
+      "slide_num": 1,
+      "title": "Green Engineering: Principles and Practice",
+      "act": "Act 1: The Industrial Blindspot & The Design Shift",
+      "continuity_bridge": "Modern manufacturing delivers miraculous consumer products, but traditional industrial design ignores the environmental toll until toxic damage has already happened. Green engineering rewrites this equation by designing products and chemical processes that are inherently safe and non-polluting from day one.",
+      "eli15_takeaway": "Stop treating pollution after it spills into rivers. Green engineering designs chemical processes and physical goods so toxic waste is never created in the first place.",
+      "key_facts": [
+        "Lecture delivered on November 2, 2026 covering green engineering foundations and industrial ecology.",
+        "Engineers Paul Anastas and Julie Zimmerman codified the 12 Principles of Green Engineering in 2003.",
+        "Shifts industrial focus from reactive end-of-pipe cleanup to proactive upstream design.",
+        "Combines chemical engineering, material science, and ecology to make industrial systems cycle like living natural ecosystems."
+      ],
+      "mental_model": "Traditional engineering is like mopping the floor while the kitchen sink overflows; green engineering simply walks over and turns off the faucet.",
+      "checkpoint": {
+        "question": "Who codified the 12 Principles of Green Engineering in 2003 to shift industrial design toward sustainability?",
+        "options": [
+          "Paul Anastas and Julie Zimmerman",
+          "Rachel Carson and Garrett Hardin",
+          "Svante Arrhenius and Charles Keeling",
+          "Arthur Tansley and Eugene Odum"
+        ],
+        "correct_index": 0,
+        "explanation": "Paul Anastas and Julie Zimmerman published the 12 Principles of Green Engineering in 2003, establishing engineering guidelines for benign molecular design, pollution prevention, and closed-loop material cycles."
+      }
+    },
+    {
+      "slide_num": 2,
+      "title": "The Fast-Fashion Reality Check: How Denim Exposes the Linear Economy",
+      "act": "Act 1: The Industrial Blindspot & The Design Shift",
+      "continuity_bridge": "To understand why we need green engineering, we have to examine an everyday product that looks harmless on a store shelf: a standard pair of blue jeans. Behind that distressed denim look sits one of the most toxic, resource-heavy supply chains on Earth.",
+      "eli15_takeaway": "A pair of distressed jeans seems simple, but getting that vintage fade requires toxic chemical baths, sandblasting that destroys worker lungs, and huge amounts of coal power.",
+      "key_facts": [
+        "Case study highlighted by Moni Omotoso (Fashion Insiders, 2018) analyzing the environmental impacts of denim production.",
+        "Illustrates the fatal flaw of linear 'take-make-waste' manufacturing in the global apparel industry.",
+        "Demonstrates how aesthetic consumer demands (faded wash, pre-distressed fabric) drive aggressive chemical processing.",
+        "Serves as the opening real-world baseline showing why manufacturing requires complete upstream redesign."
+      ],
+      "mental_model": "Buying pre-ripped acid-wash jeans is like buying a brand new car and paying the dealer extra cash to smash the bumper with a sledgehammer and spray battery acid on the hood.",
+      "checkpoint": {
+        "question": "Why is denim manufacturing commonly used as a classic example of flawed linear industrial design?",
+        "options": [
+          "It depends exclusively on radioactive isotopes for coloration",
+          "It requires extreme chemical washes, dangerous silica sandblasting, and intensive water consumption for artificial styling",
+          "It cannot be transported by sea or rail due to chemical volatility",
+          "It requires zero human labor and generates pure synthetic diamonds"
+        ],
+        "correct_index": 1,
+        "explanation": "Denim manufacturing exposes the flaws of linear design because creating distressed looks demands severe chemical dyeing, silica sandblasting that sickens workers, and massive amounts of water and coal energy."
+      }
+    },
+    {
+      "slide_num": 3,
+      "title": "The Denim Disaster: Water Pollution, Silicosis, and Carbon Costs",
+      "act": "Act 1: The Industrial Blindspot & The Design Shift",
+      "continuity_bridge": "Connecting the fashion headline to raw chemical reality reveals three distinct pollution stages: cotton farming, wet chemical dyeing, and mechanical texturizing. Each step poisons freshwater networks and endangers factory operators.",
+      "eli15_takeaway": "Making one pair of distressed jeans spews 44 pounds of greenhouse gases—equal to burning 21 pounds of coal—while turning Asian rivers indigo-blue and exposing workers to fatal silica dust.",
+      "key_facts": [
+        "Three primary water pollution stages in denim: raw cotton cultivation, wet chemical dyeing/finishing, and mechanical texturizing.",
+        "Chemical dyes and toxic acid washes routinely discharge into river basins, turning major waterways like the Pearl River in Xintang, China indigo-blue.",
+        "Sandblasting shoots fine silica sand at high pressure via airguns to distress denim, exposing garment workers to lethal silicosis lung disease.",
+        "Carbon footprint: A single pair of standard denim jeans generates 44 pounds (20 kg) of greenhouse gas emissions, equivalent to burning over 21 pounds of coal."
+      ],
+      "mental_model": "Every time a worker sandblasts jeans without filtration, they breathe in microscopic razor blades of silica quartz that permanently scar lung tissue just to fake ten years of fabric wear.",
+      "checkpoint": {
+        "question": "What occupational health hazard directly threatens workers during high-pressure denim sandblasting?",
+        "options": [
+          "Silicosis caused by inhaling fine silica quartz particles",
+          "Decompression sickness from pressurized air tanks",
+          "Lead poisoning from synthetic denim zippers",
+          "Carbon monoxide suffocation from dye vats"
+        ],
+        "correct_index": 0,
+        "explanation": "Sandblasting shoots fine quartz sand via airguns at high pressure to abrade denim, releasing airborne silica dust that causes incurable and fatal silicosis in garment factory workers."
+      }
+    },
+    {
+      "slide_num": 4,
+      "title": "Upstream Intervention: The US EPA Green Engineering Definition",
+      "act": "Act 1: The Industrial Blindspot & The Design Shift",
+      "continuity_bridge": "Cleaning up an indigo-dyed river or treating sick workers costs millions after the damage is done. The US Environmental Protection Agency recognized that true pollution control must happen at the drawing board before a single chemical is mixed.",
+      "eli15_takeaway": "Decisions made in the first hour of designing a product determine 80% of its lifetime environmental damage and cost. Fix it upstream or pay ten times more downstream.",
+      "key_facts": [
+        "US EPA Definition: Green Engineering embraces the concept that decisions to protect human health and the environment have the greatest impact and cost-effectiveness when applied early to the design and development phase.",
+        "Core objective: Embed risk-reduction concepts directly into chemical processes and commercial products designed by academia and industry.",
+        "Shifts focus from circumstantial risk management (gloves, respirators, scrubbers) to inherent risk elimination.",
+        "Establishes economic efficiency: Upstream molecular substitution costs far less than building hazardous waste containment ponds."
+      ],
+      "mental_model": "It is trivial to erase a mistake with a pencil on an architectural blueprint; it takes dynamite and millions of dollars to fix the mistake once the concrete skyscraper is poured.",
+      "checkpoint": {
+        "question": "According to the US EPA, at what stage do decisions to protect health and the environment yield the highest cost-effectiveness?",
+        "options": [
+          "During end-of-pipe hazardous waste incineration",
+          "In the early design and development phase of a process or product",
+          "After regulatory citations and fines are issued by inspectors",
+          "During post-consumer landfill excavation"
+        ],
+        "correct_index": 1,
+        "explanation": "The EPA emphasizes that early design choices determine the vast majority of lifecycle impacts and costs. Intervening early eliminates hazards at minimal cost before plants and supply chains are built."
+      }
+    },
+    {
+      "slide_num": 5,
+      "title": "Systemic Scope: Applying Green Engineering from Houses to Microchips",
+      "act": "Act 1: The Industrial Blindspot & The Design Shift",
+      "continuity_bridge": "Upstream design is not limited to textile factories or chemical beakers. It spans every manufactured good that shapes modern civilization, from residential housing to vehicles and consumer electronics.",
+      "eli15_takeaway": "Green engineering applies to everything we build: buildings, cars, smartphones, and power grids. The universal mission is conserving natural raw resources and slashing environmental damage.",
+      "key_facts": [
+        "Core definition: Process and design of products aiming to conserve natural resources and achieve measurable sustainability targets.",
+        "Reduces environmental and human toxicity burdens across full supply networks.",
+        "Broad application sectors: Residential and commercial buildings, personal vehicles, electrical and electronic equipment (EEE), and heavy manufacturing equipment.",
+        "Requires engineers to master materials science, thermodynamics, and ecosystem cycles simultaneously."
+      ],
+      "mental_model": "Green engineering is not a separate branch like civil or mechanical engineering; it is an operating system upgrade for all engineering disciplines.",
+      "checkpoint": {
+        "question": "Which statement best captures the operational scope of Green Engineering?",
+        "options": [
+          "It applies solely to synthetic organic chemistry labs",
+          "It applies across all engineered goods including buildings, vehicles, and electronics to conserve resources and reduce environmental harm",
+          "It mandates shutting down all mechanized manufacturing worldwide",
+          "It focuses exclusively on planting trees around coal power stations"
+        ],
+        "correct_index": 1,
+        "explanation": "Green engineering spans the entire spectrum of engineered products and systems—from civil structures and automobiles to consumer electronics—optimizing lifecycle resource consumption and environmental safety."
+      }
+    },
+    {
+      "slide_num": 6,
+      "title": "The Anastas & Zimmerman Blueprint: 12 Principles of Green Engineering",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Knowing you want to design cleanly is not enough; engineers need explicit design rules. In 2003, Paul Anastas and Julie Zimmerman published the 12 Principles of Green Engineering to turn sustainable theory into rigorous industrial practice.",
+      "eli15_takeaway": "Think of these 12 principles as an engineer's checklist: choose benign molecules, stop waste before it happens, build for easy separation, and ensure parts can be reused when retired.",
+      "key_facts": [
+        "Authored by Paul T. Anastas (former EPA assistant administrator) and Julie B. Zimmerman (Yale University).",
+        "Principle 1: Inherent rather than circumstantial.",
+        "Principle 2: Prevention rather than treatment.",
+        "Principle 3: Design for separation.",
+        "Principle 4: Maximize mass, energy, space, and time efficiency.",
+        "Principle 5: Output-pulled versus input-pushed.",
+        "Principle 6: Conserve complexity.",
+        "Principle 7: Durability rather than immortality.",
+        "Principle 8: Meet need, minimize excess.",
+        "Principle 9: Minimize material diversity.",
+        "Principle 10: Integrate local material and energy flows.",
+        "Principle 11: Design for commercial afterlife.",
+        "Principle 12: Renewable rather than depleting."
+      ],
+      "mental_model": "The 12 principles act like the building code for sustainable design—skip even one foundation rule and the whole ecological structure eventually collapses.",
+      "checkpoint": {
+        "question": "Which of the following is NOT one of the 12 Principles of Green Engineering codified by Anastas and Zimmerman?",
+        "options": [
+          "Design for separation",
+          "Output-pulled versus input-pushed",
+          "Maximize product immortality at all costs",
+          "Conserve complexity"
+        ],
+        "correct_index": 2,
+        "explanation": "Principle 7 calls for 'Durability rather than immortality.' Products should be durable for their intended task, but must not persist indefinitely in nature as immortal waste (like single-use plastics)."
+      }
+    },
+    {
+      "slide_num": 7,
+      "title": "Principle 1: Inherent Rather Than Circumstantial Safety",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Starting with the first rule: traditional safety relies on protective suits, concrete blast walls, and fume hoods. Principle 1 demands that the input chemicals themselves be completely harmless, so accidents are physically impossible.",
+      "eli15_takeaway": "Never rely on safety goggles and toxic gas alarms if you can swap out the deadly chemical for water or citric acid. If a chemical cannot explode or poison you, you do not need expensive armor.",
+      "key_facts": [
+        "Exact Principle: Designers should evaluate the inherent nature of selected material and energy inputs to ensure they are as benign as possible as a first step toward sustainability.",
+        "Circumstantial safety relies on external barriers (ventilation, thick pipes, PPE, hazardous waste permits) which can and do fail during blackouts or operator error.",
+        "Inherent safety replaces hazardous chemicals at the molecular level, eliminating risk at the source.",
+        "Classic industrial example: Replacing volatile, carcinogenic dichloromethane (methylene chloride paint stripper/degreaser) with benign water-based or bio-ester alternatives."
+      ],
+      "mental_model": "Keeping a venomous cobra in a glass cage is circumstantial safety (the glass can crack). Replacing the cobra with a friendly retriever is inherent safety.",
+      "checkpoint": {
+        "question": "What is the primary difference between inherent safety and circumstantial safety under Green Engineering Principle 1?",
+        "options": [
+          "Circumstantial safety eliminates hazards at the molecular level, while inherent safety relies on protective gear",
+          "Inherent safety uses non-toxic, benign inputs so danger cannot occur, whereas circumstantial safety relies on external barriers like blast shields and alarms",
+          "Inherent safety is illegal under OSHA guidelines",
+          "Circumstantial safety requires zero engineering design"
+        ],
+        "correct_index": 1,
+        "explanation": "Inherent safety chooses benign, non-hazardous materials (like replacing toxic dichloromethane with water), ensuring the process is fundamentally safe regardless of external equipment failures."
+      }
+    },
+    {
+      "slide_num": 8,
+      "title": "Principle 2: Prevention Rather Than Treatment",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "If molecules are selected for inherent safety, the second rule governs overall production: never budget millions to store, neutralize, and incinerate chemical sludge when you can avoid generating waste entirely.",
+      "eli15_takeaway": "Preventing one gram of toxic byproduct at the start of a reaction is cheaper than treating, transporting, and burying ten drums of hazardous sludge at the end.",
+      "key_facts": [
+        "Exact Principle: It is better to prevent waste than to treat or clean up waste after it is formed.",
+        "Industry spends billions of dollars annually on hazardous waste treatment, tailpipe scrubbers, landfill permits, and Superfund remediation.",
+        "Pollution prevention mechanisms: Solvent substitution, eliminating hazardous intermediates, and discovering atom-efficient catalytic reaction paths.",
+        "Economic advantage: Eliminates liability, reduces regulatory reporting overhead, and maximizes yield per dollar of raw material."
+      ],
+      "mental_model": "Putting a bucket under a leaking roof is treatment; replacing the cracked roof tile is prevention.",
+      "checkpoint": {
+        "question": "How does Green Engineering Principle 2 recommend addressing industrial waste?",
+        "options": [
+          "Build deeper underground injection wells to hide wastewater",
+          "Prevent waste formation upfront through solvent substitution and cleaner reaction routes",
+          "Dilute toxic effluent into public rivers during monsoon seasons",
+          "Increase the thickness of landfill clay liners"
+        ],
+        "correct_index": 1,
+        "explanation": "Principle 2 states that preventing waste at the source is vastly superior to spending millions of dollars on downstream neutralization, transport, incineration, and remediation."
+      }
+    },
+    {
+      "slide_num": 9,
+      "title": "Principle 3: Design for Separation and Purification",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Even when reactions proceed cleanly, isolating the desired chemical product often consumes massive amounts of energy. Principle 3 tackles the hidden energy drain of post-reaction purification.",
+      "eli15_takeaway": "Traditional industrial separation boils thousands of gallons of solvent in massive distillation towers. Green engineering designs molecules that naturally drop out of solution on their own.",
+      "key_facts": [
+        "Exact Principle: Upfront designs should permit self-separation of products using intrinsic physical and chemical properties rather than energy-intensive external force.",
+        "Traditional separation methods (continuous fractional distillation, liquid-liquid extraction, column chromatography) consume up to 50% of an industrial chemical plant's total energy budget.",
+        "Solvent-heavy separation generates vast streams of contaminated solvent requiring secondary treatment.",
+        "Green engineering solutions: Exploit intrinsic solubility shifts, crystallization triggers, phase transitions, and selective precipitation without boiling vast liquid volumes."
+      ],
+      "mental_model": "Instead of boiling away a giant pot of water to collect salt, cool the solution slightly and watch the salt crystals fall to the bottom by gravity.",
+      "checkpoint": {
+        "question": "Under Principle 3 (Design for Separation), how should chemical processes be engineered to isolate target products?",
+        "options": [
+          "Rely on energy-intensive multi-stage boiling and large volumes of hazardous chromatographic solvents",
+          "Exploit intrinsic physical and chemical properties so products self-separate via phase changes or crystallization",
+          "Mix products with heavy oil to ensure permanent emulsification",
+          "Burn off all unreacted reagents using open flare stacks"
+        ],
+        "correct_index": 1,
+        "explanation": "Principle 3 advocates self-separation using intrinsic properties (like gravity settling, solubility drops, or precipitation), eliminating the massive energy and toxic solvents needed for continuous distillation."
+      }
+    },
+    {
+      "slide_num": 10,
+      "title": "Principle 4: Maximize Mass, Energy, Space, and Time Efficiency",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "With separation solved, the next challenge is running reactions at peak operational velocity and minimal waste. Principle 4 measures efficiency across four physical dimensions: mass, energy, space, and time.",
+      "eli15_takeaway": "Design every reaction to use every single atom of raw material, waste zero kilowatt-hours of heat, shrink plant footprint, and finish the job in minutes instead of days.",
+      "key_facts": [
+        "Exact Principle: Products, processes, and systems should be designed to maximize mass, energy, space, and time efficiency.",
+        "Mass efficiency: Measured by atom economy (percentage of reactant atoms that end up in the finished product) and E-factor (kg of waste per kg of product).",
+        "Energy efficiency: Lowers activation barriers using smart catalysts to run reactions at ambient temperature and pressure.",
+        "Space and time efficiency: Continuous-flow microreactors replace giant warehouse batch tanks, cutting reaction residence times from 24 hours to seconds."
+      ],
+      "mental_model": "Cooking a gourmet meal in a compact pressure cooker that uses every scrap of vegetable in 10 minutes beats letting five giant simmering pots hog the kitchen stove all weekend.",
+      "checkpoint": {
+        "question": "Which metric directly measures the mass efficiency of a chemical reaction under Principle 4?",
+        "options": [
+          "The visual clarity of the liquid effluent",
+          "Atom economy (percentage of reactant atoms incorporated into the desired final product)",
+          "The acoustic decibel level of the reactor motor",
+          "The retail sticker price of the output product"
+        ],
+        "correct_index": 1,
+        "explanation": "Atom economy measures how many input reactant atoms end up in the finished molecule versus being lost as discarded waste, directly quantifying mass efficiency."
+      }
+    },
+    {
+      "slide_num": 11,
+      "title": "Principle 5: Output-Pulled Rather Than Input-Pushed",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "To push reluctant chemical reactions to completion, traditional engineers crank up boiler heat or dump in excess raw ingredients. Principle 5 uses fundamental chemical equilibrium to pull the reaction forward instead.",
+      "eli15_takeaway": "Do not blast a reaction with extreme heat and excess reagents to force output. Instead, continuously strip away the finished product or water byproduct to pull the reaction forward naturally.",
+      "key_facts": [
+        "Exact Principle: More energy or material ('input-pushed') can increase output, but the same yield can be achieved by designing systems where processes are 'pulled' without extra resources.",
+        "Based on Le Chatelier's Principle: Removing product species from a reversible reaction system continually shifts chemical equilibrium toward product formation.",
+        "Classic chemical example: Condensation reactions producing water. Instead of adding huge excess reagents, pull water out via selective membranes or drying agents to drive 100% conversion.",
+        "Saves significant thermal energy, eliminates unreacted raw material recycling, and keeps operating pressures safe."
+      ],
+      "mental_model": "Do not push people through a crowded subway car door from behind. Open the exit door on the other side and let the crowd flow forward into open space.",
+      "checkpoint": {
+        "question": "How does an 'output-pulled' system (Principle 5) increase reaction yield without adding excessive heat or reagents?",
+        "options": [
+          "By continuously removing product species or water to shift equilibrium forward based on Le Chatelier's principle",
+          "By doubling the operating pressure until reactor gaskets rupture",
+          "By adding unreacted feedstock until the vessel overflows",
+          "By chilling reactants down to absolute zero"
+        ],
+        "correct_index": 0,
+        "explanation": "In reversible reactions (such as condensation), continuously removing the product (e.g. water) dynamically pulls equilibrium forward, achieving high yields without cranking up energy-intensive inputs."
+      }
+    },
+    {
+      "slide_num": 12,
+      "title": "Principle 6: Conserve Complexity in Products",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Moving from chemical reactors to manufactured hardware: products contain enormous amounts of organized structure and manufacturing energy. Principle 6 states that we must preserve that internal order when products reach end-of-life.",
+      "eli15_takeaway": "Never grind up a complex silicon microprocessor into raw sand just to recover copper bits. Reuse complex assemblies directly, and reserve shredding and recycling for simple goods like cardboard.",
+      "key_facts": [
+        "Exact Principle: Products with high complexity should correspond to reuse; products with minimal complexity are favored for value-conserving recycling or beneficial disposition.",
+        "Complexity Conservation: Highly structured goods embody enormous manufacturing energy, precision machining, and specialized labor (embedded exergy).",
+        "Computer chip vs Paper bag comparison: Shredding a microchip destroys 99% of its economic and thermodynamic value; shredding a paper bag is easy, clean, and recovers cellulose fibers.",
+        "Mandates design for remanufacturing: Complex sub-assemblies should unclip intact for refurbishment and immediate second-life deployment."
+      ],
+      "mental_model": "Melting down an expensive mechanical watch just to sell the scrap gold is insane when you could simply wind the gear spring and put it back on someone's wrist.",
+      "checkpoint": {
+        "question": "According to Principle 6 (Conserve Complexity), what is the appropriate end-of-life strategy for a high-complexity product like a microchip?",
+        "options": [
+          "Crush and shred it into fine powder for road asphalt",
+          "Direct reuse, refurbishing, or remanufacturing to preserve its embedded structure and energy",
+          "Incinerate it in open-air pits to harvest copper wire",
+          "Dissolve the entire silicon wafer in nitric acid immediately"
+        ],
+        "correct_index": 1,
+        "explanation": "High-complexity items contain immense embodied energy, precision manufacturing, and organization. They should be reused intact, whereas low-complexity items (like paper bags) are suitable for material recycling."
+      }
+    },
+    {
+      "slide_num": 13,
+      "title": "Principle 6 in Practice: IBM PC Disassembly & Modular Computing",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Applying complexity conservation to personal computing exposes absurd engineering decisions in legacy hardware, such as holding a computer casing together with a dozen incompatible fasteners.",
+      "eli15_takeaway": "IBM proved that swapping 15 different screw types for 1 single screw across an entire desktop PC cut teardown times from hours to minutes, unlocking fast repair and modular chip upgrades.",
+      "key_facts": [
+        "Industrial benchmark presented by Diana Bendz (IBM) at the University of Notre Dame (2000).",
+        "Historical problem: Older IBM PCs required up to 15 different screw heads and lengths, requiring complex tool swaps and stalling disassembly lines.",
+        "Green redesign: Standardized the entire computer chassis onto 1 single screw type, drastically reducing labor time and recycling friction.",
+        "Modular architecture vision: Enables field replacement of microprocessors and memory modules without junking the entire steel chassis, power supply, and motherboard."
+      ],
+      "mental_model": "If IKEA furniture required 15 different allen wrenches, nobody would bother fixing a loose leg. One universal screw makes maintenance effortless.",
+      "checkpoint": {
+        "question": "What landmark change did IBM make to PC hardware design to improve disassembly and serviceability?",
+        "options": [
+          "Glued all internal components together with permanent epoxy",
+          "Replaced 15 different types of screws with 1 standardized screw type",
+          "Welded the steel outer case shut to prevent tampering",
+          "Switched from copper wiring to solid gold conduits"
+        ],
+        "correct_index": 1,
+        "explanation": "IBM standardized PC chassis fasteners from 15 different screw types down to a single type, dramatically accelerating disassembly, component upgrading, and electronics recycling."
+      }
+    },
+    {
+      "slide_num": 14,
+      "title": "Principle 7: Durability Rather Than Immortality",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "While computer chassis should be tough and repairable, single-use products present the exact opposite danger: materials engineered to resist decay for centuries despite being used for only fifteen minutes.",
+      "eli15_takeaway": "Match the lifespan of the material to the lifespan of its job. A baby wears a disposable diaper for two hours—making it from indestructible petroleum plastic that lasts 500 years in a landfill is poor engineering.",
+      "key_facts": [
+        "Exact Principle: Design products with a targeted lifetime to avoid immortality of undesirable materials in the environment, balanced with durability to withstand operating conditions.",
+        "Immortal materials hazard: Polyethylene, polypropylene, and polyacrylate gels in single-use consumer items linger in nature for centuries, fragmenting into microplastics.",
+        "Targeted lifespans: Products should perform flawlessly during active service, then rapidly biodegrade into benign natural compounds or dissolve upon specific triggers.",
+        "Classic example: Disposable baby diapers require strong leak protection for hours, yet take 500 years to decompose in landfills; green engineering replaces them with compostable starch-based polymers."
+      ],
+      "mental_model": "Writing a temporary grocery list by carving it into granite with a chisel is ridiculous. Use paper that degrades, and save granite for mountain monuments.",
+      "checkpoint": {
+        "question": "Why is the use of indestructible plastics in single-use baby diapers a violation of Principle 7 (Durability rather than Immortality)?",
+        "options": [
+          "Diapers are worn for mere hours, yet petroleum plastics persist in landfills for 500 years without degrading",
+          "Diapers generate nuclear radiation when exposed to sunlight",
+          "Diapers dissolve too quickly inside standard home washing machines",
+          "Diapers weigh more than an adult passenger automobile"
+        ],
+        "correct_index": 0,
+        "explanation": "Single-use products with temporary utility should match their functional lifespan. An item used for hours that survives 500 years in nature demonstrates poor lifecycle engineering."
+      }
+    },
+    {
+      "slide_num": 15,
+      "title": "Principle 8: Meet Need, Minimize Excess Capacity",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Beyond matching material lifespans, engineers often over-design systems by adding unnecessary size, power, or volume to handle rare worst-case scenarios. Principle 8 bans 'one size fits all' excess.",
+      "eli15_takeaway": "Do not over-engineer products with massive excess capacity that customers will never use. Building oversized engines or giant factories creates idle waste and squanders millions in raw materials.",
+      "key_facts": [
+        "Exact Principle: Design for unnecessary capacity or capability (e.g., 'one size fits all' solutions) should be considered an engineering design flaw.",
+        "Chemical process example: Over-dosing chlorine into water distribution networks creates dangerous carcinogenic trihalomethanes without improving microbial safety.",
+        "Industrial overcapacity benchmark: The global automotive industry maintains capacity to build ~80 million vehicles per year for a global consumer market of under 60 million per year.",
+        "Cost of excess: Idle factory capacity consumes embodied energy, locks up capital, and drives artificial consumer demand through planned obsolescence."
+      ],
+      "mental_model": "Buying an 18-wheel semi-truck to commute alone through city traffic to your desk job is classic excess capacity. A small commuter car or bicycle matches the true need.",
+      "checkpoint": {
+        "question": "What real-world data demonstrates industrial overcapacity violating Principle 8 (Meet Need, Minimize Excess)?",
+        "options": [
+          "The auto industry maintaining ~80 million vehicles/year manufacturing capacity for a global market of under 60 million/year",
+          "Smartphone manufacturers producing only one phone per decade",
+          "Bicycle companies running out of steel globally",
+          "Solar panel makers refusing to produce panels larger than pocket calculators"
+        ],
+        "correct_index": 0,
+        "explanation": "Maintaining 80 million units of global vehicle production capacity for an actual demand of under 60 million units wastes immense capital, embodied energy, and raw materials on idle equipment."
+      }
+    },
+    {
+      "slide_num": 16,
+      "title": "Principle 9: Minimize Material Diversity",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Even when products are sized correctly, assembling them from twelve different bonded plastics, adhesives, and metals makes end-of-life recycling impossible. Principle 9 demands material uniformity.",
+      "eli15_takeaway": "Building a product out of one single recyclable polymer beats gluing together five different exotic plastics. Material diversity kills recycling.",
+      "key_facts": [
+        "Exact Principle: Options for final disposition are increased through upfront designs that minimize material diversity yet accomplish the needed functions.",
+        "Composite barrier problem: Multi-layer packaging (e.g. plastic film glued to aluminum foil glued to cardboard) cannot be economically melted or separated, heading straight to incinerators.",
+        "Monomaterial design: Designing an entire sneaker, shampoo bottle, or electronics housing from a single polymer class (such as 100% PET or 100% polypropylene).",
+        "Simplifies municipal sorting, eliminates chemical cross-contamination, and commands high market prices for clean recycled resin."
+      ],
+      "mental_model": "A fruit salad with blueberries, yogurt, and granola mixed together cannot be unscrambled. A bowl of pure apples can be chopped, dried, or stewed with zero sorting hassle.",
+      "checkpoint": {
+        "question": "Why does Principle 9 advocate for minimizing material diversity in product engineering?",
+        "options": [
+          "Products made of one material class are vastly easier to sort, shred, and recycle than bonded multi-material composites",
+          "Single-material products are illegal to sell across state lines",
+          "Diverse materials always combust spontaneously in storage",
+          "Using multiple materials reduces manufacturing costs to zero"
+        ],
+        "correct_index": 0,
+        "explanation": "Monomaterial designs (like 100% PET bottles without glued labels) avoid the separation nightmares of multi-material sandwiches, yielding high-purity recycled resin."
+      }
+    },
+    {
+      "slide_num": 17,
+      "title": "Principle 10: Integrate Local Material and Energy Flows",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Single products can be optimized, but real industrial systems operate alongside neighboring factories. Principle 10 connects nearby industrial facilities so one factory's waste heat and byproducts become the raw material next door.",
+      "eli15_takeaway": "Industrial symbiosis: Pair neighboring factories together so waste heat, steam, sulfur, and wastewater from one plant feed directly into the factory across the street.",
+      "key_facts": [
+        "Exact Principle: Design of products, processes, and systems must include integration and interconnectivity with available energy and materials flows.",
+        "Industrial Ecology foundation: Factories should mimic natural ecosystems where no waste exists because every organism's metabolic waste is food for another.",
+        "Global gold standard: Kalundborg Eco-Industrial Park in Denmark exchanges steam, sulfur gypsum, cooling water, and organic yeast sludge across energy, plasterboard, and pharma plants.",
+        "Thermal integration: Capturing low-grade waste steam from power stations to heat municipal homes and supply warm water to aquaculture fish farms."
+      ],
+      "mental_model": "In an old-growth forest, fallen leaves do not pile into landfills; fungi and bacteria digest them into nutrient-rich soil that feeds the next generation of oak trees.",
+      "checkpoint": {
+        "question": "Which famous eco-industrial park in Denmark serves as the premier global benchmark for Principle 10 (Integrate Material and Energy Flows)?",
+        "options": [
+          "Kalundborg Eco-Industrial Park",
+          "Chernobyl Exclusion Zone",
+          "Ruhr Valley Coal Complex",
+          "Silicon Valley Technology Park"
+        ],
+        "correct_index": 0,
+        "explanation": "Kalundborg in Denmark created an industrial symbiosis network where a power plant, oil refinery, pharmaceutical plant, and plasterboard factory exchange waste steam, cooling water, gypsum, and yeast sludge."
+      }
+    },
+    {
+      "slide_num": 18,
+      "title": "Principle 11: Design for Commercial Afterlife",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "Connecting local industrial flows handles factory waste, but what happens when the final consumer product finishes its useful lifespan? Principle 11 ensures products are engineered for resale, repair, and adaptive reuse.",
+      "eli15_takeaway": "Plan the retirement party before you even manufacture the item. Design electronics with clip-apart batteries and convert decommissioned industrial brick factories into vibrant apartment buildings.",
+      "key_facts": [
+        "Exact Principle: To reduce waste, components that remain functional and valuable can be recovered for reuse and/or reconfiguration.",
+        "Pioneered by industrial giants: AT&T, General Electric, IBM, Procter & Gamble, and Whirlpool designed modular sub-assemblies for factory remanufacturing.",
+        "Consumer electronics: Smartphones and laptops designed with standardized latch connectors allow battery swaps in two minutes without heat guns or toxic glue dissolves.",
+        "Civil and architectural scale: Adaptive reuse transforms decommissioned industrial brick factories and textile mills into residential lofts, saving thousands of tons of embodied concrete and steel."
+      ],
+      "mental_model": "Lego bricks are the ultimate commercial afterlife: build a spaceship today, take it apart tomorrow, and build a medieval castle using the exact same bricks.",
+      "checkpoint": {
+        "question": "How does Principle 11 (Design for Commercial Afterlife) apply to civil infrastructure and industrial buildings?",
+        "options": [
+          "Demolishing buildings with explosives after ten years of use",
+          "Adaptive reuse, such as converting decommissioned industrial factories into residential housing",
+          "Burying old factories under artificial clay hills",
+          "Flooding factory basements to create artificial wetlands"
+        ],
+        "correct_index": 1,
+        "explanation": "Adaptive reuse repurposes sturdy architectural shells—like turning old textile mills and manufacturing plants into residential apartments—preserving embodied concrete and steel."
+      }
+    },
+    {
+      "slide_num": 19,
+      "title": "Principle 12: Renewable Rather Than Depleting Inputs",
+      "act": "Act 2: The 12 Principles of Green Engineering",
+      "continuity_bridge": "The twelfth and final principle closes the loop on raw materials: all material feedstocks and energy inputs must replenish themselves naturally rather than relying on finite underground fossil deposits.",
+      "eli15_takeaway": "Stop digging up finite fossil oil and rare minerals that will run out. Power your operations with solar, wind, and geothermal, and feed your reactors with bio-based plants that grow back every season.",
+      "key_facts": [
+        "Exact Principle: Material and energy inputs should be renewable rather than depleting.",
+        "Intergenerational equity: Preserves critical finite resources so future human generations have access to essential materials.",
+        "Energy sources: Full transition to solar photovoltaic, utility wind, run-of-river hydro, geothermal steam, sustainable biomass, and green hydrogen fuel cells.",
+        "Material feedstocks: Shifting from petroleum-derived olefins to plant-derived bio-polymers, agricultural starch, and algae oils."
+      ],
+      "mental_model": "Drawing water from an underground aquifer that took 10,000 years to fill will leave your well dry. Catching rainwater in barrels refills with every passing storm.",
+      "checkpoint": {
+        "question": "Under Principle 12, why must engineers prioritize renewable inputs over depleting reserves?",
+        "options": [
+          "Renewable inputs naturally regenerate on human timescales, ensuring resources remain available for future generations",
+          "Depleting resources are completely free to extract forever",
+          "Renewable resources violate thermodynamic energy balance",
+          "Depleting resources create zero emissions when burned"
+        ],
+        "correct_index": 0,
+        "explanation": "Principle 12 mandates renewable energy (solar, wind, biomass) and bio-based feedstocks so society lives on natural income rather than depleting finite natural capital needed by posterity."
+      }
+    },
+    {
+      "slide_num": 20,
+      "title": "The Sandestin Declaration: Systems Thinking & Life Cycle Assessment (LCA)",
+      "act": "Act 3: Systems Thinking, Life Cycle Assessment & Green Standards",
+      "continuity_bridge": "While the 12 principles guide molecular and mechanical design, large-scale industrial projects require a broader policy and systems framework. The 2003 Sandestin Declaration codified 9 holistic tenets anchored by Life Cycle Assessment.",
+      "eli15_takeaway": "Look at the complete picture: calculate environmental impacts from cradle to grave using ISO 14040 Life Cycle Assessment across all four phases.",
+      "key_facts": [
+        "Origin: The Sandestin Green Engineering Declaration (Florida, 2003) established 9 macro principles for sustainable systems engineering.",
+        "Core tenet: Engineer processes holistically using systems analysis and environmental impact assessment tools.",
+        "ISO 14040 Life Cycle Assessment (LCA) Framework: Four standardized phases: 1) Goal and Scope Definition, 2) Life Cycle Inventory (LCI), 3) Life Cycle Impact Assessment (LCIA), and 4) Interpretation.",
+        "Includes social dimensions: Requires engineers to respect local geography, cultures, aspirations, and actively engage community stakeholders."
+      ],
+      "mental_model": "Grading a student on one homework quiz gives an incomplete picture; Life Cycle Assessment is the full four-year transcript tracking every test, project, and attendance record.",
+      "checkpoint": {
+        "question": "What are the four standardized phases of an ISO 14040 Life Cycle Assessment (LCA) referenced under the Sandestin principles?",
+        "options": [
+          "Goal and Scope Definition, Life Cycle Inventory (LCI), Life Cycle Impact Assessment (LCIA), and Interpretation",
+          "Market Research, Patent Filing, Advertising, and Sales",
+          "Chemical Mixing, Heating, Cooling, and Packaging",
+          "Permit Application, Construction, Operation, and Demolition"
+        ],
+        "correct_index": 0,
+        "explanation": "ISO 14040 defines the four core phases of LCA: defining goals and boundaries, compiling resource inventory (LCI), evaluating environmental impacts (LCIA), and interpreting results."
+      }
+    },
+    {
+      "slide_num": 21,
+      "title": "Cleantech Sectors: Green Buildings, Clean Mobility, and Green Skills",
+      "act": "Act 3: Systems Thinking, Life Cycle Assessment & Green Standards",
+      "continuity_bridge": "Translating Sandestin systems thinking into civil infrastructure creates three interconnected cleantech sectors: sustainable architecture, low-emission transit, and a specialized workforce equipped with green technical competencies.",
+      "eli15_takeaway": "True sustainability requires green buildings that sip energy across their lifespan, clean transit that cuts tailpipes, and trained technicians who know how to install and audit these systems.",
+      "key_facts": [
+        "Green Building / Architecture: The practice of creating structures and processes that are environmentally responsible and resource-efficient throughout a building's entire lifecycle (siting, design, construction, operation, maintenance, renovation, and deconstruction).",
+        "Green Transport: Low-impact mobility solutions including urban walking networks, dedicated cycling lanes, carpooling, car sharing, and electrified mass transit / green vehicles.",
+        "Green Skills (Cedefop 2012 Definition): The technical knowledge, abilities, values, and attitudes needed to live in, develop, and support a sustainable, resource-efficient society.",
+        "Workforce necessity: Transitioning grids and civil works requires re-skilling millions of electricians, HVAC installers, and civil planners in renewable microgrids and heat pumps."
+      ],
+      "mental_model": "You cannot drive an electric car without a charging network, and you cannot install chargers without certified electricians. Infrastructure, transport, and workforce skills form a three-legged stool.",
+      "checkpoint": {
+        "question": "How does Cedefop (2012) define 'Green Skills' in the context of cleantech workforce readiness?",
+        "options": [
+          "The ability to identify edible forest plants in wilderness areas",
+          "The knowledge, abilities, values, and attitudes needed to live in, develop, and support a sustainable and resource-efficient society",
+          "A certification exclusively for organic agricultural tractor drivers",
+          "The skill required to paint commercial buildings with green latex paint"
+        ],
+        "correct_index": 1,
+        "explanation": "Cedefop defines green skills as the broad technical competencies, problem-solving abilities, and values required across all trades to transition toward a resource-efficient, low-carbon society."
+      }
+    },
+    {
+      "slide_num": 22,
+      "title": "Environmental Accounting: Green Audits and Sustainable Banking",
+      "act": "Act 4: Green Audits, Green Banking & Financial Catalysts",
+      "continuity_bridge": "Even the most innovative cleantech blueprints stay on paper without capital and accountability. Green audits provide the environmental accounting data, while green banks provide the specialized financing to fund clean installations.",
+      "eli15_takeaway": "You cannot manage what you do not measure. Green audits measure water, energy, and waste on campus, while green banks steer loans into wind farms and solar installations.",
+      "key_facts": [
+        "Green Audit: Systematic identification, quantification, recording, reporting, and analysis of environmental performance indicators across institutional and industrial campuses.",
+        "Green Banking: Integrating environmental preservation into core banking operations, combining paperless tech with preferential loan rates for clean projects.",
+        "Indian Banking Initiatives: State Bank of India (SBI) installed utility windmills for captive clean power; Punjab National Bank (PNB) implemented branch energy reductions; Bank of Baroda (BOB) prioritized lending to solar projects earning carbon credits.",
+        "Dedicated clean finance institutions in India: Indian Renewable Energy Development Agency (IREDA) and Tata Cleantech Capital Limited (TCCL)."
+      ],
+      "mental_model": "A green audit is like a comprehensive medical blood test for a factory, while a green bank is the health insurance plan that pays for the treatment and preventive vitamins.",
+      "checkpoint": {
+        "question": "Which Indian financial institution serves as a dedicated public clean energy financing agency alongside commercial bank green initiatives?",
+        "options": [
+          "Indian Renewable Energy Development Agency (IREDA)",
+          "Reserve Bank of India Printing Press",
+          "Life Insurance Corporation of India Housing Division",
+          "National Dairy Development Board"
+        ],
+        "correct_index": 0,
+        "explanation": "IREDA (Indian Renewable Energy Development Agency) operates as India's premier specialized development finance institution dedicated exclusively to financing renewable energy and energy efficiency."
+      }
+    },
+    {
+      "slide_num": 23,
+      "title": "The Green Bank Engine: Catalyzing Private Clean Capital",
+      "act": "Act 4: Green Audits, Green Banking & Financial Catalysts",
+      "continuity_bridge": "Commercial banks often avoid first-of-a-kind clean energy projects due to perceived risk. The US Department of Energy and Coalition for Green Capital developed a blended-finance model to solve this bottleneck.",
+      "eli15_takeaway": "A green bank uses a small pot of public seed money to de-risk clean projects, crowding in private commercial lenders to fund solar arrays and building retrofits.",
+      "key_facts": [
+        "Architecture developed by US Department of Energy (DOE) and Coalition for Green Capital.",
+        "Three-stage capital cycle: 1) Government creates and seeds public institution, 2) Green Bank structures innovative de-risking mechanisms (loan-loss reserves, subordinated debt), 3) Multiple dollars of private commercial capital flow into clean projects.",
+        "Public investment payback: Commercial projects generate steady revenue streams, repaying public seed funds so capital can be recycled into future clean projects.",
+        "Measurable societal returns: Protects taxpayers, lowers monthly consumer energy bills, accelerates greenhouse gas reductions, and creates local technical employment."
+      ],
+      "mental_model": "The green bank acts like a financial snowplow, clearing away the risky ice so private investment trucks can drive safely down the clean energy highway.",
+      "checkpoint": {
+        "question": "What is the primary mechanism by which a Green Bank accelerates clean energy infrastructure deployment?",
+        "options": [
+          "Printing national currency to directly buy all private power plants",
+          "Using public seed capital to de-risk projects and crowd in private commercial investment",
+          "Imposing punitive fines on residential electricity consumers",
+          "Replacing all commercial banks with agricultural barter systems"
+        ],
+        "correct_index": 1,
+        "explanation": "Green banks use catalytic public capital (loan-loss reserves, subordinated debt) to reduce risk, enabling private commercial lenders to fund clean projects at scale."
+      }
+    },
+    {
+      "slide_num": 24,
+      "title": "Cleantech Market Mechanisms: RECs, Corridors, and Green Web Hosting",
+      "act": "Act 5: Macro Clean Energy Grids & Radical Architectural Case Studies",
+      "continuity_bridge": "When clean power is generated, how do businesses prove they run on clean power, and how does the grid accommodate intermittent wind and solar? Slide 24 introduces market mechanisms and green digital infrastructure.",
+      "eli15_takeaway": "Green certificates prove your kilowatt-hours come from clean renewables, green corridors link windy deserts to distant cities, and green web hosts run internet datacenters on zero-carbon power.",
+      "key_facts": [
+        "Green Certificate (Renewable Energy Certificate / REC): A tradable environmental asset certifying that exactly 1 Megawatt-hour (MWh) of electricity was generated and fed into the grid from a verified renewable source.",
+        "Green Energy Corridor (GEC): Specialized high-voltage transmission infrastructure synchronizing variable solar and wind power with conventional baseload grids.",
+        "Green Tourism: Low-impact eco-travel focused on conserving natural habitats and minimizing visitor resource footprints.",
+        "Green Website / Web Hosting: Internet data centers and cloud servers powered directly by renewable energy (tracked by The Green Web Foundation, exemplified by blubolt PRO and Atomicdust PRO)."
+      ],
+      "mental_model": "A green certificate is like an organic food seal on a carton of milk; it legally certifies that the product was produced cleanly, even after it gets mixed into the regional grocery supply.",
+      "checkpoint": {
+        "question": "What does one Green Certificate (Renewable Energy Certificate / REC) legally represent in energy markets?",
+        "options": [
+          "Proof that one metric ton of coal was burned without smoke",
+          "Proof that exactly one Megawatt-hour (MWh) of electricity was generated from an accredited renewable source",
+          "A coupon for discounted gasoline at retail fueling stations",
+          "A government license to discharge wastewater into local rivers"
+        ],
+        "correct_index": 1,
+        "explanation": "A Green Certificate or REC represents the verified environmental attributes of one Megawatt-hour (MWh) of renewable electricity injected into the power grid."
+      }
+    },
+    {
+      "slide_num": 25,
+      "title": "India's Clean Transmission Backbone: The Green Energy Corridor (GEC)",
+      "act": "Act 5: Macro Clean Energy Grids & Radical Architectural Case Studies",
+      "continuity_bridge": "Connecting variable wind in coastal Tamil Nadu and solar in the deserts of Rajasthan to industrial cities thousands of miles away requires dedicated national transmission hardware: India's massive Green Energy Corridor.",
+      "eli15_takeaway": "Wind and solar only generate power where the wind blows and the sun shines. India's Green Energy Corridor lays thousands of kilometers of high-voltage lines to wheel 500 GW of clean energy nationwide by 2030.",
+      "key_facts": [
+        "National transmission grid plan designed to evacuate renewable power toward India's target of 500 GW non-fossil capacity by 2030.",
+        "Integrates high-capacity Alternating Current (AC) corridors and High Voltage Direct Current (HVDC) lines to minimize line transmission losses over thousands of kilometers.",
+        "Major generation clusters linked: Rajasthan (27 GW solar complexes), Gujarat (Kutch mega-park), Tamil Nadu (54 GW wind/solar at Udumalpet & Kayathar), Karnataka (19 GW at Chitradurga), Andhra Pradesh (20 GW at Urvakonda & Kondapuram), Maharashtra (Satara & Sangli).",
+        "Dynamic grid balancing: Synchronizes rapid fluctuations from solar and wind with gas generation centers and hydroelectric plants to prevent grid collapse."
+      ],
+      "mental_model": "Think of renewable energy like rain falling in distant mountains. The Green Energy Corridor is the massive aqueduct that channels that water directly into thirsty city taps.",
+      "checkpoint": {
+        "question": "What is the primary engineering objective of India's Green Energy Corridor (GEC) transmission project?",
+        "options": [
+          "Transporting liquid coal slurries between regional seaports",
+          "Synchronizing and transmitting large-scale variable solar and wind power across state grids toward a 500 GW renewable target",
+          "Providing free diesel fuel to rural irrigation pumps",
+          "Building underground concrete bunkers for nuclear power plants"
+        ],
+        "correct_index": 1,
+        "explanation": "India's Green Energy Corridor creates high-voltage AC and HVDC transmission infrastructure to evacuate clean energy from massive solar/wind clusters (like Rajasthan and Tamil Nadu) into the national grid."
+      }
+    },
+    {
+      "slide_num": 26,
+      "title": "Architectural Case Study 1: One Central Park (Sydney, Australia)",
+      "act": "Act 5: Macro Clean Energy Grids & Radical Architectural Case Studies",
+      "continuity_bridge": "Moving from macro national electrical grids down to the building scale: how do civil engineers integrate living nature directly into high-density urban towers? Sydney's One Central Park shows the way.",
+      "eli15_takeaway": "One Central Park covers high-rise towers in 38,000 living plants to cool the building, while a giant cantilevered mirror system bounces natural sunlight into shaded public parks below.",
+      "key_facts": [
+        "Designed by Pritzker-winning architect Jean Nouvel and French botanist Patrick Blanc in Sydney, Australia.",
+        "Living vertical gardens: Over 38,000 indigenous and exotic plants across 350 species wrap the facades, slashing heat absorption and dampening urban heat island effects.",
+        "Cantilevered Heliostat: Motorized rooftop mirrors track the sun and reflect natural daylight down into overshadowed retail courtyards and park spaces.",
+        "Integrated trigeneration plant: Supplies on-site low-carbon electricity, heating, and cooling, combined with an on-site blackwater recycling treatment plant."
+      ],
+      "mental_model": "Wrapping a skyscraper in living foliage is like putting a breathable linen jacket and wide-brim sunglasses on a building on a hot summer afternoon.",
+      "checkpoint": {
+        "question": "What twin sustainable architectural innovations distinguish Sydney's One Central Park?",
+        "options": [
+          "Living vertical gardens across facades and a motorized cantilevered heliostat reflecting sunlight into shaded courtyards",
+          "An active coal furnace and single-pane reflective glass windows",
+          "A diesel generator rooftop array and exterior plastic cladding",
+          "A complete absence of windows combined with artificial neon lighting"
+        ],
+        "correct_index": 0,
+        "explanation": "One Central Park integrates 38,000 living plants across vertical facades to dampen urban heat, paired with a cantilevered heliostat array that directs sunlight into shaded public spaces."
+      }
+    },
+    {
+      "slide_num": 27,
+      "title": "Architectural Case Study 2: Bahrain World Trade Center (Manama, Bahrain)",
+      "act": "Act 5: Macro Clean Energy Grids & Radical Architectural Case Studies",
+      "continuity_bridge": "While Sydney harnessed sunlight and vertical greenery, the twin towers of Bahrain World Trade Center harness offshore desert winds by turning the skyscraper itself into an aerodynamic wind turbine funnel.",
+      "eli15_takeaway": "Bahrain's twin 50-story towers act like giant sails that funnel desert winds through three bridge-mounted turbines, generating up to 15% of the skyscrapers' total electricity.",
+      "key_facts": [
+        "Located in Manama, Bahrain; the world's first skyscraper to integrate large-scale wind turbines directly into its core architectural structure.",
+        "Aerodynamic sail design: The twin 240-meter (50-story) towers taper inward to funnel prevailing Persian Gulf winds directly into the center gap, accelerating wind speed through the Venturi effect.",
+        "Three bridge-mounted wind turbines: 225 kW turbines (each 29 meters in diameter) span skybridges between towers, delivering 675 kW total nameplate capacity.",
+        "Clean generation: Provides 11% to 15% of the twin towers' annual electricity demand, avoiding hundreds of tons of carbon dioxide emissions each year."
+      ],
+      "mental_model": "Pinching a garden hose speeds up the water jet. Shaping two towers like funnel walls squeezes the wind, speeding up the airflow to spin turbines faster.",
+      "checkpoint": {
+        "question": "How does the architectural shape of the Bahrain World Trade Center towers increase turbine power output?",
+        "options": [
+          "The towers are spherical to repel atmospheric winds",
+          "The twin towers act as aerodynamic funnels that accelerate prevailing Persian Gulf winds through three bridge-mounted turbines via the Venturi effect",
+          "The towers block all wind to protect interior shopping concourses",
+          "The towers house massive combustion engines disguised as glass spires"
+        ],
+        "correct_index": 1,
+        "explanation": "The aerodynamic sail profile of the twin towers channels wind into the central gap, accelerating airflow through three 225 kW wind turbines mounted on skybridges to provide 11-15% of building electricity."
+      }
+    },
+    {
+      "slide_num": 28,
+      "title": "Architectural Case Study 3: Suzlon One Earth (Pune, India)",
+      "act": "Act 5: Macro Clean Energy Grids & Radical Architectural Case Studies",
+      "continuity_bridge": "Bringing all 12 principles, green auditing, and renewable integration together into a single masterwork: the Suzlon One Earth headquarters in Pune, India demonstrates how an entire corporate campus can run on 100% renewable power.",
+      "eli15_takeaway": "Suzlon One Earth is built from non-toxic, recycled materials and powered 100% by wind and solar, proving commercial campuses can generate their own clean energy and waste zero water.",
+      "key_facts": [
+        "Global headquarters of Suzlon Energy in Pune, India; certified LEED Platinum and GRIHA 5-Star (Green Rating for Integrated Habitat Assessment).",
+        "100% renewable energy: Powered entirely by on-site photovoltaic solar panels and off-site wind turbines, with 8% of energy generated directly on campus.",
+        "Sustainable materials: Constructed entirely from non-toxic, low-VOC, high-albedo, and recycled building materials sourced within local geographic proximity.",
+        "Passive design & water neutrality: Deep overhangs and courtyards maximize natural daylighting and fresh air ventilation; 100% on-site rainwater harvesting and zero-discharge wastewater recycling."
+      ],
+      "mental_model": "Suzlon One Earth operates like an independent space station on Earth: harvesting all its own energy, recycling every drop of water, and keeping indoor air pure.",
+      "checkpoint": {
+        "question": "What design features enabled the Suzlon One Earth campus in Pune to achieve LEED Platinum and GRIHA 5-Star ratings?",
+        "options": [
+          "Running exclusively on heavy diesel generators with zero natural light",
+          "100% renewable energy generation, non-toxic recycled materials, zero wastewater discharge, and natural daylighting",
+          "Importing all building stone from overseas quarries via air freight",
+          "Constructing campus buildings entirely out of single-use disposable plastics"
+        ],
+        "correct_index": 1,
+        "explanation": "Suzlon One Earth combines on-site and off-site wind and solar to meet 100% of its power needs, incorporates non-toxic recycled materials, and harvests all rainwater with zero wastewater discharge."
+      }
+    }
+  ]
+}

@@ -817,9 +817,9 @@ def build_website():
       viewTitle.textContent = `Class ${{c.class_id}}: ${{c.title}}`;
       viewDesc.textContent = c.summary;
 
-      // Special Slidewise Rendering for Class 11 (29 slides)
-      if (c.class_id === 11 && c.slides && c.slides.length > 0) {{
-        renderClass11Slides(c);
+      // Slidewise Rendering for any class with slides (Classes 11 to 19)
+      if (c.slides && c.slides.length > 0) {{
+        renderSlidewiseDeck(c);
         return;
       }}
 
@@ -876,20 +876,23 @@ def build_website():
       triggerKaTeX();
     }}
 
-    // Render Class 11 Slidewise Deck with Narrative Acts & Continuity
-    function renderClass11Slides(c) {{
+    // Render Slidewise Deck with Dynamic Narrative Acts & Continuity (Classes 11 to 19)
+    function renderSlidewiseDeck(c) {{
       actBar.style.display = "flex";
       actBar.innerHTML = "";
 
-      const acts = [
-        {{ id: "ALL", label: "All 29 Slides" }},
-        {{ id: "Act 1", label: "Act 1: Nature's Sponges (1–5)" }},
-        {{ id: "Act 2", label: "Act 2: Earth Chemistry (6–7)" }},
-        {{ id: "Act 3", label: "Act 3: Artificial Trees & DAC (8–16)" }},
-        {{ id: "Act 4", label: "Act 4: Food & Farming (17–19, 25–28)" }},
-        {{ id: "Act 5", label: "Act 5: Clean Propulsion & IT (21–23)" }},
-        {{ id: "Act 6", label: "Act 6: Space & AI Frontier (20, 24, 29)" }}
-      ];
+      const acts = [{{ id: "ALL", label: `All ${{c.slides.length}} Slides` }}];
+      const seenActs = new Set();
+      c.slides.forEach(s => {{
+        if (s.act) {{
+          const actKey = s.act.split(':')[0].trim();
+          if (!seenActs.has(actKey)) {{
+            seenActs.add(actKey);
+            const shortLabel = s.act.length > 35 ? s.act.substring(0, 32) + '...' : s.act;
+            acts.push({{ id: actKey, label: shortLabel }});
+          }}
+        }}
+      }});
 
       acts.forEach(a => {{
         const btn = document.createElement("button");
@@ -897,26 +900,26 @@ def build_website():
         btn.textContent = a.label;
         btn.addEventListener("click", () => {{
           currentActFilter = a.id;
-          renderClass11Slides(c);
+          renderSlidewiseDeck(c);
         }});
         actBar.appendChild(btn);
       }});
 
       let filteredSlides = c.slides;
       if (currentActFilter !== "ALL") {{
-        filteredSlides = c.slides.filter(s => s.act.startsWith(currentActFilter));
+        filteredSlides = c.slides.filter(s => s.act && s.act.startsWith(currentActFilter));
       }}
 
       let html = `<div class="submodule-grid">`;
       filteredSlides.forEach(s => {{
-        const slideId = `11.${{s.slide_num}}`;
+        const slideId = `${{c.class_id}}.${{s.slide_num}}`;
         const isDone = completedSubmodules.has(slideId);
         html += `
           <div class="submodule-card" id="sub-${{slideId}}">
             <div class="card-top">
               <div class="card-badges">
-                <span class="badge-subid">SLIDE ${{s.slide_num}} / 29</span>
-                <span class="badge-act">${{s.act.split(':')[0]}}</span>
+                <span class="badge-subid">SLIDE ${{s.slide_num}} / ${{c.slides.length}}</span>
+                <span class="badge-act">${{s.act ? s.act.split(':')[0] : 'ACT'}}</span>
                 <span class="badge-readtime">⚡ 2 min bite</span>
               </div>
               <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{slideId}}', this)">
@@ -1142,14 +1145,14 @@ def build_website():
       matches.forEach(m => {{
         if (m.type === "slide") {{
           const s = m.data;
-          const slideId = `11.${{s.slide_num}}`;
+          const slideId = `${{m.class_id}}.${{s.slide_num}}`;
           const isDone = completedSubmodules.has(slideId);
           html += `
             <div class="submodule-card" id="sub-${{slideId}}">
               <div class="card-top">
                 <div class="card-badges">
-                  <span class="badge-subid">CLASS 11 • SLIDE ${{s.slide_num}}</span>
-                  <span class="badge-act">${{s.act.split(':')[0]}}</span>
+                  <span class="badge-subid">CLASS ${{m.class_id}} • SLIDE ${{s.slide_num}}</span>
+                  <span class="badge-act">${{s.act ? s.act.split(':')[0] : 'ACT'}}</span>
                   <span class="badge-readtime">⚡ 2 min bite</span>
                 </div>
                 <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{slideId}}', this)">
