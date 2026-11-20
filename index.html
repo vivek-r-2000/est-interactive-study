@@ -1,697 +1,1050 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Environmental Science & Technology (ES1.101) — Study Suite</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Science & Technology — Micro-Study Suite (ES1.101)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}], throwOnError: false});"></script>
+  <style>
+    :root {
+      --bg: #FBFBFA;
+      --card-bg: #FFFFFF;
+      --card-hover: #F7F7F5;
+      --border: #E7E6E2;
+      --border-accent: #D1D0CA;
+      --text: #191919;
+      --text-muted: #666662;
+      --accent: #1E3A2F;
+      --accent-soft: #EAF0EC;
+      --accent-text: #142820;
+      --callout-bg: #F4F6F4;
+      --callout-border: #C8D8CF;
+      --checkpoint-bg: #FAF9F6;
+      --tag-bg: #EFEFEA;
+      --tag-text: #444440;
+      --success: #1E6B47;
+      --success-bg: #EAF7EE;
+      --danger: #992828;
+      --danger-bg: #FDF0F0;
+    }
 
-  :root {
-    --bg-main: #080c0a;
-    --bg-card: #0f1613;
-    --bg-card-hover: #131c18;
-    --border: #1a2620;
-    --border-accent: #23332b;
-    --primary: #10b981;
-    --primary-light: #34d399;
-    --teal: #14b8a6;
-    --amber: #f59e0b;
-    --red: #ef4444;
-    --text: #f0fdf4;
-    --muted: #94a3b8;
-    --muted-green: #a7f3d0;
-  }
+    html.dark {
+      --bg: #121413;
+      --card-bg: #181B1A;
+      --card-hover: #1E2220;
+      --border: #282E2B;
+      --border-accent: #373F3B;
+      --text: #E8ECE9;
+      --text-muted: #969F9A;
+      --accent: #34D399;
+      --accent-soft: #162B22;
+      --accent-text: #A7F3D0;
+      --callout-bg: #15221C;
+      --callout-border: #244134;
+      --checkpoint-bg: #141716;
+      --tag-bg: #222724;
+      --tag-text: #B4BCB7;
+      --success: #34D399;
+      --success-bg: #142820;
+      --danger: #F87171;
+      --danger-bg: #2B1515;
+    }
 
-  * { box-sizing: border-box; }
-  body {
-    background: var(--bg-main);
-    color: var(--text);
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
 
-  /* Quiet Cards & Surfaces */
-  .eco-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    transition: border-color 0.15s ease;
-  }
-  .eco-card:hover {
-    border-color: #2b4539;
-  }
+    /* Layout & Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo {
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: var(--card-bg);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .brand-title {
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: -0.01em;
+    }
+    .brand-badge {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-weight: 500;
+    }
 
-  /* Quiet Badges */
-  .badge-emerald { background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); color: #6ee7b7; }
-  .badge-teal    { background: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.25); color: #5eead4; }
-  .badge-amber   { background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); color: #fcd34d; }
-  .badge-neutral { background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border); color: #94a3b8; }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .search-wrap {
+      position: relative;
+      width: 240px;
+    }
+    .search-input {
+      width: 100%;
+      padding: 6px 12px 6px 30px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-hover);
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+      background: var(--card-bg);
+    }
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      font-size: 12px;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+    .btn-toggle {
+      background: var(--card-hover);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.15s ease;
+    }
+    .btn-toggle:hover {
+      background: var(--border);
+    }
 
-  /* 3D Flip Card */
-  .flip-card-wrap { perspective: 900px; height: 190px; cursor: pointer; }
-  .flip-card-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .35s ease; }
-  .flip-card-wrap.flipped .flip-card-inner { transform: rotateY(180deg); }
-  .flip-face {
-    position: absolute; inset: 0; backface-visibility: hidden;
-    border-radius: 10px; border: 1px solid var(--border);
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    padding: 20px; text-align: center;
-  }
-  .flip-front { background: #0c1310; }
-  .flip-back  { background: #111b16; border-color: #234235; transform: rotateY(180deg); }
+    /* Global Progress Bar */
+    .progress-strip {
+      background: var(--border);
+      height: 3px;
+      width: 100%;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
 
-  /* Quiz */
-  .quiz-option {
-    display: flex; align-items: center; gap: 12px;
-    padding: 10px 14px; border-radius: 8px;
-    border: 1px solid var(--border); margin-bottom: 8px;
-    cursor: pointer; font-size: 13px; transition: border-color .15s ease, background-color .15s ease;
-    background: rgba(255,255,255,0.015);
-  }
-  .quiz-option:hover { border-color: var(--primary); background: rgba(16, 185, 129, 0.06); }
-  .quiz-option.correct { border-color: #10b981!important; background: rgba(16, 185, 129, 0.12)!important; color: #a7f3d0; }
-  .quiz-option.wrong   { border-color: #ef4444!important; background: rgba(239, 68, 68, 0.12)!important; color: #fca5a5; }
-  .quiz-option.disabled { pointer-events: none; }
-  .q-letter {
-    width: 24px; height: 24px; border-radius: 4px;
-    background: var(--border); display: flex; align-items: center; justify-content: center;
-    font-size: 11px; font-weight: 600; flex-shrink: 0;
-  }
+    /* Main Container */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+    }
 
-  /* Slide Lightbox Modal */
-  .slide-modal-backdrop {
-    display: none; position: fixed; inset: 0; z-index: 1000;
-    background: rgba(4, 7, 5, 0.92); backdrop-filter: blur(4px);
-    align-items: center; justify-content: center; padding: 24px;
-  }
-  .slide-modal-backdrop.show { display: flex; }
+    /* Pillar Tabs */
+    .pillar-nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+      scrollbar-width: thin;
+    }
+    .pillar-tab {
+      flex-shrink: 0;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .pillar-tab:hover {
+      border-color: var(--border-accent);
+      color: var(--text);
+      background: var(--card-hover);
+    }
+    .pillar-tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    html.dark .pillar-tab.active {
+      color: #121413;
+    }
 
-</style>
+    /* Class Sub-Nav */
+    .class-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    .class-pill {
+      flex-shrink: 0;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .class-pill:hover {
+      border-color: var(--border-accent);
+      color: var(--text);
+    }
+    .class-pill.active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent-text);
+      font-weight: 600;
+    }
+
+    /* Overview Header */
+    .view-header {
+      margin-bottom: 24px;
+      padding: 18px 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .view-title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+    .view-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Submodule Card Deck */
+    .submodule-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .submodule-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 24px;
+      position: relative;
+      transition: border-color 0.15s ease;
+    }
+    .submodule-card:hover {
+      border-color: var(--border-accent);
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .card-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge-subid {
+      font-size: 11px;
+      font-weight: 700;
+      font-family: ui-monospace, monospace;
+      padding: 2px 6px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 4px;
+    }
+    .badge-readtime {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .btn-complete {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-complete.checked {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+      font-weight: 600;
+    }
+
+    .submodule-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    /* ELI15 Callout */
+    .callout-eli15 {
+      background: var(--callout-bg);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 16px;
+    }
+    .callout-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .callout-text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* Bullets */
+    .bullets-list {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+    .bullets-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .bullets-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* Mental Model Box */
+    .mental-box {
+      background: var(--card-hover);
+      border: 1px dashed var(--border-accent);
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      font-size: 12px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .mental-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .mental-desc {
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    /* Checkpoint Active Recall */
+    .checkpoint-wrap {
+      background: var(--checkpoint-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+    .checkpoint-hdr {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .checkpoint-q {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .checkpoint-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .cp-opt {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 12px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cp-opt:hover:not(.disabled) {
+      border-color: var(--accent);
+      background: var(--card-hover);
+    }
+    .cp-opt.correct {
+      background: var(--success-bg) !important;
+      border-color: var(--success) !important;
+      color: var(--success) !important;
+      font-weight: 600;
+    }
+    .cp-opt.wrong {
+      background: var(--danger-bg) !important;
+      border-color: var(--danger) !important;
+      color: var(--danger) !important;
+    }
+    .cp-opt.disabled {
+      cursor: default;
+    }
+    .cp-feedback {
+      margin-top: 10px;
+      font-size: 12px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: none;
+      line-height: 1.4;
+    }
+    .cp-feedback.show {
+      display: block;
+    }
+
+    /* Case Study Dossier Hub */
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+    .case-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .case-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+    .case-section {
+      margin-bottom: 12px;
+    }
+    .case-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 3px;
+    }
+    .case-label.what { color: #C2410C; }
+    .case-label.cause { color: #B45309; }
+    .case-label.takeaway { color: var(--accent); }
+    .case-text {
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--text);
+    }
+
+    /* Formula Cheat Sheet */
+    .cheat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+    .cheat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .cheat-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .cheat-formula {
+      background: var(--card-hover);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      text-align: center;
+      margin-bottom: 12px;
+      font-size: 15px;
+      overflow-x: auto;
+    }
+    .cheat-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-inner { flex-direction: column; align-items: stretch; }
+      .search-wrap { width: 100%; }
+      .case-grid, .cheat-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<body class="selection:bg-emerald-700 selection:text-white min-h-screen">
+<body>
 
-  <!-- TOP APP BAR -->
-  <header class="sticky top-0 z-50 bg-[#060907]/95 backdrop-blur border-b border-[var(--border)] px-4 py-3">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <span class="font-semibold text-sm md:text-base text-white tracking-tight">Environmental Science & Technology</span>
-        <span class="hidden md:inline-block ml-2 text-xs text-emerald-400 font-mono bg-[#0c1611] px-2 py-0.5 rounded border border-[#18261f]">ES1.101 • Monsoon 2026</span>
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-logo">E</div>
+        <div>
+          <span class="brand-title">Environmental Science & Technology</span>
+          <span class="brand-badge">ES1.101 • Field Guide</span>
+        </div>
       </div>
-      <div class="flex items-center gap-2">
-        <a href="quiz3_practice_suite.html" class="text-xs bg-[#0c1611] hover:border-emerald-700 text-emerald-300 font-medium px-3 py-1.5 rounded border border-[#18261f] transition-colors">Quiz 3 prep suite</a>
-        <a href="https://courses.iiit.ac.in/course/view.php?id=5826" target="_blank" rel="noopener noreferrer" class="text-xs bg-[#1a1408] text-amber-300 hover:text-white font-medium px-3 py-1.5 rounded border border-amber-900/60 transition-colors">
-          Moodle portal
-        </a>
-        <a href="Study_Material/00_home.html" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-3 py-1.5 rounded transition-colors">
-          All lectures (15)
-        </a>
+      <div class="header-actions">
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Search concepts, case studies, formulas..." autocomplete="off">
+        </div>
+        <button id="theme-toggle" class="btn-toggle">
+          <span id="theme-icon">🌙</span> <span id="theme-label">Dark</span>
+        </button>
       </div>
+    </div>
+    <div class="progress-strip">
+      <div id="progress-fill" class="progress-fill"></div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="max-w-7xl mx-auto px-4 pt-8 pb-6">
-    <div class="p-6 md:p-8 bg-[#0c1310] border border-[#18261f] rounded-xl">
-      <div class="max-w-4xl">
-        <div class="flex flex-wrap items-center gap-2 mb-3">
-          <div class="px-2.5 py-0.5 rounded bg-[#0a110e] border border-[#18261f] text-emerald-300 text-xs font-mono">
-            Course study suite
-          </div>
-          <div class="px-2.5 py-0.5 rounded bg-[#0a110e] border border-[#18261f] text-slate-400 text-xs font-mono">
-            IIIT Hyderabad
-          </div>
-        </div>
-        
-        <h1 class="text-2xl md:text-4xl font-semibold text-white tracking-tight mb-3">
-          Environmental Science & Technology
-        </h1>
-        <p class="text-xs md:text-sm text-slate-300 mb-2">
-          Instructor: <strong class="text-white">Prof. Ramachandra Prasad P</strong> • TAs: Nemani Dedeepya, Vastava Kurumeti, Kalakuntla Rishika, Himank Singhvi
-        </p>
-        <p class="text-xs md:text-sm text-slate-400 leading-relaxed mb-6">
-          Systematic coverage of all 15 lectures and 522 slides. Each slide includes verbatim bullet points, compact concept breakdowns, and access to 15 interactive numerical models and live Moodle announcements.
-        </p>
+  <!-- MAIN -->
+  <main>
+    <!-- PILLAR TABS -->
+    <nav class="pillar-nav" id="pillar-tabs">
+      <button class="pillar-tab active" data-pillar="1">1. Foundations & Pressures</button>
+      <button class="pillar-tab" data-pillar="2">2. Earth Systems & Disasters</button>
+      <button class="pillar-tab" data-pillar="3">3. Climate & Sinks</button>
+      <button class="pillar-tab" data-pillar="4">4. Cleantech & Engineering</button>
+      <button class="pillar-tab" data-pillar="5">5. Governance & Ethics</button>
+      <button class="pillar-tab" id="case-study-hub" data-view="case-studies">📁 Case Study Hub (12)</button>
+      <button class="pillar-tab" id="formula-sheet" data-view="cheat-sheet">📐 Formula Sheet</button>
+    </nav>
 
-        <!-- STATS BAR -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-[#18261f]">
-          <div class="bg-[#080d0a] border border-[#18261f] rounded-lg p-3">
-            <div class="text-xs text-slate-400 font-mono">Lecture modules</div>
-            <div class="text-lg font-semibold text-emerald-400 mt-0.5">15 topics</div>
-          </div>
-          <div class="bg-[#080d0a] border border-[#18261f] rounded-lg p-3">
-            <div class="text-xs text-slate-400 font-mono">Curriculum slides</div>
-            <div class="text-lg font-semibold text-emerald-400 mt-0.5">522 slides</div>
-          </div>
-          <div class="bg-[#080d0a] border border-[#18261f] rounded-lg p-3">
-            <div class="text-xs text-slate-400 font-mono">Interactive models</div>
-            <div class="text-lg font-semibold text-emerald-400 mt-0.5">15 simulators</div>
-          </div>
-          <div class="bg-[#080d0a] border border-[#18261f] rounded-lg p-3">
-            <div class="text-xs text-slate-400 font-mono">Moodle updates</div>
-            <div class="text-lg font-semibold text-amber-400 mt-0.5">22 threads</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- CLASS PILLS -->
+    <div class="class-bar" id="class-pills"></div>
 
-  <!-- QUIZ 3 ANNOUNCEMENT & PREP SUITE BANNER -->
-  <section class="max-w-7xl mx-auto px-4 pb-6">
-    <div class="p-5 bg-[#0a120e] border border-[#1d3126] rounded-xl">
-      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
-        <div>
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="px-2 py-0.5 rounded bg-emerald-600/20 text-emerald-300 text-xs font-mono font-medium">Exam prep</span>
-            <span class="text-xs font-mono text-slate-400">Lectures 8 to 11 syllabus</span>
-          </div>
-          <h2 class="text-lg font-semibold text-white">Quiz 3 master preparation suite and past papers question bank</h2>
-          <p class="text-xs text-slate-400 mt-1 max-w-3xl">
-            Questions extracted from past exam papers, including timed mock tests, active-recall flashcards, rapid fill-in drills, and chemical reactions review.
-          </p>
-        </div>
-        <div class="flex items-center gap-2 w-full lg:w-auto">
-          <a href="quiz3_practice_suite.html" class="flex-1 lg:flex-none text-center text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-4 py-2 rounded-lg transition-colors">
-            Open Quiz 3 suite
-          </a>
-          <a href="Quiz3_Exam_Preparation_Pack.pdf" download class="text-xs bg-[#0f1613] hover:text-white text-slate-300 border border-[#18261f] font-medium px-3 py-2 rounded-lg transition-colors">
-            PDF pack
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXAM & ANNOUNCEMENTS DIGEST -->
-  <section class="max-w-7xl mx-auto px-4 py-2">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      
-      <!-- Exam Syllabus -->
-      <div class="eco-card p-5">
-        <h3 class="text-sm font-semibold text-white mb-3">Examination syllabus breakdown</h3>
-        <div class="space-y-2 text-xs">
-          <div class="p-3 bg-[#0a110e] border border-[#18261f] rounded-lg">
-            <div class="flex justify-between items-center mb-1">
-              <strong class="text-emerald-400 font-medium">Midsem exam syllabus (covered)</strong>
-              <span class="badge-neutral px-1.5 py-0.5 rounded text-[10px] font-mono">Lectures 1–7</span>
-            </div>
-            <p class="text-slate-400">Vision 2070, Earth spheres and thermodynamics, particulate pollution, remote sensing and GIS, landmark crises (Bhopal, Chernobyl, Minamata), biogeochemical cycles, and climate change impacts.</p>
-          </div>
-          <div class="p-3 bg-[#0a110e] border border-[#18261f] rounded-lg">
-            <div class="flex justify-between items-center mb-1">
-              <strong class="text-emerald-400 font-medium">Quiz-2 exam syllabus (completed)</strong>
-              <span class="badge-neutral px-1.5 py-0.5 rounded text-[10px] font-mono">Lectures 1–10b</span>
-            </div>
-            <p class="text-slate-400">Biogeochemical cycles, ocean carbon sequestration, terrestrial sinks, biochar chemistry, and the Clean Development Mechanism (CDM).</p>
-          </div>
-          <div class="p-3 bg-[#0a110e] border border-[#18261f] rounded-lg">
-            <div class="flex justify-between items-center mb-1">
-              <strong class="text-amber-300 font-medium">Project presentations and reports</strong>
-              <span class="badge-amber px-1.5 py-0.5 rounded text-[10px] font-mono">Nov 17–18, 2026</span>
-            </div>
-            <p class="text-slate-400">Presentations in the <strong>LSI conference Room</strong> on 17th and 18th November 2026 (11:00 AM – 4:00 PM). Strictly 25 mins presentation + 5 mins Q&A. Final report due 22nd November 2026, 5:00 PM.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Live Announcements Digest -->
-      <div class="eco-card p-5">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="text-sm font-semibold text-white">Moodle announcements digest</h3>
-          <span class="text-xs text-slate-500 font-mono">22 threads synced</span>
-        </div>
-        <div class="space-y-2 text-xs max-h-56 overflow-y-auto pr-1">
-          <div class="p-2.5 bg-[#0a110e] border border-[#18261f] rounded">
-            <div class="font-medium text-slate-200">Final project presentations venue and schedule</div>
-            <div class="text-slate-400 text-[11px]">Prof. Ramachandra Prasad P: Presentations on 17th and 18th November in LSI conference Room. Over-time presentations will be stopped immediately.</div>
-          </div>
-          <div class="p-2.5 bg-[#0a110e] border border-[#18261f] rounded">
-            <div class="font-medium text-slate-200">Final project report submission deadline</div>
-            <div class="text-slate-400 text-[11px]">Submission deadline: 22nd November 2026, 5:00 PM via Moodle portal.</div>
-          </div>
-          <div class="p-2.5 bg-[#0a110e] border border-[#18261f] rounded">
-            <div class="font-medium text-slate-200">Quiz-2 exam announcement</div>
-            <div class="text-slate-400 text-[11px]">Nemani Dedeepya: Quiz-2 syllabus covers Lectures 1–10b with numerical problems and concept check.</div>
-          </div>
-          <div class="p-2.5 bg-[#0a110e] border border-[#18261f] rounded">
-            <div class="font-medium text-slate-200">Midsem paper showing and makeup exam syllabus</div>
-            <div class="text-slate-400 text-[11px]">Prof. Ramachandra Prasad P: Confirmed makeup exam covers Lectures 1–7.</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ALL 15 MODULES GRID -->
-  <section class="max-w-7xl mx-auto px-4 py-8">
-    <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
-      <div>
-        <h2 class="text-xl font-semibold text-white">All 15 lecture modules</h2>
-        <p class="text-xs text-slate-400">Slidewise learning cards covering all 522 slides across the semester.</p>
-      </div>
-      <a href="Study_Material/00_home.html" class="text-xs text-emerald-400 font-mono font-medium hover:underline">View curriculum roadmap →</a>
+    <!-- VIEW HEADER -->
+    <div class="view-header" id="view-header">
+      <h1 class="view-title" id="view-title">Pillar 1: Planetary Foundations & Human Pressures</h1>
+      <p class="view-desc" id="view-desc">Earth systems, thermodynamic constraints, population pressures, and the cautionary dystopian future.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 01</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Beginner</span>
+    <!-- CONTENT DISPLAY CONTAINER -->
+    <div id="content-container"></div>
+  </main>
+
+  <script>
+    // Injected Curriculum Database
+    const DB = {"metadata": {"course_title": "Environmental Science & Technology", "course_code": "ES1.101", "institution": "IIIT Hyderabad", "instructor": "Dr. P. Rama Chandra Prasad", "pillars_count": 5, "classes_count": 19, "submodules_count": 58, "case_studies_count": 12}, "pillars": [{"id": 1, "title": "Planetary Foundations & Human Pressures", "classes": [1, 2, 3], "description": "Earth systems, thermodynamic constraints, population pressures, and the cautionary dystopian future."}, {"id": 2, "title": "Earth Observation & Biogeochemical Dynamics", "classes": [4, 5, 6], "description": "Satellite remote sensing, environmental disasters, and closed-loop planetary nutrient cycles."}, {"id": 3, "title": "Climate Disruption, Tipping Points & Ocean Sinks", "classes": [7, 8, 9, 10], "description": "Radiative forcing, planetary tipping cascades, terrestrial carbon sinks, and ocean geoengineering."}, {"id": 4, "title": "Cleantech, Green Computing & Industrial Engineering", "classes": [11, 14, 15], "description": "Renewable technologies, data center energy metrics (PUE), LCA, and industrial circularity."}, {"id": 5, "title": "Environmental Governance, Law, Accounting & Ethics", "classes": [12, 13, 16, 17, 18, 19], "description": "EIA legal frameworks, grassroots movements, Green GDP, SDGs, NRA, and wetland ethics."}], "classes": [{"class_id": 1, "title": "Course Overview & Planetary Vision 2070", "pillar": "Planetary Foundations & Human Pressures", "summary": "Establishes core environmental science domains, the 2070 water scarcity dystopia, and the role of IT and public communication.", "submodules": [{"id": "1.1", "title": "The Planetary Outlook & Environmental Science", "eli15_takeaway": "Environmental science is the study of how Earth's air, water, land, and living creatures interconnect, and how humans are altering that balance.", "bullets": ["Environmental science combines biology, chemistry, earth sciences, economics, and computing.", "Human technological activity has expanded so rapidly that it dominates global geological and climate systems.", "Key focus: identifying ecological stresses early using modern data and spatial technologies."], "mental_model": "Think of Earth as a spaceship life-support system with fixed air and water recycling tanks. We cannot vent damaged tanks and replace them.", "checkpoint": {"question": "What is the defining characteristic of Environmental Science as an academic discipline?", "options": ["An interdisciplinary study linking natural earth systems, human impacts, and technological solutions", "Strictly theoretical botany without human or economic considerations", "Purely industrial engineering focused exclusively on factory throughput", "A legal framework that only deals with international maritime borders"], "correct_index": 0, "explanation": "Environmental science is inherently interdisciplinary—synthesizing biological systems, atmospheric physics, human socio-economic choices, and engineering tools."}}, {"id": "1.2", "title": "The 2070 Dystopia Breakdown", "eli15_takeaway": "The Letter from 2070 illustrates the catastrophic daily reality of unchecked water depletion: rationing, extreme skin aging, and armed survival.", "bullets": ["Water rationing dropped from 8 glasses a day to half a glass per adult.", "People pay daily taxes for air breathing (137 m³ per day per adult).", "Loss of protective ozone layer and extreme dehydration causes 20-year-olds to physically resemble 40-year-olds.", "Rivers and remaining green zones require armed military protection."], "mental_model": "Imagine turning on your kitchen tap, but instead of water, a digital meter demands a credit card payment for every 50 milliliters.", "checkpoint": {"question": "In the 'Letter from Year 2070', what is the daily allocated drinking water quota for an adult?", "options": ["Half a glass per day", "Two liters per day", "Eight glasses per day", "Five liters per day"], "correct_index": 0, "explanation": "In the 2070 dystopia, severe water exhaustion forces human rationing down to just half a glass per day, leading to widespread organ failure."}}, {"id": "1.3", "title": "Environmental Awareness & Public Persuasion", "eli15_takeaway": "Facts alone do not change behavior; powerful visual campaigns and emotional metaphors are required to move public policy and human habits.", "bullets": ["Greenpeace, WWF, and UNICEF campaigns utilize stark juxtaposition to communicate urgency.", "Visual metaphors (e.g. melting ice hourglasses, plastic waste in food packaging) bridge cognitive disconnect.", "Modern computational tools enable precise spatial targeting of public awareness campaigns."], "mental_model": "Warning labels on cigarette packs work better than 50-page medical journals because they deliver immediate visual impact.", "checkpoint": {"question": "Why do public environmental campaigns rely heavily on stark visual metaphors rather than raw data tables?", "options": ["Visual metaphors evoke visceral emotional resonance and overcome cognitive disconnect faster than abstract numbers", "Because raw scientific data is legally banned from public advertising", "Visuals take less physical paper to print in urban areas", "Scientists are not permitted to publish numbers publicly"], "correct_index": 0, "explanation": "Human attention responds far more urgently to immediate visual narratives and relatable metaphors than to disconnected tables of statistics."}}]}, {"class_id": 2, "title": "Earth Spheres, Thermodynamics & The Commons", "pillar": "Planetary Foundations & Human Pressures", "summary": "Covers Earth's five interacting spheres, the thermodynamic laws governing energy flow, the Tragedy of the Commons, and the collapse of Easter Island.", "submodules": [{"id": "2.1", "title": "The Interacting Earth Spheres", "eli15_takeaway": "Earth consists of five connected spheres: rock (lithosphere), water (hydrosphere), air (atmosphere), life (biosphere), and human-built infrastructure (anthroposphere).", "bullets": ["Lithosphere: Crust and upper mantle containing mineral nutrients and soil.", "Hydrosphere: All liquid, frozen (cryosphere), and vapor water.", "Atmosphere: Gaseous blanket filtering cosmic radiation and regulating surface temperature.", "Biosphere: The thin living skin of flora, fauna, and microorganisms.", "Anthroposphere: Human settlements, electrical grids, transport corridors, and industrial fabric."], "mental_model": "Imagine five interlocking gear wheels. If you jam the carbon gear in the anthroposphere, the climate gear in the atmosphere and the acid gear in the hydrosphere immediately grind.", "checkpoint": {"question": "Which sphere refers specifically to the parts of the Earth modified, built, or operated by human society?", "options": ["Anthroposphere", "Lithosphere", "Asthenosphere", "Hydrosphere"], "correct_index": 0, "explanation": "The anthroposphere represents the total human footprint: cities, agriculture, roads, energy plants, and digital communication networks."}}, {"id": "2.2", "title": "Thermodynamics of Ecological Systems", "eli15_takeaway": "Energy can never be created or destroyed, but every time an animal eats a plant or an engine burns fuel, high-quality energy degrades into useless waste heat.", "bullets": ["First Law: Energy conservation ($E_{in} = E_{out}$). Energy only changes forms.", "Second Law: Entropy increases ($\\Delta S > 0$). In every biological transfer, roughly 90% of energy is dissipated as metabolic heat.", "Trophic Efficiency: Only ~10% of energy stored in plant biomass transfers to primary herbivores, and only 10% of that to carnivores."], "mental_model": "A 100-rupee note that gets hit with a 90% transaction fee at every transfer. By the third hand, you only hold 1 rupee.", "checkpoint": {"question": "According to the Second Law of Thermodynamics in ecology, what happens to roughly 90% of energy between trophic levels?", "options": ["It degrades into low-temperature metabolic heat and increases entropy", "It is permanently destroyed out of existence", "It converts entirely into mineral soil mass", "It bounces back to the sun as ultraviolet rays"], "correct_index": 0, "explanation": "The Second Law dictates that biological energy conversions are never 100% efficient; ~90% is lost as entropic body heat during metabolism."}}, {"id": "2.3", "title": "Tragedy of the Commons (Garrett Hardin 1968)", "eli15_takeaway": "When a valuable resource is free for everyone to take without rules, each individual takes as much as possible for private gain until the resource is completely ruined.", "bullets": ["Rivalrous + Non-Excludable: Fish in open oceans, groundwater in shared aquifers, clean air.", "Private benefit vs Shared cost: A herder gets +1 cow of profit, but the pasture destruction is shared among all 100 herders.", "Solutions: Privatization (property rights), Top-down government regulation (quotas), or Community governance (Elinor Ostrom)."], "mental_model": "A shared bowl of chocolates in a living room. If nobody owns it, whoever grabs fastest wins, and the bowl is empty in 5 minutes.", "checkpoint": {"question": "Why does a 'commons' inevitably collapse in Garrett Hardin's classic model without governance?", "options": ["Each individual receives 100% of the benefit of overexploiting, while sharing only a fraction of the cost with the community", "Because natural resources naturally decompose within 24 hours", "Because governments intentionally destroy unowned pastures", "Because animals refuse to reproduce in public areas"], "correct_index": 0, "explanation": "The asymmetry between private personal profit (+1) and diluted public consequence (-1/N) drives rational individuals toward collective ruin."}}, {"id": "2.4", "title": "The Lesson of Easter Island (Rapa Nui)", "eli15_takeaway": "Easter Island is a real-world warning of what happens when a society cuts down its last tree for construction and monuments, leading to starvation and collapse.", "bullets": ["Inhabited ~300 AD with lush sub-tropical palm forests and fertile soils.", "Massive deforestation for agriculture, firewood, canoe-building, and transporting giant stone statues (Moai).", "Soil erosion ruined crop yields; loss of canoes prevented deep-sea fishing; societal warfare and collapse followed."], "mental_model": "A castaway on a wooden lifeboat who chops up the wooden floorboards to build a bonfire for warmth, eventually sinking his own boat.", "checkpoint": {"question": "What primary ecological tipping point caused the civilizational collapse of Easter Island?", "options": ["Complete deforestation of palm forests causing soil erosion and loss of ocean-going canoes", "A sudden asteroid impact", "An underwater volcanic eruption that covered the island in lava", "Invasion by modern naval armadas"], "correct_index": 0, "explanation": "Deforestation triggered systemic ecological collapse: topsoil washed away, crops failed, and without trees for canoes, islanders could no longer fish."}}]}, {"class_id": 3, "title": "Environmental Issues & Anthropogenic Pressures", "pillar": "Planetary Foundations & Human Pressures", "summary": "Analyzes the drivers of environmental impact through the IPAT formula, carrying capacity, resource consumption disparity, and pollution cascades.", "submodules": [{"id": "3.1", "title": "The IPAT Equation & Planetary Footprint", "eli15_takeaway": "Environmental damage ($I$) is driven by three multiplying factors: how many people there are ($P$), how much stuff each person consumes ($A$), and how dirty the technology is ($T$).", "bullets": ["Formula: $I = P \\times A \\times T$", "Population ($P$): Number of consumers.", "Affluence ($A$): Consumption per capita (GDP per capita, goods, electricity, meat consumption).", "Technology ($T$): Environmental degradation per unit of consumption (coal electricity vs solar, gas car vs EV).", "Developed nations have lower population growth but vastly higher affluence ($A$), multiplying total impact."], "mental_model": "Impact is like a restaurant bill: Number of diners (P) $\\times$ dishes ordered per person (A) $\\times$ cost per dish (T).", "checkpoint": {"question": "In the IPAT formula ($I = P \\times A \\times T$), what does the 'A' represent?", "options": ["Affluence, representing per capita resource consumption and material throughput", "Atmospheric pressure at sea level", "Altitude of urban centers", "Agricultural land area measured in hectares"], "correct_index": 0, "explanation": "'A' stands for Affluence—the level of consumption and economic throughput per individual in a society."}}, {"id": "3.2", "title": "Resource Depletion: Non-Renewable vs Renewable", "eli15_takeaway": "Non-renewable resources (coal, oil, copper) are like a fixed bank savings account; renewable resources (timber, water) are like an interest payment that runs dry if you overdraw the principal.", "bullets": ["Carrying Capacity ($K$): The maximum sustainable population an environment can support without degrading.", "Earth Overshoot Day: The calendar day when humanity has consumed all biological resources the planet can regenerate in that entire year.", "Depletion of groundwater: High-yield borewells draw fossil aquifers faster than precipitation can recharge them."], "mental_model": "Drinking a thick milkshake with a jumbo straw faster than the bartender can pour it. The glass empties and makes a hollow sucking noise.", "checkpoint": {"question": "What occurs when human resource extraction exceeds a region's ecological carrying capacity ($K$)?", "options": ["Ecological overshoot leading to resource degradation and eventual population crash", "Automatic infinite expansion of fertile topsoil", "Immediate stabilization of atmospheric moisture", "Thermodynamic entropy reverses to zero"], "correct_index": 0, "explanation": "Exceeding carrying capacity depletes the natural capital stock, triggering ecological overshoot and environmental degradation."}}, {"id": "3.3", "title": "Pollution Cascades: Point vs Non-Point Sources", "eli15_takeaway": "Point sources have a single identifiable pipe or smokestack that you can point at; non-point sources are diffuse runoffs from millions of farms, roads, and lawns.", "bullets": ["Point Source: A chemical factory discharge pipe, a municipal sewage outfall, a thermal power plant smokestack.", "Non-Point Source: Agricultural pesticide runoff, microplastics from car tires on city highways, urban storm runoff.", "Non-point sources are exponentially harder to regulate and enforce because no single entity is exclusively responsible."], "mental_model": "Point source is someone spraying a firehose from a bedroom window. Non-point source is 5,000 people spilling a thimble of dye into city gutters simultaneously.", "checkpoint": {"question": "Which of the following is an example of a non-point source of water pollution?", "options": ["Agricultural fertilizer runoff spread across thousands of farming acres", "A cracked effluent pipe discharging from a leather tannery", "An underwater pipe venting crude oil from a specific refinery", "A municipal sewage pipe opening directly into a canal"], "correct_index": 0, "explanation": "Agricultural fertilizer runoff is diffuse across vast landscapes without a single pipe outlet, making it a classic non-point pollution source."}}]}, {"class_id": 4, "title": "Remote Sensing & Geospatial Earth Observation", "pillar": "Earth Observation & Biogeochemical Dynamics", "summary": "Principles of satellite sensors, electromagnetic radiation, spectral reflection curves, NDVI vegetation formulas, and disaster monitoring.", "submodules": [{"id": "4.1", "title": "Satellite Orbits & Sensor Systems", "eli15_takeaway": "Satellites fly in two main patterns: Geostationary satellites stay parked 36,000 km over one spot for weather, while Sun-synchronous satellites orbit pole-to-pole close to Earth to scan high-res images.", "bullets": ["Geostationary Orbits: ~35,786 km altitude, match Earth's rotational speed, constant regional view (weather/communications).", "Sun-Synchronous (Polar) Orbits: 600–800 km altitude, cross the equator at the same local solar time daily, ensuring identical sun shadow conditions.", "Resolutions: Spatial (pixel size, e.g. 10m Sentinel-2), Spectral (number of bands), Temporal (revisit rate in days)."], "mental_model": "Geostationary is a security camera mounted on a rooftop ceiling looking at your front door. Sun-synchronous is a drone flying a grid scan over the whole city every morning.", "checkpoint": {"question": "Why do Earth observation satellites like Landsat and Sentinel-2 use Sun-Synchronous Polar orbits?", "options": ["They cross the equator at the exact same local solar time, providing consistent sun illumination and shadow angles for image comparison", "They are physically tethered to the North Pole using magnetic cables", "They only operate when the entire planet is completely dark", "They avoid flying over oceans to save battery life"], "correct_index": 0, "explanation": "Sun-synchronous orbits maintain constant solar angle on the ground, making multi-date satellite comparisons reliable without shadow distortion."}}, {"id": "4.2", "title": "Electromagnetic Spectrum & Spectral Signatures", "eli15_takeaway": "Every material on Earth reflects light differently across visible, near-infrared, and shortwave-infrared bands—this unique fingerprint is its spectral signature.", "bullets": ["Healthy green leaves absorb Red light (for chlorophyll photosynthesis) and reflect huge amounts of Near-Infrared (NIR) due to spongy mesophyll cell structure.", "Clear water absorbs almost all Near-Infrared light (appears pitch black in NIR images).", "Turbid or sediment-laden water reflects visible green/red light.", "Dry bare soil exhibits a steady upward reflectance slope from visible to shortwave infrared."], "mental_model": "Like shining a blacklight on different currencies—certain inks glow bright neon while others stay dark.", "checkpoint": {"question": "Why does healthy green vegetation appear extremely bright in Near-Infrared (NIR) satellite imagery?", "options": ["The internal spongy mesophyll cell structure of healthy leaves reflects high percentages of NIR energy to avoid overheating", "Chlorophyll molecules directly absorb 100% of NIR light for photosynthesis", "Leaves are coated in metallic silver particles", "Satellites paint leaves bright white using lasers"], "correct_index": 0, "explanation": "The spongy mesophyll layer inside healthy leaves strongly scatters and reflects NIR light; chlorophyll only absorbs visible Red and Blue."}}, {"id": "4.3", "title": "Normalized Difference Vegetation Index (NDVI)", "eli15_takeaway": "NDVI uses the contrast between Near-Infrared and Red reflection to give a health score from -1 to +1 for plants anywhere on Earth.", "bullets": ["Formula: $NDVI = \\frac{NIR - Red}{NIR + Red}$", "High NDVI (+0.6 to +0.9): Dense, healthy green tropical forests and flourishing crops.", "Low Positive NDVI (+0.1 to +0.2): Dry grassland, stressed vegetation, sparse scrub.", "Negative NDVI (< 0): Water bodies (-0.5 to -1.0), snow, clouds.", "False Color Composite (FCC): Mapping NIR to the screen's Red channel makes healthy plants appear vivid scarlet red."], "mental_model": "A medical thermometer for forests: above 0.7 means vibrant health; below 0.3 means drought or disease.", "checkpoint": {"question": "If a satellite pixel records $NIR = 0.80$ and $Red = 0.20$, what is the calculated NDVI value?", "options": ["+0.60", "-0.60", "+1.00", "+0.25"], "correct_index": 0, "explanation": "NDVI = (0.80 - 0.20) / (0.80 + 0.20) = 0.60 / 1.00 = +0.60 (indicating healthy, dense vegetation)."}}, {"id": "4.4", "title": "Geospatial Disaster & Environmental Monitoring", "eli15_takeaway": "Satellites allow governments and scientists to detect forest fires, map flood boundaries, and track deforestation in near real-time from orbit.", "bullets": ["Thermal Infrared bands detect active forest fire hotspots even through smoke plumes.", "Synthetic Aperture Radar (SAR) penetrates clouds and rain to map flood water inundation lines day or night.", "Normalized Burn Ratio (NBR): Compares NIR and SWIR to classify wildfire burn severity."], "mental_model": "A doctor taking an X-ray of a patient through their winter coat during an emergency triage.", "checkpoint": {"question": "Which satellite technology can map floodwater extent across a landscape even through thick monsoon storm clouds and at night?", "options": ["Synthetic Aperture Radar (SAR)", "Standard optical visible RGB cameras", "Submarine sonar", "Smartphone GPS receivers"], "correct_index": 0, "explanation": "Radar (SAR) transmits microwave pulses that penetrate heavy clouds, rain, and darkness, reflecting cleanly off calm floodwaters."}}]}, {"class_id": 5, "title": "Environmental Disasters & Historical Tragedies", "pillar": "Earth Observation & Biogeochemical Dynamics", "summary": "Deep case study analysis of landmark industrial, nuclear, and chemical disasters that reshaped international environmental law and safety regulations.", "submodules": [{"id": "5.1", "title": "Bhopal Gas Tragedy (1984)", "eli15_takeaway": "The world's worst industrial catastrophe occurred when 40 tons of toxic Methyl Isocyanate (MIC) leaked from a Union Carbide pesticide plant into sleeping neighborhoods.", "bullets": ["Location: Bhopal, Madhya Pradesh, India (Dec 2–3, 1984).", "Substance: Methyl Isocyanate (MIC) gas in Tank 610 reacted exothermically with water.", "Failures: Refrigeration cooling system turned off to cut costs; flare tower disconnected; scrubber inoperable.", "Toll: Over 3,800 immediate deaths, 15,000+ subsequent deaths, 500,000+ permanent disabilities.", "Legacy: Spurred India's Environment (Protection) Act 1986 and strict public liability insurance mandates."], "mental_model": "Storing dynamite in a hot attic while turning off the sprinkler system to save on your electric bill.", "checkpoint": {"question": "What highly toxic gas leaked during the 1984 Bhopal disaster at the Union Carbide factory?", "options": ["Methyl Isocyanate (MIC)", "Carbon Dioxide", "Nitrogen Gas", "Chlorofluorocarbon-11"], "correct_index": 0, "explanation": "Methyl Isocyanate (MIC) was the reactive chemical intermediate used for manufacturing Sevin carbaryl pesticide."}}, {"id": "5.2", "title": "Chernobyl Nuclear Meltdown (1986)", "eli15_takeaway": "An unauthorized safety test on an unstable RBMK nuclear reactor caused a steam explosion, graphite fire, and widespread radioactive fallout across Europe.", "bullets": ["Location: Pripyat, Ukrainian SSR (April 26, 1986).", "Flaw: Positive void coefficient and graphite-tipped control rods caused power surge during turbine rundown test.", "Discharge: Reactor core open to sky; radioactive Iodine-131, Cesium-137, Strontium-90 spread over 200,000 km².", "Legacy: 30-kilometer Chernobyl Exclusion Zone; creation of international nuclear safety peer-review conventions."], "mental_model": "Stepping on the brake pedal of a speeding car, but the brake pedal is secretly wired to the nitro booster.", "checkpoint": {"question": "What fundamental design characteristic of the Soviet RBMK-1000 reactor contributed to the explosive runaway surge at Chernobyl?", "options": ["A positive void coefficient where steam bubbles increased nuclear reactivity instead of dampening it", "Using heavy ice blocks instead of steel containment", "Placing the reactor inside an active coal quarry", "Complete absence of uranium fuel rods"], "correct_index": 0, "explanation": "In an RBMK reactor with a positive void coefficient, steam bubble formation reduces neutron absorption, causing power to spike uncontrollably."}}, {"id": "5.3", "title": "Minamata Disease & Biomagnification (1956)", "eli15_takeaway": "A chemical factory dumped mercury into Minamata Bay, bacteria turned it into organic methylmercury, fish concentrated it, and people eating the fish suffered irreversible neurological paralysis.", "bullets": ["Location: Minamata, Kumamoto Prefecture, Japan.", "Cause: Chisso Corporation dumped industrial wastewater containing inorganic mercury used as an acetaldehyde catalyst.", "Biomagnification: Anaerobic marine bacteria converted mercury into organic methylmercury ($CH_3Hg^+$), which bioaccumulated in marine trophic chains.", "Symptoms: Hunter-Russell syndrome—severe ataxia, numbness, speech impairment, congenital birth deformities.", "Legacy: Minamata Convention on Mercury (2013 global treaty banning mercury mining and trade)."], "mental_model": "A pyramid where each brick drinks a drop of poison: 10,000 plankton $\\rightarrow$ 1,000 small fish $\\rightarrow$ 10 big fish $\\rightarrow$ 1 human who receives the concentrated poison of all 10,000.", "checkpoint": {"question": "What chemical transformation makes industrial mercury exponentially more dangerous when dumped into aquatic ecosystems?", "options": ["Anaerobic bacteria convert inorganic mercury into lipid-soluble methylmercury that bioaccumulates up the food chain", "Mercury dissolves into harmless fresh drinking water", "Mercury converts directly into pure gold granules", "Mercury freezes into solid icebergs"], "correct_index": 0, "explanation": "Methylation turns mercury into methylmercury, which easily passes biological membranes, enters fat tissues, and biomagnifies up trophic levels."}}, {"id": "5.4", "title": "London Smog (1952), Love Canal (1978) & Aral Sea", "eli15_takeaway": "Three landmark disasters proved that industrial pollution cannot be swept under the carpet without massive human and ecological mortality.", "bullets": ["Great London Smog (1952): Coal smoke + high sulfur emissions trapped under a winter thermal inversion; killed ~12,000 Londoners in 5 days; triggered UK Clean Air Act 1956.", "Love Canal (1978): Hooker Chemical buried 21,800 tons of toxic waste in an abandoned canal; homes and an elementary school were built on top; triggered US Superfund (CERCLA) legislation.", "Aral Sea Desiccation: Soviet diversion of Amu Darya and Syr Darya rivers for monoculture cotton irrigation shrank the 4th largest lake on Earth by 90%, leaving a toxic salt desert."], "mental_model": "London: trapping exhaust inside a locked garage. Love Canal: burying landmines in your children's sandbox. Aral Sea: draining your swimming pool with no hose to refill it.", "checkpoint": {"question": "What weather phenomenon caused the Great London Smog of 1952 to become lethal?", "options": ["A temperature inversion that trapped cold stagnant air and toxic coal sulfur smoke close to the city streets", "A tropical category-5 hurricane hitting the Thames estuary", "A volcanic eruption in the English channel", "Unprecedented desert dust storms from the Sahara"], "correct_index": 0, "explanation": "A severe anticyclonic temperature inversion formed a lid over London, trapping sulfurous coal fumes and soot for five lethal days."}}]}, {"class_id": 6, "title": "Earth Components & Biogeochemical Cycles", "pillar": "Earth Observation & Biogeochemical Dynamics", "summary": "Covers closed-loop planetary nutrient cycles: Carbon, Nitrogen, Phosphorus, Sulfur, and the global Hydrological cycle.", "submodules": [{"id": "6.1", "title": "The Global Carbon Cycle", "eli15_takeaway": "Carbon is constantly traded between four giant reservoirs: air, ocean water, living plants/animals, and underground rocks/fossil fuels.", "bullets": ["Photosynthesis: $6CO_2 + 6H_2O + \\text{light} \\rightarrow C_6H_{12}O_6 + 6O_2$", "Respiration: $C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + \\text{energy}$", "Ocean Biological Pump: Marine phytoplankton fix $CO_2$; when they die, their calcium carbonate ($CaCO_3$) shells sink to the deep sea floor.", "Fossil Fuel Disruption: Humans are unearthing millions of years of buried geological carbon and venting it into the atmosphere in two centuries."], "mental_model": "Earth's carbon budget is like an ATM network. Burning fossil fuels is like printing billions of counterfeit notes and dumping them into the cash pool.", "checkpoint": {"question": "What primary mechanism allows marine organisms to lock carbon away into deep ocean sediments for geological eras?", "options": ["The biological carbon pump, where calcifying organisms build CaCO3 shells that sink to the seafloor upon death", "Direct boiling of seawater into vapor clouds", "Fishes breathing pure nitrogen gas underwater", "Submarine volcanoes freezing into ice cubes"], "correct_index": 0, "explanation": "The marine biological pump exports organic carbon and calcium carbonate shells to the abyssal sediment beds, sequestering it for millennia."}}, {"id": "6.2", "title": "The Nitrogen Cycle & The Haber-Bosch Disruption", "eli15_takeaway": "Plants need nitrogen to grow, but they can't breathe $N_2$ gas directly; bacteria must 'fix' it into ammonium and nitrates before plants can drink it.", "bullets": ["Nitrogen Fixation: $N_2 \\rightarrow NH_3 / NH_4^+$ by symbiotic Rhizobium bacteria in legume root nodules or lightning.", "Nitrification: Soil bacteria convert Ammonium ($NH_4^+$) $\\rightarrow$ Nitrite ($NO_2^-$) $\\rightarrow$ Nitrate ($NO_3^-$).", "Denitrification: Anaerobic bacteria convert Nitrate back into inert $N_2$ gas.", "Human Disruption: The Haber-Bosch chemical process synthesizes synthetic fertilizer, doubling global reactive nitrogen and causing eutrophication."], "mental_model": "Being stranded in the middle of the ocean dying of thirst—there is water everywhere ($78\\% N_2$ air), but you can't drink salt water without a filter.", "checkpoint": {"question": "What is the primary role of denitrifying bacteria in the nitrogen cycle?", "options": ["Converting nitrates (NO3-) in oxygen-poor soil back into inert atmospheric nitrogen gas (N2)", "Manufacturing glucose from sunlight and carbon dioxide", "Extracting heavy metals from granite boulders", "Filtering ozone gas out of the troposphere"], "correct_index": 0, "explanation": "Denitrifying bacteria complete the nitrogen cycle by transforming soil nitrates back into molecular $N_2$ gas, returning it to the atmosphere."}}, {"id": "6.3", "title": "The Phosphorus & Sulfur Cycles", "eli15_takeaway": "Unlike carbon and nitrogen, phosphorus has no gas phase in the air; it travels solely through rock erosion, soil, and water over millions of years.", "bullets": ["Phosphorus Cycle: Weathering of phosphate rocks $\\rightarrow$ plant uptake $\\rightarrow$ animal food web $\\rightarrow$ marine sediments.", "Limiting Nutrient: Phosphorus is frequently the master limiting factor in freshwater lakes (excess leads to toxic algal blooms).", "Sulfur Cycle: Emitted by volcanoes ($SO_2$) and marine algae (Dimethyl sulfide DMS); DMS acts as cloud condensation nuclei to reflect sunlight."], "mental_model": "Phosphorus is a ground-only railroad—it cannot fly in an airplane (no atmospheric gas phase).", "checkpoint": {"question": "What makes the Phosphorus biogeochemical cycle fundamentally unique compared to Carbon and Nitrogen?", "options": ["It has no significant atmospheric or gaseous reservoir, cycling almost entirely through the lithosphere and hydrosphere", "It only exists in outer space", "It is created spontaneously by plant leaves without rock weathering", "It moves faster than the speed of sound"], "correct_index": 0, "explanation": "Phosphorus lacks a volatile gaseous phase; its reservoir is almost entirely locked in phosphate rock formations and sedimentary deposits."}}, {"id": "6.4", "title": "The Hydrological Cycle & Planetary Water Budget", "eli15_takeaway": "All water on Earth is continuously distilled and circulated by solar energy across oceans, atmosphere, glaciers, rivers, and deep underground aquifers.", "bullets": ["Total Global Water: 97.5% saline oceans; only 2.5% freshwater.", "Freshwater Breakdown: ~68.7% locked in glaciers/ice caps; ~30.1% deep groundwater; only ~1.2% surface water (lakes, rivers, atmosphere).", "Solar Distillation: Evaporation leaves salt behind, creating pure rainwater, which returns through precipitation and runoff."], "mental_model": "Earth's water budget: If all water were in a 100-liter drum, freshwater would be a small 2.5-liter jug, and easily accessible river water would be a single teaspoon.", "checkpoint": {"question": "Of the small percentage (2.5%) of global water that is fresh, where is the majority physically stored?", "options": ["Locked in permanent glaciers, ice caps, and snowfields (~68.7%)", "Floating in surface lakes and flowing rivers", "Hovering as vapor clouds in the troposphere", "Trapped inside residential swimming pools"], "correct_index": 0, "explanation": "Nearly 70% of all Earth's freshwater is frozen in glaciers and polar ice sheets in Antarctica and Greenland."}}]}, {"class_id": 7, "title": "Climate Change Impacts & Vulnerability", "pillar": "Climate Disruption, Tipping Points & Ocean Sinks", "summary": "Physics of greenhouse warming, radiative forcing potentials, thermal expansion, sea level rise, and ecological vulnerability.", "submodules": [{"id": "7.1", "title": "Greenhouse Effect & Radiative Forcing", "eli15_takeaway": "Sunlight passes through greenhouse gases easily, but when the warm Earth tries to radiate that heat back to space as infrared, greenhouse gases trap it like a heavy winter blanket.", "bullets": ["Solar radiation enters as shortwave visible/UV light; surface absorbs it and reradiates longwave Infrared (IR).", "Greenhouse Gases (GHGs): $CO_2$, $CH_4$ (Methane), $N_2O$ (Nitrous Oxide), Water Vapor, HFCs.", "Global Warming Potential (GWP): Over a 20-year horizon, Methane has a GWP $\\sim 84\\times$ higher than $CO_2$; $N_2O$ is $\\sim 298\\times$ higher.", "Radiative Forcing: Net change in Earth's energy balance (measured in $W/m^2$)."], "mental_model": "Sitting inside a parked car in the summer with closed glass windows. Sunlight comes in freely; heat cannot escape.", "checkpoint": {"question": "Why does a greenhouse gas trap heat while regular oxygen (O2) and nitrogen (N2) do not?", "options": ["Heteroatomic molecules with 3+ atoms can bend and vibrate at infrared frequencies, absorbing and re-emitting thermal photons", "Greenhouse gases are physically heavier and sink to crush ground heat", "Oxygen molecules reflect all infrared light back into space", "Greenhouse gases contain tiny nuclear fire particles"], "correct_index": 0, "explanation": "Molecules with asymmetrical bonds ($CO_2, H_2O, CH_4$) vibrate at infrared wavelengths, absorbing thermal radiation that symmetrical $N_2$ and $O_2$ ignore."}}, {"id": "7.2", "title": "Thermal Expansion & Sea Level Rise", "eli15_takeaway": "Sea levels rise from two distinct physical causes: melting land ice pouring new water into the oceans, and warm water physically expanding like liquid in a thermometer.", "bullets": ["Steric Expansion: Warm water takes up more physical volume than cold water (~50% of 20th-century sea level rise).", "Land Ice Melt: Mountain glaciers, Greenland ice sheet, and Antarctic ice sheet add net mass to oceans (melting sea ice does NOT raise sea levels).", "Projected Rise: 0.5 to 1.0+ meters by 2100 under high emission scenarios, threatening mega-deltas (Bangladesh, Nile) and island nations."], "mental_model": "An ice cube already floating in a glass of water doesn't raise the water level when it melts. But taking an ice cube from the freezer and dropping it into the glass does.", "checkpoint": {"question": "Does the melting of floating Arctic sea ice directly cause global sea level rise?", "options": ["No, because floating ice already displaces a volume of water exactly equal to its own liquid mass (Archimedes principle)", "Yes, it accounts for 100% of all recorded sea level rise", "Yes, but only in tropical latitudes near the equator", "No, it actually causes sea levels to drop by ten meters"], "correct_index": 0, "explanation": "Archimedes' principle: floating ice already displaces its liquid equivalent weight. Only land-based ice melt (Greenland, glaciers) and thermal expansion raise sea level."}}, {"id": "7.3", "title": "Ecological Vulnerability & Phenological Shifts", "eli15_takeaway": "Climate disruption desynchronizes nature: flowers bloom before bees hatch, coral reefs bleach under warm water spikes, and disease-carrying mosquitoes move up mountains.", "bullets": ["Coral Bleaching: Corals expel their symbiotic, food-producing algae (zooxanthellae) when ocean water temperatures rise by just 1–2°C for consecutive weeks.", "Phenological Mismatch: Birds migrate according to day length, but insect prey emerges earlier due to spring temperature warming.", "Vector-Borne Diseases: Malaria and Dengue transmitting mosquitoes expand into higher altitudes and temperate latitudes."], "mental_model": "Arriving at a train station based on the winter schedule, but the train switched to summer timetable last week—you miss your connection completely.", "checkpoint": {"question": "What is the primary biological cause of coral reef bleaching during marine heatwaves?", "options": ["Corals expel their photosynthetic zooxanthellae endosymbionts due to thermal stress, starving the coral polyp and exposing its white skeleton", "Corals are painted white by deep-sea calcium mineral springs", "Corals hibernate during the summer by freezing their skin", "Predatory sharks consume the colored surface layer"], "correct_index": 0, "explanation": "Thermal stress destabilizes the symbiotic bond; corals eject zooxanthellae, losing their main food source and revealing the white calcium carbonate skeleton."}}]}, {"class_id": 8, "title": "Unexpected Climate Changes & Planetary Tipping Points", "pillar": "Climate Disruption, Tipping Points & Ocean Sinks", "summary": "Non-linear climate dynamics, self-amplifying feedback loops, and catastrophic planetary tipping elements like AMOC collapse, permafrost thaw, and Amazon dieback.", "submodules": [{"id": "8.1", "title": "Non-Linear Dynamics & Tipping Elements", "eli15_takeaway": "Climate change is not a smooth gradual ramp. At critical thresholds (tipping points), small incremental warming triggers rapid, unstoppable, irreversible shifts.", "bullets": ["Hysteresis: Once a system flips to an alternate state, cooling temperatures back to previous levels does NOT immediately restore the original state.", "Bifurcation: A stable equilibrium loses stability and transitions abruptly to a new baseline.", "Cascading Tipping Points: One collapse (e.g. Arctic ice loss) accelerates the next (e.g. permafrost methane release $\\rightarrow$ AMOC slowdown)."], "mental_model": "Tilting back in a chair: you can tilt 5 degrees, 10 degrees, 15 degrees and bounce back. At 16 degrees, you flip backward onto the floor and cannot recover without standing back up.", "checkpoint": {"question": "In Earth system science, what is meant by 'hysteresis' in the context of tipping points?", "options": ["The path to reverse a state change requires far more aggressive cooling than the threshold that triggered the collapse", "A temporary panic among meteorological scientists", "The complete absence of carbon atoms in ocean sediments", "The linear and predictable cooling of volcanic magma"], "correct_index": 0, "explanation": "Hysteresis means system recovery path differs from degradation path; crossing a tipping point locks in the altered state even if temperatures dip slightly."}}, {"id": "8.2", "title": "AMOC Shutdown (Atlantic Conveyor)", "eli15_takeaway": "The Atlantic Meridional Overturning Circulation is the giant ocean conveyor belt that pushes warm tropical water to Europe. Melting Greenland ice could stop it.", "bullets": ["Thermohaline Circulation: Cold, salty water is dense and sinks near Greenland and Norway, pulling warm Gulf Stream water northward.", "Freshwater Forcing: Rapid melting of the Greenland ice sheet dumps vast quantities of light, non-salty freshwater into the North Atlantic.", "Consequence: Fresh water does not sink; the conveyor belt stalls, causing severe cooling in Northern Europe and collapsing tropical monsoons."], "mental_model": "A central heating loop in a mansion. If the circulation pump breaks, the radiator in the master bedroom freezes solid while the boiler in the basement overheats.", "checkpoint": {"question": "Why does rapid melting of Greenland's ice sheet threaten to collapse the AMOC ocean conveyor belt?", "options": ["Freshwater is less dense than saline seawater, preventing surface water from sinking in the North Atlantic to drive the deep return current", "Melting ice releases giant icebergs that physically block the English Channel", "The cold water freezes all Atlantic shipping vessels in place", "Freshwater poisons the salt-loving engine motors of cargo ships"], "correct_index": 0, "explanation": "AMOC relies on high salinity and cold temperatures to make water dense enough to sink. Huge influxes of buoyant freshwater prevent downwelling."}}, {"id": "8.3", "title": "Permafrost Thaw & Arctic Albedo Decay", "eli15_takeaway": "Melting Arctic snow uncovers dark ground that absorbs more sunlight (albedo feedback), and thawing frozen soil unleashes massive burps of methane gas.", "bullets": ["Ice-Albedo Positive Feedback: White ice reflects ~80% of sunlight. When ice melts into dark open water (albedo ~10%), ocean absorbs 90% of heat, accelerating melt.", "Permafrost Carbon Bomb: Arctic permafrost stores ~1,500 billion tons of frozen organic carbon (twice what is currently in the entire atmosphere).", "Methanogenesis: Thawing waterlogged soils undergo anaerobic decomposition, emitting potent methane ($CH_4$) gas."], "mental_model": "Wearing a white t-shirt on a sunny day keeps you cool. If your shirt magically turns pitch black, you instantly start sweating twice as hard.", "checkpoint": {"question": "Why is the Arctic Ice-Albedo feedback loop classified as a positive feedback mechanism?", "options": ["Initial warming melts white reflective ice, exposing dark heat-absorbing ocean water, which causes even faster warming", "It generates positive economic growth for ice cream manufacturers", "It stops climate change by cooling the Earth's core", "It cleans pollution from Arctic atmospheric layers"], "correct_index": 0, "explanation": "A positive feedback amplifies and accelerates the initial perturbation: warming $\\rightarrow$ melting $\\rightarrow$ lower reflectivity $\\rightarrow$ more heat absorbed $\\rightarrow$ more warming."}}, {"id": "8.4", "title": "Amazon Rainforest Dieback", "eli15_takeaway": "The Amazon creates half of its own rain through forest evapotranspiration. If deforestation crosses 20–25%, the whole forest could dry out into a savanna.", "bullets": ["Flying Rivers: Amazon trees pump billions of tons of water vapor into the atmosphere daily, recycling moisture 5 to 6 times across South America.", "Tipping Threshold: Combining forest clearing with global warming disrupts this moisture conveyor, triggering self-sustaining forest fires.", "Savannization: The tropical rainforest collapses into dry, degraded grassland, transforming a massive global carbon sink into a carbon source."], "mental_model": "A sprinkler system that only runs when the lawn is green. If you kill a quarter of the lawn, the sprinkler shuts off and the rest of the grass withers.", "checkpoint": {"question": "What is the primary mechanism driving the Amazon rainforest dieback tipping point?", "options": ["Loss of canopy cover breaks the regional evapotranspiration moisture-recycling loop, causing progressive drying into a scrub savanna", "Invasive desert cactus plants choking all native tree roots", "Extraterrestrial solar flares specifically targeting South America", "Excessive rainfall causing all tree roots to drown simultaneously"], "correct_index": 0, "explanation": "The Amazon recycles its own precipitation through transpiration. Deforesting past critical thresholds destroys the moisture cycle, drying the basin into savanna."}}]}, {"class_id": 9, "title": "Carbon Sequestration: Terrestrial Sinks", "pillar": "Climate Disruption, Tipping Points & Ocean Sinks", "summary": "Mechanisms of biological carbon capture in forests, soil organic matter, biochar pyrolysis, and carbon flux accounting metrics.", "submodules": [{"id": "9.1", "title": "Forest Carbon Dynamics (GPP, NPP, NEP)", "eli15_takeaway": "Plants capture carbon through photosynthesis, but they also breathe out carbon. Net Ecosystem Productivity (NEP) is the real carbon that stays locked in the forest.", "bullets": ["Gross Primary Productivity (GPP): Total carbon fixed by plant photosynthesis.", "Net Primary Productivity (NPP): $NPP = GPP - R_{\\text{plant}}$ (carbon remaining for plant wood and leaf growth).", "Net Ecosystem Productivity (NEP): $NEP = NPP - R_{\\text{microbes/soil}}$ (net carbon stored after entire ecosystem respires).", "Afforestation (planting new trees where none existed) vs Reforestation (restoring cleared forests)."], "mental_model": "GPP is your gross salary. NPP is your salary after personal taxes. NEP is your net savings at the end of the month after all living expenses are paid.", "checkpoint": {"question": "Which metric measures the actual net rate of carbon accumulation in an entire forest ecosystem after accounting for plant and soil microbial respiration?", "options": ["Net Ecosystem Productivity (NEP)", "Gross Primary Productivity (GPP)", "Photosynthetic Quantum Yield", "Leaf Area Index (LAI)"], "correct_index": 0, "explanation": "NEP represents the true net carbon balance of the whole system: total fixed carbon minus all autotrophic and heterotrophic respiration."}}, {"id": "9.2", "title": "Soil Organic Carbon (SOC) & Regenerative Agriculture", "eli15_takeaway": "Soil holds more carbon than all plants and the atmosphere combined. Tilling soil lets carbon escape; cover crops and biochar lock it away for centuries.", "bullets": ["Soil Organic Matter (SOM): Decomposed roots, humus, and microbial residues storing stable carbon.", "Zero-Till Farming: Avoiding mechanical plowing preserves soil fungal networks (mycorrhizae) and stops carbon oxidation.", "Biochar: Pyrolyzing agricultural crop waste without oxygen creates porous, stable charcoal that stays locked in soil for 500+ years."], "mental_model": "Plowing soil is like opening a sealed jar of coffee beans—oxygen rushes in and the aroma (carbon) evaporates away into the room.", "checkpoint": {"question": "Why is biochar recognized as an exceptionally stable form of terrestrial carbon sequestration?", "options": ["Its recalcitrant aromatic carbon ring structure resists microbial and chemical breakdown in soil for centuries", "It dissolves instantly into pure nitrogen fertilizer", "It evaporates into the stratosphere to create artificial clouds", "It turns into liquid crude oil within six months"], "correct_index": 0, "explanation": "Pyrolysis locks biomass carbon into chemically stable polycyclic aromatic rings that soil microbes cannot readily decompose."}}, {"id": "9.3", "title": "Terrestrial Carbon Measurement & MRV", "eli15_takeaway": "To trade carbon credits, you must prove the carbon is actually there through Measurement, Reporting, and Verification (MRV).", "bullets": ["Allometric Equations: Calculating tree biomass and carbon content from Diameter at Breast Height (DBH) and tree height.", "Eddy Covariance Towers: High-precision flux towers that measure instantaneous $CO_2$ exchanges between forest canopy and air.", "Satellite LiDAR: Scanning vertical 3D forest canopy structure from space (e.g. NASA GEDI sensor)."], "mental_model": "A bank audit: You can't just claim you have a million dollars; an independent auditor must count the physical cash in the vault.", "checkpoint": {"question": "What is the primary purpose of an Eddy Covariance flux tower in environmental carbon monitoring?", "options": ["Directly measuring turbulent atmospheric eddies to quantify continuous vertical CO2 and water vapor exchanges between canopy and atmosphere", "Broadcasting radio television signals to local villages", "Pumping liquid carbon dioxide down into subterranean aquifers", "Spraying chemical fertilizer over tree canopies"], "correct_index": 0, "explanation": "Eddy covariance towers measure micro-scale turbulent air currents to calculate net carbon and moisture flux between ecosystems and the atmosphere."}}]}, {"class_id": 10, "title": "CDM, Carbon Markets & Ocean Sequestration", "pillar": "Climate Disruption, Tipping Points & Ocean Sinks", "summary": "Kyoto Protocol Clean Development Mechanism (CDM), additionality, deep ocean liquid CO2 injection, iron fertilization, and ocean acidification risks.", "submodules": [{"id": "10.1", "title": "Kyoto Protocol & The Clean Development Mechanism (CDM)", "eli15_takeaway": "Under the CDM, rich countries with emissions limits could fund clean energy projects in developing nations to earn Certified Emission Reduction (CER) credits.", "bullets": ["Additionality Principle: The emissions reduction MUST be something that would NOT have occurred under business-as-usual without the carbon credit funding.", "Baseline Scenario: The projected counterfactual emissions without the clean project.", "Certified Emission Reductions (CERs): 1 CER = 1 metric ton of $CO_2$ equivalent reduced.", "Criticisms: Fraudulent baselines, 'hot air' accounting, and lack of real sustainable community development."], "mental_model": "Paying your gym-rat buddy to run an extra 5 miles so you can tell your doctor that '5 miles were run on your behalf.'", "checkpoint": {"question": "Under the Clean Development Mechanism (CDM), what does the strict requirement of 'Additionality' dictate?", "options": ["The emissions reduction would not have occurred anyway under business-as-usual economic conditions without the credit revenue", "The company must add additional coal boilers to the project", "All carbon credits must be multiplied by two", "The project must hire additional international lawyers"], "correct_index": 0, "explanation": "Additionality ensures credit buyers are funding genuinely new, supplemental emissions cuts that would not have happened for commercial reasons alone."}}, {"id": "10.2", "title": "Ocean Sequestration: Deep-Sea Injection", "eli15_takeaway": "Scientists explored pumping liquid $CO_2$ thousands of meters under the ocean where extreme water pressure makes $CO_2$ denser than water, forming a deep-sea carbon lake.", "bullets": ["Phase Behavior: At ocean depths below 3,000 meters, liquid $CO_2$ becomes denser than ambient seawater.", "Gas Hydrates / Clathrates: Under high pressure and cold temperatures, $CO_2$ and water form solid ice-like crystalline cages (clathrate hydrates).", "Risks: Catastrophic overturn, seabed ecological destruction, and acceleration of deep benthic acidification."], "mental_model": "Dropping a lead weight into a swimming pool—it sinks straight to the tiled floor and stays there because of high density.", "checkpoint": {"question": "At what ocean depth does liquid carbon dioxide become denser than surrounding seawater, allowing it to pool on the ocean floor?", "options": ["Below approximately 3,000 meters", "At 10 meters depth", "Right on the surface waves", "Only inside shallow tidal pools"], "correct_index": 0, "explanation": "Due to high hydrostatic pressure and low water temperature, liquid $CO_2$ compresses to become denser than seawater at depths below ~3,000 m."}}, {"id": "10.3", "title": "Ocean Fertilization & The Iron Hypothesis", "eli15_takeaway": "Oceanographer John Martin famously said, 'Give me half a tanker of iron, and I will give you an ice age.' Dumping iron dust into nutrient-rich ocean zones triggers massive algae blooms that suck up carbon.", "bullets": ["HNLC Regions: High-Nutrient, Low-Chlorophyll waters (Southern Ocean, Subarctic Pacific) have ample nitrates and phosphates but lack dissolved iron.", "Iron Hypothesis: Iron is the micro-nutrient bottleneck. Adding soluble iron ($Fe$) triggers exponential diatom phytoplankton blooms.", "The Biological Pump: When billions of diatoms die, they sink to the abyssal seabed, carrying carbon down with them.", "Unintended Consequences: Oxygen minimum zones (anoxia), toxic algal blooms (domoic acid), disrupted marine food webs."], "mental_model": "Sprinkling yeast and sugar into a giant bowl of warm milk—the mixture violently froths up within minutes.", "checkpoint": {"question": "In ocean geoengineering, what is the role of iron in High-Nutrient Low-Chlorophyll (HNLC) zones?", "options": ["It acts as a limiting micronutrient; adding it stimulates rapid phytoplankton blooms that absorb dissolved CO2", "It acts as a poison that kills all marine life to stop respiration", "It builds giant iron bridges across the ocean", "It reacts with saltwater to create pure gold bars"], "correct_index": 0, "explanation": "Iron is an essential micronutrient for photosynthetic electron transport in diatoms; its scarcity caps algae growth in otherwise nutrient-rich HNLC waters."}}, {"id": "10.4", "title": "Ocean Acidification & Carbonate Chemistry", "eli15_takeaway": "The ocean absorbs 30% of human $CO_2$. In water, $CO_2$ turns into carbonic acid, stealing carbonate ions that shellfish and corals need to build their skeletons.", "bullets": ["Reaction: $CO_2 + H_2O \\rightleftharpoons H_2CO_3 \\rightleftharpoons H^+ + HCO_3^-$", "Proton Surge: Excess $H^+$ ions bind to free carbonate ions ($CO_3^{2-}$), creating bicarbonate ($HCO_3^-$).", "Shell Dissolution: Marine calcifiers (corals, oysters, pteropods / sea butterflies) cannot form aragonite/calcite shells ($Ca^{2+} + CO_3^{2-} \\rightarrow CaCO_3$).", "pH Drop: Ocean pH has already dropped from 8.2 to 8.1 (a 30% increase in acidity on the logarithmic pH scale)."], "mental_model": "Dropping a tooth into a glass of soda. The acid slowly corrodes and dissolves the enamel away until nothing is left.", "checkpoint": {"question": "How does ocean acidification chemically prevent shellfish and corals from building their protective shells?", "options": ["Excess hydrogen ions (H+) bind to free carbonate ions (CO3 2-), drastically lowering the saturation state of calcium carbonate", "Acid physically freezes all ocean surface water into dry ice", "Acid turns seawater into flammable kerosene fuel", "Acid evaporates all calcium atoms into the clouds"], "correct_index": 0, "explanation": "Acidification increases $H^+$ ions, which scavenge carbonate ions ($CO_3^{2-}$) to form bicarbonate, starving calcifying organisms of essential building blocks."}}]}, {"class_id": 11, "title": "Climate Technology Solutions", "pillar": "Cleantech, Green Computing & Industrial Engineering", "summary": "Engineering pathways for decarbonization: renewable systems, Carbon Capture Utilization & Storage (CCUS), Direct Air Capture (DAC), and solar geoengineering.", "submodules": [{"id": "11.1", "title": "Renewable Power Systems & Grid Storage", "eli15_takeaway": "Solar panels and wind turbines are clean and cheap, but because the sun sets and wind dies down, we need massive battery and pumped-hydro storage to keep the grid reliable 24/7.", "bullets": ["Solar Photovoltaics (PV): Shockley-Queisser theoretical efficiency limit (~33% for single-junction silicon).", "Wind Power: Betz Limit dictates that no wind turbine can capture more than 59.3% of the kinetic energy in wind.", "Intermittency & Grid Balancing: Duck Curve—solar flooding the grid at noon, followed by a steep ramp-up demand when the sun sets.", "Storage Technologies: Lithium iron phosphate (LFP), sodium-ion, pumped hydroelectric storage, and green hydrogen."], "mental_model": "Relying on rainwater collection: you have plenty of water on rainy days, but unless you have a giant storage tank in the basement, you have no water to wash dishes on sunny days.", "checkpoint": {"question": "What is the Betz limit in wind turbine aerodynamics?", "options": ["The theoretical maximum limit of 59.3% kinetic energy that can be extracted by an open wind turbine blade rotor", "The maximum height a turbine can stand before falling over", "The speed of sound for turbine blade tips", "The electrical resistance of copper wiring in generators"], "correct_index": 0, "explanation": "Albert Betz proved in 1919 that no turbine design can convert more than 16/27 (59.3%) of kinetic wind energy into mechanical shaft power."}}, {"id": "11.2", "title": "Carbon Capture, Utilization & Storage (CCUS) & DAC", "eli15_takeaway": "Point-source capture scrubs $CO_2$ directly out of smokestacks with chemical solvents, while Direct Air Capture (DAC) uses giant fans to suck dilute $CO_2$ right out of ambient outdoor air.", "bullets": ["Post-Combustion Capture: Passing flue gas through chemical amine solvents (e.g. Monoethanolamine MEA), which bind $CO_2$ and release it when heated.", "Oxy-Fuel Combustion: Burning fuel in pure oxygen instead of air, producing exhaust containing only $CO_2$ and water vapor (trivial separation).", "Direct Air Capture (DAC): Capturing $CO_2$ at 420 ppm out of thin air using solid basic filters (e.g. Climeworks); highly energy-intensive.", "Geological Mineralization: Injecting $CO_2$ into basalt rock formations (CarbFix in Iceland) where it reacts into solid stone within 2 years."], "mental_model": "Flue gas capture is scooping sugar out of a sugar bowl (15% concentration). DAC is finding single grains of sugar scattered across an entire soccer field (0.04% concentration).", "checkpoint": {"question": "Why is Direct Air Capture (DAC) significantly more energy-intensive than post-combustion smokestack capture?", "options": ["Ambient air has an extremely dilute CO2 concentration (~0.04% / 420 ppm) compared to flue gas (~12-15%), requiring massive thermodynamic work to concentrate", "Because ambient air contains dangerous explosive gases", "Because fans are legally required to run on diesel fuel", "Because outdoor air cannot be pumped through filters"], "correct_index": 0, "explanation": "Thermodynamics of separation: capturing a gas at 420 ppm requires vastly more energy and volume throughput than capturing from concentrated 150,000 ppm industrial exhaust."}}, {"id": "11.3", "title": "Solar Radiation Management (SRM) Geoengineering", "eli15_takeaway": "SRM doesn't remove carbon; it mimics a volcanic eruption by spraying sulfur particles into the upper atmosphere to bounce 1% of sunlight back into space and cool the planet immediately.", "bullets": ["Stratospheric Aerosol Injection (SAI): Dispersing sulfur dioxide ($SO_2$) in the stratosphere to create reflective sulfate aerosol haze.", "Marine Cloud Brightening: Spraying sea-salt aerosols over oceans to seed low reflective stratocumulus clouds.", "Termination Shock: If an SRM program is suddenly halted due to war or political breakdown, decades of masked warming rebound within months with catastrophic velocity.", "Governance & Moral Hazard: Critics warn SRM offers a dangerous excuse to avoid cutting fossil fuels while failing to solve ocean acidification."], "mental_model": "Taking fever-reducing medicine when you have a severe bacterial infection. It brings your temperature down, but the bacteria continue destroying your internal organs.", "checkpoint": {"question": "What is the critical risk known as 'Termination Shock' in Solar Radiation Management (SRM)?", "options": ["If sulfur spraying is suddenly interrupted, all masked greenhouse warming rebounds abruptly in a catastrophic multi-degree temperature surge over a few years", "The airplanes spraying sulfur run out of fuel mid-air", "The sun explodes from reflective mirror lasers", "The Earth stops spinning on its rotational axis"], "correct_index": 0, "explanation": "If high background GHG emissions continue under an SRM sun-shield and the shield suddenly halts, accumulated warming hits the planet in a violent, unbuffered shock."}}]}, {"class_id": 14, "title": "Green Computing & Sustainable ICT", "pillar": "Cleantech, Green Computing & Industrial Engineering", "summary": "Data center efficiency metrics, Power Usage Effectiveness (PUE), server virtualization, cooling architectures, and e-waste toxicity management.", "submodules": [{"id": "14.1", "title": "Data Center Efficiency & The PUE Metric", "eli15_takeaway": "Power Usage Effectiveness (PUE) measures how much electricity in a data center actually powers the servers versus being wasted on air conditioning and lighting.", "bullets": ["Formula: $PUE = \\frac{\\text{Total Facility Energy}}{\\text{IT Equipment Energy}}$", "Ideal PUE: 1.0 (every single watt powers compute chips; zero overhead for cooling or lighting).", "Traditional Data Centers: PUE ~1.8 to 2.0 (meaning for every 100W running servers, another 80-100W is burned on fans and chillers).", "Hyperscale Modern Facilities (Google, AWS): PUE ~1.1 to 1.15 using free-air economizers and machine learning cooling optimizations."], "mental_model": "Buying a pizza: A PUE of 2.0 means paying $10 for the pizza and another $10 for delivery fees and packaging. A PUE of 1.1 means paying $10 for the pizza and $1 for delivery.", "checkpoint": {"question": "If a data center consumes 20 Megawatts of total facility power, and its server compute racks consume 16 Megawatts, what is its PUE?", "options": ["1.25", "0.80", "2.00", "1.50"], "correct_index": 0, "explanation": "PUE = Total Facility Power / IT Power = 20 MW / 16 MW = 1.25."}}, {"id": "14.2", "title": "Cooling Architectures & Server Virtualization", "eli15_takeaway": "Traditional data centers blast cold air across a room like a giant refrigerator; modern green computing uses direct liquid cooling and server consolidation to slash energy use.", "bullets": ["Hot Aisle / Cold Aisle Containment: Physically sealing airflows so hot exhaust never mixes back into cold intake air.", "Direct-to-Chip Liquid Cooling: Circulating liquid coolant through micro-channels directly attached to CPU/GPU heat sinks (liquid transfers heat 25x better than air).", "Server Virtualization: Consolidating 20 underutilized physical servers running at 5% capacity into 1 physical server running at 70% capacity."], "mental_model": "Holding an ice pack directly against your forehead when you have a fever, instead of chilling the entire room down to 0 degrees with an air conditioner.", "checkpoint": {"question": "Why does server virtualization drastically reduce IT energy consumption?", "options": ["It consolidates workloads from multiple underutilized servers onto fewer physical machines, eliminating idle base power waste", "It makes computers run without any electricity", "It replaces silicon microchips with wooden gears", "It eliminates the need for software code"], "correct_index": 0, "explanation": "Idle servers still consume 50-60% of peak power. Virtualization runs fewer servers at higher load, turning off unnecessary hardware."}}, {"id": "14.3", "title": "E-Waste Lifecycles & Toxic Metallurgy", "eli15_takeaway": "Discarded smartphones and circuit boards contain valuable gold and copper, but also toxic lead, mercury, and flame retardants that poison soil if burned in informal scrap yards.", "bullets": ["Toxic Additives: Lead (Pb in older solders), Cadmium (rechargeable batteries), Mercury (switches, backlights), Brominated Flame Retardants (plastics).", "RoHS Directive: European restriction banning heavy metals (Pb, Hg, Cd, Cr6+) in electrical equipment.", "Urban Mining: Extracting precious metals (Au, Ag, Cu, Pt) from recycled e-waste requires 80% less energy than mining raw ore from the ground."], "mental_model": "A junked car: if you recycle the steel and copper engine properly, you save mountains of ore. If you set it on fire in your backyard, you breathe toxic battery fumes.", "checkpoint": {"question": "What is the primary objective of the international RoHS (Restriction of Hazardous Substances) directive?", "options": ["Banning toxic heavy metals like Lead, Mercury, and Cadmium from consumer electronic and electrical equipment", "Forcing all software engineers to work exclusively outdoors", "Banning all personal computers and smartphones", "Requiring all microchips to be manufactured out of edible food starch"], "correct_index": 0, "explanation": "RoHS restricts hazardous substances (Lead, Mercury, Cadmium, Hexavalent Chromium, PBBs, PBDEs) in electronic manufacturing to protect human health and recycling safety."}}]}, {"class_id": 15, "title": "Green Engineering & Industrial Ecology", "pillar": "Cleantech, Green Computing & Industrial Engineering", "summary": "The 12 Principles of Green Engineering (Anastas & Zimmerman), Life Cycle Assessment (LCA) methodology, and industrial symbiosis at Kalundborg.", "submodules": [{"id": "15.1", "title": "The 12 Principles of Green Engineering (Anastas & Zimmerman)", "eli15_takeaway": "Design products and processes so they are non-toxic by design, produce zero waste, are easy to disassemble, and use renewable inputs instead of fossil reserves.", "bullets": ["1. Inherent Rather than Circumstantial: Make molecules non-hazardous inherently, rather than adding safety equipment around dangerous chemicals.", "2. Prevention Instead of Treatment: Design processes that do not produce waste, instead of treating toxic waste at the end of the pipe.", "3. Design for Separation: Make products easy to disassemble into pure material streams.", "4. Maximize Mass, Energy, Space and Time Efficiency.", "5. Output-Pulled vs Input-Pushed: Lean on-demand production.", "6. Conserve Complexity: Don't spend high energy refining materials only to burn or shred them into garbage.", "7. Durability Rather than Immortality: Products should last as long as needed, but degrade harmlessly after use.", "8. Meet Need, Minimize Excess Capacity.", "9. Minimize Material Diversity: Don't use 15 incompatible plastics in one shampoo bottle.", "10. Integrate Local Material & Energy Flows.", "11. Design for Afterlife / Circularity.", "12. Renewable Rather than Depleting."], "mental_model": "Designing a Lego set: All blocks snap apart cleanly and can be rebuilt into a spaceship tomorrow, unlike gluing paper and plastic together with superglue.", "checkpoint": {"question": "What is the core meaning of 'Durability Rather Than Immortality' in the 12 Principles of Green Engineering?", "options": ["Products should perform reliably during their useful lifespan, but be designed to break down harmlessly in nature rather than persisting for 1,000 years in landfills", "Engineers must live forever without sleeping", "Every product must be manufactured out of indestructible titanium", "Machines should be designed to self-destruct after 48 hours"], "correct_index": 0, "explanation": "Materials like single-use plastic bottles persist for 500+ years ('immortality') for a 15-minute use. Green engineering designs targeted durability followed by biodegradation."}}, {"id": "15.2", "title": "Life Cycle Assessment (LCA)", "eli15_takeaway": "LCA calculates the total environmental damage of a product from the moment raw ore is dug out of the earth until it is buried in a landfill (cradle-to-grave) or recycled (cradle-to-cradle).", "bullets": ["Four ISO 14040 Steps: Goal & Scope Definition $\\rightarrow$ Inventory Analysis (LCI) $\\rightarrow$ Impact Assessment (LCIA) $\\rightarrow$ Interpretation.", "System Boundary: Defining what is inside the audit (raw material extraction, manufacturing, transportation, consumer usage phase, end-of-life disposal).", "Functional Unit: The standardized basis of comparison (e.g. 'drying 1,000 pairs of hands' comparing electric air blowers vs paper towels)."], "mental_model": "Tracing a pair of jeans: from the pesticide on the cotton farm in India, to the diesel ship sailing to Europe, to the washing machine electricity in your bathroom, to the landfill.", "checkpoint": {"question": "In a formal Life Cycle Assessment (LCA), what is the purpose of the 'Functional Unit'?", "options": ["Providing a standardized, quantifiable reference basis to fairly compare two fundamentally different products that perform the same service", "Measuring the physical weight of the laptop battery in grams", "Calculating the retail profit margin in euros", "Counting the number of factory workers on an assembly line"], "correct_index": 0, "explanation": "A functional unit ensures fair comparison (e.g. 'packaging 1,000 liters of milk' comparing glass bottles, plastic jugs, and paper cartons)."}}, {"id": "15.3", "title": "Industrial Symbiosis: Kalundborg Eco-Park", "eli15_takeaway": "At Kalundborg in Denmark, factories are piped together in a web where one company's waste steam, cooling water, and ash becomes the next company's free raw material.", "bullets": ["The Kalundborg Network: An electric power station, oil refinery, enzyme manufacturer, and plasterboard plant trade byproducts.", "Steam Exchange: Power station sends residual steam to heat the refinery and city homes, eliminating individual fossil heating boilers.", "Gypsum Recycling: Power plant flue-gas desulfurization produces synthetic gypsum ($CaSO_4$), which feeds the adjacent drywall plasterboard factory.", "Biological Sludge: Enzyme plant yeast waste is fermented into agricultural fertilizer for local Danish farms."], "mental_model": "A natural forest where nothing is thrown into a garbage bin: fallen autumn leaves feed soil fungi, fungi nourish tree roots, and trees provide shelter for birds.", "checkpoint": {"question": "How does the Kalundborg eco-industrial park in Denmark eliminate waste in its plasterboard manufacturing?", "options": ["The plasterboard factory uses synthetic gypsum recovered directly from the coal power plant's sulfur-scrubbing chimney filters", "It imports all materials by rocket from the Moon", "It dumps waste directly into the open ocean without treatment", "It burns all defective drywall in outdoor open bonfires"], "correct_index": 0, "explanation": "Instead of mining virgin natural gypsum, the plasterboard facility takes chemical gypsum byproduct generated by the power plant's flue-gas desulfurization scrubbers."}}]}, {"class_id": 12, "title": "Environmental Impact Assessment (EIA)", "pillar": "Environmental Governance, Law, Accounting & Ethics", "summary": "Legal framework, procedural milestones (Screening, Scoping, Baseline, Public Hearing, EMP), and the Indian EIA Notification 2006 regulatory protocols.", "submodules": [{"id": "12.1", "title": "EIA Concept & Procedural Stages", "eli15_takeaway": "EIA is a formal legal process that forces a company to study and predict all environmental damage of a proposed highway, dam, or mine BEFORE a single shovel touches the ground.", "bullets": ["Screening: Deciding if a project needs an EIA based on size, location, and potential hazard.", "Scoping: Determining the specific environmental boundaries, critical issues, and baseline terms of reference (TOR).", "Baseline Survey: Measuring existing air, water, flora, fauna, and noise levels across seasons.", "Public Hearing: Local affected citizens and tribal communities examine the draft report and submit formal objections.", "Environmental Management Plan (EMP): Legally binding mitigation measures the developer must build."], "mental_model": "Getting a comprehensive medical physical before running an ultra-marathon to make sure your heart and joints won't fail midway.", "checkpoint": {"question": "What is the primary purpose of the 'Scoping' stage in an Environmental Impact Assessment?", "options": ["Determining the comprehensive spatial boundaries, significant environmental issues, and Terms of Reference (TOR) for the study", "Demolishing all existing structures on the construction site", "Arresting protestors who attend the municipal meetings", "Issuing the final construction permit unconditionally"], "correct_index": 0, "explanation": "Scoping defines the Terms of Reference (TOR)—identifying which key ecological impacts and community concerns must be investigated in depth."}}, {"id": "12.2", "title": "Indian EIA Notification 2006 (Category A vs B)", "eli15_takeaway": "Under Indian environmental law, massive projects (Category A) must get clearance directly from the Central Ministry in Delhi, while smaller projects (Category B) go to State authorities.", "bullets": ["Category A: Cleared by Central Ministry of Environment, Forest and Climate Change (MoEFCC) on recommendation of Expert Appraisal Committee (EAC). Mandatory EIA.", "Category B: Evaluated by State Environmental Impact Assessment Authority (SEIAA).", "Category B1: Requires formal EIA study and public hearing.", "Category B2: Smaller, low-impact projects exempted from formal EIA and public hearings."], "mental_model": "Supreme Court vs State High Court: High-stakes national infrastructure cases go directly to the Supreme Court; local small claims stay at the district level.", "checkpoint": {"question": "Under the Indian EIA Notification 2006, which governmental authority grants Environmental Clearance for Category A projects?", "options": ["The Central Ministry of Environment, Forest and Climate Change (MoEFCC) in New Delhi", "The local municipal ward office", "The State Highway Transport Department", "The Village Panchayat Secretary"], "correct_index": 0, "explanation": "Category A projects carry significant national or interstate implications and require clearance at the central government level via MoEFCC."}}, {"id": "12.3", "title": "The Environmental Management Plan (EMP) & Monitoring", "eli15_takeaway": "An EIA is useless unless the builder actually follows the rules; the EMP is the legally binding contract specifying green belts, sewage plants, and air filters.", "bullets": ["Mitigation Hierarchy: Avoid impact $\\rightarrow$ Minimize impact $\\rightarrow$ Rectify/Remediate $\\rightarrow$ Compensate/Offset.", "EMP Components: Effluent treatment plant (ETP) capacity, acoustic sound barriers, ambient air quality sensors, green belt reforestation width.", "Post-Clearance Monitoring: Mandatory submission of compliance reports every six months to regional regulatory offices."], "mental_model": "A building code inspection: the architect can design a beautiful fire exit on paper, but if the inspector finds the door locked and blocked with boxes, the building gets shut down.", "checkpoint": {"question": "In the environmental mitigation hierarchy, what is always the preferred first-line priority?", "options": ["Avoiding the impact entirely through project redesign or site relocation", "Paying cash compensation to local residents after polluting", "Planting ornamental flowers along the driveway", "Buying television advertisements to improve corporate image"], "correct_index": 0, "explanation": "The mitigation hierarchy dictates: 1. Avoidance first, 2. Minimization second, 3. Restoration third, and 4. Offsetting only as an absolute last resort."}}]}, {"class_id": 13, "title": "Grassroots Environmental Movements in India", "pillar": "Environmental Governance, Law, Accounting & Ethics", "summary": "Historic grassroots environmental struggles in India: Chipko, Appiko, Silent Valley, Narmada Bachao Andolan, and the Bishnoi community sacrifice.", "submodules": [{"id": "13.1", "title": "The Chipko Movement (1973) & Appiko (1983)", "eli15_takeaway": "Villagers in the Himalayas literally wrapped their arms around forest trees, defying commercial loggers with their bare bodies to protect their watershed and livelihoods.", "bullets": ["Origin: Mandal village in Chamoli, Uttarakhand (1973); commercial ash trees sold to sporting goods manufacturers while denying wood to locals.", "Key Leaders: Gaura Devi, Sunderlal Bahuguna, Chandi Prasad Bhatt.", "Slogan: 'Ecology is permanent economy' (Sunderlal Bahuguna).", "Appiko Movement (1983): Karnataka's Western Ghats equivalent (Appiko means 'to hug' in Kannada); stopped clear-felling of tropical rainforests."], "mental_model": "A mother shielding her child with her own body when a stranger tries to take it away.", "checkpoint": {"question": "What core philosophy did Sunderlal Bahuguna champion during the Chipko Movement in Uttarakhand?", "options": ["'Ecology is permanent economy'", "'Industrial throughput supersedes nature'", "'Deforestation creates urban jobs'", "'Pave the mountains for sports cars'"], "correct_index": 0, "explanation": "Bahuguna famously asserted that forests provide soil, water, and pure air—the true permanent foundation of human economic survival."}}, {"id": "13.2", "title": "The Silent Valley Movement (1978)", "eli15_takeaway": "A rare victory where poets, schoolteachers, and scientists banded together to stop a giant hydroelectric dam and save an ancient virgin rainforest in Kerala.", "bullets": ["Location: Palakkad district, Kerala; Kundipuzha River valley.", "Threat: Proposed 120 MW hydroelectric dam that would submerge 8.3 km² of primary untouched tropical evergreen rainforest.", "Key Species: The endangered Lion-tailed macaque (Macaca silenus).", "Strategy: Kerala Sastra Sahitya Parishad (KSSP) mobilized mass public science education, street plays, and litigations.", "Outcome: Prime Minister Indira Gandhi scrapped the dam in 1983; declared Silent Valley National Park."], "mental_model": "David vs Goliath: A grassroots science club equipped with flyers and poetry defeating a billion-dollar state electricity board to save endangered monkeys.", "checkpoint": {"question": "Which endangered primate species became the international flagship conservation icon for the Silent Valley Movement?", "options": ["The Lion-tailed macaque (Macaca silenus)", "The Mountain Gorilla", "The Golden Snub-nosed monkey", "The Ring-tailed Lemur"], "correct_index": 0, "explanation": "The primary ecological argument against the dam was the destruction of the fragile habitat of the endangered Lion-tailed macaque."}}, {"id": "13.3", "title": "Narmada Bachao Andolan & The Bishnoi Community", "eli15_takeaway": "From the Bishnois sacrificing 363 lives to save trees in 1730, to Medha Patkar fighting displacement from mega-dams in the Narmada Valley, human rights and environmental protection are deeply intertwined.", "bullets": ["Bishnoi Community (1730): In Khejarli, Rajasthan, Amrita Devi and 363 Bishnoi villagers were decapitated while physically hugging sacred Khejri trees to protect them from the Maharaja's woodcutters.", "Narmada Bachao Andolan (NBA): Formed in 1985 by Medha Patkar and Baba Amte against the Sardar Sarovar Dam.", "Issues: Submergence of 245 villages, forced displacement of 250,000+ indigenous Adivasi residents without land-for-land rehabilitation.", "Global Impact: Forced the World Bank to conduct an independent review (Morse Committee) and withdraw funding in 1993."], "mental_model": "Standing up for someone whose house is being bulldozed without giving them anywhere else to sleep.", "checkpoint": {"question": "In 1730, why did Amrita Devi and 363 Bishnoi community members sacrifice their lives in Khejarli, Rajasthan?", "options": ["To defend sacred Khejri (Prosopis cineraria) trees from being cut down by the king's royal axemen", "During a conflict over gold mines in the Thar desert", "To build an ancient stone castle for the emperor", "To protest against agricultural tax increases"], "correct_index": 0, "explanation": "Amrita Devi declared: 'A chopped head is cheap if it saves a tree.' 363 Bishnois were martyred protecting sacred Khejri trees."}}]}, {"class_id": 16, "title": "Green Accounting & Natural Capital", "pillar": "Environmental Governance, Law, Accounting & Ethics", "summary": "Shortcomings of conventional GDP, Green GDP formulas, the UN System of Environmental-Economic Accounting (SEEA), and ecosystem valuation methods.", "submodules": [{"id": "16.1", "title": "Conventional GDP vs Green GDP", "eli15_takeaway": "Traditional GDP counts chopping down a forest as positive income, but ignores that the forest is now gone; Green GDP fixes this by deducting environmental destruction costs.", "bullets": ["Flaw of GDP: If an oil tanker crashes and spills, GDP goes UP because millions are spent on cleanup boats, lawyers, and hospital bills.", "Depreciation: Standard business accounting depreciates machinery wear-and-tear; traditional GDP treats Earth's resources as if they have infinite free replacement.", "Formula: $\\text{Green GDP} = \\text{Conventional GDP} - \\text{Environmental Degradation Costs} - \\text{Natural Resource Depletion}$"], "mental_model": "Emptying your bank savings account and spending it on parties. Your daily cash spending looks wealthy (GDP), but you are going bankrupt in the background.", "checkpoint": {"question": "Why does a major environmental catastrophe like an oil spill artificially inflate conventional GDP numbers?", "options": ["Gross Domestic Product tallies all monetary transactions for emergency cleanup, legal services, and vessel repair as positive economic activity", "Oil makes ocean waves move faster, speeding up international trade", "Because petroleum companies pay double salaries during disasters", "Disasters convert oil directly into central bank gold reserves"], "correct_index": 0, "explanation": "GDP measures throughput, not wealth. It counts cleanup spending as positive transactions while ignoring the catastrophic destruction of natural capital."}}, {"id": "16.2", "title": "UN System of Environmental-Economic Accounting (SEEA)", "eli15_takeaway": "SEEA is the internationally agreed rulebook for integrating natural assets (water reserves, forests, clean air) directly alongside national treasury accounts.", "bullets": ["Physical Accounts: Tracking material flows in physical units (megalitres of water extracted, cubic meters of timber felled).", "Asset Accounts: Measuring opening stock $\\rightarrow$ net additions $\\rightarrow$ reductions $\\rightarrow$ closing stock of natural capital.", "Ecosystem Accounts: Measuring ecosystem extent (hectares of wetlands) and ecosystem condition (water quality index)."], "mental_model": "A spreadsheet that balances both your money account and your pantry groceries, so you don't starve while bragging about having cash in your wallet.", "checkpoint": {"question": "What is the primary function of the UN SEEA (System of Environmental-Economic Accounting) framework?", "options": ["Providing a standardized international statistical standard to link environmental physical and monetary data to national economic accounts", "A police force that arrests factory managers who violate tax laws", "An international bank that prints physical green currency bills", "A space program that tracks satellites orbiting the moon"], "correct_index": 0, "explanation": "SEEA bridges national economic accounts with physical environmental metrics, creating an integrated view of ecological depletion and economic growth."}}, {"id": "16.3", "title": "Ecosystem Services Valuation Methods", "eli15_takeaway": "How do you put a price tag on a wetland or mountain view? Economists use travel costs, housing prices, or ask people what they would pay to save it.", "bullets": ["Direct Market Valuation: Price of timber, commercial fish harvest, or medicinal plants.", "Hedonic Pricing Method: Comparing house prices with clean lake views vs identical houses near noisy highways.", "Travel Cost Method: Calculating how much money and time tourists spend traveling to a national park to deduce its recreational economic value.", "Contingent Valuation: Surveying citizens directly on their 'Willingness to Pay' (WTP) to preserve an endangered habitat."], "mental_model": "Pricing your mother's home-cooked meals: the ingredients cost $5, but the time, love, and health benefits are worth hundreds.", "checkpoint": {"question": "Which valuation technique estimates the economic value of an environmental feature (like a clean park or quiet lake) by analyzing real estate property prices?", "options": ["Hedonic Pricing Method", "Contingent Valuation Method", "Travel Cost Method", "Carbon Border Adjustment Mechanism"], "correct_index": 0, "explanation": "Hedonic pricing isolates the price premium people pay for properties situated in cleaner, greener, quieter environmental surroundings."}}]}, {"class_id": 17, "title": "Sustainable Development Goals (SDGs)", "pillar": "Environmental Governance, Law, Accounting & Ethics", "summary": "Brundtland Commission definitions, evolution from MDGs to SDGs, the 17 goals and 169 targets of the 2030 Agenda, and critical implementation challenges.", "submodules": [{"id": "17.1", "title": "Historical Evolution: Brundtland to Rio+20", "eli15_takeaway": "Sustainable development means meeting our needs today without stealing the ability of our grandchildren to meet their own needs tomorrow.", "bullets": ["Brundtland Report (Our Common Future, 1987): Formalized the classic definition of sustainable development.", "Three Pillars of Sustainability: Economic Viability, Social Equity, Environmental Protection (Triple Bottom Line: People, Planet, Profit).", "Earth Summit (Rio 1992): Adopted Agenda 21, UNFCCC (Climate), and CBD (Biodiversity).", "Rio+20 (2012): Launched the process to replace the expiring MDGs with universal SDGs."], "mental_model": "Inheriting a family farm: You live off the fruit harvested from the trees, but you never chop down the fruit trees for quick firewood.", "checkpoint": {"question": "How did the 1987 UN Brundtland Commission ('Our Common Future') famously define sustainable development?", "options": ["Development that meets the needs of the present without compromising the ability of future generations to meet their own needs", "Maximizing industrial production at all costs regardless of biological impact", "Shutting down all human cities and returning to prehistoric hunter-gatherer existence", "Transferring all heavy manufacturing factories to the moon"], "correct_index": 0, "explanation": "The Brundtland definition centers on inter-generational equity: current generations must not deplete resources in ways that cripple future generations."}}, {"id": "17.2", "title": "The 17 SDGs & 169 Targets (2030 Agenda)", "eli15_takeaway": "Adopted by all 193 UN nations in 2015, the 17 SDGs are a global master checklist to end poverty, fight inequality, and protect the planet by 2030.", "bullets": ["SDG 6: Clean Water and Sanitation.", "SDG 7: Affordable and Clean Energy.", "SDG 11: Sustainable Cities and Communities.", "SDG 12: Responsible Consumption and Production.", "SDG 13: Climate Action.", "SDG 14: Life Below Water.", "SDG 15: Life on Land.", "Universal Scope: Unlike MDGs (which only targeted developing countries), SDGs apply to every country, rich or poor."], "mental_model": "A pilot's 17-point pre-flight checklist. You cannot take off safely if you only check the fuel (economy) while ignoring the broken rudder (climate action).", "checkpoint": {"question": "What fundamental structural difference distinguishes the 2015 Sustainable Development Goals (SDGs) from the earlier Millennium Development Goals (MDGs)?", "options": ["SDGs are universal and apply to all nations (developed and developing alike), whereas MDGs focused primarily on developing nations", "MDGs dealt with space exploration while SDGs deal with ocean fishing", "SDGs were written exclusively for commercial multinational banks", "MDGs contained 500 goals while SDGs only contain 3"], "correct_index": 0, "explanation": "MDGs had a donor-recipient lens for developing countries; SDGs universally require rich and poor nations to transform domestic consumption and inequality."}}, {"id": "17.3", "title": "SDG Trade-offs & Critical Appraisals", "eli15_takeaway": "The 17 goals can clash with each other: growing the economy (SDG 8) often burns more energy and threatens nature (SDG 13 and 15) unless decoupled.", "bullets": ["Synergies vs Trade-offs: Expanding agricultural irrigation (SDG 2 Zero Hunger) can deplete clean freshwater aquifers (SDG 6).", "Decoupling: Breaking the link between economic GDP growth and environmental resource throughput.", "Criticisms: 169 targets are overly broad, non-binding with no legal penalties, and allow countries to 'cherry-pick' easy targets while ignoring hard climate commitments."], "mental_model": "Trying to gain muscle (economic growth) while on a zero-calorie fast (zero emissions)—unless you find a smart protein alternative (green tech), you collapse.", "checkpoint": {"question": "In sustainability science, what does 'decoupling' mean?", "options": ["Increasing economic output and human wellbeing while steadily decreasing environmental damage and resource consumption", "Divorcing your business partner to avoid paying taxes", "Disconnecting all electrical appliances during thunderstorms", "Uncoupling rail freight cars to reduce train weight"], "correct_index": 0, "explanation": "Decoupling aims to separate economic progress from resource extraction and ecological destruction through circularity and efficiency."}}]}, {"class_id": 18, "title": "Natural Resource Accounting (NRA) & Geospatial Systems", "pillar": "Environmental Governance, Law, Accounting & Ethics", "summary": "Millennium Ecosystem Assessment (MA 2005) frameworks, provisioning/regulating/cultural services, and spatial accounting using GIS.", "submodules": [{"id": "18.1", "title": "Millennium Ecosystem Assessment (MA 2005) Framework", "eli15_takeaway": "Nature provides four categories of free services: things we take (provisioning), natural controls (regulating), life support (supporting), and joy/spiritual peace (cultural).", "bullets": ["1. Provisioning Services: Tangible goods—food, fresh water, timber, fiber, medicinal plants.", "2. Regulating Services: Climate control, flood regulation by wetlands, pollination of crops by wild bees, water purification.", "3. Supporting Services: Underlying foundations—soil formation, nutrient cycling, primary biomass production.", "4. Cultural Services: Ecotourism, spiritual connection, mental health, recreation."], "mental_model": "A hotel resort: Room and room service food (provisioning); Air conditioning and fire alarms (regulating); The building's structural concrete foundation (supporting); The sunset view from the pool deck (cultural).", "checkpoint": {"question": "Under the Millennium Ecosystem Assessment (MA 2005), which category includes crop pollination by wild bees and flood buffering by coastal mangroves?", "options": ["Regulating Services", "Provisioning Services", "Cultural Services", "Financial Liquidity Services"], "correct_index": 0, "explanation": "Regulating services maintain environmental stability: pollination, pest management, air quality, flood buffering, and climate moderation."}}, {"id": "18.2", "title": "Natural Resource Asset Accounting (Water, Forest, Minerals)", "eli15_takeaway": "Asset accounting measures the opening volume of a resource, subtracts what humans extracted or destroyed, adds what regenerated, and shows the closing balance.", "bullets": ["Physical Balance Equation: $\\text{Closing Stock} = \\text{Opening Stock} + \\text{Natural Growth} - \\text{Extraction} - \\text{Catastrophic Losses}$.", "Forest Accounts: Total timber volume ($m^3$) and carbon stocks across forest canopy density classes.", "Water Accounts: Inflow (precipitation, river inflow) versus outflow (evapotranspiration, agricultural abstraction, industrial withdrawal)."], "mental_model": "A warehouse inventory check: Count the pallets on Monday morning, subtract what trucks shipped out, add new factory deliveries, and see what is left on Friday.", "checkpoint": {"question": "What is the primary role of a Physical Natural Resource Asset Account?", "options": ["Tracking physical volume changes (opening stock, depletion, natural replenishment, closing stock) of ecological capital over accounting periods", "Printing stock certificates for Wall Street traders", "Replacing physical timber with virtual cryptocurrency tokens", "Measuring the speed of sound through water pipes"], "correct_index": 0, "explanation": "Physical asset accounts track physical quantities ($m^3$, tons, hectares) over time to ensure extraction rates do not exceed replenishment."}}, {"id": "18.3", "title": "Geospatial NRA Integration & Land Use Matrices", "eli15_takeaway": "Natural resource accounting is far more accurate when combined with satellite maps, showing exactly where forests turned into cities and where wetlands dried up.", "bullets": ["Land Use / Land Cover (LULC) Transition Matrix: Cross-tabulating pixel changes between two satellite image dates (e.g. 2015 vs 2025).", "Spatially Explicit Accounting: Overlaying economic concession maps over watershed buffer boundaries.", "Ecosystem Degradation Hotspots: Identifying areas where ecosystem service provision has collapsed due to urban fragmentation."], "mental_model": "A time-lapse satellite map of a town: you see farmland turn into housing subdivisions, and the blue pond turn into a grey concrete parking lot.", "checkpoint": {"question": "What does a Land Use Land Cover (LULC) Transition Matrix display in geospatial environmental accounting?", "options": ["The exact hectare conversions from each land category (e.g., dense forest, farmland, wetland) to other categories across two time periods", "The speed of tectonic plate movement under mountain ranges", "The price of real estate mortgages in city centers", "The number of airplanes landing at national airports"], "correct_index": 0, "explanation": "A transition matrix quantifies how many hectares shifted from one land category to another (e.g., forest converted to agriculture or urban built-up)."}}]}, {"class_id": 19, "title": "Environmental Ethics & Wetland Conservation", "pillar": "Environmental Governance, Law, Accounting & Ethics", "summary": "Philosophical environmental ethics, the Ramsar Convention on Wetlands, wetland ecological criteria, and the 5 recognized wetland classifications.", "submodules": [{"id": "19.1", "title": "Environmental Ethics: Anthropocentrism vs Biocentrism", "eli15_takeaway": "Anthropocentrism says nature only matters if it is useful to humans; Biocentrism says every living creature has a right to live simply because it exists.", "bullets": ["Anthropocentrism: Human-centered ethics. Nature has instrumental value only (resources to exploit or scenery to enjoy).", "Biocentrism: Life-centered ethics. All living organisms have intrinsic moral value, regardless of whether humans find them useful.", "Ecocentrism: Ecosystem-centered ethics (Aldo Leopold's Land Ethic). The entire biotic community (soil, water, plants, animals) has moral standing.", "Intergenerational Justice: Moral obligations to unborn human generations who inherit our environmental consequences."], "mental_model": "A tree in a forest: Anthropocentrism asks 'How much can I sell this lumber for?' Ecocentrism says 'That tree is a home for birds, a sponge for soil water, and has a right to stand.'", "checkpoint": {"question": "What distinguishes Ecocentrism from Anthropocentrism in environmental philosophy?", "options": ["Ecocentrism grants intrinsic moral standing to entire ecological systems (soil, water, species), whereas Anthropocentrism values nature solely for human utility", "Ecocentrism demands that all humans be deported to outer space", "Anthropocentrism states that trees are superior to humans", "There is no difference between the two concepts"], "correct_index": 0, "explanation": "Ecocentrism views humans as plain members of the broader biotic community, granting intrinsic moral rights to ecosystems as integrated wholes."}}, {"id": "19.2", "title": "The Ramsar Convention on Wetlands (1971)", "eli15_takeaway": "Signed in Ramsar, Iran, this international treaty protects wetlands because they act as Earth's natural kidneys (filtering water) and sponges (preventing floods).", "bullets": ["Origin: Ramsar, Iran (1971); the oldest modern global intergovernmental environmental conservation treaty.", "Definition of Wetlands: Areas of marsh, fen, peatland, or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish, or salt, including marine water up to 6 meters depth at low tide.", "Montreux Record: A register of Ramsar wetland sites where ecological character has changed or is threatened by human pollution or development.", "Wise Use Principle: Sustainable utilization of wetlands for human benefit in ways compatible with maintenance of natural ecosystem properties."], "mental_model": "Earth's kidneys and shock absorbers: wetlands purify toxic water runoff and soak up hurricane storm surges before they hit cities.", "checkpoint": {"question": "Under the Ramsar Convention, what is the maximum depth of marine water at low tide included in the formal definition of a wetland?", "options": ["Six meters", "One hundred meters", "Fifty meters", "One kilometer"], "correct_index": 0, "explanation": "Article 1.1 of the Ramsar Convention includes marine waters where the depth does not exceed six meters at low tide."}}, {"id": "19.3", "title": "The 5 Major Wetland Classifications & Ecosystem Roles", "eli15_takeaway": "Wetlands come in five main flavors: ocean coastlines, river mouths, lakes, rivers, and marshes/swamps, providing nurseries for fish and storing huge amounts of carbon.", "bullets": ["1. Marine Wetlands: Coastal lagoons, rocky shores, coral reefs.", "2. Estuarine Wetlands: Deltas, tidal marshes, mangrove swamps where freshwater rivers meet the sea.", "3. Lacustrine Wetlands: Wetlands associated with permanent lakes.", "4. Riverine Wetlands: Wetlands along rivers and streams (floodplains).", "5. Palustrine Wetlands: Marshes, swamps, bogs, fens with non-flowing water.", "Blue Carbon: Mangroves, salt marshes, and seagrasses bury carbon up to 40x faster than tropical terrestrial rainforests."], "mental_model": "Coastal mangroves: A thick woven bamboo fence standing in water that blunts giant ocean waves and provides a safe kindergarten crib for baby fish.", "checkpoint": {"question": "Which category of wetlands describes deltas, tidal marshes, and mangrove forests where freshwater rivers mix with saline ocean tides?", "options": ["Estuarine Wetlands", "Lacustrine Wetlands", "Riverine Wetlands", "Palustrine Wetlands"], "correct_index": 0, "explanation": "Estuarine wetlands occur at estuaries where rivers meet the sea, characterized by fluctuating tidal salinity gradients (mangroves, deltas, tidal marshes)."}}]}], "case_studies": [{"id": "cs-2070", "name": "Letter Written in Year 2070 (Planetary Dystopia)", "class_id": 1, "pillar": "Planetary Foundations & Human Pressures", "what_happened": "In a projected 2070 dystopia, severe water exhaustion forces human rationing down to half a glass per day. People pay taxes for oxygen (137 m³/day). Severe ozone decay causes 20-year-olds to physically look like 85-year-olds with wrinkled, ulcerated skin and kidney failure. Water tanks require armed military escorts.", "root_cause": "Unchecked consumption of fresh groundwater, complete deforestation of planetary carbon sinks, and atmospheric ozone depletion caused by ignoring mid-20th century ecological warnings.", "takeaway": "Water and air are non-negotiable biological essentials with fixed planetary limits. Once natural hydrological cycles collapse, synthetic technological substitutes (desalination) cannot prevent societal collapse."}, {"id": "cs-easter-island", "name": "The Collapse of Easter Island (Rapa Nui)", "class_id": 2, "pillar": "Planetary Foundations & Human Pressures", "what_happened": "A thriving Polynesian society settled Easter Island ~300 AD with rich palm forests, fertile soils, and seabird colonies. Over centuries, they clear-cut every palm tree on the island for agriculture, timber, and rolling giant Moai stone statues. By 1722, the island was an eroded, treeless wasteland with starving tribal warfare.", "root_cause": "Exceeding the carrying capacity ($K$) of an isolated island ecosystem: deforestation caused rapid topsoil erosion, destroying crop yields, while the loss of timber eliminated ocean canoes, cutting off deep-sea fishing.", "takeaway": "Earth is an isolated island in space. When resource consumption outpaces natural replenishment, civilizational collapse follows inevitably once ecological thresholds are crossed."}, {"id": "cs-baltic-sea", "name": "Baltic Sea Cyanobacteria Bloom (HAB)", "class_id": 2, "pillar": "Planetary Foundations & Human Pressures", "what_happened": "In July 2003, satellite MODIS sensors captured massive swirls of toxic blue-green cyanobacteria (Nodularia) covering tens of thousands of square kilometers across the Baltic Sea, creating dead zones that suffocated fish and closed European tourist beaches.", "root_cause": "Heavy non-point agricultural fertilizer runoff (excess nitrates and phosphates) draining into a semi-enclosed shallow sea, combined with calm warm summer surface waters (eutrophication).", "takeaway": "Ecosystem nutrient loops are tightly coupled: synthetic fertilizer spread on inland farm fields causes toxic biological dead zones hundreds of miles downstream in ocean basins."}, {"id": "cs-bhopal", "name": "Bhopal Gas Tragedy (1984)", "class_id": 5, "pillar": "Earth Observation & Biogeochemical Dynamics", "what_happened": "On the night of December 2–3, 1984, over 40 metric tons of lethal Methyl Isocyanate (MIC) gas leaked from Union Carbide India Limited's pesticide plant in Bhopal, Madhya Pradesh, into densely populated residential neighborhoods, killing over 3,800 immediately and permanently disabling 500,000+ residents.", "root_cause": "Catastrophic corporate safety negligence: water entered Tank 610 triggering an exothermic reaction; safety backup systems (refrigeration cooler, caustic soda scrubber, flare tower) had been turned off or were under-maintained to cut operating costs.", "takeaway": "Industrial chemical facilities require fail-safe, redundant engineering and strict public accountability. The disaster led to India's Environment (Protection) Act 1986 and modern industrial liability laws."}, {"id": "cs-chernobyl", "name": "Chernobyl Nuclear Meltdown (1986)", "class_id": 5, "pillar": "Earth Observation & Biogeochemical Dynamics", "what_happened": "On April 26, 1986, Reactor No. 4 at the Chernobyl Nuclear Power Plant in Ukraine exploded during a botched low-power safety test. The steam and graphite explosions blew the 1,000-ton reactor roof off, releasing 400 times more radioactive fallout than Hiroshima across Europe and forcing the evacuation of 350,000 people.", "root_cause": "A fatal combination of an inherently flawed Soviet RBMK reactor design (positive void coefficient and graphite-tipped control rods) and operators overriding emergency automatic shutdown protocols during an unauthorized test.", "takeaway": "Complex technological systems cannot rely on operational human discipline alone; designs must be inherently safe (fail-safe by physical laws) rather than circumstantial."}, {"id": "cs-minamata", "name": "Minamata Disease & Heavy Metal Bioaccumulation (1956)", "class_id": 5, "pillar": "Earth Observation & Biogeochemical Dynamics", "what_happened": "In Minamata City, Japan, cats began convulsing and falling into the sea, followed by hundreds of humans developing severe slurred speech, ataxia, involuntary tremors, and blindness. Babies were born with congenital cerebral palsy. Over 2,200 victims were officially certified and thousands died.", "root_cause": "Chisso Corporation discharged industrial wastewater containing inorganic mercury into Minamata Bay. Anaerobic bacteria methylated it into lipid-soluble methylmercury ($CH_3Hg^+$), which biomagnified thousands of times up the food chain into fish consumed daily by local fishing families.", "takeaway": "Persistent chemical pollutants do not dilute harmlessly into the ocean; biological food webs actively concentrate toxic heavy metals, delivering lethal doses to apex predators and humans. Inspired the global Minamata Convention on Mercury (2013)."}, {"id": "cs-london-smog", "name": "The Great London Smog of 1952", "class_id": 5, "pillar": "Earth Observation & Biogeochemical Dynamics", "what_happened": "From December 5 to 9, 1952, a dense, pungent yellow-black fog blanketed London so thickly that visibility was reduced to a few feet, movie theaters closed because screens could not be seen, and ambulanced ceased running. Medical records later confirmed approximately 12,000 respiratory deaths.", "root_cause": "Unchecked burning of high-sulfur soft coal in millions of residential fireplaces and power stations, coinciding with an anticyclonic weather thermal inversion that created a static ceiling trapping cold sulfur dioxide and soot in city streets.", "takeaway": "Urban airsheds have finite capacity. Proved that atmospheric pollution kills on a mass scale, directly catalyzing the world's first modern air quality statute: the UK Clean Air Act 1956."}, {"id": "cs-love-canal", "name": "Love Canal Chemical Burial Disaster (1978)", "class_id": 5, "pillar": "Earth Observation & Biogeochemical Dynamics", "what_happened": "In Niagara Falls, New York, residents of the Love Canal neighborhood noticed black sludge oozing into basements, yards corroding, and children developing high rates of miscarriages, leukemia, and birth defects. President Carter declared an unprecedented federal health emergency, evacuating 900 families.", "root_cause": "Hooker Chemical Company dumped 21,800 metric tons of toxic halogenated chemical waste and carcinogens (dioxin) into an abandoned canal trench, covered it with clay, and sold the land to the school board for $1. An elementary school and housing were built directly on top.", "takeaway": "Burying persistent toxic waste without impervious liners or monitoring is an environmental time-bomb. Directly led to the US Superfund (CERCLA) Act holding polluters strictly liable for hazardous waste cleanups."}, {"id": "cs-aral-sea", "name": "Aral Sea Desiccation (The Disappearing Inland Sea)", "class_id": 5, "pillar": "Earth Observation & Biogeochemical Dynamics", "what_happened": "Once the 4th largest lake in the world (68,000 km²), the Aral Sea in Central Asia shrank by over 90% in volume, turning into a desolate desert known as the Aralkum Desert. Former fishing harbors like Moynaq now sit stranded 100 kilometers away from water with rusty fishing ships stuck in sand dunes.", "root_cause": "Soviet central planners diverted the Amu Darya and Syr Darya feeding rivers in the 1960s through unlined, leaky desert canals to irrigate water-intensive cotton monoculture in the desert.", "takeaway": "Engineering water diversions without ecological basin modeling creates irreversible ecological bankruptcy. The dry seabed now blows millions of tons of salt-and-pesticide dust storms, devastating regional public health."}, {"id": "cs-indian-movements", "name": "Grassroots Indian Forest & River Movements (Chipko, Silent Valley, Narmada)", "class_id": 13, "pillar": "Environmental Governance, Law, Accounting & Ethics", "what_happened": "In 1973, mountain women in Uttarakhand hugged ash trees to block commercial axemen (Chipko). In 1978, scientists and schoolteachers stopped the Kundipuzha dam in Kerala to save the pristine Silent Valley rainforest. From 1985, Medha Patkar led Adivasi villagers in peaceful protests against submergence by the Sardar Sarovar Dam.", "root_cause": "Top-down commercial exploitation of forests and mega-dam construction that dispossessed local forest-dwelling and tribal communities of their traditional livelihoods and clean watersheds without rehabilitation.", "takeaway": "True environmental protection in India is inherently a human rights and social justice struggle. Indigenous and local communities are the most effective stewards of natural ecosystems when legally empowered."}, {"id": "cs-kalundborg", "name": "Kalundborg Eco-Industrial Symbiosis (Denmark)", "class_id": 15, "pillar": "Cleantech, Green Computing & Industrial Engineering", "summary": "The world's premier operational benchmark for circular industrial ecology.", "what_happened": "Over four decades, a cluster of separate companies in Kalundborg, Denmark (Asnæs power station, Equinor oil refinery, Novo Nordisk biotech plant, Gyproc plasterboard, and the municipality) built an interconnected network of physical byproduct pipelines.", "root_cause": "Businesses collaborated locally to turn waste costs into raw material revenue: waste steam warms homes and refineries; coal sulfur-scrubbing gypsum feeds drywall manufacture; biological yeast sludge fertilizes 1,000 hectares of farmland.", "takeaway": "Industrial systems can mimic natural ecological food webs where waste does not exist. Material and energy loops can be closed to produce high corporate profits while drastically reducing planetary resource extraction."}, {"id": "cs-ramsar-wetlands", "name": "The Ramsar Convention on Wetlands (1971)", "class_id": 19, "pillar": "Environmental Governance, Law, Accounting & Ethics", "what_happened": "Wetlands were historically treated as useless, disease-infested wastelands to be drained and paved over. In 1971 in Ramsar, Iran, nations signed the first modern intergovernmental treaty to protect wetlands across the globe, establishing international conservation criteria and the Montreux Record for endangered wetlands.", "root_cause": "Rapid global destruction of freshwater marshes, peatlands, and coastal mangroves for urban development and agriculture, which destroyed planetary water filtration and exacerbated catastrophic flood disasters.", "takeaway": "Wetlands are Earth's primary kidneys and carbon sinks. Conserving wetlands through the Ramsar 'Wise Use' principle delivers trillions of dollars in free flood protection, groundwater recharge, and biodiversity refuges."}], "cheat_sheet": [{"category": "Core Formulas & Laws", "title": "IPAT Equation", "formula": "I = P \\times A \\times T", "explanation": "Environmental Impact (I) equals Population (P) multiplied by Affluence/Consumption (A) multiplied by Technology factor (T)."}, {"category": "Core Formulas & Laws", "title": "Normalized Difference Vegetation Index (NDVI)", "formula": "NDVI = \\frac{NIR - Red}{NIR + Red}", "explanation": "Healthy green vegetation reflects strongly in Near-Infrared (NIR) and absorbs Red for photosynthesis. Values range from -1.0 to +1.0."}, {"category": "Core Formulas & Laws", "title": "Power Usage Effectiveness (PUE)", "formula": "PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}", "explanation": "Efficiency metric for data centers. Ideal score is 1.0 (all power feeds computing, zero overhead lost to cooling or transformers)."}, {"category": "Core Formulas & Laws", "title": "Green GDP Formula", "formula": "\\text{Green GDP} = \\text{GDP} - \\text{Environmental Degradation} - \\text{Natural Resource Depletion}", "explanation": "Adjusts traditional national output by subtracting costs of ecosystem depletion and pollution damage."}, {"category": "Core Formulas & Laws", "title": "Ecosystem Carbon Balance", "formula": "NEP = GPP - (R_{\\text{autotrophic}} + R_{\\text{heterotrophic}})", "explanation": "Net Ecosystem Productivity equals Gross Primary Productivity minus autotrophic plant respiration and heterotrophic microbial soil respiration."}, {"category": "Core Formulas & Laws", "title": "First & Second Laws of Thermodynamics", "formula": "\\Delta U = Q - W \\quad \\text{and} \\quad \\Delta S_{\\text{universe}} > 0", "explanation": "Energy cannot be created or destroyed; in every transformation (trophic transfer), useful energy degrades into low-grade dispersed heat."}]};
+
+    // State
+    let currentPillar = 1;
+    let currentClassId = 1;
+    let currentView = "curriculum"; // "curriculum", "case-studies", "cheat-sheet", "search"
+    let completedSubmodules = new Set(JSON.parse(localStorage.getItem("est_completed_subs") || "[]"));
+
+    // DOM Elements
+    const pillarTabs = document.getElementById("pillar-tabs");
+    const classPills = document.getElementById("class-pills");
+    const viewHeader = document.getElementById("view-header");
+    const viewTitle = document.getElementById("view-title");
+    const viewDesc = document.getElementById("view-desc");
+    const contentContainer = document.getElementById("content-container");
+    const searchInput = document.getElementById("search-input");
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    const themeLabel = document.getElementById("theme-label");
+    const progressFill = document.getElementById("progress-fill");
+
+    // Initialize Theme
+    function initTheme() {
+      const savedTheme = localStorage.getItem("est_theme") || "light";
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+        themeIcon.textContent = "☀️";
+        themeLabel.textContent = "Light";
+      } else {
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
+        themeIcon.textContent = "🌙";
+        themeLabel.textContent = "Dark";
+      }
+    }
+
+    themeToggle.addEventListener("click", () => {
+      const isDark = document.documentElement.classList.contains("dark");
+      if (isDark) {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+        themeIcon.textContent = "🌙";
+        themeLabel.textContent = "Dark";
+        localStorage.setItem("est_theme", "light");
+      } else {
+        document.documentElement.classList.remove("light");
+        document.documentElement.classList.add("dark");
+        themeIcon.textContent = "☀️";
+        themeLabel.textContent = "Light";
+        localStorage.setItem("est_theme", "dark");
+      }
+    });
+
+    // Update Progress
+    function updateProgress() {
+      const total = DB.metadata.submodules_count || 63;
+      const count = completedSubmodules.size;
+      const pct = Math.round((count / total) * 100);
+      progressFill.style.width = pct + "%";
+    }
+
+    function toggleSubmoduleCompletion(subId, btn) {
+      if (completedSubmodules.has(subId)) {
+        completedSubmodules.delete(subId);
+        btn.classList.remove("checked");
+        btn.innerHTML = "<span>○</span> Mark Complete";
+      } else {
+        completedSubmodules.add(subId);
+        btn.classList.add("checked");
+        btn.innerHTML = "<span>✓</span> Completed";
+      }
+      localStorage.setItem("est_completed_subs", JSON.stringify([...completedSubmodules]));
+      updateProgress();
+    }
+
+    // Render Classes within Pillar
+    function renderClassPills() {
+      classPills.innerHTML = "";
+      if (currentView !== "curriculum") {
+        classPills.style.display = "none";
+        return;
+      }
+      classPills.style.display = "flex";
+
+      const pillarObj = DB.pillars.find(p => p.id === currentPillar);
+      if (!pillarObj) return;
+
+      pillarObj.classes.forEach(cid => {
+        const c = DB.classes.find(cl => cl.class_id === cid);
+        if (!c) return;
+        const pill = document.createElement("button");
+        pill.className = "class-pill" + (cid === currentClassId ? " active" : "");
+        pill.textContent = `Class ${c.class_id}: ${c.title.split(':')[0].replace('Class-', '')}`;
+        pill.addEventListener("click", () => {
+          currentClassId = cid;
+          renderClassPills();
+          renderCurrentClassContent();
+        });
+        classPills.appendChild(pill);
+      });
+    }
+
+    // Render Curriculum Class Content
+    function renderCurrentClassContent() {
+      const c = DB.classes.find(cl => cl.class_id === currentClassId);
+      if (!c) return;
+
+      viewTitle.textContent = `Class ${c.class_id}: ${c.title}`;
+      viewDesc.textContent = c.summary;
+
+      let html = `<div class="submodule-grid">`;
+      c.submodules.forEach(sub => {
+        const isDone = completedSubmodules.has(sub.id);
+        html += `
+          <div class="submodule-card" id="sub-${sub.id}">
+            <div class="card-top">
+              <div class="card-badges">
+                <span class="badge-subid">MODULE ${sub.id}</span>
+                <span class="badge-readtime">⚡ 2 min bite</span>
+              </div>
+              <button class="btn-complete ${isDone ? 'checked' : ''}" onclick="toggleSubmoduleCompletion('${sub.id}', this)">
+                <span>${isDone ? '✓' : '○'}</span> ${isDone ? 'Completed' : 'Mark Complete'}
+              </button>
+            </div>
+
+            <h2 class="submodule-title">${sub.title}</h2>
+
+            <div class="callout-eli15">
+              <div class="callout-label">ELI15 Core Takeaway</div>
+              <div class="callout-text">${sub.eli15_takeaway}</div>
+            </div>
+
+            <ul class="bullets-list">
+              ${sub.bullets.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+
+            <div class="mental-box">
+              <span class="mental-icon">💡</span>
+              <div class="mental-desc"><strong>Mental Model:</strong> ${sub.mental_model}</div>
+            </div>
+
+            <div class="checkpoint-wrap">
+              <div class="checkpoint-hdr"><span>⚡</span> Instant Recall Checkpoint</div>
+              <div class="checkpoint-q">${sub.checkpoint.question}</div>
+              <div class="checkpoint-options" id="cp-opts-${sub.id.replace('.', '-')}">
+                ${sub.checkpoint.options.map((opt, idx) => `
+                  <button class="cp-opt" onclick="handleCheckpoint('${sub.id}', ${idx}, ${sub.checkpoint.correct_index}, '${encodeURIComponent(sub.checkpoint.explanation)}', this)">
+                    ${opt}
+                  </button>
+                `).join('')}
+              </div>
+              <div class="cp-feedback" id="cp-fb-${sub.id.replace('.', '-')}"></div>
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+      contentContainer.innerHTML = html;
+
+      // Re-trigger KaTeX rendering for math
+      if (window.renderMathInElement) {
+        renderMathInElement(contentContainer, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\(', right: '\)', display: false},
+            {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    // Checkpoint Handler
+    window.handleCheckpoint = function(subId, selectedIdx, correctIdx, encodedExpl, btn) {
+      const safeId = subId.replace('.', '-');
+      const container = document.getElementById(`cp-opts-${safeId}`);
+      const feedback = document.getElementById(`cp-fb-${safeId}`);
+      const expl = decodeURIComponent(encodedExpl);
+
+      const buttons = container.querySelectorAll(".cp-opt");
+      buttons.forEach((b, idx) => {
+        b.classList.add("disabled");
+        if (idx === correctIdx) {
+          b.classList.add("correct");
+        }
+      });
+
+      if (selectedIdx === correctIdx) {
+        btn.classList.add("correct");
+        feedback.className = "cp-feedback show";
+        feedback.style.background = "var(--success-bg)";
+        feedback.style.color = "var(--success)";
+        feedback.innerHTML = `<strong>✓ Correct!</strong> ${expl}`;
+        // Auto mark as complete if not yet
+        const card = document.getElementById(`sub-${subId}`);
+        const compBtn = card.querySelector(".btn-complete");
+        if (!completedSubmodules.has(subId)) {
+          toggleSubmoduleCompletion(subId, compBtn);
+        }
+      } else {
+        btn.classList.add("wrong");
+        feedback.className = "cp-feedback show";
+        feedback.style.background = "var(--danger-bg)";
+        feedback.style.color = "var(--danger)";
+        feedback.innerHTML = `<strong>✗ Not quite.</strong> ${expl}`;
+      }
+    };
+
+    // Render Case Studies Hub
+    function renderCaseStudies() {
+      viewTitle.textContent = "Case Study Hub: 12 Landmark Historical Incidents";
+      viewDesc.textContent = "Structured 3-part breakdowns (What Happened → The Root Cause → The Takeaway) for exams and real-world retention.";
+
+      let html = `<div class="case-grid">`;
+      DB.case_studies.forEach(cs => {
+        html += `
+          <div class="case-card">
+            <div>
+              <span class="badge-subid" style="margin-bottom: 8px; display: inline-block;">CLASS ${cs.class_id} CASE STUDY</span>
+              <h3 class="case-title">${cs.name}</h3>
+              
+              <div class="case-section">
+                <div class="case-label what">What Happened</div>
+                <div class="case-text">${cs.what_happened}</div>
+              </div>
+
+              <div class="case-section">
+                <div class="case-label cause">The Root Cause</div>
+                <div class="case-text">${cs.root_cause}</div>
               </div>
             </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Course Overview & Planetary Vision (Year 2070)
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Environmental science fundamentals, global sustainability vision, IPCC scenarios, decarbonization roadmap to Year 2070, and planetary boundaries.
-            </p>
-          </div>
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>54 slides</span>
-              <span>1 simulator</span>
-              <span>40 mins</span>
+            <div class="case-section" style="border-top: 1px solid var(--border); padding-top: 10px; margin-top: 10px;">
+              <div class="case-label takeaway">The Takeaway & Fix</div>
+              <div class="case-text">${cs.takeaway}</div>
             </div>
-            <a href="Study_Material/01_course_overview_vision_2070.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (54 slides) →
-            </a>
           </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 02</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+        `;
+      });
+      html += `</div>`;
+      contentContainer.innerHTML = html;
+
+      if (window.renderMathInElement) {
+        renderMathInElement(contentContainer, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\(', right: '\)', display: false},
+            {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    // Render Cheat Sheet
+    function renderCheatSheet() {
+      viewTitle.textContent = "Formula & Law Cheat Sheet";
+      viewDesc.textContent = "Key ecological laws, mathematical indices (IPAT, NDVI, PUE, Green GDP), and thermodynamic equations.";
+
+      let html = `<div class="cheat-grid">`;
+      DB.cheat_sheet.forEach(item => {
+        html += `
+          <div class="cheat-card">
+            <span class="badge-subid" style="margin-bottom: 8px; display: inline-block;">${item.category}</span>
+            <h3 class="cheat-title">${item.title}</h3>
+            <div class="cheat-formula">$$${item.formula}$$</div>
+            <p class="cheat-desc">${item.explanation}</p>
+          </div>
+        `;
+      });
+      html += `</div>`;
+      contentContainer.innerHTML = html;
+
+      if (window.renderMathInElement) {
+        renderMathInElement(contentContainer, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\(', right: '\)', display: false},
+            {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    // Search Execution
+    function handleSearch(q) {
+      q = q.trim().toLowerCase();
+      if (!q) {
+        renderPillarView(currentPillar);
+        return;
+      }
+
+      currentView = "search";
+      classPills.style.display = "none";
+      viewTitle.textContent = `Search Results for "${q}"`;
+
+      let matches = [];
+      DB.classes.forEach(c => {
+        c.submodules.forEach(sub => {
+          const textCorpus = (sub.title + " " + sub.eli15_takeaway + " " + sub.bullets.join(" ") + " " + sub.mental_model).toLowerCase();
+          if (textCorpus.includes(q)) {
+            matches.push({
+              type: "submodule",
+              class_id: c.class_id,
+              class_title: c.title,
+              data: sub
+            });
+          }
+        });
+      });
+
+      DB.case_studies.forEach(cs => {
+        const csCorpus = (cs.name + " " + cs.what_happened + " " + cs.root_cause + " " + cs.takeaway).toLowerCase();
+        if (csCorpus.includes(q)) {
+          matches.push({
+            type: "case_study",
+            data: cs
+          });
+        }
+      });
+
+      viewDesc.textContent = `Found ${matches.length} matching item(s) across the 19 lecture slide decks.`;
+
+      if (matches.length === 0) {
+        contentContainer.innerHTML = `<div style="text-align: center; padding: 60px 20px; color: var(--text-muted);">No results found matching "${q}". Try searching for "carbon", "NDVI", "Bhopal", "PUE", or "EIA".</div>`;
+        return;
+      }
+
+      let html = `<div class="submodule-grid">`;
+      matches.forEach(m => {
+        if (m.type === "submodule") {
+          const sub = m.data;
+          const isDone = completedSubmodules.has(sub.id);
+          html += `
+            <div class="submodule-card" id="sub-${sub.id}">
+              <div class="card-top">
+                <div class="card-badges">
+                  <span class="badge-subid">CLASS ${m.class_id} • MODULE ${sub.id}</span>
+                  <span class="badge-readtime">${m.class_title}</span>
+                </div>
+                <button class="btn-complete ${isDone ? 'checked' : ''}" onclick="toggleSubmoduleCompletion('${sub.id}', this)">
+                  <span>${isDone ? '✓' : '○'}</span> ${isDone ? 'Completed' : 'Mark Complete'}
+                </button>
               </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Comprehending Our Environment: Earth Spheres & Thermodynamics
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Atmosphere, Hydrosphere, Lithosphere, Biosphere interactions; solar radiation budget, thermodynamic equilibrium, greenhouse effect, and biotic-abiotic couplings.
-            </p>
-          </div>
-
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>57 slides</span>
-              <span>1 simulator</span>
-              <span>55 mins</span>
-            </div>
-            <a href="Study_Material/02_comprehending_environment_spheres.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (57 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 03</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>1 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
+              <h2 class="submodule-title">${sub.title}</h2>
+              <div class="callout-eli15">
+                <div class="callout-label">ELI15 Core Takeaway</div>
+                <div class="callout-text">${sub.eli15_takeaway}</div>
               </div>
+              <ul class="bullets-list">
+                ${sub.bullets.map(b => `<li>${b}</li>`).join('')}
+              </ul>
             </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Environmental Issues, Anthropogenic Pressures & Pollution
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Air and water pollution, soil degradation, industrial effluents, particulate matter ($PM_{2.5}, PM_{10}$), eutrophication, acid rain, and ecological footprint.
-            </p>
-          </div>
+          `;
+        } else if (m.type === "case_study") {
+          const cs = m.data;
+          html += `
+            <div class="submodule-card" style="border-left: 3px solid #C2410C;">
+              <span class="badge-subid" style="margin-bottom: 8px; display: inline-block;">CASE STUDY • CLASS ${cs.class_id}</span>
+              <h2 class="submodule-title">${cs.name}</h2>
+              <p style="font-size: 13px; margin-bottom: 8px;"><strong>What Happened:</strong> ${cs.what_happened}</p>
+              <p style="font-size: 13px; margin-bottom: 8px;"><strong>Root Cause:</strong> ${cs.root_cause}</p>
+              <p style="font-size: 13px; color: var(--accent);"><strong>Takeaway:</strong> ${cs.takeaway}</p>
+            </div>
+          `;
+        }
+      });
+      html += `</div>`;
+      contentContainer.innerHTML = html;
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>34 slides</span>
-              <span>1 simulator</span>
-              <span>45 mins</span>
-            </div>
-            <a href="Study_Material/03_environmental_issues_anthropogenic_pressures.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (34 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 04</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Remote Sensing & GIS in Environmental Technology
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Electromagnetic spectrum, multispectral satellite sensors (Landsat, Sentinel, MODIS), false color composites (FCC), NDVI vegetation indices, spatial resolution, and GIS mapping.
-            </p>
-          </div>
+      if (window.renderMathInElement) {
+        renderMathInElement(contentContainer, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\(', right: '\)', display: false},
+            {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>18 slides</span>
-              <span>1 simulator</span>
-              <span>60 mins</span>
-            </div>
-            <a href="Study_Material/04_remote_sensing_gis_monitoring.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (18 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 05</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>2 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Landmark Environmental Events, Crises & Disasters
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Bhopal Gas Tragedy (MIC), Chernobyl nuclear disaster, Minamata disease (Mercury bioaccumulation), London Smog 1952, Exxon Valdez, Deepwater Horizon, and policy impacts.
-            </p>
-          </div>
+    searchInput.addEventListener("input", (e) => {
+      handleSearch(e.target.value);
+    });
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>30 slides</span>
-              <span>1 simulator</span>
-              <span>45 mins</span>
-            </div>
-            <a href="Study_Material/05_environmental_events_crises_disasters.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (30 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 06</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>4 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Earth Components, Biogeochemical Cycles & Ecological Systems
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Carbon, Nitrogen, Phosphorus, and Hydrological cycles; ecological succession, energy pyramids, trophic levels, homeostasis, and ecosystem resilience.
-            </p>
-          </div>
+    // Pillar Navigation Click
+    function renderPillarView(pId) {
+      currentView = "curriculum";
+      currentPillar = pId;
+      const pillarObj = DB.pillars.find(p => p.id === currentPillar);
+      if (pillarObj && !pillarObj.classes.includes(currentClassId)) {
+        currentClassId = pillarObj.classes[0];
+      }
+      renderClassPills();
+      renderCurrentClassContent();
+    }
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>41 slides</span>
-              <span>1 simulator</span>
-              <span>50 mins</span>
-            </div>
-            <a href="Study_Material/06_earth_components_biogeochemical_cycles.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (41 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 07</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>3 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Climate Change Impacts, Global Warming & Vulnerability
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Radiative forcing, global temperature anomalies, cryosphere melt (Greenland, Antarctica), sea-level rise modeling, extreme weather events, and socioeconomic vulnerability.
-            </p>
-          </div>
+    pillarTabs.addEventListener("click", (e) => {
+      const tab = e.target.closest(".pillar-tab");
+      if (!tab) return;
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>31 slides</span>
-              <span>1 simulator</span>
-              <span>50 mins</span>
-            </div>
-            <a href="Study_Material/07_climate_change_impacts_vulnerability.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (31 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 08</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>4 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Unexpected Climate Changes, Non-Linear Tipping Points & Feedback Loops
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              AMOC collapse risk, permafrost thaw and methane feedback, albedo degradation, runaway greenhouse dynamics, hysteresis loops, and catastrophic shifts.
-            </p>
-          </div>
+      document.querySelectorAll(".pillar-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>30 slides</span>
-              <span>1 simulator</span>
-              <span>55 mins</span>
-            </div>
-            <a href="Study_Material/08_unexpected_climate_changes_tipping_points.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (30 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 09</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>3 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Carbon Sequestration & Terrestrial Sinks
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Biological carbon pumps, afforestation/reforestation, soil organic carbon (SOC), biochar, geological carbon capture & storage (CCS), enhanced weathering, and capacity math.
-            </p>
-          </div>
+      const pId = tab.dataset.pillar;
+      const v = tab.dataset.view;
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>34 slides</span>
-              <span>1 simulator</span>
-              <span>45 mins</span>
-            </div>
-            <a href="Study_Material/09_carbon_sequestration_terrestrial_sinks.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (34 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 10</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>2 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Clean Development Mechanism (CDM) & Ocean Sequestration
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Kyoto Protocol Article 12, Certified Emission Reductions (CERs), additionality criteria, carbon trading markets; deep ocean $CO_2$ injection, iron fertilization, and ocean acidification risks.
-            </p>
-          </div>
+      if (pId) {
+        renderPillarView(parseInt(pId, 10));
+      } else if (v === "case-studies") {
+        currentView = "case-studies";
+        classPills.style.display = "none";
+        renderCaseStudies();
+      } else if (v === "cheat-sheet") {
+        currentView = "cheat-sheet";
+        classPills.style.display = "none";
+        renderCheatSheet();
+      }
+    });
 
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>54 slides</span>
-              <span>1 simulator</span>
-              <span>50 mins</span>
-            </div>
-            <a href="Study_Material/10_cdm_carbon_markets_ocean_sequestration.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (54 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 11</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Climate Change Technology Solutions & Clean Tech Innovations
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Direct Air Capture (DAC), solar radiation management (SRM), green hydrogen, renewable grids, energy storage thermodynamics, circular bio-economy, and decarbonization metrics.
-            </p>
-          </div>
-
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>29 slides</span>
-              <span>1 simulator</span>
-              <span>45 mins</span>
-            </div>
-            <a href="Study_Material/11_climate_technology_solutions_cleantech.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (29 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 12</span>
-              <div class="flex items-center gap-1.5">
-                <span class='badge-neutral px-2 py-0.5 rounded text-[10px] font-mono'>1 video</span>
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Advanced</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Environmental Impact Assessment (EIA): Framework & Protocols
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Screening, Scoping, Baseline data collection, Impact Prediction, Environmental Management Plan (EMP), public consultation, Leopold matrix, Batelle environmental evaluation, and post-project monitoring.
-            </p>
-          </div>
-
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>32 slides</span>
-              <span>1 simulator</span>
-              <span>50 mins</span>
-            </div>
-            <a href="Study_Material/12_eia_framework_methodology_protocols.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (32 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 13</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Beginner</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Environmental Movements: Grassroots Ecology & Forest Conservation
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Bishnoi movement (sacred Khejri trees), Chipko movement (Sunderlal Bahuguna, Gaura Devi, Chandi Prasad Bhatt), Appiko movement in Western Ghats, Silent Valley agitation, Narmada Bachao Andolan (Medha Patkar), and legal-ecological citizen activism.
-            </p>
-          </div>
-
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>15 slides</span>
-              <span>1 simulator</span>
-              <span>35 mins</span>
-            </div>
-            <a href="Study_Material/13_environmental_movements_grassroots_ecology.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (15 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 14</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Green Computing, IT Environmental Impacts & Sustainable Electronics
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Life cycle of IT hardware: conflict mineral extraction (coltan, neodymium), manufacturing energy, Moore's Law vs. Wirth's Law, embodied carbon, data center energy efficiency, Power Usage Effectiveness (PUE), virtualization, dynamic voltage scaling (DVFS), and global e-waste management (Basel Convention).
-            </p>
-          </div>
-
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>35 slides</span>
-              <span>1 simulator</span>
-              <span>45 mins</span>
-            </div>
-            <a href="Study_Material/14_green_computing_sustainable_ict.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (35 slides) →
-            </a>
-          </div>
-        </div>
-        
-        <div class="eco-card p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="badge-emerald px-2 py-0.5 rounded text-xs font-mono font-medium">Module 15</span>
-              <div class="flex items-center gap-1.5">
-                
-                <span class="badge-neutral px-2 py-0.5 rounded text-[10px] font-mono">Intermediate</span>
-              </div>
-            </div>
-            <h3 class="text-base font-semibold text-white mb-2">
-              Green Engineering: Principles, Frameworks & Industrial Ecology
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-2">
-              Paul Anastas & Julie Zimmerman's 12 Principles of Green Engineering: inherently non-hazardous design, life cycle assessment (LCA), atom economy, waste minimization, renewable feedstocks, industrial symbiosis (Kalundborg model), and cradle-to-cradle material circularity.
-            </p>
-          </div>
-
-          <div class="pt-3 border-t border-[#18261f]">
-            <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3 font-mono">
-              <span>28 slides</span>
-              <span>1 simulator</span>
-              <span>45 mins</span>
-            </div>
-            <a href="Study_Material/15_green_engineering_industrial_ecology.html" class="block w-full py-2 px-3 rounded text-center text-xs font-medium bg-[#0a110e] border border-[#18261f] hover:border-emerald-700 text-emerald-300 transition-colors">
-              Open module (28 slides) →
-            </a>
-          </div>
-        </div>
-        
-    </div>
-  </section>
-
+    // Boot
+    initTheme();
+    updateProgress();
+    renderClassPills();
+    renderCurrentClassContent();
+  </script>
 </body>
 </html>

@@ -16,3 +16,10 @@ Research_Papers_Study/
 # Scratch Inspection Scripts
 inspect_*.py
 
+# Cloned Subprojects
+EST-Project/
+
+# Temp Word lock files
+~$*
+.agents/
+
