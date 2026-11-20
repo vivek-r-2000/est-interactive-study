@@ -39,6 +39,9 @@ def build_website():
       --success-bg: #EAF7EE;
       --danger: #992828;
       --danger-bg: #FDF0F0;
+      --bridge-bg: #F0F4F8;
+      --bridge-border: #3B82F6;
+      --bridge-text: #1E40AF;
     }}
 
     html.dark {{
@@ -61,6 +64,9 @@ def build_website():
       --success-bg: #142820;
       --danger: #F87171;
       --danger-bg: #2B1515;
+      --bridge-bg: #13202E;
+      --bridge-border: #60A5FA;
+      --bridge-text: #93C5FD;
     }}
 
     * {{ box-sizing: border-box; margin: 0; padding: 0; }}
@@ -262,6 +268,41 @@ def build_website():
       font-weight: 600;
     }}
 
+    /* Act Bar for Class 11 */
+    .act-bar {{
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      border-bottom: 1px dashed var(--border);
+    }}
+    .act-pill {{
+      flex-shrink: 0;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }}
+    .act-pill:hover {{
+      border-color: var(--border-accent);
+      color: var(--text);
+    }}
+    .act-pill.active {{
+      background: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+      font-weight: 600;
+    }}
+    html.dark .act-pill.active {{
+      color: #121413;
+    }}
+
     /* Overview Header */
     .view-header {{
       margin-bottom: 24px;
@@ -281,7 +322,7 @@ def build_website():
       color: var(--text-muted);
     }}
 
-    /* Submodule Card Deck */
+    /* Submodule & Slide Card Deck */
     .submodule-grid {{
       display: grid;
       grid-template-columns: 1fr;
@@ -309,6 +350,7 @@ def build_website():
       display: flex;
       align-items: center;
       gap: 8px;
+      flex-wrap: wrap;
     }}
     .badge-subid {{
       font-size: 11px;
@@ -317,6 +359,14 @@ def build_website():
       padding: 2px 6px;
       background: var(--tag-bg);
       color: var(--tag-text);
+      border-radius: 4px;
+    }}
+    .badge-act {{
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 6px;
+      background: var(--accent-soft);
+      color: var(--accent-text);
       border-radius: 4px;
     }}
     .badge-readtime {{
@@ -340,6 +390,32 @@ def build_website():
       border-color: var(--success);
       color: var(--success);
       font-weight: 600;
+    }}
+
+    /* Continuity Bridge */
+    .continuity-bridge {{
+      background: var(--bridge-bg);
+      border-left: 3px solid var(--bridge-border);
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+      font-size: 12px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }}
+    .bridge-tag {{
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--bridge-text);
+      flex-shrink: 0;
+    }}
+    .bridge-text {{
+      color: var(--text);
+      font-style: italic;
+      line-height: 1.45;
     }}
 
     .submodule-title {{
@@ -611,6 +687,9 @@ def build_website():
     <!-- CLASS PILLS -->
     <div class="class-bar" id="class-pills"></div>
 
+    <!-- ACT FILTER BAR (FOR CLASS 11) -->
+    <div class="act-bar" id="act-bar" style="display: none;"></div>
+
     <!-- VIEW HEADER -->
     <div class="view-header" id="view-header">
       <h1 class="view-title" id="view-title">Pillar 1: Planetary Foundations & Human Pressures</h1>
@@ -628,12 +707,14 @@ def build_website():
     // State
     let currentPillar = 1;
     let currentClassId = 1;
+    let currentActFilter = "ALL";
     let currentView = "curriculum"; // "curriculum", "case-studies", "cheat-sheet", "search"
     let completedSubmodules = new Set(JSON.parse(localStorage.getItem("est_completed_subs") || "[]"));
 
     // DOM Elements
     const pillarTabs = document.getElementById("pillar-tabs");
     const classPills = document.getElementById("class-pills");
+    const actBar = document.getElementById("act-bar");
     const viewHeader = document.getElementById("view-header");
     const viewTitle = document.getElementById("view-title");
     const viewDesc = document.getElementById("view-desc");
@@ -682,7 +763,7 @@ def build_website():
       const total = DB.metadata.submodules_count || 63;
       const count = completedSubmodules.size;
       const pct = Math.round((count / total) * 100);
-      progressFill.style.width = pct + "%";
+      progressFill.style.width = Math.min(100, pct) + "%";
     }}
 
     function toggleSubmoduleCompletion(subId, btn) {{
@@ -704,6 +785,7 @@ def build_website():
       classPills.innerHTML = "";
       if (currentView !== "curriculum") {{
         classPills.style.display = "none";
+        actBar.style.display = "none";
         return;
       }}
       classPills.style.display = "flex";
@@ -719,6 +801,7 @@ def build_website():
         pill.textContent = `Class ${{c.class_id}}: ${{c.title.split(':')[0].replace('Class-', '')}}`;
         pill.addEventListener("click", () => {{
           currentClassId = cid;
+          currentActFilter = "ALL";
           renderClassPills();
           renderCurrentClassContent();
         }});
@@ -726,7 +809,7 @@ def build_website():
       }});
     }}
 
-    // Render Curriculum Class Content
+    // Render Current Class Content
     function renderCurrentClassContent() {{
       const c = DB.classes.find(cl => cl.class_id === currentClassId);
       if (!c) return;
@@ -734,6 +817,14 @@ def build_website():
       viewTitle.textContent = `Class ${{c.class_id}}: ${{c.title}}`;
       viewDesc.textContent = c.summary;
 
+      // Special Slidewise Rendering for Class 11 (29 slides)
+      if (c.class_id === 11 && c.slides && c.slides.length > 0) {{
+        renderClass11Slides(c);
+        return;
+      }}
+
+      // Standard Submodule Rendering for other classes
+      actBar.style.display = "none";
       let html = `<div class="submodule-grid">`;
       c.submodules.forEach(sub => {{
         const isDone = completedSubmodules.has(sub.id);
@@ -782,8 +873,100 @@ def build_website():
       }});
       html += `</div>`;
       contentContainer.innerHTML = html;
+      triggerKaTeX();
+    }}
 
-      // Re-trigger KaTeX rendering for math
+    // Render Class 11 Slidewise Deck with Narrative Acts & Continuity
+    function renderClass11Slides(c) {{
+      actBar.style.display = "flex";
+      actBar.innerHTML = "";
+
+      const acts = [
+        {{ id: "ALL", label: "All 29 Slides" }},
+        {{ id: "Act 1", label: "Act 1: Nature's Sponges (1–5)" }},
+        {{ id: "Act 2", label: "Act 2: Earth Chemistry (6–7)" }},
+        {{ id: "Act 3", label: "Act 3: Artificial Trees & DAC (8–16)" }},
+        {{ id: "Act 4", label: "Act 4: Food & Farming (17–19, 25–28)" }},
+        {{ id: "Act 5", label: "Act 5: Clean Propulsion & IT (21–23)" }},
+        {{ id: "Act 6", label: "Act 6: Space & AI Frontier (20, 24, 29)" }}
+      ];
+
+      acts.forEach(a => {{
+        const btn = document.createElement("button");
+        btn.className = "act-pill" + (currentActFilter === a.id ? " active" : "");
+        btn.textContent = a.label;
+        btn.addEventListener("click", () => {{
+          currentActFilter = a.id;
+          renderClass11Slides(c);
+        }});
+        actBar.appendChild(btn);
+      }});
+
+      let filteredSlides = c.slides;
+      if (currentActFilter !== "ALL") {{
+        filteredSlides = c.slides.filter(s => s.act.startsWith(currentActFilter));
+      }}
+
+      let html = `<div class="submodule-grid">`;
+      filteredSlides.forEach(s => {{
+        const slideId = `11.${{s.slide_num}}`;
+        const isDone = completedSubmodules.has(slideId);
+        html += `
+          <div class="submodule-card" id="sub-${{slideId}}">
+            <div class="card-top">
+              <div class="card-badges">
+                <span class="badge-subid">SLIDE ${{s.slide_num}} / 29</span>
+                <span class="badge-act">${{s.act.split(':')[0]}}</span>
+                <span class="badge-readtime">⚡ 2 min bite</span>
+              </div>
+              <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{slideId}}', this)">
+                <span>${{isDone ? '✓' : '○'}}</span> ${{isDone ? 'Completed' : 'Mark Complete'}}
+              </button>
+            </div>
+
+            <!-- Continuity Bridge -->
+            <div class="continuity-bridge">
+              <span class="bridge-tag">🔗 Continuity Bridge</span>
+              <span class="bridge-text">${{s.continuity_bridge}}</span>
+            </div>
+
+            <h2 class="submodule-title">${{s.title}}</h2>
+
+            <div class="callout-eli15">
+              <div class="callout-label">ELI15 Core Takeaway</div>
+              <div class="callout-text">${{s.eli15_takeaway}}</div>
+            </div>
+
+            <ul class="bullets-list">
+              ${{s.key_facts.map(f => `<li>${{f}}</li>`).join('')}}
+            </ul>
+
+            <div class="mental-box">
+              <span class="mental-icon">💡</span>
+              <div class="mental-desc"><strong>Mental Model:</strong> ${{s.mental_model}}</div>
+            </div>
+
+            <div class="checkpoint-wrap">
+              <div class="checkpoint-hdr"><span>⚡</span> Instant Recall Checkpoint</div>
+              <div class="checkpoint-q">${{s.checkpoint.question}}</div>
+              <div class="checkpoint-options" id="cp-opts-${{slideId.replace('.', '-')}}">
+                ${{s.checkpoint.options.map((opt, idx) => `
+                  <button class="cp-opt" onclick="handleCheckpoint('${{slideId}}', ${{idx}}, ${{s.checkpoint.correct_index}}, '${{encodeURIComponent(s.checkpoint.explanation)}}', this)">
+                    ${{opt}}
+                  </button>
+                `).join('')}}
+              </div>
+              <div class="cp-feedback" id="cp-fb-${{slideId.replace('.', '-')}}"></div>
+            </div>
+          </div>
+        `;
+      }});
+      html += `</div>`;
+      contentContainer.innerHTML = html;
+      triggerKaTeX();
+    }}
+
+    function triggerKaTeX() {{
       if (window.renderMathInElement) {{
         renderMathInElement(contentContainer, {{
           delimiters: [
@@ -818,11 +1001,12 @@ def build_website():
         feedback.style.background = "var(--success-bg)";
         feedback.style.color = "var(--success)";
         feedback.innerHTML = `<strong>✓ Correct!</strong> ${{expl}}`;
-        // Auto mark as complete if not yet
         const card = document.getElementById(`sub-${{subId}}`);
-        const compBtn = card.querySelector(".btn-complete");
-        if (!completedSubmodules.has(subId)) {{
-          toggleSubmoduleCompletion(subId, compBtn);
+        if (card) {{
+          const compBtn = card.querySelector(".btn-complete");
+          if (!completedSubmodules.has(subId)) {{
+            toggleSubmoduleCompletion(subId, compBtn);
+          }}
         }}
       }} else {{
         btn.classList.add("wrong");
@@ -835,6 +1019,7 @@ def build_website():
 
     // Render Case Studies Hub
     function renderCaseStudies() {{
+      actBar.style.display = "none";
       viewTitle.textContent = "Case Study Hub: 12 Landmark Historical Incidents";
       viewDesc.textContent = "Structured 3-part breakdowns (What Happened → The Root Cause → The Takeaway) for exams and real-world retention.";
 
@@ -866,22 +1051,12 @@ def build_website():
       }});
       html += `</div>`;
       contentContainer.innerHTML = html;
-
-      if (window.renderMathInElement) {{
-        renderMathInElement(contentContainer, {{
-          delimiters: [
-            {{left: '$$', right: '$$', display: true}},
-            {{left: '$', right: '$', display: false}},
-            {{left: '\\(', right: '\\)', display: false}},
-            {{left: '\\[', right: '\\]', display: true}}
-          ],
-          throwOnError: false
-        }});
-      }}
+      triggerKaTeX();
     }}
 
     // Render Cheat Sheet
     function renderCheatSheet() {{
+      actBar.style.display = "none";
       viewTitle.textContent = "Formula & Law Cheat Sheet";
       viewDesc.textContent = "Key ecological laws, mathematical indices (IPAT, NDVI, PUE, Green GDP), and thermodynamic equations.";
 
@@ -898,18 +1073,7 @@ def build_website():
       }});
       html += `</div>`;
       contentContainer.innerHTML = html;
-
-      if (window.renderMathInElement) {{
-        renderMathInElement(contentContainer, {{
-          delimiters: [
-            {{left: '$$', right: '$$', display: true}},
-            {{left: '$', right: '$', display: false}},
-            {{left: '\\(', right: '\\)', display: false}},
-            {{left: '\\[', right: '\\]', display: true}}
-          ],
-          throwOnError: false
-        }});
-      }}
+      triggerKaTeX();
     }}
 
     // Search Execution
@@ -922,21 +1086,39 @@ def build_website():
 
       currentView = "search";
       classPills.style.display = "none";
+      actBar.style.display = "none";
       viewTitle.textContent = `Search Results for "${{q}}"`;
 
       let matches = [];
       DB.classes.forEach(c => {{
-        c.submodules.forEach(sub => {{
-          const textCorpus = (sub.title + " " + sub.eli15_takeaway + " " + sub.bullets.join(" ") + " " + sub.mental_model).toLowerCase();
-          if (textCorpus.includes(q)) {{
-            matches.push({{
-              type: "submodule",
-              class_id: c.class_id,
-              class_title: c.title,
-              data: sub
-            }});
-          }}
-        }});
+        if (c.submodules) {{
+          c.submodules.forEach(sub => {{
+            const textCorpus = (sub.title + " " + sub.eli15_takeaway + " " + sub.bullets.join(" ") + " " + sub.mental_model).toLowerCase();
+            if (textCorpus.includes(q)) {{
+              matches.push({{
+                type: "submodule",
+                class_id: c.class_id,
+                class_title: c.title,
+                data: sub
+              }});
+            }}
+          }});
+        }}
+
+        // Also search Class 11 slides
+        if (c.slides) {{
+          c.slides.forEach(slide => {{
+            const textCorpus = (slide.title + " " + slide.continuity_bridge + " " + slide.eli15_takeaway + " " + slide.key_facts.join(" ") + " " + slide.mental_model).toLowerCase();
+            if (textCorpus.includes(q)) {{
+              matches.push({{
+                type: "slide",
+                class_id: c.class_id,
+                class_title: c.title,
+                data: slide
+              }});
+            }}
+          }});
+        }}
       }});
 
       DB.case_studies.forEach(cs => {{
@@ -949,16 +1131,46 @@ def build_website():
         }}
       }});
 
-      viewDesc.textContent = `Found ${{matches.length}} matching item(s) across the 19 lecture slide decks.`;
+      viewDesc.textContent = `Found ${{matches.length}} matching item(s) across the course materials.`;
 
       if (matches.length === 0) {{
-        contentContainer.innerHTML = `<div style="text-align: center; padding: 60px 20px; color: var(--text-muted);">No results found matching "${{q}}". Try searching for "carbon", "NDVI", "Bhopal", "PUE", or "EIA".</div>`;
+        contentContainer.innerHTML = `<div style="text-align: center; padding: 60px 20px; color: var(--text-muted);">No results found matching "${{q}}". Try searching for "carbon", "NDVI", "Aether", "Zelp", "seaweed", "Bhopal", or "EIA".</div>`;
         return;
       }}
 
       let html = `<div class="submodule-grid">`;
       matches.forEach(m => {{
-        if (m.type === "submodule") {{
+        if (m.type === "slide") {{
+          const s = m.data;
+          const slideId = `11.${{s.slide_num}}`;
+          const isDone = completedSubmodules.has(slideId);
+          html += `
+            <div class="submodule-card" id="sub-${{slideId}}">
+              <div class="card-top">
+                <div class="card-badges">
+                  <span class="badge-subid">CLASS 11 • SLIDE ${{s.slide_num}}</span>
+                  <span class="badge-act">${{s.act.split(':')[0]}}</span>
+                  <span class="badge-readtime">⚡ 2 min bite</span>
+                </div>
+                <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{slideId}}', this)">
+                  <span>${{isDone ? '✓' : '○'}}</span> ${{isDone ? 'Completed' : 'Mark Complete'}}
+                </button>
+              </div>
+              <div class="continuity-bridge">
+                <span class="bridge-tag">🔗 Continuity</span>
+                <span class="bridge-text">${{s.continuity_bridge}}</span>
+              </div>
+              <h2 class="submodule-title">${{s.title}}</h2>
+              <div class="callout-eli15">
+                <div class="callout-label">ELI15 Core Takeaway</div>
+                <div class="callout-text">${{s.eli15_takeaway}}</div>
+              </div>
+              <ul class="bullets-list">
+                ${{s.key_facts.map(f => `<li>${{f}}</li>`).join('')}}
+              </ul>
+            </div>
+          `;
+        }} else if (m.type === "submodule") {{
           const sub = m.data;
           const isDone = completedSubmodules.has(sub.id);
           html += `
@@ -966,7 +1178,7 @@ def build_website():
               <div class="card-top">
                 <div class="card-badges">
                   <span class="badge-subid">CLASS ${{m.class_id}} • MODULE ${{sub.id}}</span>
-                  <span class="badge-readtime">${{m.class_title}}</span>
+                  <span class="badge-readtime">${{m.class_title.split(':')[0]}}</span>
                 </div>
                 <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{sub.id}}', this)">
                   <span>${{isDone ? '✓' : '○'}}</span> ${{isDone ? 'Completed' : 'Mark Complete'}}
@@ -997,18 +1209,7 @@ def build_website():
       }});
       html += `</div>`;
       contentContainer.innerHTML = html;
-
-      if (window.renderMathInElement) {{
-        renderMathInElement(contentContainer, {{
-          delimiters: [
-            {{left: '$$', right: '$$', display: true}},
-            {{left: '$', right: '$', display: false}},
-            {{left: '\\(', right: '\\)', display: false}},
-            {{left: '\\[', right: '\\]', display: true}}
-          ],
-          throwOnError: false
-        }});
-      }}
+      triggerKaTeX();
     }}
 
     searchInput.addEventListener("input", (e) => {{
@@ -1023,6 +1224,7 @@ def build_website():
       if (pillarObj && !pillarObj.classes.includes(currentClassId)) {{
         currentClassId = pillarObj.classes[0];
       }}
+      currentActFilter = "ALL";
       renderClassPills();
       renderCurrentClassContent();
     }}

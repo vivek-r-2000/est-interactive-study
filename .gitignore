@@ -18,6 +18,7 @@ inspect_*.py
 
 # Cloned Subprojects
 EST-Project/
+.backup_local/
 
 # Temp Word lock files
 ~$*
