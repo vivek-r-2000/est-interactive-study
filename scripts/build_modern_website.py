@@ -392,6 +392,122 @@ def build_website():
       font-weight: 600;
     }}
 
+    /* Exam Rating Badges & Mode Switcher */
+    .view-mode-bar {{
+      display: inline-flex;
+      gap: 6px;
+      margin-bottom: 16px;
+      background: var(--card-hover);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }}
+    .view-mode-btn {{
+      background: transparent;
+      border: none;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }}
+    .view-mode-btn:hover {{
+      color: var(--text);
+    }}
+    .view-mode-btn.active {{
+      background: var(--card-bg);
+      color: var(--accent);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }}
+    .badge-critical {{
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fcd34d;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }}
+    .badge-high {{
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }}
+    .badge-medium {{
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      background: #eff6ff;
+      color: #1e40af;
+      border: 1px solid #bfdbfe;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }}
+    .badge-slides {{
+      font-size: 11px;
+      font-weight: 600;
+      font-family: ui-monospace, monospace;
+      padding: 2px 8px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }}
+    .exam-provenance-box {{
+      background: var(--card-hover);
+      border: 1px solid var(--border);
+      border-left: 3px solid #d97706;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 12px;
+    }}
+    .exam-hdr {{
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #d97706;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }}
+    .exam-chip-list {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }}
+    .exam-chip {{
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+    }}
+    .exam-tip {{
+      color: var(--text);
+      font-size: 12px;
+      line-height: 1.45;
+    }}
+
     /* Continuity Bridge */
     .continuity-bridge {{
       background: var(--bridge-bg);
@@ -708,8 +824,15 @@ def build_website():
     let currentPillar = 1;
     let currentClassId = 1;
     let currentActFilter = "ALL";
+    let classViewMode = "cards"; // "cards" or "slides"
     let currentView = "curriculum"; // "curriculum", "case-studies", "cheat-sheet", "search"
     let completedSubmodules = new Set(JSON.parse(localStorage.getItem("est_completed_subs") || "[]"));
+
+    window.setClassViewMode = function(mode) {{
+      classViewMode = mode;
+      currentActFilter = "ALL";
+      renderCurrentClassContent();
+    }};
 
     // DOM Elements
     const pillarTabs = document.getElementById("pillar-tabs");
@@ -817,6 +940,12 @@ def build_website():
       viewTitle.textContent = `Class ${{c.class_id}}: ${{c.title}}`;
       viewDesc.textContent = c.summary;
 
+      // Topic Cards View (e.g. Class 11 Exam-Rated Topic Cards)
+      if (c.topic_cards && c.topic_cards.length > 0 && classViewMode !== "slides") {{
+        renderTopicCardsDeck(c);
+        return;
+      }}
+
       // Slidewise Rendering for any class with slides (Classes 11 to 19)
       if (c.slides && c.slides.length > 0) {{
         renderSlidewiseDeck(c);
@@ -876,10 +1005,137 @@ def build_website():
       triggerKaTeX();
     }}
 
+    // Render Topic Cards Deck with Exam Ratings (e.g. Class 11)
+    function renderTopicCardsDeck(c) {{
+      actBar.style.display = "flex";
+      actBar.innerHTML = "";
+
+      let switcherHtml = "";
+      if (c.slides && c.slides.length > 0) {{
+        switcherHtml = `
+          <div class="view-mode-bar">
+            <button class="view-mode-btn ${{classViewMode === 'cards' ? 'active' : ''}}" onclick="setClassViewMode('cards')">
+              🎴 ${{c.topic_cards.length}} Exam-Rated Topic Cards (Recommended)
+            </button>
+            <button class="view-mode-btn ${{classViewMode === 'slides' ? 'active' : ''}}" onclick="setClassViewMode('slides')">
+              📑 ${{c.slides.length}} Individual Slides View
+            </button>
+          </div>
+        `;
+      }}
+
+      const acts = [{{ id: "ALL", label: `All ${{c.topic_cards.length}} Topic Cards` }}];
+      const seenActs = new Set();
+      c.topic_cards.forEach(card => {{
+        if (card.act) {{
+          const actKey = card.act.split(':')[0].trim();
+          if (!seenActs.has(actKey)) {{
+            seenActs.add(actKey);
+            const shortLabel = card.act.length > 35 ? card.act.substring(0, 32) + '...' : card.act;
+            acts.push({{ id: actKey, label: shortLabel }});
+          }}
+        }}
+      }});
+
+      acts.forEach(a => {{
+        const btn = document.createElement("button");
+        btn.className = "act-pill" + (currentActFilter === a.id ? " active" : "");
+        btn.textContent = a.label;
+        btn.addEventListener("click", () => {{
+          currentActFilter = a.id;
+          renderTopicCardsDeck(c);
+        }});
+        actBar.appendChild(btn);
+      }});
+
+      let filteredCards = c.topic_cards;
+      if (currentActFilter !== "ALL") {{
+        filteredCards = c.topic_cards.filter(card => card.act && card.act.startsWith(currentActFilter));
+      }}
+
+      let html = switcherHtml + `<div class="submodule-grid">`;
+      filteredCards.forEach(card => {{
+        const cardId = `${{c.class_id}}.card.${{card.card_num}}`;
+        const isDone = completedSubmodules.has(cardId);
+        html += `
+          <div class="submodule-card" id="sub-${{cardId}}">
+            <div class="card-top">
+              <div class="card-badges">
+                <span class="badge-subid">TOPIC CARD ${{card.card_num}}</span>
+                <span class="badge-slides">${{card.slides_label}}</span>
+                <span class="badge-act">${{card.act ? card.act.split(':')[0] : 'ACT'}}</span>
+                <span class="${{card.exam_rating.badge_class}}">🎯 ${{card.exam_rating.tier}}</span>
+              </div>
+              <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{cardId}}', this)">
+                <span>${{isDone ? '✓' : '○'}}</span> ${{isDone ? 'Completed' : 'Mark Complete'}}
+              </button>
+            </div>
+
+            <!-- Exam Provenance Box -->
+            <div class="exam-provenance-box">
+              <div class="exam-hdr">
+                <span>📝</span> Past Exam Frequency: ${{card.exam_rating.frequency_count}}
+              </div>
+              <div class="exam-chip-list">
+                ${{card.exam_rating.recent_papers.map(p => `<span class="exam-chip">${{p}}</span>`).join('')}}
+              </div>
+              <div class="exam-tip"><strong>💡 Exam Strategy & Core Trap:</strong> ${{card.exam_rating.exam_tip}}</div>
+            </div>
+
+            <h2 class="submodule-title">${{card.title}}</h2>
+
+            <div class="callout-eli15">
+              <div class="callout-label">ELI15 Core Takeaway</div>
+              <div class="callout-text">${{card.eli15_takeaway}}</div>
+            </div>
+
+            <ul class="bullets-list">
+              ${{card.key_facts.map(f => `<li>${{f}}</li>`).join('')}}
+            </ul>
+
+            <div class="mental-box">
+              <span class="mental-icon">💡</span>
+              <div class="mental-desc"><strong>Mental Model:</strong> ${{card.mental_model}}</div>
+            </div>
+
+            <div class="checkpoint-wrap">
+              <div class="checkpoint-hdr"><span>⚡</span> Instant Recall Checkpoint</div>
+              <div class="checkpoint-q">${{card.checkpoint.question}}</div>
+              <div class="checkpoint-options" id="cp-opts-${{cardId.split('.').join('-')}}">
+                ${{card.checkpoint.options.map((opt, idx) => `
+                  <button class="cp-opt" onclick="handleCheckpoint('${{cardId}}', ${{idx}}, ${{card.checkpoint.correct_index}}, '${{encodeURIComponent(card.checkpoint.explanation)}}', this)">
+                    ${{opt}}
+                  </button>
+                `).join('')}}
+              </div>
+              <div class="cp-feedback" id="cp-fb-${{cardId.split('.').join('-')}}"></div>
+            </div>
+          </div>
+        `;
+      }});
+      html += `</div>`;
+      contentContainer.innerHTML = html;
+      triggerKaTeX();
+    }}
+
     // Render Slidewise Deck with Dynamic Narrative Acts & Continuity (Classes 11 to 19)
     function renderSlidewiseDeck(c) {{
       actBar.style.display = "flex";
       actBar.innerHTML = "";
+
+      let switcherHtml = "";
+      if (c.topic_cards && c.topic_cards.length > 0) {{
+        switcherHtml = `
+          <div class="view-mode-bar">
+            <button class="view-mode-btn ${{classViewMode === 'cards' ? 'active' : ''}}" onclick="setClassViewMode('cards')">
+              🎴 ${{c.topic_cards.length}} Exam-Rated Topic Cards (Recommended)
+            </button>
+            <button class="view-mode-btn ${{classViewMode === 'slides' ? 'active' : ''}}" onclick="setClassViewMode('slides')">
+              📑 ${{c.slides.length}} Individual Slides View
+            </button>
+          </div>
+        `;
+      }}
 
       const acts = [{{ id: "ALL", label: `All ${{c.slides.length}} Slides` }}];
       const seenActs = new Set();
@@ -910,7 +1166,7 @@ def build_website():
         filteredSlides = c.slides.filter(s => s.act && s.act.startsWith(currentActFilter));
       }}
 
-      let html = `<div class="submodule-grid">`;
+      let html = switcherHtml + `<div class="submodule-grid">`;
       filteredSlides.forEach(s => {{
         const slideId = `${{c.class_id}}.${{s.slide_num}}`;
         const isDone = completedSubmodules.has(slideId);
@@ -1108,7 +1364,22 @@ def build_website():
           }});
         }}
 
-        // Also search Class 11 slides
+        // Also search Topic Cards (Class 11)
+        if (c.topic_cards) {{
+          c.topic_cards.forEach(card => {{
+            const textCorpus = (card.title + " " + card.eli15_takeaway + " " + card.key_facts.join(" ") + " " + card.mental_model + " " + card.exam_rating.tier + " " + card.exam_rating.exam_tip + " " + card.exam_rating.recent_papers.join(" ")).toLowerCase();
+            if (textCorpus.includes(q)) {{
+              matches.push({{
+                type: "topic_card",
+                class_id: c.class_id,
+                class_title: c.title,
+                data: card
+              }});
+            }}
+          }});
+        }}
+
+        // Also search Class slides
         if (c.slides) {{
           c.slides.forEach(slide => {{
             const textCorpus = (slide.title + " " + slide.continuity_bridge + " " + slide.eli15_takeaway + " " + slide.key_facts.join(" ") + " " + slide.mental_model).toLowerCase();
@@ -1143,7 +1414,40 @@ def build_website():
 
       let html = `<div class="submodule-grid">`;
       matches.forEach(m => {{
-        if (m.type === "slide") {{
+        if (m.type === "topic_card") {{
+          const card = m.data;
+          const cardId = `${{m.class_id}}.card.${{card.card_num}}`;
+          const isDone = completedSubmodules.has(cardId);
+          html += `
+            <div class="submodule-card" id="sub-${{cardId}}">
+              <div class="card-top">
+                <div class="card-badges">
+                  <span class="badge-subid">CLASS ${{m.class_id}} • TOPIC CARD ${{card.card_num}}</span>
+                  <span class="badge-slides">${{card.slides_label}}</span>
+                  <span class="${{card.exam_rating.badge_class}}">🎯 ${{card.exam_rating.tier}}</span>
+                </div>
+                <button class="btn-complete ${{isDone ? 'checked' : ''}}" onclick="toggleSubmoduleCompletion('${{cardId}}', this)">
+                  <span>${{isDone ? '✓' : '○'}}</span> ${{isDone ? 'Completed' : 'Mark Complete'}}
+                </button>
+              </div>
+              <div class="exam-provenance-box">
+                <div class="exam-hdr"><span>📝</span> ${{card.exam_rating.frequency_count}}</div>
+                <div class="exam-chip-list">
+                  ${{card.exam_rating.recent_papers.map(p => `<span class="exam-chip">${{p}}</span>`).join('')}}
+                </div>
+                <div class="exam-tip"><strong>💡 Exam Strategy:</strong> ${{card.exam_rating.exam_tip}}</div>
+              </div>
+              <h2 class="submodule-title">${{card.title}}</h2>
+              <div class="callout-eli15">
+                <div class="callout-label">ELI15 Core Takeaway</div>
+                <div class="callout-text">${{card.eli15_takeaway}}</div>
+              </div>
+              <ul class="bullets-list">
+                ${{card.key_facts.map(f => `<li>${{f}}</li>`).join('')}}
+              </ul>
+            </div>
+          `;
+        }} else if (m.type === "slide") {{
           const s = m.data;
           const slideId = `${{m.class_id}}.${{s.slide_num}}`;
           const isDone = completedSubmodules.has(slideId);
