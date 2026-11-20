@@ -44,3 +44,9 @@ Scope: Complete redesign from scratch of Environmental Science & Technology cour
   EXPECT: EXAM_CARDS_VERIFIED: 14_ZERO_LOSS_TOPIC_CARDS_MAPPED_TO_PAST_EXAMS
   EVIDENCE: automatic-evidence=v1; definition-sha256=36262290fdf5a6bbe21456b22d08a200e2f2d5b6a5a8f8b4c553fa6d5ca13097; exit=0; EXPECT=matched; output-sha256=a095673890f5c6116ffc33837c8ce1a75e860c772b337de741265fd15777066c; output-bytes=68; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\EST
 
+- [x] G9: Classes 12 to 19 zero-loss topic cards (86 cards total) with past exam questions and model answers attached across all 232 slides
+  CHECK: python scripts/verify_classes_12_to_19_cards.py
+  EXPECT: ALL_CLASSES_11_TO_19_VERIFIED: 86 TOPIC CARDS, 261 SLIDES COVERED, 181 EXAM QUESTIONS ATTACHED
+  EVIDENCE: automatic-evidence=v1; definition-sha256=7c28f86c9622f3c58c90786883c9fdcdf4e0f03478a2b34c83625424630fb54e; exit=0; EXPECT=matched; output-sha256=72aa9fdcc83d6a5782de7a55a73e6fd1f31e203a29c7283cf0a42ef2571ff0ff; output-bytes=795; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\EST
+
+
