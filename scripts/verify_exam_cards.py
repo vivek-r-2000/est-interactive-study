@@ -17,10 +17,11 @@ def test_exam_cards():
         sys.exit(1)
         
     topic_cards = c11.get("topic_cards", [])
-    if len(topic_cards) != 9:
-        print(f"FAIL: expected 9 topic cards, found {len(topic_cards)}")
+    if len(topic_cards) != 14:
+        print(f"FAIL: expected 14 zero-loss topic cards, found {len(topic_cards)}")
         sys.exit(1)
         
+    covered_slides = set()
     for tc in topic_cards:
         assert "card_num" in tc, "Card missing card_num"
         assert "title" in tc, "Card missing title"
@@ -33,7 +34,18 @@ def test_exam_cards():
         assert "exam_tip" in tc["exam_rating"], "Card exam_rating missing exam_tip"
         assert "eli15_takeaway" in tc, "Card missing eli15_takeaway"
         assert "key_facts" in tc, "Card missing key_facts"
+        assert len(tc["key_facts"]) >= 4, f"Card {tc['card_num']} has insufficient key facts ({len(tc['key_facts'])})"
         assert "checkpoint" in tc, "Card missing checkpoint"
+        
+        for s in tc["slides_covered"]:
+            if isinstance(s, int):
+                covered_slides.add(s)
+
+    all_expected = set(range(1, 30))
+    missing = all_expected - covered_slides
+    if missing:
+        print(f"FAIL: Missing slides: {missing}")
+        sys.exit(1)
         
     q_bank = Path("Previous_Exam_Papers/QUESTION_BANK_MASTER.md")
     if not q_bank.exists() or q_bank.stat().st_size < 1000:
@@ -45,7 +57,7 @@ def test_exam_cards():
         print("FAIL: class_11_exam_frequency_analysis.json missing")
         sys.exit(1)
 
-    print("EXAM_CARDS_VERIFIED: 9_TOPIC_CARDS_MAPPED_TO_PAST_EXAMS")
+    print("EXAM_CARDS_VERIFIED: 14_ZERO_LOSS_TOPIC_CARDS_MAPPED_TO_PAST_EXAMS")
     sys.exit(0)
 
 if __name__ == "__main__":

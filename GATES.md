@@ -39,8 +39,8 @@ Scope: Complete redesign from scratch of Environmental Science & Technology cour
   EXPECT: CLASSES_12_TO_19_VERIFIED: ALL_8_CLASSES_MET_WITH_232_SLIDES
   EVIDENCE: automatic-evidence=v1; definition-sha256=331cc6af134647773d13a2afd69206542a15ff7928e5c66a88c0eb2c140ff031; exit=0; EXPECT=matched; output-sha256=7346cb284ca652ab0e46fbf425f76c4acf3111cf9449ccb3e807044ac40df51d; output-bytes=62; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\.gemini\antigravity\scratch\EST; path=ee6bd4fcb200/36 entries
 
-- [x] G8: Previous exam questions extracted and Class 11 cards redesigned into 9 exam-weighted topic decks with past year provenance citations
+- [x] G8: Previous exam questions extracted and Class 11 cards redesigned into zero-loss exam-weighted topic decks with past year provenance citations
   CHECK: python scripts/verify_exam_cards.py
-  EXPECT: EXAM_CARDS_VERIFIED: 9_TOPIC_CARDS_MAPPED_TO_PAST_EXAMS
-  EVIDENCE: automatic-evidence=v1; definition-sha256=77cef9f881b945bf9932ca0ebb28d0f0127bb10424b30261bfa39267e8d692c8; exit=0; EXPECT=matched; output-sha256=686c90fe796354940be87ced2dbbe39ec2a4c344c2af12a400fd76bf7b796fe8; output-bytes=57; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\EST
+  EXPECT: EXAM_CARDS_VERIFIED: 14_ZERO_LOSS_TOPIC_CARDS_MAPPED_TO_PAST_EXAMS
+  EVIDENCE: automatic-evidence=v1; definition-sha256=36262290fdf5a6bbe21456b22d08a200e2f2d5b6a5a8f8b4c553fa6d5ca13097; exit=0; EXPECT=matched; output-sha256=a095673890f5c6116ffc33837c8ce1a75e860c772b337de741265fd15777066c; output-bytes=68; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\vivek\EST
 

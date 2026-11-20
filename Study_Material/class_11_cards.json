@@ -1,386 +1,596 @@
-{
-  "class_id": 11,
-  "title": "Class 11: Climate Change Technology Solutions (9 Topic Cards Rebuilt from 29 Slides)",
-  "total_cards": 9,
-  "total_slides_covered": 29,
-  "cards": [
-    {
-      "card_num": 1,
-      "title": "Negative Emissions Framework & Nature-Based Carbon Sinks",
-      "act": "Act 1: Carbon Drawdown & Natural Sinks",
-      "slides_covered": [
-        1,
-        2,
-        3,
-        5
+[
+  {
+    "card_num": 1,
+    "title": "Negative Emissions Framework, Afforestation & Pyrolysis Biochar",
+    "act": "ACT I: NATURE-BASED & BIOSPHERIC SINKS",
+    "slides_covered": [
+      1,
+      2,
+      3
+    ],
+    "slides_label": "Slides 1, 2, 3",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "3 appearances in past exams",
+      "recent_papers": [
+        "Mid-1 2022 (Q3)",
+        "Quiz-3 2020 (Q1b)",
+        "End Exam 2019 (Sec II)"
       ],
-      "slides_label": "Slides 1, 2, 3, 5",
-      "exam_rating": {
-        "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 4,
-        "badge_class": "badge-high",
-        "frequency_count": "3 appearances in previous papers",
-        "recent_papers": [
-          "Mid-1 2022 (Q3)",
-          "Quiz-3 2020 (Q1b)",
-          "End Exam 2019 (Sec II)"
-        ],
-        "exam_tip": "Exams test the fundamental distinction: emission cuts alone cannot achieve net-zero because residual hard-to-abate sectors remain. Negative Emission Technologies (NETs) are mandatory to remove atmospheric carbon."
-      },
-      "eli15_takeaway": "Stopping new pollution isn't enough because the bath is already overflowing. We must pull existing carbon out of the air. Nature does this using fast biological cycles (trees) and permanent geological locks (biochar baked without oxygen and timber skyscrapers).",
-      "key_facts": [
-        "The Net-Zero Mathematical Deficit: Residual emissions from aviation, steel, and agriculture mean reaching 1.5\u00b0C requires removing 5\u201310 gigatonnes of atmospheric CO2 annually by 2050.",
-        "Negative Emission Technologies (NETs): Defined as physical or biological interventions that result in net removal of greenhouse gases from the atmosphere, not merely avoidance.",
-        "Biochar Pyrolysis: Biomass heated to 400\u2013700\u00b0C in an oxygen-depleted reactor (pyrolysis). Replaces fast natural rotting (which returns CO2 in 1\u20135 years) with recalcitrant polycyclic aromatic carbon that stays stable in soils for over 1,000 years while improving water retention and cation exchange capacity.",
-        "Structural Timber (Mass Timber / Cross-Laminated Timber - CLT): Harvested timber locks ~1 tonne of CO2 per cubic metre into load-bearing skyscraper columns, preventing the 0.9 kg CO2/kg emissions from manufacturing conventional steel and Portland cement."
-      ],
-      "mental_model": "A sponge and a vault. Planting a standard tree is a wet sponge that leaks carbon back when it rots or burns. Biochar and mass timber turn that sponge into an iron safe, locking the carbon away for centuries.",
-      "checkpoint": {
-        "question": "Why is biochar biologically and chemically distinct from natural forest compost in carbon sequestration?",
-        "options": [
-          "Compost stores double the carbon per hectare compared to biochar",
-          "Compost rapidly decomposes back to CO2 within years, while biochar's aromatic rings resist microbial decay for over 1,000 years",
-          "Biochar requires high oxygen availability during creation to maximize mass",
-          "Compost completely eliminates soil nitrogen volatilization"
-        ],
-        "correct_index": 1,
-        "explanation": "Natural compost decays through microbial oxidation within 1\u20135 years. Biochar created via oxygen-starved pyrolysis forms recalcitrant aromatic carbon structures that microbes cannot break down, locking carbon for millennia."
-      }
+      "exam_tip": "Exams test the core rationale: why emission reduction alone is insufficient to reach net-zero (residual hard-to-abate sectors demand Negative Emission Technologies / NETs). Be ready to contrast A/R costs with biochar durability."
     },
-    {
-      "card_num": 2,
-      "title": "Blue Carbon: Coastal Ocean Super-Sinks (Mangroves & Salt Marshes)",
-      "act": "Act 1: Carbon Drawdown & Natural Sinks",
-      "slides_covered": [
-        4
+    "eli15_takeaway": "Cutting future emissions isn't enough to stay below 1.5\u00b0C; we must actively suck historical CO2 out of the atmosphere. Biochar does this by cooking organic plant waste without oxygen into pure carbon sponge that locks into soil for centuries.",
+    "key_facts": [
+      "<strong>Slide 2 \u2014 Paris Agreement (COP21) Target:</strong> Aims to limit global surface warming to 1.5\u00b0C. To reach true net-zero, humanity requires Negative Emissions Technologies (NETs) to counterbalance residual emissions from heavy transport, industry, and agriculture.",
+      "<strong>Slide 2 \u2014 Afforestation & Reforestation (A/R) Metrics:</strong> Sequestration rate of <strong>3.7 tonnes CO2 / hectare / year</strong> at an operating cost of <strong>$20\u2013$100 per tonne</strong>. Major obstacles: land-use competition with agriculture, vulnerability to forest fires (permanence risk), water consumption, and albedo changes in snowy latitudes.",
+      "<strong>Slide 3 \u2014 Biochar Sequestration Capacity:</strong> Holds the technical potential to sequester up to <strong>4.8 billion tonnes (4.8 Gt) of CO2 per year</strong> globally.",
+      "<strong>Slide 3 \u2014 Pyrolysis Production Mechanism:</strong> Produced by heating renewable biomass at high temperatures (400\u2013700\u00b0C) in an oxygen-limited or oxygen-free environment. Without pyrolysis, raw agricultural biomass either decomposes or is burned openly in fields, releasing methane and CO2 rapidly.",
+      "<strong>Slide 3 \u2014 Agricultural & Soil Co-benefits:</strong> Biochar converts labile plant carbon into a recalcitrant aromatic carbon matrix that resists microbial decay for centuries, while significantly enhancing soil fertility, cation exchange capacity, and soil moisture retention."
+    ],
+    "mental_model": "Think of afforestation as borrowing carbon from the atmosphere on a 50-year lease that a wildfire can cancel tomorrow, whereas biochar is burning that carbon into an inert charcoal sponge and burying it permanently in an underground bank vault.",
+    "checkpoint": {
+      "question": "Why is biochar considered significantly more permanent than conventional afforestation for carbon removal?",
+      "options": [
+        "Biochar undergoes natural nuclear fusion in the topsoil",
+        "Pyrolysis alters the organic carbon into a stable aromatic structure resistant to microbial decomposition for hundreds of years",
+        "Biochar evaporates into the stratosphere where it blocks solar radiation",
+        "Biochar absorbs oxygen from the soil to prevent plant roots from decomposing"
       ],
-      "slides_label": "Slide 4 (Standalone)",
-      "exam_rating": {
-        "tier": "CRITICAL / MUST-KNOW (\u2b50\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 5,
-        "badge_class": "badge-critical",
-        "frequency_count": "Tested in 4 End-Semester Exams (2018, 2019, 2022, 2023)",
-        "recent_papers": [
-          "End Exam 2023 (Sec I, Q1g - 1M)",
-          "End Exam 2022 (Sec V, Qe - 2M)",
-          "End Exam 2019 (Sec X, Q1c - 3M)",
-          "End Exam 2018 (Part IV, Q3 - 4M)"
-        ],
-        "exam_tip": "Memorize the 3-point answer key from 2022/2023: (1) Stores 3-5x more carbon per hectare than upland tropical forests in waterlogged anoxic sediment; (2) Critical nursery grounds for commercial marine fisheries; (3) Frontline storm-surge and wave-energy buffers protecting coastal populations."
-      },
-      "eli15_takeaway": "Coastal ecosystems (mangroves, tidal salt marshes, and seagrasses) are the ocean's super-sponges. They trap organic mud in water without oxygen, stopping decay and locking away carbon up to 10 times faster than tropical land jungles.",
-      "key_facts": [
-        "Official Definition: 'Blue Carbon' is the carbon captured and stored by coastal and marine ecosystems\u2014principally mangroves, tidal salt marshes, and seagrass meadows.",
-        "Sequestration Velocity: Coastal wetlands sequester carbon at rates up to 10 times higher per hectare than mature terrestrial tropical rainforests.",
-        "The Sediment Anoxia Advantage: Unlike terrestrial forest soils where microbial aerobic respiration converts leaf litter to CO2, tidal marine soils are permanently waterlogged and oxygen-depleted (anoxic), preserving sediment carbon for thousands of years.",
-        "Triple Ecological Dividend: High carbon density per hectare (3\u20135x upland forests), severe coastal erosion/cyclone attenuation (reducing wave energy by up to 66%), and vital breeding nurseries for 75% of commercial fish and crustacean species."
-      ],
-      "mental_model": "Deep-freeze pantry versus a warm kitchen counter. Terrestrial soil is a warm room where food rots quickly. Anoxic mangrove mud is a deep freeze where organic carbon cannot decay because there is no oxygen for the bacteria to breathe.",
-      "checkpoint": {
-        "question": "What is the primary geochemical mechanism allowing mangrove sediments to store 3\u20135 times more carbon per hectare than terrestrial forests?",
-        "options": [
-          "Mangrove leaves contain zero lignin and decompose instantly into inorganic minerals",
-          "Permanently waterlogged, anoxic conditions prevent microbial aerobic respiration, locking organic carbon in deep sediments without decay",
-          "Saltwater instantly transforms atmospheric CO2 into solid diamond crystals",
-          "Mangrove root systems absorb gaseous methane and convert it to limestone"
-        ],
-        "correct_index": 1,
-        "explanation": "In terrestrial forests, abundant oxygen allows soil microbes to rapidly decompose organic matter into CO2. In mangrove swamps, tidal water saturation creates anoxic sediments where aerobic decomposition cannot occur, preserving organic carbon for millennia."
-      }
-    },
-    {
-      "card_num": 3,
-      "title": "Earth-Scale Chemistry & Enhanced Rock Weathering",
-      "act": "Act 2: Earth-Scale Chemical Interventions",
-      "slides_covered": [
-        6,
-        7
-      ],
-      "slides_label": "Slides 6, 7",
-      "exam_rating": {
-        "tier": "MEDIUM-HIGH (\u2b50\u2b50\u2b50)",
-        "stars": 3,
-        "badge_class": "badge-medium",
-        "frequency_count": "Tested in chemical sequestration & geoengineering contexts",
-        "recent_papers": [
-          "Mid-1 2024 (Sec I)",
-          "End Exam 2022 (Sec III)"
-        ],
-        "exam_tip": "Focus on the silicate weathering formula ($CaSiO_3 + 2CO_2 + H_2O \\rightarrow Ca^{2+} + 2HCO_3^- + SiO_2$). Exams love contrasting natural 100,000-year geological weathering with human pulverization of basalt to compress reactions into years."
-      },
-      "eli15_takeaway": "Nature uses rain and volcanic rock to vacuum CO2 out of the air over hundreds of thousands of years. Enhanced rock weathering speeds this up by grinding volcanic basalt rock into powder and spreading it on farm fields, turning CO2 into harmless dissolved ocean minerals while fertilizing soil.",
-      "key_facts": [
-        "Natural Silicate-Carbonate Geochemical Cycle: Over geological epochs, silicate rock weathering regulates Earth's climate thermostat via the reaction: $CaSiO_3 + 2CO_2 + H_2O \\rightarrow Ca^{2+} + 2HCO_3^- + SiO_2$.",
-        "The Surface Area Bottleneck: Natural weathering is extremely slow (100,000+ years) because mountain rocks have very little exposed surface area relative to their immense volume.",
-        "Enhanced Weathering Acceleration: Crushing volcanic basalt or olivine into micro-scale particles (<100 micrometres) increases surface area millions of times, speeding up dissolution from millennia into 1\u20135 years.",
-        "Agricultural Co-Benefits: Spreading crushed basalt across croplands releases essential mineral micronutrients (calcium, magnesium, iron, silica), sweetens acidic agricultural soils without fossil-fuel limestone, and runs bicarbonate runoff into the oceans to counteract coastal acidification."
-      ],
-      "mental_model": "A whole sugar cube versus powdered sugar in hot tea. A big rock takes hundreds of years to weather away. Grind it into dust, and it dissolves almost instantly in rainfall, capturing CO2 with every drop.",
-      "checkpoint": {
-        "question": "What is the net chemical product when crushed basalt rock weathers with carbonic acid in rainwater?",
-        "options": [
-          "Toxic sulfur gas and hydrochloric acid",
-          "Stable dissolved bicarbonate ions (HCO3-) and bioavailable mineral cations (Ca2+, Mg2+)",
-          "Pure elemental methane gas that escapes to the stratosphere",
-          "Insoluble chlorofluorocarbon compounds"
-        ],
-        "correct_index": 1,
-        "explanation": "Enhanced rock weathering converts atmospheric CO2 dissolved in rainwater into dissolved bicarbonate ions (HCO3-) and nutrient cations (Ca2+, Mg2+), permanently locking the carbon in ocean alkalinity."
-      }
-    },
-    {
-      "card_num": 4,
-      "title": "Direct Air Capture (DAC) Architecture, Physics & Sorbents",
-      "act": "Act 3: Artificial Trees & The Carbon Economy",
-      "slides_covered": [
-        8,
-        10,
-        12,
-        13
-      ],
-      "slides_label": "Slides 8, 10, 12, 13",
-      "exam_rating": {
-        "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 4,
-        "badge_class": "badge-high",
-        "frequency_count": "Tested in technological capture & contactor mechanics",
-        "recent_papers": [
-          "End Exam 2022 (Sec VI, Qc)",
-          "End Exam 2019 (Sec II)"
-        ],
-        "exam_tip": "Exams test the physical challenge: ambient air has only 420 ppm CO2 (1 molecule in 2,500), requiring immense fan power. Distinguish between Solid Sorbent (Climeworks, low temp 100\u00b0C) and Liquid Solvent (Carbon Engineering, high temp 900\u00b0C calciner)."
-      },
-      "eli15_takeaway": "Direct Air Capture (DAC) machines are giant vacuum cleaners with chemical filters. Because carbon dioxide is invisible and rare in air (just 1 part in 2,500), giant fans must blow millions of tonnes of breeze across special sponge filters to grab it.",
-      "key_facts": [
-        "The Atmospheric Thermodynamic Penalty: Flue gas from a coal plant has ~15% CO2 (150,000 ppm), but ambient open air has only ~0.042% (420 ppm). Capturing diffuse atmospheric CO2 requires approximately 3\u20134 times more thermodynamic work per tonne.",
-        "Solid Sorbent Technology (Low-Temperature DAC): Uses porous cellulose or silica matrices chemically bonded with amine functional groups. Traps CO2 at ambient room temperatures, then releases pure CO2 when heated to 100\u00b0C with low-grade geothermal or waste heat (e.g. Climeworks).",
-        "Liquid Solvent Technology (High-Temperature DAC): Passes air through a liquid Potassium Hydroxide (KOH) chemical bath forming Potassium Carbonate ($K_2CO_3$), followed by a Calcium Loop with a gas-fired calciner operating at 900\u00b0C (e.g. Carbon Engineering).",
-        "Scuba-Diving Breakthrough (BIGs): Bis-Iminoguanidines use guanidine crystals inspired by scuba rebreather chemistry to precipitate solid carbonate crystals directly from air, desorbing pure gas at just 60\u00b0C using simple solar heat."
-      ],
-      "mental_model": "Finding a red marble in a bucket of 2,500 white marbles. You need a powerful magnetic glove that ignores white marbles completely and only catches the red ones as millions roll past.",
-      "checkpoint": {
-        "question": "Why does Direct Air Capture require significantly more energy per tonne of CO2 captured compared to point-source smoke-stack capture?",
-        "options": [
-          "Ambient air contains zero oxygen, which shuts down chemical filters",
-          "Ambient CO2 concentration is extremely dilute (~420 ppm vs ~150,000 ppm in flue gas), requiring massive air volumes and higher thermodynamic separation energy",
-          "Point-source smoke-stacks use only gravity to capture carbon",
-          "Solid amine filters can only operate under liquid nitrogen temperatures"
-        ],
-        "correct_index": 1,
-        "explanation": "Thermodynamics dictates that separation energy scales with dilution. Flue gas is ~150,000 ppm CO2, whereas ambient air is ~420 ppm (350 times more dilute), requiring massive fan power to process thousands of cubic metres of air per kilogram captured."
-      }
-    },
-    {
-      "card_num": 5,
-      "title": "Industrial DAC Commercial Pioneers & Deep Geological Storage",
-      "act": "Act 3: Artificial Trees & The Carbon Economy",
-      "slides_covered": [
-        11,
-        14,
-        16
-      ],
-      "slides_label": "Slides 11, 14, 16",
-      "exam_rating": {
-        "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 4,
-        "badge_class": "badge-high",
-        "frequency_count": "Tested in 2019 and 2022 Endsems",
-        "recent_papers": [
-          "End Exam 2022 (Sec VI, Qc - 1M)",
-          "End Exam 2019 (Sec II, Q6 - 2M)"
-        ],
-        "exam_tip": "Be ready to name the big commercial players: Climeworks (Orca & Mammoth plants in Hellishei\u00f0i, Iceland) and Carbon Engineering (Permian Basin). Know the CarbFix process: dissolving CO2 in water and pumping into basalt rock turns it into solid stone in under 2 years."
-      },
-      "eli15_takeaway": "Commercial DAC facilities are already running. In Iceland, Climeworks captures CO2, fizzes it into water like seltzer, and pumps it a kilometre down into volcanic basalt rock. In 2 years, the bubbly water turns into solid stone forever.",
-      "key_facts": [
-        "Commercial Flagships: Climeworks 'Orca' (4,000 tCO2/yr) and 'Mammoth' (36,000 tCO2/yr) in Iceland run on 100% renewable zero-emission geothermal electricity and heat.",
-        "The CarbFix Basalt Mineralization Mechanism: CO2 gas is dissolved in immense volumes of water (27 tonnes of water per tonne of CO2) under high pressure and injected 800\u20131,000m into porous basalt bedrock. Reactive divalent cations ($Ca^{2+}, Mg^{2+}, Fe^{2+}$) precipitate stable solid carbonate minerals ($CaCO_3, MgCO_3$) within 24 months, with 0% risk of gas leakage.",
-        "Deep Saline Aquifer Storage: Offshore sub-seabed storage (such as the UK's Project Net Zero Teesside in the Endurance Aquifer) pumps supercritical CO2 1,500m below the North Sea into permeable sandstone sealed beneath impermeable thick mudstone caprock.",
-        "Energy & Cost Metric: Early commercial DAC cost ~$600\u2013$1,000 per tonne of CO2. Reaching climate impact demands scaling to gigatonnes and bringing costs down toward the $100\u2013$150/tonne threshold."
-      ],
-      "mental_model": "Making soda and pouring it into stone. If you pump gas into a cave, it can leak out. If you dissolve it in water and pump it into volcanic rock, the rock drinks it and turns it into permanent solid rock.",
-      "checkpoint": {
-        "question": "How does the CarbFix mineralization method in Iceland eliminate the risk of subterranean CO2 gas leakage?",
-        "options": [
-          "It burns the CO2 into soot at the surface",
-          "It dissolves CO2 in pressurized water and reacts it with basalt cations, turning the carbon into solid carbonate rock within two years",
-          "It freezes the gas into permanent glaciers above ground",
-          "It vents the gas into the stratosphere via tall chimneys"
-        ],
-        "correct_index": 1,
-        "explanation": "CarbFix dissolves CO2 in water before injection into basalt. The acidic fluid releases calcium, magnesium, and iron from the rock, reacting to form solid carbonate minerals in under two years with zero risk of escape."
-      }
-    },
-    {
-      "card_num": 6,
-      "title": "Air-to-Luxury: Aether Diamonds from Pollution",
-      "act": "Act 3: Artificial Trees & The Carbon Economy",
-      "slides_covered": [
-        9,
-        15
-      ],
-      "slides_label": "Slides 9, 15 (Standalone)",
-      "exam_rating": {
-        "tier": "CRITICAL / MUST-KNOW (\u2b50\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 5,
-        "badge_class": "badge-critical",
-        "frequency_count": "Tested in 2022 and 2023 End-Semester Exams as a 3-5M question",
-        "recent_papers": [
-          "End Exam 2023 (Sec III, Q5 - 3M: 'Explain the process of diamond manufacturing by Aether')",
-          "End Exam 2022 (Sec X, Qb - 5M: 'Diamonds from air pollution')"
-        ],
-        "exam_tip": "MUST MEMORIZE 5-STEP PROFESSOR ANSWER KEY: (1) Purchase DAC CO2 from Climeworks; (2) Convert CO2 + green H2 into high-purity methane (CH4); (3) Inject CH4 into Chemical Vapor Deposition (CVD) vacuum plasma reactor at extreme temperatures over weeks; (4) Ship rough diamonds to Surat, India for precision cutting/polishing; (5) Offset metrics: 20 tonnes CO2 removed per carat, 50% energy cut, 127 gallons water saved."
-      },
-      "eli15_takeaway": "Aether creates real, certified luxury diamonds out of thin air. They take captured carbon dioxide from Climeworks, turn it into methane gas, and bake it in a vacuum plasma oven for a month. Each 1-carat diamond removes 20 tonnes of carbon from the sky and cuts out the human and environmental destruction of earth mining.",
-      "key_facts": [
-        "Step 1 - Atmospheric Capture: Raw CO2 is sourced directly from atmospheric air capture facilities (Climeworks in Europe/Iceland), guaranteeing positive carbon provenance.",
-        "Step 2 - Methane Synthesis: Captured CO2 is reacted with green hydrogen produced via solar/wind water electrolysis through the Sabatier methanation reaction ($CO_2 + 4H_2 \\rightarrow CH_4 + 2H_2O$) to produce ultra-pure feedstock methane.",
-        "Step 3 - Chemical Vapor Deposition (CVD) Plasma Reactor: Methane gas is injected into near-vacuum CVD reactors, energized with high-frequency microwaves into high-temperature plasma. Carbon atoms break away and deposit layer-upon-layer onto diamond seed plates over 3\u20134 weeks.",
-        "Step 4 - Indian Artisan Value Chain: Rough diamond crystal cubes are shipped to Surat, Gujarat, India\u2014the global diamond capital\u2014where master lapidaries laser-cut and polish them into fine jewelry.",
-        "Step 5 - Verified Ecological Metrics: Certified B-Corp; each carat physically removes the equivalent of 20 tonnes of atmospheric carbon (offsetting an average human's annual footprint), consumes 50% less energy than mining, and avoids 127 gallons of water waste and toxic tailings per carat."
-      ],
-      "mental_model": "Cooking a crystal cake in a plasma microwave. Instead of digging a giant 500-metre crater in the African earth to find a shiny rock, you suck smoke out of the sky, turn it into gas, and grow an identical gem in an oven.",
-      "checkpoint": {
-        "question": "What is the sequence of physical and chemical operations used by Aether to manufacture diamonds from atmospheric carbon?",
-        "options": [
-          "Underground coal blasting -> steam heating -> hydraulic fracturing -> mechanical crushing",
-          "Climeworks DAC CO2 capture -> Sabatier synthesis to pure CH4 -> Chemical Vapor Deposition (CVD) vacuum plasma reactor -> Surat cutting and polishing",
-          "Ocean seawater evaporation -> salt crystallization -> solar sintering -> chemical dyeing",
-          "Forest wood combustion -> soot collection -> high-pressure mechanical stamping"
-        ],
-        "correct_index": 1,
-        "explanation": "Aether buys DAC CO2 from Climeworks, synthesizes it with green hydrogen into methane (CH4), feeds it into a high-temperature CVD vacuum plasma reactor to grow diamond crystal lattices over weeks, and ships the gems to Surat, India for cutting and polishing."
-      }
-    },
-    {
-      "card_num": 7,
-      "title": "Eco-Cements & Green Concrete: Novacem vs Traditional Portland",
-      "act": "Act 5: Industrial Cleantech & Carbon-Negative Construction",
-      "slides_covered": [
-        23
-      ],
-      "slides_label": "Slide 23 (Standalone Exam Focus)",
-      "exam_rating": {
-        "tier": "CRITICAL / MUST-KNOW (\u2b50\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 5,
-        "badge_class": "badge-critical",
-        "frequency_count": "Tested in 2018 Mid-2, 2019 Endsem, and 2023 Endsem",
-        "recent_papers": [
-          "End Exam 2023 (Sec III, Q7 - 3M: 'Difference between Portland and Novacem cement')",
-          "End Exam 2019 (Sec IV, Q1d - 3M: 'Novacem as ecofriendly cement')",
-          "Mid-2 2018 (Q8b - 1.5M: 'Novacem: MgO + CO2 -> MgCO3')"
-        ],
-        "exam_tip": "EXACT EXAM QUESTION: Differentiate between Portland and Novacem cement. Portland cement calcines limestone (CaCO3 -> CaO + CO2) at 1450\u00b0C emitting 0.9 kg CO2/kg cement. Novacem uses magnesium silicates calcined at 650\u00b0C and carbonates ambient CO2 during curing (MgO + CO2 -> MgCO3), becoming net carbon-negative (-100 kg CO2/tonne)."
-      },
-      "eli15_takeaway": "Normal concrete is one of the dirtiest things on Earth, causing 8% of all global emissions because making it requires roasting limestone at volcanic temperatures. Novacem is a green cement made from magnesium rocks at lower heat that actually drinks carbon dioxide out of the air as it hardens.",
-      "key_facts": [
-        "Traditional Portland Cement Chemical Burden: Relies on heating limestone ($CaCO_3$) to 1,450\u00b0C in giant kilns. Produces dual emissions: fossil fuel combustion heat + inevitable chemical calcination release ($CaCO_3 \\rightarrow CaO + CO_2$). Emits ~0.9 kg CO2 per 1 kg cement produced, generating 8% of total global CO2 emissions.",
-        "Novacem Magnesium Silicate Innovation: Developed by Imperial College London. Eliminates limestone completely, substituting magnesium silicates ($Mg_3Si_2O_5(OH)_4$) processed at a significantly lower calcination temperature of only 650\u00b0C.",
-        "Carbon-Negative Carbonation Reaction: When Novacem cement is mixed with water and cured in structures, atmospheric CO2 actively reacts with magnesium oxide to form hydrated magnesium carbonates: $MgO + CO_2 \\rightarrow MgCO_3$.",
-        "Net Carbon Balance Comparison: Traditional Portland cement is net-positive (+800 to +900 kg CO2 emitted per tonne). Novacem is net-negative (absorbs up to 100 kg more CO2 per tonne than emitted over its entire production lifecycle)."
-      ],
-      "mental_model": "An oven that smokes versus bread that eats smoke. Portland cement is an industrial chimney that belches carbon as it cooks. Novacem is a chemical sponge that inhales carbon from the air as it sets into rock.",
-      "checkpoint": {
-        "question": "What is the chemical reaction responsible for making Novacem cement carbon-negative during curing?",
-        "options": [
-          "CaCO3 -> CaO + CO2 at 1450\u00b0C",
-          "MgO + CO2 -> MgCO3 (ambient carbonation forming solid magnesium carbonates)",
-          "2H2 + O2 -> 2H2O",
-          "NaCl + H2O -> NaOH + HCl"
-        ],
-        "correct_index": 1,
-        "explanation": "Novacem cures by reacting magnesium oxide with ambient atmospheric CO2: MgO + CO2 -> MgCO3. This carbonation reaction absorbs more CO2 from the air than was produced in low-temperature manufacturing, making it net carbon-negative."
-      }
-    },
-    {
-      "card_num": 8,
-      "title": "Agricultural Decarbonization: Cattle Methane, Red Seaweed & Insects",
-      "act": "Act 4: Fixing the Agricultural Engine",
-      "slides_covered": [
-        17,
-        18,
-        19
-      ],
-      "slides_label": "Slides 17, 18, 19",
-      "exam_rating": {
-        "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 4,
-        "badge_class": "badge-high",
-        "frequency_count": "Tested in 2018 Mid-2 and 2022 Endsem",
-        "recent_papers": [
-          "End Exam 2022 (Sec III, Q15: 'Methane reduction from livestock can be achieved by adding Seaweed to cattle feed')",
-          "Mid-2 2018 (Q1c: 'Major source of methane emissions')"
-        ],
-        "exam_tip": "Remember Asparagopsis taxiformis (red seaweed) and bromoform chemical mechanism. 95% of cattle methane comes from burps (enteric fermentation), not flatulence. Zelp halters oxidize methane in real time."
-      },
-      "eli15_takeaway": "Cows produce immense amounts of methane\u2014a greenhouse gas 28 times more potent than carbon dioxide\u2014from bacteria fermenting grass in their stomachs. Adding a pinch of red ocean seaweed to their feed blocks the methane-making enzyme, cutting burps by up to 80%.",
-      "key_facts": [
-        "The Enteric Fermentation Problem: Agriculture produces ~24% of global greenhouse emissions. A single beef cow belches ~250\u2013500 litres of methane ($CH_4$) daily via enteric fermentation by methanogenic archaea in the rumen. 95% of this is released via burping, not flatulence.",
-        "The Red Seaweed Miracle (*Asparagopsis taxiformis*): Adding just 0.2% to 0.5% dried red seaweed to cattle feed provides concentrated bioavailable bromoform ($CHBr_3$), which directly inhibits the methyl-coenzyme M reductase enzyme used by rumen archaea, slashing burp methane emissions by up to 80\u201390% without compromising weight gain or milk safety.",
-        "Catalytic Burp Halters (Zelp): Wearable bovine headgear that detects exhaled burp plumes using micro-sensors and draws them across an internal catalytic oxidizer, converting methane into water vapor and carbon dioxide before it enters the atmosphere.",
-        "Alternative Protein Conversion (Insects vs Cattle): Crickets and black soldier fly larvae deliver equivalent bioavailable complete protein while using 99% less land, 80% less feed, 90% less water, and producing <1% of the greenhouse emissions per kilogram of edible protein compared to industrial cattle."
-      ],
-      "mental_model": "Putting an enzyme silencer in the stomach. Methanogenic bacteria are factory workers assembling methane molecules. A tiny dose of seaweed is a lock on the factory door that stops them from turning hydrogen into methane gas.",
-      "checkpoint": {
-        "question": "By what biochemical pathway does feeding Asparagopsis taxiformis red seaweed reduce bovine enteric methane emissions?",
-        "options": [
-          "It coats the cow's esophagus with impermeable plastic wax",
-          "It contains bromoform which chemically blocks the methyl-coenzyme M reductase enzyme in rumen methanogenic archaea",
-          "It replaces all rumen bacteria with photosynthetic algae",
-          "It converts all digested carbohydrates into atmospheric nitrogen gas"
-        ],
-        "correct_index": 1,
-        "explanation": "Asparagopsis taxiformis contains concentrated bromoform, which reacts with vitamin B12 cofactors to inhibit the methyl-coenzyme M reductase enzyme responsible for the terminal step of methane generation in rumen archaea."
-      }
-    },
-    {
-      "card_num": 9,
-      "title": "Digital Earth, AI Wildlife Defense & Controlled Environment Agriculture",
-      "act": "Act 6: Space, AI Wildlife Defense & Frontier Agritech",
-      "slides_covered": [
-        20,
-        21,
-        22,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29
-      ],
-      "slides_label": "Slides 20, 21, 22, 24, 25, 26, 27, 28, 29",
-      "exam_rating": {
-        "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
-        "stars": 4,
-        "badge_class": "badge-high",
-        "frequency_count": "Tested in 2022 and 2023 End-Semester Exams",
-        "recent_papers": [
-          "End Exam 2023 (Sec I, Q1c: 'What is Wild Me')",
-          "End Exam 2022 (Sec III, Q6: 'Wild Me AI platform')",
-          "End Exam 2022 (Sec III, Q14: 'TRASE platform')"
-        ],
-        "exam_tip": "Wild Me (open-source computer vision for wildlife biometrics from coat patterns) and TRASE (supply chain mapping of food imports to deforestation sites) are recurring 1-mark fill-in-the-blank and short definition favorites."
-      },
-      "eli15_takeaway": "We can protect nature using digital tools. Artificial intelligence identifies wild animals from their stripes and spots (Wild Me), satellites track illegal fishing ships (Global Fishing Watch), and vertical indoor farms (AeroFarms) grow fresh greens with 95% less water and zero soil.",
-      "key_facts": [
-        "Wild Me & Biometric AI: An open-source AI platform that uses deep learning computer vision algorithms (such as HotSpotter and CurvRank) to identify and track individual wild animals (zebras, whale sharks, snow leopards) from unique skin, spot, or fluke patterns, replacing invasive physical tagging.",
-        "TRASE Supply Chain Intelligence: A spatial data engine developed by SEI and Global Canopy mapping trade flows and financing from commodity importer nations directly to subnational deforestation hotspots (e.g. Brazilian soy and cattle ranches).",
-        "Global Fishing Watch: Leverages machine learning on satellite Automatic Identification System (AIS) vessel tracking beacons to expose illegal, unreported, and unregulated (IUU) commercial trawling inside marine protected areas.",
-        "Vertical Aeroponics (AeroFarms): Plants grow vertically on cloth in closed LED-lit towers with zero soil. Roots are periodically misted with precise nutrient solutions, cutting water usage by 95%, slashing fertilizer by 50%, eliminating synthetic pesticides, and generating up to 390 times higher crop yield per square foot.",
-        "Agroecological Pest Defense: Trap cropping with marigolds (*Tagetes*) produces alpha-terthienyl, naturally suppressing soil root-knot nematodes and shielding brassica crops without petrochemical synthetic pesticides."
-      ],
-      "mental_model": "Face ID for leopards, GPS for fish poachers, and multi-story hydroponic pantries. Instead of trashing more wild jungle for farmland, we build indoor vertical farm towers and protect wild animals with smart cameras from orbit.",
-      "checkpoint": {
-        "question": "What is the core technological capability of the Wild Me conservation platform tested in previous EST examinations?",
-        "options": [
-          "Genetic cloning of extinct Pleistocene mammoths",
-          "Open-source computer vision AI that identifies and tracks individual wild animals biometrically via coat, stripe, or fluke patterns",
-          "Automated robotic shooting of invasive predator species",
-          "Underwater acoustic sonar that repels sharks from bathing beaches"
-        ],
-        "correct_index": 1,
-        "explanation": "Wild Me is an open-source AI and citizen-science platform that applies computer vision pattern-recognition to identify individual animals from photos of their unique spots, stripes, and fin outlines without invasive collars or tags."
-      }
+      "correct": 1,
+      "explanation": "Pyrolysis transforms perishable cellulosic biomass into highly recalcitrant aromatic carbon networks that soil microbes cannot readily break down, storing carbon safely for centuries while improving soil quality."
     }
-  ]
-}
+  },
+  {
+    "card_num": 2,
+    "title": "Blue Carbon: Coastal Ocean Super-Sinks (Mangroves & Salt Marshes)",
+    "act": "ACT I: NATURE-BASED & BIOSPHERIC SINKS",
+    "slides_covered": [
+      4
+    ],
+    "slides_label": "Slide 4 (Standalone Core Topic)",
+    "exam_rating": {
+      "tier": "CRITICAL (\u2b50\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 5,
+      "badge_class": "badge-critical",
+      "frequency_count": "5 appearances in past exams (Highest Recurrence)",
+      "recent_papers": [
+        "End Exam 2023 (Q2a, 3M)",
+        "End Exam 2022 (Q1, 4M)",
+        "End Exam 2019 (Q1b)",
+        "End Exam 2018 (Q3)"
+      ],
+      "exam_tip": "High-yield exam staple. Always state the three essential points: (1) 3\u201319% of global deforestation emissions originate from degraded coastal habitats; (2) Mangroves sequester carbon 10\u201340x faster than terrestrial rainforests in anoxic mud; (3) Multi-hazard coastal defense against cyclones and tidal surges."
+    },
+    "eli15_takeaway": "Blue carbon is carbon captured by coastal marine ecosystems (mangroves, tidal salt marshes, seagrass meadows). These coastal wetlands bury organic carbon deep in waterlogged, oxygen-deprived mud where it never rots, trapping carbon 40 times faster than tropical jungles.",
+    "key_facts": [
+      "<strong>Slide 4 \u2014 Definition of Blue Carbon:</strong> Biologically driven carbon flux and storage in coastal and marine habitats, dominated by mangroves, tidal marshes, and seagrass meadows.",
+      "<strong>Slide 4 \u2014 High Degradation Emissions:</strong> Destroying and draining coastal wetlands accounts for an estimated <strong>3% to 19% of total global deforestation emissions</strong>, despite covering less than 0.5% of the sea floor.",
+      "<strong>Mechanism \u2014 Anoxic Sediment Trapping:</strong> Coastal wetland roots trap organic sediment in permanently waterlogged, saline, oxygen-depleted (anoxic) mud. Because aerobic bacteria cannot survive without oxygen, organic matter is preserved without decomposing, locking carbon away for millennia.",
+      "<strong>Volumetric Rate vs Terrestrial Forests:</strong> Mangrove sediments accumulate and bury carbon at rates <strong>10 to 40 times faster</strong> than terrestrial tropical rainforests per unit area.",
+      "<strong>Multi-Hazard Ecosystem Services:</strong> Mangrove root complexes attenuate up to 66% of wave energy within 100 meters, serving as physical storm-surge buffers against cyclones while acting as critical nursery grounds for 75% of commercial tropical fish species."
+    ],
+    "mental_model": "Terrestrial forests store carbon in tree trunks above ground where fire or termites can quickly release it. Blue carbon ecosystems push carbon deep into a salty, airless underwater swamp where no microbe can breathe to burn it.",
+    "checkpoint": {
+      "question": "What is the primary biogeochemical reason why blue carbon habitats sequester carbon for thousands of years without releasing it?",
+      "options": [
+        "High salinity dissolves carbon dioxide directly into limestone crystals",
+        "Waterlogged, oxygen-poor (anoxic) mud prevents aerobic microorganisms from decomposing trapped organic matter",
+        "Ocean waves continuously compress carbon into crude oil",
+        "Mangrove leaves reflect 100% of incoming sunlight preventing cellular respiration"
+      ],
+      "correct": 1,
+      "explanation": "Because coastal soils are permanently submerged and waterlogged, they are anoxic (deprived of oxygen), which halts aerobic microbial decay and preserves organic carbon in thick sediment layers for thousands of years."
+    }
+  },
+  {
+    "card_num": 3,
+    "title": "Building with Biomass: CLT Timber, Hemp & Embodied Carbon Inversion",
+    "act": "ACT I: NATURE-BASED & BIOSPHERIC SINKS",
+    "slides_covered": [
+      5
+    ],
+    "slides_label": "Slide 5 (Standalone Focus)",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "2 appearances in past exams",
+      "recent_papers": [
+        "Mid-1 2022 (Q3c)",
+        "Quiz-3 2020 (Q2)"
+      ],
+      "exam_tip": "Focus on the shift from 'operational emissions' to 'embodied emissions' in architecture: replacing carbon-intensive Portland cement and steel with photosynthetic structural biomass turns cities from carbon emitters into carbon vaults."
+    },
+    "eli15_takeaway": "Instead of constructing skyscrapers with steel and cement that dump gigatons of CO2 into the sky, we can build tall buildings using compressed cross-laminated timber, hemp-lime walls, and sheep wool insulation, locking forest carbon into urban buildings for over a century.",
+    "key_facts": [
+      "<strong>Slide 5 \u2014 Structural Elements:</strong> Utilizing engineered <strong>Cross-Laminated Timber (CLT)</strong> and structural bamboo in place of reinforced concrete beams and structural steel columns.",
+      "<strong>Slide 5 \u2014 Natural Insulation Materials:</strong> Replacing petroleum-based polyurethane and fiberglass foam insulation with agricultural <strong>hemp fibers and sheep's wool</strong>, drastically lowering manufacturing energy footprints.",
+      "<strong>Slide 5 \u2014 Carbon-Negative Walling (Hemp-Lime):</strong> Using hempcrete (a composite of industrial hemp woody core/shiv and hydraulic lime binder) for monolithic, breathable, fire-resistant exterior walls.",
+      "<strong>Embodied Carbon Inversion:</strong> Conventional construction materials account for ~11% of global carbon emissions through high-temperature calcination and smelting. Biomass buildings act as net carbon sinks, sequestering ~1 tonne of atmospheric CO2 in every cubic meter of engineered timber for 50\u2013100+ years.",
+      "<strong>Circular Lifecycle Durability:</strong> Engineered mass timber exhibits high fire resistance (forming a predictable char layer that insulates the internal structural core) while maintaining high strength-to-weight ratios."
+    ],
+    "mental_model": "A conventional concrete building is an enormous smokestack frozen in time. A cross-laminated timber building is a captured forest standing in the middle of a downtown city street.",
+    "checkpoint": {
+      "question": "How does using Cross-Laminated Timber (CLT) and hemp-lime walling achieve 'embodied carbon inversion' in urban construction?",
+      "options": [
+        "They generate electricity when compressed by structural loads",
+        "They actively absorb sunlight to generate synthetic biofuels for the building",
+        "They replace carbon-intensive concrete/steel with photosynthetic biomass that safely locks absorbed atmospheric CO2 into structural materials for decades",
+        "They dissolve atmospheric nitrogen to fertilize surrounding city parks"
+      ],
+      "correct": 2,
+      "explanation": "Mass timber and hemp-lime lock away the biogenic carbon captured by living plants during photosynthesis, storing it in permanent building structures and displacing fossil-fuel-intensive cement and steel production."
+    }
+  },
+  {
+    "card_num": 4,
+    "title": "Earth-Scale Chemistry: Cloud Alkali Treatment & Enhanced Rock Weathering",
+    "act": "ACT II: GEOCHEMICAL & ATMOSPHERIC INTERVENTIONS",
+    "slides_covered": [
+      6,
+      7
+    ],
+    "slides_label": "Slides 6, 7",
+    "exam_rating": {
+      "tier": "MEDIUM-HIGH (\u2b50\u2b50\u2b50)",
+      "stars": 3,
+      "badge_class": "badge-medium",
+      "frequency_count": "2 appearances in past exams",
+      "recent_papers": [
+        "Mid-1 2024 (Q2)",
+        "Quiz-1 2023 (Q3)"
+      ],
+      "exam_tip": "Expect numerical and chemical questions on Enhanced Weathering: natural silicate dissolution absorbs 3% of fossil emissions; grinding basalt expands surface area to absorb up to 3.7 Gt CO2eq/yr while actively counteracting ocean acidification."
+    },
+    "eli15_takeaway": "Over millions of years, rain and rocks naturally dissolve atmospheric CO2 and wash it into the oceans. Enhanced weathering supercharges this process by crushing volcanic rocks into fine dust and spreading it on croplands to capture CO2 in weeks instead of centuries.",
+    "key_facts": [
+      "<strong>Slide 6 \u2014 Cloud & Ocean Treatment with Alkali:</strong> Offsetting global emissions by dispersing <strong>56 million tonnes of potassium hydroxide (KOH)</strong> into clouds across 0.4% of Earth's surface (an area equivalent to the Greenland ice sheet).",
+      "<strong>Slide 6 \u2014 Ocean Liming Scale:</strong> Counteracting ocean acidification requires adding approximately <strong>2.5 billion tonnes of limestone</strong>, scaling up to <strong>8 billion tonnes per year</strong> to neutralize carbonic acid in marine waters.",
+      "<strong>Slide 7 \u2014 Baseline Natural Rock Weathering:</strong> Natural chemical weathering of silicate rocks currently absorbs approximately <strong>3% of global fossil fuel CO2 emissions</strong> each year via slow geologic cycles.",
+      "<strong>Slide 7 \u2014 Enhanced Weathering (EW) Mechanism:</strong> Pulverizing reactive silicate rocks (such as volcanic basalt or olivine) into fine micron-sized powder multiplies surface area exponentially, accelerating the mineral dissolution reaction: CaSiO3 + 2CO2 + H2O \u2192 Ca\u00b2\u207a + 2HCO3\u207b + SiO2.",
+      "<strong>Slide 7 \u2014 Sequestration Potential & Ocean Co-benefit:</strong> Enhanced weathering could capture up to <strong>3.7 billion tonnes of CO2eq per year</strong> globally while releasing bicarbonate ions into waterways, directly counteracting ocean acidification."
+    ],
+    "mental_model": "Think of natural rock weathering as an ant drinking a gallon of water drop by drop over a million years. Enhanced weathering grinds the rock into billions of microscopic grains so a billion ants drink the entire gallon in one afternoon.",
+    "checkpoint": {
+      "question": "What is the primary chemical product formed when pulverized basalt undergoes enhanced weathering with atmospheric carbon dioxide and rainwater?",
+      "options": [
+        "Gaseous methane (CH4) vented into the upper atmosphere",
+        "Soluble bicarbonate ions (HCO3\u207b) that safely wash into oceans and buffer marine acidity",
+        "Solid sulfuric acid crystals that acidify topsoil",
+        "Pure liquid carbon monoxide (CO)"
+      ],
+      "correct": 1,
+      "explanation": "Silicate weathering converts dissolved CO2 and water into stable, soluble bicarbonate ions (HCO3\u207b) and silica, which travel via river networks into oceans where they safely buffer acidification for over 100,000 years."
+    }
+  },
+  {
+    "card_num": 5,
+    "title": "Direct Air Capture (DAC): Physics, Contactors, Liquid vs Solid Sorbents & BIGs",
+    "act": "ACT II: GEOCHEMICAL & ATMOSPHERIC INTERVENTIONS",
+    "slides_covered": [
+      8,
+      9,
+      10,
+      12,
+      13
+    ],
+    "slides_label": "Slides 8, 9, 10, 12, 13",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "4 appearances in past exams",
+      "recent_papers": [
+        "End Exam 2023 (Q2b)",
+        "Mid-1 2024 (Q4)",
+        "Quiz-4 2020 (Q2)",
+        "End Exam 2019 (Sec I)"
+      ],
+      "exam_tip": "Memorize the contrast between high-temperature liquid hydroxide systems (Carbon Engineering calciner at 900\u00b0C) and low-temperature solid guanidines/BIGs (120\u00b0C mild heating). Be prepared to state the primary bottleneck: massive energetic penalty per ton of CO2 captured."
+    },
+    "eli15_takeaway": "Direct Air Capture uses giant fans to suck ambient air through chemical filters that grab CO2 like a molecular sponge. The biggest challenge is energy: air contains only 0.04% CO2, so scrubbing a single ton requires processing millions of cubic meters of air.",
+    "key_facts": [
+      "<strong>Slide 8 \u2014 DAC Plant Architectures:</strong> Two core deployment paradigms: (1) Standalone DAC coupled to deep geologic storage (permanent CDR); (2) DAC coupled to Enhanced Oil Recovery (EOR - controversial fossil utilization).",
+      "<strong>Slide 9 \u2014 Air-to-Fuels Plants (Carbon Engineering):</strong> Utilizes captured atmospheric CO2 and electrolytic hydrogen (H2 from water splitting using renewable electricity) to synthesize drop-in hydrocarbons: low-carbon aviation jet fuel (Jet-A), diesel, and gasoline.",
+      "<strong>Slide 10 \u2014 Closed-Loop Chemical Cycle:</strong> Ambient air passes through an air contactor with potassium hydroxide (KOH) spray \u2192 forms potassium carbonate (K2CO3) \u2192 reacts in a pellet reactor with calcium hydroxide to precipitate calcium carbonate (CaCO3) pellets \u2192 heated in an oxy-fired calciner at ~900\u00b0C to release pure CO2 \u2192 calcium oxide (CaO) is hydrated in a slaker to regenerate the sorbent.",
+      "<strong>Slide 12 \u2014 Gigatonne-Scale Energy Penalties:</strong> Scrubbing ambient air (at 420 ppm / 0.042% concentration) requires massive parasitic energy loads: 1,500\u20132,500 kWh of thermal energy plus 300\u2013500 kWh of electrical energy per tonne of CO2, creating major supply chain and clean grid bottlenecks.",
+      "<strong>Slide 13 \u2014 Bis-iminoguanidines (BIGs) Low-Temperature Scrubbers:</strong> Oak Ridge National Laboratory discovery: Guanidine-based crystallization agents scrub CO2 like scuba rebreathers. BIGs selectively bind bicarbonate from aqueous solution; heating the solid to just <strong>~120\u00b0C (mild heating)</strong> releases pure CO2 gas (trapped in collection vessels) while water vapors condense in ice-cooled tubes, cutting regeneration thermal energy by over 60% compared to traditional calciners."
+    ],
+    "mental_model": "Filtering carbon from a coal smokestack is like catching fish in a crowded hatchery (15% CO2). Direct air capture is like catching a specific minnow swimming in Lake Superior (0.04% CO2) \u2014 you have to pump and strain millions of liters of water to find one fish.",
+    "checkpoint": {
+      "question": "What is the key thermodynamic advantage of Bis-iminoguanidines (BIGs) over traditional industrial calcium hydroxide/calcination cycles for CO2 stripping?",
+      "options": [
+        "BIGs release CO2 under mild heating at ~120\u00b0C instead of requiring energy-intensive calciners operating at ~900\u00b0C",
+        "BIGs convert carbon directly into enriched uranium",
+        "BIGs eliminate the need for ambient air contactor fans completely",
+        "BIGs operate exclusively underwater inside ocean trenches"
+      ],
+      "correct": 0,
+      "explanation": "Traditional calciners require extreme temperatures (~900\u00b0C) to break calcium carbonate bonds, requiring massive fossil or oxy-fuel combustion. BIGs release pure CO2 at a gentle ~120\u00b0C, vastly reducing thermal energy inputs."
+    }
+  },
+  {
+    "card_num": 6,
+    "title": "Industrial DAC Global Deployments & Deep Geological Storage",
+    "act": "ACT II: GEOCHEMICAL & ATMOSPHERIC INTERVENTIONS",
+    "slides_covered": [
+      11,
+      14,
+      16
+    ],
+    "slides_label": "Slides 11, 14, 16",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "3 appearances in past exams",
+      "recent_papers": [
+        "End Exam 2024 (Q1c)",
+        "End Exam 2023 (Q2c)",
+        "Quiz-2 2020 (Q4)"
+      ],
+      "exam_tip": "Focus on the real-world operational scale: current commercial capture capacity is ~8,000 tCO2/yr across 18 plants globally. Master the CarbFix basalt mineralization mechanism in Iceland and the Net Zero Teesside (NZT) offshore North Sea saline storage model."
+    },
+    "eli15_takeaway": "Once CO2 is pulled from thin air, where does it go? Leading facilities in Iceland dissolve the gas in water and pump it deep into volcanic basalt, where chemical reactions turn the gas into solid stone in under two years.",
+    "key_facts": [
+      "<strong>Slide 11 \u2014 Geological Storage Formations:</strong> CO2 is compressed into a supercritical fluid (>73.8 bar, >31.1\u00b0C) and injected into deep geological reservoirs: deep saline aquifers, permeable basalt formations, depleted oil/gas fields, and deep sub-seabed geological layers beneath impermeable caprocks.",
+      "<strong>Slide 14 \u2014 Global Commercial Landscape:</strong> The world's leading DAC technology companies include <strong>Climeworks (Switzerland)</strong>, <strong>Carbon Engineering (Canada)</strong>, and <strong>Global Thermostat (USA)</strong>.",
+      "<strong>Slide 14 \u2014 Operational Fleet Capacity:</strong> Together, these companies operate <strong>18 commercial plants</strong> ranging in unit scale from 1 tCO2/year up to 4,000 tCO2/year (Climeworks Orca plant in Iceland), capturing a global total of <strong>just under 8,000 tCO2/year</strong>.",
+      "<strong>Slide 14 \u2014 Utilization vs Permanent Sequestration Split:</strong> Approximately half of captured CO2 is sequestered permanently underground (equivalent to offsetting the annual emissions of only ~870 passenger cars), while the other half is sold for commercial utilization (sparkling beverages, agricultural greenhouses, synthetic fuels).",
+      "<strong>Slide 16 \u2014 Net Zero Teesside (NZT Project), UK:</strong> A massive industrial cluster decarbonization initiative in Teesside, UK. Captured CO2 from power plants and heavy industrial facilities is compressed, piped offshore, and buried securely in deep geological saline aquifers beneath the North Sea (Endurance reservoir), targeting up to 10 million tonnes of annual storage."
+    ],
+    "mental_model": "Deep geological mineralization (CarbFix) is like making seltzer water, injecting it deep into crushed volcanic rock, and letting the minerals react until the carbon dioxide turns into solid limestone countertops two kilometers underground.",
+    "checkpoint": {
+      "question": "What is the global operational capacity of commercial DAC plants today as highlighted in the course material, and how is the captured CO2 distributed?",
+      "options": [
+        "Over 100 million tCO2/year, all converted into synthetic gasoline",
+        "Just under 8,000 tCO2/year across 18 plants; half permanently sequestered (offsetting ~870 cars) and half sold for industrial products",
+        "500,000 tCO2/year, entirely vented into abandoned coal mines",
+        "Zero tonnes per year because no commercial DAC facility has ever been constructed"
+      ],
+      "correct": 1,
+      "explanation": "As documented on Slide 14, the 18 operating commercial DAC plants capture just under 8,000 tonnes of CO2 per year \u2014 roughly half is stored permanently in geology while the remaining half is utilized in commercial products."
+    }
+  },
+  {
+    "card_num": 7,
+    "title": "Air-to-Luxury: Aether Diamonds from Captured Atmospheric Pollution",
+    "act": "ACT III: COMMERCIAL CIRCULARITY & INDUSTRIAL CASE STUDIES",
+    "slides_covered": [
+      15
+    ],
+    "slides_label": "Slide 15 (Standalone Core Case Study)",
+    "exam_rating": {
+      "tier": "CRITICAL (\u2b50\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 5,
+      "badge_class": "badge-critical",
+      "frequency_count": "2 appearances in past exams (High Mark Weight)",
+      "recent_papers": [
+        "End Exam 2023 (Q4, 3M)",
+        "End Exam 2022 (Q5, 5M)"
+      ],
+      "exam_tip": "High-yield descriptive case study. You must list all 5 steps in correct sequence: (1) DAC CO2 sourcing from Climeworks; (2) Catalytic conversion to pure methane (CH4); (3) CVD plasma diamond growth; (4) 100% clean solar/nuclear power; (5) Surat, India cutting and polishing."
+    },
+    "eli15_takeaway": "Aether creates real, certified vegan diamonds out of captured smog and air pollution. They take CO2 scrubbed from the air, convert it to pure methane gas, bake it into sparkling rough diamonds inside vacuum plasma chambers, and polish them in Surat, India.",
+    "key_facts": [
+      "<strong>Slide 15 \u2014 Step 1 (CO2 Sourcing):</strong> Aether purchases captured atmospheric CO2 directly from Climeworks' commercial DAC facilities in Europe and ships it to diamond synthesis reactors in the United States.",
+      "<strong>Slide 15 \u2014 Step 2 (Methanation Reaction):</strong> The raw CO2 is processed through a proprietary catalytic methanation process (Sabatier reaction: CO2 + 4H2 \u2192 CH4 + 2H2O) to convert carbon dioxide into ultra-high-purity methane (CH4).",
+      "<strong>Slide 15 \u2014 Step 3 (Chemical Vapor Deposition - CVD):</strong> The pure methane is injected into specialized diamond reactors where Chemical Vapor Deposition (CVD) heats hydrocarbon gas to extreme temperatures under near-vacuum conditions, precipitating pure carbon atoms layer by layer onto substrate seeds over several weeks.",
+      "<strong>Slide 15 \u2014 Step 4 (100% Carbon-Free Power):</strong> The synthesis reactors and manufacturing stages are powered entirely by zero-emission renewable and clean energy sources (solar and nuclear power).",
+      "<strong>Slide 15 \u2014 Step 5 (Surat Cutting & New York Retail):</strong> Rough crystal diamonds are shipped to Surat, Gujarat, India (the global diamond polishing hub) for precision laser cutting and facet polishing, before being sent to New York City for high-end luxury jewelry sales.",
+      "<strong>Slide 15 \u2014 Environmental Metrics:</strong> Each 1-carat Aether diamond removes the equivalent of <strong>20 tonnes of atmospheric CO2</strong> (offsetting ~1.5 years of an average human's footprint), consumes half the energy of mined gems, and completely avoids the <strong>127 gallons of water</strong> traditionally wasted per mined carat."
+    ],
+    "mental_model": "Traditional diamond mining digs massive open-pit craters that scar the Earth and waste thousands of gallons of water. Aether catches toxic sky pollution, turns it into plasma gas, and freezes it into an eternal gem.",
+    "checkpoint": {
+      "question": "What are the chemical gas intermediate and manufacturing technology used to grow Aether diamonds from captured CO2?",
+      "options": [
+        "Carbon monoxide (CO) via blast furnace smelting",
+        "High-purity methane (CH4) via Chemical Vapor Deposition (CVD) under vacuum plasma conditions",
+        "Nitrous oxide (N2O) via liquid nitrogen freezing",
+        "Sulfur dioxide (SO2) via high-pressure hydraulic fracturing"
+      ],
+      "correct": 1,
+      "explanation": "Captured CO2 is catalytically converted into high-purity methane (CH4), which is fed into Chemical Vapor Deposition (CVD) plasma reactors to grow rough gem diamonds over several weeks."
+    }
+  },
+  {
+    "card_num": 8,
+    "title": "Agricultural Decarbonization: Enteric Cattle Methane, Red Seaweed & Insects",
+    "act": "ACT III: COMMERCIAL CIRCULARITY & INDUSTRIAL CASE STUDIES",
+    "slides_covered": [
+      17,
+      18,
+      19
+    ],
+    "slides_label": "Slides 17, 18, 19",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "3 appearances in past exams",
+      "recent_papers": [
+        "End Exam 2022 (Q3, 3M)",
+        "Quiz-3 2020 (Q2)",
+        "End Exam 2018 (Q4b)"
+      ],
+      "exam_tip": "Be prepared to write down the exact scientific name of the red seaweed (Asparagopsis taxiformis) and explain how bromoform halts the microbial methanogenesis enzyme pathway. Contrast with Zelp wearable oxidation halters."
+    },
+    "eli15_takeaway": "Cows burping methane create nearly 15% of all human-driven greenhouse gases. Feeding them tiny pinches of red tropical seaweed cuts their burps by 80%, while replacing cattle beef with cricket burgers slashes agricultural land and water use to near zero.",
+    "key_facts": [
+      "<strong>Slide 17 \u2014 Meat & Dairy Global Footprint:</strong> Global meat and dairy production generates <strong>7.1 gigatons (Gt) of greenhouse gases annually</strong>, representing <strong>14.5% of total man-made global GHG emissions</strong>.",
+      "<strong>Slide 17 \u2014 Enteric Fermentation Driver:</strong> The planet's 1.5 billion head of cattle produce enteric methane (CH4) during rumination, a short-lived greenhouse gas with a warming potential 28\u201336 times more potent than CO2 over a century.",
+      "<strong>Slide 18 \u2014 Asparagopsis taxiformis Red Seaweed:</strong> Feeding cattle small dietary supplements (0.2\u20130.5% of feed) of tropical red seaweed (<em>Asparagopsis taxiformis</em>) reduces bovine methane emissions by up to <strong>80%</strong>. Bioactive bromoform compounds in the seaweed inhibit methyl-coenzyme M reductase in methanogenic archaea within the rumen.",
+      "<strong>Slide 18 \u2014 Zelp Wearable Smart Halter (UK):</strong> A wearable cattle mask fitted with miniature fans and catalytic oxidation filters. When cattle exhale and burp (95% of cattle methane comes from burps, not flatulence!), sensors detect CH4 and channel it through a micro-catalytic converter that oxidizes methane into water vapor and trace CO2: CH4 + 2O2 \u2192 CO2 + 2H2O.",
+      "<strong>Slide 19 \u2014 Alternative Insect Proteins:</strong> Breeding insects like crickets and grasshoppers for protein burgers and livestock feed delivers complete amino acids while consuming 90% less arable land, drastically reducing irrigation water, and generating zero enteric methane emissions."
+    ],
+    "mental_model": "A cow is essentially an enormous four-legged fermentation vat powered by bacteria that burp flammable methane. Red seaweed acts like a microbiological off-switch for those specific burp-producing microbes.",
+    "checkpoint": {
+      "question": "By what biochemical mechanism does the tropical red seaweed Asparagopsis taxiformis reduce enteric methane emissions in cattle by up to 80%?",
+      "options": [
+        "It absorbs all digestive acids so cows cease digestion entirely",
+        "Bioactive bromoform compounds in the seaweed inhibit methanogenesis enzymes in rumen archaea",
+        "It causes cows to exhale pure liquid oxygen",
+        "It replaces stomach bacteria with photosynthetic algae"
+      ],
+      "correct": 1,
+      "explanation": "Asparagopsis contains bromoform which binds to and inhibits the enzyme methyl-coenzyme M reductase, blocking the final metabolic step by which archaea in the cow's rumen produce methane gas."
+    }
+  },
+  {
+    "card_num": 9,
+    "title": "Climate Repair & Geoengineering: Marine Cloud Brightening & Flettner Ships",
+    "act": "ACT IV: PLANETARY REPAIR & MULTI-SECTOR INFRASTRUCTURE",
+    "slides_covered": [
+      20
+    ],
+    "slides_label": "Slide 20 (Standalone Focus)",
+    "exam_rating": {
+      "tier": "MEDIUM-HIGH (\u2b50\u2b50\u2b50)",
+      "stars": 3,
+      "badge_class": "badge-medium",
+      "frequency_count": "2 appearances in past exams",
+      "recent_papers": [
+        "Mid-1 2024 (Q3)",
+        "End Exam 2022 (Q4b)"
+      ],
+      "exam_tip": "Learn the 3-question governance dilemma: (1) Science: Can we do it? (2) Ethics: Should we do it? (3) Policy: How would we do it? Cite Stephen Salter's unmanned Flettner rotor ships and NASA satellite ship tracks as evidence."
+    },
+    "eli15_takeaway": "If polar ice melts too fast, solar radiation management proposes refreezing the poles using autonomous wind-powered ships that spray salty ocean mist into clouds, making them whiter and more reflective like giant planetary mirrors.",
+    "key_facts": [
+      "<strong>Slide 20 \u2014 Polar Refreezing Concept:</strong> Marine Cloud Brightening (MCB) and ocean greening have been proposed as emergency solar radiation management (SRM) tactics to cool polar ice sheets and halt runaway ice-albedo feedback loops.",
+      "<strong>Slide 20 \u2014 Unmanned Flettner Rotor Vessels:</strong> Conceptual design by Stephen Salter and John MacNeill: autonomous, wind-powered, remotely controlled ships fitted with tall spinning Flettner rotors that harness the Magnus effect to sail across oceans while generating electrical power.",
+      "<strong>Slide 20 \u2014 Four-Step Mist Dispersion Process:</strong> Seawater is pumped up, micro-filtered, pressurized, and sprayed through thousands of nanoscale nozzles into the marine boundary layer, creating a plume of microscopic sea-salt aerosol droplets.",
+      "<strong>Slide 20 \u2014 Twomey Effect & Satellite Proof:</strong> Salt crystals act as cloud condensation nuclei (CCN). Distributing more nuclei produces smaller, more numerous water droplets, drastically increasing cloud albedo (reflectivity) to bounce solar radiation back to space. NASA satellite imagery provides direct empirical proof, capturing bright, persistent cloud trails left behind in ship tracks by commercial marine vessels.",
+      "<strong>Slide 20 \u2014 Tripartite Governance Framework:</strong> Poses three fundamental questions: (1) <em>The Scientific Question:</em> Can we do it without triggering disastrous monsoonal disruptions? (2) <em>The Ethical Question:</em> Should humanity artificially manipulate the planetary climate thermostat? (3) <em>The Policy Question:</em> How would global nations govern, regulate, and avoid rogue deployment?"
+    ],
+    "mental_model": "Marine Cloud Brightening is like painting a dark asphalt roof white so it stops absorbing summer heat. Flettner ships spray sea salt into low clouds, turning dull grey skies into bright white mirrors that bounce sunlight away.",
+    "checkpoint": {
+      "question": "What observational phenomenon captured by NASA satellites provides direct empirical evidence that aerosol emissions can brighten marine clouds?",
+      "options": [
+        "Aurora borealis displays over northern Canada",
+        "Bright reflective ship tracks created in marine stratocumulus clouds along cargo vessel shipping lanes",
+        "Giant dust devils sweeping across the Sahara Desert",
+        "Submarine volcanic eruptions boiling coastal surface waters"
+      ],
+      "correct": 1,
+      "explanation": "NASA satellite images clearly reveal bright white line tracks in low clouds where sulfate and aerosol particles from ship smokestacks acted as cloud condensation nuclei, demonstrating the physical mechanism of Marine Cloud Brightening."
+    }
+  },
+  {
+    "card_num": 10,
+    "title": "Clean Transport & Infrastructure: Hydrogen Ships, Tree Corridors, Electric Aviation & Floating Energy",
+    "act": "ACT IV: PLANETARY REPAIR & MULTI-SECTOR INFRASTRUCTURE",
+    "slides_covered": [
+      23
+    ],
+    "slides_label": "Slide 23 (Standalone Core Topic)",
+    "exam_rating": {
+      "tier": "CRITICAL (\u2b50\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 5,
+      "badge_class": "badge-critical",
+      "frequency_count": "3 appearances in past exams",
+      "recent_papers": [
+        "End Exam 2023 (Q3b)",
+        "Mid-2 2018 (Q2)",
+        "End Exam 2019 (Q4)"
+      ],
+      "exam_tip": "High-yield multi-sector question. Memorize the exact data for all 5 sectors: (1) Hydrogen ships addressing 2.5% maritime CO2; (2) Medell\u00edn tree corridors (350,000 trees, 3\u00b0C cooling); (3) Electric aviation addressing 2% flight CO2; (4) Canada Bay of Fundy floating tidal platform; (5) South Korea 41 MW Hapcheon Dam floating solar."
+    },
+    "eli15_takeaway": "Deep decarbonization tackles the heavy infrastructure we rely on: zero-emission hydrogen cargo ships, electric airplanes, massive tree corridors that cool cities by 3\u00b0C, floating ocean tidal turbines, and solar panels floating on reservoirs that cool themselves while preserving land.",
+    "key_facts": [
+      "<strong>Slide 23 \u2014 Sector 1: Hydrogen Ships & Green Ammonia:</strong> Maritime cargo shipping generates <strong>2.5% of total global CO2 emissions</strong> burning heavy fuel oil. Transitioning to green hydrogen fuel cells and liquid ammonia propulsion eliminates sulfur oxides and carbon emissions across oceanic freight routes.",
+      "<strong>Slide 23 \u2014 Sector 2: Urban Green Corridors (Medell\u00edn, Colombia):</strong> To combat severe urban heat island effects, Medell\u00edn planted more than <strong>350,000 trees and millions of plants across 30 interconnected green corridors</strong>, successfully lowering citywide ambient microclimate temperatures by up to <strong>3\u00b0C (3.5\u00b0F)</strong>.",
+      "<strong>Slide 23 \u2014 Sector 3: Electric Aircraft & Sustainable Aviation:</strong> Commercial aviation generates <strong>2% of the world's carbon emissions</strong> at high cruising altitudes. Battery-electric propulsion is emerging for regional and commuter routes under 500 km, complemented by sustainable aviation fuels (SAF) for long-haul routes.",
+      "<strong>Slide 23 \u2014 Sector 4: Floating Tidal Energy Platforms (Canada):</strong> Canada deployed the world's first floating tidal-energy platform in the Bay of Fundy (which possesses the world's highest tidal range of up to 16 meters), harnessing predictable, dense hydrodynamic currents to generate baseload renewable electricity.",
+      "<strong>Slide 23 \u2014 Sector 5: Floating Solar Photovoltaics / FPV (South Korea):</strong> South Korea installed a massive <strong>41 MW floating solar power plant</strong> on the Hapcheon Dam reservoir. Floating panels eliminate terrestrial land acquisition costs, suppress toxic algal blooms, curb water evaporation, and benefit from natural water cooling that boosts solar photovoltaic efficiency by <strong>5% to 10%</strong>."
+    ],
+    "mental_model": "Rather than clearing forests to install solar panels or burning bunker fuel to move cargo, multi-sector infrastructure puts solar panels on dam reservoirs to keep water cool, and plants green tree highways right through concrete city canyons.",
+    "checkpoint": {
+      "question": "What dual environmental and physical benefits are achieved by South Korea's 41 MW floating solar installation on the Hapcheon Dam?",
+      "options": [
+        "It freezes the reservoir water completely to facilitate ice skating all year round",
+        "It conserves agricultural land, suppresses water evaporation, and natural water cooling increases solar panel conversion efficiency by 5\u201310%",
+        "It produces natural petroleum through high-voltage underwater electrolysis",
+        "It converts incoming solar radiation into pressurized natural gas"
+      ],
+      "correct": 1,
+      "explanation": "Floating solar (FPV) avoids land-use conflicts, prevents evaporation from reservoirs, and leverages the cooling effect of the water body to reduce thermal degradation and boost solar panel output by 5\u201310%."
+    }
+  },
+  {
+    "card_num": 11,
+    "title": "Digital Earth: Remote Work, Cloud Efficiency & The 'Battle of Technologies' AI Surveillance",
+    "act": "ACT V: DIGITAL SYSTEMS & CONTROLLED ENVIRONMENT AGRICULTURE",
+    "slides_covered": [
+      21,
+      22,
+      24
+    ],
+    "slides_label": "Slides 21, 22, 24",
+    "exam_rating": {
+      "tier": "CRITICAL (\u2b50\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 5,
+      "badge_class": "badge-critical",
+      "frequency_count": "4 appearances in past exams",
+      "recent_papers": [
+        "End Exam 2023 (Q5b, 3M)",
+        "End Exam 2022 (Q4, 3M)",
+        "End Exam 2019 (Q3)",
+        "Quiz-1 2023 (Q2)"
+      ],
+      "exam_tip": "High exam probability. Wild Me and Global Forest Watch frequently appear as short notes or 2\u20133 mark questions. Be ready to explain how computer vision identifies animal coat patterns (like fingerprints) and how satellite RS-GPS halts illegal fishing."
+    },
+    "eli15_takeaway": "Technology can fight environmental crime: satellites track illegal logging in real time, drones detect poachers in African savannahs using thermal cameras, blockchain prevents illegal tuna from entering markets, and AI identifies individual endangered animals by scanning their natural stripes and spots.",
+    "key_facts": [
+      "<strong>Slide 21 \u2014 Remote Working & Commute Decarbonization:</strong> Telecommuting directly curtails urban transport emissions, decreases peak-hour road congestion, and enables commercial office facilities to consolidate lighting and HVAC loads.",
+      "<strong>Slide 22 \u2014 Hyperscale Datacenter Efficiency:</strong> Migrating computational workloads from inefficient distributed corporate servers to centralized, energy-efficient hyperscale datacenters optimizes Power Usage Effectiveness (PUE) through liquid immersion cooling and 24/7 dedicated clean power contracts.",
+      "<strong>Slide 24 \u2014 Blockchain & Commodity Supply Chains:</strong> Blockchain ledgers integrated with Remote Sensing (RS) and GPS transponders track vessel positioning and seafood origins to eradicate illegal, unreported, and unregulated (IUU) tuna fishing and stop agricultural commodity fraud.",
+      "<strong>Slide 24 \u2014 Satellite Deforestation & Palm Oil Tracking:</strong> High-resolution optical and radar remote sensing satellites monitor rainforest canopies in real time, detecting illicit road carving and forest clearing for palm oil expansion across Southeast Asia and the Amazon basin.",
+      "<strong>Slide 24 \u2014 Drones & WRI Global Forest Watch (GFW):</strong> Crowdsourced algorithms and autonomous drone surveillance networks detect illegal logging camps and timber transport before irreversible deforestation occurs.",
+      "<strong>Slide 24 \u2014 Thermal Imaging Anti-Poaching:</strong> Night-vision thermal infrared cameras deployed in the savannahs of Kenya's National Parks detect armed poachers crossing border corridors from Tanzania under cover of darkness.",
+      "<strong>Slide 24 \u2014 AI Wildlife Defense & Wild Me / DolphinGemma:</strong> Advanced computer vision models scan wildlife photographs to identify individual animals based on natural biometric markings (whisker spots in lions, stripe patterns in Chinese wild tigers, dorsal fins in dolphins), functioning like an automated biometric passport for global conservation without needing invasive physical tagging."
+    ],
+    "mental_model": "Wild Me is like facial recognition at airport passport control, but instead of human faces, the AI recognizes the unique geometric spot pattern on a whale shark's skin or the stripes on an endangered tiger.",
+    "checkpoint": {
+      "question": "How does the 'Wild Me' AI platform assist conservation biologists in tracking endangered animal populations?",
+      "options": [
+        "By genetically cloning extinct animal species in underground labs",
+        "By using computer vision algorithms to identify individual animals from photos based on their unique biometric coat and spot patterns without invasive tags",
+        "By deploying robotic predator decoys to frighten away poachers",
+        "By administering tranquilizer darts using remote-controlled satellites"
+      ],
+      "correct": 1,
+      "explanation": "Wild Me uses computer vision and machine learning (such as Wildbook algorithms) to analyze photographic sightings and distinguish individual animals by their unique natural patterns, enabling non-invasive census monitoring."
+    }
+  },
+  {
+    "card_num": 12,
+    "title": "Controlled Environment Agriculture (CEA): Vertical Farming Pillars & AeroFarms",
+    "act": "ACT V: DIGITAL SYSTEMS & CONTROLLED ENVIRONMENT AGRICULTURE",
+    "slides_covered": [
+      25,
+      26,
+      27
+    ],
+    "slides_label": "Slides 25, 26, 27",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "3 appearances in past exams",
+      "recent_papers": [
+        "End Exam 2023 (Q5a)",
+        "Mid-1 2024 (Q5)",
+        "Quiz-4 2020 (Q3)"
+      ],
+      "exam_tip": "Be prepared to list the Four Essential Aspects of Vertical Farming: (1) Tower-like physical structure; (2) LED spectrum lighting; (3) Soilless medium (aeroponics/hydroponics); (4) 95% water reduction. Cite AeroFarms' cloth fleece and LED wavelength optimization."
+    },
+    "eli15_takeaway": "Vertical farming grows fresh food indoors inside stacked modular towers without sunlight or soil. Crops have their roots misted with nutrient water under specialized pink LED lights, producing 390 times more food per square foot while using 95% less water.",
+    "key_facts": [
+      "<strong>Slide 25 \u2014 Definition & Objectives of CEA:</strong> Vertical and greenhouse farming leverages environmentally controlled agriculture to maximize crop yields in confined, urban, or non-arable locations by artificially regulating temperature, humidity, airflow, and CO2 enrichment indoors.",
+      "<strong>Slide 26 \u2014 Pillar 1 (Physical Arrangement):</strong> Crops are cultivated in vertical, multi-tiered modular racking towers that multiply production output per square meter of building footprint.",
+      "<strong>Slide 26 \u2014 Pillar 2 (Lighting Optimization):</strong> Delivers precise photosynthetic active radiation (PAR) using customized solid-state LED fixtures tuned to specific chlorophyll-absorption wavelengths (predominantly red and blue spectrums) alongside natural daylight harvesting.",
+      "<strong>Slide 26 \u2014 Pillar 3 (Growth Medium):</strong> Replaces natural topsoil with soilless systems: <em>Hydroponics</em> (roots submerged in aerated nutrient solution), <em>Aeroponics</em> (roots suspended in air and misted periodically), or <em>Aquaponics</em> (closed-loop symbiotic fish and plant culture), supported by inert media like sphagnum moss or coconut coir.",
+      "<strong>Slide 26 & 27 \u2014 Pillar 4 (95% Water Conservation):</strong> Recirculating irrigation loops capture plant transpiration via dehumidifiers, slashing water consumption by up to <strong>95%</strong> compared to open-field agriculture while eliminating synthetic agricultural runoff.",
+      "<strong>Slide 27 \u2014 Crops Best Suited:</strong> Leafy greens (lettuce, kale, spinach), culinary herbs (basil, mint), vine vegetables (tomatoes, bell peppers), broccoli, and succulents.",
+      "<strong>Slide 27 \u2014 Industrial Case Study (AeroFarms, USA):</strong> Commercial pioneer using patented aeroponic misting technology. Seeds are sown on reusable cloth fleece fabric woven from recycled plastic beverage bottles; plants receive optimized LED spectra without pesticides, cutting water use by 95% across high-density facilities globally (USA, Japan, China, Singapore, South Korea, Germany, UK, Netherlands)."
+    ],
+    "mental_model": "Traditional farming is a two-dimensional carpet spread across millions of acres, praying for rain and sunlight. Vertical farming is a 3D skyscraper where every drop of water is recycled and every leaf receives the exact photon it needs.",
+    "checkpoint": {
+      "question": "What is the primary technological difference between traditional open-field farming and AeroFarms' patented aeroponic vertical farming system?",
+      "options": [
+        "AeroFarms grows crops entirely underwater inside deep ocean trenches",
+        "AeroFarms suspends plant roots in air, misting them with nutrient water, using reusable recycled-bottle cloth, custom LED wavelengths, and cutting water use by 95%",
+        "AeroFarms burns fossil fuels indoors to elevate soil temperature above 100\u00b0C",
+        "AeroFarms genetic engineering makes plants grow without needing water or light"
+      ],
+      "correct": 1,
+      "explanation": "AeroFarms utilizes indoor aeroponics where roots are suspended and sprayed with nutrient mist, supported on reusable fleece made from recycled plastic bottles under tuned LED wavelengths, reducing water consumption by 95%."
+    }
+  },
+  {
+    "card_num": 13,
+    "title": "Agroecological Adaptation & Carbon Moonshots: Trap Cropping & XPRIZE",
+    "act": "ACT V: DIGITAL SYSTEMS & CONTROLLED ENVIRONMENT AGRICULTURE",
+    "slides_covered": [
+      28,
+      29
+    ],
+    "slides_label": "Slides 28, 29",
+    "exam_rating": {
+      "tier": "HIGH (\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 4,
+      "badge_class": "badge-high",
+      "frequency_count": "2 appearances in past exams",
+      "recent_papers": [
+        "Mid-1 2024 (Q1)",
+        "End Exam 2022 (Q2)"
+      ],
+      "exam_tip": "Master the biological pairs for trap cropping: Marigolds against root-knot nematodes and whiteflies; Italy (Brassicaceae + sugar beets vs flea beetles); China (Maize + cotton vs whiteflies). Note the $100M XPRIZE milestone for gigatonne carbon removal."
+    },
+    "eli15_takeaway": "Instead of spraying toxic poisons on food, trap cropping plants natural pest magnets around fields \u2014 like bright marigolds whose roots kill parasitic worms and flowers repel flies. Meanwhile, global moonshot prizes like the $100M XPRIZE fund technologies to pull gigatons of carbon from the air.",
+    "key_facts": [
+      "<strong>Slide 28 \u2014 Climate Trigger for Pest Proliferation:</strong> Global climate warming and rising humidity accelerate insect metabolic rates, shorten generation intervals, and expand pest geographical ranges into previously temperate croplands.",
+      "<strong>Slide 28 \u2014 Trap Cropping Working Principle:</strong> Establishing perimeter borders or intercropped rows of sacrificial companion plants that are significantly more attractive to insect pests than the primary cash crop, preventing pest infestation without synthetic chemical insecticides.",
+      "<strong>Slide 28 \u2014 Marigolds (Tagetes) Chemical Warfare:</strong> Marigold root systems exude natural alpha-terthienyl nematicides that kill root-knot nematodes upon penetration, while their blossoms emit volatile organic compounds that confuse and deter aphids and whiteflies.",
+      "<strong>Slide 28 \u2014 Global Real-World Examples:</strong> (1) <em>Italy:</em> Planting <em>Brassicaceae</em> buffer strips around sugar beet fields to intercept flea beetles; (2) <em>China:</em> Interplanting maize border strips alongside cotton fields to attract and trap whiteflies and cotton bollworms.",
+      "<strong>Slide 28 \u2014 Intensive System Optimization:</strong> Successful trap cropping requires rigorous ecological knowledge: decoding pest sensory behavior, matching plant flowering phenologies, and optimizing spatial border-to-crop ratios.",
+      "<strong>Slide 29 \u2014 XPRIZE Carbon Removal ($100 Million):</strong> Launched by the Musk Foundation and XPRIZE, this competition represents the largest incentive prize in human history. It challenges innovators worldwide to demonstrate operational CDR technologies sequestering 1,000 net tonnes of CO2/year and prove a credible engineering pathway to gigatonne-scale carbon removal by 2050."
+    ],
+    "mental_model": "Trap cropping is like setting out a plate of sweet glazed doughnuts at the front door so unwanted guests fill their bellies on junk food and never make it into your dining room.",
+    "checkpoint": {
+      "question": "How do marigolds (Tagetes) act as a biological trap crop to protect primary agricultural crops?",
+      "options": [
+        "Their leaves release toxic chlorine gas during photosynthesis",
+        "Their roots exude natural nematicidal chemicals that suppress root-knot nematodes while flower volatiles repel aphids and whiteflies",
+        "They attract wild birds that consume all plant leaves in the field",
+        "Their roots absorb 100% of soil moisture to dehydrate surrounding insects"
+      ],
+      "correct": 1,
+      "explanation": "Marigolds produce alpha-terthienyl compounds in their root exudates that kill root-knot nematodes, while their floral scents emit natural insect deterrents that confuse foliar pests like aphids and whiteflies."
+    }
+  },
+  {
+    "card_num": 14,
+    "title": "High-Yield Exam Spotlight: Novacem Eco-Cements vs Traditional Portland Chemistry",
+    "act": "ACT VI: HIGH-YIELD EXAM QUESTION MASTERCLASS",
+    "slides_covered": [
+      "Exam Past Papers (2018, 2019, 2023)"
+    ],
+    "slides_label": "Exam Question Bank Spotlight (Pillar IV)",
+    "exam_rating": {
+      "tier": "CRITICAL (\u2b50\u2b50\u2b50\u2b50\u2b50)",
+      "stars": 5,
+      "badge_class": "badge-critical",
+      "frequency_count": "3 appearances in past exams (Must-Know Chemistry)",
+      "recent_papers": [
+        "End Exam 2023 (Q3, 3M)",
+        "End Exam 2019 (Q2, 3M)",
+        "Mid-2 2018 (Q1b, 1.5M)"
+      ],
+      "exam_tip": "One of the most frequently asked chemical contrast questions in EST! You must write out the chemical equations: Portland cement calcination (CaCO3 \u2192 CaO + CO2 at 1450\u00b0C) versus Novacem magnesium silicate carbonation (MgO + CO2 + H2O \u2192 MgCO3) at 650\u00b0C."
+    },
+    "eli15_takeaway": "Traditional Portland cement is one of Earth's biggest polluters because it bakes limestone at 1,450\u00b0C, releasing tons of CO2. Novacem replaces limestone with magnesium silicates baked at just 650\u00b0C, and as it hardens, it actually drinks CO2 from the air, making it carbon-negative!",
+    "key_facts": [
+      "<strong>Exam Provenance & Recurrence:</strong> Asked as a 3-mark conceptual question in Endsem 2023, Endsem 2019, and Midsem-2 2018: <em>'Explain how Novacem cement differs chemically from Ordinary Portland Cement and why it is considered carbon-negative.'</em>",
+      "<strong>Traditional Ordinary Portland Cement (OPC) Problem:</strong> Produces ~8% of global CO2 emissions. Manufacturing OPC requires calcining limestone (CaCO3) in high-temperature rotary kilns at <strong>1,450\u00b0C</strong>: CaCO3 \u2192 CaO + CO2. Producing 1 tonne of OPC releases approximately <strong>0.8 to 1.0 tonne of CO2</strong> (50% from limestone chemical breakdown, 50% from fossil fuel combustion to reach 1,450\u00b0C).",
+      "<strong>Novacem Raw Materials & Low Temperature:</strong> Novacem uses abundant <strong>magnesium silicates (MgSiO3)</strong> instead of limestone (calcium carbonate). It manufactures magnesium oxide (MgO) at a vastly lower kiln temperature of <strong>650\u00b0C</strong>, slashing fuel combustion emissions by over 50%.",
+      "<strong>Carbon-Negative Hardening (Carbonation):</strong> While traditional cement cures through hydration, Novacem mortar cures by actively absorbing atmospheric carbon dioxide to form hydrated magnesium carbonates: MgO + CO2 + H2O \u2192 MgCO3\u00b73H2O (nesquehonite).",
+      "<strong>Net Carbon Balance:</strong> For every tonne of Novacem cement manufactured, the process can absorb up to <strong>100 kg more CO2 than it emits</strong>, achieving true cradle-to-gate carbon-negative concrete."
+    ],
+    "mental_model": "Making traditional Portland cement is like burning a log to make ashes \u2014 you dump carbon into the air. Making Novacem is like building a coral reef in a mold \u2014 the cement cures by drinking carbon out of the atmosphere and locking it into rock.",
+    "checkpoint": {
+      "question": "What is the primary chemical difference that makes Novacem cement carbon-negative compared to Ordinary Portland Cement (OPC)?",
+      "options": [
+        "Novacem mixes powdered uranium into standard concrete to generate internal heat",
+        "Novacem uses magnesium silicates processed at 650\u00b0C instead of limestone at 1,450\u00b0C, and hardens by absorbing atmospheric CO2 into magnesium carbonate",
+        "Novacem is made by dissolving plastic waste in concentrated hydrochloric acid",
+        "Novacem cures exclusively by evaporating liquid nitrogen"
+      ],
+      "correct": 1,
+      "explanation": "Novacem replaces limestone with magnesium silicates calcined at a much lower temperature (650\u00b0C vs 1,450\u00b0C) and cures via carbonation (MgO + CO2 \u2192 MgCO3), absorbing more atmospheric CO2 during hardening than is emitted during manufacturing."
+    }
+  }
+]
