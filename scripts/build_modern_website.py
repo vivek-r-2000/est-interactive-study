@@ -508,6 +508,109 @@ def build_website():
       line-height: 1.45;
     }}
 
+    /* Attached Exam Questions Section */
+    .exam-questions-section {{
+      background: var(--card-hover);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 16px;
+      margin-bottom: 14px;
+    }}
+    .exam-q-hdr {{
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #b45309;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 10px;
+    }}
+    .exam-q-list {{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }}
+    .exam-q-card {{
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 3px solid #f59e0b;
+      border-radius: 4px;
+      padding: 10px 12px;
+    }}
+    .exam-q-meta {{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 6px;
+      font-size: 11px;
+    }}
+    .exam-q-paper {{
+      font-weight: 700;
+      color: #b45309;
+      background: rgba(245, 158, 11, 0.1);
+      padding: 2px 6px;
+      border-radius: 3px;
+    }}
+    .exam-q-section {{
+      color: var(--text-muted);
+      font-weight: 500;
+    }}
+    .exam-q-marks {{
+      margin-left: auto;
+      font-weight: 700;
+      color: #047857;
+      background: rgba(16, 185, 129, 0.1);
+      padding: 2px 6px;
+      border-radius: 3px;
+    }}
+    .exam-q-prompt {{
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }}
+    .exam-answer-details {{
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 6px;
+    }}
+    .exam-answer-summary {{
+      cursor: pointer;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #b45309;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+      background: rgba(245, 158, 11, 0.05);
+    }}
+    .exam-answer-summary:hover {{
+      background: rgba(245, 158, 11, 0.12);
+    }}
+    .exam-answer-body {{
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--text);
+      line-height: 1.55;
+      border-top: 1px solid var(--border);
+    }}
+    .exam-answer-body ul, .exam-answer-body ol {{
+      margin: 4px 0 4px 18px;
+      padding: 0;
+    }}
+    .exam-answer-body li {{
+      margin-bottom: 4px;
+    }}
+
     /* Continuity Bridge */
     .continuity-bridge {{
       background: var(--bridge-bg);
@@ -1098,12 +1201,41 @@ def build_website():
               <div class="mental-desc"><strong>Mental Model:</strong> ${{card.mental_model}}</div>
             </div>
 
+            <!-- Attached Past Exam Questions & Model Answers -->
+            ${{card.exam_questions && card.exam_questions.length > 0 ? `
+              <div class="exam-questions-section">
+                <div class="exam-q-hdr">
+                  <span>🎯</span> Past Exam Questions Asked on this Topic (${{card.exam_questions.length}})
+                </div>
+                <div class="exam-q-list">
+                  ${{card.exam_questions.map((q, qidx) => `
+                    <div class="exam-q-card">
+                      <div class="exam-q-meta">
+                        <span class="exam-q-paper">${{q.paper}}</span>
+                        <span class="exam-q-section">${{q.section}}</span>
+                        <span class="exam-q-marks">${{q.marks}}</span>
+                      </div>
+                      <div class="exam-q-prompt">“${{q.question}}”</div>
+                      <details class="exam-answer-details">
+                        <summary class="exam-answer-summary">
+                          <span>📖 View Professor's Model Answer & Scoring Breakdown</span>
+                        </summary>
+                        <div class="exam-answer-body">
+                          ${{q.answer_guideline}}
+                        </div>
+                      </details>
+                    </div>
+                  `).join('')}}
+                </div>
+              </div>
+            ` : ''}}
+
             <div class="checkpoint-wrap">
               <div class="checkpoint-hdr"><span>⚡</span> Instant Recall Checkpoint</div>
               <div class="checkpoint-q">${{card.checkpoint.question}}</div>
               <div class="checkpoint-options" id="cp-opts-${{cardId.split('.').join('-')}}">
                 ${{card.checkpoint.options.map((opt, idx) => `
-                  <button class="cp-opt" onclick="handleCheckpoint('${{cardId}}', ${{idx}}, ${{card.checkpoint.correct_index}}, '${{encodeURIComponent(card.checkpoint.explanation)}}', this)">
+                  <button class="cp-opt" onclick="handleCheckpoint('${{cardId}}', ${{idx}}, ${{card.checkpoint.correct !== undefined ? card.checkpoint.correct : card.checkpoint.correct_index}}, '${{encodeURIComponent(card.checkpoint.explanation)}}', this)">
                     ${{opt}}
                   </button>
                 `).join('')}}
@@ -1367,7 +1499,8 @@ def build_website():
         // Also search Topic Cards (Class 11)
         if (c.topic_cards) {{
           c.topic_cards.forEach(card => {{
-            const textCorpus = (card.title + " " + card.eli15_takeaway + " " + card.key_facts.join(" ") + " " + card.mental_model + " " + card.exam_rating.tier + " " + card.exam_rating.exam_tip + " " + card.exam_rating.recent_papers.join(" ")).toLowerCase();
+            const eqText = card.exam_questions ? card.exam_questions.map(eq => eq.paper + " " + eq.section + " " + eq.question + " " + eq.answer_guideline).join(" ") : "";
+            const textCorpus = (card.title + " " + card.eli15_takeaway + " " + card.key_facts.join(" ") + " " + card.mental_model + " " + card.exam_rating.tier + " " + card.exam_rating.exam_tip + " " + card.exam_rating.recent_papers.join(" ") + " " + eqText).toLowerCase();
             if (textCorpus.includes(q)) {{
               matches.push({{
                 type: "topic_card",
@@ -1445,6 +1578,27 @@ def build_website():
               <ul class="bullets-list">
                 ${{card.key_facts.map(f => `<li>${{f}}</li>`).join('')}}
               </ul>
+              ${{card.exam_questions && card.exam_questions.length > 0 ? `
+                <div class="exam-questions-section">
+                  <div class="exam-q-hdr"><span>🎯</span> Past Exam Questions Asked on this Topic (${{card.exam_questions.length}})</div>
+                  <div class="exam-q-list">
+                    ${{card.exam_questions.map((q, qidx) => `
+                      <div class="exam-q-card">
+                        <div class="exam-q-meta">
+                          <span class="exam-q-paper">${{q.paper}}</span>
+                          <span class="exam-q-section">${{q.section}}</span>
+                          <span class="exam-q-marks">${{q.marks}}</span>
+                        </div>
+                        <div class="exam-q-prompt">“${{q.question}}”</div>
+                        <details class="exam-answer-details">
+                          <summary class="exam-answer-summary"><span>📖 View Model Answer & Key Points</span></summary>
+                          <div class="exam-answer-body">${{q.answer_guideline}}</div>
+                        </details>
+                      </div>
+                    `).join('')}}
+                  </div>
+                </div>
+              ` : ''}}
             </div>
           `;
         }} else if (m.type === "slide") {{

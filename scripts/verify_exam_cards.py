@@ -36,6 +36,14 @@ def test_exam_cards():
         assert "key_facts" in tc, "Card missing key_facts"
         assert len(tc["key_facts"]) >= 4, f"Card {tc['card_num']} has insufficient key facts ({len(tc['key_facts'])})"
         assert "checkpoint" in tc, "Card missing checkpoint"
+        assert "exam_questions" in tc, f"Card {tc['card_num']} missing exam_questions"
+        assert len(tc["exam_questions"]) >= 2, f"Card {tc['card_num']} has insufficient exam questions ({len(tc['exam_questions'])})"
+        for eq in tc["exam_questions"]:
+            assert "paper" in eq, "Exam question missing paper"
+            assert "section" in eq, "Exam question missing section"
+            assert "marks" in eq, "Exam question missing marks"
+            assert "question" in eq, "Exam question missing question"
+            assert "answer_guideline" in eq, "Exam question missing answer_guideline"
         
         for s in tc["slides_covered"]:
             if isinstance(s, int):
