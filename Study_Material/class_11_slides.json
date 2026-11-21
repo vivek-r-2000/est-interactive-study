@@ -1,0 +1,745 @@
+{
+  "class_id": 11,
+  "title": "Class 11: Climate Change Technology Solutions (Exam-Rated Topic Cards)",
+  "slides": [
+    {
+      "slide_num": 1,
+      "title": "Mission Briefing: The Net-Zero Dilemma",
+      "act": "Act 1: The Negative Emissions Imperative & Nature's Carbon Sponges",
+      "continuity_bridge": "We know emissions are driving global temperatures past safe thresholds. Class 11 shifts from analyzing the disaster to engineering the technological countermeasures.",
+      "eli15_takeaway": "Stopping new emissions only caps future damage—because we already overloaded the atmosphere, we must actively vacuum historical carbon back out of the sky.",
+      "key_facts": [
+        "Instructor & Scope: Dr. Rama Chandra Prasad on climate change technological countermeasures.",
+        "Four technology pillars: Carbon removal (NETs), clean mobility, climate-smart agriculture, and digital environmental sensing.",
+        "Four removal pathways: Biological sinks (forests/soil), Earth chemistry (minerals/oceans), direct air capture machines, and food system redesign."
+      ],
+      "mental_model": "An overflowing bathtub. Turning off the tap stops incoming water, but the bathroom floor stays flooded until you pull the drain plug.",
+      "checkpoint": {
+        "question": "What is the core premise of Class 11 regarding climate technology solutions?",
+        "options": [
+          "Reaching climate stability requires active negative emissions technologies alongside aggressive emissions reductions",
+          "Climate change has already solved itself without human intervention",
+          "Technology solutions are strictly limited to planting ornamental garden flowers",
+          "All industrial factories must immediately dismantle their electrical grids"
+        ],
+        "correct_index": 0,
+        "explanation": "Halting emissions only stops future pollution; true net-zero requires negative emissions technologies to extract historical \\(CO_2\\) from the air."
+      }
+    },
+    {
+      "slide_num": 2,
+      "title": "Negative Emission Technologies (NETs) & The Paris Target",
+      "act": "Act 1: The Negative Emissions Imperative & Nature's Carbon Sponges",
+      "continuity_bridge": "Now that we know we need active carbon removal, let's look at the legal target set by world leaders and the simplest tool we have: trees.",
+      "eli15_takeaway": "The Paris Agreement demands capping global warming at 1.5°C, requiring active carbon drawdown to counterbalance unavoidable industrial and agricultural emissions.",
+      "key_facts": [
+        "COP21 Paris ceiling: Limit average global temperature rise to 1.5°C above pre-industrial levels.",
+        "Role of NETs: Neutralize residual emissions from hard-to-abate sectors like aviation, maritime freight, steel, cement, and livestock.",
+        "Afforestation sequestration rate: ~3.7 tonnes of \\(CO_2\\) per hectare per year.",
+        "Removal cost: \\$20 to \\$100 per tonne of \\(CO_2\\).",
+        "Physical constraints: Competition with food crops for land, high freshwater demand, wildfire permanence risks, and snowy-latitude albedo warming."
+      ],
+      "mental_model": "Natural solar-powered vacuums that work reliably, but occupy so much living-room floor that you run out of space for your dining table.",
+      "checkpoint": {
+        "question": "What is the approximate CO2 sequestration rate of afforestation and reforestation noted in the lecture?",
+        "options": [
+          "3.7 tonnes per hectare per year",
+          "500 tonnes per hectare per year",
+          "0.01 tonnes per hectare per year",
+          "10,000 tonnes per hectare per year"
+        ],
+        "correct_index": 0,
+        "explanation": "Afforestation captures around 3.7 tonnes of \\(CO_2\\)/ha/yr at \\$20–\\$100/t, constrained by land and freshwater competition."
+      }
+    },
+    {
+      "slide_num": 3,
+      "title": "Biochar: Baking Plant Waste into Permanent Soil Gold",
+      "act": "Act 1: The Negative Emissions Imperative & Nature's Carbon Sponges",
+      "continuity_bridge": "Living trees eventually die and rot, venting their carbon back into the air. What if we could permanently lock that biomass carbon before it decomposes?",
+      "eli15_takeaway": "Pyrolysis turns perishable crop stalks into a tough, porous charcoal sponge that locks carbon into farm soil for centuries instead of rotting.",
+      "key_facts": [
+        "Global removal potential: Up to 4.8 billion tonnes (4.8 Gt) of \\(CO_2\\) per year.",
+        "Thermochemical process: Pyrolysis heats agricultural biomass at 400°C–700°C in an oxygen-depleted environment.",
+        "Emissions avoided: Prevents open-field crop stubble burning and rotting, eliminating black carbon smoke and anaerobic methane.",
+        "Soil co-benefits: Porous aromatic carbon honeycomb structure holds moisture, binds soil nutrients, and increases crop yields."
+      ],
+      "mental_model": "Sealed pressure cooker vs open campfire. Open fire turns wood to smoke in minutes; oxygen-free baking locks carbon into solid charcoal pencils lasting 500 years.",
+      "checkpoint": {
+        "question": "Why does biochar remain stable in soil for centuries compared to uncharred organic compost?",
+        "options": [
+          "Pyrolysis rearranges carbon into recalcitrant aromatic structures that soil microbes cannot readily break down",
+          "Biochar turns into radioactive uranium that scares away earthworms",
+          "Biochar evaporates into the clouds within 48 hours",
+          "Biochar turns directly into liquid diesel fuel when buried"
+        ],
+        "correct_index": 0,
+        "explanation": "Pyrolysis converts loose plant carbon into stable aromatic carbon rings that resist microbial digestion in agricultural soil."
+      }
+    },
+    {
+      "slide_num": 4,
+      "title": "Blue Carbon: Coastal Ocean Super-Sinks",
+      "act": "Act 1: The Negative Emissions Imperative & Nature's Carbon Sponges",
+      "continuity_bridge": "We explored land trees and farm biochar; now we move to where land meets water—coastal ecosystems that bury carbon dozens of times faster than inland forests.",
+      "eli15_takeaway": "Coastal wetlands bury dead plant roots deep in salty, airless mud where microbes cannot breathe, trapping carbon up to 40 times faster than tropical land jungles.",
+      "key_facts": [
+        "Key habitats: Mangrove forests, tidal salt marshes, and seagrass meadows (covering <0.5% of the sea floor).",
+        "Burial rate: Accumulates and buries organic carbon 10 to 40 times faster per hectare than tropical terrestrial rainforests.",
+        "High degradation penalty: Draining coastal wetlands releases 3% to 19% of all global deforestation emissions.",
+        "Anoxic mud trap: Waterlogged sediment lacks dissolved oxygen, shutting down aerobic microbial decay and preserving organic carbon for millennia.",
+        "Storm protection: Root tangles dissipate up to 66% of wave energy within 100 meters, buffering cyclone surges and nursing 75% of commercial tropical fish species."
+      ],
+      "mental_model": "Deep-sea vacuum freezer. Drop an apple on a lawn and bugs eat it in days; submerge it in anoxic, salty coastal mud and it remains preserved for millennia.",
+      "checkpoint": {
+        "question": "What is 'Blue Carbon' in climate science?",
+        "options": [
+          "Biological carbon captured and stored in the waterlogged sediments of coastal ecosystems like mangroves and salt marshes",
+          "Synthetic blue dye used to color solar panels on ocean buoys",
+          "Carbon monoxide gas released by deep-sea nuclear submarines",
+          "Liquid blue paint applied to ship hulls to repel barnacles"
+        ],
+        "correct_index": 0,
+        "explanation": "Blue carbon refers to organic carbon captured by coastal wetlands (mangroves, marshes, seagrass) and stored in oxygen-depleted underwater sediments."
+      }
+    },
+    {
+      "slide_num": 5,
+      "title": "Building with Structural Biomass: Timber Skyscrapers",
+      "act": "Act 1: The Negative Emissions Imperative & Nature's Carbon Sponges",
+      "continuity_bridge": "If coastal wetlands and soil can store carbon, why can't our urban buildings do the same instead of pouring emission-heavy concrete and steel?",
+      "eli15_takeaway": "Replacing polluting concrete and steel with engineered cross-laminated timber and hemp-lime walls turns city skyscrapers into giant permanent carbon vaults.",
+      "key_facts": [
+        "Structural timber: Cross-Laminated Timber (CLT) and structural bamboo replace reinforced concrete beams and steel columns.",
+        "Plant insulation: Agricultural hemp fibers and natural sheep's wool substitute for petroleum-derived polystyrene foam.",
+        "Carbonating walls: Hemp-lime (hempcrete) absorbs ambient \\(CO_2\\) over decades as it cures into breathable, fire-safe exterior walls.",
+        "Embodied carbon inversion: Avoids kiln emissions from cement and steel (~11% of global emissions), while locking ~1 tonne of atmospheric \\(CO_2\\) in every \\(m^3\\) of timber for 50–100+ years.",
+        "Fire performance: Heavy mass timber chars predictably on the outside, creating an insulating layer that protects the structural core during a fire."
+      ],
+      "mental_model": "A concrete high-rise is a frozen smokestack. A mass-timber skyscraper is a harvested forest standing downtown holding up office desks for a century.",
+      "checkpoint": {
+        "question": "How does building with mass timber and hempcrete provide a 'double climate benefit'?",
+        "options": [
+          "It stores biogenic plant carbon inside the building frame while avoiding massive fossil emissions from concrete kilns and steel mills",
+          "It generates free electricity whenever rain hits the wooden roof",
+          "It turns skyscrapers completely invisible to radar detection",
+          "It causes buildings to float above rising sea levels during coastal floods"
+        ],
+        "correct_index": 0,
+        "explanation": "Structural mass timber sequesters plant-absorbed carbon in building walls while avoiding fossil-fueled cement kiln and steel mill emissions."
+      }
+    },
+    {
+      "slide_num": 6,
+      "title": "Earth-Scale Chemistry: Cloud & Ocean Alkali Dosing",
+      "act": "Act 2: Earth-Scale Chemical Interventions",
+      "continuity_bridge": "Biological systems like forests and wooden buildings have physical limits. To scale removals, scientists are turning to large-scale chemical adjustments of the clouds and oceans.",
+      "eli15_takeaway": "Dosing clouds and oceans with basic minerals fights marine acidification and converts dissolved carbon dioxide into harmless, stable bicarbonate ions.",
+      "key_facts": [
+        "Atmospheric cloud spray: Dispersing 56 million tonnes of Potassium Hydroxide (KOH) into clouds across 0.4% of Earth's surface (area equivalent to Greenland).",
+        "Ocean liming scale: Adding 2.5 billion to 8 billion tonnes of crushed limestone annually to surface ocean currents.",
+        "Chemical effect: Neutralizes ocean carbonic acid and forces dissolved \\(CO_2\\) into stable bicarbonate ions (\\(HCO_3^-\\)) lasting >100,000 years.",
+        "Logistical bottleneck: Demands massive planetary-scale mining, crushing, and cargo-ship distribution fleets."
+      ],
+      "mental_model": "Dropping an antacid tablet into a fizzy soda bottle. The basic powder calms the acid burn and locks the fizz into dissolved, harmless mineral salt.",
+      "checkpoint": {
+        "question": "What is the primary scientific purpose of adding alkali (like crushed limestone) to oceans?",
+        "options": [
+          "To raise ocean pH, buffer against acidification, and convert dissolved CO2 into stable bicarbonate ions",
+          "To turn ocean water into carbonated soda water for commercial bottling",
+          "To bleach tropical coral reefs so they reflect sunlight back into space",
+          "To boil surface ocean currents and speed up tropical hurricane formation"
+        ],
+        "correct_index": 0,
+        "explanation": "Adding basic limestone raises ocean pH, counteracting acidification and locking dissolved \\(CO_2\\) into soluble bicarbonate."
+      }
+    },
+    {
+      "slide_num": 7,
+      "title": "Enhanced Rock Weathering: Fast-Forwarding Geology",
+      "act": "Act 2: Earth-Scale Chemical Interventions",
+      "continuity_bridge": "Spraying chemicals from planes is controversial and expensive. But nature already dissolves rocks to absorb carbon over millions of years—what if we speed that up on farm fields?",
+      "eli15_takeaway": "Crushing volcanic basalt into fine micro-dust and spreading it over croplands accelerates nature's multi-millennial rock weathering cycle into a rapid annual carbon sink.",
+      "key_facts": [
+        "Natural geological baseline: Natural silicate weathering slowly absorbs ~3% of global fossil \\(CO_2\\) emissions each year.",
+        "Surface area speedup: Pulverizing basalt or olivine into micro-dust expands reactive surface area by millions of times, compressing reactions from millennia to weeks.",
+        "Chemical equation: \\(\\text{CaSiO}_3 + 2\\text{CO}_2 + \\text{H}_2\\text{O} → \\text{Ca}^{2+} + 2\\text{HCO}_3^- + \\text{SiO}_2\\).",
+        "Annual global capacity: Up to 3.7 billion tonnes (3.7 Gt) of \\(CO_2\\) equivalent per year across global croplands.",
+        "Soil & marine co-benefits: Releases calcium, magnesium, and phosphorus to replenish farm soils, while runoff de-acidifies rivers and coastal bays."
+      ],
+      "mental_model": "Sugar cube vs powdered baker's sugar. A dense block takes minutes to melt in cold liquid; grind it into microscopic dust and it dissolves in a split second.",
+      "checkpoint": {
+        "question": "How does Enhanced Weathering (EW) accelerate natural rock carbon absorption?",
+        "options": [
+          "Crushing volcanic rocks into micro-dust multiplies surface contact area by millions, speeding up carbon-absorbing reactions from millennia to weeks",
+          "It uses laser beams to heat basalt rocks until they explode into gas",
+          "It replaces outdoor rocks with synthetic plastic gravel in rivers",
+          "It buries entire mountains in deep coal mines to seal them from air"
+        ],
+        "correct_index": 0,
+        "explanation": "Pulverizing basalt rock multiplies surface area by millions, speeding up natural carbon mineralization reactions."
+      }
+    },
+    {
+      "slide_num": 8,
+      "title": "Direct Air Capture (DAC): Industrial Vacuum Cleaners",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "Rocks and wetlands absorb carbon at nature's pace. For concentrated, high-throughput extraction, engineers built industrial Direct Air Capture machines.",
+      "eli15_takeaway": "Direct Air Capture machines use giant industrial fans to pull outdoor air through chemical filters, extract pure \\(CO_2\\), and pump it underground to petrify into rock.",
+      "key_facts": [
+        "Mechanical setup: Motorized fan banks blow outdoor air through porous chemical contactors loaded with liquid or solid sorbents.",
+        "End-use tracks: Permanent deep geological mineralization vs commercial Enhanced Oil Recovery (EOR).",
+        "Spatial efficiency: Requires hundreds of times less land footprint than equivalent tree plantations.",
+        "Thermodynamic hurdle: Ambient air is only 0.042% \\(CO_2\\) (420 ppm), requiring the intake of ~2,000,000 \\(m^3\\) of air per single tonne of captured \\(CO_2\\)."
+      ],
+      "mental_model": "Sifting gold dust from a river. In a factory smokestack, carbon is dense like fish in a hatchery; in outdoor air, you must pump a whole lake to catch one minnow.",
+      "checkpoint": {
+        "question": "What makes Direct Air Capture (DAC) thermodynamically challenging compared to flue-gas capture?",
+        "options": [
+          "Because ambient air contains only ~0.04% CO2, moving and filtering enough air to collect a single ton requires massive energy",
+          "Outdoor air is too cold for chemical reactions to take place",
+          "Ambient air has zero oxygen, causing fan motors to stall",
+          "DAC machines can only operate during solar eclipses"
+        ],
+        "correct_index": 0,
+        "explanation": "Because ambient air contains only 0.04% \\(CO_2\\), pulling out a single tonne demands processing massive volumes of air with high fan and thermal energy."
+      }
+    },
+    {
+      "slide_num": 9,
+      "title": "Air-to-Fuels: Circular Aviation from Thin Air",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "Once you capture pure CO2 from the air, you don't just have to bury it—you can combine it with water and clean electricity to replace fossil jet fuel.",
+      "eli15_takeaway": "Combining air-captured carbon dioxide with water-split green hydrogen synthesizes drop-in jet fuel and diesel, creating a closed-loop transport cycle without fossil oil.",
+      "key_facts": [
+        "Pioneering company: Carbon Engineering (CE) synthesizes drop-in fuels from Air \\(CO_2\\) + Electrolytic \\(H_2\\) + Clean Power.",
+        "Drop-in compatibility: Produces certified Jet-A aviation fuel, diesel, and gasoline that run in standard aircraft and vehicle engines without modifications.",
+        "Closed carbon cycle: Burning the synthetic fuel emits only the \\(CO_2\\) drawn from the sky days earlier, avoiding any net addition to atmospheric carbon.",
+        "Power requirements: Demands high supplies of clean solar, wind, or nuclear electricity to power water electrolysis and Fischer-Tropsch reactors."
+      ],
+      "mental_model": "Borrowing a book from the library. You take the book out, read it on your flight, and return it to the exact same shelf—zero net trees logged.",
+      "checkpoint": {
+        "question": "Why is synthetic fuel made from Direct Air Capture considered carbon-neutral when burned in a jet engine?",
+        "options": [
+          "Burning the fuel releases only the CO2 that was recently extracted from the air, creating a closed loop that adds no new fossil carbon",
+          "Synthetic jet fuel produces zero exhaust fumes or water vapor when burned",
+          "The fuel contains special enzymes that destroy greenhouse gases in the sky",
+          "Planes powered by synthetic fuel fly only in outer space where there is no air"
+        ],
+        "correct_index": 0,
+        "explanation": "Synthetic air-to-fuel burning recirculates existing atmospheric \\(CO_2\\) in a closed loop instead of liberating underground fossil carbon."
+      }
+    },
+    {
+      "slide_num": 10,
+      "title": "Inside the Machine: Solid Sorbents & Chemical Contactors",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "How does a DAC machine chemically grab a carbon molecule floating past a fan blade? Let's inspect the chemical contactor loop.",
+      "eli15_takeaway": "Solid sorbent DAC passes outdoor air through amine-treated porous resins that snag carbon dioxide molecules, then releases pure gas under gentle 100°C heat.",
+      "key_facts": [
+        "Two core chemical architectures: Liquid solvent systems (KOH chemical showers) and solid porous sorbents (amine-functionalized polymer resins).",
+        "Thermal desorption: Heating the saturated solid resin to ~100°C expels 99.9% pure \\(CO_2\\) gas and regenerates the filter for subsequent cycles.",
+        "Modular container blocks: Built as stackable shipping-container modules that scale horizontally and vertically on site.",
+        "Waste heat utilization: Moderate regeneration temperature (~100°C) allows facilities to run on industrial waste heat or geothermal steam."
+      ],
+      "mental_model": "A magnetic lint roller. Roll it across a wool sweater to grab loose pet hair, push a release button to dump the fuzz into a canister, and roll again.",
+      "checkpoint": {
+        "question": "How do solid-sorbent Direct Air Capture systems release the captured CO2 from their chemical filters?",
+        "options": [
+          "Solid sorbents bind CO2 at ambient temperatures and release it when gently heated to roughly 100°C, resetting the filter for thousands of cycles",
+          "They dip the filters in radioactive acid until the plastic melts",
+          "They spin the filters in giant centrifuges at supersonic speeds",
+          "They expose the filters to direct lightning strikes to vaporize the carbon"
+        ],
+        "correct_index": 0,
+        "explanation": "Solid sorbents trap \\(CO_2\\) at outdoor temperatures and release pure gas upon mild heating to ~100°C, resetting for thousands of runs."
+      }
+    },
+    {
+      "slide_num": 11,
+      "title": "Where to Bury the Carbon: Sub-Seabed & Basalt Vaults",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "Once captured, pure CO2 gas must go somewhere it can never escape. Where on Earth can you safely store billions of tons of gas for millions of years?",
+      "eli15_takeaway": "Compressing captured carbon dioxide into a dense liquid allows engineers to inject it kilometers underground, where it petrifies into solid stone in under two years.",
+      "key_facts": [
+        "Deep saline aquifers: Supercritical \\(CO_2\\) (>73.8 bar, >31.1°C) injected kilometers down into permeable saltwater sandstone sealed under impermeable shale caprock.",
+        "Basalt petrification (CarbFix, Iceland): \\(CO_2\\) dissolved in water reacts with basaltic calcium and magnesium to crystallize into solid limestone rock (\\(CaCO_3\\)) within 2 years.",
+        "Sub-seabed storage: Offshore injection into depleted marine oil and gas reservoirs kilometers beneath the sea floor (e.g., North Sea Endurance reservoir).",
+        "Permanence guarantee: Geochemical mineralization permanently eliminates leakage risks because the carbon becomes literal solid rock."
+      ],
+      "mental_model": "Fizzy seltzer water injected into hot volcanic stones. Rock minerals react with dissolved fizz, petrifying the bubbles into permanent white chalk that cannot leak.",
+      "checkpoint": {
+        "question": "Why is in-situ basalt mineralization (like the CarbFix process) considered safer than simple gas cavity storage?",
+        "options": [
+          "Mineralization chemically turns carbon into solid carbonate rock within 2 years, making it physically impossible to leak or migrate",
+          "Basalt rocks are magnetic and pull carbon atoms downward with gravitational force",
+          "Underground basalt rocks are frozen at absolute zero temperatures",
+          "Carbon gas turns into gold nuggets that miners haul away"
+        ],
+        "correct_index": 0,
+        "explanation": "Basalt mineralization locks \\(CO_2\\) into solid carbonate rock within 2 years, permanently preventing gas migration or surface leakage."
+      }
+    },
+    {
+      "slide_num": 12,
+      "title": "Scaling to Gigatonnes a Year: The Engineering Chasm",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "We know how to capture carbon and we know where to bury it. Now comes the hard truth: we must scale from thousands of tons to billions of tons per year.",
+      "eli15_takeaway": "Meeting global climate targets requires scaling today's pilot-scale carbon capture machines by a factor of one million into a multi-gigatonne industrial giant.",
+      "key_facts": [
+        "Current operational base: ~8,000 tonnes of \\(CO_2\\) per year across 18 worldwide commercial pilot facilities.",
+        "2050 target scale: 5 to 10 billion tonnes (5–10 Gt) of \\(CO_2\\) per year required by IPCC climate stabilization pathways.",
+        "Scaling multiplier: Demands a 1,000,000× (six orders of magnitude) capacity expansion over the next 25 years.",
+        "Energy penalty: Capturing 1 tonne of \\(CO_2\\) from ambient air consumes 1,500–2,500 kWh of thermal energy plus 300–500 kWh of electricity."
+      ],
+      "mental_model": "A backyard wooden canoe vs the modern global container shipping fleet. That is the exact gap between today's DAC pilots and the gigatonne reality needed.",
+      "checkpoint": {
+        "question": "By what factor must global carbon removal scale from today's pilot plants (~8,000 tonnes/yr) to meet climate stabilization targets (~5-10 Gt/yr)?",
+        "options": [
+          "Roughly 1,000,000x (six orders of magnitude)",
+          "Approximately 2x (doubling current capacity)",
+          "About 10x",
+          "Zero growth is required"
+        ],
+        "correct_index": 0,
+        "explanation": "Expanding from 8,000 tonnes to 8 billion tonnes represents an expansion of six orders of magnitude—a one million-fold leap."
+      }
+    },
+    {
+      "slide_num": 13,
+      "title": "Scuba-Gear Scrubbers: The BIG-Bicarbonate Breakthrough",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "To jump that million-fold scaling gap, scientists are reinventing the basic chemistry using principles borrowed from scuba diver rebreathers.",
+      "eli15_takeaway": "Crystalline bis-iminoguanidines (BIGs) trap carbon dioxide like scuba rebreathers, releasing pure gas under mild 120°C warmth to save massive energy.",
+      "key_facts": [
+        "Scuba-inspired mechanism: Replicates closed-circuit scuba diving rebreathers that scrub exhaled \\(CO_2\\) from breathing air loops.",
+        "BIG ligand chemistry: Bis-iminoguanidines (BIGs), developed at Oak Ridge National Laboratory, bind bicarbonate out of aqueous solution into solid crystal salts.",
+        "Gentle heat release: Warming solid crystals to ~120°C desorbs pure \\(CO_2\\) gas while water vapor condenses in an ice-cooled tube.",
+        "Thermal energy slash: Skips boiling giant water vats and running 900°C calciners, cutting the thermal regeneration energy penalty by >60%."
+      ],
+      "mental_model": "A scuba diver swimming silently underwater. A compact canister of chemical crystals catches every breath of carbon and resets with gentle warmth.",
+      "checkpoint": {
+        "question": "What is the primary operational advantage of BIG-bicarbonate solid-state carbon scrubbing over traditional liquid solvents?",
+        "options": [
+          "Solid BIG scrubbers release carbon with mild heat (~120°C), avoiding the massive energetic penalty of boiling millions of liters of water in liquid solvent systems",
+          "BIG scrubbers run completely on dark matter with zero electrical input",
+          "BIG scrubbers dissolve instantly into drinkable orange juice",
+          "BIG scrubbers require cryogenic cooling to absolute zero to function"
+        ],
+        "correct_index": 0,
+        "explanation": "Solid-state BIG scrubbers release \\(CO_2\\) at ~120°C, avoiding the intense energy penalty of boiling water vats or running 900°C calciners."
+      }
+    },
+    {
+      "slide_num": 14,
+      "title": "The Commercial Pioneers: Climeworks, Carbon Engineering & 18 Plants",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "Who is actually operating these machines right now in the real world? Let's look at the operational commercial landscape today.",
+      "eli15_takeaway": "Three pioneering companies operate the world's 18 commercial DAC plants, capturing under 8,000 tonnes of \\(CO_2\\) annually for underground burial and commercial uses.",
+      "key_facts": [
+        "Leading developers: Climeworks (Switzerland), Carbon Engineering (Canada), and Global Thermostat (USA).",
+        "Active fleet: 18 commercial pilot plants worldwide, ranging from 1 t/yr to 4,000 t/yr (Climeworks Orca plant in Iceland).",
+        "Total capture volume: Just under 8,000 tonnes of \\(CO_2\\) per year across all global installations.",
+        "End-use split: ~50% buried permanently in deep rock; ~50% sold for commercial products (fizzy drinks, greenhouse enrichment, synthetic fuels).",
+        "Scale perspective: 8,000 tonnes offsets the annual exhaust of only ~870 gasoline cars."
+      ],
+      "mental_model": "The Wright brothers at Kitty Hawk in 1903. The flight lasted only 12 seconds and carried one human, but it proved the physics worked. Today's 18 plants are that 12-second flight.",
+      "checkpoint": {
+        "question": "How much total CO2 was captured annually by the world's 18 leading commercial DAC plants when the lecture was recorded?",
+        "options": [
+          "Just under 8,000 tonnes of CO2 per year",
+          "500 million tonnes of CO2 per year",
+          "10 billion tonnes of CO2 per year",
+          "Zero tonnes (none were operational)"
+        ],
+        "correct_index": 0,
+        "explanation": "The 18 operating commercial DAC plants captured just under 8,000 tonnes of \\(CO_2\\) per year combined, equal to ~870 passenger cars' emissions."
+      }
+    },
+    {
+      "slide_num": 15,
+      "title": "Air-to-Luxury Case Study: Aether Diamonds from Pollution",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "If burying carbon underground costs money without immediate revenue, how can companies generate early profits? Enter luxury jewelry made from air pollution.",
+      "eli15_takeaway": "Aether buys air-captured carbon dioxide, converts it to high-purity methane, and bakes it into certified vegan gemstones inside solar-powered plasma reactors.",
+      "key_facts": [
+        "Sourcing: Climeworks DAC supplies atmospheric \\(CO_2\\) captured directly from ambient air in Europe.",
+        "Methanation: Sabatier catalytic reduction (\\(\\text{CO}_2 + 4\\text{H}_2 → \\text{CH}_4 + 2\\text{H}_2\\text{O}\\)) converts \\(CO_2\\) into high-purity methane (\\(CH_4\\)).",
+        "CVD plasma growth: Chemical Vapor Deposition (CVD) reactors heat methane to plasma temperatures in vacuum, crystallizing rough diamonds over several weeks.",
+        "100% clean power: All synthesis stages are powered entirely by zero-carbon solar and nuclear electricity.",
+        "Manufacturing route: Rough diamonds are shipped to Surat, Gujarat, India for precision laser cutting and facet polishing, then retailed in New York City.",
+        "Environmental metrics: Each 1-carat diamond removes 20 metric tonnes of atmospheric \\(CO_2\\) (~1.5 years of average human emissions), uses half the energy of mined gems, and saves 127 gallons of water."
+      ],
+      "mental_model": "Turning invisible sky smoke into eternal jewelry. Sucking smog from the atmosphere, baking it into plasma, laser-polishing it in Surat, and setting it into a ring.",
+      "checkpoint": {
+        "question": "Where are Aether's air-captured rough diamonds cut and polished before being sold in New York luxury stores?",
+        "options": [
+          "Surat, Gujarat, India",
+          "Antwerp, Belgium",
+          "Johannesburg, South Africa",
+          "Sydney, Australia"
+        ],
+        "correct_index": 0,
+        "explanation": "Rough CVD diamond material grown from captured atmospheric methane is sent to Surat, Gujarat, India—the diamond cutting and polishing capital of the world."
+      }
+    },
+    {
+      "slide_num": 16,
+      "title": "Industrial-Scale Burial: Project Net Zero Teesside (NZT)",
+      "act": "Act 3: Artificial Trees: Direct Air Capture & The Carbon Economy",
+      "continuity_bridge": "Growing luxury diamonds proves high-value circularity, but solving climate change requires massive heavy-industry decarbonization. Let's look at a real industrial hub.",
+      "eli15_takeaway": "Net Zero Teesside connects a major industrial cluster in England into a shared pipeline network, burying up to 10 million tonnes of factory emissions beneath the North Sea.",
+      "key_facts": [
+        "Location: Teesside industrial corridor, North East England.",
+        "Target: Decarbonize a dense cluster of chemical, fertilizer, and gas power plants to net-zero by 2030, capturing up to 10 million tonnes of \\(CO_2\\) annually.",
+        "Shared trunkline: Multi-user pipeline network collects captured \\(CO_2\\) from multiple private industrial manufacturing sites across the region.",
+        "Subsurface vault: Injects compressed \\(CO_2\\) into the Endurance deep saline sandstone aquifer kilometers beneath the offshore North Sea floor.",
+        "Economic model: Shared regional infrastructure lowers capital costs compared to every factory building private disposal wells."
+      ],
+      "mental_model": "A shared city sewer system for heavy industry. Rather than every house digging an isolated septic tank, all factories hook up to one shared pipeline pumping waste deep offshore.",
+      "checkpoint": {
+        "question": "Where does the Net Zero Teesside (NZT) project store captured industrial carbon emissions?",
+        "options": [
+          "In deep saline aquifers and depleted gas fields kilometers beneath the offshore North Sea seabed",
+          "In open-air plastic swimming pools along the English Channel",
+          "In abandoned subway tunnels beneath downtown London",
+          "In hollowed-out tree trunks in Sherwood Forest"
+        ],
+        "correct_index": 0,
+        "explanation": "NZT collects industrial emissions from regional factories and pipes them into deep saline aquifers beneath the North Sea bed."
+      }
+    },
+    {
+      "slide_num": 17,
+      "title": "The Food Engine: Why Beef Dominates Agricultural Emissions",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "Heavy industry and power plants are half the puzzle. But the global food system produces 14.5% of all human greenhouse gases—and one animal dominates the damage.",
+      "eli15_takeaway": "Raising livestock produces 14.5% of human emissions, with beef generating 60 kg of greenhouse gas per kilogram of meat—far surpassing any other food on Earth.",
+      "key_facts": [
+        "Livestock total: Meat and dairy production generates 7.1 gigatonnes (Gt) of GHG annually (~14.5% of total human emissions).",
+        "Beef emission intensity: Producing 1 kg of beef yields 60 kg of GHG emissions—more than double lamb and vastly exceeding poultry, pork, or legumes.",
+        "Ruminant enteric methane: 1.5 billion cattle ferment grass in their digestive tracts, burping methane (\\(CH_4\\)) with 28–36× the 100-year warming potency of \\(CO_2\\).",
+        "Deforestation driver: Clearing land for cattle pastures and soy animal feed drives tropical rainforest loss.",
+        "Supply-chain tracking: The open-source TRASE platform maps global food commodity trade directly back to deforested areas and corporate importers."
+      ],
+      "mental_model": "Driving a 40-tonne semi-truck across the country to deliver a single cheese pizza. Beef is the most resource-inefficient nutrient converter in the human food system.",
+      "checkpoint": {
+        "question": "According to the lecture, how many kilograms of greenhouse gas emissions are generated per kilogram of beef produced?",
+        "options": [
+          "Roughly 60 kg of GHG per kg of beef",
+          "0.5 kg of GHG per kg of beef",
+          "2 kg of GHG per kg of beef",
+          "500 kg of GHG per kg of beef"
+        ],
+        "correct_index": 0,
+        "explanation": "Producing 1 kg of beef generates roughly 60 kg of greenhouse gas emissions—more than double lamb and vastly higher than other foods."
+      }
+    },
+    {
+      "slide_num": 18,
+      "title": "Hacking the Cow: Red Seaweed Feed & Catalytic Burp Halters",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "Since billions of people still eat beef, how can technology stop cows from burping methane while they chew grass?",
+      "eli15_takeaway": "Feeding cattle a sprinkle of tropical red seaweed cuts methane burps by 80%, while smart wearable halters oxidize exhaled gas directly on the cow's nose.",
+      "key_facts": [
+        "Dietary seaweed additive: Adding 0.2%–0.5% tropical red seaweed (*Asparagopsis taxiformis*) to feed reduces bovine enteric methane by up to 80%.",
+        "Biochemical mechanism: Seaweed bromoform inhibits methyl-coenzyme M reductase in methanogenic archaea within the rumen.",
+        "Wearable catalytic halters (Zelp, UK): Snout harness detects exhaled methane burps (95% of cow emissions come from the mouth) and catalytically oxidizes them: \\(\\text{CH}_4 + 2\\text{O}_2 → \\text{CO}_2 + 2\\text{H}_2\\text{O}\\).",
+        "Scaling bottleneck: Supplying feed for 1.5 billion cattle requires massive open-ocean seaweed aquaculture farms."
+      ],
+      "mental_model": "A breath mint and a catalytic converter for livestock. Seaweed switches off gas-making gut bugs; the nose halter burns escaping burps into clean air.",
+      "checkpoint": {
+        "question": "How much can adding tropical red seaweed (Asparagopsis) to cattle feed reduce a cow's methane emissions?",
+        "options": [
+          "Up to 80%",
+          "Exactly 5%",
+          "100% (eliminates all digestion)",
+          "Zero percent"
+        ],
+        "correct_index": 0,
+        "explanation": "Bromoform compounds in red seaweed (*Asparagopsis taxiformis*) block the methane-producing enzymes in rumen microbes, cutting enteric burps by up to 80%."
+      }
+    },
+    {
+      "slide_num": 19,
+      "title": "Alternative Protein: Why Grasshoppers Outperform Cattle",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "If fixing cow biology is difficult, what if we swap the animal entirely for something that needs almost no land, no water, and produces zero methane?",
+      "eli15_takeaway": "Farming insects produces complete protein using 95% less land, tiny amounts of water, and zero methane burps compared to cattle ranching.",
+      "key_facts": [
+        "Feed efficiency: Insects convert feed into edible protein ~12 times more efficiently than cattle.",
+        "Zero enteric methane: Grasshoppers, crickets, and mealworms are cold-blooded and lack ruminant fermentation systems.",
+        "Vertical rearing: Reared in stacked indoor trays inside warehouses, saving 90%–95% land and water compared to open cattle pastures.",
+        "Processing versatility: Harvested insects are milled into neutral, nutrient-dense protein powder for burgers, pasta, and animal feed."
+      ],
+      "mental_model": "A smartphone vs a 1950s vacuum-tube computer. Both process calculations, but the phone fits in your pocket and runs on milliwatts. Insects deliver animal protein on a fraction of the resources.",
+      "checkpoint": {
+        "question": "What primary environmental advantage does insect farming have over traditional cattle ranching?",
+        "options": [
+          "Insects convert feed into protein ~12x more efficiently than cattle, use 90-95% less land/water, and emit zero enteric methane",
+          "Insects can be trained to plant trees in deforested zones",
+          "Insect farms generate nuclear fusion energy for local electrical grids",
+          "Insects suck carbon dioxide directly out of car tailpipes"
+        ],
+        "correct_index": 0,
+        "explanation": "Cold-blooded insects lack ruminant fermentation stomachs, turning feed into complete protein using 95% less land and water with near-zero methane."
+      }
+    },
+    {
+      "slide_num": 20,
+      "title": "Refreezing the Poles: Marine Cloud Brightening & Flettner Ships",
+      "act": "Act 6: Space, AI Wildlife Defense & The XPRIZE Frontier",
+      "continuity_bridge": "Even with clean farming and DAC, melting polar ice caps threaten runaway tipping points. Can geoengineering buy time by physically reflecting sunlight away from the Arctic?",
+      "eli15_takeaway": "Autonomous sailing ships spray salty ocean mist into low marine clouds, increasing their reflectivity to bounce sunlight back to space and protect polar ice.",
+      "key_facts": [
+        "Concept: Marine Cloud Brightening (MCB), proposed by Stephen Salter and John Latham as emergency solar radiation management.",
+        "Propulsion: Autonomous, wind-powered ships fitted with spinning vertical Flettner rotors harnessing the Magnus effect.",
+        "Seawater atomization: Seawater is pressurized and sprayed through nanoscale nozzles into low marine stratocumulus clouds.",
+        "Twomey effect: Sea-salt crystals act as cloud condensation nuclei (CCN), creating smaller, denser droplets that raise cloud albedo and reflect incoming solar heat.",
+        "Empirical evidence: NASA satellite imagery confirms persistent reflective 'ship tracks' created by commercial cargo vessels in low clouds.",
+        "Governance triad: Science (can we avoid monsoonal rain disruption?), Ethics (should humans manipulate the thermostat?), Policy (who sets the dial?)."
+      ],
+      "mental_model": "Painting a black asphalt driveway pure white. Flettner ships turn dull grey marine clouds into bright mirrors that bounce summer solar radiation back to space.",
+      "checkpoint": {
+        "question": "What is the physical principle behind Marine Cloud Brightening for climate repair?",
+        "options": [
+          "Sea-salt particles act as cloud condensation nuclei, creating smaller, more numerous droplets that drastically increase cloud albedo to reflect sunlight",
+          "Spraying salt melts all clouds so sunlight passes into space unobstructed",
+          "Flettner ships freeze ocean water into icebergs that float toward the equator",
+          "Salt dust creates artificial lightning that destroys atmospheric carbon molecules"
+        ],
+        "correct_index": 0,
+        "explanation": "Salt particles act as cloud condensation nuclei, creating smaller, more numerous droplets that dramatically increase cloud reflectivity (albedo)."
+      }
+    },
+    {
+      "slide_num": 21,
+      "title": "Decarbonizing Mobility: Commute Elimination via Remote Work",
+      "act": "Act 5: Clean Propulsion, Urban Heat & Decarbonized Work",
+      "continuity_bridge": "Geoengineering addresses the atmosphere from above. But what about the cars driving on city streets below? What if the greenest ride is the ride you never take?",
+      "eli15_takeaway": "Telecommuting erases the energy and emissions of hauling workers across town, cutting urban traffic and fuel consumption without new hardware.",
+      "key_facts": [
+        "Avoided vehicle energy: Eliminates burning gasoline to transport a 1,500 kg automobile just to carry one 75 kg worker to an office desk.",
+        "Urban co-benefits: Reduces highway congestion, cuts tire-wear particulate pollution (\\(\\text{PM}_{2.5}\\)), and decreases peak commercial office HVAC loads.",
+        "Home energy trade-off: Decentralized home heating and cooling efficiency must be managed to avoid offsetting transport fuel savings."
+      ],
+      "mental_model": "A video conference call vs a highway traffic jam. Clicking a video link uses a few watts of fiber-optic electricity instead of exploding two gallons of gasoline in gridlock.",
+      "checkpoint": {
+        "question": "How does remote work function as a climate technology solution?",
+        "options": [
+          "Eliminating daily vehicle trips removes the fuel consumption and tailpipe emissions required to physically move commuters back and forth",
+          "Computers absorb greenhouse gases through their cooling vents",
+          "Working from home forces electrical companies to turn off power plants",
+          "Video calls reflect solar radiation back into outer space"
+        ],
+        "correct_index": 0,
+        "explanation": "Eliminating daily car commutes erases the fuel combustion, tailpipe emissions, and congestion of moving workers back and forth."
+      }
+    },
+    {
+      "slide_num": 22,
+      "title": "Sustainable IT: High-Efficiency Data Centers & Virtualization",
+      "act": "Act 5: Clean Propulsion, Urban Heat & Decarbonized Work",
+      "continuity_bridge": "As everyone works remotely over the internet, digital computation demand surges. That brings us to the carbon footprint of the cloud servers powering that internet.",
+      "eli15_takeaway": "Consolidating software onto shared cloud hardware and switching to direct liquid cooling keeps computing ultra-efficient as digital workloads surge.",
+      "key_facts": [
+        "Hyperscale consolidation: Shifting workloads from inefficient distributed corporate server closets to centralized, renewable-powered hyperscale facilities.",
+        "Server virtualization: Packs dozens of separate software workloads onto high-utilization hardware blades, eliminating idle electricity drain.",
+        "Cooling innovations: Replaces power-hungry air chillers with direct-to-chip liquid cooling, outdoor air economizers, and geothermal heat sinks.",
+        "Efficiency metrics: Drives Power Usage Effectiveness (PUE) from legacy corporate ~2.0 toward the hyperscale 1.1 mark."
+      ],
+      "mental_model": "Carpooling in an express electric bus instead of 40 people driving 40 half-empty SUVs to the exact same office park.",
+      "checkpoint": {
+        "question": "Why is cloud virtualization more energy-efficient than traditional on-premise company server rooms?",
+        "options": [
+          "Idle servers still consume over half their peak power; virtualization consolidates tasks onto fewer physical machines running at optimal load",
+          "Virtual servers run without any electricity whatsoever",
+          "Virtual machines absorb carbon dioxide from computer keyboards",
+          "Cloud servers are made entirely out of biodegradable wood"
+        ],
+        "correct_index": 0,
+        "explanation": "Idle servers still consume over half their peak power; virtualization packs multiple digital tasks onto fewer, fully loaded machines."
+      }
+    },
+    {
+      "slide_num": 23,
+      "title": "Clean Transport & Clean Power Innovations",
+      "act": "Act 5: Clean Propulsion, Urban Heat & Decarbonized Work",
+      "continuity_bridge": "For the physical goods that cannot be virtualized—like global cargo ships and aircraft—we need breakthrough zero-emission propulsion and creative urban cooling.",
+      "eli15_takeaway": "Heavy infrastructure decarbonizes through green hydrogen cargo ships, electric airplanes, city tree corridors that drop heat by 3°C, and floating renewable power.",
+      "key_facts": [
+        "Maritime cargo: Responsible for 2.5% of global \\(CO_2\\); developing green hydrogen fuel cells and liquid ammonia propulsion to eliminate bunker oil.",
+        "Commercial aviation: Generates ~2% of global \\(CO_2\\); battery-electric propulsion addresses regional routes (<500 km) while Sustainable Aviation Fuels (SAF) power long flights.",
+        "Medellín Tree Corridors (Colombia): Planting 350,000+ trees along 30 connected city routes lowered local temperatures by 3°C (3.5°F) through canopy shade and evapotranspiration.",
+        "Floating Tidal Platforms (Canada): Bay of Fundy floating platform harnesses 16-meter tidal surges to generate continuous baseload electricity.",
+        "Floating Solar (South Korea): 41 MW floating solar photovoltaic (FPV) installation on Hapcheon Dam saves land, curbs reservoir evaporation, and uses water cooling to boost panel efficiency by 5%–10%."
+      ],
+      "mental_model": "Planting large shade trees over a baking asphalt parking lot. Natural canopy shade cools the ground by 3°C so car air conditioners don't have to strain at full blast.",
+      "checkpoint": {
+        "question": "What notable cooling effect did Medellín, Colombia achieve by planting 350,000 trees across connected urban transit corridors?",
+        "options": [
+          "Cooled the city ambient temperature by up to 3°C (3.5°F)",
+          "Cooled the city by 25°C, causing year-round blizzards",
+          "Zero temperature change was detected",
+          "Caused the city to heat up by 5°C"
+        ],
+        "correct_index": 0,
+        "explanation": "Medellín planted 350,000 trees across 30 connected transit corridors, using shade and plant transpiration to cool the urban heat island by 3°C."
+      }
+    },
+    {
+      "slide_num": 24,
+      "title": "Digital Earth: AI Wildlife Defense, Blockchain Tuna & GFW Drones",
+      "act": "Act 6: Space, AI Wildlife Defense & The XPRIZE Frontier",
+      "continuity_bridge": "Environmental laws are meaningless without enforcement. How do we catch illegal loggers in deep jungles and poachers in open oceans? With digital satellites and AI.",
+      "eli15_takeaway": "Space satellites, autonomous drones, blockchain ledgers, and AI vision tools protect wildlife by detecting illegal jungle loggers, tracking pirate fishing boats, and identifying endangered animals.",
+      "key_facts": [
+        "Blockchain seafood ledgers: Tamper-proof digital records linked to GPS transponders trace catch from ship to supermarket, halting illegal, unreported, and unregulated (IUU) tuna fishing.",
+        "Global Forest Watch (GFW): Fuses satellite radar, optical feeds, crowdsourcing, and autonomous drones to flag illegal logging roads in real time.",
+        "Savanna thermal defense: Night-vision thermal infrared cameras in Kenya's national parks spot armed poachers crossing border corridors in darkness.",
+        "AI animal biometrics (Wild Me & DolphinGemma): Computer vision algorithms identify individual animals from photos using unique coat patterns (lion whisker spots, tiger stripes, whale shark spots) without invasive tagging.",
+        "Surveillance dynamic: Deploys digital sensing tools against illegal poaching and logging syndicates."
+      ],
+      "mental_model": "An airport biometric passport scanner for nature. AI scans a tiger's unique stripe pattern from a drone snapshot just like an airport gate reads human facial geometry.",
+      "checkpoint": {
+        "question": "How does Global Forest Watch (GFW) detect illegal logging deep inside tropical rainforests?",
+        "options": [
+          "Fuses near-real-time satellite radar, optical imagery, crowdsourced data, and autonomous drones to flag canopy loss",
+          "Listens to underground tree root vibrations with seismic microphones",
+          "Sends park rangers on foot to knock on every tree trunk",
+          "Deploys trained parrots to report illegal logging over radio frequencies"
+        ],
+        "correct_index": 0,
+        "explanation": "Global Forest Watch merges satellite radar, optical feeds, drone sweeps, and ground-level alerts to spot illegal tree clearing in near real-time."
+      }
+    },
+    {
+      "slide_num": 25,
+      "title": "Controlled Environment Agriculture: Vertical Farming Foundations",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "We explored how digital satellites monitor outdoor forests. Now we bring farming completely indoors into controlled, stacked, climate-proof towers.",
+      "eli15_takeaway": "Controlled Environment Agriculture stacks crops indoors on multi-tiered shelves, dialing in artificial lighting, temperature, and gases to produce food independent of weather.",
+      "key_facts": [
+        "Definition: Controlled Environment Agriculture (CEA) grows crops inside enclosed buildings without outdoor topsoil, seasons, or natural sunlight.",
+        "Spatial yield multiplier: Stacking crops in vertical towers multiplies food output per square meter of building footprint by hundreds of times.",
+        "Climate shielding: Insulates food supply against outdoor droughts, floods, heat domes, hailstorms, and seasonal freezes.",
+        "Atmospheric optimization: Computers regulate ambient temperature, relative humidity, LED light spectra, and elevated \\(CO_2\\) to accelerate photosynthesis."
+      ],
+      "mental_model": "A high-rise apartment complex for vegetables. Instead of spreading 10,000 heads of lettuce across 10 muddy acres, you stack them 30 shelves high inside a renovated urban warehouse.",
+      "checkpoint": {
+        "question": "What is the primary objective of Controlled Environment Agriculture (CEA) and vertical farming?",
+        "options": [
+          "Drastically increase crop yields per square meter of footprint in confined, urban spaces while shielding crops from outdoor weather",
+          "Replace green vegetables with synthetic plastic replicas",
+          "Force crops to grow underground without water or electricity",
+          "Breed mutant plants that can survive inside active volcanoes"
+        ],
+        "correct_index": 0,
+        "explanation": "Controlled Environment Agriculture stacks crops vertically indoors with tuned lighting and climate control to produce high food yields independent of weather."
+      }
+    },
+    {
+      "slide_num": 26,
+      "title": "The Four Essential Pillars of Vertical Farming",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "What hardware and technology makes a vertical farm actually work without dying? Let's break down the four essential engineering systems.",
+      "eli15_takeaway": "Vertical farming functions via four interconnected engineering pillars: vertical modular towers, tuned LED light spectra, soilless root systems, and 95% water recycling.",
+      "key_facts": [
+        "Pillar 1 (Vertical Racks): Modular tower racking maximizes cubic building volume rather than flat floor acreage.",
+        "Pillar 2 (Tuned LED Recipes): Specialized red and blue solid-state LED fixtures target peak chlorophyll absorption wavelengths without generating excess heat.",
+        "Pillar 3 (Soilless Rooting): Roots feed in circulating nutrient water (Hydroponics), micro-fine air mist (Aeroponics), or fish-waste water (Aquaponics) supported by inert coir.",
+        "Pillar 4 (95% Water Recycled): Dehumidifiers capture plant transpiration moisture, filtering and recirculating it to slash water use by up to 95%."
+      ],
+      "mental_model": "The four legs of a sturdy dining table. Remove the vertical towers, you run out of floor space; turn off the tuned LEDs, plants starve; cut the water loop, roots dry out.",
+      "checkpoint": {
+        "question": "Which soilless cultivation technique suspends plant roots in mid-air and sprays them with a micro-fine nutrient mist?",
+        "options": [
+          "Aeroponics",
+          "Hydroponics",
+          "Aquaponics",
+          "Geothermal quarrying"
+        ],
+        "correct_index": 0,
+        "explanation": "Aeroponics suspends bare plant roots in sealed chambers and sprays them with a micro-fine nutrient mist, giving roots maximum oxygen while cutting water use by 95%."
+      }
+    },
+    {
+      "slide_num": 27,
+      "title": "Industrial Vertical Aeroponics: AeroFarms & The 95% Water Slash",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "Does vertical farming work at commercial scale, or is it just an academic concept? Let's examine AeroFarms, the global industrial benchmark.",
+      "eli15_takeaway": "AeroFarms commercializes vertical aeroponics, sprouting seeds on reusable cloth made from recycled plastic bottles and misting roots in air with zero soil and 95% less water.",
+      "key_facts": [
+        "Commercial scale: AeroFarms operates commercial aeroponic facilities across the US, Europe, Singapore, South Korea, and the Middle East.",
+        "Recycled substrate: Seeds germinate on reusable fabric fleece spun from recycled plastic beverage bottles, with bare roots suspended in dark lower misting boxes.",
+        "95% water reduction: Closed-loop aeroponic misting delivers water directly to root hairs; industrial dehumidifiers capture transpiration to recycle 95% of water.",
+        "Zero synthetic chemicals: Completely sealed cleanroom environment eliminates weeds and insect pests, operating with zero synthetic pesticides or herbicides.",
+        "Suited crops: Baby leafy salad greens (kale, arugula, spinach), microgreens, culinary herbs (basil, mint), and vine crops."
+      ],
+      "mental_model": "A sterile hospital incubator for baby greens. Every milliliter of moisture is measured, misted directly onto root hairs, recaptured from the air, and recycled with zero dirt.",
+      "checkpoint": {
+        "question": "How does AeroFarms achieve a 95% reduction in agricultural water consumption?",
+        "options": [
+          "Closed-loop aeroponic misting delivers water directly to root hairs, while dehumidifiers capture and recycle all plant transpiration",
+          "They water plants only once every five years",
+          "They replace irrigation water with dry sand",
+          "They genetically engineer crops to survive without any water"
+        ],
+        "correct_index": 0,
+        "explanation": "Closed-loop aeroponic misting delivers water directly to root hairs without soil runoff, while dehumidifiers capture plant transpiration to recycle 95% of water."
+      }
+    },
+    {
+      "slide_num": 28,
+      "title": "Agroecological Pest Defense: Marigold & Brassica Trap Cropping",
+      "act": "Act 4: Fixing the Agricultural Engine: Cows, Insects & Vertical Towers",
+      "continuity_bridge": "For crops that must still grow outdoors in soil, warming temperatures are causing pest swarms. Instead of spraying toxic neurotoxin chemicals, how can we use nature against itself?",
+      "eli15_takeaway": "Trap cropping plants decoy crops around fields, using natural scents and root chemicals to lure pests away or poison them without synthetic pesticides.",
+      "key_facts": [
+        "Climate trigger: Warming temperatures and humidity accelerate insect lifecycles and expand pest geographical ranges into new agricultural zones.",
+        "Decoy working principle: Planting perimeter borders or intercropped rows of sacrificial companion plants lures pests away from the high-value cash crop.",
+        "Marigold chemical defense (*Tagetes*): Roots release natural alpha-terthienyl, which kills parasitic root-knot nematodes; blossoms emit volatile aromas that repel aphids and whiteflies.",
+        "Global proof: (1) Italy plants mustard family (*Brassicaceae*) borders to intercept flea beetles from sugar beets; (2) China interplants corn (maize) borders around cotton fields to trap whiteflies and bollworms.",
+        "Ecological win: Protects cash harvests without neurotoxic pesticides, keeping wild bees and pollinators safe."
+      ],
+      "mental_model": "A decoy snack buffet outside a VIP lounge. Hungry crashers swarm the free donut table at the entrance and never step into the private dining room.",
+      "checkpoint": {
+        "question": "How do marigolds biologically protect agricultural fields when used in trap cropping and companion planting?",
+        "options": [
+          "Marigold roots exude alpha-terthienyl that kills parasitic nematodes, while flower scents repel aphids and whiteflies",
+          "Marigold petals catch insects with super-sticky glue",
+          "Marigolds emit supersonic buzzing sounds that scare away locusts",
+          "Marigolds shock bugs with tiny electrical discharges"
+        ],
+        "correct_index": 0,
+        "explanation": "Marigold roots secrete natural alpha-terthienyl that kills parasitic nematodes, while aromatic scents from their flowers confuse and repel aphids and whiteflies."
+      }
+    },
+    {
+      "slide_num": 29,
+      "title": "The Moonshot Scaling Prize: The $100M Elon Musk XPRIZE",
+      "act": "Act 6: Space, AI Wildlife Defense & The XPRIZE Frontier",
+      "continuity_bridge": "We have traveled from biochar and ocean liming to Direct Air Capture, seaweed cows, and vertical towers. How do we turn these promising ideas into gigaton-scale reality? With massive prize incentives.",
+      "eli15_takeaway": "The \\$100M XPRIZE for Carbon Removal challenges global teams to extract 1,000 tonnes of \\(CO_2\\) annually and prove a verified engineering path to 1 billion tonnes per year.",
+      "key_facts": [
+        "Incentive scale: Launched in 2021 with \\$100 million in funding from Elon Musk and the Musk Foundation—the largest incentive prize in human history.",
+        "Operational hurdle: Teams must demonstrate working prototypes that actively remove at least 1,000 net tonnes of \\(CO_2\\) per year from air or oceans.",
+        "Gigatonne validation: Teams must submit an audited engineering roadmap proving how their solution scales to 1 Gigaton (1 billion tonnes) of \\(CO_2\\)/year by 2050.",
+        "Technology neutrality: Open to all pathways—air capture, ocean carbon removal, enhanced rock weathering, biochar, and biomass burial.",
+        "Ultimate goal: Catalyze private capital to bootstrap a self-sustaining gigatonne-scale carbon removal industry."
+      ],
+      "mental_model": "The 1927 Orteig Prize. A \\$25,000 prize challenged aviators to fly non-stop from New York to Paris. Charles Lindbergh did it, transforming flight from an eccentric hobby into the global commercial airline industry.",
+      "checkpoint": {
+        "question": "What is the primary challenge posed by the $100M XPRIZE for Carbon Removal funded by Elon Musk?",
+        "options": [
+          "Demonstrate working extraction of at least 1,000 tonnes CO2/year with a validated engineering roadmap to 1 Gigaton/year scale",
+          "Build a rocket to carry 1,000 tonnes of carbon to the Moon",
+          "Plant 1 billion trees in Antarctica within six months",
+          "Construct an underwater city powered entirely by methane"
+        ],
+        "correct_index": 0,
+        "explanation": "The XPRIZE requires a working demonstration capturing at least 1,000 tonnes of \\(CO_2\\) per year along with a validated engineering plan to scale to 1 gigaton annually."
+      }
+    }
+  ]
+}

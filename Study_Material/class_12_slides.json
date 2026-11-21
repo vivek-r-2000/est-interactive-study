@@ -8,14 +8,14 @@
       "title": "Basic Concepts for Assessing Environmental Impacts",
       "act": "Act 1: Foundations of Environmental Impact",
       "continuity_bridge": "Kicks off the course module by establishing the fundamental premise: before you pour concrete or dig foundations, you must calculate and forecast what will break in nature.",
-      "eli15_takeaway": "You cannot fix an ecological disaster after a factory or highway is already built. Environmental Impact Assessment is the legal forecasting tool that inspects damage before money is spent and ground is broken.",
+      "eli15_takeaway": "You cannot fix an ecological disaster after a factory or highway is already built. Environmental Impact Assessment (EIA) is the mandatory science-and-law tool that catches environmental damage before anyone pours concrete or spends project funds.",
       "key_facts": [
-        "Source origin: ENCAP EA-ESD Course (Basic Concepts for Environmental Impact Assessment).",
-        "Core focus: Environmental Impact Assessment (EIA) for environmentally sound design.",
-        "Course anchor: Class-12 of Environmental Science & Technology (October 19, 2026).",
-        "Bridges economic development objectives with ecological stability and pollution limits."
+        "Course source: ENCAP EA-ESD Course (Basic Concepts for Environmental Impact Assessment) for environmentally sound design.",
+        "Core focus: Environmental Impact Assessment (EIA) as an upstream planning gatekeeper.",
+        "Course context: Class-12 of Environmental Science & Technology (October 19, 2026), taught by Dr. Rama Chandra Prasad.",
+        "Reconciles rapid economic development with ecological limits, pollution thresholds, and resource carrying capacity."
       ],
-      "mental_model": "Checking the flight path and weather radar before takeoff instead of inspecting the wreckage after a crash.",
+      "mental_model": "Checking the flight plan, engine gauges, and weather radar before takeoff, rather than inspecting the wreckage after a crash.",
       "checkpoint": {
         "question": "What is the primary operational objective of an Environmental Impact Assessment (EIA)?",
         "options": [
@@ -25,22 +25,22 @@
           "Shutting down all heavy industrial expansion across a developing nation"
         ],
         "correct_index": 1,
-        "explanation": "EIA is a proactive planning and decision-making instrument designed to identify, predict, and mitigate adverse environmental effects before project implementation begins."
+        "explanation": "EIA is a proactive planning tool designed to spot, predict, and reduce harmful environmental impacts before project construction begins."
       }
     },
     {
       "slide_num": 2,
-      "title": "The Core Definition \u2014 Impact as Baseline Deviation",
+      "title": "The Core Definition — Impact as Baseline Deviation",
       "act": "Act 1: Foundations of Environmental Impact",
       "continuity_bridge": "Now that we know predictive planning is mandatory, we must define what an impact actually means and what reference point we measure it against.",
-      "eli15_takeaway": "An environmental impact is not just any change you see. It is the exact difference between what the environment would look like without your project (the baseline) versus what happens because your project exists.",
+      "eli15_takeaway": "An environmental impact is not just any random change over time. It is the exact difference between what nature would look like without your project (the baseline) versus what happens because your project was built.",
       "key_facts": [
-        "EIA definition: A formal process for identifying likely effects on the environment and human health/welfare, plus means to mitigate and monitor them.",
-        "Scope of environment: Interpreted broadly to include physical, biological, and social dimensions.",
-        "Impact definition: A deviation (a net change) from the baseline situation caused specifically by the activity.",
-        "Baseline situation: The existing environmental condition in the complete absence of the proposed activity."
+        "EIA definition: A structured, systematic process to identify and predict effects on the environment and human health, and create plans to avoid, mitigate, and monitor them.",
+        "Scope of environment: Interpreted broadly across physical, chemical, biological, and human socio-economic dimensions.",
+        "Impact equation: \\(\\text{Impact} = \\text{Condition with Project} - \\text{Baseline Condition without Project}\\).",
+        "Baseline situation: The existing environmental state in the complete absence of the proposed project activity."
       ],
-      "mental_model": "Stepping on a weighing scale before eating lunch versus after lunch; the weight difference is the impact, not your total body weight.",
+      "mental_model": "Stepping on a weighing scale right before lunch versus right after. The difference on the scale is the impact of lunch, not your total body weight.",
       "checkpoint": {
         "question": "How is an environmental 'impact' formally defined in an EIA?",
         "options": [
@@ -50,7 +50,7 @@
           "Any natural disaster occurring within 50 kilometers of a factory"
         ],
         "correct_index": 2,
-        "explanation": "In EIA terminology, an impact is defined specifically as the net change or deviation from the baseline condition that directly or indirectly results from the project activity."
+        "explanation": "In EIA terminology, an impact is defined specifically as the net deviation from the baseline condition caused directly or indirectly by the project activity."
       }
     },
     {
@@ -58,16 +58,16 @@
       "title": "Environmental Components of the Baseline",
       "act": "Act 1: Foundations of Environmental Impact",
       "continuity_bridge": "Because an impact is a deviation from the baseline, you must systematically inventory the specific environmental components at the site before turning a single shovel of dirt.",
-      "eli15_takeaway": "You do not waste time counting every insect in the country. You measure only the specific water, soil, plant, animal, and health factors that your project alters or relies upon to run.",
+      "eli15_takeaway": "Do not waste time counting every mosquito in the country. Measure only the specific water, soil, plant, animal, and health systems that your project will harm or needs to operate.",
       "key_facts": [
         "Six primary baseline components: Water, Soils, Flora, Fauna, Special Ecosystems, and Environmental Health.",
-        "Water parameters: Quantity, quality, reliability, and accessibility.",
-        "Soil parameters: Erosion rates, crop productivity, fallow periods, salinity, and nutrient concentrations.",
-        "Biodiversity parameters: Native vegetation density, wildlife populations, habitats, and endangered indicator species.",
-        "Health parameters: Disease vectors and waterborne pathogens.",
-        "Core selection rule: Focus on components likely to be affected by the project OR upon which the project depends for success."
+        "Water metrics: Flow volume, physical/chemical quality, seasonal reliability, and community access.",
+        "Soil metrics: Erosion risk, agricultural yields, fallow cycles, salinity, and soil nutrients.",
+        "Biodiversity metrics: Native tree canopy density, wildlife corridors, and endangered indicator species.",
+        "Health metrics: Mosquito breeding sites and waterborne disease pathogens.",
+        "Cardinal selection rule: Assess only components that: (a) will be significantly altered by the project, OR (b) upon which the project depends for operational success."
       ],
-      "mental_model": "A surgeon running targeted blood tests and kidney panels before major surgery rather than sequencing every unrelated strand of DNA.",
+      "mental_model": "A doctor ordering targeted liver, kidney, and blood tests before major surgery, rather than sequencing unrelated junk DNA.",
       "checkpoint": {
         "question": "Which rule governs which environmental components must be included in a baseline study?",
         "options": [
@@ -77,22 +77,22 @@
           "Only air quality parameters measured during heavy monsoon downpours"
         ],
         "correct_index": 2,
-        "explanation": "The baseline study focuses strictly on environmental components that will either be altered by the project activities or are necessary for the project to operate successfully."
+        "explanation": "The baseline study focuses strictly on environmental components that will either be altered by project activities or that the project needs to operate."
       }
     },
     {
       "slide_num": 4,
-      "title": "Baseline Dynamics \u2014 Natural Fluctuations vs Secular Trends",
+      "title": "Baseline Dynamics — Natural Fluctuations vs Secular Trends",
       "act": "Act 1: Foundations of Environmental Impact",
       "continuity_bridge": "Identifying which baseline components to measure is only half the battle; you must also recognize that nature never stays still while you take your measurements.",
-      "eli15_takeaway": "Nature is not a frozen photograph; it is a moving video. Groundwater levels swing naturally between monsoon floods and summer droughts, while also following long-term downward regional trends.",
+      "eli15_takeaway": "Nature is never a still photograph; it is a movie. If you take only one dry-season water test, you will mistake a normal summer drought for permanent water loss.",
       "key_facts": [
-        "Baseline fallacy: The baseline situation is NOT simply a static one-time snapshot.",
-        "Dual requirements: Must describe both normal cyclical variability and ongoing long-term secular trends.",
-        "Groundwater case: Aquifers show seasonal water table recharge/depletion cycles alongside multi-year downward trends.",
-        "Analytical mandate: Assessors must distinguish pre-existing natural declines from new project-induced depletion."
+        "The Baseline Fallacy: The baseline situation is NOT a static, one-time snapshot.",
+        "Dual requirements: Must track both natural cyclical variability (monsoon vs summer) and long-term secular trends (gradual regional warming or deforestation).",
+        "Aquifer example: Groundwater naturally rises in monsoon and drops in dry months, but over 10 years may show a permanent secular decline.",
+        "Analytical duty: Scientists must separate pre-existing natural drops from new project-caused pollution or water depletion."
       ],
-      "mental_model": "Tracking stock prices: you must separate normal daily price zig-zags from a permanent five-year downward bear market trend.",
+      "mental_model": "Checking stock prices once at 9:30 AM versus studying the full yearly chart. A single snapshot misses both the daily waves and the long-term trend.",
       "checkpoint": {
         "question": "Why is characterizing a baseline as a single static 'snapshot' considered a major technical error?",
         "options": [
@@ -102,7 +102,7 @@
           "Satellite imagery costs too much for small infrastructure projects"
         ],
         "correct_index": 0,
-        "explanation": "Environmental systems naturally fluctuate across seasons and follow long-term trends; a single snapshot would mistake seasonal variance for permanent conditions or project impacts."
+        "explanation": "Environmental systems shift naturally across seasons and follow long-term trends; a single snapshot mistakes normal seasonal swings for permanent conditions or project damage."
       }
     },
     {
@@ -110,14 +110,14 @@
       "title": "Typology of Impacts & The Principle of Significance",
       "act": "Act 1: Foundations of Environmental Impact",
       "continuity_bridge": "Once the baseline path is plotted, you must classify how the project pushes the environment off course and ruthlessly filter out trivial noise.",
-      "eli15_takeaway": "Impacts come in all shapes (direct, indirect, short-term, permanent, or piling up over time). But an EIA must never waste months on minor paper cuts; it must concentrate on the critical harms that threaten life and ecosystems.",
+      "eli15_takeaway": "Project impacts come in many forms (direct, indirect, short-term, or permanent). But an EIA must not spend months agonizing over tiny paper cuts; it must hunt down the major harms that threaten communities and ecosystems.",
       "key_facts": [
-        "Four core impact categories: Direct vs Indirect, Short-term vs Long-term, Adverse vs Beneficial, and Cumulative.",
+        "Four core impact pairs: Direct vs Indirect, Short-term vs Long-term, Adverse vs Beneficial, and Cumulative (building up over time).",
         "Seven descriptive attributes: Intensity, Direction, Spatial extent, Duration, Frequency, Reversibility, and Probability.",
-        "The Cardinal Rule of EIA: All impacts are NOT treated equally; assessors MUST focus resources on the most significant impacts.",
-        "Operational discipline: Avoid wasting money, time, and documentation analyzing minor, negligible effects."
+        "The Cardinal Rule of EIA: Never treat all impacts equally. Always channel money, time, and science into the most significant impacts.",
+        "Operational discipline: Filter out minor background noise so critical ecological threats get full attention."
       ],
-      "mental_model": "An emergency room triage doctor treating a severe arterial bleed immediately while ignoring minor scrapes and bruises.",
+      "mental_model": "An emergency room triage medic: rush the patient with an arterial bleed into surgery immediately, and ignore minor finger scratches for now.",
       "checkpoint": {
         "question": "What core principle guides the analysis of environmental impacts during an EIA?",
         "options": [
@@ -127,22 +127,22 @@
           "Cumulative impacts can be legally ignored if direct impacts are minor"
         ],
         "correct_index": 1,
-        "explanation": "EIA efficiency requires focusing analysis and resources on the most significant impacts rather than getting bogged down in minor, inconsequential effects."
+        "explanation": "EIA demands focusing resources on the most significant impacts rather than getting bogged down in minor, inconsequential effects."
       }
     },
     {
       "slide_num": 6,
-      "title": "Dissecting an Activity \u2014 Primary Outputs vs Supporting Actions",
+      "title": "Dissecting an Activity — Primary Outputs vs Supporting Actions",
       "act": "Act 1: Foundations of Environmental Impact",
       "continuity_bridge": "To isolate where significant impacts originate, you must disassemble the proposed project from a vague title into its raw engineering operations.",
-      "eli15_takeaway": "A project is not just a ribbon-cutting ceremony. Building a market road requires dozens of dirty, noisy physical steps like grading soil, blasting rock, digging culverts, and rolling heavy asphalt.",
+      "eli15_takeaway": "A project is not just a polite title on a proposal. Building a 10 km rural road means bulldozing topsoil, blasting rocky ridges, digging deep drainage ditches, and rolling steaming asphalt.",
       "key_facts": [
-        "Activity definition: A desired accomplishment or physical output (e.g. market access road rehabilitation, seedling production, river diversion for irrigation).",
-        "Action definition: The discrete set of physical tasks required to accomplish the activity (e.g. land survey, grading, culvert construction, soil compaction).",
-        "Hierarchy: A development project or program consists of multiple activities, each driven by dozens of specific actions.",
-        "Impact genesis: Environmental impacts stem from the individual physical actions, not the high-level policy title."
+        "Activity defined: A desired accomplishment or physical output (e.g. market road rehabilitation, seedling production, river irrigation canal).",
+        "Action defined: The discrete set of physical engineering tasks required (e.g. land clearing, blasting, grading, building culverts, compacting soil).",
+        "Hierarchy: A development project consists of multiple activities, and each activity breaks down into dozens of specific physical actions.",
+        "Source of damage: Environmental impacts stem from the individual physical actions, not from the high-level policy title."
       ],
-      "mental_model": "Baking a birthday cake is the activity; preheating the oven, cracking raw eggs, spilling flour, and cleaning greasy pans are the individual actions.",
+      "mental_model": "Baking a cake is the activity; cracking sticky eggs, spilling flour across the counter, heating a 200°C oven, and scrubbing burned pans are the messy individual actions.",
       "checkpoint": {
         "question": "In EIA terminology, what is the relationship between an 'activity' and an 'action'?",
         "options": [
@@ -157,15 +157,15 @@
     },
     {
       "slide_num": 7,
-      "title": "The Master Blueprint \u2014 Phase 1 Inquiries vs Phase 2 Full Study",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "The Master Blueprint — Phase 1 Inquiries vs Phase 2 Full Study",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "Now that baseline data, impacts, and engineering actions are defined, the formal EIA system organizes these tasks into a two-phase architecture.",
-      "eli15_takeaway": "EIA runs on a two-stage filter. Phase 1 conducts quick preliminary checks to clear low-risk projects, while Phase 2 launches an expensive, multi-expert investigation only when high risks are discovered.",
+      "eli15_takeaway": "EIA uses a two-stage filter. Phase 1 runs rapid triage checks to clear low-risk projects quickly. Phase 2 steps in with expensive, in-depth studies only when serious red flags pop up.",
       "key_facts": [
-        "Two-phase EIA architecture: Phase I (Initial inquiries) and Phase II (Full EIA study).",
-        "Phase I scope: Understand proposed activities, Screen the project, and Conduct a Preliminary Assessment if needed.",
-        "Phase II scope: Formal Scoping, Evaluate baseline, Identify/choose alternatives, Characterize impacts, Develop mitigation and monitoring (EMP), Communicate and document.",
-        "Phase division rationale: Prevents wasteful full-scale studies for minor, low-risk community works."
+        "Two-phase architecture: Phase 1 (Initial Inquiries) and Phase 2 (Full EIA Study).",
+        "Phase 1 scope: Understand proposed activities, Screen the project into risk categories, and run a Preliminary Assessment if needed.",
+        "Phase 2 scope: Formal Scoping, full baseline surveys, analyze alternatives, characterize impacts, write an Environmental Management Plan (EMP), and consult the public.",
+        "Why two phases: Prevents wasting public money and time on massive studies for small, safe community works."
       ],
       "mental_model": "A primary care clinic checking basic vital signs in triage (Phase 1) before booking an expensive hospital surgical theater (Phase 2).",
       "checkpoint": {
@@ -183,16 +183,16 @@
     {
       "slide_num": 8,
       "title": "The Phase 1 Decision Matrix & Triage Gateway",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "Phase 1 executes its screening triage using a strict decision tree that directs projects to stop, evaluate further, or escalate.",
-      "eli15_takeaway": "Phase 1 acts as an airport security checkpoint: safe carry-on items pass through immediately, questionable bags get opened for inspection, and dangerous cargo gets locked down for a full criminal search.",
+      "eli15_takeaway": "Phase 1 works like airport security: harmless bags go right through, questionable carry-ons get pulled aside for a fast swab, and hazardous luggage gets locked down for a full bomb squad investigation.",
       "key_facts": [
-        "Screening triage routes: Low Risk -> Stop EIA process immediately; High Risk -> Begin Full EIA Study (Phase II); Moderate/Unknown Risk -> Conduct Preliminary Assessment.",
-        "Preliminary Assessment outcome branches: Significant adverse impacts very unlikely -> Stop EIA process; Significant adverse impacts possible -> Begin Full EIA Study.",
-        "Core objective: Rapid identification of potential damage without delaying benign public works.",
+        "Screening triage routes: Low Risk → Stop EIA process immediately; High Risk → Begin Full EIA Study (Phase 2); Moderate or Unknown Risk → Conduct Preliminary Assessment.",
+        "Preliminary Assessment outcome branches: Significant adverse impacts very unlikely → Stop EIA and grant permit; Significant adverse impacts possible → Begin Full EIA Study.",
+        "Core objective: Rapid identification of potential damage without delaying safe public works.",
         "Decision efficiency: Stops the regulatory clock as early as legally possible for safe projects."
       ],
-      "mental_model": "A postal mail scanner sending regular postcards to delivery trucks, bulky parcels to manual inspection, and leaking chemical bottles to hazmat squads.",
+      "mental_model": "Mail sorting at a post office: standard letters hop onto delivery vans instantly, strange heavy parcels go to a side table, and leaking chemical bottles trigger a hazardous materials lockdown.",
       "checkpoint": {
         "question": "What is the regulatory result if Phase 1 screening classifies an activity as 'Low Risk'?",
         "options": [
@@ -202,22 +202,22 @@
           "The project is permanently canceled and rejected by the ministry"
         ],
         "correct_index": 2,
-        "explanation": "When screening confirms an activity is inherently low risk, the EIA process stops, allowing the proponent to move forward without further environmental documentation."
+        "explanation": "When screening confirms an activity is inherently low risk, the EIA process stops, allowing the project to move forward without a full EIA study."
       }
     },
     {
       "slide_num": 9,
-      "title": "Deconstructing the 'Why' \u2014 The Development Objective",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "Deconstructing the 'Why' — The Development Objective",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "To begin Phase 1 review, assessors must understand the project's true motivation before looking at engineering drawings.",
       "eli15_takeaway": "Never confuse the tool with the goal. 'Building a two-lane asphalt highway' is just an engineering output; 'giving rural farmers access to regional food markets' is the true Development Objective.",
       "key_facts": [
-        "Golden rule: 'If we don't understand it, we can't assess it!'",
+        "Golden rule: 'If we do not understand it, we cannot assess it!'",
         "Root question: 'Why is the activity being proposed?' answered by the Development Objective (D.O.).",
         "Critical distinction: 'Building a road' is NOT a Development Objective (it is merely an output); 'Increasing access to markets' IS a true Development Objective.",
-        "Strategic value: Defining the true D.O. enables identification of environmentally cleaner alternatives (e.g. railway lines, river barges, or cold-storage centers)."
+        "Design freedom: Understanding the true objective unlocks cleaner alternatives like river barges or rail freight instead of destroying prime farmland."
       ],
-      "mental_model": "Saying 'I need to buy a power drill' when what you actually need is a hole in the wall; knowing your real need allows hooks, adhesives, or pre-drilled brackets.",
+      "mental_model": "Saying 'I need to buy a power drill' when what you actually need is a hole in the wall. Knowing your real need allows hooks, adhesives, or pre-drilled brackets.",
       "checkpoint": {
         "question": "Why must an EIA team identify the core 'Development Objective' rather than just the physical output?",
         "options": [
@@ -227,22 +227,22 @@
           "Because international law forbids engineers from mentioning physical roads"
         ],
         "correct_index": 1,
-        "explanation": "Understanding the underlying development objective (such as enhancing market access) unlocks alternative, lower-impact solutions (such as rail transport or waterway shipping) to meet the same need."
+        "explanation": "A Development Objective describes the true human or economic purpose of the project (such as improving market access) rather than the physical engineering structure built to achieve it."
       }
     },
     {
       "slide_num": 10,
-      "title": "Uncovering the 'What' \u2014 Hidden Ancillary Footprints",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "Uncovering the 'What' — Hidden Ancillary Footprints",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "Once the 'Why' is clear, assessors must expose the complete 'What' by uncovering all off-site and temporary support operations.",
-      "eli15_takeaway": "The worst environmental destruction often comes from the side jobs nobody talks about\u2014like digging giant borrow pits for dirt, bulldozing worker camps, or dumping tons of wet soil into nearby streams.",
+      "eli15_takeaway": "The biggest ecological mess is rarely the main building; it is the supporting construction mess. Building a clean concrete dam often means clear-cutting forests for worker barracks, blasting quarry pits, and dumping truckloads of toxic rubble.",
       "key_facts": [
-        "Assessment hazard: The classic 'Oops, I forgot about the borrow pit' oversight.",
+        "Common mistake: The 'Oops, I forgot about the borrow pit' blind spot where assessors ignore secondary works.",
         "Total scope rule: Assessors must evaluate the Primary Activity PLUS all Associated Actions.",
-        "Primary Activity example: Construction of a river diversion dam and concrete irrigation canal.",
-        "Associated Actions list: Topographical survey, negotiating land tenure, digging borrow pits, setting up worker construction camps, building temporary river diversion coffer dams, and dumping spoil/debris."
+        "Primary activity example: Construction of a river diversion dam and concrete irrigation canal.",
+        "Associated actions list: Topographical survey, negotiating land tenure, digging borrow pits, setting up worker construction camps, building temporary river diversion coffer dams, and dumping spoil/debris."
       ],
-      "mental_model": "Throwing an outdoor music concert: the stage performance is obvious, but 40,000 cars crushing farm fields and leaving 20 tons of plastic trash cause the real damage.",
+      "mental_model": "A stadium concert: the singer on stage is clean and orderly, but 50,000 parked cars, idling diesel generators, and 20 tons of plastic trash cause the real damage.",
       "checkpoint": {
         "question": "Which of the following represents an 'associated action' in the construction of an irrigation diversion dam?",
         "options": [
@@ -257,8 +257,8 @@
     },
     {
       "slide_num": 11,
-      "title": "The Screening Filter \u2014 Coarse-Grained Risk Sorting",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "The Screening Filter — Coarse-Grained Risk Sorting",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "With the Development Objective and all supporting actions documented, the project enters the screening filter to determine its legal track.",
       "eli15_takeaway": "Screening is a fast, common-sense check. You do not need chemistry labs or satellite calculations; you answer straightforward checklist questions about what the project builds and where it goes.",
       "key_facts": [
@@ -283,18 +283,18 @@
     },
     {
       "slide_num": 12,
-      "title": "Screening Outcomes \u2014 Three Distinct Regulatory Paths",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "Screening Outcomes — Three Distinct Regulatory Paths",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "The answers to the screening questions route the project into one of three specific administrative tracks.",
       "eli15_takeaway": "Screening splits projects into three bins: low-risk jobs get approved immediately, moderate-risk jobs undergo a quick preliminary study, and high-risk projects go straight to a full EIA.",
       "key_facts": [
         "Three risk categories: Very Low Risk, Moderate or Unknown Risk, and Very High Risk.",
-        "Path 1 (Very Low Risk): Inherently benign activities -> EIA process ends immediately.",
-        "Path 2 (Moderate or Unknown Risk): Unclear scale or sensitive surroundings -> Conduct Preliminary Assessment.",
-        "Path 3 (Very High Risk): Known heavy-polluting or massive projects -> Do Full EIA Study (Phase II).",
+        "Path 1 (Very Low Risk): Inherently benign activities → EIA process ends immediately.",
+        "Path 2 (Moderate or Unknown Risk): Unclear scale or sensitive surroundings → Conduct Preliminary Assessment.",
+        "Path 3 (Very High Risk): Known heavy-polluting or massive projects → Do Full EIA Study (Phase 2).",
         "Procedural significance: Screening directly governs legal timelines, project budgets, and required regulatory paperwork."
       ],
-      "mental_model": "Traffic lights: Green light means proceed without delay (Low Risk), Yellow light means proceed with caution and inspect (Moderate Risk), Red light means stop and complete rigorous testing (High Risk).",
+      "mental_model": "Traffic lights: Green light means proceed without delay (Low Risk), Yellow light means proceed with caution and inspect (Moderate Risk), Red light means stop and complete rigorous testing (Very High Risk).",
       "checkpoint": {
         "question": "If an industrial activity is classified as 'Very High Risk' during initial screening, what happens next?",
         "options": [
@@ -304,13 +304,13 @@
           "The project is reclassified as agricultural land"
         ],
         "correct_index": 2,
-        "explanation": "Very High Risk activities bypass preliminary assessments and are mandated to undergo a comprehensive Phase II Full EIA Study."
+        "explanation": "Very High Risk activities bypass preliminary assessments and are mandated to undergo a comprehensive Phase 2 Full EIA Study."
       }
     },
     {
       "slide_num": 13,
-      "title": "The Preliminary Assessment \u2014 Scope & Diagnostic Purpose",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "The Preliminary Assessment — Scope & Diagnostic Purpose",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "When screening flags moderate or unknown risks, the project must produce a Preliminary Assessment before any permit can be issued.",
       "eli15_takeaway": "A preliminary assessment is a fast diagnostic report. It checks whether standard engineering safeguards can solve environmental issues or if deep scientific research is required.",
       "key_facts": [
@@ -336,14 +336,14 @@
     {
       "slide_num": 14,
       "title": "Preliminary Assessment Structure & The Three Verdicts",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "To fulfill its diagnostic mission, the preliminary assessment follows a standardized five-part structure and outputs one of three legal conclusions.",
       "eli15_takeaway": "A preliminary assessment contains 5 straightforward sections and ends with one of three verdicts: clear to build, clear to build only with mandatory safeguards, or stopped until a full EIA is completed.",
       "key_facts": [
-        "Five standard outline sections: 1. Background (D.O. & activities list), 2. Baseline situation, 3. Evaluation of potential impacts, 4. Mitigation & Monitoring, 5. Recommended Findings.",
-        "Finding 1: Very unlikely to have significant adverse impacts -> EIA process ends; clearance granted.",
-        "Finding 2: Unlikely to have significant adverse impacts with specified mitigation and monitoring -> Clearance granted with binding conditions.",
-        "Finding 3: Likely to have significant adverse impacts -> Escalates to Full EIA Study (Phase II).",
+        "Five standard outline sections: 1. Background (Development Objective & activities list), 2. Baseline situation, 3. Evaluation of potential impacts, 4. Mitigation & Monitoring, 5. Recommended Findings.",
+        "Finding 1: Very unlikely to have significant adverse impacts → EIA process ends; clearance granted.",
+        "Finding 2: Unlikely to have significant adverse impacts with specified mitigation and monitoring → Clearance granted with binding conditions.",
+        "Finding 3: Likely to have significant adverse impacts → Escalates to Full EIA Study (Phase 2).",
         "Transition question: 'What is mitigation?' introduces the active design fixes required to reduce harm."
       ],
       "mental_model": "A vehicle inspection certificate: Pass unconditionally, Pass conditional on replacing worn brake pads, or Fail and tow to a full mechanical overhaul shop.",
@@ -361,42 +361,42 @@
     },
     {
       "slide_num": 15,
-      "title": "The Impact Judgment Trinity \u2014 Identify, Predict, and Judge",
-      "act": "Act 2: Phase 1 \u2014 Screening and Preliminary Assessment",
+      "title": "The Impact Judgment Trinity — Identify, Predict, and Judge",
+      "act": "Act 2: Phase 1 — Screening and Preliminary Assessment",
       "continuity_bridge": "Arriving at one of those three findings requires assessors to climb an orderly three-step scientific ladder.",
       "eli15_takeaway": "You cannot jump to conclusions about a project's impact. First, list every potential hazard; second, calculate how much damage will actually occur; third, judge whether that damage remains dangerous after adding safety equipment.",
       "key_facts": [
         "Step 1 (Identify): Identify potential impacts using catalogs, past project databases, and sector checklists.",
-        "Step 2 (Predict): Determine which impacts will actually materialize, and quantify their magnitude and spatial scale.",
-        "Step 3 (Judge): Judge whether the predicted impacts are significant enough to warrant alarms.",
-        "Critical dependency: Final judgment of significance often depends entirely on how effective the proposed mitigation measures are."
+        "Step 2 (Predict): Quantify the physical change (e.g. baseline dust is 40 \\(\\mu\\text{g/m}^3\\); quarry crushing will increase dust by 80 \\(\\mu\\text{g/m}^3\\)).",
+        "Step 3 (Judge): Decide whether that predicted net change represents a significant adverse impact after mitigation.",
+        "Core takeaway: A big physical change is NOT necessarily an unacceptable impact if it remains well within legal safety limits."
       ],
       "mental_model": "Predicting car safety: 1. Identify that high speeds on ice cause skidding; 2. Predict the braking distance in meters; 3. Judge whether anti-lock brakes and studded tires make the drive safe.",
       "checkpoint": {
         "question": "What is the correct logical sequence for arriving at findings in an impact assessment?",
         "options": [
-          "Judge significance -> Identify potential impacts -> Predict potential impacts",
-          "Identify potential impacts -> Predict potential impacts -> Judge significance of predicted impacts",
-          "Predict potential impacts -> Approve project -> Identify potential impacts",
-          "Ignore minor impacts -> Pay compensation -> Judge legal liability"
+          "Judge significance → Identify potential impacts → Predict potential impacts",
+          "Identify potential impacts → Predict potential impacts → Judge significance of predicted impacts",
+          "Predict potential impacts → Approve project → Identify potential impacts",
+          "Ignore minor impacts → Pay compensation → Judge legal liability"
         ],
         "correct_index": 1,
-        "explanation": "The rigorous scientific sequence is: first identify potential impacts, then predict and quantify actual occurrences, and finally judge their significance after mitigation."
+        "explanation": "The EIA assessment ladder follows three logical steps: first Identify potential hazards, second Predict their physical magnitude, and third Judge whether the net harm is acceptable."
       }
     },
     {
       "slide_num": 16,
-      "title": "The Escalation Rule \u2014 The Phase 2 Gateway",
-      "act": "Act 3: Phase 2 \u2014 The Full EIA Study & Stakeholder Governance",
+      "title": "The Escalation Rule — The Phase 2 Gateway",
+      "act": "Act 3: Phase 2 — The Full EIA Study & Stakeholder Governance",
       "continuity_bridge": "When the judgment step proves that severe environmental risks remain unmitigated, the project crosses the legal boundary into Phase 2.",
-      "eli15_takeaway": "Phase 2 is not for ordinary construction. Most routine projects finish in Phase 1; only high-impact, heavy-footprint developments get pushed into a full-scale EIA study.",
+      "eli15_takeaway": "Phase 2 is not for routine projects. You step up to a full EIA study only when a project threatens rare wildlife, uproots entire villages, or risks toxic chemical leaks.",
       "key_facts": [
-        "The Gateway Rule: Proponents proceed to Phase II ONLY if Phase I screening or preliminary assessment proves a Full EIA Study is required.",
-        "Distribution principle: Most small-scale and routine activities do NOT require a full EIA study.",
-        "Administrative balance: Conserves government scientific resources for projects posing genuine ecological threats.",
-        "Legal consequence: Crossing into Phase II triggers mandatory public hearings, formal scoping, and accredited expert teams."
+        "Escalation trigger: Preliminary Assessment finds that significant adverse impacts are probable.",
+        "Formal title: The Full EIA Study (or Full Environmental Assessment / EA).",
+        "Selective focus: Reserved for high-stakes projects with heavy environmental footprints.",
+        "Cost-benefit balance: Protects national ecosystems without trapping minor schools or water clinics in multi-year bureaucracy."
       ],
-      "mental_model": "Hospital triage: 90% of walk-in patients are treated and discharged from urgent care, while only critical cases are admitted to intensive care.",
+      "mental_model": "Calling the central bomb disposal squad: you do not call them for a misplaced backpack, only when an X-ray confirms explosives and hazardous wires inside.",
       "checkpoint": {
         "question": "Under what condition does a project advance to Phase II of the EIA process?",
         "options": [
@@ -406,23 +406,23 @@
           "Only when an international court files a lawsuit against the local government"
         ],
         "correct_index": 1,
-        "explanation": "Phase II is an escalation pathway reserved strictly for projects that Phase I evaluation flags as likely to cause significant adverse impacts."
+        "explanation": "Phase 2 is an escalation pathway reserved strictly for projects that Phase 1 evaluation flags as likely to cause significant adverse impacts."
       }
     },
     {
       "slide_num": 17,
-      "title": "Upgrading to Phase 2 \u2014 Five High-Stakes Differences",
-      "act": "Act 3: Phase 2 \u2014 The Full EIA Study & Stakeholder Governance",
+      "title": "Upgrading to Phase 2 — Five High-Stakes Differences",
+      "act": "Act 3: Phase 2 — The Full EIA Study & Stakeholder Governance",
       "continuity_bridge": "Crossing into Phase 2 does not just mean writing a longer report; it fundamentally changes the legal rigor, stakeholder power, and technical depth.",
-      "eli15_takeaway": "A full EIA study is a different beast from a quick preliminary check. It demands formal scoping, deep scientific modeling, public hearings, a professional multi-expert team, and side-by-side comparisons of alternative sites.",
+      "eli15_takeaway": "Moving to Phase 2 changes the game in 5 big ways: it demands years of fieldwork instead of weeks, costs real money, forces developers to consider alternatives, brings in independent scientists, and lets the public speak out.",
       "key_facts": [
-        "Difference 1 (Scoping): A formal scoping process precedes the study to establish binding Terms of Reference (ToR).",
-        "Difference 2 (Impact Depth): Impact analysis is far more detailed, requiring multi-season field data and quantitative modeling.",
-        "Difference 3 (Alternatives): Project alternatives (including alternative sites, processes, and the 'no-action' scenario) must be formally defined, evaluated, and compared.",
-        "Difference 4 (Public Voice): Public participation and open stakeholder consultations are legally required.",
-        "Difference 5 (Expert Team): A certified, interdisciplinary professional EIA team is mandatory."
+        "Difference 1 (Time & Resources): Phase 1 takes weeks and minimal funds; Phase 2 requires multi-season field sampling and substantial budgets.",
+        "Difference 2 (Impacts Analyzed): Phase 1 looks at all potential issues; Phase 2 zeroes in on confirmed high-significance threats.",
+        "Difference 3 (Design Alternatives): Phase 2 legally requires comparing different sites, technologies, and designs.",
+        "Difference 4 (Public Participation): Phase 2 legally mandates open community meetings, stakeholder hearings, and public comment periods.",
+        "Difference 5 (Scientific Rigor): Phase 2 uses specialized interdisciplinary teams, predictive computer models, and lab tests."
       ],
-      "mental_model": "Upgrading from a quick home napkin sketch to an architect-certified skyscraper blueprint scrutinized in public city hall zoning hearings.",
+      "mental_model": "Moving from a routine home inspection before renting an apartment to a full forensic financial audit and structural engineering drill before buying a skyscraper.",
       "checkpoint": {
         "question": "Which of the following is a mandatory requirement for a Full EIA Study that is NOT required for a preliminary assessment?",
         "options": [
@@ -432,22 +432,21 @@
           "Hiring construction workers from local villages"
         ],
         "correct_index": 1,
-        "explanation": "A Full EIA study legally mandates the formal definition, modeling, and side-by-side comparison of project alternatives, which is not required in rapid preliminary checks."
+        "explanation": "Phase 2 introduces strict legal duties for rigorous scientific modeling, multi-season field data, and mandatory public consultation."
       }
     },
     {
       "slide_num": 18,
       "title": "Step-by-Step Architecture of the Full EIA Study",
-      "act": "Act 3: Phase 2 \u2014 The Full EIA Study & Stakeholder Governance",
+      "act": "Act 3: Phase 2 — The Full EIA Study & Stakeholder Governance",
       "continuity_bridge": "To execute these five high-stakes requirements, Phase 2 follows a comprehensive workflow expanding the basic preliminary assessment template.",
-      "eli15_takeaway": "A full EIA follows a strict step-by-step path: Scoping sets the boundaries, field surveys capture baseline conditions, alternatives are scored, impacts are modeled, an Environmental Management Plan is locked in, and findings are communicated.",
+      "eli15_takeaway": "A Full EIA study runs on an 8-step roadmap: write the rulebook (Scoping), map nature, test alternative sites, calculate damage, design cleanup plans (EMP), write the report, and hold public hearings.",
       "key_facts": [
-        "Full EIA sequential steps: 1. Scope -> 2. Evaluate baseline situation -> 3. Identify & choose alternatives -> 4. Characterize impacts of proposed activity and alternatives -> 5. Compare alternatives -> 6. Develop mitigation & monitoring (EMP).",
-        "Foundational template: Expands on the 5-point preliminary assessment outline (Background, Baseline, Impacts, Mitigation/Monitoring, Findings).",
-        "Cross-cutting mandate: Communicate and Document throughout all phases of the study.",
-        "Core deliverable: A comprehensive Environmental Management Plan (EMP) specifying who monitors what, when, and at what cost."
+        "8-step roadmap: 1. Scoping (Terms of Reference); 2. Baseline evaluation; 3. Compare alternatives; 4. Characterize and model impacts; 5. Develop Mitigation & Monitoring Plan (EMP); 6. Draft Environmental Impact Statement (EIS); 7. Review and decision-making; 8. Project implementation and post-audit monitoring.",
+        "Scoping significance: Sets the legal boundaries and Terms of Reference (ToR) so consultants do not wander off-topic.",
+        "EMP significance: Converts scientific findings into legally enforceable construction rules."
       ],
-      "mental_model": "A military mission plan: reconnaissance scopes the perimeter, intelligence models enemy movements, commanders compare tactical options, and an operational battle plan assigns exact responsibilities.",
+      "mental_model": "Planning a space mission: 1. Define mission scope; 2. Map orbital hazards; 3. Compare rocket fuels; 4. Model re-entry heat; 5. Build emergency heat shields; 6. Document flight manual; 7. Independent review; 8. Public launch.",
       "checkpoint": {
         "question": "What activity must continue continuously throughout every stage of a Full EIA study?",
         "options": [
@@ -457,22 +456,22 @@
           "Purchasing industrial chemical inventories"
         ],
         "correct_index": 1,
-        "explanation": "The EIA framework mandates that communication and transparent technical documentation must proceed continuously throughout all steps of the study."
+        "explanation": "Scoping is the critical initial step of a Full EIA study that sets the official Terms of Reference (ToR) and defines the exact scope of field research."
       }
     },
     {
       "slide_num": 19,
-      "title": "Proportionality in Governance \u2014 Why Full EIA is Selective",
-      "act": "Act 3: Phase 2 \u2014 The Full EIA Study & Stakeholder Governance",
+      "title": "Proportionality in Governance — Why Full EIA is Selective",
+      "act": "Act 3: Phase 2 — The Full EIA Study & Stakeholder Governance",
       "continuity_bridge": "Because a Phase 2 study requires substantial capital, scientific expertise, and time, environmental agencies keep it strictly targeted.",
-      "eli15_takeaway": "If governments forced every corner store, warehouse, or school to complete a multi-year full EIA, the economy would grind to a halt while real ecological disasters got ignored. Strict selectivity keeps the tool effective.",
+      "eli15_takeaway": "If every single project needed a Full EIA, the government would grind to a halt and schools would never get built. Full EIAs are reserved for the top 5% of projects that pose real ecological danger.",
       "key_facts": [
-        "Proportionality principle: A full EIA study is a far more significant technical and financial undertaking than a preliminary assessment.",
-        "Strategic reserve: Reserved exclusively for activities where screening or preliminary assessment proves significant impacts are likely.",
-        "Resource allocation: Prevents administrative backlogs in environmental ministries and focuses top ecological scientists on genuine high-risk threats.",
-        "Policy balance: Protects environmental integrity without creating unnecessary bureaucratic roadblocks for benign investments."
+        "Regulatory capacity: Government ministries and scientific panels have limited time, staff, and budgets.",
+        "Resource misallocation risk: Forcing small rural clinics to do 2-year studies creates massive red tape and diverts regulators from mega-polluters.",
+        "Proportionality principle: Environmental review depth must match the actual risk level of the project.",
+        "Outcome: Over 90% of development activities clear through Phase 1; only high-risk industrial developments reach Phase 2."
       ],
-      "mental_model": "A SWAT team: you do not deploy specialized tactical squads for parking violations; you reserve them for high-stakes emergencies where safety is truly threatened.",
+      "mental_model": "Hospital intensive care units (ICU): ICUs are expensive and specialized; admitting patients with common colds would collapse the hospital and starve trauma victims of beds.",
       "checkpoint": {
         "question": "Why is the Full EIA Study reserved only for projects showing likely significant adverse impacts?",
         "options": [
@@ -482,22 +481,22 @@
           "Because minor projects have zero physical impact on surrounding nature"
         ],
         "correct_index": 0,
-        "explanation": "Full EIA studies require heavy institutional, scientific, and financial commitments; applying them universally to low-risk activities would cause bureaucratic gridlock without environmental gain."
+        "explanation": "Limiting Full EIAs to high-risk projects protects regulatory resources so agencies can thoroughly scrutinize genuinely dangerous developments."
       }
     },
     {
       "slide_num": 20,
       "title": "The Stakeholder Triangle & Mandatory Public Consultation",
-      "act": "Act 3: Phase 2 \u2014 The Full EIA Study & Stakeholder Governance",
+      "act": "Act 3: Phase 2 — The Full EIA Study & Stakeholder Governance",
       "continuity_bridge": "A full EIA cannot be run by corporate scientists behind closed doors; the law requires three distinct groups to share the table.",
-      "eli15_takeaway": "Three players hold power in an EIA: the project sponsor who builds, the government regulator who approves, and the local public who lives with the pollution. Public hearings catch real-world blind spots that lab models miss.",
+      "eli15_takeaway": "An EIA is a triangle between the developer, the government, and the local public. Local villagers often know more about flash floods and sacred forests than any computer model in a city office.",
       "key_facts": [
-        "Three core EIA stakeholders: 1. Sponsor of the activity (commissions and pays for EIA); 2. Regulatory agencies / review authorities; 3. Broad-based public.",
-        "Public components: Local communities (men and women), civil society organizations, and affected private sector businesses.",
-        "Legal status: Public consultation is legally REQUIRED for full EIA studies (and recommended practice for preliminary assessments).",
-        "Operational benefits: Local knowledge improves impact predictions; judging significance is nearly impossible without local values; public disclosure ensures transparency and trust."
+        "The Stakeholder Triangle: Project Proponent (developer), Regulatory Authority (government), and Affected Public (local residents and indigenous tribes).",
+        "Public consultation roles: Tap into generational local ecological knowledge, improve impact predictions, and address social justice concerns.",
+        "Regulatory mandate: Public hearings are legally required in Phase 2; concealing documents or skipping hearings invalidates environmental clearances in court.",
+        "Conflict reduction: Early community talks resolve protests before construction starts, preventing costly project shutdowns."
       ],
-      "mental_model": "A courtroom trial: the project sponsor presents their defense, government regulators enforce legal statutes, and the local community acts as the jury evaluating impacts on their home.",
+      "mental_model": "A 3-legged stool: developers provide the capital, government provides the legal permits, and local communities provide the social license to operate. Cut any leg and the stool falls.",
       "checkpoint": {
         "question": "Why is broad-based public consultation legally mandated for Full EIA studies?",
         "options": [
@@ -507,23 +506,23 @@
           "To satisfy political campaign advertising quotas"
         ],
         "correct_index": 1,
-        "explanation": "Local residents possess generational environmental knowledge that models miss, and judging whether an impact is acceptable requires direct consultation with those who must live with it."
+        "explanation": "Local residents possess generational environmental knowledge that models miss, and judging acceptable harm requires direct input from the people living next door."
       }
     },
     {
       "slide_num": 21,
-      "title": "Effectiveness Benchmarks \u2014 Upstream Design & Real Alternatives",
-      "act": "Act 3: Phase 2 \u2014 The Full EIA Study & Stakeholder Governance",
+      "title": "Effectiveness Benchmarks — Upstream Design & Real Alternatives",
+      "act": "Act 3: Phase 2 — The Full EIA Study & Stakeholder Governance",
       "continuity_bridge": "Even with public hearings and extensive documentation, an EIA is worthless if treated as an afterthought stamp on finalized plans.",
-      "eli15_takeaway": "An EIA only protects nature if it starts early enough to change the blueprint, evaluates honest alternatives, presents clear facts to the public, and actually enforces its cleanup promises on the ground.",
+      "eli15_takeaway": "An EIA is useless if treated as a rubber stamp after blueprints are drawn. It must happen at the drawing board, compare honest alternatives, tell the public the truth, and enforce safety promises on the ground.",
       "key_facts": [
-        "Timing requirement: EIA must be undertaken early enough in the project development cycle to actively alter project design and site selection.",
-        "Alternative mandate: The full study must consider real, viable alternatives (not fabricated straw-man options).",
-        "Scientific integrity: Impacts must be assessed honestly without sugarcoating or hiding severe consequences.",
-        "Transparency: EIA documentation must be clear, honest, and accessible to non-technical stakeholders.",
-        "Execution mandate: Mitigation and monitoring plans developed during the EIA must be strictly implemented during construction and operations."
+        "Early timing: EIA must start early in project conception so it can alter site choices, engineering designs, and technology.",
+        "Genuine alternatives: Must evaluate realistic alternative sites, processes, and the 'No-Action' option.",
+        "Scientific honesty: Predict impacts truthfully without downplaying hazards or glossing over toxic risks.",
+        "Clear communication: EIA documents must be plain and understandable to local communities, not hidden in impenetrable jargon.",
+        "Ground enforcement: Mitigation and monitoring plans must be funded, verified, and audited during daily operations."
       ],
-      "mental_model": "Designing anti-lock brakes and crumple zones into a vehicle chassis before assembly begins, rather than taping emergency airbags to the bumper after a crash.",
+      "mental_model": "Designing anti-lock brakes and crumple zones into a car chassis before manufacturing, rather than duct-taping an airbag to the bumper after a crash.",
       "checkpoint": {
         "question": "Which condition is essential for an EIA to function as an effective environmental protection tool?",
         "options": [
@@ -538,18 +537,18 @@
     },
     {
       "slide_num": 22,
-      "title": "Statutory Necessity \u2014 Five Triggers for Compulsory Clearance",
+      "title": "Statutory Necessity — Five Triggers for Compulsory Clearance",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "Having explored international best practices, we now examine how Indian environmental law translates these principles into compulsory statutory commands.",
-      "eli15_takeaway": "In India, you do not get to choose whether to conduct an EIA. The law mandates an EIA whenever a project alters vast land tracts, uses dangerous chemicals, encroaches on sensitive habitats, clusters industrial units, or touches the coast.",
+      "eli15_takeaway": "In India, an EIA is not optional. The law commands an EIA whenever a project alters large land areas, handles hazardous chemicals, touches fragile ecosystems, groups factories into industrial parks, or operates on the coast.",
       "key_facts": [
-        "Statutory Trigger 1: Projects that significantly alter land use patterns, natural landscapes, and local human habitations.",
-        "Statutory Trigger 2: Projects involving the manufacture, handling, transport, or storage of hazardous chemicals.",
-        "Statutory Trigger 3: Siting near ecologically sensitive areas, urban centers, hill resorts, or places of scientific, historic, and religious importance.",
-        "Statutory Trigger 4: Industrial Estates with diverse constituent units whose cumulative emissions cause severe environmental damage.",
-        "Statutory Trigger 5: Developmental activities in Coastal Regulation Zone-II (CRZ-II) that alter fragile marine and coastal ecosystems."
+        "Trigger 1: Projects that heavily transform natural land, topography, and local settlements.",
+        "Trigger 2: Projects manufacturing, storing, or transporting hazardous chemicals.",
+        "Trigger 3: Siting near ecologically sensitive areas, urban centers, hill stations, or historic and religious heritage monuments.",
+        "Trigger 4: Industrial Estates hosting diverse factories whose combined pollution causes severe cumulative damage.",
+        "Trigger 5: Development in Coastal Regulation Zone-II (CRZ-II) that affects fragile marine and coastal zones."
       ],
-      "mental_model": "A building fire sprinkler code: smoke alarms do not ask for permission; the moment heat or smoke crosses an exact statutory threshold, the system triggers automatically.",
+      "mental_model": "A building fire sprinkler code: smoke alarms do not ask for permission; the moment heat or smoke crosses a set legal threshold, sprinklers trigger automatically.",
       "checkpoint": {
         "question": "Which of the following projects automatically triggers the mandatory statutory need for an EIA in India?",
         "options": [
@@ -564,17 +563,17 @@
     },
     {
       "slide_num": 23,
-      "title": "The Legal Mandate \u2014 EPA 1986 & EIA Notification 1994",
+      "title": "The Legal Mandate — EPA 1986 & EIA Notification 1994",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "These five triggers were codified into national law through India's landmark environmental statute enacted under the Environment (Protection) Act, 1986.",
-      "eli15_takeaway": "On January 27, 1994, the Ministry of Environment and Forests issued India's first formal EIA Notification under the EPA 1986, making prior Environmental Clearance compulsory for 30 project categories before starting any work or expansion.",
+      "eli15_takeaway": "On January 27, 1994, India made environmental clearance compulsory by law under the Environment (Protection) Act, 1986. For 30 industrial sectors, building without prior central clearance is an outright crime.",
       "key_facts": [
-        "Parent statutory power: Enacted under Section 3 of the Environment (Protection) Act, 1986 (EPA 1986) and the Environment (Protection) Rules, 1986.",
+        "Parent legislation: Issued under Section 3 of the Environment (Protection) Act, 1986 (EPA 1986) and its statutory rules.",
         "Landmark date: EIA Notification issued on January 27, 1994 by the Ministry of Environment & Forests (MoEF, now MoEFCC).",
-        "Mandated scope: Specified 30 distinct categories of developmental and industrial projects.",
-        "Absolute prohibition: No person shall undertake any new project or the expansion/modernization of any existing activity listed in the notification without prior Environmental Clearance (EC) published in the Official Gazette."
+        "Mandated industries: Specified 30 distinct categories of heavy industrial, mining, energy, and infrastructure projects.",
+        "Prior clearance rule: No company can start a new project or expand/modernize an existing unit without prior Environmental Clearance (EC) published in the Official Gazette."
       ],
-      "mental_model": "A national passport control desk: you cannot cross an international border without an official entry visa, and a developer cannot break ground without a published Environmental Clearance.",
+      "mental_model": "An international airport passport gate: you cannot step across the border without a stamped entry visa, and a factory developer cannot break ground without a published clearance.",
       "checkpoint": {
         "question": "Under which parent legislation was the landmark Indian EIA Notification of 1994 issued?",
         "options": [
@@ -592,14 +591,14 @@
       "title": "The Expert Appraisal Committee (EAC) Composition",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "To prevent political pressure or corporate bias from granting clearances, the 1994 Notification mandated an interdisciplinary committee of independent scientists.",
-      "eli15_takeaway": "Environmental clearances are not signed by a single bureaucrat in secret. A multidisciplinary Expert Appraisal Committee featuring ecologists, engineers, hydrologists, sociologists, and NGO leaders cross-examines the applicant's claims.",
+      "eli15_takeaway": "Environmental clearances are not approved by a single bureaucrat behind closed doors. An 11-member Expert Appraisal Committee of ecologists, hydrologists, engineers, sociologists, and NGO leaders cross-examines every project.",
       "key_facts": [
-        "Statutory body: Expert Committee (later designated Expert Appraisal Committee / EAC) constituted by MoEF.",
-        "Eleven mandatory discipline areas: 1. Ecosystem management, 2. Air/water pollution control, 3. Water resource management, 4. Flora/fauna conservation and management, 5. Land use planning, 6. Social sciences / rehabilitation, 7. Project appraisal, 8. Ecology, 9. Environmental health, 10. NGO representatives, 11. Subject area specialists.",
-        "Evaluation role: Multi-disciplinary peer review verifying baseline facts, impact models, and rehabilitation budgets.",
-        "Institutional balance: Balances engineering feasibility with social rehabilitation and biodiversity protection."
+        "Statutory body: Expert Committee (later designated Expert Appraisal Committee / EAC) set up by MoEF.",
+        "11 mandatory expertise disciplines: 1. Ecosystem management, 2. Air/water pollution control, 3. Water resources, 4. Flora/fauna conservation, 5. Land use, 6. Social sciences / rehabilitation, 7. Project appraisal, 8. Ecology, 9. Environmental health, 10. NGO representatives, 11. Sector specialists.",
+        "Review mission: Rigorously audit baseline reports, pollution models, and rehabilitation budgets.",
+        "Balanced governance: Ensures human rehabilitation and biodiversity protection carry equal weight with engineering and finance."
       ],
-      "mental_model": "A hospital medical board of cardiologists, neurologists, anesthesiologists, and medical ethicists reviewing a high-risk surgical candidate before surgery begins.",
+      "mental_model": "A multidisciplinary hospital board of surgeons, cardiologists, and ethicists reviewing a high-risk patient before approving complex surgery.",
       "checkpoint": {
         "question": "Why does the MoEF Expert Committee include social scientists and NGO representatives alongside engineers?",
         "options": [
@@ -614,19 +613,18 @@
     },
     {
       "slide_num": 25,
-      "title": "Application Dossier \u2014 Form 1 Disclosures & Environmental Cell",
+      "title": "Application Dossier — Form 1 Disclosures & Environmental Cell",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "The Expert Committee bases its technical appraisal on an exhaustive application dossier that developers must submit under oath.",
-      "eli15_takeaway": "An environmental application is not a casual letter. Proponents must submit detailed technical balance sheets for water, power, labor, waste, and air, along with a full Risk Assessment, an EMP, and proof of an in-house environmental monitoring team.",
+      "eli15_takeaway": "Applying for clearance is not a casual letter. Developers must file an exhaustive dossier under oath, including detailed water and power balance sheets, a full Risk Assessment, an EMP, and proof of an in-house environmental monitoring team.",
       "key_facts": [
-        "Project profile data: Proponent name, site coordinates, alternate sites examined, and development objectives.",
-        "Resource balance disclosures: Water balance sheets, power and fuel sourcing, and peak labor force requirements.",
-        "Pollution inventories: Baseline climate/air quality data, solid waste generation/disposal, noise levels, and vibration impacts.",
-        "Risk & Safety files: Risk assessment report, on-site/off-site disaster management plan, and comprehensive feasibility report.",
-        "Core technical deliverables: Environmental Impact Assessment (EIA) report and Environmental Management Plan (EMP).",
-        "Internal governance: Mandatory establishment of an internal in-house 'Environment Cell' to execute ongoing environmental compliance."
+        "Statutory dossier components: Form 1 application, detailed Project Report (DPR), EIA report, and Environmental Management Plan (EMP).",
+        "Resource balance sheets: Exact inputs and outputs for water, electrical power, fuels, raw minerals, and labor forces.",
+        "Pollution disclosures: Solid, liquid, and gaseous emission volumes, chemical compositions, and treatment systems.",
+        "Risk Assessment & DMP: Quantitative hazard analysis and a detailed Disaster Management Plan for catastrophic leaks or explosions.",
+        "In-house Environmental Cell: Applicant must prove they have an internal laboratory and environmental engineering staff to handle daily monitoring."
       ],
-      "mental_model": "A strict mortgage underwriting audit: you must disclose every debt, bank balance, property survey, tax return, and insurance policy to prove total stability.",
+      "mental_model": "A strict bank mortgage application: you must declare every income source, bank account, debt, land deed, and home inspection report under penalty of perjury.",
       "checkpoint": {
         "question": "What internal organizational structure must a project proponent establish according to the EIA Notification application requirements?",
         "options": [
@@ -636,27 +634,22 @@
           "A corporate advertising agency to promote factory products"
         ],
         "correct_index": 0,
-        "explanation": "Proponents must establish an in-house Environment Cell staffed with qualified environmental professionals to execute the commitments outlined in the EMP."
+        "explanation": "A complete EIA application dossier requires a detailed project report, full resource balance sheets, risk assessments, an EMP, and proof of an in-house environmental monitoring team."
       }
     },
     {
       "slide_num": 26,
-      "title": "Schedule 1 Projects (Part 1) \u2014 Heavy Infrastructure, Energy & Bulk Chemicals",
+      "title": "Schedule 1 Projects (Part 1) — Heavy Infrastructure, Energy & Bulk Chemicals",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "The 30 project categories mandated for central government clearance are listed in Schedule 1, starting with strategic national infrastructure and heavy chemical synthesis.",
-      "eli15_takeaway": "The first 9 entries of Schedule 1 cover high-risk national infrastructure: nuclear reactors, major river valley dams, deep-sea ports, airports, oil refineries, chemical fertilizers, pesticides, petrochemicals, pharmaceuticals, and oil/gas fields.",
+      "eli15_takeaway": "Schedule 1 is the government's mandatory hit list. If your project falls into categories 1 through 10 (nuclear power, oil refineries, petrochemicals, chemical fertilizers, or bulk pesticides), you cannot touch dirt without central clearance.",
       "key_facts": [
-        "Entry 1: Nuclear Power and related projects (heavy water plants, nuclear fuel complexes, rare earths).",
-        "Entry 2: River Valley projects (hydroelectric power, major irrigation canals, flood control schemes).",
-        "Entry 3: Ports, Harbours, and Airports (excluding minor fishing ports and minor harbours).",
-        "Entry 4: Petroleum Refineries including crude oil and refined product pipeline networks.",
-        "Entry 5: Chemical Fertilizers (Nitrogenous and Phosphatic, excluding single superphosphate).",
-        "Entry 6: Pesticides (Technical grade active ingredients).",
-        "Entry 7: Petrochemical complexes (Olefinic and Aromatic), intermediates (DMT, Caprolactam, LAB), and basic plastics (LDPE, HDPE, PP, PVC).",
-        "Entry 8: Bulk drugs and pharmaceuticals manufacturing.",
-        "Entry 9: Exploration, drilling, extraction, transport, and storage of oil and natural gas."
+        "Legal reference: Schedule 1 of the EIA Notification 1994, listing projects requiring compulsory central clearance.",
+        "Entries 1 to 5: Nuclear power and fuel processing; River valley projects (hydroelectric dams, irrigation); Ports, harbors, airports; Petroleum refineries; Chemical fertilizers.",
+        "Entries 6 to 10: Pesticides (technical grade); Petrochemical complexes; Bulk drugs and pharmaceuticals; Hazardous petroleum refinery pipelines; Exploration and extraction of hydrocarbons.",
+        "Core theme: Heavy infrastructure, energy megaprojects, and hazardous chemical processing sectors."
       ],
-      "mental_model": "The heavyweight giants of modern industry: facilities handling radioactive isotopes, megawatt river barrages, jet fuel, and synthetic plastic chemistry.",
+      "mental_model": "A high-security hazardous materials manifest: facilities handling radioactive isotopes or explosive toxic chemicals must clear strict federal checks before turning on power.",
       "checkpoint": {
         "question": "Which of the following projects is listed in Schedule 1 (Entries 1-9) requiring central government Environmental Clearance?",
         "options": [
@@ -666,51 +659,47 @@
           "A municipal primary school building"
         ],
         "correct_index": 1,
-        "explanation": "Technical pesticide production is classified under Entry 6 of Schedule 1 due to high chemical toxicity and effluent hazards, requiring central clearance."
+        "explanation": "Petrochemical complexes and chemical fertilizer manufacturing represent major chemical processing sectors requiring compulsory Schedule 1 clearance."
       }
     },
     {
       "slide_num": 27,
-      "title": "Schedule 1 Projects (Part 2) \u2014 Metallurgical, Toxic Compounds & Coastal Tourism",
+      "title": "Schedule 1 Projects (Part 2) — Metallurgical, Toxic Compounds & Coastal Tourism",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "Schedule 1 continues into metal smelting, dangerous chemical products, and high-value tourist resorts encroaching on fragile coastlines and mountain ridges.",
-      "eli15_takeaway": "Entries 10 through 18 govern toxic materials and vulnerable zones: synthetic rubber, asbestos, cyanide, steel and metal smelters, chlorine factories, paint complexes, viscose fabrics, lead batteries, and luxury resorts near shorelines or high mountains.",
+      "eli15_takeaway": "Schedule 1 entries 11 through 20 cover heavy metal smelters, toxic chemical synthesizers, and coastal resorts. Making cement, smelting zinc, or building beach hotels near coral reefs demands mandatory central clearance.",
       "key_facts": [
-        "Entry 10 & 11: Synthetic Rubber manufacturing; Asbestos and asbestos-based building products.",
-        "Entry 12: Hydrocyanic acid and its chemical derivatives.",
-        "Entry 13: (a) Primary metallurgical industries (Iron & Steel, Aluminium, Copper, Zinc, Lead, Ferro Alloys) and (b) Electric arc furnaces (Mini Steel Plants).",
-        "Entry 14 & 15: Chlor-alkali industry; Integrated paint complexes (resins and basic raw materials).",
-        "Entry 16 & 17: Viscose Staple fibre and filament yarn; Storage batteries integrated with lead oxides and lead-antimony alloy smelting.",
-        "Entry 18 (Tourism rule): All tourism projects located between 200\u2013500 meters of the High Tide Line (HTL) or at elevations exceeding 1,000 meters with capital investment over Rs 5 Crores."
+        "Entries 11 to 15: Synthetic rubber; Paint manufacturing; Asbestos and asbestos products; Commercial hydrocyanic acid; Heavy metallurgical industries (steel mills, iron foundries, zinc and aluminum smelters).",
+        "Entries 16 to 20: Chlor-alkali industry (chlorine, caustic soda); Integrated paint manufacturing units; Viscose staple fiber and filament yarn; Storage batteries; Beach resorts and coastal tourism complexes.",
+        "Core theme: Toxic chemical reactions, heavy metallurgical dust and slag, and delicate coastal ecology.",
+        "Tourism regulation: Beach resorts fall under Schedule 1 because unchecked beachfront hotels destroy sand dunes and marine turtle nesting sites."
       ],
-      "mental_model": "Toxic smelters and sensitive shoreline resorts: heavy industrial furnaces producing lead and slag on one hand, and luxury hotels threatening fragile beaches and cloud forests on the other.",
+      "mental_model": "A fire marshal inspecting blast furnaces, toxic acid storage tanks, and beach resorts: intense heat, toxic chemistry, and sensitive coastal waters all demand special permits.",
       "checkpoint": {
         "question": "What investment and location criteria trigger mandatory environmental clearance for tourism projects under Schedule 1 (Entry 18)?",
         "options": [
           "Any investment under Rs 50 Lakhs inside an urban municipal shopping district",
-          "Between 200\u2013500 meters of High Tide Line or above 1,000 meters elevation with investment exceeding Rs 5 Crores",
+          "Between 200–500 meters of High Tide Line or above 1,000 meters elevation with investment exceeding Rs 5 Crores",
           "Hotels located exactly adjacent to central railway stations in metropolitan cities",
           "Only international hotel chains operating more than 100 properties worldwide"
         ],
         "correct_index": 1,
-        "explanation": "Entry 18 targets tourism projects sited in ecologically fragile coastal zones (200-500m of HTL) or high-altitude ecosystems (>1000m elevation) with investments over Rs 5 Crores."
+        "explanation": "Heavy metallurgical industries like iron smelters generate massive slag waste, air emissions, and heavy water demands, placing them under mandatory Schedule 1 clearance."
       }
     },
     {
       "slide_num": 28,
-      "title": "Schedule 1 Projects (Part 3) \u2014 Thermal Power, Mining & Manufacturing Sectors",
+      "title": "Schedule 1 Projects (Part 3) — Thermal Power, Mining & Manufacturing Sectors",
       "act": "Act 4: The Indian Regulatory Machinery & Clearance Schedules",
       "continuity_bridge": "The final section of Schedule 1 regulates coal power generation, mineral mining, transportation arteries, and heavy consumer goods manufacturing.",
-      "eli15_takeaway": "Entries 19 through 30 regulate coal-fired power plants, mines larger than 5 hectares, national highways, forest roads, liquor distilleries, leather tanneries, paper mills, cement kilns, and metal foundries.",
+      "eli15_takeaway": "Schedule 1 entries 21 through 30 cover coal power plants, mega-mines, paper mills, highway expansions, and raw chemical plants. These sectors dig up landscapes and spew air emissions, requiring rigorous clearance.",
       "key_facts": [
-        "Entry 19 & 20: Thermal Power plants; Mining projects (major minerals) with mining lease areas exceeding 5 hectares.",
-        "Entry 21 & 22: Highway Projects; Tarred Roads constructed in the Himalayas and/or Forest areas.",
-        "Entry 23 & 24: Distilleries (alcohol/fermentation); Raw Skins and Hides processing units (tanneries).",
-        "Entry 25 & 26: Pulp, paper, and newsprint mills; Synthetic dye manufacturing plants.",
-        "Entry 27 & 28: Portland and specialized cement manufacturing; Individual metal casting foundries.",
-        "Entry 29 & 30: Electroplating operations; Meta Amino Phenol chemical manufacturing units."
+        "Entries 21 to 25: Thermal power plants (coal, gas, lignite); Mining projects (major minerals, coal, iron ore leases over 5 hectares); Pulp, paper, and newsprint mills; Dye and dye intermediate chemical plants; Cement plants.",
+        "Entries 26 to 30: Leather tanneries; National highway and expressway expansions; Tar and bituminous product manufacturing; Distilleries and fermentation units; Industrial raw chemical manufacturing.",
+        "Environmental footprint: Massive coal fly ash generation, mine spoil acid drainage, organic water pollution from paper and distilleries, and toxic tannery chromium.",
+        "Total scope: 30 distinct categories form the complete Schedule 1 statutory baseline of Indian environmental law."
       ],
-      "mental_model": "The resource processors of society: plants that shovel trainloads of coal, blast limestone quarries, boil animal hides in chromium, or pour molten iron into engine blocks.",
+      "mental_model": "The heavy machinery workhorses of an economy: giant power plants, strip mines, and paper mills that burn millions of tons of coal and wood.",
       "checkpoint": {
         "question": "What is the minimum lease area threshold that triggers mandatory Environmental Clearance for major mineral mining under Schedule 1?",
         "options": [
@@ -720,23 +709,23 @@
           "Mining is exempt from all environmental clearance regardless of area"
         ],
         "correct_index": 1,
-        "explanation": "Entry 20 of Schedule 1 mandates environmental clearance for major mineral mining projects with lease areas exceeding 5 hectares."
+        "explanation": "Thermal power plants and major mineral mining leases exceeding 5 hectares generate extensive air pollution, fly ash, and land degradation, placing them under mandatory Schedule 1 clearance."
       }
     },
     {
       "slide_num": 29,
-      "title": "Siting Protection Rules \u2014 Absolute Industrial Prohibition Buffers",
+      "title": "Siting Protection Rules — Absolute Industrial Prohibition Buffers",
       "act": "Act 5: Siting Rules, Enforcement & Modern Realities",
       "continuity_bridge": "Even if a project is listed in Schedule 1 and prepares an extensive EIA, it will be rejected immediately if placed in an illegal geographic exclusion zone.",
-      "eli15_takeaway": "India enforces strict geographic red lines: you cannot build polluting factories inside cities, within 25 km of major million-plus population hubs, within 7 km of fragile wetlands, or right beside highways and railways.",
+      "eli15_takeaway": "India draws strict red lines on where you can build. Polluting factories are completely banned inside city limits, within 25 km of major million-plus cities, within 7 km of wetlands, and right next to highways and railways.",
       "key_facts": [
-        "Regulatory origin: Environmental Siting Rules Annexure I (Prohibition for setting up certain industries).",
-        "Urban municipal ban: Absolute prohibition within any municipal area limits.",
-        "Metropolitan buffer: 25 km protected green belt around cities having a population greater than 1 million.",
-        "Wetland exclusion zone: 7 km protective buffer around the periphery of notified wetlands (Annexure II).",
-        "Transportation safety strip: 0.5 km (500 meter) wide buffer strip on both sides of national highways and railway tracks."
+        "Statutory basis: Environmental Siting Rules Annexure I (Prohibition for setting up certain industries).",
+        "Municipal rule: Complete ban on specified polluting factories within any municipal corporation or council limits.",
+        "Metropolitan buffer: 25 km protective green buffer around cities with a population exceeding 1 million.",
+        "Wetland buffer: 7 km protective exclusion zone around notified ecological wetlands (Annexure II).",
+        "Transport corridor buffer: 0.5 km (500 meter) safety strip along both sides of national highways and railway tracks."
       ],
-      "mental_model": "A protective moat around a city castle: dangerous siege equipment (or polluting factories) cannot be stationed within shooting distance of population centers, drinking water wetlands, or transport lifelines.",
+      "mental_model": "A protective security buffer around a castle: dangerous siege equipment cannot be set up within cannon range of the town, drinking water reservoirs, or transport roads.",
       "checkpoint": {
         "question": "Under Indian Environmental Siting Rules, what is the mandatory protective buffer around cities with a population over 1 million?",
         "options": [
@@ -751,17 +740,17 @@
     },
     {
       "slide_num": 30,
-      "title": "Siting Protection Rules \u2014 Conditional Wetlands & Monument Buffers",
+      "title": "Siting Protection Rules — Conditional Wetlands & Monument Buffers",
       "act": "Act 5: Siting Rules, Enforcement & Modern Realities",
       "continuity_bridge": "Beyond absolute exclusion zones, siting rules establish secondary outer protective rings around water bodies and historic cultural landmarks.",
-      "eli15_takeaway": "Factories seeking to set up between 7 km and 25 km from a wetland must pass rigorous ecological tests, while historical monuments receive an absolute 7 km no-factory protection bubble.",
+      "eli15_takeaway": "Siting rules also protect ancient heritage and farming land. Polluting industries are pushed 7 km away from ancient monuments like the Taj Mahal to stop acid fumes, and cannot be built on prime double-cropped farmland or floodplains.",
       "key_facts": [
-        "Conditional wetland buffer (7 km to 25 km): Establishment of new industrial units permitted ONLY after rigorous scientific assessment of adverse ecological and environmental impacts.",
-        "Archaeological protection ban: New industrial units (Annexure III) are strictly banned within a 7 km periphery around important notified archaeological monuments (Annexure IV).",
-        "Heritage preservation goal: Prevents acidic air pollution (sulfur dioxide) and soot from corroding ancient stone architecture and marble.",
-        "Precautionary principle: Places the legal burden of proof onto the developer to prove zero ecological harm before entering conditional zones."
+        "Floodplain exclusion: Industrial plants cannot be built within the high-flood line of rivers or active floodplains.",
+        "Monument buffer: 7 km protective buffer around notified archaeological and historical heritage monuments (protecting ancient stone from sulfur dioxide acid fumes).",
+        "Agricultural protection: Strict prohibition against converting fertile, prime agricultural land (especially multi-crop irrigated acreage) into industrial estates.",
+        "Green belt mandate: Every cleared industrial facility must dedicate 1/3 (33%) of its total site area to a permanent vegetative green belt."
       ],
-      "mental_model": "The Taj Trapezium Zone: an invisible air-quality dome around world wonder monuments, banning coal foundries and brick kilns to keep toxic fumes from discoloring white marble.",
+      "mental_model": "A no-smoking zone around an ancient museum and a flood levee: you keep burning chemicals away from fragile stone statues, and you never build a warehouse in the river's emergency spillway.",
       "checkpoint": {
         "question": "What is the siting rule regarding new industrial units (Annexure III) around important archaeological monuments in India?",
         "options": [
@@ -771,23 +760,23 @@
           "There are zero environmental restrictions regarding historical monuments"
         ],
         "correct_index": 1,
-        "explanation": "Environmental Siting Rules strictly prohibit new polluting industrial units within a 7 km periphery around notified archaeological monuments to prevent corrosive air pollution damage."
+        "explanation": "Annexure I mandates a 7 km protective buffer around notified archaeological monuments to prevent corrosive air pollution damage."
       }
     },
     {
       "slide_num": 31,
-      "title": "Conclusions \u2014 EIA as Legal Shield, Science Weapon & Project Defense",
+      "title": "Conclusions — EIA as Legal Shield, Science Weapon & Project Defense",
       "act": "Act 5: Siting Rules, Enforcement & Modern Realities",
       "continuity_bridge": "The technical methodologies, statutory schedules, and siting rules culminate in a binding legal reality that protects both the natural environment and lawful developers.",
-      "eli15_takeaway": "An EIA is not a bureaucratic nuisance; it is a legally binding science document. Falsifying data is a crime that causes severe project delays, while a rigorous EIA defends sustainable projects against frivolous lawsuits.",
+      "eli15_takeaway": "An EIA is not a bureaucratic headache; it is a legally binding science document. Faking baseline numbers is a crime under the EPA 1986 that leads to prosecution, while an honest EIA legally protects sustainable projects against lawsuits.",
       "key_facts": [
-        "Scientific problem-solving: EIA matches potential pollution hazards with appropriate mitigation technologies to keep impacts at tolerable levels.",
-        "Value of baseline data: Thorough collection of technical baseline and meteorological data defines realistic, workable engineering solutions.",
-        "Criminal liability: EIA is a formal legal document; providing false facts, fabricated baseline readings, or downplaying risks is a punishable offense under EPA 1986.",
-        "The cheapness trap: Proponents who hire cut-rate consultants to cut corners face endless regulatory rejections and inordinate clearance delays.",
-        "Legal defense weapon: A scientifically solid EIA serves as a legal defense against anti-development obstruction, vindicating environmentally sound projects in court."
+        "Matching science to hazards: EIA pairs specific pollution risks with proven engineering cleanup technologies to keep emissions safe.",
+        "Value of solid baseline data: High-quality seasonal field data creates practical, cost-effective engineering fixes.",
+        "Criminal liability: Submitting false baseline numbers, forged lab reports, or hiding toxic hazards is a punishable statutory crime under the EPA 1986.",
+        "The cheapness trap: Hiring discount, corner-cutting consultants leads to repeated committee rejections and years of expensive project delays.",
+        "Legal shield: A scientifically thorough EIA serves as a bulletproof legal defense in court against frivolous lawsuits."
       ],
-      "mental_model": "An aircraft maintenance logbook: falsifying inspection records sends aviation mechanics to prison, while an accurate, verified log proves flight safety against any legal challenge.",
+      "mental_model": "An aircraft flight maintenance log: faking inspection stamps sends aircraft mechanics straight to prison, while an accurate, signed log proves the plane is airworthy against any lawsuit.",
       "checkpoint": {
         "question": "What legal consequence occurs if a project proponent submits false baseline data or conceals environmental risks in an EIA report?",
         "options": [
@@ -805,14 +794,14 @@
       "title": "The Frontier: EIA 2006/2020 Reforms & The Great Nicobar Dilemma",
       "act": "Act 5: Siting Rules, Enforcement & Modern Realities",
       "continuity_bridge": "Environmental governance is never static; modern India constantly debates the balance between strategic national growth and deep ecological preservation.",
-      "eli15_takeaway": "India reformed its laws in 2006 by dividing projects between Central (Category A) and State (Category B) bodies. Today, mega-investments like the \u20b972,000-crore Great Nicobar project test this balance, pitting international shipping ports against virgin rainforests and indigenous tribal survival.",
+      "eli15_takeaway": "India updated its clearance rules in 2006 by dividing projects between Central (Category A) and State (Category B) bodies. Today, mega-projects like the ₹72,000-crore Great Nicobar plan test this balance, pitting naval ports against ancient rainforests and indigenous tribes.",
       "key_facts": [
-        "EIA Notification 2006 reform: Decentralized clearances into Category A (Central MoEFCC / EAC appraisal) and Category B (State SEIAA / SEAC appraisal; split into B1 requiring EIA and B2 exempt from EIA).",
-        "Draft EIA 2020 controversy: Heated national debates regarding post-facto project clearances and shortening public consultation notice periods from 30 to 20 days.",
-        "Real-world case study (Great Nicobar Project): A \u20b972,000-crore mega-development encompassing an international transshipment port, greenfield airport, thermal/gas power plant, and military base.",
-        "Core environmental friction: Strategic Indo-Pacific maritime defense and commercial trade weighed against the felling of nearly 1 million virgin rainforest trees, destruction of giant Leatherback sea turtle nesting beaches, Nicobar megapode habitats, and ancestral lands of Shompen and Nicobarese indigenous tribes."
+        "EIA Notification 2006 reform: Decentralized appraisals into Category A (Central MoEFCC / EAC) and Category B (State SEIAA / SEAC; split into B1 requiring EIA and B2 exempt from EIA).",
+        "Draft EIA 2020 controversy: Sparked fierce nationwide debates over post-facto clearances (approving projects already built illegally) and shortening public notice from 30 to 20 days.",
+        "Great Nicobar case study: A ₹72,000-crore mega-infrastructure plan featuring an international transshipment port, airport, power plant, and military base.",
+        "Core conflict: Strategic maritime defense and trade versus felling nearly 1 million virgin rainforest trees, ruining giant Leatherback turtle beaches, and encroaching on Shompen and Nicobarese tribal lands."
       ],
-      "mental_model": "A massive judicial balance scale: national maritime defense and global shipping billions on one side, ancient virgin rainforests and uncontacted tribal survival on the other.",
+      "mental_model": "A giant judicial scale: national naval defense and global shipping trade on one side, ancient virgin rainforests, nesting sea turtles, and indigenous tribal survival on the other.",
       "checkpoint": {
         "question": "How did the EIA Notification 2006 restructure project appraisal authority across India?",
         "options": [

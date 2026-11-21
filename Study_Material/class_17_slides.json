@@ -7,529 +7,568 @@
       "slide_num": 1,
       "title": "Environment and Sustainable Development: The 2030 Agenda",
       "act": "Act 1: Foundations & The Sustainability Imperative",
-      "continuity_bridge": "Human economic activity has expanded to planetary scale, colliding with hard ecological limits; this opening session lays out how global governance organized collective survival through the 2030 framework.",
-      "eli15_takeaway": "Think of Earth like a shared savings account. For centuries humanity withdrew cash without checking the balance, but the 2030 Sustainable Development Goals set strict house rules so we do not go broke.",
+      "continuity_bridge": "Human economic activity has expanded to planetary scale, colliding with hard ecological limits and forcing global governance to organize collective survival.",
+      "eli15_takeaway": "Think of Earth like a shared savings account: for centuries humanity withdrew cash without checking the balance, but the 2030 Sustainable Development Goals set strict house rules so we don't go broke.",
       "key_facts": [
-        "Official Class 17 lecture dated 16th November 2026 covering Environment and Sustainable Development.",
-        "Anchored in the United Nations 2030 Agenda adopted by 193 member states.",
-        "Establishes a 15-year roadmap (2015-2030) tracking environmental stability alongside human survival."
+        "United Nations 2030 Agenda: Unanimously adopted by all 193 UN member states in September 2015.",
+        "15-year global action roadmap: Spans 2015 through 2030, balancing environmental limits directly alongside poverty eradication.",
+        "Universal scope: Applies equally to developed and developing nations, holding high-income economies accountable for consumption."
       ],
       "mental_model": "A family budget ledger where overdraft fees mean running out of clean air and fresh drinking water.",
       "checkpoint": {
-        "question": "What is the primary target window for the United Nations 2030 Agenda?",
+        "question": "What is the official target window for the United Nations 2030 Agenda?",
         "options": [
           "2000 to 2015",
           "2015 to 2030",
-          "1992 to 2022",
+          "1990 to 2020",
           "2020 to 2050"
         ],
         "correct_index": 1,
-        "explanation": "The 2030 Agenda was formally adopted in 2015 to guide international policy across a 15-year window ending in 2030."
+        "explanation": "The 2030 Agenda was formally adopted in September 2015 to guide international policy across a 15-year window ending in 2030."
       }
     },
     {
       "slide_num": 2,
       "title": "Ecosystems as Capital: The Cascade of Environmental Threats",
       "act": "Act 1: Foundations & The Sustainability Imperative",
-      "continuity_bridge": "Before designing solutions, we must survey what is breaking; human industry has treated nature as an infinite asset, triggering multiple ecological breakdowns at once.",
-      "eli15_takeaway": "Nature is not free background scenery; it is a giant biological machine that filters water, cleans smoke, and grows crops, but humans are running every engine past its redline.",
+      "continuity_bridge": "To understand why the 2030 Agenda was necessary, we must view the biosphere not as background scenery, but as a critical capital asset.",
+      "eli15_takeaway": "Nature is not free decorative scenery; it is a giant biological machine that filters water, cleans smoke, and grows our food, but humanity is running every engine past its redline.",
       "key_facts": [
-        "Treats the environment as an economic capital asset providing vital life-support services.",
-        "Identifies widespread pollution: toxic chemicals in air, freshwater, and agricultural soil, plus acid rain.",
-        "Tracks accelerating resource depletion driven by population growth and high consumption.",
-        "Highlights systemic ecological threats: biodiversity extinction, ocean acidification, nuclear hazards, toxic waste buildup, and urban sprawl."
+        "Ecosystems as Natural Capital: Provide indispensable life-support functions (waste assimilation, climate regulation, soil formation) that sustain all economic activity.",
+        "Primary pollution vectors: Toxic chemical contamination of urban air, freshwater aquifers, agricultural topsoil, and widespread acid rain.",
+        "Planetary risk cascade: Accelerated biodiversity loss, ocean acidification, nuclear hazards, toxic e-waste accumulation, and global climate disruption."
       ],
-      "mental_model": "A laptop running heavy gaming apps on maximum settings while dust blocks the cooling fan, causing the battery to overheat.",
+      "mental_model": "A laptop running high-end video games on maximum settings while dust clogs the cooling fan, causing the battery to overheat and the processor to melt down.",
       "checkpoint": {
-        "question": "Why does modern environmental economics define natural ecosystems as 'assets'?",
+        "question": "In sustainable development economics, how is the natural environment categorized?",
         "options": [
-          "Because land can be bought and sold on stock markets",
-          "Because healthy ecosystems generate continuous flows of life-supporting goods and services",
-          "Because ecosystems have zero economic replacement cost",
-          "Because nature only has value when cleared for urban sprawl"
+          "As free background scenery with no functional economic role.",
+          "As an indispensable capital asset that generates vital ecological life-support services.",
+          "As a temporary resource to be completely converted into cash.",
+          "As an exclusively private commercial commodity."
         ],
         "correct_index": 1,
-        "explanation": "Ecosystems function as capital assets because they deliver continuous flows of clean water, breathable air, fertile soil, and climate regulation that sustain human life and production."
+        "explanation": "Sustainable development treats ecosystems as natural capital that generates indispensable life-support services required for human survival and economic activity."
       }
     },
     {
       "slide_num": 3,
       "title": "The Brundtland Standard and the Triple Bottom Line",
       "act": "Act 1: Foundations & The Sustainability Imperative",
-      "continuity_bridge": "Watching ecological life-support systems crack under industrial pressure forced international leaders to create a clear definition of what living sustainably actually requires.",
-      "eli15_takeaway": "Sustainable development means taking what you need to survive today without ruining the planet for your children and grandchildren tomorrow.",
+      "continuity_bridge": "These escalating environmental threats led to the creation of the global benchmark definition of sustainability.",
+      "eli15_takeaway": "Real sustainability is a three-legged stool: people, planet, and profit. If you saw off the environmental leg to make quick money, the whole stool crashes down.",
       "key_facts": [
-        "Classic definition: 'Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.'",
-        "Published in 1987 by the World Commission on Environment and Development (WCED) in 'Our Common Future'.",
-        "Sustainable development is the concrete process used to reach the ultimate state of sustainability.",
-        "Balances three intersecting circles: Society (living standards, education, jobs), Economy (growth, profits, cost savings), and Environment (resource use, pollution caps, biodiversity).",
-        "True sustainability exists solely at the common intersection of all three pillars."
+        "1987 Brundtland Commission Report (Our Common Future): Published by the World Commission on Environment and Development (WCED).",
+        "Classic Definition: 'Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.'",
+        "Process vs Target: Sustainable development is the active operational process; sustainability is the balanced end-state.",
+        "Triple Bottom Line (TBL): True sustainability exists exclusively at the intersection of Society (equity, health), Economy (jobs, production), and Environment (biodiversity, planetary sinks)."
       ],
-      "mental_model": "A three-legged stool: if you saw off the environmental leg to feed the economic fire, the whole stool collapses.",
+      "mental_model": "A three-legged stool: one leg is social justice, one is economic viability, and one is environmental health. Saw off any one leg, and the entire stool collapses.",
       "checkpoint": {
-        "question": "What core ethical standard underpins the 1987 Brundtland Commission definition?",
+        "question": "What happens if an economic development project includes economic growth and social welfare, but completely ignores environmental sustainability?",
         "options": [
-          "Maximizing short-term quarterly corporate earnings",
-          "Intergenerational equity: protecting the living standards of future human generations",
-          "Stopping all economic development permanently",
-          "Restricting resource consumption only to developed nations"
+          "It achieves permanent sustainability.",
+          "It becomes equitable in the short term, but ecologically unsustainable and prone to resource collapse.",
+          "It automatically eliminates carbon emissions.",
+          "It qualifies for Achiever status under UN rules."
         ],
         "correct_index": 1,
-        "explanation": "The Brundtland definition centers on intergenerational equity, guaranteeing that modern resource consumption does not wipe out the resource base required by future generations."
+        "explanation": "Balancing economy and society without environmental limits may seem fair initially, but it depletes natural capital and leads to ecological collapse."
       }
     },
     {
       "slide_num": 4,
       "title": "Historical Roots: From Industrial Crises to Global Treaties",
       "act": "Act 1: Foundations & The Sustainability Imperative",
-      "continuity_bridge": "The Brundtland standard did not emerge from a quiet classroom; it was forced onto politicians after catastrophic industrial disasters during the 1960s sparked intense public fury.",
-      "eli15_takeaway": "Governments only passed strict environmental laws after burning rivers, oil-soaked beaches, and poisoned wildlife made it impossible to ignore the destruction.",
+      "continuity_bridge": "The Brundtland consensus was born after a series of high-profile industrial disasters forced governments to create modern environmental law.",
+      "eli15_takeaway": "Governments only passed tough environmental laws after burning rivers, oil-slicked beaches, and poisoned wildlife made it impossible to ignore the damage.",
       "key_facts": [
-        "1969 Santa Barbara oil spill leaked roughly 100,000 barrels of crude, creating an 800-square-mile slick that catalyzed modern environmental policy.",
-        "Prompted the US National Environmental Policy Act (NEPA) of 1969, mandating environmental impact assessments for major projects.",
-        "Creation of the US Environmental Protection Agency (EPA) in 1970 to safeguard human health and natural habitats.",
-        "Legislative wave included the Clean Water Act, Water Quality Act, and national bans on hazardous pesticides like DDT.",
-        "Culminated globally in the 1987 Brundtland Commission report setting realistic blueprints for global development."
+        "1969 Santa Barbara Oil Spill: Union Oil Platform A blowout leaked ~100,000 barrels of crude, creating an 800-square-mile oil slick that catalyzed modern environmental activism.",
+        "1969 US National Environmental Policy Act (NEPA): The 'Magna Carta' of environmental law, legally mandating Environmental Impact Assessments (EIAs) before federal projects.",
+        "1970 EPA & First Earth Day: Established statutory enforcement, leading to the Clean Air Act, Clean Water Act, and pesticide bans (DDT).",
+        "1987 Brundtland Commission: Lifted environmental policy from reactive local pollution cleanup into an integrated global development framework."
       ],
-      "mental_model": "Installing emergency smoke detectors and fire escapes only after a devastating apartment blaze makes safety rules mandatory.",
+      "mental_model": "Installing fire alarms and emergency stairwells in an apartment building only after a deadly blaze forces lawmakers to write new safety codes.",
       "checkpoint": {
-        "question": "Which major ecological disaster in 1969 directly accelerated the passage of the US National Environmental Policy Act (NEPA)?",
+        "question": "What was the primary legal innovation of the 1969 National Environmental Policy Act (NEPA)?",
         "options": [
-          "Chernobyl nuclear plant explosion",
-          "Santa Barbara offshore oil spill",
-          "Bhopal gas leak",
-          "Exxon Valdez tanker grounding"
+          "It privatized all national parks.",
+          "It legally mandated Environmental Impact Assessments (EIAs) prior to major federal projects.",
+          "It banned all industrial manufacturing.",
+          "It created the United Nations 2030 Agenda."
         ],
         "correct_index": 1,
-        "explanation": "The 1969 Santa Barbara oil blowout dumped millions of gallons of crude oil onto California beaches, sparking public outrage that led to NEPA in 1969 and the EPA in 1970."
+        "explanation": "NEPA was the first landmark environmental law to require Environmental Impact Assessments (EIAs) before launching federal development projects."
       }
     },
     {
       "slide_num": 5,
       "title": "Critical Pushback: Environmental Hypocrisy and Neoliberal Traps",
       "act": "Act 1: Foundations & The Sustainability Imperative",
-      "continuity_bridge": "Even though sustainable development gained widespread political support, academic thinkers and developing nations quickly identified severe contradictions in how rich nations promoted it.",
-      "eli15_takeaway": "Critics pointed out that rich countries built their wealth burning dirty coal, but now tell poor nations to buy expensive green technology while market systems continue demanding endless growth.",
+      "continuity_bridge": "As global environmental treaties expanded, critical theorists pointed out deep contradictions in how sustainability was being promoted.",
+      "eli15_takeaway": "Critics point out that rich countries got wealthy burning dirty coal, but now lecture developing nations to buy expensive green technology while the global market still demands infinite growth.",
       "key_facts": [
-        "Environmental critique: Industrialized countries preach sustainability abroad while continuing high-consumption lifestyles and offloading carbon-heavy manufacturing overseas.",
-        "Technology divide: Clean, non-polluting technologies remain heavily patented and too costly for developing nations to build rapidly.",
-        "Economic critique: Neoliberal policies prioritize market-driven GDP expansion over human economic equality and biosphere boundaries.",
-        "Exposes the core tension: you cannot protect finite ecosystems while running an economic machine that demands infinite material growth."
+        "Historical Emissions Hypocrisy: Industrialized nations generated the vast majority of historical greenhouse emissions, but pressure developing countries to curb emissions without providing adequate climate finance.",
+        "Green Technology Divide: Clean, low-carbon technologies remain protected by strict patents and high costs, forcing poorer countries into debt.",
+        "The Neoliberal Trap: Relies on voluntary corporate pledges and carbon markets while assuming compound GDP growth can expand infinitely within a finite, closed biosphere."
       ],
-      "mental_model": "A wealthy dinner guest who ate all the prime steak, then lecturing the next guests in line that meat is bad and they must pay top dollar for imported salad.",
+      "mental_model": "A wealthy diner who ate all the prime steak at the buffet, then turns to the next guests in line and lectures them that meat is bad and they must pay top dollar for imported salad.",
       "checkpoint": {
-        "question": "What is the primary economic critique leveled against standard sustainable development frameworks?",
+        "question": "What is the core argument of the 'Neoliberal Trap' critique of sustainable development?",
         "options": [
-          "They eliminate all forms of private enterprise",
-          "Neoliberal economic models prioritize compound GDP growth over natural resource caps and social equity",
-          "They focus exclusively on low-income countries",
-          "They forbid scientific research into renewable energy"
+          "That solar panels generate too much electricity for power grids.",
+          "That market-driven mechanisms rely on infinite economic growth, which is biophysically impossible within finite planetary boundaries.",
+          "That international environmental treaties give too much financial aid to poor countries.",
+          "That developing countries should burn more fossil fuels than developed nations."
         ],
         "correct_index": 1,
-        "explanation": "Critics argue that neoliberal economics remains addicted to continuous material growth, treating conservation as a secondary patch rather than fixing structural overconsumption."
+        "explanation": "Critics argue that mainstream market solutions assume infinite compound GDP growth can continue indefinitely, ignoring the hard biophysical limits of the biosphere."
       }
     },
     {
       "slide_num": 6,
       "title": "The MDG Era: The World's First Target-Driven Blueprint",
-      "act": "Act 2: From MDGs to SDGs: The Universal Architecture",
-      "continuity_bridge": "To move past academic debates and begin coordinating international aid, the United Nations launched its first measurable, deadline-driven development campaign in the year 2000.",
-      "eli15_takeaway": "At the start of the millennium, world leaders picked 8 urgent rescue missions focused on helping low-income countries fight disease, hunger, and illiteracy.",
+      "act": "Act 2: Architectural Evolution: From MDGs to the Universal SDGs",
+      "continuity_bridge": "To address poverty directly, the United Nations launched its first global experiment in target-driven development.",
+      "eli15_takeaway": "At the turn of the millennium, world leaders picked 8 urgent rescue missions focused on helping low-income countries tackle disease, hunger, and illiteracy.",
       "key_facts": [
-        "Adopted at the UN Millennium Summit in September 2000 with a strict 15-year deadline ending in 2015.",
-        "Consisted of 8 clear goals focused strictly on developing countries.",
-        "Key targets: Eradicate extreme poverty and hunger; Achieve universal primary education; Promote gender equality; Reduce child mortality; Improve maternal health; Combat HIV/AIDS and malaria; Ensure environmental sustainability; Develop a global partnership.",
-        "Suffered from a 'piecemeal approach', treating interrelated human crises as separate, disconnected checklists."
+        "Millennium Development Goals (MDGs): Adopted at the UN Millennium Summit in September 2000, covering a 15-year window (2000–2015).",
+        "8 Core Goals: 1. Eradicate extreme poverty and hunger; 2. Universal primary education; 3. Gender equality; 4. Reduce child mortality; 5. Improve maternal health; 6. Combat HIV/AIDS and malaria; 7. Environmental sustainability; 8. Global partnership.",
+        "Architectural limits: 21 targets and 60 indicators formulated through a top-down donor model focused strictly on developing countries, leaving nature siloed in Goal 7."
       ],
-      "mental_model": "An emergency medical field kit: effective at bandaging bleeding wounds in trauma victims, but incapable of fixing the underlying public sanitation system.",
+      "mental_model": "An emergency first-aid kit: great at bandaging bleeding wounds on trauma victims, but incapable of fixing the underlying public sanitation system.",
       "checkpoint": {
-        "question": "What was a defining structural limitation of the Millennium Development Goals (MDGs)?",
+        "question": "How were environmental targets structured within the Millennium Development Goals (MDGs)?",
         "options": [
-          "They applied only to wealthy OECD economies",
-          "They used a top-down, piecemeal approach targeted solely at developing countries",
-          "They contained over 500 unmeasurable goals",
-          "They banned international charity and financial aid"
+          "They were woven into every single goal as a primary metric.",
+          "They were isolated into a single standalone goal (Goal 7) with weak, non-binding targets.",
+          "They were completely omitted from the MDG framework.",
+          "They applied exclusively to industrialized nations in Europe."
         ],
         "correct_index": 1,
-        "explanation": "The MDGs were criticized for being top-down donor initiatives aimed exclusively at low-income countries, treating problems in separate silos without systemic integration."
+        "explanation": "In the MDGs, the environment was siloed inside Goal 7 and treated as a secondary priority compared to poverty and health targets."
       }
     },
     {
       "slide_num": 7,
       "title": "MDG Scorecard: Life-Saving Wins vs Systemic Blindspots",
-      "act": "Act 2: From MDGs to SDGs: The Universal Architecture",
-      "continuity_bridge": "When the 2015 deadline arrived, the UN audited the data to judge whether fifteen years of target-driven charity had actually succeeded.",
-      "eli15_takeaway": "The MDGs saved millions of lives by cutting extreme poverty and child deaths in half, but they left deep inequalities intact and largely ignored climate heating.",
+      "act": "Act 2: Architectural Evolution: From MDGs to the Universal SDGs",
+      "continuity_bridge": "By 2015, the MDG experiment concluded with remarkable life-saving victories, but glaring structural failures.",
+      "eli15_takeaway": "The MDGs cut extreme poverty and child deaths in half, but they left gender equality behind, let income inequality soar, and treated the environment like a minor afterthought.",
       "key_facts": [
-        "Extreme poverty reduction: The share of people living on less than $1.25 per day was successfully cut by 50%.",
-        "Primary education: Net school enrollment in developing regions climbed above 90%.",
-        "Child health: Global child mortality dropped by roughly 50% between 1990 and 2015.",
-        "Safe water: Over two billion people gained access to improved drinking water sources.",
-        "Critical shortfalls: Gender equality stalled in politics and corporate leadership; income inequality surged within countries; environmental sustainability remained a weak, neglected target."
+        "Major Wins (2000–2015): The share of people living on less than \\$1.25 per day was halved; net primary school enrollment topped 90%; child mortality fell by ~50%; over 2 billion people gained improved drinking water.",
+        "Systemic Shortfalls: Gender parity stalled in politics and corporate leadership; within-country income inequality surged; climate emissions and ecosystem loss accelerated rapidly.",
+        "Donor Dependency Glitch: Relied on foreign aid charity from rich nations rather than fundamentally reforming global trade and production systems."
       ],
-      "mental_model": "Scoring high marks in spelling and basic math on your report card while failing science and social studies.",
+      "mental_model": "Scoring an A in basic spelling and arithmetic on your report card, while failing science, geography, and social studies.",
       "checkpoint": {
         "question": "Which of the following represents a documented success of the MDG campaign between 2000 and 2015?",
         "options": [
-          "Complete elimination of global carbon emissions",
-          "Cutting the global rate of extreme poverty (living on less than $1.25/day) by 50%",
-          "Equal representation of women in all national parliaments",
-          "Universal adoption of electric vehicles worldwide"
+          "Complete elimination of global carbon emissions.",
+          "Cutting the global rate of extreme poverty (living on less than \\$1.25 per day) by 50%.",
+          "Universal gender parity in corporate boardrooms worldwide.",
+          "The complete phaseout of coal-fired power plants."
         ],
         "correct_index": 1,
-        "explanation": "Data confirmed that the target of halving the proportion of people living in extreme poverty was met ahead of the 2015 deadline, largely driven by gains in East and South Asia."
+        "explanation": "One of the greatest achievements of the MDGs was cutting the global extreme poverty rate by more than 50% between 1990 and 2015."
       }
     },
     {
       "slide_num": 8,
       "title": "The 2015 Pivot: Transforming Our World Through 6 Clusters",
-      "act": "Act 2: From MDGs to SDGs: The Universal Architecture",
-      "continuity_bridge": "Realizing that targeted aid could not stop planetary-scale climate breakdown or growing social unrest, the UN scrapped the old donor model and designed a single universal plan.",
-      "eli15_takeaway": "In 2015, all 193 nations signed a single agreement: rich and poor countries alike must fix their economies, societies, and environments across 17 connected goals.",
+      "act": "Act 2: Architectural Evolution: From MDGs to the Universal SDGs",
+      "continuity_bridge": "Recognizing these MDG blind spots, the international community rebuilt its global roadmap from the ground up.",
+      "eli15_takeaway": "In 2015, all 193 nations signed a universal agreement: rich and poor countries alike must tackle 17 connected goals across people, planet, prosperity, peace, and partnership.",
       "key_facts": [
-        "Adopted in September 2015 at the UN General Assembly under the charter 'Transforming Our World: the 2030 Agenda for Sustainable Development'.",
-        "Universal scope: Unlike MDGs, the 17 SDGs apply to all countries, holding rich and poor nations to common account.",
-        "Group 1 (Basic Human Needs): SDG 1 (No Poverty), SDG 2 (Zero Hunger), SDG 10 (Reduced Inequalities).",
-        "Group 2 (Foundational Well-being): SDG 3 (Health), SDG 6 (Clean Water), SDG 7 (Clean Energy).",
-        "Group 3 (Prosperity & Rule of Law): SDG 8 (Decent Work), SDG 9 (Infrastructure), SDG 16 (Peace & Justice).",
-        "Group 4 (Human Capability): SDG 4 (Education), SDG 5 (Gender Equality).",
-        "Group 5 (Habitats & Consumption): SDG 11 (Sustainable Cities), SDG 12 (Responsible Consumption), SDG 17 (Partnerships).",
-        "Group 6 (Biosphere Survival): SDG 13 (Climate Action), SDG 14 (Life Below Water), SDG 15 (Life on Land)."
+        "Adopted at the UN General Assembly in September 2015 under the charter 'Transforming Our World: the 2030 Agenda for Sustainable Development'.",
+        "Universal Mandate: 17 SDGs apply to all countries, holding high-income economies accountable for consumption, waste, and emissions.",
+        "Six Functional Clusters:",
+        "  * Basic Human Needs: SDG 1 (No Poverty), SDG 2 (Zero Hunger), SDG 10 (Reduced Inequalities).",
+        "  * Foundational Well-being: SDG 3 (Good Health), SDG 6 (Clean Water), SDG 7 (Clean Energy).",
+        "  * Prosperity & Rule of Law: SDG 8 (Decent Work), SDG 9 (Infrastructure), SDG 16 (Peace & Justice).",
+        "  * Human Capability: SDG 4 (Quality Education), SDG 5 (Gender Equality).",
+        "  * Habitats & Consumption: SDG 11 (Sustainable Cities), SDG 12 (Responsible Consumption), SDG 17 (Partnerships).",
+        "  * Biosphere Survival: SDG 13 (Climate Action), SDG 14 (Life Below Water), SDG 15 (Life on Land)."
       ],
-      "mental_model": "Upgrading from an old single-function pager to a smartphone that integrates maps, communication, health trackers, and weather alerts into one operating system.",
+      "mental_model": "Upgrading from an old single-function pager to a smartphone that integrates maps, communication, health trackers, and weather warnings into one operating system.",
       "checkpoint": {
-        "question": "What is the primary difference in country coverage between the MDGs and the SDGs?",
+        "question": "How does the universal scope of the 2030 SDGs differ fundamentally from the MDGs?",
         "options": [
-          "MDGs covered only Europe, while SDGs cover only Africa",
-          "MDGs targeted only developing countries, whereas SDGs apply universally to all nations",
-          "SDGs apply only to island nations threatened by sea level rise",
-          "MDGs were voluntary, whereas SDGs are backed by international military sanctions"
+          "The SDGs apply only to island nations threatened by sea-level rise.",
+          "The SDGs apply universally to all nations (both developed and developing), unlike the MDGs which targeted only developing countries.",
+          "The SDGs are voluntary guidelines for non-governmental charities.",
+          "The SDGs exclude economic growth targets to focus exclusively on wildlife conservation."
         ],
         "correct_index": 1,
-        "explanation": "The core architectural shift of the SDGs is universality: developed countries must clean up domestic emissions and inequality, while developing nations pursue clean growth."
+        "explanation": "The SDGs are universal: every country on Earth, rich or poor, must meet these targets, holding high-income nations accountable for overconsumption."
       }
     },
     {
       "slide_num": 9,
       "title": "Architectural Face-Off: MDGs vs SDGs Side-by-Side",
-      "act": "Act 2: From MDGs to SDGs: The Universal Architecture",
-      "continuity_bridge": "To understand why international planning changed so fundamentally after 2015, we must examine the technical mechanics of the MDGs alongside the SDGs.",
-      "eli15_takeaway": "The MDGs were a basic 8-point checklist written by rich donors for poor nations; the SDGs are a 17-part blueprint tracking 169 targets across every nation on the planet.",
+      "act": "Act 2: Architectural Evolution: From MDGs to the Universal SDGs",
+      "continuity_bridge": "A side-by-side comparison shows the profound architectural shift between the two global frameworks.",
+      "eli15_takeaway": "The MDGs were an 8-item checklist written by rich donors for poor nations; the SDGs are a 17-goal master blueprint tracking 169 targets across every country on Earth.",
       "key_facts": [
-        "Adoption & Timeline: MDGs adopted in 2000 (2000-2015); SDGs adopted in 2015 (2015-2030).",
-        "Scale: MDGs tracked 8 goals, 21 targets, and 60 indicators; SDGs expand to 17 goals, 169 targets, and 232+ official indicators.",
-        "Breadth: MDGs focused narrowly on poverty, maternal health, and basic schooling; SDGs expand into clean energy, decent jobs, sustainable cities, climate action, and institutional justice.",
-        "Process: MDGs were formulated top-down by international agencies; SDGs emerged from multi-year participatory consultations involving civil society, scientists, and private business.",
-        "Ecological depth: MDGs relegated environment to Goal 7; SDGs weave biosphere boundaries through standalone goals for water, energy, circular consumption, climate, oceans, and land."
+        "Scale & Metric Expansion: MDGs had 8 goals, 21 targets, 60 indicators; SDGs expand to 17 goals, 169 targets, and 232+ official indicators.",
+        "Target Audience: MDGs targeted developing countries only; SDGs are universal for all 193 UN member states.",
+        "Formulation Process: MDGs were drafted behind closed doors by UN agencies; SDGs emerged from a multi-year global participatory negotiation.",
+        "Biosphere Integration: MDGs isolated the environment in Goal 7; SDGs embed ecological boundaries throughout with dedicated goals for Climate (13), Oceans (14), and Land (15)."
       ],
-      "mental_model": "Trading in an emergency first-aid pouch for a fully equipped modern hospital trauma center.",
+      "mental_model": "Trading in a basic first-aid pouch for a fully equipped modern hospital emergency center.",
       "checkpoint": {
-        "question": "How many targets and indicators are established under the SDG 2030 framework?",
+        "question": "How do the targets and indicators of the SDGs compare quantitatively to the MDGs?",
         "options": [
-          "8 targets and 60 indicators",
-          "21 targets and 100 indicators",
-          "169 targets and 232+ indicators",
-          "500 targets and 1,000 indicators"
+          "The SDGs reduced targets from 50 to 10.",
+          "The SDGs expanded from 8 goals (21 targets) to 17 goals (169 targets) with 232+ indicators.",
+          "The SDGs eliminated numerical indicators in favor of qualitative essays.",
+          "The SDGs track only 3 global economic indicators."
         ],
-        "correct_index": 2,
-        "explanation": "The 17 SDGs are broken down into 169 concrete targets monitored using an official global indicator framework containing 232 unique indicators."
+        "correct_index": 1,
+        "explanation": "The SDGs represent a massive expansion in scope: growing from 8 goals and 21 targets under the MDGs to 17 goals, 169 targets, and 232+ indicators."
       }
     },
     {
       "slide_num": 10,
-      "title": "Measuring Progress: The 0\u2013100 SDG Index and the LNOB Mandate",
-      "act": "Act 2: From MDGs to SDGs: The Universal Architecture",
-      "continuity_bridge": "Writing down 169 targets is useless without a rigorous grading system; the SDG Index converts complex raw metrics into a standardized report card.",
-      "eli15_takeaway": "The SDG Index scores a region from 0 to 100 on how close it is to hitting its 2030 targets, guided by one golden rule: nobody gets left behind.",
+      "title": "Measuring Progress: The 0–100 SDG Index and the LNOB Mandate",
+      "act": "Act 2: Architectural Evolution: From MDGs to the Universal SDGs",
+      "continuity_bridge": "To track these 169 targets quantitatively, the UN established a standardized index anchored in an ethical mandate.",
+      "eli15_takeaway": "The SDG Index grades states on a simple 0 to 100 scorecard, governed by one non-negotiable rule: Leave No One Behind.",
       "key_facts": [
-        "Standardized metric: Rescales diverse raw indicators onto a uniform scale from 0 (worst) to 100 (target achieved).",
-        "Aspirant (0\u201349): Severe performance deficits; requires immediate, accelerated intervention.",
-        "Performer (50\u201364): Meaningful initial progress, but far behind the trajectory needed for 2030.",
-        "Front-Runner (65\u201399): Strong progress; within striking distance of the final benchmark.",
-        "Achiever (100): The specific 2030 target has been fully met.",
-        "Anchored by the United Nations principle 'Leave No One Behind' (LNOB), mirrored in India by the national motto 'Sabka Saath, Sabka Vikas'."
+        "Standardized Metric: Normalizes raw indicator data onto a uniform scale from 0 (worst) to 100 (target achieved).",
+        "Four Performance Categories:",
+        "  * Aspirant (Score 0–49, Red): Severe deficits requiring immediate emergency interventions.",
+        "  * Performer (Score 50–64, Yellow): Meaningful initial progress, but trailing the trajectory needed for 2030.",
+        "  * Front Runner (Score 65–99, Green): Strong progress within reach of the 2030 benchmark.",
+        "  * Achiever (Score 100, Blue): 2030 target fully met.",
+        "The LNOB Mandate: 'Leave No One Behind' — demands prioritizing the poorest and most marginalized populations first (reflected in India by Antyodaya)."
       ],
-      "mental_model": "A marathon timing system: scoring how close each runner is to the finish ribbon, with an absolute rule that the team only wins when the last runner crosses.",
+      "mental_model": "A school marathon where the team's final grade is based on every student finishing, with the rule that the race isn't won until the slowest runner crosses the line.",
       "checkpoint": {
-        "question": "What is the score range for a state or nation classified as a 'Front-Runner' on the SDG Index?",
+        "question": "Under the NITI Aayog SDG Index, what category and color tier corresponds to a score between 65 and 99?",
         "options": [
-          "0 to 49",
-          "50 to 64",
-          "65 to 99",
-          "100 exactly"
+          "Aspirant (Red)",
+          "Performer (Yellow)",
+          "Front Runner (Green)",
+          "Achiever (Blue)"
         ],
         "correct_index": 2,
-        "explanation": "The SDG Index classifies entities scoring between 65 and 99 as 'Front-Runners', indicating substantial progress toward 2030 targets."
+        "explanation": "A score from 65 to 99 places a state in the 'Front Runner' category (color-coded Green), indicating strong progress toward the 2030 targets."
       }
     },
     {
       "slide_num": 11,
       "title": "Eliminating Deprivation: India's Flagship Schemes for SDGs 1 & 2",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "To operationalize the 0-100 index, a government must map national social welfare expenditures directly to the specific SDG target codes.",
-      "eli15_takeaway": "India tackles extreme poverty and hunger by legally guaranteeing rural day jobs, opening bank accounts for the unbanked, and distributing free grains to hundreds of millions.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "India operationalized the 2030 Agenda by aligning its massive national social programs with specific SDGs.",
+      "eli15_takeaway": "India tackles extreme poverty and hunger by guaranteeing 100 days of rural manual jobs, sending cash directly to bank accounts, and distributing free foodgrains to 800 million people.",
       "key_facts": [
-        "SDG 1 (No Poverty) schemes: MGNREGS (statutory guarantee of 100 days paid rural manual labor per household), Pradhan Mantri Jan Dhan Yojana (universal zero-balance banking access), DAY-NRLM (rural self-help groups), PM Awas Yojana (subsidized permanent housing), NSAP pensions.",
-        "SDG 2 (Zero Hunger) schemes: PM Garib Kalyan Anna Yojana / NFSA 2013 (free grain distribution to priority households), PM-KISAN (direct income support of 6,000 INR annually to farmers), PM POSHAN (hot cooked school meals), Kisan Credit Card, Soil Health Card Scheme, SMART-PDS digital rationing."
+        "SDG 1 (No Poverty) Core Schemes:",
+        "  * MGNREGS: Statutory guarantee of 100 days of paid manual labor per rural household every year.",
+        "  * PM-KISAN: Direct cash transfer of 6,000 INR per year to eligible farmer households.",
+        "  * PM Jan Dhan Yojana (PMJDY): Opened over 500 million zero-balance bank accounts enabling direct benefit transfers.",
+        "  * PM Awas Yojana (PMAY): Subsidized pucca houses with electricity, toilets, and clean tap water.",
+        "SDG 2 (Zero Hunger) Core Schemes:",
+        "  * PM Garib Kalyan Anna Yojana / NFSA 2013: Free monthly foodgrains distributed to over 800 million priority citizens.",
+        "  * Poshan Abhiyaan: National nutrition mission targeting stunting, wasting, and anemia among children and mothers."
       ],
-      "mental_model": "A heavy floorboard and pantry lock: ensuring that economic downturns or crop failures cannot drop a family into starvation or homelessness.",
+      "mental_model": "Building a solid safety floor beneath every household so a drought or job loss doesn't drop a family into starvation.",
       "checkpoint": {
-        "question": "Which Indian program guarantees 100 days of wage employment annually to rural households to support SDG 1?",
+        "question": "Which Indian flagship welfare scheme legally guarantees 100 days of wage employment per year to rural households under SDG 1?",
         "options": [
-          "PM-KISAN",
-          "MGNREGS",
-          "PM Ujjwala Yojana",
-          "Smart Cities Mission"
+          "PM Mudra Yojana",
+          "MGNREGS (Mahatma Gandhi National Rural Employment Guarantee Scheme)",
+          "Production Linked Incentive (PLI) Scheme",
+          "Digital India Mission"
         ],
         "correct_index": 1,
-        "explanation": "MGNREGS (Mahatma Gandhi National Rural Employment Guarantee Scheme) provides a legal guarantee of 100 days of wage employment per year to rural adult workers."
+        "explanation": "MGNREGS provides a legal guarantee of at least 100 days of paid manual labor per year for rural households to protect against extreme poverty."
       }
     },
     {
       "slide_num": 12,
       "title": "Human Capital Foundations: Health and Education (SDGs 3 & 4)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Emergency rations keep people alive today, but ending poverty permanently requires strong bodies and skilled minds capable of building modern careers.",
-      "eli15_takeaway": "Providing health insurance to low-income families and upgrading public classrooms builds the basic human abilities needed for long-term national development.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "Beyond basic survival, building human capability requires high-quality public healthcare and modern schools.",
+      "eli15_takeaway": "Giving families free hospital insurance and upgrading public schools builds the basic human capability needed for long-term national development.",
       "key_facts": [
-        "SDG 3 (Good Health and Well-being): Ayushman Bharat / PM-JAY (health coverage up to 500,000 INR per eligible family per year for secondary and tertiary care), Mission Indradhanush (expanded immunization), PM Jan Aushadhi (affordable generic drug outlets), PM TB Mukt Bharat, Anaemia Mukt Bharat.",
-        "SDG 4 (Quality Education): Samagra Shiksha (integrated school education from pre-school to class 12), PM SHRI (upgrading schools as national exemplars), Eklavya Model Residential Schools for tribal students, PM POSHAN mid-day meals, New India Literacy Programme."
+        "SDG 3 (Good Health and Well-being):",
+        "  * Ayushman Bharat / PM-JAY: World's largest public health insurance, providing 500,000 INR annual hospitalization coverage per vulnerable family.",
+        "  * Ayushman Arogya Mandirs: Network of health centers delivering primary care, free essential diagnostics, and medicines.",
+        "  * Mission Indradhanush: Universal immunization protecting children and mothers against vaccine-preventable diseases.",
+        "SDG 4 (Quality Education):",
+        "  * Samagra Shiksha: Unified school education program spanning pre-school to class 12.",
+        "  * PM SHRI Schools: Upgrading 14,500+ exemplar schools showcasing smart classrooms and labs under NEP 2020.",
+        "  * NIPUN Bharat: Foundational literacy and numeracy mission ensuring every child reads with comprehension by grade 3."
       ],
-      "mental_model": "Upgrading both the physical hardware (immune systems and medical care) and the operating code (schooling and reading skills) of a society.",
+      "mental_model": "Upgrading both the physical hardware (immune systems and medical care) and the operating software (schooling and reading skills) of a society.",
       "checkpoint": {
-        "question": "Which health scheme provides annual secondary and tertiary hospital coverage of up to 500,000 INR per low-income family under SDG 3?",
+        "question": "Under SDG 3, how much annual health insurance coverage does Ayushman Bharat (PM-JAY) provide per eligible family?",
         "options": [
-          "PM Jan Dhan Yojana",
-          "Ayushman Bharat - PM Jan Arogya Yojana (PM-JAY)",
-          "Samagra Shiksha",
-          "Swachh Bharat Mission"
+          "50,000 INR",
+          "100,000 INR",
+          "500,000 INR",
+          "1,000,000 INR"
         ],
-        "correct_index": 1,
-        "explanation": "Ayushman Bharat PM-JAY offers health cover up to 5 lakh rupees per family per year, shielding vulnerable households from medical bankruptcy."
+        "correct_index": 2,
+        "explanation": "Ayushman Bharat (PM-JAY) provides up to 500,000 INR (5 lakh rupees) per year in secondary and tertiary hospitalization coverage for vulnerable households."
       }
     },
     {
       "slide_num": 13,
       "title": "Baseline Dignity: Gender Equity and Safe Water (SDGs 5 & 6)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Classrooms and clinics remain empty if women are denied equal voice in family decisions, or if families spend hours every morning carrying muddy water from distant wells.",
-      "eli15_takeaway": "Piping clean drinking water straight into every rural home and protecting girls' education directly frees up time and builds basic dignity.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "Human capability cannot flourish without baseline dignity: clean water in the kitchen and equal opportunities for women.",
+      "eli15_takeaway": "Piping clean tap water into rural homes and backing girls' education directly frees up hours of time and protects basic human dignity.",
       "key_facts": [
-        "SDG 5 (Gender Equality): Beti Bachao Beti Padhao (curbing female feticide and ensuring girl child schooling), Sukanya Samriddhi Yojana (dedicated small-savings accounts for girls), MUDRA loans targeted at women micro-entrepreneurs, One-Stop Crisis Centres, Kasturba Gandhi Balika Vidyalayas.",
-        "SDG 6 (Clean Water and Sanitation): Jal Jeevan Mission (JJM, providing individual functional household tap connections to every rural home), Swachh Bharat Mission (eliminating open defecation through community toilets and waste treatment), AMRUT 2.0, Namami Gange (rejuvenating the Ganga river basin)."
+        "SDG 5 (Gender Equality):",
+        "  * Beti Bachao Beti Padhao: Combats female feticide, improves child sex ratio, and ensures girl-child school retention.",
+        "  * Sukanya Samriddhi Yojana: High-interest, tax-free savings accounts for the education of girls.",
+        "  * PM Mudra Yojana: Collateral-free micro-loans, with women securing over 68% of total loan accounts.",
+        "SDG 6 (Clean Water and Sanitation):",
+        "  * Jal Jeevan Mission (JJM): Providing functional household tap connections (FHTC) delivering 55 liters per person per day to every rural home.",
+        "  * Swachh Bharat Mission (SBM): Built over 100 million household toilets, achieving Open Defecation Free (ODF) and ODF-Plus status."
       ],
-      "mental_model": "Replacing a cracked bucket and five-mile daily walk with a clean stainless-steel faucet right inside the kitchen sink.",
+      "mental_model": "Replacing a cracked bucket and a five-mile daily walk to a dirty pond with a clean stainless-steel tap inside the home.",
       "checkpoint": {
-        "question": "What is the primary target of India's Jal Jeevan Mission under SDG 6?",
+        "question": "What is the primary service delivery target of the Jal Jeevan Mission (JJM) under SDG 6?",
         "options": [
-          "Privatizing municipal water supplies in metropolitan airports",
-          "Delivering functional household tap water connections to every rural home",
-          "Building international shipping canals through wetlands",
-          "Banning the use of water in industrial manufacturing"
+          "Providing 10 liters of bottled water per week to urban offices.",
+          "Providing functional household tap connections delivering 55 liters of potable water per person per day to every rural home.",
+          "Building commercial hydroelectric dams across all major rivers.",
+          "Desalination plants along every coastal district."
         ],
         "correct_index": 1,
-        "explanation": "Jal Jeevan Mission aims to supply potable piped water through individual functional household tap connections (FHTC) to all rural households."
+        "explanation": "Jal Jeevan Mission targets providing every rural household with a functional tap connection delivering 55 liters of safe drinking water per capita daily."
       }
     },
     {
       "slide_num": 14,
       "title": "Powering Just Growth: Clean Energy and Jobs (SDGs 7 & 8)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Pumping clean water and running modern clinics requires abundant power, but burning dirty coal poisons the atmosphere; clean energy must create productive jobs.",
-      "eli15_takeaway": "Switching from smoky firewood to cooking gas and putting solar panels on rooftops generates electricity without choking lungs, while supporting skilled local manufacturing.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "Basic dignity must be supported by clean electric power and formal employment opportunities.",
+      "eli15_takeaway": "Replacing smoky wood stoves with cooking gas and putting solar panels on rooftops generates electricity without choking lungs, while creating skilled manufacturing jobs.",
       "key_facts": [
-        "SDG 7 (Affordable and Clean Energy): PM Ujjwala Yojana (subsidized LPG cooking gas cylinders replacing indoor biomass burning), PM Surya Ghar Muft Bijli Yojana (rooftop solar power systems for households), PM-KUSUM (solar irrigation pumps for farmers), UJALA (large-scale distribution of energy-efficient LED bulbs), National Green Hydrogen Mission.",
-        "SDG 8 (Decent Work & Economic Growth): Production Linked Incentive (PLI) Schemes (boosting domestic industrial manufacturing output), PM Employment Generation Programme (PMEGP), Skill India, Pradhan Mantri Kaushal Vikas Yojana (PMKVY vocational training)."
+        "SDG 7 (Affordable and Clean Energy):",
+        "  * PM Ujjwala Yojana: Subsidized LPG cooking gas connections replacing smoky biomass kitchens, protecting women from indoor air pollution.",
+        "  * PM Surya Ghar Muft Bijli Yojana: Direct subsidies providing rooftop solar systems for up to 300 units of free monthly power for 10 million households.",
+        "  * PM-KUSUM: Solarizing agricultural irrigation pumps and setting up small solar plants on rural farmlands.",
+        "SDG 8 (Decent Work & Economic Growth):",
+        "  * Production Linked Incentive (PLI) Schemes: Industrial manufacturing incentives across 14 strategic sectors to expand factories and supply chains.",
+        "  * Skill India Mission: Vocational and technical skills training for youth.",
+        "  * PM SVANidhi: Microcredit working-capital loans for urban street vendors."
       ],
-      "mental_model": "Swapping an exhaust-spewing diesel generator for a rooftop solar panel, and hiring local technical apprentices to install and maintain the wiring.",
+      "mental_model": "Swapping a noisy, smoke-belching diesel generator for a clean rooftop solar panel, while hiring local electrical technicians to wire the system.",
       "checkpoint": {
-        "question": "Which scheme supplies subsidized LPG cooking gas connections to low-income women to replace hazardous indoor biomass fuel under SDG 7?",
+        "question": "Which program supports rooftop solar installations to provide up to 300 units of free monthly electricity for households under SDG 7?",
         "options": [
           "PM Ujjwala Yojana",
-          "PM Awas Yojana",
-          "PM-KISAN",
-          "Smart Cities Mission"
+          "PM Surya Ghar Muft Bijli Yojana",
+          "Swachh Bharat Mission",
+          "PM SVANidhi"
         ],
-        "correct_index": 0,
-        "explanation": "PM Ujjwala Yojana distributes clean LPG cooking fuel connections to vulnerable households, replacing toxic indoor firewood and dung smoke."
+        "correct_index": 1,
+        "explanation": "PM Surya Ghar Muft Bijli Yojana provides rooftop solar subsidies to give households up to 300 units of free solar power each month."
       }
     },
     {
       "slide_num": 15,
       "title": "Leveling the Field: Resilient Infrastructure & Reduced Inequality (SDGs 9 & 10)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Generating clean energy cannot drive an economy if roads wash away during monsoons, or if remote tribal districts remain isolated from national markets.",
-      "eli15_takeaway": "Building digital networks and logistics corridors only succeeds if governments channel targeted funding directly into the poorest, most neglected districts.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "Economic growth only creates a fair society if infrastructure connects the most neglected communities.",
+      "eli15_takeaway": "Fast internet and high-speed freight trains only create fair growth if governments direct funding into the poorest, most neglected districts first.",
       "key_facts": [
-        "SDG 9 (Industry, Innovation & Infrastructure): Digital India (expanding rural broadband and digital payments), PM GatiShakti (National Master Plan coordinating multimodal freight logistics), Bharatmala Project (economic highway corridors), PM Gram Sadak Yojana (all-weather rural roads).",
-        "SDG 10 (Reduced Inequalities): Aspirational Districts and Blocks Programme (data-driven ranking and fast-track funding for the most backward regions), PM Vishwakarma Scheme (credit and tools for traditional artisans), PM-DevINE (dedicated development funding for the North Eastern Region)."
+        "SDG 9 (Industry, Innovation & Infrastructure):",
+        "  * PM GatiShakti National Master Plan: Integrated multi-modal logistics corridor planning across railways, highways, ports, and airports using digital geospatial mapping.",
+        "  * Digital India & BharatNet: Laying optical fiber cables across gram panchayats to connect rural India with high-speed internet and digital public services.",
+        "SDG 10 (Reduced Inequalities):",
+        "  * Aspirational Districts Programme (ADP): Real-time data tracking and rapid development of 112 historically neglected districts across health, nutrition, education, and farming.",
+        "  * Aspirational Blocks Programme (ABP): Extends the localized data-driven governance model to 500 underdeveloped administrative blocks."
       ],
-      "mental_model": "Paving roads and running optical cables out to remote villages so rural trade is not stranded behind washed-out dirt tracks.",
+      "mental_model": "Paving highways and laying fiber-optic cables all the way to isolated mountain villages so rural farmers aren't stranded behind washed-out dirt tracks.",
       "checkpoint": {
-        "question": "Which initiative uses real-time metrics to fast-track development in India's most socio-economically backward districts under SDG 10?",
+        "question": "How does the Aspirational Districts Programme advance SDG 10 (Reduced Inequalities)?",
         "options": [
-          "Aspirational Districts Programme",
-          "Bharatmala Project",
-          "UJALA Scheme",
-          "FAME India Scheme"
+          "By giving tax exemptions exclusively to foreign multinational corporations.",
+          "By using real-time data tracking to target resources into the 112 most underdeveloped districts in the country.",
+          "By building airports in high-income metropolitan areas only.",
+          "By eliminating state-level environmental regulations."
         ],
-        "correct_index": 0,
-        "explanation": "The Aspirational Districts Programme focuses on transforming the most backward districts in India through data-driven monitoring and targeted funding."
+        "correct_index": 1,
+        "explanation": "ADP reduces regional inequality by focusing government resources and real-time performance tracking on India's 112 most backward districts."
       }
     },
     {
       "slide_num": 16,
       "title": "Urban Sanctuaries & Zero Waste: Smart Cities and Circular Cycles (SDGs 11 & 12)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "As rural populations move along new highway corridors toward urban employment, cities risk turning into choking, unlivable heat islands unless planned around clean mobility and waste recovery.",
-      "eli15_takeaway": "Cities must run on electric buses and treat their sewage instead of dumping mountains of unsegregated plastic trash into burning landfills.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "As millions migrate to cities, urban centers must become sustainable habitats rather than polluted concrete traps.",
+      "eli15_takeaway": "Sustainable cities run on electric buses and recycle their wastewater instead of dumping mountains of unsegregated plastic trash into burning landfills.",
       "key_facts": [
-        "SDG 11 (Sustainable Cities and Communities): Smart Cities Mission (urban data hubs, sensor-driven public services), PM e-Bus Seva (deploying 10,000 electric buses across Tier-2 and Tier-3 cities), AMRUT (water supply and sewerage grids), Swachh Bharat Mission-Urban (solid waste management and landfill remediation).",
-        "SDG 12 (Responsible Consumption & Production): Mission LiFE (Lifestyle for Environment - shifting citizen habits toward conservation), National Policy on Biofuels, Extended Producer Responsibility (EPR) regulations requiring packaging manufacturers to collect and recycle plastic waste."
+        "SDG 11 (Sustainable Cities and Communities):",
+        "  * Smart Cities Mission: Developing 100 cities with Integrated Command and Control Centers (ICCCs), sensor-based traffic systems, and smart water grids.",
+        "  * AMRUT: Urban water supply, sewage networks, storm drains, and green park upgrades across 500 cities.",
+        "  * PM e-Bus Sewa: Deploying 10,000 electric city buses to cut urban diesel exhaust.",
+        "SDG 12 (Responsible Consumption & Production):",
+        "  * Mission LiFE (Lifestyle for Environment): National campaign nudging citizens toward conscious consumption, energy saving, water conservation, and plastic reduction.",
+        "  * Extended Producer Responsibility (EPR): Mandatory legal recycling frameworks holding plastic, battery, and electronic manufacturers responsible for waste collection."
       ],
-      "mental_model": "A household that composts kitchen scraps, drinks tap water in refillable bottles, and rides an electric scooter instead of idling an SUV in gridlock traffic.",
+      "mental_model": "A home that composts food scraps, uses refillable containers, and rides an electric scooter rather than idling an SUV in gridlock traffic.",
       "checkpoint": {
-        "question": "What is the primary objective of Mission LiFE under SDG 12?",
+        "question": "What does the Extended Producer Responsibility (EPR) framework mandate under SDG 12?",
         "options": [
-          "Subsidizing coal-fired power plants",
-          "Nudging individual and community habits toward mindful resource consumption and conservation",
-          "Promoting single-use disposable plastics in packaging",
-          "Eliminating all municipal waste recycling requirements"
+          "That consumers pay a cash fine for using public transportation.",
+          "That manufacturers are legally responsible for the collection and recycling of their end-of-life plastic, battery, and electronic products.",
+          "That cities must burn all solid waste in open incinerators.",
+          "That all product advertising must be banned."
         ],
         "correct_index": 1,
-        "explanation": "Mission LiFE (Lifestyle for Environment) mobilizes individuals to adopt simple, pro-planet daily lifestyle habits that reduce resource waste."
+        "explanation": "EPR legally mandates that manufacturers collect, process, and recycle the packaging, plastics, and electronic waste they produce."
       }
     },
     {
       "slide_num": 17,
       "title": "Ocean and Atmospheric Defenses: Climate Action and Marine Life (SDGs 13 & 14)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Even the best-planned cities face sudden destruction if atmospheric heat intensifies cyclone surges and warming oceans kill the coral reefs buffering our coasts.",
-      "eli15_takeaway": "Climate action means cutting urban air pollution and planting dense coastal mangrove forests that soak up ocean storm surges.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "Urban habitats must be shielded by active defenses against climate breakdown and ocean degradation.",
+      "eli15_takeaway": "Real climate action means curbing city smog, switching to clean energy, and planting dense coastal mangrove forests to soak up storm waves.",
       "key_facts": [
-        "SDG 13 (Climate Action): National Action Plan on Climate Change (NAPCC, containing 8 targeted missions), National Clean Air Programme (NCAP, targeting 20-30% particulate reductions in non-attainment cities), CAMPA afforestation funds, National Cyclone Risk Mitigation Project.",
-        "SDG 14 (Life Below Water): Pradhan Mantri Matsya Sampada Yojana (PMMSY, modernizing sustainable fisheries and cold chains), Blue Revolution (Neel Kranti), MISHTI (Mangrove Initiative for Shoreline Habitats & Tangible Incomes, replanting coastal mangrove buffers along Indian shorelines)."
+        "SDG 13 (Climate Action):",
+        "  * National Action Plan on Climate Change (NAPCC): 8 core missions spanning solar energy, energy efficiency, sustainable habitats, water, and Himalayan ecosystems.",
+        "  * National Clean Air Programme (NCAP): Target of 40% reduction in dangerous PM2.5 and PM10 air particulate levels across 131 non-attainment cities.",
+        "  * Panchamrit Climate Commitments: 500 GW non-fossil energy capacity, 50% renewable energy share by 2030, reducing carbon intensity by 45%, and targeting Net-Zero emissions by 2070.",
+        "SDG 14 (Life Below Water):",
+        "  * Pradhan Mantri Matsya Sampada Yojana (PMMSY): Modernizing sustainable marine fisheries, providing GPS safety gear, and declaring seasonal fishing bans.",
+        "  * MISHTI: Mangrove Initiative for Shoreline Habitats & Tangible Incomes, planting coastal mangroves across 11 states and union territories."
       ],
-      "mental_model": "A living coastal barrier: dense mangrove roots gripping tidal mud to stop storm waves before they smash seaside houses.",
+      "mental_model": "A living coastal armor: tangled mangrove roots gripping tidal mud to break storm waves before they can shatter coastal homes.",
       "checkpoint": {
-        "question": "Which government initiative specifically targets the restoration of coastal mangrove ecosystems under SDG 14?",
+        "question": "What is India's target year to achieve Net-Zero greenhouse gas emissions under the Panchamrit climate framework for SDG 13?",
         "options": [
-          "MISHTI",
-          "PM-KISAN",
-          "PM-KUSUM",
-          "Smart Cities Mission"
+          "2030",
+          "2050",
+          "2070",
+          "2100"
         ],
-        "correct_index": 0,
-        "explanation": "MISHTI (Mangrove Initiative for Shoreline Habitats & Tangible Incomes) protects coastal zones by restoring mangrove wetlands along India's coastline."
+        "correct_index": 2,
+        "explanation": "Under the Panchamrit commitments announced at COP26, India committed to reaching Net-Zero greenhouse gas emissions by the year 2070."
       }
     },
     {
       "slide_num": 18,
       "title": "Living Biospheres and Fair Justice: Forests and Governance (SDGs 15 & 16)",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Protecting marine life achieves little if land forests are logged into barren scrublands, or if administrative corruption blocks citizens from securing basic legal rights.",
-      "eli15_takeaway": "Wildlife corridors and green forests only survive when honest police, transparent public records, and local courts enforce conservation laws.",
+      "act": "Act 3: Localizing The Agenda: India's Blueprint & Flagship Engines",
+      "continuity_bridge": "Environmental protection and human rights cannot hold without transparent, accountable governance institutions.",
+      "eli15_takeaway": "Wildlife reserves and green forests only survive when honest police, transparent digital portals, and fast courts enforce conservation laws.",
       "key_facts": [
-        "SDG 15 (Life on Land): National Mission for a Green India, Project Tiger (establishing strictly protected core tiger breeding habitats), Project Elephant, Nagar Van Yojana (creating 400 urban forests across Indian municipalities), National Action Programme to Combat Desertification.",
-        "SDG 16 (Peace, Justice and Strong Institutions): PRAGATI 2.0 (proactive digital governance platform tracking public projects in real time), Right to Information (RTI) Act, Rashtriya Gram Swaraj Abhiyan (strengthening elected village panchayats), Gram Nyayalayas (accessible rural courts)."
+        "SDG 15 (Life on Land):",
+        "  * Green India Mission (GIM): Expanding and improving forest cover across 10 million hectares.",
+        "  * Project Tiger & Project Elephant: Protecting core wilderness corridors, with tiger numbers rebounding past 3,600.",
+        "  * Compensatory Afforestation Fund (CAMPA): Directing funds collected from industrial land conversions into reforestation projects.",
+        "SDG 16 (Peace, Justice and Strong Institutions):",
+        "  * PRAGATI 2.0: Digital monitoring platform allowing the Prime Minister's office to review pending infrastructure projects and resolve citizen grievances directly.",
+        "  * e-Courts Project: Digitizing judicial filings, video hearings, and case records to reduce court backlogs.",
+        "  * Statutory watchdogs: Lokpal and Central Vigilance Commission safeguarding public integrity."
       ],
-      "mental_model": "A forested wildlife sanctuary protected by honest rangers, open legal records, and impartial judges who cannot be bribed by timber cartels.",
+      "mental_model": "A lush wildlife sanctuary protected by honest forest rangers, open court records, and impartial judges who cannot be bribed by timber poachers.",
       "checkpoint": {
-        "question": "Which initiative establishes urban forests across municipalities to improve green cover under SDG 15?",
+        "question": "How does PRAGATI 2.0 support SDG 16 (Peace, Justice and Strong Institutions)?",
         "options": [
-          "Nagar Van Yojana",
-          "PM GatiShakti",
-          "PM Jan Dhan Yojana",
-          "Atal Pension Yojana"
+          "By eliminating civil and criminal court trials.",
+          "By providing an interactive digital platform to review delayed public projects and resolve citizen grievances transparently.",
+          "By managing national wildlife sanctuaries.",
+          "By printing paper land titles for municipal properties."
         ],
-        "correct_index": 0,
-        "explanation": "Nagar Van Yojana creates urban forests across Indian cities to restore ecological balance and enhance green space in urban habitats."
+        "correct_index": 1,
+        "explanation": "PRAGATI 2.0 is an integrated digital platform that connects central and state authorities to fast-track delayed public projects and address citizen complaints."
       }
     },
     {
       "slide_num": 19,
       "title": "The Data Engine: 5 Steps to Build the Composite SDG Index",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Knowing the complete list of national welfare schemes is insufficient; policy researchers need a precise mathematical formula to measure whether these programs actually move the needle.",
-      "eli15_takeaway": "NITI Aayog collects raw survey numbers, compares them to a 2030 target, rescales them from 0 to 100, and averages them into one clean master score.",
+      "act": "Act 4: The Measurement Machine: NITI Aayog Methodology & Data Diagnostics",
+      "continuity_bridge": "To track whether these flagship schemes are working across 28 states and 8 union territories, NITI Aayog built a mathematical grading engine.",
+      "eli15_takeaway": "NITI Aayog takes raw government data, compares it to a 2030 benchmark, rescales it from 0 to 100, and averages the results into one master score for each state.",
       "key_facts": [
-        "Step 01 - Raw Data Compilation: Gathers hard data from central ministries and surveys, auditing records to detect and handle missing data points.",
-        "Step 02 - Target Setting: Defines an absolute 2030 national target value for each indicator based on UN declarations or national policy mandates.",
-        "Step 03 - Normalisation: Converts raw indicator metrics onto a uniform 0\u2013100 scale using min-max scaling to represent the percentage distance achieved toward the target.",
-        "Step 04 - Goal Score: Calculates the simple arithmetic mean of all normalized indicator scores nested under that specific SDG.",
-        "Step 05 - Composite SDG Score: Averages all individual Goal Scores together with equal weighting to produce the state or national master index score."
+        "Step 1: Raw Data Compilation — Collects verified administrative records and surveys across central ministries, auditing data to eliminate missing values.",
+        "Step 2: Target Setting — Establishes a 2030 national target value for each indicator based on UN declarations or national ministry goals.",
+        "Step 3: Normalization (Min-Max Scaling 0–100):",
+        "  * Positive indicators (higher is better, e.g., tap water coverage): \\( I = \\frac{x - x_{\\min}}{x_{\\max} - x_{\\min}} \\times 100 \\)",
+        "  * Negative indicators (lower is better, e.g., infant mortality, poverty rate): \\( I = \\frac{x_{\\max} - x}{x_{\\max} - x_{\\min}} \\times 100 \\)",
+        "Step 4: Goal Score Computation — Computes the unweighted arithmetic mean of all normalized indicator scores under that goal: \\( S_g = \\frac{1}{N_g} \\sum_{i=1}^{N_g} I_i \\)",
+        "Step 5: Composite SDG Score — Computes the simple arithmetic mean of all 16 Goal scores to produce the state's single composite score: \\( \\text{Composite Score} = \\frac{1}{16} \\sum_{g=1}^{16} S_g \\) (Note: SDG 14 Life Below Water is excluded from composite scores to ensure fair comparisons for landlocked states)."
       ],
-      "mental_model": "Converting quiz scores, attendance records, and project grades from different points systems into uniform percentages, then averaging them into a single term GPA.",
+      "mental_model": "Converting student quiz scores, attendance percentages, and science lab marks into a uniform 100-point scale, then averaging them into a single term GPA.",
       "checkpoint": {
-        "question": "How is an individual SDG Goal Score calculated from its normalized indicator values in NITI Aayog's methodology?",
+        "question": "Why is SDG 14 (Life Below Water) excluded from the composite SDG Index calculation for Indian states?",
         "options": [
-          "Taking the highest single indicator score while discarding the rest",
-          "Calculating the arithmetic mean of all normalized indicator scores for that goal",
-          "Multiplying all indicator numbers together",
-          "Assigning arbitrary qualitative grades"
+          "India has zero marine territory.",
+          "Landlocked states have no coastal coastline, so including SDG 14 would unfairly penalize them.",
+          "Marine life is not tracked in the UN 2030 Agenda.",
+          "Fishing is completely exempt from government statistics."
         ],
         "correct_index": 1,
-        "explanation": "NITI Aayog computes each SDG Goal Score by calculating the arithmetic mean of all normalized indicator scores grouped under that goal."
+        "explanation": "Landlocked states like Punjab, Bihar, and Madhya Pradesh have no coastline, so SDG 14 is excluded to keep composite comparisons fair across all states."
       }
     },
     {
       "slide_num": 20,
       "title": "Calculating a Goal Score: Step-by-Step Walkthrough of SDG 3",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "To see how the 5-step data engine functions on actual field data, we can walk through the mathematical normalization of India's score for SDG 3 (Good Health and Well-being).",
-      "eli15_takeaway": "If infant deaths, mother deaths, and vaccine rates are all counted in different units, normalization rescales each one to a score out of 100 so you can average them together.",
+      "act": "Act 4: The Measurement Machine: NITI Aayog Methodology & Data Diagnostics",
+      "continuity_bridge": "Let us walk through an exact mathematical calculation to see how indicator scores combine into a single goal grade.",
+      "eli15_takeaway": "To calculate a state's SDG 3 score, you normalize Maternal Mortality (72), Under-5 Mortality (74), and Child Immunization (85), then average them together to get 77!",
       "key_facts": [
-        "Indicator 1 - Maternal Mortality Ratio (MMR): Raw value = 103 per 100,000 live births; 2030 Target = 70; Normalized score = 72 (since lower mortality is better, being closer to 70 yields a higher normalized score).",
-        "Indicator 2 - Under-5 Mortality Rate (U5MR): Raw value = 34 per 1,000 live births; 2030 Target = 25; Normalized score = 74.",
-        "Indicator 3 - Immunization Coverage: Raw value = 85%; 2030 Target = 100%; Normalized score = 85.",
-        "Goal Score Calculation: Sum of normalized scores = 72 + 74 + 85 = 231; Arithmetic mean = 231 / 3 = 77 out of 100.",
-        "Final aggregation: This score of 77 is fed directly into the national composite index calculation."
+        "Indicator 1: Maternal Mortality Ratio (MMR, negative indicator) — Raw value = 97 per 100,000 live births; 2030 Target = 70; Normalized score = 72 out of 100.",
+        "Indicator 2: Under-5 Mortality Rate (U5MR, negative indicator) — Raw value = 34 per 1,000 live births; 2030 Target = 25; Normalized score = 74 out of 100.",
+        "Indicator 3: Full Immunization Coverage (positive indicator) — Raw value = 85%; 2030 Target = 100%; Normalized score = 85 out of 100.",
+        "Calculation of Goal Score: Sum of normalized scores = \\( 72 + 74 + 85 = 231 \\); Arithmetic mean = \\( \\frac{231}{3} = 77 \\) out of 100.",
+        "Performance tier: A score of 77 places the state firmly in the Front Runner tier (65–99)."
       ],
-      "mental_model": "Translating running speed in seconds, bench press in kilograms, and pull-up repetitions into standard fitness points out of 100 before computing your overall athletic badge.",
+      "mental_model": "Calculating your sports decathlon score: you convert your 100m sprint time, long jump distance, and shot put throw into uniform points, then calculate your average score.",
       "checkpoint": {
-        "question": "Given normalized indicator scores of 72 (MMR), 74 (Under-5 Mortality), and 85 (Immunization), what is the calculated SDG 3 Goal Score?",
+        "question": "If a state earns normalized indicator scores of 72, 74, and 85 across three indicators under SDG 3, what is its resulting Goal Score?",
         "options": [
           "65",
-          "72",
           "77",
-          "85"
+          "82",
+          "231"
         ],
-        "correct_index": 2,
-        "explanation": "The Goal Score is the arithmetic mean: (72 + 74 + 85) / 3 = 231 / 3 = 77."
+        "correct_index": 1,
+        "explanation": "The Goal Score is the unweighted arithmetic mean of the normalized indicators: \\( (72 + 74 + 85) / 3 = 231 / 3 = 77 \\)."
       }
     },
     {
       "slide_num": 21,
       "title": "The Periodicity Trap: Tracking 113 Indicators Across Time Lags",
-      "act": "Act 3: Operationalizing SDGs in India: Schemes, Math & Metrics",
-      "continuity_bridge": "Running this math looks straightforward on paper, but in reality, statistics do not arrive on identical schedules; real surveys suffer from heavy time delays.",
-      "eli15_takeaway": "Building a live national index is tricky because some indicators update every month, while others come from big household surveys conducted only once every five years.",
+      "act": "Act 4: The Measurement Machine: NITI Aayog Methodology & Data Diagnostics",
+      "continuity_bridge": "While the math is clean, feeding real-world numbers into the formula exposes a major data challenge.",
+      "eli15_takeaway": "Building a live national scorecard is tricky because electricity connections update every month, while deep health and poverty surveys only happen once every five years!",
       "key_facts": [
-        "Periodicity matrix tracks 113 distinct indicators across Goals 1 to 16 in the national reporting framework.",
-        "Survey dispersion: Indicator updates are spread unevenly across survey periods from 2015-16 through 2023-24.",
-        "Annual versus multi-year data: Routine administrative records (like power connections or school enrolments) update yearly, but demographic surveys (NFHS, NSSO consumption) take 3 to 5 years.",
-        "Data spread: 17 indicators drawn from 2019-21, 24 indicators updated in 2021-22, 32 indicators in 2022-23, and 25 indicators in 2023-24.",
-        "Policy consequence: Stale baseline numbers can mask sudden economic declines or recent public health gains."
+        "Scale of tracking: 113 indicators across Goals 1 to 16 in the national reporting framework.",
+        "The Periodicity Mismatch: Combines frequent annual administrative records with multi-year household surveys.",
+        "Annual Administrative Data: Power connections (SDG 7) and bank accounts (SDG 1) update yearly via ministry portals.",
+        "Multi-Year Survey Data: Large national surveys like the National Family Health Survey (NFHS) take 3 to 5 years between rounds.",
+        "Data spread: 17 indicators drawn from 2019–21, 24 indicators from 2021–22, 32 from 2022–23, and 40 from 2023–24, creating time lag distortions."
       ],
-      "mental_model": "Trying to navigate traffic with a GPS screen where your car position updates every second, but road construction warnings only update once a week.",
+      "mental_model": "Driving a car with a GPS screen where your vehicle's speedometer updates every second, but road hazard warnings only refresh once a week.",
       "checkpoint": {
-        "question": "Why does differing indicator periodicity present a challenge for the SDG India Index?",
+        "question": "What is the 'Periodicity Trap' in NITI Aayog's SDG monitoring?",
         "options": [
-          "Because computers cannot calculate fractions",
-          "Because differing survey intervals mean indicators reflect different points in time, introducing data latency into comparisons",
-          "Because all states use different mathematical formulas",
-          "Because the United Nations forbids using data older than two weeks"
+          "States submit data in different languages that cannot be translated.",
+          "Combining frequently updated annual data with multi-year household surveys that lag by several years.",
+          "The United Nations changes goal definitions every 6 months.",
+          "All statistical data is collected exclusively during national elections."
         ],
         "correct_index": 1,
-        "explanation": "Because various indicators are updated at different intervals (annual records vs 3-5 year sample surveys), composite scores mix new numbers with older historical data."
+        "explanation": "The periodicity trap occurs when annual administrative data is mixed with large household surveys conducted only once every 3 to 5 years, creating uneven time lags across indicators."
       }
     },
     {
       "slide_num": 22,
       "title": "India's Champions: State and UT Frontrunners Across Goals",
-      "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
-      "continuity_bridge": "Despite data delays, calculating the index reveals striking geographic specializations: different Indian states have emerged as national leaders in different development fields.",
-      "eli15_takeaway": "No single state wins every category: Kerala leads in hunger relief and education, Tamil Nadu leads in poverty reduction, Gujarat tops health, and Goa excels in clean water.",
+      "act": "Act 4: The Measurement Machine: NITI Aayog Methodology & Data Diagnostics",
+      "continuity_bridge": "Despite these data lags, the index reveals clear leaders in every development domain.",
+      "eli15_takeaway": "No single state wins every trophy: Kerala leads in hunger relief and education, Tamil Nadu wins in poverty reduction, Gujarat tops healthcare, and Goa excels in clean water.",
       "key_facts": [
         "SDG 1 (No Poverty): Tamil Nadu (Top State), Dadra & Nagar Haveli and Daman & Diu (Top UT).",
         "SDG 2 (Zero Hunger): Kerala (Top State), Puducherry (Top UT).",
@@ -537,401 +576,391 @@
         "SDG 4 (Quality Education): Kerala (Top State), Delhi (Top UT).",
         "SDG 5 (Gender Equality): Nagaland (Top State), Lakshadweep (Top UT).",
         "SDG 6 (Clean Water & Sanitation): Goa (Top State), Andaman & Nicobar Islands (Top UT).",
-        "SDG 7 (Affordable & Clean Energy): 16 States and 6 UTs scored a perfect 100, reaching full Achiever status.",
-        "SDG 8 (Decent Work): Himachal Pradesh (Top State), Ladakh (Top UT).",
+        "SDG 7 (Affordable Clean Energy): 16 States and 6 UTs earned a perfect 100, reaching Achiever status.",
+        "SDG 8 (Decent Work & Economic Growth): Himachal Pradesh (Top State), Ladakh (Top UT).",
         "SDG 9 & 10 (Infrastructure & Reduced Inequality): Goa (Top State), Puducherry (Top UT).",
         "SDG 11 (Sustainable Cities): Maharashtra (Top State), Chandigarh (Top UT).",
         "SDG 13 (Climate Action): Sikkim & Tamil Nadu (Top States), Chandigarh (Top UT).",
         "SDG 15 (Life on Land): Jharkhand & Tripura (Top States)."
       ],
-      "mental_model": "A national decathlon where different regional athletes win gold in sprinting, high jump, shot put, and long-distance running.",
+      "mental_model": "An Olympic decathlon where different regional athletes win gold in sprinting, high jump, shot put, and long-distance endurance.",
       "checkpoint": {
-        "question": "Which state ranks as the top performer for SDG 1 (No Poverty) in the NITI Aayog subnational breakdown?",
+        "question": "In NITI Aayog's 2023–24 SDG Index, which goal saw 16 States and 6 UTs achieve a perfect score of 100?",
         "options": [
-          "Bihar",
-          "Tamil Nadu",
-          "Rajasthan",
-          "Assam"
+          "SDG 1 (No Poverty)",
+          "SDG 5 (Gender Equality)",
+          "SDG 7 (Affordable and Clean Energy)",
+          "SDG 15 (Life on Land)"
         ],
-        "correct_index": 1,
-        "explanation": "Tamil Nadu ranks as the top state for SDG 1, driven by extensive social security pensions, public housing, and rural employment execution."
+        "correct_index": 2,
+        "explanation": "Due to massive rural electrification, solar expansion, and LPG distribution, 16 States and 6 UTs scored a perfect 100 on SDG 7 (Clean Energy)."
       }
     },
     {
       "slide_num": 23,
       "title": "Statistical Reality Check: Six Major Flaws of the Index",
-      "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
-      "continuity_bridge": "Before celebrating top-ranked states, policy analysts must stay honest and inspect the six major structural limitations that distort the index results.",
-      "eli15_takeaway": "Condensing an entire state's development into one single number hides deep rural poverty, ignores unique tribal challenges, and relies on uneven state surveys.",
+      "act": "Act 4: The Measurement Machine: NITI Aayog Methodology & Data Diagnostics",
+      "continuity_bridge": "Before celebrating these rankings, statisticians caution that composite indices have six significant limitations.",
+      "eli15_takeaway": "Boiling an entire state down into a single number conceals deep village poverty, overlooks tribal realities, and relies on uneven self-reported state surveys.",
       "key_facts": [
-        "Flaw 1 - Data Gaps: Multiple indicators suffer from missing, uncollected, or outdated entries, especially in remote districts.",
-        "Flaw 2 - Different Periodicities: Mixing annual records with multi-year surveys distorts cross-state comparisons.",
-        "Flaw 3 - One-Size-Fits-All Targets: Uniform national targets ignore rugged mountain realities or desert topographies.",
-        "Flaw 4 - Data Quality & Consistency: Heavy dependence on state-reported figures means measurement rigor varies widely across state borders.",
-        "Flaw 5 - Ignored Local Context: Unique regional challenges (tribal forest rights, mining soil pollution, glacial melting) are omitted from global indicator lists.",
-        "Flaw 6 - Over-Simplification: Collapsing diverse social conditions into a single composite score conceals stark inequalities between wealthy capitals and backward rural districts."
+        "Flaw 1: Data Gaps — Missing or uncollected figures in remote rural and tribal pockets.",
+        "Flaw 2: Uneven Periodicities — Mixing annual portal figures with multi-year surveys distorts cross-state rankings.",
+        "Flaw 3: One-Size-Fits-All Benchmarks — Rigid national targets penalize rugged Himalayan or desert terrains with unique geography.",
+        "Flaw 4: Data Quality and Self-Reporting — Heavy reliance on state-reported administrative figures creates inconsistent auditing standards.",
+        "Flaw 5: Ignored Local Context — Unique cultural practices, tribal forest rights, and mountain ecology are flattened by uniform indicators.",
+        "Flaw 6: Masking Disparities — Collapsing diverse districts into a single statewide average conceals extreme pockets of deprivation."
       ],
-      "mental_model": "Giving an entire school classroom a single average grade of 75%, completely hiding that twenty students scored 100% while twenty others failed with 50%.",
+      "mental_model": "Giving an entire classroom a single average grade of 75%, hiding that twenty students scored 100% while twenty others failed with 50%.",
       "checkpoint": {
-        "question": "How does 'Over-Simplification' limit the usefulness of composite state SDG scores?",
+        "question": "Why is collapsing diverse indicators into a single composite state score criticized by statisticians?",
         "options": [
-          "It makes the index too long to print on paper",
-          "It collapses complex variations into a single number, hiding severe inequalities between districts within the same state",
-          "It automatically disqualifies top-performing states",
-          "It requires all surveys to be conducted in foreign languages"
+          "A single composite average conceals severe internal inequalities between wealthy urban hubs and deprived rural districts.",
+          "Computers cannot calculate arithmetic means with more than 10 numbers.",
+          "The UN prohibits reporting composite scores.",
+          "Composite scores double national inflation rates."
         ],
-        "correct_index": 1,
-        "explanation": "A single statewide composite score averages out extreme internal differences, masking severe pockets of deprivation in remote rural or tribal taluks."
+        "correct_index": 0,
+        "explanation": "A single statewide average score hides wide internal gaps, masking deep poverty in remote districts behind booming metropolitan capitals."
       }
     },
     {
       "slide_num": 24,
-      "title": "The 2023\u201324 Milestone: India Reaches a Score of 71",
-      "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
-      "continuity_bridge": "Despite those statistical flaws, looking at the long-term trend line confirms measurable national improvement: India has steadily increased its overall index score since 2018.",
-      "eli15_takeaway": "India lifted its national score from 57 in 2018 up to 71 in 2024, graduating 32 states and union territories into the Front-Runner green zone.",
+      "title": "The 2023–24 Milestone: India Reaches a Score of 71",
+      "act": "Act 5: Subnational Scorecard & Ground Realities",
+      "continuity_bridge": "With these caveats noted, the latest 2023–24 index marks a major milestone in India's development trajectory.",
+      "eli15_takeaway": "India improved its national score from 57 in 2018 up to 71 in 2024, graduating 32 states and union territories into the green Front-Runner tier.",
       "key_facts": [
-        "Composite trajectory: National score climbed from 57 (2018 baseline) -> 60 (2019-20) -> 66 (2020-21) -> 71 (2023-24).",
-        "State score spread: Ranges from 57 (Bihar) to 79 (Uttarakhand and Kerala, tied at #1).",
-        "UT score spread: Ranges from 65 (Ladakh) to 77 (Chandigarh, #1 UT).",
-        "32 States and UTs now sit in the Front-Runner tier (scores 65 to 99).",
-        "Fastest-climbing goals: SDG 13 (Climate Action) and SDG 1 (No Poverty) recorded the largest score expansions.",
-        "10 new entrants into Front-Runner status: Arunachal Pradesh, Assam, Chhattisgarh, Madhya Pradesh, Manipur, Odisha, Rajasthan, Uttar Pradesh, West Bengal, and Dadra & Nagar Haveli."
+        "Upward Trajectory: National composite score climbed from 57 (2018 baseline) → 60 (2019–20) → 66 (2020–21) → 71 (2023–24).",
+        "State Score Spread: Ranges from 57 (Bihar) up to 79 (Uttarakhand and Kerala, tied at #1).",
+        "UT Score Spread: Ranges from 65 (Ladakh) up to 77 (Chandigarh, #1 UT).",
+        "Green Zone Expansion: 32 States and UTs now sit in the Front Runner tier (scores 65–99).",
+        "Fastest-Improving Goals: SDG 13 (Climate Action) and SDG 1 (No Poverty) recorded the largest score increases.",
+        "10 New Front-Runner Entrants: Arunachal Pradesh, Assam, Chhattisgarh, Madhya Pradesh, Manipur, Odisha, Rajasthan, Uttar Pradesh, West Bengal, and Dadra & Nagar Haveli and Daman & Diu."
       ],
-      "mental_model": "A student steadily improving their grade point average from a C in 2018 up to a solid B-plus in 2024 through disciplined daily homework.",
+      "mental_model": "A student steadily pulling their grade point average up from a 57% C grade in 2018 to a 71% solid B-plus in 2024 through disciplined daily study.",
       "checkpoint": {
-        "question": "What was India's national composite SDG score in the 2023-24 NITI Aayog index?",
+        "question": "What was India's composite national score in the 2023–24 NITI Aayog SDG India Index?",
         "options": [
           "57",
           "60",
-          "66",
-          "71"
+          "71",
+          "89"
         ],
-        "correct_index": 3,
-        "explanation": "India achieved an overall national composite score of 71 in the 2023-24 SDG India Index, up from 57 at its 2018 baseline."
+        "correct_index": 2,
+        "explanation": "India's national composite SDG score reached 71 in 2023–24, up from a baseline score of 57 in 2018."
       }
     },
     {
       "slide_num": 25,
       "title": "Goal-Wise Breakdown: Clean Energy Triumphs and The Gender Alarm",
-      "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
-      "continuity_bridge": "A national score of 71 looks encouraging, but disaggregating the data across all 16 goals exposes an urgent structural crisis in gender equality.",
-      "eli15_takeaway": "India scored an impressive 96 in clean energy and 89 in clean water, but stalled at an alarming red score of 49 in gender equality.",
+      "act": "Act 5: Subnational Scorecard & Ground Realities",
+      "continuity_bridge": "Looking beneath the national 71 composite score reveals a dramatic contrast between clean energy and gender equality.",
+      "eli15_takeaway": "India scored a proud 96 in clean energy and 89 in clean water, but stalled at an alarming red score of 49 in gender equality.",
       "key_facts": [
-        "Top performing goals (Front-Runner tier): SDG 7 Clean Energy leads at 96; SDG 6 Clean Water at 89; SDG 11 Sustainable Cities at 83; SDG 12 Responsible Consumption at 78; SDG 3 Good Health at 77; SDG 15 Life on Land at 75; SDG 16 Peace and Institutions at 74; SDG 1 No Poverty at 72; SDG 8 Decent Work at 68; SDG 13 Climate Action at 67; SDG 10 Reduced Inequality at 65.",
-        "Moderate progress (Performer tier): SDG 4 Education at 61; SDG 9 Industry & Infrastructure at 61; SDG 2 Zero Hunger at 52.",
-        "Critical warning (Aspirant tier): SDG 5 Gender Equality scored 49\u2014the sole goal in the entire country lingering in the red Aspirant band (0\u201349).",
-        "Gender deficits: Driven by low female labor-force participation, wage gaps, property ownership limits, and uneven political representation."
+        "Top Performing Goals (Front Runner Tier): SDG 7 (Affordable Clean Energy) leads nationwide at 96; SDG 6 (Clean Water & Sanitation) reached 89; SDG 11 (Sustainable Cities) reached 83; SDG 12 (Responsible Consumption) reached 80.",
+        "Moderate Progress (Performer Tier): SDG 4 (Education) scored 61; SDG 9 (Industry & Infrastructure) scored 61; SDG 2 (Zero Hunger) scored 52.",
+        "The Sole Red Alert (Aspirant Tier): SDG 5 (Gender Equality) scored 49 — the ONLY goal in the entire country stuck in the red band.",
+        "Root causes of gender deficit: Low female labor force participation, gender wage gaps, limited land ownership, and heavy unpaid domestic care burdens."
       ],
-      "mental_model": "An athlete with muscular legs and strong lungs who cannot win a race because their left foot has a painful, untreated fracture.",
+      "mental_model": "A runner with powerful legs and great stamina who cannot win a race because their left foot has an untreated, painful injury.",
       "checkpoint": {
-        "question": "Which SDG is the only goal where India remains in the red 'Aspirant' category (score below 50) in 2023-24?",
+        "question": "Which SDG is the only goal lingering in the red 'Aspirant' tier (score below 50) in India's 2023–24 national scorecard?",
         "options": [
-          "SDG 7 (Affordable and Clean Energy)",
           "SDG 6 (Clean Water and Sanitation)",
+          "SDG 7 (Affordable and Clean Energy)",
           "SDG 5 (Gender Equality)",
-          "SDG 11 (Sustainable Cities and Communities)"
+          "SDG 13 (Climate Action)"
         ],
         "correct_index": 2,
-        "explanation": "SDG 5 (Gender Equality) scored 49 in the 2023-24 index, making it the only goal classified in the bottom Aspirant category (0-49)."
+        "explanation": "SDG 5 (Gender Equality) is the sole red Aspirant goal nationwide, scoring 49 due to wage disparities and low female labor force participation."
       }
     },
     {
       "slide_num": 26,
       "title": "The Subnational League Table: State-by-State Heatmap",
-      "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
-      "continuity_bridge": "Looking at goal-level averages across 1.4 billion people masks the reality on the ground; inspecting the complete state heatmap exposes a deep geographical divide.",
-      "eli15_takeaway": "Southern and Himalayan states dominate the top ranks with scores near 80, while eastern states like Bihar lag behind in the 50s.",
+      "act": "Act 5: Subnational Scorecard & Ground Realities",
+      "continuity_bridge": "State-level scores create a clear geographic divide across the subcontinent.",
+      "eli15_takeaway": "Southern and Himalayan states lead the leaderboard with scores near 80, while eastern states like Bihar lag behind in the 50s.",
       "key_facts": [
-        "Top tier states: Uttarakhand (79), Kerala (79), Tamil Nadu (78), Goa (77), Himachal Pradesh (77), Punjab (76), Sikkim (76), Karnataka (75).",
-        "Mid-ranking states: Gujarat (74), Andhra Pradesh (74), Telangana (74), Maharashtra (73), Mizoram (72), Haryana (72), Manipur (72), Tripura (71), West Bengal (70).",
-        "Lower-ranking states: Rajasthan (67), Madhya Pradesh (67), Uttar Pradesh (67), Chhattisgarh (67), Odisha (66), Assam (65), Arunachal Pradesh (65), Meghalaya (63), Nagaland (63), Jharkhand (62), Bihar (57).",
-        "Union Territories: Chandigarh (77), Jammu & Kashmir (74), Puducherry (74), Andaman & Nicobar (70), Delhi (70), Dadra & Nagar Haveli (66), Lakshadweep (66), Ladakh (65)."
+        "Top Tier States (Scores 76–79): Uttarakhand (79, tied #1), Kerala (79, tied #1), Tamil Nadu (78), Goa (77), Himachal Pradesh (77), Punjab (76).",
+        "Mid-Ranking States (Scores 70–74): Gujarat (74), Andhra Pradesh (74), Telangana (74), Maharashtra (73), Karnataka (73), Mizoram (72), Haryana (72), West Bengal (70).",
+        "Lower-Ranking States (Scores 57–67): Rajasthan (67), Madhya Pradesh (67), Uttar Pradesh (67), Chhattisgarh (67), Odisha (66), Assam (65), Nagaland (63), Meghalaya (63), Jharkhand (62), Bihar (57).",
+        "Top Union Territories: Chandigarh (77, #1 UT), Jammu & Kashmir (74), Puducherry (74), Delhi (70)."
       ],
-      "mental_model": "A regional sports league table where established teams with deep training facilities dominate the standings while underfunded squads struggle at the bottom.",
+      "mental_model": "A sports league standings table where established teams with seasoned training facilities lead the pack while under-resourced clubs fight to avoid relegation.",
       "checkpoint": {
-        "question": "Which two states tied for the #1 position on the 2023-24 SDG India Index with composite scores of 79?",
+        "question": "Which two states tied for the #1 rank in India's 2023–24 SDG Index with a score of 79?",
         "options": [
-          "Gujarat and Maharashtra",
+          "Bihar and Jharkhand",
           "Uttarakhand and Kerala",
-          "Punjab and Haryana",
-          "Tamil Nadu and Goa"
+          "Gujarat and Maharashtra",
+          "Punjab and Haryana"
         ],
         "correct_index": 1,
-        "explanation": "Uttarakhand and Kerala tied at the top of the state rankings with composite index scores of 79."
+        "explanation": "Uttarakhand and Kerala tied for first place among states with an overall composite score of 79."
       }
     },
     {
       "slide_num": 27,
       "title": "Spatial Distribution: The Vanishing Red Zone",
-      "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
-      "continuity_bridge": "When we map these league table scores onto the geography of India, the spatial spread shows how green Front-Runner status expanded across the subcontinent.",
+      "act": "Act 5: Subnational Scorecard & Ground Realities",
+      "continuity_bridge": "When mapped geographically, these numbers reveal the disappearance of an entire performance category.",
       "eli15_takeaway": "Green Front-Runner status now covers almost the entire map of India; zero states remain in the red zone, leaving just four states in yellow.",
       "key_facts": [
-        "Front-Runner (green, 65\u201399): Dominates almost the entire geographical area of India, including northern, western, southern, and central states.",
-        "Performer (yellow, 50\u201364): Confined to exactly four states: Bihar (57), Jharkhand (62), Meghalaya (63), and Nagaland (63).",
-        "Aspirant (red, 0\u201349): Exactly zero states or UTs remain in this bottom category in 2023-24, down from significant portions of the country in 2018.",
-        "Achiever (blue, 100): Zero states have achieved a composite score of 100, though many states achieved 100 on individual goals (such as SDG 7).",
-        "Geographic concentration: Development deficits are now tightly clustered in specific eastern and north-eastern pockets."
+        "The Vanishing Red Zone: In 2018, numerous states languished in the red Aspirant band (0–49); in 2023–24, exactly ZERO states or UTs remain in red.",
+        "Green Zone Dominance (Front Runner, 65–99): Covers 32 states and UTs across northern, southern, western, and central India.",
+        "Yellow Zone (Performer, 50–64): Confined to exactly four states: Bihar (57), Jharkhand (62), Meghalaya (63), and Nagaland (63).",
+        "Blue Zone (Achiever, 100): Zero states have achieved a composite 100, though many scored 100 on individual goals (like clean energy).",
+        "Geographic clustering: Persistent deprivation is no longer spread evenly; it is tightly concentrated in eastern and northeastern states."
       ],
-      "mental_model": "A traffic signal network across a huge city where red stops have cleared out completely, leaving smooth green lights everywhere except four yellow caution intersections.",
+      "mental_model": "A city-wide traffic map where all red gridlocks have cleared out, leaving smooth green flow everywhere except four yellow caution intersections.",
       "checkpoint": {
-        "question": "How many Indian states or union territories remain in the red 'Aspirant' category on the 2023-24 composite map?",
+        "question": "In India's 2023–24 SDG Index, how many states remain in the red 'Aspirant' band (scores 0–49)?",
         "options": [
           "Zero",
-          "Four",
-          "Ten",
-          "Sixteen"
+          "4",
+          "12",
+          "28"
         ],
         "correct_index": 0,
-        "explanation": "On the 2023-24 composite index map, zero states or union territories remain in the red Aspirant tier (0-49), marking broad upward movement since 2018."
+        "explanation": "For the first time, exactly zero states or union territories sit in the red Aspirant category, marking the 'vanishing red zone.'"
       }
     },
     {
       "slide_num": 28,
       "title": "Six Execution Levers: Turning Targets into Concrete Reality",
-      "act": "Act 5: Drivers, Enterprise & Unintended Trade-offs",
-      "continuity_bridge": "Pushing those last four yellow states into the green zone requires understanding what makes development programs succeed in the real world.",
-      "eli15_takeaway": "Hitting our 2030 goals requires strong political courage, solid funding, business partnerships, inclusion, honest data, and integrated policies.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "To move remaining yellow states into green and turn green into blue, governments must coordinate six execution levers.",
+      "eli15_takeaway": "Hitting 2030 goals takes six gears working together: political courage, real funding, business partners, fairness, verified data, and joined-up government policies.",
       "key_facts": [
-        "Pillar 1 - Strong Political Will: Sustained leadership that prioritizes long-term ecological and social outcomes over short-term election promises.",
-        "Pillar 2 - Adequate Financing: Mobilizing national tax revenues, international green climate bonds, and commercial private capital.",
-        "Pillar 3 - Partnerships: Structured collaboration linking government ministries, private industry, non-profits, and research universities.",
-        "Pillar 4 - Inclusive Approach: Rigorous adherence to Leave No One Behind (LNOB), focusing public investments on vulnerable and marginalized groups.",
-        "Pillar 5 - Reliable Data & Monitoring: Transparent, verifiable statistics to detect implementation delays and prevent political manipulation.",
-        "Pillar 6 - Policy Integration: Aligning industrial expansion, social safety programs, and natural conservation under one single legislative roadmap."
+        "Lever 1: Strong Political Will — High-level leadership that prioritizes long-term ecological and social goals above short-term election cycles.",
+        "Lever 2: Adequate Financing — Mobilizing public tax revenues, sovereign green bonds, and private commercial capital into sustainable infrastructure.",
+        "Lever 3: Multi-Stakeholder Partnerships — Coordinated teamwork connecting central ministries, private corporations, research universities, and non-profits.",
+        "Lever 4: Inclusive Approach — Strict dedication to Leave No One Behind (LNOB), focusing public investments on vulnerable rural and tribal populations.",
+        "Lever 5: Reliable Data and Monitoring — Open, auditable statistics to detect implementation delays and hold officials accountable.",
+        "Lever 6: Policy Integration — Harmonizing industrial planning, social safety nets, and forest protection so policies do not work at cross-purposes."
       ],
-      "mental_model": "A high-performance car requiring all six cylinders to fire in harmony; if the financing or data cylinder misfires, the engine stalls on the highway.",
+      "mental_model": "A six-cylinder car engine: every single cylinder must fire in rhythm; if the funding or data cylinder misfires, the vehicle stalls on the road.",
       "checkpoint": {
-        "question": "Which operational principle ensures that marginalized communities are prioritized during SDG implementation?",
+        "question": "Why is 'Policy Integration' considered a vital execution lever for the SDGs?",
         "options": [
-          "Trickle-Down Economics",
-          "Leave No One Behind (LNOB)",
-          "Export-Led Industrialization",
-          "Exclusive Resource Extraction"
+          "It allows ministries to work in complete secrecy.",
+          "It aligns industrial, social, and environmental policies so one ministry does not undo another ministry's progress.",
+          "It eliminates private commercial business.",
+          "It transfers all public funding to foreign charities."
         ],
         "correct_index": 1,
-        "explanation": "The 'Leave No One Behind' (LNOB) mandate requires governments to direct investments toward the most disadvantaged and marginalized populations first."
+        "explanation": "Policy integration ensures that economic expansion, social programs, and environmental rules align rather than working at cross-purposes."
       }
     },
     {
       "slide_num": 29,
       "title": "Corporate Action in the West: Electric Mobility and Supply Chains",
-      "act": "Act 5: Drivers, Enterprise & Unintended Trade-offs",
-      "continuity_bridge": "Public budgets alone cannot cover the trillions required for global transformation; private corporations must align their balance sheets with sustainability.",
-      "eli15_takeaway": "Western giants like Tesla and Unilever prove that mass-producing electric cars and cutting factory emissions can be profitable commercial businesses.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Execution is not just a public-sector duty; multinational corporations play a decisive role in supply chain decarbonization.",
+      "eli15_takeaway": "Western corporate giants show that cutting factory pollution and mass-producing electric vehicles can be profitable, sustainable business models.",
       "key_facts": [
-        "Tesla (United States): Advances SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action) by manufacturing electric vehicles, home battery storage systems (Powerwall), and commercial solar roofs to displace oil and coal combustion.",
-        "Unilever (Europe): Advances SDG 3 (Good Health and Well-being) and SDG 12 (Responsible Consumption and Production) by reformulating consumer packaged goods, enforcing sustainable palm oil sourcing, and committing to cut virgin plastic packaging use."
+        "Tesla (United States): Advances SDG 7 (Clean Energy) and SDG 13 (Climate Action) by scaling zero-emission electric vehicles, residential solar roofs, and grid-scale battery storage powered by renewable Gigafactories.",
+        "Unilever (Europe): Advances SDG 3 (Health), SDG 12 (Responsible Production), and SDG 15 (Life on Land) through 100% deforestation-free palm oil and tea sourcing, while achieving zero non-hazardous factory waste to landfill."
       ],
-      "mental_model": "A massive ocean container ship changing its course: when multinational corporations switch supply chains, entire global trade routes shift toward cleaner practices.",
+      "mental_model": "A giant ocean container ship steering in a new direction: when massive corporations reform their supply chains, entire global trade routes shift toward cleaner practices.",
       "checkpoint": {
-        "question": "Which two Sustainable Development Goals are primarily targeted by Tesla's commercial business model?",
+        "question": "How does Tesla's business model directly advance SDGs 7 and 13?",
         "options": [
-          "SDG 1 (No Poverty) and SDG 4 (Quality Education)",
-          "SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action)",
-          "SDG 14 (Life Below Water) and SDG 16 (Peace and Justice)",
-          "SDG 2 (Zero Hunger) and SDG 5 (Gender Equality)"
+          "By operating coal-fired generation stations.",
+          "By mass-producing electric vehicles and stationary battery storage systems that displace fossil-fuel consumption.",
+          "By mining precious gems in protected marine reserves.",
+          "By manufacturing single-use plastic packaging."
         ],
         "correct_index": 1,
-        "explanation": "Tesla targets SDG 7 and SDG 13 by scaling electric transport, lithium-ion battery storage, and solar energy systems that directly cut greenhouse gas emissions."
+        "explanation": "Tesla advances SDGs 7 and 13 by scaling zero-emission electric vehicles, residential solar roofs, and commercial grid-scale battery storage."
       }
     },
     {
       "slide_num": 30,
       "title": "Global Enterprise Models: Mass Transit, Microcredit, and Circular Gear",
-      "act": "Act 5: Drivers, Enterprise & Unintended Trade-offs",
-      "continuity_bridge": "Corporate sustainability is not restricted to Western consumer goods; Asian enterprises and grassroots banking institutions demonstrate diverse models of private impact.",
-      "eli15_takeaway": "From electric city buses in China to small village business loans for women in Bangladesh and recycled clothing in the US, different businesses solve different goals.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Beyond Western corporations, groundbreaking grassroots enterprises solved specific SDGs across the Global South.",
+      "eli15_takeaway": "From electric buses in China and women's micro-loans in Bangladesh to recycled coats in the US, grassroots businesses prove sustainability works everywhere.",
       "key_facts": [
-        "BYD (Asia / China): Advances SDG 11 (Sustainable Cities) and SDG 13 (Climate Action) by producing commercial electric bus fleets, urban rail transit, passenger EVs, and grid-scale lithium energy storage systems.",
-        "Grameen Bank (Asia / Bangladesh): Advances SDG 1 (No Poverty) and SDG 5 (Gender Equality) by pioneering collateral-free microfinance loans directed primarily to impoverished rural women to launch independent businesses.",
-        "Patagonia (United States): Advances SDG 12 (Responsible Consumption) and SDG 14 (Life Below Water) by manufacturing outdoor clothing from recycled materials, running repair programs, and donating 1% of sales to ocean conservation."
+        "Curitiba, Brazil (Jaime Lerner): Pioneered Bus Rapid Transit (BRT) and created the 'Green Exchange' where slum residents traded sorted recyclables for fresh farm food, advancing SDGs 11 and 12.",
+        "Grameen Bank, Bangladesh (Muhammad Yunus, Nobel Peace Prize 2006): Collateral-free micro-loans provided to over 9 million rural women, advancing SDGs 1, 5, and 8.",
+        "Patagonia, United States: 'Worn Wear' circular clothing repair and recycling program, donating 1% of sales to grassroots environmental defense.",
+        "BYD, China: Scaled zero-emission electric city buses and battery packs to decarbonize urban public transit."
       ],
-      "mental_model": "A diverse mechanical toolbox: using an industrial wrench (BYD's electric transit), a micro-drill (Grameen's small loans), and a sewing kit (Patagonia's clothing repairs) for different jobs.",
+      "mental_model": "A versatile toolbox: different regions use different tools—one uses a micro-loan hammer, another uses an electric bus wrench, and another uses a recycling screwdriver.",
       "checkpoint": {
-        "question": "How does Grameen Bank in Bangladesh directly advance SDGs 1 and 5?",
+        "question": "How did Muhammad Yunus's Grameen Bank model advance SDGs 1, 5, and 8?",
         "options": [
-          "By building coal export terminals",
-          "By providing collateral-free microcredit loans primarily to low-income women to build rural businesses",
-          "By manufacturing sports cars for export",
-          "By funding deep-sea industrial trawling"
+          "By funding deep-sea offshore oil drilling rigs.",
+          "By providing collateral-free microcredit loans directly to rural women, creating micro-businesses and financial independence.",
+          "By privatizing rural public schools.",
+          "By replacing national currency with gold jewelry."
         ],
         "correct_index": 1,
-        "explanation": "Grameen Bank pioneered microfinance, granting small, collateral-free loans to impoverished women to establish small businesses, directly attacking poverty and gender disparity."
+        "explanation": "Grameen Bank provided collateral-free micro-loans to impoverished rural women, creating independent family income and proving women are excellent credit risks."
       }
     },
     {
       "slide_num": 31,
       "title": "Citizen Action: Five Practical Levers for Everyday Individuals",
-      "act": "Act 5: Drivers, Enterprise & Unintended Trade-offs",
-      "continuity_bridge": "It is easy to assume that only billionaires, CEOs, and prime ministers can influence the SDGs, but individual lifestyle patterns drive global demand and policy pressure.",
-      "eli15_takeaway": "Everyday citizens drive change by sharing facts, conserving energy, volunteering time, supporting ethical companies, and demanding better policy from local leaders.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Global goals ultimately depend on the daily behavioral choices of 8 billion citizens.",
+      "eli15_takeaway": "Real change isn't just for governments and billionaires: five daily habits—saving power, sorting trash, riding bikes, shopping smart, and volunteering—make a massive difference.",
       "key_facts": [
-        "Action 1 - Raising Awareness: Educating friends, families, and student peers about climate heating, water conservation, and plastic pollution.",
-        "Action 2 - Making Sustainable Choices: Reducing single-use plastics, cutting food waste, conserving home electricity, and using public transport or bicycles.",
-        "Action 3 - Volunteering: Giving personal time to local tree-planting, neighborhood literacy programs, and riverbank clean-ups.",
-        "Action 4 - Supporting Sustainable Businesses: Choosing products certified for fair trade, organic farming, and recycled materials.",
-        "Action 5 - Advocating for Change: Petitioning city councils and casting votes for politicians who enact aggressive climate and public health policies."
+        "Lever 1: Energy Conservation — Switching to LED lighting, unplugging phantom loads, and selecting energy-efficient inverter equipment (SDG 7).",
+        "Lever 2: Waste Minimization and Segregation — Sorting wet compost from dry recyclables, ending single-use plastics, and composting organic kitchen scraps (SDG 12).",
+        "Lever 3: Sustainable Mobility — Walking, bicycling, carpooling, and using electric buses or metro rails instead of solo driving (SDG 11).",
+        "Lever 4: Mindful and Ethical Consumption — Purchasing durable, repairable goods, eating more local plant foods, and curbing food waste (SDG 12).",
+        "Lever 5: Civic Engagement and Action — Volunteering for community cleanups, planting native trees, and holding elected leaders accountable to environmental promises (SDGs 16 & 17)."
       ],
-      "mental_model": "A stadium crowd doing the wave: one fan standing up looks insignificant, but coordinated movement creates a rolling wave that sweeps around the entire arena.",
+      "mental_model": "Raindrops filling a drought-stricken reservoir: a single drop looks tiny, but billions of drops combined create a mighty river.",
       "checkpoint": {
-        "question": "Which of the following is a direct individual contribution toward achieving SDG 12 (Responsible Consumption)?",
+        "question": "Which everyday citizen action directly supports SDG 12 (Responsible Consumption and Production)?",
         "options": [
-          "Purchasing single-use plastic bottles daily",
-          "Minimizing household food waste and choosing repairable, recycled goods",
-          "Leaving home air conditioning running with open windows",
-          "Dumping electronic waste in local wetlands"
+          "Running air conditioners with open windows.",
+          "Segregating household wet and dry waste, composting organic scraps, and eliminating single-use plastics.",
+          "Driving a personal SUV for trips under 500 meters.",
+          "Discarding broken electronics into municipal waterways."
         ],
         "correct_index": 1,
-        "explanation": "Reducing domestic food waste and purchasing durable, recycled goods directly cuts resource extraction and landfill buildup under SDG 12."
+        "explanation": "Household waste segregation, composting, and cutting single-use plastics directly reduce landfill waste and advance SDG 12."
       }
     },
     {
       "slide_num": 32,
       "title": "Unintended Clashes: When Renewable Energy Hurts Forests",
-      "act": "Act 5: Drivers, Enterprise & Unintended Trade-offs",
-      "continuity_bridge": "As governments and businesses rush to deploy green infrastructure, they face a dangerous hidden reality: pursuing one SDG can accidentally destroy another.",
-      "eli15_takeaway": "Clearing pristine forests to install giant solar parks or building huge hydro dams to generate green electricity can wipe out wildlife and displace indigenous families.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Even well-intentioned green actions can create unexpected ecological collisions.",
+      "eli15_takeaway": "Going green can cause accidental harm: huge solar parks in Rajasthan threaten endangered Great Indian Bustards, and mining lithium for electric cars can drain precious desert water.",
       "key_facts": [
-        "Direct target friction: Aggressive expansion of clean energy (SDG 7) and physical infrastructure (SDG 9) frequently collides with forest and biodiversity conservation (SDG 15).",
-        "Renewable land footprint: Large-scale solar parks, wind corridors, and bioenergy plantations require extensive land clearing, causing deforestation and biodiversity loss.",
-        "Habitat fragmentation: High-voltage transmission lines, rail corridors, and access roads cut through continuous forest canopies, exposing wildlife to poachers and opening tracts to illegal logging.",
-        "Hydropower flooding: Mega-dams flood pristine river valleys, disrupt aquatic migrations, and displace indigenous riverbank communities.",
-        "Measurement blindspot: National SDG indicators reward gigawatts of renewable capacity installed, but fail to subtract the ecological damage done to lost native forests.",
-        "Policy mandate: Governments must integrate strict biodiversity safeguards into clean energy planning to prevent green projects from destroying living biospheres."
+        "Green-on-Green Trade-offs: Clashes where clean energy infrastructure (SDGs 7 & 13) directly harms wildlife and biodiversity (SDGs 14 & 15).",
+        "The Great Indian Bustard (GIB) Collision Crisis: Overhead high-voltage transmission lines connecting mega-solar parks in the Thar Desert (Rajasthan & Gujarat) kill critically endangered GIBs flying into cables; the Supreme Court ordered power line undergrounding for the fewer than 150 surviving birds.",
+        "Other Green-on-Green tensions: Wind turbine blade collisions with migratory raptors; hydroelectric dams disrupting river hydrology and fish spawning; lithium brine evaporation in South American salt flats depleting desert groundwater."
       ],
-      "mental_model": "Cutting down an ancient hundred-year-old oak tree in your backyard just to mount a shiny solar panel in its place.",
+      "mental_model": "Taking strong antibiotics to cure a serious infection, but getting an upset stomach as an unintended side-effect if you don't take care.",
       "checkpoint": {
-        "question": "What ecological trade-off occurs when utility-scale renewable energy (SDG 7) is expanded without strict safeguards?",
+        "question": "What is a classic example of a 'Green-on-Green' trade-off occurring in India?",
         "options": [
-          "It eliminates all forms of air pollution permanently",
-          "Vast land clearing for solar farms and access roads can cause severe deforestation and habitat fragmentation under SDG 15",
-          "It immediately doubles forest cover across all river basins",
-          "It stops all mineral extraction worldwide"
+          "Building coal power plants next to copper mines.",
+          "Solar power transmission cables in the Thar Desert endangering the critically endangered Great Indian Bustard.",
+          "Banning plastic bags in municipal grocery markets.",
+          "Planting indigenous trees in degraded national parks."
         ],
         "correct_index": 1,
-        "explanation": "Utility-scale solar, wind, and hydro projects require massive land footprints, which can fragment continuous forest canopies and harm native wildlife habitats."
+        "explanation": "Overhead power lines connecting solar parks collide with critically endangered Great Indian Bustards, pitting clean energy (SDG 7) against biodiversity preservation (SDG 15)."
       }
     },
     {
       "slide_num": 33,
       "title": "The Poly-Crisis Horizon: Ten Systemic Bottlenecks",
-      "act": "Act 6: Synthesis, Systemic Crises & Real-World Integration",
-      "continuity_bridge": "These painful trade-offs show why the 2030 Agenda cannot be treated as a simple checklist; humanity faces ten interconnected systemic crises colliding all at once.",
-      "eli15_takeaway": "The world is battling ten simultaneous emergencies: boiling weather, dying species, mountains of electronic trash, parched wells, smoggy cities, and weak institutions.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "These local clashes occur against a backdrop of compounded, simultaneous global emergencies.",
+      "eli15_takeaway": "The world is caught in a poly-crisis where climate shocks, wars, heavy debt, and food shortages crash into each other all at once.",
       "key_facts": [
-        "1. Climate Change: Escalating global temperatures, destructive storm surges, and sea-level rise.",
-        "2. Biodiversity Loss: Accelerating extinction rates and ecological habitat degradation.",
-        "3. Unsustainable Consumption & Production: Relentless raw resource extraction, e-waste mountains, and plastic debris.",
-        "4. Energy Transition: Navigating the technical and economic hurdles of switching from coal to renewables.",
-        "5. Water Scarcity: Deep aquifer over-extraction, industrial pollution, and unequal freshwater access.",
-        "6. Food Security: Agricultural soil exhaustion, high food waste, and chronic child malnutrition.",
-        "7. Urbanization & Pollution: Toxic urban air quality and uncontrolled municipal landfill growth.",
-        "8. Inequality & Poverty: Expanding wealth divides and digital exclusion leaving vulnerable groups behind.",
-        "9. Health Crises: Global pandemics and vulnerable public healthcare networks.",
-        "10. Governance & Global Partnerships: Weakening international trust and shortages of development funding."
+        "Definition of Poly-Crisis: Multiple compounding global crises interacting simultaneously so the total impact is far more damaging than individual isolated shocks.",
+        "Ten Systemic Bottlenecks:",
+        "  1. Climate Shocks (mega-floods, heatwaves, droughts); 2. Geopolitical Conflict & Supply Chains; 3. Sovereign Debt Distress in low-income nations; 4. Clean Energy Mineral Shortages (lithium, copper); 5. Freshwater Scarcity & Aquifer Depletion; 6. Food Insecurity & Soil Exhaustion; 7. Unplanned Urbanization & Toxic Smog; 8. Expanding Wealth Inequality & Digital Divide; 9. Global Pandemics & Public Health Deficits; 10. Fracturing Global Governance & Declining Aid."
       ],
-      "mental_model": "A circus performer juggling ten spinning glass plates during a sudden earthquake.",
+      "mental_model": "A computer crashing because ten heavy background applications froze at the exact same moment, locking up the entire operating system.",
       "checkpoint": {
-        "question": "Which of the following is identified as a major systemic environmental crisis under the 10 macro challenges?",
+        "question": "What does the term 'Poly-Crisis' describe in global development policy?",
         "options": [
-          "Complete stabilization of all global weather patterns",
-          "Water scarcity driven by over-extraction, toxic runoff, and uneven freshwater distribution",
-          "Total eradication of global municipal waste",
-          "Unlimited supplies of clean groundwater in all arid zones"
+          "A single isolated financial recession in one country.",
+          "Multiple interconnected global crises (climate, debt, war, food) colliding simultaneously and amplifying each other.",
+          "A mathematical formula for calculating corporate stock dividends.",
+          "A software program used for census tracking."
         ],
         "correct_index": 1,
-        "explanation": "Freshwater scarcity caused by reckless aquifer pumping, industrial contamination, and poor distribution is one of the ten pressing macro crises threatening the SDGs."
+        "explanation": "A poly-crisis occurs when multiple compounding global shocks (climate disasters, war, sovereign debt, hunger) hit simultaneously, creating cascading failures across human systems."
       }
     },
     {
       "slide_num": 34,
       "title": "The Core Dilemma: Decoupling Growth from Ecological Destruction",
-      "act": "Act 6: Synthesis, Systemic Crises & Real-World Integration",
-      "continuity_bridge": "At the very heart of all ten macro crises sits one central intellectual puzzle: can human economies continue expanding without destroying the living planet?",
-      "eli15_takeaway": "Decoupling means figuring out how to let people earn better wages and enjoy higher living standards while cutting the total amount of raw earth, oil, and trees we consume.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Surviving the poly-crisis requires solving the ultimate economic challenge: decoupling.",
+      "eli15_takeaway": "Decoupling means figuring out how to let people earn higher wages and live comfortably while cutting the total amount of oil, minerals, and trees we take from Earth.",
       "key_facts": [
-        "Core concept of Decoupling: Breaking the historical link between gross domestic product (GDP) growth and natural resource degradation.",
-        "Four structural pillars: Economic Growth (poverty reduction, jobs), Sustainable Development (long-term balance), Resource Efficiency (doing more with less), and Environmental Protection (biosphere restoration).",
-        "Relative Decoupling: Resource use continues growing, but at a slower percentage rate than economic output.",
-        "Absolute Decoupling: Economic value expands while total physical resource extraction and carbon emissions steadily drop.",
-        "Execution engines: Circular product design, renewable electricity grids, material recycling, and closed-loop manufacturing."
+        "Core Objective: Breaking the historical link between GDP growth and natural resource extraction.",
+        "Relative Decoupling: Resource extraction grows, but at a slower percentage rate than GDP growth: \\( 0 < \\% \\Delta \\text{Resource Extraction} < \\% \\Delta \\text{GDP} \\).",
+        "Absolute Decoupling: The true sustainability benchmark where economic output expands while absolute physical resource use and greenhouse emissions fall: \\( \\% \\Delta \\text{GDP} > 0 \\quad \\text{while} \\quad \\% \\Delta \\text{Resource Extraction} < 0 \\).",
+        "Environmental Kuznets Curve (EKC) Reality Check: The hypothesis that pollution automatically falls after middle-income thresholds often fails because rich nations simply outsource dirty manufacturing abroad."
       ],
-      "mental_model": "Getting stronger and faster through smarter athletic training without needing to consume twice as much junk food every day.",
+      "mental_model": "An athlete getting stronger and faster through smarter workouts, without needing to eat twice as much junk food every day.",
       "checkpoint": {
-        "question": "What does 'Absolute Decoupling' mean in environmental economics?",
+        "question": "What is the defining mathematical condition for 'Absolute Decoupling'?",
         "options": [
-          "Economic production drops to zero while pollution increases",
-          "Gross economic output grows while total resource consumption and environmental degradation decline",
-          "Environmental protection is permanently separated from all economic policy",
-          "Both economic growth and environmental damage expand at the identical percentage rate"
+          "Both GDP and resource extraction grow at 10% per year.",
+          "GDP expands while absolute physical resource consumption and carbon emissions decline: \\( \\% \\Delta \\text{GDP} > 0 \\) while \\( \\% \\Delta \\text{Resource} < 0 \\).",
+          "Resource extraction grows faster than GDP growth.",
+          "All commercial manufacturing is shut down permanently."
         ],
         "correct_index": 1,
-        "explanation": "Absolute decoupling occurs when the economy expands while total physical resource consumption, waste generation, and carbon emissions actively decrease."
+        "explanation": "Absolute decoupling occurs when the economy grows in monetary terms while total physical extraction of natural resources and carbon emissions decline."
       }
     },
     {
       "slide_num": 35,
       "title": "Philanthropic Catalysts: Tata Trusts' Pan-India Footprint",
-      "act": "Act 6: Synthesis, Systemic Crises & Real-World Integration",
-      "continuity_bridge": "Achieving absolute decoupling requires field testing on the ground by non-profit institutions that can work where government administration faces capacity limits.",
-      "eli15_takeaway": "Tata Trusts shows how philanthropic organizations partner with hundreds of community groups across India to deliver clean water, health clinics, and schools.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Achieving decoupling and meeting targets requires philanthropic institutions that can bridge last-mile execution gaps.",
+      "eli15_takeaway": "Tata Trusts shows how philanthropic organizations partner with hundreds of community groups across India to deliver clean drinking water, health clinics, and schools directly to villages.",
       "key_facts": [
-        "Published the flagship operational review 'Stories of Change: #JourneyToTheGlobalGoals'.",
-        "Formed operational partnerships with over 850 grassroots and specialized non-profit organizations.",
-        "Active execution across 638 administrative districts spanning 33 Indian states and union territories.",
-        "Primary intervention areas: Health & Nutrition (malnutrition screening, cancer care), Water & Sanitation (drinking water filtration, village watershed management), Rural Livelihoods (farming productivity, artisan support), and Quality Education (digital school libraries)."
+        "Operational Review: Documented in the flagship report 'Stories of Change: #JourneyToTheGlobalGoals'.",
+        "Scale of On-Ground Execution: Formed active operational partnerships with over 850 grassroots non-profits across 638 administrative districts in 33 Indian States and Union Territories.",
+        "Catalytic Philanthropic Role: Bridges the 'last-mile' delivery gap by piloting community-led solutions, validating them with data, and helping governments scale them nationally.",
+        "Primary intervention areas: Healthcare & cancer grids, rural water security & sanitation, educational technology, rural livelihoods, and clean community energy."
       ],
-      "mental_model": "A fleet of nimble rescue rafts reaching shallow, hard-to-reach river channels where giant government container ships cannot easily navigate.",
+      "mental_model": "A fleet of nimble rescue rafts navigating shallow, narrow river channels where giant government container ships cannot easily reach.",
       "checkpoint": {
-        "question": "Across how many Indian districts has Tata Trusts partnered with civil society organizations to advance the Global Goals?",
+        "question": "How does philanthropic capital like Tata Trusts catalyze the achievement of the SDGs in India?",
         "options": [
-          "50 districts across 5 states",
-          "250 districts across 15 states",
-          "638 districts across 33 states",
-          "All districts in Europe"
+          "By replacing the central government's tax collection agencies.",
+          "By funding agile, community-led models that bridge last-mile delivery gaps and partnering with governments to scale proven solutions.",
+          "By privatizing all rural healthcare centers.",
+          "By manufacturing commercial aircraft."
         ],
-        "correct_index": 2,
-        "explanation": "Tata Trusts has partnered with more than 850 organizations across 638 districts in 33 states and union territories."
+        "correct_index": 1,
+        "explanation": "Philanthropy tests innovative grassroots solutions, works with community partners, and provides agile capital to reach neglected populations where government bureaucracy struggles."
       }
     },
     {
       "slide_num": 36,
       "title": "The Complete Ecosystem: Tata Trusts' 17-Goal Impact Wheel",
-      "act": "Act 6: Synthesis, Systemic Crises & Real-World Integration",
-      "continuity_bridge": "This final slide brings the entire 36-slide lecture to full completion by mapping concrete, ground-level field interventions across every single one of the 17 SDGs.",
-      "eli15_takeaway": "Real sustainability happens when every single goal connects to real human lives: helping families own homes, cleaning village water, giving kids digital tablets, and protecting wildlife.",
+      "act": "Act 6: Execution Levers, Case Studies & Systemic Frontiers",
+      "continuity_bridge": "Tata Trusts maps this pan-India footprint directly across all 17 Goals, showing what localized execution looks like.",
+      "eli15_takeaway": "Real sustainability touches real lives: granting slum families legal home deeds, cleaning village groundwater, giving rural kids digital learning tablets, and protecting sacred forests.",
       "key_facts": [
-        "SDG 1 (No Poverty): Supporting urban home ownership rights for Odisha's slum dwellers and financing women's banking cooperatives in Bihar.",
-        "SDG 2 (Zero Hunger): Supporting smallholder farm yields, grain fortification, and hot nutritious meals for tribal school children.",
-        "SDG 3 (Health): Constructing distributed cancer care hospitals and expanding mental health treatment networks.",
-        "SDG 4 (Education): Introducing digital learning tablets in rural schools and funding community reading libraries.",
-        "SDG 5 (Gender Equality): Training rural women in smartphone tools and advancing adolescent policy advocacy through field data.",
-        "SDG 6 (Clean Water): Recharging parched village aquifers in drought-hit Vidarbha and installing clean drinking water filtration systems in Gujarat.",
-        "SDG 7 (Clean Energy): Supplying remote tribal hamlets with solar micro-grids and clean cooking fuel alternatives.",
-        "SDG 8 (Decent Work): Training rural youth in vocational trades and connecting traditional handloom weavers to retail markets.",
-        "SDG 9 (Infrastructure): Expanding primary healthcare clinics for working-class families across industrial Nagpur.",
-        "SDG 10 (Reduced Inequality): Backing tribal youth development in Jharkhand through sports coaching and education.",
-        "SDG 11 (Sustainable Cities): Building urban municipal data dashboards to coordinate city waste collection and sanitation.",
-        "SDG 12 (Responsible Consumption): Establishing community-run ecotourism ventures in Nagaland to protect fragile forest ecosystems.",
-        "SDG 13 (Climate Action): Organizing philanthropic investment funds to back climate-resilient farming techniques.",
-        "SDG 14 (Life Below Water): Stabilizing sustainable fish harvesting and income security for artisanal fisherfolk in Andhra Pradesh.",
-        "SDG 15 (Life on Land): Restoring community forest groves and protecting freshwater wetland sanctuaries.",
-        "SDG 16 (Peace & Justice): Rescuing exploited children, fighting trafficking networks, and upholding legal rights for vulnerable victims.",
-        "SDG 17 (Partnerships): Bringing government ministries, private technology companies, and civil society together to ensure no one is left behind."
+        "SDG 1 (No Poverty): Legal land titles and permanent home rights for slum residents under the Jaga Mission in Odisha.",
+        "SDG 2 (Zero Hunger): Supporting smallholder farming methods and fortifying staples (milk, salt, oil) with micronutrients.",
+        "SDG 3 (Good Health): Distributed network of affordable cancer care hospitals and mental health clinics across tier-2 and tier-3 towns.",
+        "SDG 4 (Quality Education): Equipping remote schools with connected learning tablets and running community libraries.",
+        "SDG 5 (Gender Equality): Training rural women as 'Digital Sakhis' to teach smartphone literacy and digital banking.",
+        "SDG 6 (Clean Water): Recharging parched village aquifers and installing solar water purifiers in drought-prone Vidarbha.",
+        "SDG 7 (Clean Energy): Supplying remote tribal villages with solar microgrids and clean induction cookstoves.",
+        "SDG 8 (Decent Work): Revitalizing traditional artisanal handloom weaving clusters and providing youth vocational trades.",
+        "SDG 9 (Infrastructure): Constructing community health infrastructure and rural telemedicine links across industrial corridors.",
+        "SDG 10 (Reduced Inequalities): Mentoring tribal youth in Jharkhand through sports academies and educational scholarships.",
+        "SDG 11 (Sustainable Cities): Developing municipal data systems to coordinate urban solid waste collection.",
+        "SDG 12 (Responsible Consumption): Establishing community-run ecotourism and sustainable handicraft cooperatives in Nagaland.",
+        "SDG 13 (Climate Action): Supporting climate-resilient farming, crop diversification, and drip irrigation to withstand erratic monsoons.",
+        "SDG 14 (Life Below Water): Stabilizing artisanal fishing family incomes and supporting coastal mangrove wetland conservation.",
+        "SDG 15 (Life on Land): Restoring degraded community forest commons and protecting sacred forest groves in Central India.",
+        "SDG 16 (Peace, Justice & Strong Institutions): Backing legal aid clinics, child protection desks, and anti-human-trafficking networks.",
+        "SDG 17 (Partnerships): Bringing state ministries, corporate donors, technical institutes, and village panchayats together to fund and execute programs."
       ],
-      "mental_model": "A 17-piece jigsaw puzzle where every piece locks into place; if you remove even one piece, the picture of human and planetary survival remains broken.",
+      "mental_model": "A 17-piece jigsaw puzzle: every piece fits into place; remove even one piece, and the complete picture of human and planetary survival remains broken.",
       "checkpoint": {
-        "question": "What overarching message is demonstrated by mapping field interventions across all 17 SDGs in the Tata Trusts wheel?",
+        "question": "Which initiative under Tata Trusts' 17-Goal Impact Wheel addresses SDG 1 (No Poverty) by securing legal land titles for slum dwellers?",
         "options": [
-          "That only climate action matters while health and poverty can be ignored",
-          "That sustainable development requires synchronized action across social, economic, and ecological goals to ensure no one is left behind",
-          "That private philanthropy can replace all national government ministries",
-          "That economic growth naturally resolves all environmental damage without intervention"
+          "Digital Sakhis program",
+          "Jaga Mission in Odisha",
+          "Project Tiger",
+          "PM-KUSUM"
         ],
         "correct_index": 1,
-        "explanation": "The 17-goal impact wheel demonstrates that true sustainability demands simultaneous, integrated interventions across human welfare, economic dignity, and ecological protection."
+        "explanation": "The Jaga Mission in Odisha, supported by Tata Trusts, provided legal land rights and upgraded basic infrastructure for hundreds of thousands of urban slum dwellers."
       }
     }
   ]

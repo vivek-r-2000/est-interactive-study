@@ -1,6 +1,6 @@
 {
   "class_id": 19,
-  "title": "Class 19: Environmental Ethics & Wetland Conservation",
+  "title": "Environmental Ethics & Wetland Conservation",
   "total_slides": 16,
   "slides": [
     {
@@ -8,13 +8,13 @@
       "title": "Course Gateway: Uniting Planetary Ethics with Wetland Protection",
       "act": "Act 1: Global Wetland Governance & The Ramsar Framework",
       "continuity_bridge": "Launches Class 19 by pairing two inseparable challenges: the practical international treaty that safeguards Earth freshwater filters, and the moral philosophies determining how humans value non-human nature.",
-      "eli15_takeaway": "Wetlands clean our water and buffer floods, but people once drained them as worthless swamps. Saving them requires both legal treaties like the Ramsar Convention and an ethical compass that values nature beyond quick human profit.",
+      "eli15_takeaway": "Wetlands purify water and buffer storm floods, yet societies historically paved them over as wasteland. Safeguarding these vital ecosystems demands pairing binding global treaties with an ethical compass that respects nature beyond short-term human profit.",
+      "mental_model": "A home water filter paired with household rules: the Ramsar Convention provides the plumbing maintenance manual, while environmental ethics stops residents from smashing the filter to sell the scrap plastic.",
       "key_facts": [
-        "Class 19 core theme: Environmental Ethics and Wetland Conservation under the Ramsar Convention.",
-        "Bridges international environmental law with moral philosophy.",
-        "Shows why international treaties fail without an underlying land ethic that respects natural ecosystems."
+        "Core Mission: Unites international environmental law (Ramsar Convention) with philosophical value frameworks (Environmental Ethics).",
+        "Functional Significance: Wetlands act as planetary freshwater purifiers, flood buffers, and carbon sinks.",
+        "Governance Reality: International legal treaties remain ineffective without an underlying societal land ethic that respects non-human ecosystems."
       ],
-      "mental_model": "A home water filter and the house rules. Ramsar provides the plumbing rulebook to keep the filters intact, while environmental ethics provides the moral mindset that stops you from smashing the filter to sell the plastic.",
       "checkpoint": {
         "question": "What dual foundation does Class 19 establish for modern wetland conservation?",
         "options": [
@@ -32,14 +32,14 @@
       "title": "The Ramsar Treaty: Origins, Mandate, and Twin Conservation Pillars",
       "act": "Act 1: Global Wetland Governance & The Ramsar Framework",
       "continuity_bridge": "Moving from the broad lecture scope directly into the core legal instrument, this slide introduces the treaty signed on the shores of the Caspian Sea in 1971.",
-      "eli15_takeaway": "Signed in Ramsar, Iran in 1971, this treaty has two non-negotiable jobs: stop people from paving over wetlands, and make sure people use remaining wetlands wisely without ruining them.",
+      "eli15_takeaway": "Adopted in 1971, Ramsar is the world's oldest modern conservation treaty. It enforces two strict mandates: stop the destruction of wetlands and ensure that any human use of remaining wetlands is completely sustainable.",
+      "mental_model": "A high-yield bank trust fund: Ramsar locks the principal deposit so no one steals the capital (halting wetland encroachment), while allowing local communities to live off the recurring interest (sustainable wise use).",
       "key_facts": [
-        "Adopted on February 2, 1971 in the Iranian city of Ramsar on the shores of the Caspian Sea.",
-        "Official name: The Convention on Wetlands of International Importance especially as Waterfowl Habitat.",
-        "Entered into force internationally in late 1975.",
-        "Two-fold mandate: (1) Conservation and sustainable wise use of wetlands, and (2) Halting the encroachment and loss of wetlands."
+        "Treaty Adoption: February 2, 1971 in Ramsar, Iran, on the southern shores of the Caspian Sea.",
+        "Official Title: Convention on Wetlands of International Importance especially as Waterfowl Habitat (entered into force in late 1975).",
+        "Pillar 1 — Conservation & Wise Use: Ensuring wetlands sustain ecological character while supporting sustainable human livelihoods.",
+        "Pillar 2 — Halting Wetland Loss: Legally obligating contracting parties to prevent drainage, infilling, and spatial encroachment."
       ],
-      "mental_model": "A bank savings account with high interest. Ramsar locks the principal deposit so no one steals the capital (halting encroachment), while letting communities live on the generated interest (sustainable wise use).",
       "checkpoint": {
         "question": "Where and in what year was the Convention on Wetlands signed?",
         "options": [
@@ -57,13 +57,13 @@
       "title": "The 6 International Partner Organizations & Treaty Mechanics",
       "act": "Act 1: Global Wetland Governance & The Ramsar Framework",
       "continuity_bridge": "Because a treaty document cannot monitor mudflats and migratory flocks by itself, Ramsar partners with six dedicated global scientific bodies to enforce field conservation.",
-      "eli15_takeaway": "Ramsar does not work alone. Six giant international conservation groups supply the science, bird tracking, and field staff that help governments manage wetlands.",
+      "eli15_takeaway": "Ramsar operations rely on six specialized non-governmental scientific partners that track bird migrations, conduct water audits, and supply on-the-ground ecological guidance to member governments.",
+      "mental_model": "An international supreme court that appoints six elite engineering and wildlife forensic teams to inspect field reserves and audit water basins worldwide.",
       "key_facts": [
-        "Ramsar officially partners with 6 International Organization Partners (IOPs): BirdLife International, IUCN (International Union for Conservation of Nature), IWMI (International Water Management Institute), Wetlands International, WWF International (World Wide Fund for Nature), and WWT (Wildfowl & Wetlands Trust).",
-        "Recognizes wetland ecological goods and services as vital for water security, food security, and poverty alleviation.",
-        "Treaty operational framework provides open, collaborative, and flexible scientific mechanisms across both ecosystems and migratory species."
+        "6 Official International Organization Partners (IOPs): BirdLife International, IUCN (International Union for Conservation of Nature), IWMI (International Water Management Institute), Wetlands International, WWF International (World Wide Fund for Nature), and WWT (Wildfowl & Wetlands Trust).",
+        "Operational Role: Provide technical field expertise, species population censuses, and policy audits.",
+        "Resource Scope: Secures freshwater supplies, commercial fisheries, and flood protection for vulnerable global populations."
       ],
-      "mental_model": "A federal supreme court teaming up with six elite specialist engineering and forensic teams to inspect the field sites and run the tests.",
       "checkpoint": {
         "question": "Which of the following is NOT one of the six official Ramsar International Organization Partners (IOPs)?",
         "options": [
@@ -81,14 +81,13 @@
       "title": "Article 1.1: The Legal Definition of a Wetland (Depth <= 6m)",
       "act": "Act 2: Wetland Taxonomy & India's Conservation Geography",
       "continuity_bridge": "Before a country can protect or designate a wetland, it must apply Ramsar's exact legal definition to separate true wetlands from deep ocean waters.",
-      "eli15_takeaway": "A wetland is any marsh, swamp, lake, river, or shallow coastal water where the water is either standing or flowing, fresh or salty, and the marine depth at low tide does not exceed 6 meters (about 20 feet). Deep open oceans are strictly excluded.",
+      "eli15_takeaway": "Under international law, a wetland is any shallow water body—fresh, brackish, or salty, natural or man-made. For coastal marine waters, it only counts as a wetland if the depth at low tide does not exceed 6 meters.",
+      "mental_model": "The planet's splash zone: if water is shallow enough for sunlight to reach benthic plants or low tide stays under two stories high (\\(\\le 6\\text{ m}\\)), Ramsar claims jurisdiction.",
       "key_facts": [
-        "Article 1.1 legal text: Areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six meters.",
-        "Covers both natural habitats (peat bogs, mangrove swamps, estuaries) and human-made sites (paddy fields, salt pans, reservoirs).",
-        "Includes subterranean hydrology such as karst underground cave systems.",
-        "Excludes deep marine ocean zones exceeding the 6-meter low-tide threshold."
+        "Article 1.1 Legal Text: Areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six meters.",
+        "Included Habitats: Natural peat bogs, mangroves, estuaries, rivers, lakes, karst cave streams, and human-made rice paddies, salt pans, and reservoirs.",
+        "Excluded Zones: Deep open oceans and marine coastal waters where depth at low tide exceeds 6 meters."
       ],
-      "mental_model": "The splash zone of the planet. If the water is shallow enough that sunlight reaches the bottom or low tide stays under two stories high (6 meters), Ramsar claims it.",
       "checkpoint": {
         "question": "What is the precise depth limit for coastal marine waters under Ramsar Article 1.1 at low tide?",
         "options": [
@@ -106,13 +105,16 @@
       "title": "The 5 Wetland Hydrological Classes & World Wetlands Day",
       "act": "Act 2: Wetland Taxonomy & India's Conservation Geography",
       "continuity_bridge": "Armed with the Article 1.1 legal boundary, scientists classify all global wetlands into five hydrological categories ranging from open coastlines to inland swamps.",
-      "eli15_takeaway": "Earth has five main wetland flavors: Marine (rocky shores and reefs), Estuarine (mangroves and river mouths), Lacustrine (lakes), Riverine (streams and rivers), and Palustrine (marshes and bogs). Every year on February 2, the world celebrates World Wetlands Day.",
+      "eli15_takeaway": "Global wetlands split into five hydrological classes based on water origin: open coastlines, river mouths, lakes, running streams, and freshwater bogs. Every February 2, World Wetlands Day marks the anniversary of the 1971 convention.",
+      "mental_model": "A 5-way hydrological sorting hat: Marine = open salty shore; Estuarine = where river meets ocean; Lacustrine = standing freshwater lake; Riverine = flowing stream corridor; Palustrine = soggy inland peat sponge.",
       "key_facts": [
-        "5 major recognized wetland classifications: Marine (coastal lagoons, rocky shores, coral reefs); Estuarine (deltas, tidal mudflats, mangrove swamps); Lacustrine (wetlands associated with lakes); Riverine (riparian zones along rivers and streams); Palustrine (marshy habitats like freshwater marshes, swamps, and bogs).",
-        "Ramsar is the oldest modern global environmental convention and the only global treaty focused on a single biome family.",
-        "Celebrated every year on February 2 as World Wetlands Day to mark the 1971 convention signing."
+        "1. Marine: Coastal shallow waters, rocky shores, and coral reefs.",
+        "2. Estuarine: Tidal deltas, salt marshes, mudflats, and mangrove swamps.",
+        "3. Lacustrine: Wetland areas associated with natural or artificial lakes.",
+        "4. Riverine: Riparian wetlands along freshwater rivers and creeks.",
+        "5. Palustrine: Non-tidal marshy habitats (freshwater marshes, swamps, bogs, fens; derived from Latin palus, marsh).",
+        "World Wetlands Day: Observed annually on February 2 to commemorate the 1971 signing in Ramsar, Iran."
       ],
-      "mental_model": "A 5-way sorting hat for water landscapes: Marine = salty open shore; Estuarine = where river kisses sea; Lacustrine = big lake bowl; Riverine = flowing water highway; Palustrine = soggy sponge marsh.",
       "checkpoint": {
         "question": "What does the term Palustrine mean in wetland classification?",
         "options": [
@@ -130,16 +132,16 @@
       "title": "Ramsar in India: Timeline, Milestones, and Scale Extremes",
       "act": "Act 2: Wetland Taxonomy & India's Conservation Geography",
       "continuity_bridge": "Moving from global taxonomy to domestic execution, this slide charts India's journey from ratifying the treaty in 1981 to building South Asia's largest protected wetland network.",
-      "eli15_takeaway": "India joined Ramsar in 1981 and started protecting sites in 1982 with Chilika Lake and Keoladeo Bird Sanctuary. Today India protects over 100 sites, led by Tamil Nadu with 20 sites. Sundarbans is the largest; Renuka Lake in Himachal Pradesh is the smallest.",
+      "eli15_takeaway": "India ratified Ramsar in 1981, designating Chilika Lake and Keoladeo Bird Sanctuary in 1982. India's network has expanded to over 100 sites, spanning from the massive Sundarbans mangroves to the tiny 20-hectare Renuka Lake in Himachal Pradesh.",
+      "mental_model": "A national wildlife chain spanning extremes: from a coastal mangrove wilderness the size of a small nation (Sundarbans) down to a sacred mountain pond (Renuka).",
       "key_facts": [
-        "India joined the Ramsar Convention in October 1981; accession entered into formal force on February 1, 1982.",
-        "First two designated Indian Ramsar sites (1981/1982): Chilika Lake (Odisha brackish lagoon) and Keoladeo National Park / Bharatpur (Rajasthan bird haven).",
-        "National total reached 103 Ramsar sites (as of late 2026 update, out of 2,536 sites worldwide).",
-        "Tamil Nadu holds the highest number of Ramsar sites in India (20 sites).",
-        "Largest Indian Ramsar site: Sundarbans Wetland (~4,230 sq km, West Bengal mangrove wilderness).",
-        "Smallest Indian Ramsar site: Renuka Wetland (~0.2 sq km / ~20 hectares, Himachal Pradesh natural lake)."
+        "Ratification: Accession in October 1981; entered into force on February 1, 1982.",
+        "First 2 Designated Sites (1981/1982): Chilika Lake (Odisha brackish coastal lagoon) and Keoladeo National Park (Bharatpur, Rajasthan migratory bird haven).",
+        "Network Scale: Reached 103 Ramsar sites nationwide (out of 2,536 globally as of late 2026).",
+        "State Leader: Tamil Nadu holds the highest number of Ramsar sites (20 sites).",
+        "Largest Indian Site: Sundarbans Wetland (West Bengal, \\(\\sim 4{,}230\\text{ km}^2\\)).",
+        "Smallest Indian Site: Renuka Wetland (Himachal Pradesh, \\(\\sim 0.2\\text{ km}^2\\) or \\(\\sim 20\\text{ hectares}\\))."
       ],
-      "mental_model": "A national chain of protected wildlife refuges spanning from a mammoth coastal mangrove forest the size of a small country (Sundarbans) down to a tiny sacred mountain pond (Renuka).",
       "checkpoint": {
         "question": "Which state in India possesses the highest number of Ramsar sites?",
         "options": [
@@ -157,13 +159,14 @@
       "title": "India's Wetland Network: Spatial Biomes & Threatened Basins",
       "act": "Act 2: Wetland Taxonomy & India's Conservation Geography",
       "continuity_bridge": "This national map grounds the treaty statistics in geography, revealing how designated sites span every Indian climate zone from Himalayan salt lakes to tropical backwaters.",
-      "eli15_takeaway": "India's Ramsar map covers cold desert lakes in Ladakh (Tso Kar), bird havens in Rajasthan (Sambhar Lake), floating islands in Manipur (Loktak Lake), and tropical lagoons in Kerala (Vembanad). When human damage threatens a site's ecological character, Ramsar flags it on the Montreux Record.",
+      "eli15_takeaway": "India's Ramsar sites span high-altitude Himalayan lakes, desert basins, and tropical lagoons. When human encroachment or pollution threatens a site's ecological character, Ramsar places it on an emergency endangered watchlist called the Montreux Record.",
+      "mental_model": "An intensive care unit (ICU) dashboard inside a hospital: the general Ramsar list represents registered clinics, while the Montreux Record flags critical patients needing emergency ecological intervention.",
       "key_facts": [
-        "Covers diverse Indian biomes: High-altitude Trans-Himalayan lakes (Tsomoriri, Tso Kar, Chandra Taal); Central bird stops (Sultanpur, Bhindawas, Bhoj); Coastal lagoons and backwaters (Vembanad-Kol, Ashtamudi, Kolleru, Chilika).",
-        "Montreux Record connection: A register of wetland sites on the Ramsar List where changes in ecological character have occurred, are occurring, or are likely to occur due to technological developments, pollution, or human interference.",
-        "Indian Montreux Record sites: Keoladeo National Park (Rajasthan) and Loktak Lake (Manipur, famous for floating phumdis). Chilika Lake was placed on the Montreux Record in 1993 but removed in 2002 after successful mouth restoration."
+        "Geographic Diversity: Trans-Himalayan high-altitude lakes (Tsomoriri, Tso Kar), inland saline basins (Sambhar Lake), and southern brackish backwaters (Vembanad-Kol, Ashtamudi).",
+        "Montreux Record Mandate: A specific register of Ramsar wetlands where ecological character has changed, is changing, or is likely to change from human interference, technological pollution, or urban development.",
+        "Current Indian Montreux Sites: Keoladeo National Park (Rajasthan, water scarcity) and Loktak Lake (Manipur, choking of floating phumdis by Ithai barrage).",
+        "Restoration Triumph: Chilika Lake (Odisha) was added to the Montreux Record in 1993 due to siltation and weed choke, but was successfully restored by dredging a new sea mouth and removed from the record in 2002."
       ],
-      "mental_model": "An intensive care unit (ICU) board inside a hospital. The map shows every healthy clinic (Ramsar list), while the Montreux Record highlights the critical patients undergoing emergency surgery.",
       "checkpoint": {
         "question": "What is the purpose of the Montreux Record under the Ramsar Convention?",
         "options": [
@@ -181,14 +184,14 @@
       "title": "The Ethical Dilemma: Defining Right and Wrong in Nature",
       "act": "Act 3: Philosophical Foundations: Human Duty vs Nature's Rights",
       "continuity_bridge": "Wetland treaties can set legal boundaries, but laws remain hollow without answering the philosophical question: what moral duty do humans owe to non-human life?",
-      "eli15_takeaway": "Ethics is the branch of philosophy that defines right and wrong actions. Environmental ethics asks how humans ought to treat trees, animals, rivers, and the atmosphere, especially when human greed clashes with planetary health.",
+      "eli15_takeaway": "Ethics systematizes concepts of right and wrong behavior. Environmental ethics focuses that moral inquiry onto nature, evaluating whether humans have duties toward animals, plants, rivers, and future generations.",
+      "mental_model": "A moral compass on a wilderness trail: environmental laws dictate what forest rangers can fine you for; environmental ethics dictates why vandalizing a bird's nest is wrong even when no ranger is watching.",
       "key_facts": [
-        "Ethics is the branch of philosophy focused on systematizing, defending, and recommending concepts of right and wrong conduct.",
-        "Environmental ethics examines moral relationships between human beings and the natural environment.",
-        "Identifies frequent ethical conflicts where individual short-term economic gains clash with collective ecological preservation.",
-        "Core realization: In the long run, what sustains the environment also preserves human society."
+        "Definition: Environmental ethics examines moral relationships and duties governing human conduct toward the natural world.",
+        "Core Conflict: Evaluates recurring clashes between immediate corporate/human financial gains and long-term ecological stability.",
+        "Intergenerational Equity: Balances current consumer consumption against the survival needs of future human and non-human generations.",
+        "Underlying Axiom: Degrading the biosphere ultimately undermines human survival."
       ],
-      "mental_model": "A moral compass on a hiking trail. Legal rules tell you what a ranger will fine you for; environmental ethics tells you why kicking a bird nest is wrong even if no ranger is watching.",
       "checkpoint": {
         "question": "What is the central focus of environmental ethics?",
         "options": [
@@ -206,14 +209,14 @@
       "title": "The Guiding Principle: Interdependence, Food Webs, and Biotic Rights",
       "act": "Act 3: Philosophical Foundations: Human Duty vs Nature's Rights",
       "continuity_bridge": "Building on the definition of ethics, this slide establishes the primary scientific and moral argument: all living beings hold a fundamental right to exist because we are intertwined in food webs.",
-      "eli15_takeaway": "Every living thing on Earth has a right to live. Because food webs link humans, animals, plants, and water cycles together, destroying nature violates the basic rights of our fellow living creatures.",
+      "eli15_takeaway": "Every living species possesses an inherent right to exist. Because biological food webs bind humans, predators, plants, and microorganisms into one physical system, destroying wildlife destroys our shared life-support network.",
+      "mental_model": "A giant web: snapping an outer strand because you think it is unimportant sends shockwaves through every other thread, ultimately destabilizing the center where humans sit.",
       "key_facts": [
-        "Core ethical premise: All life forms on Earth possess a fundamental right to exist.",
-        "Scientific basis: Biological food webs prove humans, animals, plants, and abiotic resources are deeply interdependent.",
-        "Human destruction of natural ecosystems is an unethical denial of other species' right to live.",
-        "Recognizing non-human entities and respecting their right to exist is a primary moral duty of humanity."
+        "Biotic Right to Exist: All living organisms hold an intrinsic moral right to live, reproduce, and occupy habitat.",
+        "Trophic Interdependence: Food web dynamics prove that primary producers, herbivores, predators, and decomposers form a tightly linked biophysical web.",
+        "Moral Violation: Driving species to extinction for consumer convenience denies non-human organisms their fundamental right to existence.",
+        "Planetary Stewardship: Respecting non-human survival needs is a non-negotiable moral responsibility of humanity."
       ],
-      "mental_model": "A giant spiderweb. If you cut one outer strand because you think it does not matter, the shockwave shakes every other strand, including the one holding you up.",
       "checkpoint": {
         "question": "Why does ecological food-web science reinforce environmental ethics?",
         "options": [
@@ -231,14 +234,14 @@
       "title": "The Three Worldviews: Anthropocentrism, Biocentrism, and Ecocentrism",
       "act": "Act 3: Philosophical Foundations: Human Duty vs Nature's Rights",
       "continuity_bridge": "When society faces tough choices like building gas-powered vehicles or clearing forests, people evaluate the dilemma through three distinct philosophical lenses.",
-      "eli15_takeaway": "Think of three circles. Anthropocentrism puts humans alone in the center. Biocentrism puts all living things (humans and animals) in the center. Ecocentrism puts the entire ecosystem\u2014including rivers, soil, and rocks\u2014in the center.",
+      "eli15_takeaway": "Environmental philosophy splits into three expanding circles: Anthropocentrism values only humans; Biocentrism extends equal moral rights to all living organisms; Ecocentrism grants moral worth to the whole ecosystem, including rivers, soils, and rocks.",
+      "mental_model": "Who gets a seat at the dinner table? Anthropocentrism seats only humans; Biocentrism invites every animal and plant; Ecocentrism gives seats to the dining table, the kitchen floor, and the air in the room.",
       "key_facts": [
-        "Real-world ethical dilemmas: Gas-powered vehicle production, clearing forests for consumer goods, causing species extinction for convenience, intergenerational climate debt.",
-        "1. Anthropocentrism: Humans are the sole center of moral importance; nature exists solely as a resource for human consumption.",
-        "2. Biocentrism: All living creatures possess equal moral value; human needs do not automatically trump animal life.",
-        "3. Ecocentrism: The whole ecosystem (biotic living species and abiotic soil, water, air) has intrinsic value and operates as an interconnected whole."
+        "1. Anthropocentrism (Human-Centered): Humans are the sole holders of moral significance; nature exists solely as an instrument to satisfy human desires.",
+        "2. Biocentrism (Life-Centered): All living creatures possess intrinsic moral value; human survival needs do not automatically override non-human life.",
+        "3. Ecocentrism (System-Centered): The entire ecosystem—living biotic communities plus abiotic soil, water, air, and mineral flows—possesses direct intrinsic moral worth.",
+        "Modern Dilemmas: Industrial vehicle emissions, clearing virgin forest for cattle feed, accelerating species extinctions, and passing environmental debt to future generations."
       ],
-      "mental_model": "Who sits at the dinner table? Anthropocentrism seats only humans; Biocentrism invites every animal and plant; Ecocentrism insists the table, the kitchen floor, and the air in the room also have a seat.",
       "checkpoint": {
         "question": "Which philosophical view gives moral importance to both living organisms and non-living elements like soil and rivers?",
         "options": [
@@ -248,7 +251,7 @@
           "Biocentrism"
         ],
         "correct_index": 2,
-        "explanation": "Ecocentrism treats the whole ecosystem\u2014both living organisms and non-living abiotic components\u2014as having intrinsic moral worth."
+        "explanation": "Ecocentrism treats the whole ecosystem—both living organisms and non-living abiotic components—as having intrinsic moral worth."
       }
     },
     {
@@ -256,14 +259,14 @@
       "title": "Aldo Leopold's Land Ethic: The Biotic Community as a Citizen",
       "act": "Act 3: Philosophical Foundations: Human Duty vs Nature's Rights",
       "continuity_bridge": "Ecocentrism found its definitive voice in 1949 when forester Aldo Leopold published the Land Ethic, rewriting humanity's role from conqueror of nature to ordinary community member.",
-      "eli15_takeaway": "Aldo Leopold taught that an action is right only when it preserves the integrity, stability, and beauty of the living community, and wrong when it hurts it. Stop seeing land as property you own; see it as a community you belong to.",
+      "eli15_takeaway": "Aldo Leopold redefined conservation: an action is morally right when it preserves the integrity, stability, and beauty of the biotic community, and wrong when it does otherwise. Humans are not rulers of nature, but ordinary members of a shared living community.",
+      "mental_model": "Stepping down as the self-appointed conquering tyrant of an island to become an ordinary voting citizen on the town council protecting the community reservoir.",
       "key_facts": [
-        "Author & text: Aldo Leopold, A Sand County Almanac (published posthumously in 1949).",
-        "Famous maxim: A thing is right when it tends to preserve the integrity, stability, and beauty of the biotic community. It is wrong when it tends otherwise.",
-        "Radical shift in ethics: Shifting human role from conqueror of the land-community to plain member and citizen of it.",
-        "Commodity vs Community: Abusing land comes from viewing it as property; loving and respecting land comes from viewing it as a shared biotic community."
+        "Author & Core Text: Aldo Leopold, A Sand County Almanac (published posthumously in 1949).",
+        "The Leopold Golden Rule: 'A thing is right when it tends to preserve the integrity, stability, and beauty of the biotic community. It is wrong when it tends otherwise.'",
+        "Social Shift: Changes Homo sapiens from conqueror of the land-community to plain member and citizen of it.",
+        "Community vs Commodity: Viewing land as private property leads to abuse; viewing land as a living community inspires love and ethical restraint."
       ],
-      "mental_model": "Moving from being the arrogant conqueror of an island who chops down every palm tree, to becoming an ordinary resident on the town council who protects the island's water supply.",
       "checkpoint": {
         "question": "According to Aldo Leopold's Land Ethic (1949), when is an action ethically right?",
         "options": [
@@ -281,14 +284,14 @@
       "title": "Anthropocentrism vs Biocentrism: Instrumental vs Intrinsic Value",
       "act": "Act 4: Modern Ecological Philosophies & Planetary Accountability",
       "continuity_bridge": "To see how environmental theories shape real conservation policies, we must examine the debate between Anthropocentrism's instrumental value and Biocentrism's intrinsic worth.",
-      "eli15_takeaway": "Instrumental value means something is only valuable as a tool for someone else (like a shovel or cash crop). Intrinsic value means something has worth all on its own, even if humans never make a single rupee from it.",
+      "eli15_takeaway": "Instrumental value means something is useful only as a tool for someone else (like lumber or cash crops). Intrinsic value means something has worth in its own right, whether humans ever benefit from it or not.",
+      "mental_model": "A violin versus a pet companion: a violin has instrumental value because of the music it plays for you; your dog has intrinsic value simply because she lives, feels, and exists.",
       "key_facts": [
-        "Anthropocentrism views nature through instrumental value (nature as an instrument or means to human ends).",
-        "Anthropocentric conservation protects nature primarily so future human generations still have clean water and raw materials (intergenerational utility).",
-        "Rooted historically in traditional Western philosophical thought.",
-        "Biocentrism grants intrinsic value (nature is an end in itself). Humans hold a direct moral duty to protect living things even when doing so offers zero economic benefit to humans."
+        "Instrumental Value (Anthropocentric): Nature is valued strictly as a means to human ends (raw materials, medicine, tourism revenue).",
+        "Anthropocentric Conservation: Protects water and forests so future human generations avoid resource shortages (intergenerational utility).",
+        "Intrinsic Value (Biocentric): Non-human organisms possess inherent worth regardless of human financial or physical use.",
+        "Ethical Mandate: Biocentrism obligates humanity to protect endangered species even when their survival yields zero economic dividend."
       ],
-      "mental_model": "A musical instrument vs a pet puppy. You value a violin because of the tunes you can play on it (instrumental value). You value your dog simply because he lives and breathes (intrinsic value).",
       "checkpoint": {
         "question": "What distinction separates instrumental value from intrinsic value in environmental philosophy?",
         "options": [
@@ -306,14 +309,14 @@
       "title": "Ecocentrism & Marshall's Postmodern Triad",
       "act": "Act 4: Modern Ecological Philosophies & Planetary Accountability",
       "continuity_bridge": "While biocentrism focuses on individual plants and animals, ecocentrism steps back to view entire watersheds. This led philosopher Alan Marshall to map out three modern ethical extensions.",
-      "eli15_takeaway": "Ecocentrism does not worry about saving one single squirrel; it protects the whole forest that sustains all squirrels. In modern environmental thought, Alan Marshall classified the last 40 years of green philosophy into three buckets: Libertarian Extension, Ecologic Extension, and Conservation Ethics.",
+      "eli15_takeaway": "Ecocentrism safeguards whole watersheds and nutrient cycles rather than individual animals. Scholar Alan Marshall grouped modern green ethics into three branches: Libertarian Extension, Ecologic Extension, and Conservation Ethics.",
+      "mental_model": "Looking at a brick wall versus individual grains of sand: ecocentrism cares about whether the entire building stands firm, rather than inspecting each loose brick.",
       "key_facts": [
-        "Ecocentrism operates as a holistic philosophy prioritizing ecosystem health over individual organisms.",
-        "Treats abiotic elements (mountains, rivers, sediments) with equal ethical standing to biotic species.",
-        "Aligns with traditional Eastern ecological philosophies that view humanity as an integral part of an organic cosmic whole.",
-        "Alan Marshall's 3 postmodern categories (developed over the last 40 years): 1. Libertarian Extension, 2. Ecologic Extension, 3. Conservation Ethics."
+        "Ecocentric Holism: Focuses on ecological processes, food webs, and geochemical cycles rather than individual organisms.",
+        "Abiotic Inclusion: Grants moral standing to non-living elements (rivers, mountains, topsoils, atmosphere).",
+        "Philosophical Parallels: Resonates with Eastern ecological traditions viewing humanity as an interconnected part of a larger cosmic whole.",
+        "Alan Marshall's 3 Modern Categories: 1. Libertarian Extension, 2. Ecologic Extension, 3. Conservation Ethics."
       ],
-      "mental_model": "Looking at a brick wall vs looking at single bricks. Ecocentrism cares about whether the entire building stands firm, rather than inspecting each loose grain of sand.",
       "checkpoint": {
         "question": "Which scholar developed the three modern categories of Libertarian Extension, Ecologic Extension, and Conservation Ethics?",
         "options": [
@@ -331,14 +334,14 @@
       "title": "Marshall's Extension Models: Civil Rights for Nature vs Gaia Hypothesis",
       "act": "Act 4: Modern Ecological Philosophies & Planetary Accountability",
       "continuity_bridge": "Opening Marshall's framework, this slide contrasts the political strategy of extending civil rights to non-humans with the scientific insight that Earth functions as a living superorganism.",
-      "eli15_takeaway": "Libertarian Extension is like a civil rights movement for wildlife\u2014it argues animals and rivers should have legal rights just like people. Ecologic Extension is the scientific view, like the Gaia hypothesis, which shows Earth acts as a single living, breathing, self-regulating body.",
+      "eli15_takeaway": "Libertarian Extension treats wildlife protection like a civil rights movement, arguing animals and rivers deserve legal rights. Ecologic Extension applies scientific systems thinking, like James Lovelock's Gaia hypothesis, viewing Earth as a single, self-regulating living body.",
+      "mental_model": "The ballot box versus the bloodstream: Libertarian Extension grants wildlife legal passports and rights; Ecologic Extension recognizes that all species are cells circulating inside one planetary body.",
       "key_facts": [
-        "1. Libertarian Extension: Echoes human civil rights movements by extending equal moral and legal rights to non-human members of the earth community. Core foundation of Deep Ecology (Arne Naess), arguing for inherent worth.",
-        "Libertarian Extension acts as a political reflection of human rights onto the natural world.",
-        "2. Ecologic Extension: Shifts away from individual rights to emphasize the fundamental scientific interdependence of all biological entities.",
-        "Acts as a scientific reflection of nature, exemplified by James Lovelock's Gaia hypothesis (Earth functioning as a self-regulating superorganism)."
+        "1. Libertarian Extension (Political / Civil Rights): Applies human rights principles to the non-human world; forms the foundation of Arne Naess's Deep Ecology by asserting intrinsic value for all life.",
+        "Deep Ecology Principles: Intrinsic worth of all living beings, demand for human population stability, and obligation to alter destructive economic structures.",
+        "2. Ecologic Extension (Scientific / Systems): Emphasizes biological and physical interdependence across whole systems.",
+        "The Gaia Model: Exemplified by James Lovelock's Gaia hypothesis, which models the biosphere and atmosphere as an integrated, self-regulating superorganism."
       ],
-      "mental_model": "The ballot box vs the bloodstream. Libertarian Extension wants to give wild animals a legal passport and bill of rights; Ecologic Extension realizes we are all cells circulating inside one planetary body.",
       "checkpoint": {
         "question": "How does Alan Marshall distinguish Libertarian Extension from Ecologic Extension?",
         "options": [
@@ -356,14 +359,14 @@
       "title": "Conservation Ethics & Shallow Ecology: Kyoto Carbon Utility",
       "act": "Act 4: Modern Ecological Philosophies & Planetary Accountability",
       "continuity_bridge": "Marshall's final category pulls us right back into international treaty rooms, where governments protect nature not out of deep love, but because doing so serves human survival and economic stability.",
-      "eli15_takeaway": "Conservation Ethics\u2014also called Shallow Ecology\u2014protects nature only because nature is useful to humans. Governments at the 1997 Kyoto Summit pushed carbon limits not because they loved carbon molecules, but because runaway global warming threatens human cities and economies.",
+      "eli15_takeaway": "Conservation Ethics—also called Shallow Ecology—protects nature strictly for human survival and economic stability. At the 1997 Kyoto Summit, governments agreed on carbon emissions limits not out of love for the atmosphere, but to prevent economic collapse from climate disruption.",
+      "mental_model": "Fixing the brakes on your delivery van: you replace worn brake pads not because you care about the brake pads' feelings, but because without them, your van crashes and your business fails.",
       "key_facts": [
-        "Marshall's 3rd category: Conservation Ethics (often termed Shallow Ecology in contrast to Deep Ecology).",
-        "Focuses strictly on the extrinsic or instrumental utility of the environment to human welfare, health, and economic prosperity.",
-        "Rejects intrinsic value for non-human nature: trees and wetlands matter because they clean air and protect human settlements from floods.",
-        "Diplomatic example: Provided the core political arguments at the Kyoto Summit in 1997, where nations agreed on greenhouse gas caps to avoid economic and human disruption."
+        "3rd Category — Conservation Ethics (Shallow Ecology): Rejects intrinsic rights for nature; values the environment purely for human material welfare, resource security, and economic health.",
+        "Contrasting Deep vs Shallow: Deep ecology protects nature for its own sake; shallow ecology protects nature to avoid human hardship.",
+        "Kyoto Protocol (1997) Application: Carbon mitigation treaties driven by shallow utilitarian logic—capping greenhouse gases to protect coastal cities, agriculture, and global markets.",
+        "Policy Dominance: Represents the primary language of mainstream corporate sustainability and government environmental legislation."
       ],
-      "mental_model": "Fixing your delivery truck's brakes. You change the brake pads not because you care about the brake pads' personal feelings, but because without them, you crash your delivery truck.",
       "checkpoint": {
         "question": "Why is Conservation Ethics often labeled as Shallow Ecology?",
         "options": [
@@ -381,14 +384,14 @@
       "title": "Planetary Synthesis: The Moral Imperative of Technological Restraint",
       "act": "Act 4: Modern Ecological Philosophies & Planetary Accountability",
       "continuity_bridge": "Bringing the 16 slides full circle, this final slide connects wetland loss and climate chaos to human conscience: will technology serve planetary life, or consume it?",
-      "eli15_takeaway": "Just because we have the technology to drain every swamp, burn every barrel of oil, and level every mountain does not make it morally right. Environmental ethics is the ultimate brake pedal on human greed, reminding us that protecting Earth is a moral duty to all living beings.",
+      "eli15_takeaway": "Possessing the technology to drain wetlands, level mountains, and burn fossil fuels does not give humans the moral right to do so. Environmental ethics serves as the ultimate brake pedal on human power, demanding that technology respect the life-support systems of our planet.",
+      "mental_model": "Holding an industrial chainsaw: technology gives you the raw mechanical power to clear an ancient woodland in an afternoon; environmental ethics is the wisdom to turn off the engine and nurture the living canopy.",
       "key_facts": [
-        "Central philosophical question: What moral duty do humans have toward non-human entities and future generations?",
-        "Technological dilemma: Human convenience and rapid economic expansion repeatedly collide with plant diversity, wetland stability, and climate health.",
-        "Pollution and ecological destruction inflict irreversible harm on both human societies and non-human species.",
-        "Closing ethical imperative: Environmental preservation is not merely a legal compliance check or economic calculation; it is our primary moral obligation to planetary life."
+        "The Ultimate Philosophical Inquiry: What moral responsibilities do humans have toward non-human organisms and future biospheric stability?",
+        "Technological Asymmetry: Human engineering capability to extract resources vastly exceeds nature's natural biological recovery speed.",
+        "Irreversible Ecological Consequences: Industrial pollution and biodiversity loss inflict permanent damage on both ecosystems and future human welfare.",
+        "Core Takeaway: Environmental protection is neither an optional luxury nor a mere regulatory burden; it is an absolute moral duty to planetary life."
       ],
-      "mental_model": "Having a high-powered chainsaw in your hands. Technology gives you the power to fell an ancient forest in an afternoon; environmental ethics is the wisdom that tells you to turn the chainsaw off and plant saplings instead.",
       "checkpoint": {
         "question": "What is the ultimate takeaway of Class 19 regarding technological advance and environmental ethics?",
         "options": [

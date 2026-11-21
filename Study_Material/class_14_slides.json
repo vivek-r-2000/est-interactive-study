@@ -8,13 +8,13 @@
       "title": "Class 14: Green Computing & Sustainable ICT Architecture",
       "act": "Act 1: The IT Footprint Crisis",
       "continuity_bridge": "We begin Class 14 by establishing the hidden physical scale of the digital economy: microchips, server farms, and endpoint devices.",
-      "eli15_takeaway": "Computers feel clean because the pollution happens out of sight inside distant mines, chemical fabs, coal-fired data centers, and burning scrap heaps.",
+      "eli15_takeaway": "Your phone feels clean and weightless in your hand, but behind that glass screen sits a massive physical engine: open-pit mines, chemical chip fabs, coal-fired data centers, and burning scrap heaps.",
       "key_facts": [
-        "Global Information and Communications Technology (ICT) infrastructure generates roughly 2% of worldwide CO2 emissions, matching the commercial airline industry.",
-        "Hardware requires a full lifecycle audit: resource extraction, wafer fabrication, operational electricity, and end-of-life disposal.",
-        "Sustainable ICT balances compute throughput (instructions per cycle) with power consumption (watts per megaflop) and lifecycle embodied materials."
+        "Global Information and Communications Technology (ICT) infrastructure creates roughly 2% of worldwide CO2 emissions, directly matching the commercial aviation industry.",
+        "Hardware demands a full cradle-to-grave lifecycle audit across four stages: raw resource extraction, wafer fabrication, operational electricity, and end-of-life disposal.",
+        "Sustainable ICT balances compute throughput (instructions per cycle) with power efficiency (watts per megaflop) and lifecycle embodied materials."
       ],
-      "mental_model": "The Iceberg of Clean Tech: Your phone screen looks spotless, but beneath it sits an unseen mountain of crushed ore, boiled water, and toxic slag.",
+      "mental_model": "The Tech Iceberg: You only see the shiny 10% above water (the sleek glass screen). The other 90% is hidden beneath the surface—crushed rock, toxic wastewater, and coal smoke.",
       "checkpoint": {
         "question": "Roughly what share of global greenhouse gas emissions comes from the global ICT ecosystem?",
         "options": [
@@ -24,7 +24,7 @@
           "Roughly 28%"
         ],
         "correct_index": 1,
-        "explanation": "ICT operations and device manufacturing produce approximately 2% of global CO2 emissions, directly on par with global aviation."
+        "explanation": "The global ICT ecosystem generates roughly 2% of worldwide CO2 emissions, placing its carbon footprint on par with the entire commercial airline industry."
       }
     },
     {
@@ -32,14 +32,14 @@
       "title": "Mineral Intensity and the Triple Environmental Burden of Technology",
       "act": "Act 1: The IT Footprint Crisis",
       "continuity_bridge": "Because computing requires microchips and batteries, we must examine the physical earth mined to build them.",
-      "eli15_takeaway": "A single phone packs 35 distinct geological minerals; digging them up tears down forests, poisons local water tables, and burns heavy diesel fuels.",
+      "eli15_takeaway": "A single smartphone packs 35 different geological minerals dug out of the earth. Digging them up tears down forests, poisons local drinking water, and burns tons of diesel fuel.",
       "key_facts": [
         "A modern smartphone contains around 35 distinct raw mineral commodities.",
-        "Silicon is the primary material by weight, followed immediately by petroleum-derived plastics.",
-        "Finished hardware incorporates heavy metals and conductors: iron (Fe), aluminium (Al), copper (Cu), lead (Pb), zinc (Zn), tin (Sn), nickel (Ni), and barium (Ba).",
-        "Computing creates a triple environmental burden: raw mineral extraction (mining), operational electricity draw (grid carbon), and toxic discard (e-waste)."
+        "Silicon is the number-one material by weight, followed immediately by petroleum-derived plastics.",
+        "Finished hardware packs heavy metals and conductors: iron (Fe), aluminium (Al), copper (Cu), lead (Pb), zinc (Zn), tin (Sn), nickel (Ni), and barium (Ba).",
+        "Computing creates a triple environmental burden: 1) raw mineral extraction (mining habitat loss), 2) operational grid electricity (running chips), and 3) toxic discard (e-waste)."
       ],
-      "mental_model": "The High-Tech Recipe: Baking a microchip requires digging up half the periodic table, where tiny trace minerals act like rare spices that poison the kitchen if spilled.",
+      "mental_model": "The High-Tech Recipe: Baking a microchip requires digging up half the periodic table. Tiny trace minerals act like rare spices that poison the kitchen if spilled.",
       "checkpoint": {
         "question": "After silicon, what is the second most heavily used material by volume in modern smartphone hardware?",
         "options": [
@@ -49,7 +49,7 @@
           "Lead"
         ],
         "correct_index": 1,
-        "explanation": "Petroleum-derived plastics form the second most-used material category after silicon in mobile electronics."
+        "explanation": "Petroleum-derived plastics form the second most-used material category by volume after silicon in mobile electronics."
       }
     },
     {
@@ -57,13 +57,13 @@
       "title": "Critical Minerals in Mobile Hardware: Geological Sources and Device Functions",
       "act": "Act 1: The IT Footprint Crisis",
       "continuity_bridge": "Expanding on the 35 minerals, this geological mapping reveals where these elements come from and the exact hardware components they make possible.",
-      "eli15_takeaway": "Every touch, tap, and vibration in your phone depends on specific geological elements dominated by a handful of global mining hubs.",
+      "eli15_takeaway": "Every swipe, tap, and vibration on your phone depends on rare minerals locked up in a few mining hubs around the globe. If one hub shuts down, global phone assembly freezes.",
       "key_facts": [
-        "Indium (from sphalerite ore, mined in China and South Korea) forms Indium Tin Oxide (ITO) for transparent conductive touchscreens.",
+        "Indium (extracted from sphalerite zinc ore, mined mainly in China and South Korea) forms Indium Tin Oxide (ITO) for transparent conductive touchscreens.",
         "Tantalum (from columbite-tantalite / coltan, mined in DR Congo, Rwanda, and Brazil) stores electrical charge in miniature electrolytic capacitors.",
         "Rare-earth elements like Neodymium and Dysprosium (from bastnasite and monazite, dominated by China) power acoustic speakers and vibration motors.",
         "Lithium (from spodumene rock and Andean salt brines in Chile and Argentina) forms battery cathodes, while natural graphite (from China and India) forms battery anodes.",
-        "Potassium salts (sylvite) undergo molten chemical exchange to chemically strengthen aluminosilicate screen glass (Gorilla Glass)."
+        "Potassium salts (sylvite) undergo molten chemical exchange to chemically toughen screen glass (Gorilla Glass)."
       ],
       "mental_model": "The Geopolitical Jigsaw: If any single mining hub halts exports, assembly lines stop because no direct substitute exists for tantalum in capacitors or indium on touchscreens.",
       "checkpoint": {
@@ -75,7 +75,7 @@
           "Indium"
         ],
         "correct_index": 1,
-        "explanation": "Tantalum has extraordinary capacitance per unit volume, making it indispensable for compact surface-mount capacitors."
+        "explanation": "Tantalum packs extraordinary capacitance into tiny volumes, making it vital for compact surface-mount capacitors in mobile hardware."
       }
     },
     {
@@ -83,14 +83,14 @@
       "title": "The 1.8-Ton Computer: Embodied Energy, Water, and Chemical Ratios",
       "act": "Act 1: The IT Footprint Crisis",
       "continuity_bridge": "Once minerals leave the mine, turning raw rocks into microchips demands an astonishing multiplier of fossil fuel, water, and caustic chemicals.",
-      "eli15_takeaway": "Building one desktop PC consumes 1.8 tons of raw resources\u2014roughly 10 times its own weight in fossil fuels alone.",
+      "eli15_takeaway": "Building one standard desktop PC eats up 1.8 tons of raw resources—including 10 times its own weight in fossil fuels alone. That equals the weight of a full-size SUV!",
       "key_facts": [
-        "Constructing an average 24-kg desktop computer and 27-cm (17-inch) monitor consumes at least 240 kg of fossil fuels, 22 kg of chemicals, and 1,500 kg of water.",
-        "Total resource input reaches 1,800 kg (1.8 metric tons)\u2014matching the weight of an entire sport utility vehicle (SUV).",
-        "While manufacturing a car or refrigerator requires only 1 to 2 times its finished weight in fossil fuels, microchip-heavy computer manufacturing demands an embodied fuel multiplier of over 10:1.",
-        "Semiconductor fabrication plants (fabs) consume millions of liters of ultra-pure water daily, matching the water demand of a small city."
+        "Building an average 24-kg desktop computer and 27-cm (17-inch) monitor eats at least 240 kg of fossil fuels, 22 kg of chemicals, and 1,500 kg of water.",
+        "Total resource input hits 1,800 kg (1.8 metric tons)—matching the weight of an entire sport utility vehicle (SUV).",
+        "Microchip manufacturing has an embodied fuel multiplier over 10:1 (240 kg fuel for a 24 kg PC), whereas cars or refrigerators need only 1:1 to 2:1.",
+        "Semiconductor fabrication plants (fabs) consume millions of liters of ultra-pure water (UPW) daily, matching the water use of a small city."
       ],
-      "mental_model": "The Factory Funnel: Ordinary manufacturing is 1:1, but silicon fabrication is an extreme funnel\u2014compressing a mountain of fuel and a lake of pure water into a postage-stamp-sized chip.",
+      "mental_model": "The Extreme Funnel: Making a car takes 1 to 2 times its weight in fuel. But making a microchip is an extreme funnel—compressing a mountain of coal, pure water, and acid into a chip the size of a postage stamp.",
       "checkpoint": {
         "question": "How does the fossil fuel intensity of computer manufacturing compare to conventional car manufacturing?",
         "options": [
@@ -100,7 +100,7 @@
           "Computers require zero fossil fuels because clean electricity runs semiconductor cleanrooms"
         ],
         "correct_index": 2,
-        "explanation": "Semiconductor manufacturing consumes over 10x the finished product weight in fossil fuels, compared to 1-2x for automobiles."
+        "explanation": "Microchip manufacturing demands over 10x the finished product weight in fossil fuels, compared to only 1–2x for cars and household appliances."
       }
     },
     {
@@ -108,14 +108,14 @@
       "title": "Moore's Law, Rapid Obsolescence, and the 50-Million-Ton E-Waste Stream",
       "act": "Act 1: The IT Footprint Crisis",
       "continuity_bridge": "The immense manufacturing footprint of slide 4 becomes a compounding disaster because hardware churns on a brutal 2-year obsolescence cycle.",
-      "eli15_takeaway": "Moore's Law made computers twice as fast every two years, but it also made functional machines obsolete junk, creating 50 million tons of e-waste annually.",
+      "eli15_takeaway": "Moore's Law made microchips twice as fast every two years. But it also turned working 3-year-old computers into 'obsolete' trash, burying the planet in 50 million tons of e-waste every year.",
       "key_facts": [
-        "Gordon Moore (Intel co-founder) observed that microchip transistor counts double roughly every 24 months, setting an industry upgrade clock.",
-        "Fast obsolescence turns functional 3-year-old computers into scrap, generating roughly 50 million metric tons of e-trash worldwide every year (UNEP).",
-        "ICT operations and device turnover account for 2% of total global carbon emissions, directly on par with international aviation.",
-        "Over 70-80% of an electronic device's lifetime carbon footprint is locked into its manufacturing phase before a user ever plugs it into a wall outlet."
+        "Gordon Moore (Intel co-founder) observed that microchip transistor counts double roughly every 24 months (18–24 months), driving exponential speed gains.",
+        "Rapid upgrade cycles scrap functional 3-year-old computers, creating roughly 50 million metric tons of electronic waste worldwide every year (UNEP).",
+        "ICT operations and device turnover cause 2% of total global carbon emissions, directly on par with international aviation.",
+        "Over 70% to 80% of an electronic device's lifetime carbon footprint is locked into its manufacturing phase before a user ever plugs it into a wall outlet."
       ],
-      "mental_model": "The Silicon Treadmill: Software gets heavier and hardware gets discarded before wearing out, forcing the planet to run an endless extraction marathon just to keep up.",
+      "mental_model": "The Silicon Treadmill: Software gets bloated and hardware gets trashed before it ever breaks down, forcing the planet to run an endless extraction marathon just to keep up.",
       "checkpoint": {
         "question": "According to the UN Environment Programme, approximately how much electronic waste does the world generate each year?",
         "options": [
@@ -125,7 +125,7 @@
           "250 million tons"
         ],
         "correct_index": 2,
-        "explanation": "UNEP estimates global e-waste generation at approximately 50 million metric tons annually, driven by accelerated upgrade cycles."
+        "explanation": "UNEP estimates global e-waste generation at approximately 50 million metric tons every year, driven by rapid consumer upgrade cycles."
       }
     },
     {
@@ -133,14 +133,14 @@
       "title": "The Birth of Green Computing and the Energy Star Standard",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "Faced with runaway electronic waste and energy consumption, governments and engineers established the first formal efficiency frameworks in the early 1990s.",
-      "eli15_takeaway": "Green computing began when regulators realized office PCs were wasting electricity all night, leading to the Energy Star sleep-mode standard in 1992.",
+      "eli15_takeaway": "Green computing took off when regulators saw office computers burning electricity all night long. In 1992, the US EPA launched Energy Star, creating the automatic sleep mode we use today.",
       "key_facts": [
-        "Green computing defines the environmentally sound design, manufacture, operation, and disposal of computing hardware with minimal ecological harm.",
+        "Green computing is the environmentally sound design, manufacture, operation, and disposal of computing hardware with minimal ecological harm.",
         "The United States Environmental Protection Agency (EPA) launched the Energy Star labeling program in 1992.",
-        "Energy Star introduced mandatory low-power sleep and standby states for PC monitors, desktop power supplies, and climate control equipment.",
-        "An Energy Star compliant power supply converts over 80% of drawn AC electricity into usable DC computing power (80 PLUS standard), reducing parasitic heat dissipation."
+        "Energy Star introduced mandatory low-power sleep and standby states for PC monitors, desktop power supplies, and climate control gear.",
+        "Energy Star certified power supplies convert over 80% of drawn AC wall electricity into usable DC computing power (80 PLUS standard), keeping heat waste under 20%."
       ],
-      "mental_model": "The Appliance Seal: Energy Star acts like an energetic speed limit, ensuring hardware drops into low-gear sleep mode instead of revving its engine in an empty office.",
+      "mental_model": "The Appliance Speed Governor: Energy Star acts like an automatic speed governor, ensuring computers drop into low-gear sleep mode instead of revving their engines in an empty office all night.",
       "checkpoint": {
         "question": "In what year did the US EPA launch the Energy Star program that formally launched the green computing movement?",
         "options": [
@@ -150,7 +150,7 @@
           "2010"
         ],
         "correct_index": 1,
-        "explanation": "The US EPA founded Energy Star in 1992, creating voluntary energy-efficiency standards and sleep-state requirements."
+        "explanation": "The US EPA launched Energy Star in 1992, creating voluntary energy efficiency standards and mandatory sleep modes for computers."
       }
     },
     {
@@ -158,15 +158,15 @@
       "title": "Systemic Inefficiencies: Toxic Additives, Idle Power, and Data Center Thermal Walls",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "Energy Star targeted basic hardware, but the systemic crisis spans toxic chemicals in manufacturing, idle runtime power, and cooling constraints in server farms.",
-      "eli15_takeaway": "Computers bleed energy when idle, screen savers waste electricity, and data centers spend nearly half their power just pumping out heat.",
+      "eli15_takeaway": "Unmanaged computers waste electricity when idle, 3D screen savers burn power for no reason, and data centers spend nearly half their power just running air conditioners to keep chips from melting.",
       "key_facts": [
-        "Power Usage Effectiveness (PUE) and DCiE: \\(PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}\\), while Data Center Infrastructure Efficiency (\\(DCiE\\)) is \\(DCiE = \\frac{1}{PUE} \\times 100\\%\\). A legacy facility with PUE = 2.0 has a DCiE of only 50%.",
-        "Thermal containment: Hot-aisle and cold-aisle containment physical barriers separate supply air (18-22 C) from server exhaust (35-45 C), preventing air mixing and reducing cooling power consumption by 20-30%.",
-        "Thermal bottleneck: Server racks generate concentrated heat flux, forcing cooling infrastructure to consume 40% of overall data center electricity.",
-        "Idle power draw: Office computers left running overnight burn full CPU and fan power; animated 3D screen savers keep GPUs active instead of entering low-power sleep.",
-        "Toxic additives: Halogenated flame retardants and heavy metals in circuit boards create persistent environmental hazards if landfilled."
+        "Power Usage Effectiveness (\\(PUE\\)) and DCiE: \\(PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}\\), while Data Center Infrastructure Efficiency is \\(DCiE = \\frac{1}{PUE} \\times 100\\%\\). A legacy facility with \\(PUE = 2.0\\) has a \\(DCiE\\) of only 50% (half its power is wasted on cooling and overhead).",
+        "Thermal containment: Hot-aisle and cold-aisle physical containment barriers separate cold supply air (18–22°C) from hot server exhaust (35–45°C), stopping air mixing and cutting cooling power by 20% to 30%.",
+        "Thermal wall: Server racks produce intense heat flux, forcing cooling infrastructure to consume roughly 40% of overall data center electricity.",
+        "Idle power waste: Office computers left running overnight burn 60–100W; animated 3D screen savers keep GPUs pinned at high power instead of letting them enter low-power sleep.",
+        "Toxic additives: Brominated flame retardants (BFRs) and heavy metals in circuit boards pose severe environmental hazards if dumped in landfills."
       ],
-      "mental_model": "The Attic Radiator: Running an unmanaged server is like running a space heater inside an attic with closed windows, forcing you to run an industrial air conditioner just to keep it from melting.",
+      "mental_model": "The Space Heater in the Attic: An unmanaged server rack acts like a giant space heater running inside a sealed room, forcing you to run an industrial air conditioner 24/7 just to stop it from catching fire.",
       "checkpoint": {
         "question": "Why are traditional animated 3D screen savers an anti-pattern in green computing?",
         "options": [
@@ -176,7 +176,7 @@
           "They disconnect the computer from the network, causing data loss"
         ],
         "correct_index": 1,
-        "explanation": "Screen savers prevent computers from entering low-power sleep states, forcing graphics chips to draw active power to render animations."
+        "explanation": "Screen savers prevent computers from entering low-power sleep states, forcing graphics chips to draw active power just to render animations."
       }
     },
     {
@@ -184,13 +184,13 @@
       "title": "The Three Strategic Arenas: Waste Reduction, Energy Conservation, and Green Purchasing",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "To fix idle waste and thermal bottlenecks, organizations group their engineering and operational policies into three clear action areas.",
-      "eli15_takeaway": "Green IT requires three actions: use computers to eliminate physical paper, cut runtime electricity, and buy non-toxic, recyclable hardware.",
+      "eli15_takeaway": "Green IT attacks pollution on three fronts: use software to ditch paper, cut runtime electricity, and purchase certified non-toxic hardware with safe recycling channels.",
       "key_facts": [
-        "Pillar 1: Reducing Waste / Dematerialization: Using software to eliminate physical resource consumption (paperless operations, digital workflows).",
-        "Pillar 2: Energy Conservation: Deploying power management, dynamic voltage frequency scaling (DVFS), and efficient displays.",
-        "Pillar 3: Environmentally Preferable Purchasing (EPP) & Safe Disposal: Mandating EPEAT/RoHS certification during hardware acquisition and establishing certified take-back channels."
+        "Arena 1: Reducing Waste (Dematerialization): Using digital workflows and software to eliminate physical resources (paperless offices, virtual meetings).",
+        "Arena 2: Energy Conservation: Deploying power management, dynamic voltage frequency scaling (DVFS), and high-efficiency displays.",
+        "Arena 3: Environmentally Preferable Purchasing (EPP) & Safe Disposal: Mandating EPEAT and RoHS certifications during purchasing, and setting up certified take-back channels for end-of-life gear."
       ],
-      "mental_model": "The Three-Legged Stool: Clean software (saving trees), clean runtime (saving watts), and clean hardware (saving mines) must balance together; remove one and the stool collapses.",
+      "mental_model": "The Three-Legged Stool: Clean software (saving paper), clean runtime (saving watts), and clean purchasing (saving raw minerals) must balance together. Knock away one leg and your sustainability program falls over.",
       "checkpoint": {
         "question": "What does the abbreviation EPP stand for in enterprise green procurement policy?",
         "options": [
@@ -200,7 +200,7 @@
           "Extended Producer Processing"
         ],
         "correct_index": 1,
-        "explanation": "EPP stands for Environmentally Preferable Purchasing, guiding organizations to buy products with lower environmental footprints."
+        "explanation": "EPP stands for Environmentally Preferable Purchasing, guiding organizations to buy products with lower lifecycle environmental footprints."
       }
     },
     {
@@ -208,14 +208,14 @@
       "title": "Server Virtualization: Hypervisors, Workload Consolidation, and Power Reduction",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "The most direct way to tackle enterprise energy waste (Pillar 2) is virtualization, eliminating vast rows of underutilized physical servers.",
-      "eli15_takeaway": "Virtualization runs dozens of virtual servers on one physical machine, turning an army of idling boxes into a lean, fully loaded cluster.",
+      "eli15_takeaway": "Most enterprise servers sit around doing nothing 85% of the day while burning 70% of full power. Virtualization runs dozens of virtual servers on one machine, letting data centers retire piles of idling hardware.",
       "key_facts": [
-        "Virtualization uses a software hypervisor (such as KVM or VMware ESXi) to run multiple isolated logical operating systems on a single physical host.",
-        "Typical unvirtualized enterprise servers idle at 10% to 15% CPU utilization, while still drawing 60% to 70% of their peak nameplate power.",
-        "Virtual machine consolidation increases physical server utilization to 70-80%, allowing data centers to retire 4 to 8 physical machines for every 1 maintained.",
-        "Direct benefit: Collapses data center rack footprint, slashes server power draw, and reduces air-conditioning load proportionally."
+        "Virtualization uses a software hypervisor (such as VMware ESXi or KVM) to run multiple isolated virtual machines on a single physical host server.",
+        "Unvirtualized enterprise servers typically idle at only 10% to 15% CPU load, but still draw 60% to 70% of their peak nameplate electricity.",
+        "Virtual machine consolidation boosts physical server utilization to 70–80%, allowing data centers to retire 4 to 8 physical machines for every 1 maintained.",
+        "Direct benefit: Slashes rack floor space, cuts direct server electricity, and shrinks air conditioning cooling loads proportionally."
       ],
-      "mental_model": "The Carpool Lane: Instead of 20 commuters driving 20 empty cars with one person each, virtualization puts all 20 commuters into a single bus, saving 19 engines worth of gas and parking.",
+      "mental_model": "The Carpool Lane: Instead of 20 commuters driving 20 separate gas-guzzling cars with 1 person each (wasting 20 engines), virtualization puts all 20 into a single bus, saving 19 engines worth of fuel and maintenance.",
       "checkpoint": {
         "question": "Why does consolidating physical servers via virtualization yield massive energy savings if bare-metal servers idle at only 10-15% CPU load?",
         "options": [
@@ -225,7 +225,7 @@
           "Hypervisors convert waste heat directly into usable electricity"
         ],
         "correct_index": 1,
-        "explanation": "CPUs possess non-linear power curves; an idling server consumes 60-70% of peak electricity, so consolidating workloads eliminates vast base-load waste."
+        "explanation": "Server CPUs have non-linear power curves; an idling server burns 60–70% of its peak power, so consolidating workloads eliminates enormous idle baseline waste."
       }
     },
     {
@@ -233,17 +233,17 @@
       "title": "Operational Power Management and Display Technology Power Consumption",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "While virtualization cleans up data centers, endpoint efficiency requires managing desktop power profiles and choosing the right display technology.",
-      "eli15_takeaway": "Laptops sip a fraction of desktop power, automatic sleep cuts idle waste, and LED/LCD screens draw less than half the watts of old CRT monitors.",
+      "eli15_takeaway": "Laptops use a fraction of desktop power, ACPI S3 sleep drops idle PCs to 2 Watts, and LED monitors draw less than a third of old CRT screens.",
       "key_facts": [
-        "Power profiles: Enforcing Advanced Configuration and Power Interface (ACPI) S3 sleep states drops PC power draw from 100W down to less than 2-3W.",
-        "Form factor efficiency: Laptops consume 15-30 Watts under normal operation, compared to 100-250 Watts for traditional desktop towers and monitors.",
+        "Power profiles: Setting ACPI S3 sleep states ('Suspend to RAM') drops PC power draw from 100W down to under 2–3W while keeping open apps ready.",
+        "Form factor efficiency: Laptops consume only 15–30 Watts under normal work, compared to 100–250 Watts for traditional desktop towers and monitors.",
         "17-inch display power hierarchy:",
         "- Cathode Ray Tube (CRT) monitor: 80 Watts",
         "- Liquid Crystal Display (LCD) monitor: 35 Watts (56% power reduction over CRT)",
         "- Light Emitting Diode (LED-backlit) monitor: 25 Watts (69% power reduction over CRT)",
-        "Power supply efficiency: Energy Star certified power supplies achieve at least 80% electrical conversion efficiency (wasting 20% or less as heat), compared to unrated supplies that waste 30% or more."
+        "Power supply efficiency: Energy Star certified power supplies hit at least 80% electrical efficiency (80 PLUS standard), wasting 20% or less as heat."
       ],
-      "mental_model": "The Garden Hose Nozzle: Leaving an unmanaged desktop running is like leaving a garden hose spraying full blast into the grass; switching to laptops and sleep mode adds a pressure trigger that only flows on demand.",
+      "mental_model": "The Garden Hose Trigger: Leaving a desktop tower on all night is like leaving a garden hose running into the dirt; laptops and sleep modes add a squeeze trigger that only sprays water when your hands are working.",
       "checkpoint": {
         "question": "For a standard 17-inch monitor, how do the active power draws of CRT, LCD, and LED displays compare?",
         "options": [
@@ -253,7 +253,7 @@
           "CRT: 80W, LCD: 80W, LED: 80W"
         ],
         "correct_index": 1,
-        "explanation": "A 17-inch CRT draws 80W, a CCFL-backlit LCD draws 35W, and an LED-backlit panel draws 25W."
+        "explanation": "A standard 17-inch CRT draws 80W, a CCFL-backlit LCD draws 35W, and an LED-backlit panel draws just 25W."
       }
     },
     {
@@ -261,18 +261,18 @@
       "title": "Software and Algorithmic Efficiency: The Carbon Footprint per Query",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "Hardware settings only get us halfway; software engineering choices determine how many clock cycles a CPU executes for every user operation.",
-      "eli15_takeaway": "Every database query, search request, and loop consumes joules; a single internet search releases between 0.2 and 0.4 grams of carbon dioxide.",
+      "eli15_takeaway": "Every database search and bloated loop burns electric power: a single internet search puffs out 0.2 to 0.4 grams of CO2 from remote server chips.",
       "key_facts": [
-        "Algorithmic efficiency directly governs CPU instruction count, memory bus saturation, and electrical energy (\\(E = P \\times t\\)).",
+        "Algorithmic efficiency directly dictates CPU instruction count, memory bus traffic, and total electrical energy consumed (\\(E = P \\times t\\)).",
         "Measured CO2 released per single web search query:",
-        "- Google Search: approx 0.20 g CO2",
-        "- Yahoo Search: approx 0.26 g CO2",
-        "- Microsoft Live Search: approx 0.32 g CO2",
-        "- AOL Search: approx 0.37 g CO2",
-        "Multiplied across billions of daily global queries, algorithmic micro-optimizations prevent thousands of tons of grid carbon emissions.",
-        "End-of-life disposal creates 20-50 million metric tons of e-waste per year (roughly 5% of all global municipal solid waste)."
+        "- Google Search: ~0.20 g CO2",
+        "- Yahoo Search: ~0.26 g CO2",
+        "- Microsoft Live Search: ~0.32 g CO2",
+        "- AOL Search: ~0.37 g CO2",
+        "Multiplied across billions of daily global queries, writing tighter algorithms prevents thousands of tons of grid carbon emissions.",
+        "End-of-life disposal creates 20–50 million metric tons of e-waste per year (roughly 5% of all global municipal trash)."
       ],
-      "mental_model": "The Calorie Counter: Just as inefficient walking burns more physical calories per mile, inefficient \\(O(n^2)\\) code burns electrical joules and spews invisible grams of coal exhaust into the atmosphere.",
+      "mental_model": "The Code Calorie Burn: Just as poor jogging form burns extra body calories, inefficient \\(O(n^2)\\) code forces the CPU to spin extra clock cycles, burning watts and spewing coal smoke into the sky.",
       "checkpoint": {
         "question": "What is the measured carbon dioxide emission associated with a single Google search query according to historical benchmarks?",
         "options": [
@@ -290,14 +290,14 @@
       "title": "The Four Pillars of Green Computing: Design, Manufacturing, Use, and Disposal",
       "act": "Act 2: Green Computing Framework & Efficiency Engineering",
       "continuity_bridge": "Combining operational tactics, hardware standards, and software tuning yields the foundational four-part engineering model of Green Computing.",
-      "eli15_takeaway": "Real green computing spans all four life stages: eco-friendly design, clean factories, efficient daily operation, and safe closed-loop recycling.",
+      "eli15_takeaway": "Genuine green computing covers all four stages of hardware life: clean design, eco-friendly factories, energy-smart daily use, and safe closed-loop recycling.",
       "key_facts": [
-        "1. Green Design: Engineering low-power components, energy-efficient server racks, liquid cooling systems, and easily recyclable materials.",
-        "2. Green Manufacturing: Fabricating silicon wafers and components with minimal toxic emissions, closed-loop water recycling, and reduced chemical baths.",
-        "3. Green Use: Minimizing electricity consumption during active operation through virtualization, power management, and efficient software.",
-        "4. Green Disposal: Refurbishing, reusing, and safely recycling obsolete electronic equipment without informal burning or toxic dumping."
+        "1. Green Design: Engineering low-power microchips, efficient server racks, liquid cooling systems, and easily recyclable modular parts.",
+        "2. Green Manufacturing: Fabricating silicon chips with minimal toxic emissions, closed-loop water recycling, and non-hazardous chemical baths.",
+        "3. Green Use: Cutting electricity consumption during daily operation through virtualization, power management, and energy-aware software.",
+        "4. Green Disposal: Refurbishing, reusing, and safely recycling obsolete electronics without backyard burning or toxic dumping."
       ],
-      "mental_model": "The Closed Circle: Traditional tech is a straight line from mine to dump; the four pillars bend that line into a closed loop where the end of one machine feeds the birth of the next.",
+      "mental_model": "The Closed Loop: Traditional tech is a straight line from mine to landfill. The four pillars bend that straight line into a circle, where an old computer's parts become the raw materials for the next one.",
       "checkpoint": {
         "question": "Which of the four pillars of green computing focuses specifically on fabricating microchips and motherboards with reduced toxic waste and water recycling?",
         "options": [
@@ -307,7 +307,7 @@
           "Green Disposal"
         ],
         "correct_index": 1,
-        "explanation": "Green Manufacturing targets the industrial processes inside semiconductor fabrication cleanrooms and assembly plants."
+        "explanation": "Green Manufacturing focuses specifically on the industrial chemical processes inside semiconductor cleanrooms and component assembly plants."
       }
     },
     {
@@ -315,15 +315,15 @@
       "title": "Pixel Power Physics: The Blackle Experiment and Display Backlight Realities",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "Moving from holistic lifecycle theory into user-interface design, engineers experimented with whether screen color palettes could reduce display energy.",
-      "eli15_takeaway": "Blackle proved black screens save power on CRTs and modern OLEDs by shutting off pixels, saving over 10 MWh of electricity.",
+      "eli15_takeaway": "Blackle proved dark screens save power on CRTs and OLEDs because dark pixels shut off. But on standard LCDs, a dark screen saves almost nothing because the backlight stays blazing.",
       "key_facts": [
-        "Blackle was launched as an energy-saving custom search engine using a black background based on the premise that displaying black pixels draws less electrical power.",
-        "By July 2023, Blackle documented cumulative electricity savings of over 10.07 megawatt-hours (MWh).",
-        "Display physics nuance:",
-        "- Cathode Ray Tubes (CRT) and modern Organic LEDs (OLED): True energy savings, because dark pixels turn off electron guns or emit zero electroluminescence.",
-        "- Traditional Liquid Crystal Displays (LCD): Minimal savings, because CCFL or edge-LED backlights remain fully illuminated while liquid crystals twist to block light."
+        "Blackle was launched as an energy-saving search engine using a black background on the premise that displaying black pixels draws less electrical power.",
+        "By July 2023, Blackle documented cumulative electricity savings exceeding 10.07 megawatt-hours (MWh).",
+        "Display physics reality:",
+        "- Cathode Ray Tubes (CRT) and Organic LEDs (OLED): Real energy savings, because dark pixels turn off electron guns or emit zero electroluminescent light.",
+        "- Traditional Liquid Crystal Displays (LCD): Minimal savings, because CCFL or edge-LED backlights stay lit at 100% brightness while liquid crystals simply twist to block light."
       ],
-      "mental_model": "The Theater Spotlight: OLED pixels are individual candles you can blow out to save wax; traditional LCD screens are a permanent spotlight covered by a dark cloth that stays hot regardless.",
+      "mental_model": "The Candle vs. The Window Blinds: OLED pixels are like individual candles you can blow out to save wax. A standard LCD is like a giant spotlight behind window blinds—closing the blinds makes the room dark, but the spotlight is still burning full power.",
       "checkpoint": {
         "question": "On which display technology does a dark color scheme like Blackle deliver the greatest energy savings?",
         "options": [
@@ -333,7 +333,7 @@
           "Standard reflective projection screens"
         ],
         "correct_index": 1,
-        "explanation": "OLED pixels produce their own light (and CRTs fire electron beams per pixel), so black pixels draw near-zero current, unlike back-lit LCDs."
+        "explanation": "OLED pixels generate their own light (and CRTs fire electron beams per pixel), so black pixels draw near-zero current, unlike constantly backlit LCDs."
       }
     },
     {
@@ -341,14 +341,14 @@
       "title": "Endpoint Architectures: Thick Client Desktops vs. Centralized Thin Clients",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "Beyond changing display pixels, a more radical desktop efficiency strategy replaces heavy PC towers with centralized network terminals.",
-      "eli15_takeaway": "A thick client does all the heavy computing at your desk; a thin client is just a lightweight terminal that streams screen frames from a central server.",
+      "eli15_takeaway": "A thick client is a full desktop PC running all software at your desk. A thin client is a tiny, fanless box that streams screen updates from a central server like a video stream.",
       "key_facts": [
-        "Thin Client definition: A compact, fanless terminal device containing minimal CPU, limited RAM, and zero internal moving parts (no mechanical hard disk).",
-        "Operation: The thin client sends keystrokes and mouse clicks to a central server; the server executes applications and returns compressed display frames over the local network.",
-        "Thick Client (Traditional PC): A self-contained workstation with local OS, heavy processor, local storage, and high-wattage power supply that operates independently of any network connection.",
-        "Reliability: With zero fans, hard disks, or spinning parts, thin clients experience mean-time-between-failures (MTBF) significantly higher than desktop PCs."
+        "Thin Client definition: A compact, fanless terminal device containing a lightweight processor, minimal RAM, and zero internal moving parts (no mechanical hard disk).",
+        "How it runs: The thin client sends user keystrokes and mouse clicks to a central server; the server runs the applications and streams compressed display frames back over the local network.",
+        "Thick Client (Traditional PC): A standalone workstation equipped with its own local OS, heavy CPU, hard drive, and high-wattage power supply that operates independently of any network.",
+        "Reliability: With zero fans, hard disks, or spinning parts, thin clients achieve a far higher Mean Time Between Failures (MTBF) than desktop PCs."
       ],
-      "mental_model": "The Dumb Terminal vs. Home Studio: A thick client is like owning an entire film editing studio in your room; a thin client is like a TV streaming movies from Netflix's central warehouse.",
+      "mental_model": "The Kitchen vs. Room Service: A thick client is like cooking a full meal in your personal kitchen with your own stove and pots. A thin client is like picking up the phone and having hot food brought from the hotel's central kitchen.",
       "checkpoint": {
         "question": "What physical characteristic distinguishes a thin client hardware terminal from a traditional thick client PC?",
         "options": [
@@ -358,7 +358,7 @@
           "Thin clients cannot connect to enterprise networks"
         ],
         "correct_index": 1,
-        "explanation": "Thin clients eliminate moving parts like fans and mechanical hard disks, operating as solid-state display terminals."
+        "explanation": "Thin clients eliminate moving components like cooling fans and mechanical hard drives, operating as completely solid-state display terminals."
       }
     },
     {
@@ -366,15 +366,15 @@
       "title": "Embodied Environmental Costs: Material, Water, and Greenhouse Debt of Desktop PCs",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "Comparing the two architectures reveals that thin clients avoid the massive manufacturing debt and heavy metal toxic inventory of desktop PCs.",
-      "eli15_takeaway": "Building a traditional PC burns 3,244 MJ of energy, 920 liters of water, and creates 193 kg of greenhouse gases; thin clients cut this manufacturing burden dramatically.",
+      "eli15_takeaway": "Manufacturing one desktop PC burns 3,244 MJ of energy, 920 liters of water, and pumps out 193 kg of greenhouse gases. Switching to thin clients cuts this factory burden by over 70%.",
       "key_facts": [
         "A traditional PC workstation and 17-inch monitor require roughly 20 kg of virgin physical materials.",
         "Manufacturing one PC and monitor consumes 3,244 megajoules (MJ) of energy and 920 liters of process water.",
         "PC manufacturing generates roughly 193 kg of greenhouse gases and discharges toxic heavy metals into air, soil, and waterways.",
-        "Lifecycle discard of a single PC and monitor produces 37 kg of non-hazardous waste and 0.7 kg of hazardous chemical waste.",
-        "Thin clients use miniature solid-state boards and tiny enclosures, shrinking embodied materials, water usage, and toxic electronic waste by over 70%."
+        "Discarding a single PC and monitor produces 37 kg of non-hazardous waste and 0.7 kg of hazardous chemical waste.",
+        "Thin clients use tiny solid-state circuit boards and small enclosures, shrinking embodied materials, water use, and toxic e-waste by over 70%."
       ],
-      "mental_model": "The Heavy Backpack: Every desktop PC arrives at your office carrying an invisible 200-kg backpack of coal smoke, industrial water, and toxic slag generated during its birth.",
+      "mental_model": "The Heavy Invisible Backpack: Every desktop PC sitting on an office desk carries an invisible 200-kg backpack of coal smoke, industrial water, and chemical slag created during manufacturing.",
       "checkpoint": {
         "question": "How much greenhouse gas is emitted during the manufacturing phase of a single traditional desktop PC and monitor?",
         "options": [
@@ -384,7 +384,7 @@
           "1,930 kg"
         ],
         "correct_index": 2,
-        "explanation": "Manufacturing an average desktop PC and monitor generates approximately 193 kg of greenhouse gas emissions."
+        "explanation": "Manufacturing an average desktop PC and monitor generates approximately 193 kg of greenhouse gas emissions before the device is ever turned on."
       }
     },
     {
@@ -392,14 +392,14 @@
       "title": "Economic and Power Trade-offs: 5W vs. 75W Operation and Centralized Server Loads",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "The environmental savings of thin clients translate directly into operational cash savings, though engineers must account for centralized server loads.",
-      "eli15_takeaway": "Thin clients slash desk power from 75W to 5W and last 7 years instead of 5, but centralized servers must run 24/7 to power them.",
+      "eli15_takeaway": "Thin clients slash desk power from 75W down to 5W and last 7 years instead of 5. But they shift the workload to data center servers that must run 24/7 with precision cooling.",
       "key_facts": [
-        "Capital expenditure (CapEx) comparison: A budget desktop PC costs approx 400 British pounds with an expected 5-year operating lifespan; a thin client terminal costs approx 210 British pounds with an expected 7-year lifespan.",
-        "Active operational power (OpEx): A desktop PC draws approx 75 Watts, whereas a thin client draws only approx 5 Watts (a 93% direct power reduction at the desk).",
-        "Enterprise case study: Queen Margaret University in Edinburgh saved 50,000 British pounds in electricity bills halfway through their thin client migration.",
-        "Architectural trade-off: Thin clients shift computing load onto backend data center servers, requiring virtualized server hosts to run 24/7 with continuous power, networking, and precision cooling."
+        "Capital cost (CapEx) comparison: A budget desktop PC costs ~£400 with a 5-year operating lifespan; a thin client terminal costs ~£210 with a 7-year lifespan.",
+        "Active power (OpEx): A desktop PC draws ~75 Watts, whereas a thin client draws only ~5 Watts (an immediate 93% direct power reduction at the desk).",
+        "Enterprise case study: Queen Margaret University in Edinburgh saved £50,000 in electricity bills halfway through their thin client migration.",
+        "Architectural trade-off: Thin clients shift computing load to backend data centers, requiring virtualized server clusters to operate 24/7 with reliable power, networking, and precision cooling."
       ],
-      "mental_model": "The Central Kitchen: Instead of 100 people cooking on 100 individual kitchen stoves burning 75W each, one commercial oven in the back cooks everything at bulk efficiency while each person holds a simple 5W plate.",
+      "mental_model": "The Central Oven: Instead of 100 people running 100 kitchen stoves at 75W each, one commercial oven in the back roasts everything at bulk efficiency, while each person holds a simple 5W warm plate.",
       "checkpoint": {
         "question": "What is the typical active power consumption of a thin client terminal compared to a standard thick client PC?",
         "options": [
@@ -409,7 +409,7 @@
           "Thin client: 25W vs. Thick client: 35W"
         ],
         "correct_index": 0,
-        "explanation": "Thin client terminals consume only about 5W of power, compared to 75W for an average office PC tower."
+        "explanation": "Thin client terminals consume only about 5W of power at the desk, compared to 75W for an average office PC tower."
       }
     },
     {
@@ -417,15 +417,15 @@
       "title": "Corporate Decarbonization Programs, Multi-Seat Virtualization, and Take-Back Mandates",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "Recognizing these operational efficiencies, leading enterprise IT vendors and regional governments began rolling out formal green hardware lines and multi-seat systems.",
-      "eli15_takeaway": "Companies like Wipro and Userful proved green IT is viable: multi-seat setups let 1 PC serve 10 users, cutting 15 tons of CO2 annually.",
+      "eli15_takeaway": "Multi-seat virtualization lets 1 PC tower power 10 user desks at once, saving 15 tons of CO2 each year. Meanwhile, laws in Texas and the EU force tech brands to take back old hardware for free.",
       "key_facts": [
-        "Wipro InfoTech launched 'Wipro Green Ware', becoming the first Indian computer manufacturer to release non-toxic, eco-friendly hardware compliant with RoHS.",
-        "Infosys established an employee Eco Club, committed to planting one tree per new hire, and built certified net-zero carbon campus buildings.",
-        "Canadian company Userful Inc. deployed multi-seat virtualization turning 1 desktop host into 10 independent user stations, cutting up to 15 tons of CO2 per year and reducing e-waste by 80%.",
-        "Hardware OEMs (Dell, HP, Acer, ViewSonic) adopted recycled plastics, partnered with ISO 14001 recyclers, and rolled out asset trade-in programs.",
-        "Regional statutory mandates: Texas and the European Union instituted mandatory free recycling take-back programs funded directly by computer manufacturers."
+        "Wipro InfoTech launched 'Wipro Green Ware', becoming the first Indian computer maker to produce non-toxic hardware meeting European RoHS standards.",
+        "Infosys created an employee Eco Club, planted one tree per new hire, and constructed certified net-zero carbon campus buildings.",
+        "Canadian company Userful Inc. deployed multi-seat virtualization that turns 1 desktop PC into 10 independent user stations, cutting up to 15 tons of CO2 per year and reducing e-waste by 80%.",
+        "Hardware makers (Dell, HP, Acer, ViewSonic) adopted recycled plastics, partnered with ISO 14001 recyclers, and rolled out trade-in programs.",
+        "Statutory mandates: Texas and the European Union passed laws requiring computer manufacturers to fund free recycling take-back programs."
       ],
-      "mental_model": "The Split-Screen Arcade: Instead of buying ten arcade cabinets, Userful plugs ten screens and keyboards into one central console, letting ten players game without buying ten machines.",
+      "mental_model": "The 10-Headed Console: Instead of buying ten separate video game consoles, Userful plugs ten screens and controllers into one powerful console, letting ten people play at once while eliminating nine unnecessary boxes.",
       "checkpoint": {
         "question": "How did Canadian software firm Userful Inc. reduce up to 15 tons of CO2 emissions per system annually?",
         "options": [
@@ -435,7 +435,7 @@
           "By banning employee internet access after 5 PM"
         ],
         "correct_index": 1,
-        "explanation": "Userful's multi-sharing software splits one host computer among up to 10 simultaneous users, reducing hardware purchases and energy draw."
+        "explanation": "Userful's multi-seat software splits one host computer among up to 10 simultaneous users, reducing hardware purchases, power draw, and e-waste."
       }
     },
     {
@@ -443,19 +443,19 @@
       "title": "Practical Green Office Protocols, Procurement Policies, and Paper Lifecycle Metrics",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "Enterprise decarbonization cannot stop at server architecture; it requires daily office policies, including auditing paper consumption.",
-      "eli15_takeaway": "Saving paper is green computing: one ton of virgin office paper destroys 24 trees, while recycled paper saves 17 trees and thousands of kilowatt-hours.",
+      "eli15_takeaway": "Saving paper is green computing. Making 1 ton of virgin printer paper destroys 24 mature trees, while recycling that same ton saves 17 trees, 4,000 kWh of electricity, and 26,000 liters of water.",
       "key_facts": [
-        "Producing 1 ton of virgin office paper consumes 24 mature trees; a single tree yields approximately 16.67 reams (8,333 sheets) of printer paper.",
-        "A single 500-sheet paper ream consumes 6% of a whole tree.",
-        "Recycling 1 ton of office paper saves 17 trees, 4,000 kWh of grid electricity, and 26,000 liters of fresh water.",
+        "Producing 1 ton of virgin office paper consumes 24 mature trees; a single mature tree yields approximately 16.67 reams (8,333 sheets) of copy paper.",
+        "A single 500-sheet paper ream represents 6% of an entire mature tree.",
+        "Recycling 1 ton of office paper saves 17 mature trees, 4,000 kWh of grid electricity, and 26,000 liters of fresh water.",
         "Actionable green computing playbook:",
-        "- 1. Develop a formal corporate green ICT policy.",
+        "- 1. Establish a formal corporate green ICT policy.",
         "- 2. Buy EPEAT-registered and Energy Star certified hardware.",
         "- 3. Enforce automatic power-down and sleep policies across enterprise networks.",
         "- 4. Eliminate printing through digital signature and document workflows.",
-        "- 5. Contract only with certified recyclers for decommissioned IT assets."
+        "- 5. Partner only with certified recyclers for decommissioned IT assets."
       ],
-      "mental_model": "The Printout Graveyard: Printing a 50-page slide deck to read once is literally throwing slices of a living forest directly into an office recycling bin.",
+      "mental_model": "The Paper Forest: Printing a 50-page slide deck to read once is literally throwing slices of a living forest into an office trash bin. Digital signatures keep that forest standing.",
       "checkpoint": {
         "question": "How many mature trees are consumed to produce one ton of virgin office printing paper, and how many are saved by recycling that same ton?",
         "options": [
@@ -465,7 +465,7 @@
           "100 trees consumed, 10 trees saved"
         ],
         "correct_index": 1,
-        "explanation": "One ton of virgin printer paper requires 24 trees, whereas recycling one ton saves 17 trees along with substantial energy and water."
+        "explanation": "One ton of virgin printer paper consumes 24 mature trees, while recycling that same ton saves 17 trees along with substantial power and water."
       }
     },
     {
@@ -473,14 +473,14 @@
       "title": "The Efficiency Metric: Co-Optimizing Performance and Energy Consumption",
       "act": "Act 3: Architectural Optimization, Thin Clients & Enterprise Decarbonization",
       "continuity_bridge": "Synthesizing these software, hardware, and office practices establishes a fundamental shift in how computer science measures success.",
-      "eli15_takeaway": "The old goal was pure clock speed; modern computing demands high performance per watt and minimal environmental damage.",
+      "eli15_takeaway": "In the past, engineers only cared about raw clock speed (GHz). Today, the real test of great engineering is performance per watt—getting maximum compute output while sipping minimal electricity.",
       "key_facts": [
-        "Historical metric: System performance was evaluated almost exclusively on raw throughput, clock frequency (GHz), and Million Instructions Per Second (MIPS).",
-        "Modern efficiency benchmark: Hardware and software systems are evaluated on energy-proportional computing: Performance per Watt (FLOPS/Watt).",
-        "Dynamic Voltage and Frequency Scaling (DVFS): Power consumption in CMOS circuits scales quadratically with voltage (\\(P \\propto C \\cdot V^2 \\cdot f\\)); throttling clock frequency (\\(f\\)) and supply voltage (\\(V\\)) during low workloads yields exponential energy reductions.",
-        "Whole-system lifecycle boundary: True green computing integrates operational energy efficiency with embodied manufacturing debt and non-toxic end-of-life recovery."
+        "Historical benchmark: System performance was evaluated almost purely on raw clock speed (GHz) and Million Instructions Per Second (MIPS).",
+        "Modern efficiency benchmark: Hardware and software are judged on energy-proportional computing: Performance per Watt (FLOPS/Watt).",
+        "Dynamic Voltage and Frequency Scaling (DVFS): Power draw in CMOS chips scales quadratically with voltage (\\(P \\propto C \\cdot V^2 \\cdot f\\)); throttling clock frequency (\\(f\\)) and supply voltage (\\(V\\)) during low workloads delivers exponential power savings.",
+        "Whole-system lifecycle boundary: True green computing balances low operational watts with clean manufacturing debt and safe end-of-life recovery."
       ],
-      "mental_model": "The Racecar vs. Electric Hybrid: A drag racer goes fast but burns 5 gallons per minute and blows its engine; a championship endurance racer wins by squeezing maximum distance out of every drop of energy.",
+      "mental_model": "The Drag Racer vs. Hybrid Champ: A drag racer hits crazy speeds but burns 5 gallons of fuel per minute and overheats. An endurance champion wins by squeezing maximum distance out of every drop of energy.",
       "checkpoint": {
         "question": "In modern computer engineering, what metric replaces raw clock speed (GHz) as the primary benchmark of system quality?",
         "options": [
@@ -490,7 +490,7 @@
           "Number of expansion slots"
         ],
         "correct_index": 1,
-        "explanation": "Energy-proportional computing benchmarks systems by performance per watt rather than unconstrained clock speed."
+        "explanation": "Energy-proportional computing evaluates systems by performance per watt rather than unconstrained raw clock speed."
       }
     },
     {
@@ -498,14 +498,14 @@
       "title": "The Global E-Waste Torrent: Definition, Discard Rates, and Illegal Transboundary Dumping",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "Even the most energy-efficient hardware eventually dies; this begins our fourth act exploring electronic waste and international dumping.",
-      "eli15_takeaway": "Electronic waste is discarded tech; over 4,000 tons of it are dumped every hour, often illegally shipped to poor countries with zero safety protections.",
+      "eli15_takeaway": "Discarded electronics are safe while sitting in your bedroom, but become toxic hazards the second they are smashed or burned. The world dumps over 4,000 tons of e-waste every single hour.",
       "key_facts": [
-        "Definition: Electronic Waste (e-waste or WEEE) comprises electrical and electronic equipment no longer fit for its original intended use (PCs, phones, TVs, refrigerators).",
-        "Toxicity nuance: Finished electronics are largely non-hazardous in normal consumer use; they become hazardous only when dismantled, shredded, crushed, or burned, liberating toxic additives.",
-        "Global discard rate: As much as 4,000 metric tons of toxic e-waste are discarded worldwide every single hour.",
-        "Transboundary dumping routes: Massive volumes of e-waste are illegally exported under the guise of 'second-hand donations' from Europe, the US, and Japan to developing ports like Guangdong/Guiyu (China) and Accra (Ghana)."
+        "Definition: Electronic Waste (e-waste or WEEE) covers all electrical and electronic equipment no longer fit for its original intended use (PCs, phones, TVs, appliances).",
+        "Toxicity nuance: Finished electronics are non-hazardous during normal consumer use; they turn hazardous only when smashed, shredded, or incinerated, releasing toxic additives.",
+        "Global discard rate: Up to 4,000 metric tons of toxic e-waste are discarded worldwide every single hour.",
+        "Transboundary dumping routes: Huge volumes of e-waste are illegally exported from North America, Europe, and Japan to developing ports like Guiyu (China) and Accra (Ghana) disguised as 'second-hand donations'."
       ],
-      "mental_model": "The Sleeping Beast: An intact phone sitting on your nightstand is safe; smash it with a hammer or burn it in an open fire, and toxic chemical beasts wake up.",
+      "mental_model": "The Sleeping Dragon: An intact smartphone on your desk is completely harmless. But smash it with a hammer or throw it into an open bonfire, and dangerous heavy metals and toxic gases awaken.",
       "checkpoint": {
         "question": "Why is consumer electronic waste generally considered non-hazardous during daily household operation but hazardous at disposal?",
         "options": [
@@ -515,7 +515,7 @@
           "Plastic cases actively absorb radiation from the room"
         ],
         "correct_index": 1,
-        "explanation": "Toxic elements like lead, mercury, and flame retardants are safely bound in stable casings during use, but release hazardous toxins when broken or burned."
+        "explanation": "Toxic elements like lead, mercury, and flame retardants are safely bound in stable casings during normal use, but escape when hardware is broken, melted, or burned."
       }
     },
     {
@@ -523,16 +523,16 @@
       "title": "Toxic Constituents in Hardware: Heavy Metals and Persistent Organic Pollutants",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "To understand why e-waste is so dangerous at disposal, we must inspect the exact toxic chemicals hidden inside standard computer parts.",
-      "eli15_takeaway": "Computers pack lead in solder, mercury in displays, cadmium in chips, and cancer-causing flame retardants in plastics.",
+      "eli15_takeaway": "Old computers are packed with chemical poisons: lead in solder, mercury in displays, cadmium in chips, PCBs in cooling oils, and cancer-causing dioxins released when burning wire insulation.",
       "key_facts": [
-        "Printed Circuit Boards (PCBs): Lead (Pb) and Cadmium (Cd) in solders and surface-mount components; Brominated Flame Retardants (BFRs) in epoxy substrates.",
-        "Cathode Ray Tubes (CRTs): Lead oxide (PbO, up to 2-3 kg per monitor) used to block X-rays from the electron gun, plus Cadmium in phosphor coatings.",
+        "Printed Circuit Boards (PCBs): Lead (Pb) and Cadmium (Cd) in solders; Brominated Flame Retardants (BFRs) in epoxy substrates.",
+        "Cathode Ray Tubes (CRTs): Lead oxide (PbO, up to 2–3 kg per monitor!) used to shield users from X-ray radiation, plus Cadmium in phosphor coatings.",
         "Flat Screen Monitors & Switches: Elemental Mercury (Hg) in legacy Cold Cathode Fluorescent Lamp (CCFL) backlights and mechanical tilt switches.",
-        "Rechargeable Batteries: Cadmium (Cd) in Ni-Cd batteries; Cobalt, Nickel, and flammable electrolyte solvents in lithium-ion cells.",
-        "Capacitors and Transformers: Polychlorinated Biphenyls (PCBs) in legacy dielectric insulating oils.",
-        "Wiring & Enclosures: Polyvinyl Chloride (PVC) insulation containing plasticizers and chlorine, generating toxic dioxins when burned."
+        "Rechargeable Batteries: Cadmium (Cd) in Ni-Cd packs; Cobalt, Nickel, and flammable electrolyte solvents in lithium-ion cells.",
+        "Capacitors and Transformers: Polychlorinated Biphenyls (PCBs) in legacy dielectric cooling oils.",
+        "Wiring & Enclosures: Polyvinyl Chloride (PVC) insulation containing chlorine, which releases carcinogenic dioxins when burned."
       ],
-      "mental_model": "The Periodic Table of Toxins: Opening an old desktop tower without safety gear exposes you to neurotoxins (lead), kidney poisons (cadmium), and carcinogens (dioxins).",
+      "mental_model": "The Periodic Table of Toxins: Cracking open an old computer without safety gear exposes you to brain-damaging lead, kidney-destroying cadmium, and cancer-causing dioxin fumes.",
       "checkpoint": {
         "question": "Which heavy metal was historically used in quantities of 2 to 3 kilograms per unit in CRT monitor funnel glass to shield users from X-rays?",
         "options": [
@@ -542,7 +542,7 @@
           "Barium"
         ],
         "correct_index": 2,
-        "explanation": "Cathode Ray Tubes incorporated substantial lead oxide in their funnel and neck glass to shield viewers from X-ray radiation."
+        "explanation": "Cathode Ray Tubes incorporated 2 to 3 kg of lead oxide in their funnel and neck glass to shield viewers from X-ray radiation."
       }
     },
     {
@@ -550,18 +550,18 @@
       "title": "The Informal Recycling Sector: Unorganized Backyard Scrapping and Smelting",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "When this toxic inventory reaches developing countries like India, it enters unregulated informal markets rather than high-tech industrial refineries.",
-      "eli15_takeaway": "In India, over 90% of e-waste recycling happens in unorganized backyard workshops with zero safety equipment or environmental controls.",
+      "eli15_takeaway": "In India, over 90% of e-waste recycling happens in unorganized backyard workshops. Workers smash circuit boards with hammers, burn wires over kerosene stoves, and boil chips in acid with zero protective gear.",
       "key_facts": [
-        "Recycling concentration: In India, historically 90% to 95% of e-waste recycling operates inside the informal (unorganized) sector.",
-        "Structural deficits: Absence of organized door-to-door collection hubs; unorganized scrap dealers (kabadiwalas) bid highest for discarded electronics.",
-        "Informal operations workflow:",
-        "- 1. Manual hammer smashing to break circuit boards and crack CRT tubes.",
-        "- 2. Desoldering components over open kerosene burners.",
-        "- 3. Open-pit burning of wire bundles to strip plastic insulation and recover copper wire.",
-        "- 4. Chemical acid baths (aqua regia) in plastic tubs to strip gold and silver pins.",
-        "- 5. Exporting crude residue for unmonitored precious metal recovery."
+        "Informal dominance: In India, historically 90% to 95% of e-waste recycling operates inside the informal (unorganized) scrap sector.",
+        "Structural drivers: Lack of accessible formal collection points; unorganized scrap collectors (kabadiwalas) pay immediate cash for discarded electronics.",
+        "Informal scrapping workflow:",
+        "- 1. Smashing circuit boards and cracking CRT glass tubes with manual hammers.",
+        "- 2. Desoldering chips and components over open kerosene burners.",
+        "- 3. Burning wire bundles in open pits to strip PVC plastic and collect copper.",
+        "- 4. Dunking circuit board pins in acid baths (aqua regia) in plastic tubs to leach gold and silver.",
+        "- 5. Dumping spent toxic chemical acid straight into open dirt and city drains."
       ],
-      "mental_model": "The Backyard Alchemist: Instead of an automated chemical refinery with fume scrubbers, informal recycling is a worker over a kerosene stove breathing boiling acid fumes to extract a speck of gold.",
+      "mental_model": "The Backyard Alchemist: Instead of a modern sealed factory with air scrubbers, informal recycling is a worker over a kerosene stove breathing boiling nitric acid fumes to extract tiny specks of gold.",
       "checkpoint": {
         "question": "Approximately what percentage of e-waste recycling in India has historically operated within the unorganized informal sector?",
         "options": [
@@ -571,7 +571,7 @@
           "90% to 95%"
         ],
         "correct_index": 3,
-        "explanation": "Over 90% of India's e-waste processing has historically occurred in unorganized informal scrap clusters."
+        "explanation": "Over 90% of India's e-waste processing has historically occurred in unorganized informal scrap workshops."
       }
     },
     {
@@ -579,14 +579,14 @@
       "title": "The Human and Environmental Toll: Occupational Hazards and Severe Resource Loss",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "Backyard smelting creates severe human poisoning, groundwater destruction, and paradoxically wastes most of the valuable metals it seeks to recover.",
-      "eli15_takeaway": "Informal burning poisons women and child laborers with toxic fumes, ruins drinking water, and recovers less than a quarter of the gold.",
+      "eli15_takeaway": "Backyard e-waste scrapping poisons women and child workers with toxic fumes, ruins municipal groundwater, and loses over 70% of the precious gold locked inside the electronics.",
       "key_facts": [
-        "Social vulnerability: Informal processing heavily employs vulnerable demographic groups, including migrant laborers, women, and children with zero personal protective equipment (PPE).",
-        "Occupational pathology: Chronic inhalation of lead fumes causes neurodevelopmental deficits; cadmium damages kidney filtration tubules; burning PVC releases carcinogenic polychlorinated dibenzodioxins.",
-        "Severe environmental leaching: Spent acid baths containing cyanide and heavy metals are dumped directly into municipal storm drains, poisoning aquifers and topsoil.",
-        "Resource loss: Primitive wet-chemistry acid stripping recovers only 20-30% of precious metals, destroying recoverable gold, palladium, and copper compared to modern formal smelting that achieves over 98% recovery."
+        "Social vulnerability: Informal recycling relies heavily on vulnerable groups, including migrant laborers, women, and children working with zero personal protective equipment (PPE).",
+        "Occupational diseases: Chronic lead inhalation causes brain and nerve damage; cadmium destroys kidney filtration tubules; burning PVC releases carcinogenic chlorinated dioxins.",
+        "Environmental contamination: Spent acid baths containing cyanide and heavy metals are poured straight into storm drains, poisoning groundwater and farming soil.",
+        "Massive resource waste: Primitive acid stripping recovers only 20% to 30% of precious metals (wasting the rest), whereas modern industrial smelters recover over 98% of gold, copper, and palladium."
       ],
-      "mental_model": "Squeezing an Orange with a Bulldozer: Crude informal acid leaching crushes everything in its path, ruins the soil, poisons the worker, and leaves 75% of the juice spilled on the ground.",
+      "mental_model": "Squeezing an Orange with a Bulldozer: Crude informal acid leaching crushes everything, ruins the soil, poisons the worker, and leaves 75% of the valuable juice spilled on the ground.",
       "checkpoint": {
         "question": "Why is informal acid-bath metal extraction considered deeply inefficient compared to modern industrial smelting?",
         "options": [
@@ -596,7 +596,7 @@
           "Informal recyclers refuse to sell recovered metals to jewelers"
         ],
         "correct_index": 1,
-        "explanation": "Crude acid stripping loses 70-80% of target precious metals into toxic sludge, whereas industrial hydrometallurgical smelters achieve over 98% recovery."
+        "explanation": "Crude acid stripping loses 70% to 80% of target precious metals into toxic sludge, whereas industrial hydrometallurgical smelters achieve over 98% recovery."
       }
     },
     {
@@ -604,15 +604,15 @@
       "title": "Case Study: Agbogbloshie, Ghana and Food Chain Bioaccumulation",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "To see how toxic e-waste escapes the scrapyard and enters human biology, we examine the landmark investigation at Agbogbloshie, Ghana.",
-      "eli15_takeaway": "Burning European e-waste in Ghana poisoned local chicken eggs with dioxins 200 times higher than European safe food limits.",
+      "eli15_takeaway": "When European e-waste was burned in open scrap pits in Ghana, the toxic smoke poisoned local chicken eggs with 220 times more cancer-causing dioxins than European safety rules permit.",
       "key_facts": [
-        "Agbogbloshie (Accra, Ghana) was one of the world's largest informal e-waste dumpsites, home to over 80,000 residents living adjacent to open burning pits.",
-        "The Guardian and environmental health researchers (IPEN) published an investigation in April 2019 sampling food products around the dumpsite.",
-        "Laboratory findings: Free-range chicken eggs gathered at Agbogbloshie contained catastrophic concentrations of chlorinated dioxins and polychlorinated biphenyls (PCBs).",
-        "Extreme toxicity threshold: Eating a single egg from this site exposed an adult to chlorinated dioxins exceeding the European Food Safety Authority (EFSA) tolerable weekly intake by over 200 times.",
-        "Confirms bioaccumulation: Air emissions and toxic ash settle on soils, foraging poultry ingest soil particles, and lipophilic toxins concentrate in egg yolks."
+        "Agbogbloshie (Accra, Ghana) was one of the planet's largest informal e-waste dumps, where over 80,000 residents lived alongside burning scrap pits.",
+        "April 2019 environmental investigation (IPEN / Basel Action Network) sampled food and poultry eggs around the dumpsite.",
+        "Laboratory findings: Free-range chicken eggs gathered at Agbogbloshie contained extreme concentrations of chlorinated dioxins and polychlorinated biphenyls (PCBs).",
+        "Shocking safety breach: Eating just one egg from this site exposed an adult to chlorinated dioxins exceeding the European Food Safety Authority (EFSA) safe weekly intake by over 200 times (220x).",
+        "Proven bioaccumulation: Toxic ash settles onto the soil, foraging poultry ingest soil particles, and lipophilic toxins concentrate heavily in egg yolks."
       ],
-      "mental_model": "The Toxic Domino Effect: Discarded computers burned 5,000 miles away produce smoke that settles in dirt, enters a chicken, and ends up on a breakfast plate as a massive dose of industrial poison.",
+      "mental_model": "The Toxic Domino Effect: Discarded electronics burned thousands of miles away release smoke that settles into dirt. Chickens eat the dirt, and the industrial poison ends up concentrated on a family's breakfast plate.",
       "checkpoint": {
         "question": "What did environmental health tests reveal about chicken eggs collected near the Agbogbloshie e-waste dumpsite in Ghana?",
         "options": [
@@ -622,7 +622,7 @@
           "The eggs absorbed only minor traces of calcium carbonate"
         ],
         "correct_index": 1,
-        "explanation": "Testing by IPEN and Basel Action Network showed a single egg exceeded safe weekly dioxin limits by 220 times due to open-air burning."
+        "explanation": "Laboratory testing by IPEN and Basel Action Network showed a single egg near Agbogbloshie exceeded safe weekly dioxin limits by 220 times due to open-air wire burning."
       }
     },
     {
@@ -630,14 +630,14 @@
       "title": "Regulatory Jurisprudence: Why E-Waste Demands Dedicated Statutory Rules",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "Disasters like Agbogbloshie exposed a gaping legal loophole: standard environmental laws designed for factories cannot manage millions of dead computers.",
-      "eli15_takeaway": "E-waste needs special laws because it comes from millions of ordinary consumers, not from a single factory smoke stack.",
+      "eli15_takeaway": "E-waste needs its own distinct laws because it does not come from a single factory pipe. It comes from millions of ordinary homes and offices, mixing hazardous poisons with valuable precious metals.",
       "key_facts": [
-        "End-of-consumption vs. Industrial process waste: Traditional factory hazardous waste originates from a centralized industrial point source; e-waste is generated post-consumption across millions of dispersed households and offices.",
-        "Regulatory precedent under India's Environment Protection Act (EPA 1986): Distinct waste streams require tailored statutory regimes (e.g., Biomedical Waste Rules 1998, Batteries Management and Handling Rules 2001).",
-        "The complex value chain: Spans component fabricators, device OEMs, importers, distributors, retail outlets, consumers, informal scrap collectors, dismantlers, and specialized refiners.",
-        "Tailored processes: Refurbishment, dismantling, shredding, and precious metal hydrometallurgical extraction each require specific environmental clearances."
+        "Dispersed post-consumer waste: Traditional industrial waste comes from a centralized factory point source; e-waste is generated post-consumption across millions of dispersed households and offices.",
+        "Legal precedent under India's Environment Protection Act (EPA 1986): Unique waste streams require tailored statutory regimes (e.g., Biomedical Waste Rules 1998, Batteries Rules 2001).",
+        "Complex multi-tiered supply chain: Spans component fabricators, device OEMs, importers, retailers, consumers, informal scrap collectors, dismantlers, and specialized refiners.",
+        "Tailored processes: Refurbishment, dismantling, mechanical shredding, and hydrometallurgical metal recovery each demand specific environmental clearances and safeguards."
       ],
-      "mental_model": "The Factory Pipe vs. The Rainstorm: Point-source factory waste is like a single dirty pipe you can cap; e-waste is like an acid rainstorm falling over millions of backyards that requires a completely different drainage system.",
+      "mental_model": "The Factory Pipe vs. The Dispersed Rainstorm: Point-source factory waste is like a single dirty pipe you can cap with a valve. E-waste is like an acid rainstorm falling across millions of rooftops that demands an entirely new collection network.",
       "checkpoint": {
         "question": "Why does e-waste require a dedicated legal framework separate from standard industrial hazardous waste laws?",
         "options": [
@@ -647,7 +647,7 @@
           "Because electronics manufacturers are immune from domestic environmental laws"
         ],
         "correct_index": 1,
-        "explanation": "E-waste is post-consumer waste dispersed across millions of homes and businesses, requiring unique collection and recycling supply chains."
+        "explanation": "E-waste is post-consumer waste dispersed across millions of homes and businesses, requiring specialized collection networks separate from point-source factory laws."
       }
     },
     {
@@ -655,15 +655,15 @@
       "title": "Legislative Evolution: The Basel Convention, CPCB Guidelines, and Import Restrictions",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "Before crafting a single e-waste law, India and the global community patched together multiple overlapping treaties and hazardous waste codes.",
-      "eli15_takeaway": "The Basel Convention banned shipping toxic waste across borders, while India used customs laws and pollution rules to block illegal e-waste imports.",
+      "eli15_takeaway": "The international Basel Convention banned rich nations from dumping toxic electronic trash on poor countries, while India tightened customs and pollution rules to block illegal e-waste shipments.",
       "key_facts": [
-        "The Basel Convention on the Control of Transboundary Movements of Hazardous Wastes (1989): International treaty restricting developed nations from dumping hazardous e-waste into developing countries without prior informed consent.",
+        "The Basel Convention on the Control of Transboundary Movements of Hazardous Wastes (1989): Global treaty restricting developed nations from dumping hazardous e-waste into developing countries without prior informed consent.",
         "Hazardous Waste (Management and Handling) Rules 1998 (amended 2008): India's initial rule covering toxic industrial residues, requiring formal registration for hazardous recyclers.",
-        "Municipal Solid Waste (MSW) Rules 2000: Addressed non-toxic municipal trash, failing to segregate consumer electronics.",
-        "Indian Foreign Trade Policy (DGFT): Prohibits commercial importation of electronic waste and strictly restricts import of second-hand computers.",
-        "Central Pollution Control Board (CPCB) 2008 Guidelines: India's first formal policy document outlining fundamental principles for e-waste channelization."
+        "Municipal Solid Waste (MSW) Rules 2000: Addressed non-toxic household garbage, failing to segregate consumer electronics.",
+        "Indian Foreign Trade Policy (DGFT): Prohibits commercial importation of electronic waste and strictly restricts imports of second-hand computers.",
+        "Central Pollution Control Board (CPCB) 2008 Guidelines: India's first formal policy document laying down clear principles for safe e-waste channelization."
       ],
-      "mental_model": "The Patchwork Quilt: Early e-waste regulation was like stitching three old blankets together\u2014one for city garbage, one for chemical factories, and one for customs ships\u2014leaving huge gaps where electronics slipped through.",
+      "mental_model": "The Patchwork Quilt: Early e-waste regulation was like stitching three old blankets together—one for city garbage, one for chemical plants, and one for shipping customs—leaving huge gaps where electronics slipped through until dedicated laws were written.",
       "checkpoint": {
         "question": "What international treaty regulates and restricts the cross-border transport of hazardous electronic waste from developed to developing countries?",
         "options": [
@@ -673,7 +673,7 @@
           "The Paris Agreement"
         ],
         "correct_index": 1,
-        "explanation": "The Basel Convention controls transboundary movements of hazardous wastes and strictly prohibits dumping in developing nations."
+        "explanation": "The Basel Convention controls transboundary movements of hazardous wastes and strictly prohibits dumping toxic e-waste in developing nations."
       }
     },
     {
@@ -681,19 +681,19 @@
       "title": "Salient Principles of CPCB Guidelines: Extended Producer Responsibility and RoHS",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "The 2008 CPCB Guidelines established the two legal cornerstones of modern tech regulation: making producers pay and banning specific poisons.",
-      "eli15_takeaway": "The guidelines introduced two vital ideas: RoHS bans six deadly poisons in new chips, and EPR makes hardware makers pay for recycling old devices.",
+      "eli15_takeaway": "The guidelines established two crucial rules: RoHS bans six deadly poisons in new chips, and EPR forces electronics makers to pay for collecting and recycling their products when they die.",
       "key_facts": [
         "Extended Producer Responsibility (EPR): Policy principle holding hardware manufacturers financially and logistically accountable for collecting and treating their products at end-of-life.",
-        "Restriction of Hazardous Substances (RoHS): Mandates strict concentration limits on six hazardous substances in electronics:",
-        "- Lead (Pb) < 0.1%",
-        "- Mercury (Hg) < 0.1%",
-        "- Cadmium (Cd) < 0.01% (100 ppm)",
-        "- Hexavalent Chromium (Cr6+) < 0.1%",
-        "- Polybrominated Biphenyls (PBB) < 0.1%",
-        "- Polybrominated Diphenyl Ethers (PBDE) < 0.1%",
-        "Formalization mandate: Called for establishing formal recycling centers, authorized collection mechanisms, and transitioning informal workers into safe employment."
+        "Restriction of Hazardous Substances (RoHS): Sets strict maximum concentration limits on six hazardous substances in homogeneous materials:",
+        "- Lead (Pb) < 0.1% (1,000 ppm)",
+        "- Mercury (Hg) < 0.1% (1,000 ppm)",
+        "- Cadmium (Cd) < 0.01% (100 ppm) — 10x stricter due to extreme toxicity!",
+        "- Hexavalent Chromium (Cr6+) < 0.1% (1,000 ppm)",
+        "- Polybrominated Biphenyls (PBB) < 0.1% (1,000 ppm)",
+        "- Polybrominated Diphenyl Ethers (PBDE) < 0.1% (1,000 ppm)",
+        "Formalization mandate: Called for setting up authorized collection centers, registered recycling plants, and transitioning informal scrap workers into safe, legal employment."
       ],
-      "mental_model": "The Manufacturer Boomerang: EPR says if you build a plastic and metal gadget and throw it into the market, you must be ready to catch it when it flies back at the end of its life.",
+      "mental_model": "The Manufacturer Boomerang: EPR says that if you build a plastic and metal gadget and throw it into the market, you must be ready to catch it when it flies back at the end of its life.",
       "checkpoint": {
         "question": "Under RoHS standards, what is the maximum permissible concentration threshold for Cadmium in homogeneous electronic components?",
         "options": [
@@ -711,15 +711,15 @@
       "title": "Modern Statutory Mandates: India's E-Waste Rules 2022 and Tradable EPR Certificates",
       "act": "Act 4: The E-Waste Crisis, Toxic Constituents & Global Regulation",
       "continuity_bridge": "Voluntary guidelines evolved into binding statutory law in 2022, creating mandatory recycling quotas and a market for tradable recycling credits.",
-      "eli15_takeaway": "India's 2022 rules require companies to recycle 80% of their electronics by 2025 and introduced tradable recycling certificates like carbon credits.",
+      "eli15_takeaway": "India's 2022 rules require companies to recycle 80% of their electronics by 2025. It also launched tradable EPR certificates—giving tech brands a financial reward for recycling and stiff fines for dodging quotas.",
       "key_facts": [
-        "The Ministry of Environment, Forest and Climate Change (MoEFCC) notified the E-Waste (Management) Rules 2022, superseding the 2016 framework.",
-        "Binding statutory recycling targets: Mandates hardware producers recycle 60% of their sales volume in 2023-2024, 70% in 2024-2025, and reach 80% by 2025-2026.",
+        "Ministry of Environment, Forest and Climate Change (MoEFCC) notified the E-Waste (Management) Rules 2022, superseding the 2016 framework.",
+        "Binding statutory recycling targets: Mandates hardware producers recycle 60% of their sales volume in 2023–2024, 70% in 2024–2025, and reach 80% by 2025–2026.",
         "Market-based compliance: Introduces tradable EPR Certificates generated by accredited, registered recyclers on an online Central Pollution Control Board portal.",
-        "Financial penalty mechanism: Tech companies that fail to purchase sufficient EPR credits face steep environmental compensation fines.",
-        "Urban Mining economics: Recycled e-waste yields 40 to 50 times richer gold concentration than natural gold ore (1 ton of discarded phones yields approx 300g gold vs approx 5g gold per ton of raw mined ore)."
+        "Financial penalties: Tech companies that fail to purchase enough EPR certificates face steep environmental compensation fines.",
+        "Urban Mining economics: Recycled e-waste yields 40 to 60 times richer gold concentration than natural gold ore (1 ton of discarded phones yields ~300g gold vs only ~5g gold per ton of natural mined ore)."
       ],
-      "mental_model": "The E-Waste Stock Market: Just like carbon credits let clean factories sell permits to polluters, EPR certificates let high-tech electronic recyclers sell proof of recycling to electronics makers who need to meet their 80% legal quota.",
+      "mental_model": "The E-Waste Carbon Market: Just as carbon credits let clean factories sell permits to polluters, EPR certificates let registered high-tech recyclers sell verified recycling credits to electronics brands needing to meet their 80% legal quota.",
       "checkpoint": {
         "question": "What target percentage of their electronic sales volume must producers recycle by 2025 under India's E-Waste Management Rules 2022?",
         "options": [
@@ -729,7 +729,7 @@
           "100%"
         ],
         "correct_index": 2,
-        "explanation": "India's E-Waste Management Rules 2022 mandate an 80% recycling target for producers by the year 2025."
+        "explanation": "India's E-Waste Management Rules 2022 mandate an 80% statutory recycling target for producers by the year 2025–2026."
       }
     },
     {
@@ -737,14 +737,14 @@
       "title": "Sustainable Concept Hardware: Bio-Degradable Polymers and Laser Projection",
       "act": "Act 5: Next-Generation Hardware Paradigms & Circular Concepts",
       "continuity_bridge": "To eliminate the toxic e-waste burdens explored in Act 4, industrial designers are creating radical concept computers using biodegradable skins and zero-peripheral designs.",
-      "eli15_takeaway": "Dell concept PCs replace petroleum plastics with bamboo and cornstarch polymers and project monitors onto desks with lasers to eliminate peripheral waste.",
+      "eli15_takeaway": "Concept PCs replace fossil plastics with bamboo and cornstarch polymers, while projecting screens and keyboards with lasers directly onto desks to wipe out peripheral waste.",
       "key_facts": [
-        "1. Dell 'O Project': A zero-peripheral computing hub using solid-state laser projection to display keyboards and monitors onto floors or desks, eliminating standalone plastic monitors and external keyboards.",
-        "Dell 'O Project' chassis: Molded from bio-decomposable starch-based polymer, allowing casings to compost naturally while electrical components are returned to the OEM for closed-loop remanufacturing.",
+        "1. Dell 'O Project': A zero-peripheral computing hub using solid-state laser projection to display keyboards and monitors onto desks or floors, eliminating separate plastic monitors and keyboards.",
+        "Dell 'O Project' chassis: Molded from biodegradable starch-based polymer, allowing casings to compost naturally while electrical components are returned to the OEM for closed-loop remanufacturing.",
         "2. Dell Biodegradable Desktop: Structural skins composed of biodegradable polymers synthesized from bamboo fibers and cornstarch.",
         "Cradle-to-cradle lifecycle: Toxic epoxy resins and petroleum plastics are replaced with agricultural polymers that break down safely in industrial composters."
       ],
-      "mental_model": "The Plant-Based PC: Instead of encasing microchips in fossil fuels that sit in landfills for 500 years, you encase them in corn and bamboo that melt back into garden soil.",
+      "mental_model": "The Plant-Based Computer: Instead of encasing microchips in fossil plastics that linger in landfills for 500 years, encase them in corn and bamboo that break down naturally into garden soil.",
       "checkpoint": {
         "question": "How does the Dell 'O Project' concept eliminate the material footprint of external monitors and keyboards?",
         "options": [
@@ -762,13 +762,13 @@
       "title": "Self-Sustaining Hardware: Knezevic Solar Laptops and the Lawn PC Concept",
       "act": "Act 5: Next-Generation Hardware Paradigms & Circular Concepts",
       "continuity_bridge": "While biodegradable plastics solve casing disposal, self-powering hardware concepts tackle operational grid electricity draw.",
-      "eli15_takeaway": "Solar-powered concepts integrate fold-out solar lids and artificial solar grass to power computers entirely on sunlight.",
+      "eli15_takeaway": "Solar-powered concepts integrate fold-out solar lids and artificial solar grass to power computers entirely on sunlight and room light.",
       "key_facts": [
         "3. Nikola Knezevic Solar Laptop Concept: Incorporates a fold-out photovoltaic panel attached to the upper lid of the laptop chassis.",
-        "Dual-state harvesting: The solar panel articulates outward to face sunlight whether the laptop is in an open operational state or closed inside an office, keeping batteries charged off-grid.",
-        "4. Lawn PC Concept: A biomimetic computing workstation designed to generate its own operational electricity.",
-        "Artificial grass circuitry: Features a base covered in recyclable synthetic grass blades embedded with miniature solar cells and circuits.",
-        "Estimated power output: Designed to harvest natural and ambient indoor light, saving up to 876 kWh of grid electrical power annually."
+        "Dual-state harvesting: The solar panel articulates outward to face sunlight whether the laptop is open in use or closed in an office, keeping batteries charged off-grid.",
+        "4. Lawn PC Concept: A biomimetic computing workstation designed to generate its own operating electricity.",
+        "Artificial grass circuitry: Features an upper surface covered in recyclable synthetic grass blades embedded with miniature solar cells and circuits.",
+        "Power output: Designed to harvest natural and ambient indoor light, saving up to 876 kWh of grid electrical power annually."
       ],
       "mental_model": "The Photosynthetic Laptop: Just as leaves harvest sunlight for a tree while it rests, a solar laptop lid trickle-charges its batteries on your windowsill without needing a wall charger.",
       "checkpoint": {
@@ -780,7 +780,7 @@
           "87,600 kWh"
         ],
         "correct_index": 1,
-        "explanation": "The Lawn PC concept is designed to generate self-sustaining power, saving approximately 876 kWh of electrical power each year."
+        "explanation": "The Lawn PC concept is designed to generate self-sustaining power, saving approximately 876 kWh of grid electrical power each year."
       }
     },
     {
@@ -869,7 +869,7 @@
       "eli15_takeaway": "The Power Flower PC runs on a hydrogen fuel cell that emits clean drinking water instead of heat, and uses laser projection instead of a plastic monitor.",
       "key_facts": [
         "11. Power Flower PC Concept: Powered by an integrated miniature hydrogen fuel cell, replacing standard electrical power supplies and grid cords.",
-        "Clean byproduct: The electrochemical reaction of hydrogen (H2) and ambient oxygen (O2) produces pure water (H2O) that drips into a transparent decorative base.",
+        "Clean byproduct: The electrochemical reaction of hydrogen (\\(H_2\\)) and ambient oxygen (\\(O_2\\)) produces pure water (\\(H_2O\\)) that drips into a transparent decorative base.",
         "The collected water is potable and can be used for drinking, cooking, or watering office plants.",
         "Elimination of peripherals: Dispenses with standalone monitors, mice, and keyboards:",
         "- Projection display: Micro-projector displays the screen image onto any nearby flat desktop or wall.",
@@ -887,7 +887,7 @@
           "Nitrogen oxide vapor"
         ],
         "correct_index": 1,
-        "explanation": "Hydrogen fuel cells combine hydrogen with oxygen, producing electrical current and pure water (H2O) as their only byproduct."
+        "explanation": "Hydrogen fuel cells combine hydrogen with oxygen, producing electrical current and pure water (\\(H_2O\\)) as their only byproduct."
       }
     },
     {

@@ -1,6 +1,6 @@
 {
   "class_id": 18,
-  "title": "Class 18: Natural Resource Accounting & Geospatial Technology",
+  "title": "Natural Resource Accounting & Geospatial Technologies",
   "total_slides": 25,
   "slides": [
     {
@@ -8,13 +8,13 @@
       "title": "Geospatial Technology in Natural Resource Accounting",
       "act": "Act 1: Foundations of Natural Capital & Ecosystem Services",
       "continuity_bridge": "Economic growth metrics like GDP celebrate factory output while ignoring the raw resources consumed or degraded to produce it. This opening lecture introduces Natural Resource Accounting paired with satellite GIS to fix that blind spot.",
-      "eli15_takeaway": "Standard bank balances track your cash spending, but ignore if your house foundation is rotting away. Natural Resource Accounting tracks Earth's environmental assets so nations stop mistaking resource destruction for pure profit.",
+      "eli15_takeaway": "Conventional GDP celebrates factory output and timber sales as income, but ignores that our planet's ecological foundation is being liquidated. Natural Resource Accounting (NRA) fixes this blind spot by using satellites and GIS to put Earth's assets on a formal balance sheet.",
+      "mental_model": "Selling the wooden floorboards and roof tiles of your house to buy groceries. Your wallet looks full today, but you just demolished your own shelter. NRA puts the roof back on the ledger.",
       "key_facts": [
         "Course Focus: Natural Resource Accounting (NRA) integrated with Remote Sensing (RS) and Geographic Information Systems (GIS).",
-        "Core Problem: Gross Domestic Product (GDP) records natural resource liquidation as positive income while ignoring asset depreciation.",
-        "Integrated Solution: Earth observation satellites track physical land changes over time, feeding direct spatial data into economic asset ledgers."
+        "Economic Blind Spot: Gross Domestic Product (GDP) records natural resource liquidation as positive income without deducting capital asset depreciation.",
+        "Geospatial Solution: Earth observation satellites provide objective, repeated spatial measurements of land cover change over decades, directly feeding physical ledgers into economic accounts."
       ],
-      "mental_model": "A lumber business selling all its trees looks rich on paper this year, but with zero trees left, it is bankrupt next year. NRA adds the missing tree balance sheet.",
       "checkpoint": {
         "question": "Why does conventional Gross Domestic Product (GDP) give a misleading signal about national wealth?",
         "options": [
@@ -24,7 +24,7 @@
           "It only measures agricultural output and ignores urban expansion"
         ],
         "correct_index": 0,
-        "explanation": "GDP measures economic throughput. When an economy cuts down a forest or empties an aquifer, GDP records timber sales and water bottling as positive income, ignoring the depletion of the underlying asset."
+        "explanation": "GDP only tracks market spending and sales. When an economy logs a forest or drains an aquifer, GDP records timber and water sales as income while ignoring that the natural asset itself was permanently lost."
       }
     },
     {
@@ -32,14 +32,14 @@
       "title": "Natural Capital Classification: Odum Framework and Resource Stocks",
       "act": "Act 1: Foundations of Natural Capital & Ecosystem Services",
       "continuity_bridge": "Before we can balance nature's books, we must categorize what kinds of assets Earth actually holds. We turn to Eugene Odum's ecological taxonomy to separate finite geological deposits from living ecosystems.",
-      "eli15_takeaway": "Natural capital splits into two broad buckets: abiotic physical stuff (minerals and sunlight) and biotic living networks (forests and wetlands). Living assets can regenerate, but only if we don't overharvest them past their recovery limits.",
+      "eli15_takeaway": "Eugene Odum split natural capital into non-living physical assets (minerals and sunlight) and living ecological networks (forests and wetlands). Living assets can regenerate on their own, but only if our harvest rate stays below their natural biological recovery speed.",
+      "mental_model": "An emergency backup generator with a fixed diesel tank (sub-soil: non-renewable), rooftop solar panels giving free power every morning (abiotic flow: endless and renewable), and a backyard vegetable garden (biotic: renewable if weeded, but dead if trampled).",
       "key_facts": [
-        "Odum (1971) Classification: Splits natural capital into Abiotic and Biotic factors.",
-        "Abiotic Sub-soil Assets: Geological resources like minerals, fossil fuels, sand, and gravel that are non-renewable and depletable.",
-        "Abiotic Flows: Continuous geophysical cycles like solar radiation, wind, and tidal energy that are renewable and non-depletable.",
-        "Biotic Ecosystem Capital: Living ecological systems that are renewable yet depletable if extraction exceeds natural regeneration rates."
+        "Odum (1971) Taxonomy: Divides natural capital into Abiotic (non-living) and Biotic (living) categories.",
+        "Abiotic Sub-Soil Assets: Finite, non-renewable geological reserves (fossil fuels, minerals, sand, gravel) that deplete with extraction.",
+        "Abiotic Flows: Continuous, non-depletable geophysical energies (solar radiation, wind, tidal currents) that regenerate perpetually.",
+        "Biotic Ecosystem Capital: Living biological systems (forests, wetlands, marine biomes, soil biotas) that are renewable through biological reproduction, yet depletable if extraction exceeds natural regeneration rates."
       ],
-      "mental_model": "Think of sub-soil minerals as a fixed savings account you can only withdraw from, solar flows as a daily wage that arrives regardless, and ecosystems as rental real estate that pays monthly dividends as long as you maintain the building.",
       "checkpoint": {
         "question": "Under the Odum natural capital classification, how is living ecosystem capital categorized?",
         "options": [
@@ -49,7 +49,7 @@
           "Purely sub-soil and infinite"
         ],
         "correct_index": 0,
-        "explanation": "Ecosystems regenerate naturally through biological reproduction (renewable), but excessive harvest, pollution, or land clearing can permanently destroy them (depletable)."
+        "explanation": "Ecosystems reproduce naturally (making them renewable), but excessive harvesting, habitat clearing, or pollution can permanently destroy them (making them depletable)."
       }
     },
     {
@@ -57,15 +57,15 @@
       "title": "Ecosystem Goods and Services Framework (MA 2005)",
       "act": "Act 1: Foundations of Natural Capital & Ecosystem Services",
       "continuity_bridge": "Classifying ecosystem capital as renewable is only step one; we also need to inventory what that capital produces for society. The UN Millennium Ecosystem Assessment (2005) provides the universal four-way balance sheet for all ecological outputs.",
-      "eli15_takeaway": "Nature gives us four service types: physical stuff you can touch (provisioning), invisible shields that keep conditions stable (regulating), life-support basics that make nature work (supporting), and cultural fun or spiritual peace.",
+      "eli15_takeaway": "The UN divides nature's benefits into four buckets: physical goods we harvest (provisioning), natural shields that buffer our environment (regulating), life-support engines running in the background (supporting), and cultural joy or recreation.",
+      "mental_model": "A smartphone ecosystem: Supporting services are the underlying operating system running the hardware; Regulating services are the automatic malware shield and thermal cooling; Provisioning services are the battery power and app downloads; Cultural services are your music playlists and custom wallpaper.",
       "key_facts": [
-        "Millennium Ecosystem Assessment (MA, 2005) categorizes ecosystem services into four functional classes.",
-        "Provisioning Services: Tangible physical products harvested from nature (food, timber, fresh water, fiber, fuelwood, genetic resources).",
-        "Regulating Services: Environmental balance mechanisms (climate control, flood mitigation, disease regulation, water purification, pollination).",
-        "Cultural Services: Non-material psychological and social benefits (ecotourism, recreation, spiritual peace, aesthetic beauty, sense of place).",
-        "Supporting Services: Foundational biophysical processes necessary for all other services to exist (soil formation, primary production, nutrient cycling)."
+        "Millennium Ecosystem Assessment (MA 2005): Classifies ecological functions into four distinct service categories.",
+        "Provisioning Services: Tangible physical goods extracted directly for human consumption (food crops, timber, fresh water, biomass fuel, fiber, genetic materials).",
+        "Regulating Services: Biophysical buffer mechanisms that stabilize ecosystems (climate regulation, flood attenuation, water purification, disease control, pollination).",
+        "Cultural Services: Non-material psychological, recreational, and spiritual benefits (ecotourism, outdoor recreation, aesthetic appreciation, sacred landscapes).",
+        "Supporting Services: Foundational biophysical processes necessary for all other services to function (soil formation/pedogenesis, primary production/photosynthesis, nutrient cycling)."
       ],
-      "mental_model": "Supporting services are the phone operating system; regulating services are the firewalls and antivirus; provisioning services are the downloaded apps you use; cultural services are the wallpapers and games.",
       "checkpoint": {
         "question": "Which of the following is classified as a Supporting Service under the Millennium Ecosystem Assessment (MA 2005)?",
         "options": [
@@ -75,7 +75,7 @@
           "Ecotourism and recreational boating"
         ],
         "correct_index": 0,
-        "explanation": "Supporting services do not directly feed human markets; instead, basic processes like soil formation, primary production, and nutrient cycling underpin all other ecosystem services."
+        "explanation": "Supporting services run nature's background machinery. Foundational processes like soil formation and nutrient cycling underpin all other ecosystem services rather than directly entering retail markets."
       }
     },
     {
@@ -83,13 +83,13 @@
       "title": "Defining Natural Resource Accounting (NRA)",
       "act": "Act 1: Foundations of Natural Capital & Ecosystem Services",
       "continuity_bridge": "Now that we know the four ecosystem service flows, what happens when human enterprise over-extracts them? Natural Resource Accounting formalizes this loss into explicit depreciation accounting.",
-      "eli15_takeaway": "When a factory wears down its machines, it writes off depreciation costs. Natural Resource Accounting forces businesses and governments to do the exact same thing when they drain an aquifer, cut a forest, or degrade arable land.",
+      "eli15_takeaway": "When factory machinery wears down, companies subtract depreciation costs to find true profits. Natural Resource Accounting applies that exact corporate rule to the planet by deducting environmental depletion from GDP to calculate honest Net Domestic Product.",
+      "mental_model": "A taxi driver counting daily passenger fares as pure profit while refusing to account for bald tires, blown head gaskets, and a smoking engine. NRA forces the driver to subtract vehicle wear-and-tear before celebrating earnings.",
       "key_facts": [
-        "Definition (UNESCWA): NRA estimates the monetary and physical value of natural resource depletion and environmental degradation caused by economic activity.",
-        "Core Function: Adjusts national balance sheets (like Net Domestic Product) by deducting environmental capital consumption.",
-        "Depreciation Principle: Natural assets lose productive capacity through over-harvesting, soil erosion, and habitat fragmentation just like mechanical equipment wears out."
+        "UNESCWA Definition: NRA calculates the physical quantity and monetary value of natural resource depletion and environmental degradation caused by human economic production.",
+        "Core Accounting Adjustment: Deducts environmental capital consumption from Gross Domestic Product (GDP) to derive environmentally adjusted Net Domestic Product (NDP).",
+        "Depreciation Mechanism: Natural assets lose biological productivity through over-harvesting, soil erosion, and habitat fragmentation, behaving exactly like mechanical capital depreciation."
       ],
-      "mental_model": "Imagine running a taxi fleet and recording all fare money as profit while refusing to account for tire wear, oil changes, or engine burnout. NRA adds vehicle depreciation to the ledger.",
       "checkpoint": {
         "question": "What is the primary objective of Natural Resource Accounting (NRA) according to UNESCWA?",
         "options": [
@@ -99,7 +99,7 @@
           "Banning private ownership of agricultural and forest land"
         ],
         "correct_index": 0,
-        "explanation": "NRA measures the real costs of resource depletion and ecological damage so economic decision-makers see the true net position of their natural capital."
+        "explanation": "NRA measures the monetary and physical losses of resource depletion and environmental degradation, giving decision-makers an honest calculation of net economic performance."
       }
     },
     {
@@ -107,24 +107,24 @@
       "title": "Balance Sheet Mechanics: Physical Stocks to Monetary Values",
       "act": "Act 2: Accounting Architecture: Physical Stocks, Monetary Flows & Geospatial Bridge",
       "continuity_bridge": "We have defined NRA conceptually, but how does an accountant write it down in numbers? We look at a standard two-period ledger comparing timber board-feet and agricultural acreage.",
-      "eli15_takeaway": "A resource ledger starts by counting physical units\u2014like timber board-feet or farmland hectares\u2014and multiplies them by asset unit prices. If you cut down trees to clear farm plots, one asset shrinks while the other grows.",
+      "eli15_takeaway": "A natural resource balance sheet tracks physical inventory across time and multiplies by unit prices. In our textbook case, clearing trees for farmland increased total paper wealth from \\$8.5M to \\$9.0M, but concealed a permanent 20% drawdown of living timber stocks.",
+      "mental_model": "Selling 20% of your family's gold jewelry to buy corporate stocks. Your dollar balance might look higher on paper, but you permanently surrendered an irreplaceable physical safety reserve.",
       "key_facts": [
-        "Two-Period Asset Balance: Compares opening stock (Year 1) to closing stock (Year 2) across resource types.",
-        "Timber Depletion Example: Standing timber drops from 500,000 to 400,000 board-feet; at $5/board-foot, asset value declines from $2.5M to $2.0M (-$500,000 loss).",
-        "Agricultural Addition Example: Cropland expands from 6,000 to 7,000 hectares; at $1,000/ha, agricultural capital rises from $6.0M to $7.0M (+$1,000,000 gain).",
-        "Net Natural Asset Position: Total environmental assets rise from $8.5M to $9.0M, but physical timber capital suffered a 20% drawdown."
+        "Two-Period Asset Ledger: Records opening physical stock (Year 1) versus closing physical stock (Year 2) and converts them using market or shadow unit prices.",
+        "Timber Depletion Account: Standing timber falls from 500,000 to 400,000 board-feet; at \\$5/board-foot, asset value drops from \\$2.5M to \\$2.0M (an asset loss of \\(-\\$500{,}000\\)).",
+        "Agricultural Expansion Account: Cropland expands from 6,000 to 7,000 hectares; at \\$1,000/ha, agricultural capital rises from \\$6.0M to \\$7.0M (an asset addition of \\(+\\$1{,}000{,}000\\)).",
+        "Net Capital Distortion: Total monetary assets grew from \\$8.5M to \\$9.0M, masking a severe 20% physical drawdown in natural timber reserves (\\(-100{,}000\\) board-feet)."
       ],
-      "mental_model": "If you sell 100 shares of tech stock to buy 200 shares of energy stock, your physical share count changes in both buckets. Nature accounting tracks both individual stocks and your combined net worth.",
       "checkpoint": {
-        "question": "In the textbook two-period forest account example, what caused the timber asset value to fall from $2.5M to $2.0M?",
+        "question": "In the textbook two-period forest account example, what caused the timber asset value to fall from \\$2.5M to \\$2.0M?",
         "options": [
-          "A 100,000 board-foot reduction in standing timber stock at a constant unit price of $5 per board-foot",
-          "A collapse in market timber price from $10 down to $5 per board-foot",
+          "A 100,000 board-foot reduction in standing timber stock at a constant unit price of \\$5 per board-foot",
+          "A collapse in market timber price from \\$10 down to \\$5 per board-foot",
           "A reclassification of timberland into a marine sanctuary",
           "A catastrophic forest fire destroying all 500,000 board-feet"
         ],
         "correct_index": 0,
-        "explanation": "Physical volume dropped from 500,000 to 400,000 board-feet (-100,000 board-feet). Multiplied by $5/board-foot, this produced an exact $500,000 capital stock depreciation."
+        "explanation": "Physical timber volume dropped from 500,000 to 400,000 board-feet (\\(-100{,}000\\) board-feet). Multiplied by \\$5 per board-foot, this resulted in an exact \\$500,000 capital asset loss."
       }
     },
     {
@@ -132,15 +132,14 @@
       "title": "Policy Value and Institutional Bottlenecks in Resource Auditing",
       "act": "Act 2: Accounting Architecture: Physical Stocks, Monetary Flows & Geospatial Bridge",
       "continuity_bridge": "While balancing two-column ledgers looks straightforward in a textbook, scaling this across an entire country exposes massive policy opportunities alongside severe institutional roadblocks.",
-      "eli15_takeaway": "Countries need resource accounting to meet climate goals and avoid sudden water or timber crises. But they struggle because government departments hoard data, lack trained staff, and update surveys way too slowly.",
+      "eli15_takeaway": "Governments need resource accounting to meet international climate goals and avoid sudden water or timber crises. However, execution is stalled by untrained staff, multi-year survey delays, and government departments that hoard data in isolated silos.",
+      "mental_model": "Trying to steer a cargo ship when the fuel gauge updates once a year, the depth radar scans once a decade, and the navigation officers lock their sea charts in private safes.",
       "key_facts": [
-        "Policy Significance: Bridges the economy-environment feedback loop, builds verified databases for national planning, and tracks progress on UN Sustainable Development Goals (SDGs).",
-        "Climate Change Alignment: Quantifies carbon sink capacities and identifies vulnerability to resource shocks.",
-        "Institutional Roadblock 1 - Lack of Capacity: Shortage of trained ecological economists and GIS statisticians.",
-        "Institutional Roadblock 2 - Periodicity Mismatches: Ecological surveys occur on 5-to-10 year cycles while economic budgets run on annual cycles.",
-        "Institutional Roadblock 3 - Data Silos: Water, forest, mining, and revenue agencies store disconnected data formats and resist inter-agency sharing."
+        "Policy Utility: Connects economic policy directly to ecological constraints, builds verified national databases, and tracks progress toward UN Sustainable Development Goals (SDGs).",
+        "Institutional Bottleneck 1 — Capacity Shortfall: Acute scarcity of trained ecological economists and geospatial statisticians within public agencies.",
+        "Institutional Bottleneck 2 — Periodicity Mismatch: National fiscal budgets are planned annually, while national ground surveys for forests and soils occur on 5-to-10 year cycles.",
+        "Institutional Bottleneck 3 — Data Silos: Forest, water, mining, and revenue departments manage isolated, incompatible databases and resist inter-agency sharing."
       ],
-      "mental_model": "Trying to steer a ship when the fuel gauge updates once a year, the water tank gauge updates every decade, and the chief engineer refuses to let the captain see the engine temperature.",
       "checkpoint": {
         "question": "Which operational challenge makes it hard to align natural resource accounts with national economic planning budgets?",
         "options": [
@@ -150,7 +149,7 @@
           "Strict legal prohibitions against sharing satellite imagery with planners"
         ],
         "correct_index": 0,
-        "explanation": "Fiscal budgets are calculated every single year, whereas comprehensive national ground surveys for forests and soils often happen only once every 5 to 10 years."
+        "explanation": "Fiscal budgets are calculated every single year, whereas comprehensive national ground surveys for forests and soils often happen only once every 5 to 10 years, making policy alignment extremely difficult."
       }
     },
     {
@@ -158,15 +157,15 @@
       "title": "The UN SEEA Ecosystem Accounting Architecture",
       "act": "Act 2: Accounting Architecture: Physical Stocks, Monetary Flows & Geospatial Bridge",
       "continuity_bridge": "To fix data silos and standardize reporting across countries, the United Nations developed the System of Environmental-Economic Accounting (SEEA). It maps out exactly how physical nature converts into monetary ledgers.",
-      "eli15_takeaway": "SEEA gives governments a step-by-step roadmap: first measure how much nature you have (extent) and how healthy it is (condition), then track the physical services it delivers, and finally convert those services into cash values.",
+      "eli15_takeaway": "The UN SEEA standard gives nations a 4-step roadmap: first map the geographic boundary of an ecosystem (extent), score its biological health (condition), quantify the physical services delivered, and convert those flows into monetary balance sheets.",
+      "mental_model": "Assessing a rental apartment building: Extent is total square footage; Condition is whether plumbing and elevators work; Service flows are monthly tenant rent payments; Asset Account is the total property market value on the bank deed.",
       "key_facts": [
-        "SEEA Architecture: The UN standard for integrating environmental assets with standard National Income Accounts (SNA).",
-        "Extent Accounts (Physical Stock): Total land cover area by ecosystem type (e.g., square kilometers of mangrove or moist deciduous forest).",
-        "Condition Accounts (Physical Stock): Ecological integrity and health metrics (canopy density, soil organic carbon, water depth, pollutant load).",
-        "Ecosystem Service Accounts (Flow): Quantifies physical service delivery (cubic meters of water filtered, tons of carbon stored) and translates them into monetary values.",
-        "Asset Accounts (Monetary Stock): Combines extent, condition, and service values to calculate total net present value of natural capital."
+        "UN SEEA Standard: The international framework integrating environmental assets directly with the System of National Accounts (SNA).",
+        "Extent Accounts (Physical Stock): Total land cover surface area mapped by ecosystem type (e.g. square kilometers of moist deciduous forest or mangrove).",
+        "Condition Accounts (Physical Stock): Ecological integrity and quality indicators (canopy density, soil organic carbon, water depth, pollutant concentrations).",
+        "Ecosystem Service Accounts (Flow): Quantifies physical services delivered (tons of carbon stored, cubic meters of water filtered) and translates them into monetary values.",
+        "Asset Accounts (Monetary Stock): Combines extent, condition, and service streams to determine total net present value of natural capital assets."
       ],
-      "mental_model": "Think of Extent as the square footage of an apartment, Condition as its structural maintenance and renovations, Services as the monthly rental income it generates, and Asset Accounts as the property market valuation.",
       "checkpoint": {
         "question": "In the UN SEEA framework, what is the role of an Ecosystem Condition Account?",
         "options": [
@@ -176,7 +175,7 @@
           "To set the retail market price of timber at government timber depots"
         ],
         "correct_index": 0,
-        "explanation": "Condition accounts track the physical state, ecological integrity, and degradation indicators (such as canopy density or soil depth) independent of just surface area."
+        "explanation": "Condition accounts track the biological health, physical state, and degradation indicators (such as canopy density or soil carbon) separate from simple surface area."
       }
     },
     {
@@ -184,16 +183,16 @@
       "title": "The Spatial Dimension: From Ecosystem Asset to Human Beneficiary",
       "act": "Act 2: Accounting Architecture: Physical Stocks, Monetary Flows & Geospatial Bridge",
       "continuity_bridge": "SEEA accounts cannot exist in an abstract table without coordinates; every ecosystem service depends on physical geography. We must map the exact spatial pathway connecting an upstream forest to downstream taps.",
-      "eli15_takeaway": "An ecosystem service only has value if people can reach it. An upstream forest filters rain, but if nobody lives downstream, the clean water flow produces zero economic benefit for households.",
+      "eli15_takeaway": "Ecosystem services do not create economic value in the abstract—location is everything. An upstream forest may purify millions of liters of water, but if nobody lives downstream to drink or irrigate with it, the economic benefit is zero.",
+      "mental_model": "A solar farm (Asset) with spotless panels (Condition) generating electricity (Service) that powers irrigation pumps (Benefit) for local farming families (Beneficiaries). Break any link in the spatial chain, and the realized economic value drops to zero.",
       "key_facts": [
-        "5-Stage Spatial Service Delivery Chain: Asset -> Condition -> Service -> Benefit -> Beneficiaries.",
-        "1. Asset: Spatial polygon identified by boundaries and extent (e.g., 5,000 ha upland catchment forest).",
-        "2. Condition: Biophysical quality metrics (deep forest root systems and uncompacted topsoil layers).",
-        "3. Service: Ecological flow generated over space (natural interception and filtration of rainfall).",
-        "4. Benefit: Concrete improvement delivered to the economy (clean sediment-free surface water reducing water treatment costs).",
-        "5. Beneficiaries: Downstream economic agents receiving the benefit (municipal utilities, urban households, agricultural irrigators)."
+        "5-Stage Spatial Service Delivery Chain: Asset → Condition → Service → Benefit → Beneficiaries.",
+        "1. Asset: Spatial polygon with defined geographical boundaries (e.g. a 5,000-ha upland forest catchment).",
+        "2. Condition: Biophysical quality metrics (deep root systems, porous uncompacted topsoil).",
+        "3. Service: Ecological flow across terrain (intercepting rainfall, filtering suspended sediments).",
+        "4. Benefit: Concrete economic improvement (clean, sediment-free river water reducing municipal water treatment expenses).",
+        "5. Beneficiaries: Downstream economic agents receiving the benefit (urban households, water utilities, agricultural irrigators)."
       ],
-      "mental_model": "A solar farm (Asset) with clean panels (Condition) generates electricity (Service) that powers water pumps (Benefit) for local farmers (Beneficiaries). Break any link in the spatial chain, and no benefit arrives.",
       "checkpoint": {
         "question": "Why is spatial location mandatory when evaluating an ecosystem service like flood regulation?",
         "options": [
@@ -203,7 +202,7 @@
           "Because forest trees cannot grow roots without a GPS transponder"
         ],
         "correct_index": 0,
-        "explanation": "An ecosystem asset only generates an economic benefit if human populations, farms, or infrastructure sit in the spatial zone affected by its biophysical service."
+        "explanation": "An ecosystem asset only generates economic value if human populations, farms, or infrastructure are physically located in the downstream zone affected by its ecological service."
       }
     },
     {
@@ -211,13 +210,13 @@
       "title": "Why Conventional Surveys Fail and Satellite GIS Wins",
       "act": "Act 2: Accounting Architecture: Physical Stocks, Monetary Flows & Geospatial Bridge",
       "continuity_bridge": "Knowing that natural capital is spatial reveals why traditional boots-on-the-ground surveys fail to keep up. We need satellite remote sensing and GIS to make natural resource accounting practical.",
-      "eli15_takeaway": "Sending field workers into dense hills with measuring tapes costs a fortune and takes years. Satellites photograph entire states every few days, giving unbiased digital proof of forest loss and lake shrinkage.",
+      "eli15_takeaway": "Sending field teams into rugged mountains with clipboards and tape measures is slow, expensive, and leaves giant blind spots. Earth observation satellites fly overhead continuously, capturing multi-spectral images that detect forest clearing and lake shrinkage automatically.",
+      "mental_model": "Auditing a massive 50-story warehouse by sending one inspector on foot with a paper clipboard versus scanning every rack continuously with automated overhead barcode cameras.",
       "key_facts": [
-        "Conventional Survey Limitations: High financial expense, lengthy execution timelines, limited spatial coverage, surveyor bias, slow update intervals (5-10 years), and physical inaccessibility.",
-        "Remote Sensing (RS) Advantages: Broad continuous coverage, low cost per square kilometer, high temporal revisit frequencies (days to weeks), and multi-spectral band detection.",
-        "GIS Analytical Power: Automates spatial overlay, detects pixel-by-pixel change over decades, and produces verifiable digital audit trails for resource economists."
+        "Conventional Survey Constraints: High financial cost, multi-year timelines, limited spatial sampling, surveyor bias, long 5-to-10 year revisit gaps, and rugged terrain barriers.",
+        "Remote Sensing (RS) Capabilities: Continuous synoptic coverage, low cost per square kilometer, high orbital revisit frequencies (days to weeks), and multi-spectral sensors (infrared detects plant stress).",
+        "GIS Analytical Engine: Overlays map layers, automates pixel-by-pixel change detection across multi-decade timelines, and provides verifiable digital audit trails for resource accountants."
       ],
-      "mental_model": "Conventional surveying is like checking warehouse inventory by sending one inspector on foot with a notepad; satellite GIS is an automated overhead barcode scanner reading every shelf continuously.",
       "checkpoint": {
         "question": "What is a primary advantage of Remote Sensing and GIS over traditional ground surveys in natural capital auditing?",
         "options": [
@@ -227,22 +226,22 @@
           "The ability to physically replace depleted groundwater without engineering work"
         ],
         "correct_index": 0,
-        "explanation": "Satellites provide regular, repeatable, objective imagery over broad, rugged terrains that would be cost-prohibitive or physically impossible to survey continuously by foot."
+        "explanation": "Satellites provide regular, repeatable, objective imaging across large and difficult terrains that would take years and cost a fortune to measure on foot."
       }
     },
     {
       "slide_num": 10,
       "title": "Case Studies: Grounding NRA Theory in Real-World Landscapes",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "We have covered natural capital classifications, SEEA accounting matrices, and satellite advantages in theory. Now we put these tools to work in two contrasting Indian landscapes.",
-      "eli15_takeaway": "Theory is useless without fieldwork data. We will examine two real Indian case studies: a threatened upland forest in Andhra Pradesh and a dying wetland network in Kerala.",
+      "eli15_takeaway": "Accounting theory means nothing without empirical proof. We examine two contrasting Indian landscapes: Kondapalli Reserve Forest in Andhra Pradesh (forest cleared for capital city expansion) and Kerala's Ramsar wetlands (water bodies lost to resorts and silt).",
+      "mental_model": "Leaving the medical school classroom to review actual emergency room patient charts.",
       "key_facts": [
-        "Empirical Focus: Connects theoretical SEEA frameworks to measurable Indian ecological crises.",
-        "Case Study 1: Kondapalli Reserve Forest (Andhra Pradesh) - Forest loss driven by state capital infrastructure expansion and urbanization.",
-        "Case Study 2: Kerala Ramsar Wetland Complexes (Ashtamudi, Sasthamkotta, Vembanad-Kol) - Wetland reclamation, pokkali paddy abandonment, and fishery collapse.",
-        "Core Method: Satellite Land Use Land Cover (LULC) classification converted into physical asset depletion balances and monetary loss ledgers."
+        "Empirical Application: Connects theoretical UN SEEA accounting matrices directly to tangible Indian environmental crises.",
+        "Case Study 1: Kondapalli Reserve Forest (Andhra Pradesh) — Forest clearance and carbon loss driven by Amaravati capital city expansion.",
+        "Case Study 2: Kerala Ramsar Wetland Complexes (Ashtamudi, Sasthamkotta, Vembanad-Kol) — Estuarine reclamation, loss of heritage Pokkali rice paddies, and fishery decline.",
+        "Methodological Pipeline: Multi-temporal satellite Land Use Land Cover (LULC) classification → physical asset stock balances → monetary damage accounts."
       ],
-      "mental_model": "Think of this transition as moving from medical school textbooks to real emergency room patient charts.",
       "checkpoint": {
         "question": "Which two real-world environments are audited in the lecture case studies?",
         "options": [
@@ -252,22 +251,22 @@
           "Gir lion sanctuary in Gujarat and coal mining belts in Jharkhand"
         ],
         "correct_index": 0,
-        "explanation": "The lecture applies natural resource accounting to the Kondapalli Reserve Forest (Andhra Pradesh) and Kerala's Ramsar wetlands (Ashtamudi, Sasthamkotta, Vembanad-Kol)."
+        "explanation": "The case studies analyze Kondapalli Reserve Forest in Andhra Pradesh and Kerala's three Ramsar wetlands (Ashtamudi, Sasthamkotta, and Vembanad-Kol)."
       }
     },
     {
       "slide_num": 11,
       "title": "Kondapalli Reserve Forest: Geography and Regional Pressures",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "We start with Case Study 1: the Kondapalli Reserve Forest. Let us zoom into its location in Andhra Pradesh to understand why this specific woodland faces sudden extinction.",
-      "eli15_takeaway": "Kondapalli is the last major forest pocket in Krishna District. Because it sits right next to the booming city of Vijayawada and the planned state capital, developers and roads are encroaching on its borders.",
+      "eli15_takeaway": "Kondapalli is the last remaining forest sanctuary in Krishna District. Because it borders the booming city of Vijayawada and the planned state capital, expanding highways, housing projects, and industrial waste ponds are closing in on every boundary.",
+      "mental_model": "A single surviving green island completely encircled by an expanding tide of asphalt, highways, and concrete suburban developments.",
       "key_facts": [
-        "Geographic Context: Located in Krishna District, Andhra Pradesh, near Vijayawada.",
-        "Ecological Significance: Represents the sole remnant forest block and primary biodiversity refuge in an otherwise heavily agrarian and urbanized district.",
-        "Regional Growth Pressures: Sits directly in the development corridor of the Andhra Pradesh Capital Region Development Authority (APCRDA).",
-        "Accounting Need: Establishing a natural capital baseline before new road networks, industrial ash ponds, and urban sprawl erase forest boundaries."
+        "Geographical Location: Situated in Krishna District, Andhra Pradesh, immediately adjacent to Vijayawada.",
+        "Ecological Significance: Serves as the sole remnant forest block and primary biodiversity corridor in an otherwise heavily agrarian and urbanized district.",
+        "Regional Growth Corridor: Positioned directly inside the expansion zone of the Andhra Pradesh Capital Region Development Authority (APCRDA).",
+        "Accounting Urgency: Establishing baseline natural capital accounts before highway networks, thermal ash ponds, and urban sprawl erase forest boundaries."
       ],
-      "mental_model": "Kondapalli is like a single surviving green island completely encircled by an expanding sea of concrete and suburban development.",
       "checkpoint": {
         "question": "Why is Kondapalli Reserve Forest ecologically critical in the context of Krishna District?",
         "options": [
@@ -283,16 +282,16 @@
     {
       "slide_num": 12,
       "title": "Land Use Land Cover (LULC) as a Natural Capital Ledger",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "To conduct an audit of Kondapalli, what is our primary measurement unit? We use Land Use Land Cover (LULC) maps derived from satellite pixels to build nature's balance sheet.",
-      "eli15_takeaway": "LULC maps are like regular bank statements for land. Every pixel shows whether a spot is healthy forest, open water, farmland, or pavement, showing exactly which natural assets were liquidated.",
+      "eli15_takeaway": "Satellite land cover maps function as spatial balance sheets. Every pixel records whether a patch of ground is healthy forest, open water, farmland, or pavement, showing exactly which natural assets were traded away to build concrete infrastructure.",
+      "mental_model": "A color-coded pie chart projected onto the landscape, where you can watch the green forest slices get steadily swallowed by grey concrete pavement year after year.",
       "key_facts": [
-        "LULC as Capital Stocks: Land cover categories represent spatial stocks of natural capital (forest, wetland, scrub) and manufactured capital (built-up settlements, highways).",
-        "Temporal Change Detection: Comparing satellite imagery across multi-year intervals reveals additions, subtractions, and transformations between land classes.",
-        "Urban Transition Vector: Forest and agricultural land consistently convert into built-up infrastructure, causing irreversible losses in baseline ecosystem services.",
-        "SEEA Land Accounts: Serves as the mandatory physical foundation for UN SEEA extent accounting."
+        "LULC as Capital Accounts: Land categories represent physical stocks of natural capital (forest, wetland, scrub) and manufactured capital (built-up settlements, highways).",
+        "Multi-Temporal Change Detection: Comparing satellite imagery across multi-year intervals identifies additions, subtractions, and conversions between land classes.",
+        "Urban Transition Trajectory: Forest and agricultural land consistently convert into built-up infrastructure, causing irreversible losses in baseline ecosystem services.",
+        "UN SEEA Foundation: Provides the mandatory physical spatial data required for UN SEEA Extent Accounts."
       ],
-      "mental_model": "Think of a satellite LULC map as a color-coded pie chart projected onto the ground, where you can watch the green slices get eaten away by grey asphalt over time.",
       "checkpoint": {
         "question": "How does Land Use Land Cover (LULC) data directly serve Natural Resource Accounting?",
         "options": [
@@ -307,17 +306,17 @@
     },
     {
       "slide_num": 13,
-      "title": "Spatio-Temporal LULC Mapping (1990\u20132015): Tracking Forest Shrinkage",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "title": "Spatio-Temporal LULC Mapping (1990–2015): Tracking Forest Shrinkage",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Applying this LULC framework to Kondapalli, researchers processed satellite observations across four benchmark years: 1990, 2000, 2009, and 2015.",
-      "eli15_takeaway": "Looking at satellite images across 25 years reveals a clear pattern: bright green crop zones and dark brown forest areas get eaten away from the edges, while red built-up patches spread like a stain.",
+      "eli15_takeaway": "Tracking Kondapalli across 25 years of satellite imagery reveals a clear pattern: healthy forest canopy and farmland are steadily eaten away from the edges, while built-up concrete spreads like an inkblot northward from the Krishna River.",
+      "mental_model": "A time-lapse video of an ice cube melting on a warm table: the dense frozen core lasts longest while the outer edges steadily melt away into puddles.",
       "key_facts": [
-        "Temporal Intervals: Evaluated Kondapalli over four distinct satellite observation windows: 1990, 2000, 2009, and 2015.",
-        "Multi-Class Classification: Mapped eight discrete classes: Forest Area, Degraded Forest, Built-Up Land, Ash Pond, Water Bodies, Other Land, Agricultural Land with Crops, Agricultural Land without Crops.",
-        "Visual Evidence: False Color Composites (FCC) highlight vigorous vegetative cover in red/crimson, revealing progressive edge erosion around the central hill ridge.",
-        "Spatial Pattern: Built-up red zones expand aggressively northward from the Krishna riverbank corridor."
+        "Observation Windows: Evaluated Kondapalli over four satellite snapshot years: 1990, 2000, 2009, and 2015.",
+        "8 Discrete Mapped Classes: Forest Area, Degraded Forest, Built-Up Land, Ash Pond, Water Bodies, Other Land, Cropped Agricultural Land, Uncropped Agricultural Land.",
+        "False Color Composite (FCC) Detection: Healthy forest canopy reflects infrared light in vivid red/crimson, highlighting progressive edge erosion around the central hill ridge.",
+        "Spatial Pattern: Built-up urban zones expand steadily northward from the Krishna riverbank corridor."
       ],
-      "mental_model": "Think of a time-lapse recording of a melting ice cube in a warm room; the dense core holds out longest while the margins steadily disintegrate.",
       "checkpoint": {
         "question": "What does multi-temporal satellite classification between 1990 and 2015 reveal about the Kondapalli landscape?",
         "options": [
@@ -333,16 +332,16 @@
     {
       "slide_num": 14,
       "title": "Capital Region Expansion: Denotification & Infrastructure Encroachment",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "The historical loss up to 2015 was driven by informal sprawl. But in 2017, a massive institutional shock hit the forest: official state plans to denotify protected land for capital city infrastructure.",
-      "eli15_takeaway": "In 2017, state planners carved out black boundary boxes directly inside Kondapalli's protected borders to build government offices and roads, showing how public policy can legally liquidate natural capital.",
+      "eli15_takeaway": "In 2017, state planners drew black boundary boxes directly inside Kondapalli's protected borders to clear land for roads and offices. When natural capital is left off the government balance sheet, planners treat forests as free vacant space.",
+      "mental_model": "A city government claiming a surplus budget by quietly selling off its central public parks to private developers for zero dollars.",
       "key_facts": [
-        "2017 Policy Shock: Andhra Pradesh Capital Region Development Authority (APCRDA) targeted forest parcels for Amaravati capital city infrastructure.",
-        "Black Denotification Polygons: GIS overlays identified specific forest parcels carved out of the reserve for official de-gazetting and road connectivity.",
-        "Thermal Ash Pond Incursion: Industrial ash disposal ponds expanded along the southern forest boundary, introducing localized contamination.",
-        "NRA Policy Takeaway: Without natural capital accounting, state planners treat forest land as free zero-cost vacant space for administrative projects."
+        "2017 Institutional Shock: The Andhra Pradesh Capital Region Development Authority (APCRDA) targeted protected forest tracts for Amaravati capital city infrastructure.",
+        "Black Denotification Polygons: GIS overlays identified specific forest parcels earmarked for legal de-gazetting and highway connectivity.",
+        "Thermal Ash Pond Incursion: Industrial coal ash disposal ponds expanded along the southern forest boundary, creating localized soil and water contamination.",
+        "NRA Policy Takeaway: Without natural capital accounting, state planners treat standing forest as zero-cost vacant land for administrative projects."
       ],
-      "mental_model": "A city government claiming a surplus budget by selling off its public parks to real estate developers for zero dollars.",
       "checkpoint": {
         "question": "What did the black polygon overlays in the 2017 Kondapalli LULC map signify?",
         "options": [
@@ -358,44 +357,44 @@
     {
       "slide_num": 15,
       "title": "Quantitative Asset Balances: Forest Loss vs Built-up Explosion",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Visual maps clearly show forest degradation, but accountants require exact figures. We extract the hard area numbers from the satellite classification tables to quantify the net physical balance.",
-      "eli15_takeaway": "Between 1990 and 2015, Kondapalli lost nearly 10 square kilometers of natural forest\u2014dropping from 41.6% down to 37.5% of the area\u2014while urban built-up land exploded twenty-fold.",
+      "eli15_takeaway": "Between 1990 and 2015, Kondapalli lost nearly 10 square kilometers of natural forest—dropping from 41.6% down to 37.5% of the area—while urban concrete exploded twenty-fold, spreading across more than a fifth of the landscape.",
+      "mental_model": "An apartment complex where the communal garden shrank from 42% down to 27% of the property, while the concrete parking garage expanded from 1% to 22%.",
       "key_facts": [
-        "Forest Extent Loss (1990-2015): Forest dropped from 115.74 km\u00b2 (41.63% of study area) in 1990 to 106.00 km\u00b2 (37.53%) in 2015.",
-        "Net Forest Depletion: Net loss of 9.74 km\u00b2 (equivalent to 974 hectares), an average annual forest clearance rate of ~0.39 km\u00b2/year.",
-        "Built-Up Surge: Built-up footprint surged from 3.10 km\u00b2 (1.11%) in 1990 to 22.49 km\u00b2 (7.96%) in 2015, and climbed to 62.26 km\u00b2 (22.07%) by 2017.",
-        "Degraded Forest Spike: Severely degraded scrub and canopy openings spiked from 0.21 km\u00b2 in 1990 to 33.30 km\u00b2 by 2017."
+        "Forest Extent Loss (1990–2015): Standing forest fell from \\(115.74\\text{ km}^2\\) (41.63% of study area) in 1990 to \\(106.00\\text{ km}^2\\) (37.53%) in 2015.",
+        "Net Forest Depletion: Net physical loss of \\(9.74\\text{ km}^2\\) (974 hectares), an average deforestation rate of \\(\\sim 0.39\\text{ km}^2/\\text{year}\\).",
+        "Built-Up Surge: Built-up footprint surged from \\(3.10\\text{ km}^2\\) (1.11%) in 1990 to \\(22.49\\text{ km}^2\\) (7.96%) in 2015, and expanded to \\(62.26\\text{ km}^2\\) (22.07%) by 2017.",
+        "Degraded Forest Spike: Severely degraded scrub and open canopy jumped from \\(0.21\\text{ km}^2\\) in 1990 to \\(33.30\\text{ km}^2\\) by 2017."
       ],
-      "mental_model": "Imagine an apartment building where the communal garden shrank from 42% of the lot to 27%, while the parking garage expanded from 1% to 22%.",
       "checkpoint": {
         "question": "What was the net loss of forest cover in the Kondapalli study area between 1990 and 2015?",
         "options": [
-          "9.74 km\u00b2 (974 hectares)",
-          "45.20 km\u00b2 (4,520 hectares)",
-          "1.11 km\u00b2 (111 hectares)",
+          "9.74 km² (974 hectares)",
+          "45.20 km² (4,520 hectares)",
+          "1.11 km² (111 hectares)",
           "Zero forest change"
         ],
         "correct_index": 0,
-        "explanation": "Forest area fell from 115.74 km\u00b2 in 1990 to 106.00 km\u00b2 in 2015, resulting in an exact net physical loss of 9.74 km\u00b2 (974 ha)."
+        "explanation": "Forest area fell from \\(115.74\\text{ km}^2\\) in 1990 to \\(106.00\\text{ km}^2\\) in 2015, resulting in an exact net physical loss of \\(9.74\\text{ km}^2\\) (974 ha)."
       }
     },
     {
       "slide_num": 16,
       "title": "Stocks and Flows Framework: Trading Natural for Manufactured Capital",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Now we map these raw hectare numbers directly into the formal economic language of capital stocks and periodic flows.",
-      "eli15_takeaway": "A flow is simply the change in stock between two dates. Kondapalli logged a negative flow of 9.74 square kilometers of living natural capital, traded for a positive flow of 59 square kilometers of concrete.",
+      "eli15_takeaway": "A stock is how much you have in the bank right now; a flow is what you deposit or withdraw over the year. Kondapalli logged a negative flow of 9.74 square kilometers of forest, traded away for a positive flow of 59 square kilometers of concrete.",
+      "mental_model": "Draining \\$10,000 from your emergency bank deposit (negative flow) to buy a used sports car (positive manufactured asset). You did not get wealthier; you traded liquid security for depreciating machinery.",
       "key_facts": [
-        "Stock Definition: The accumulated physical inventory of an asset at a single point in time (e.g., total standing forest in 1990).",
-        "Flow Definition: The net addition or subtraction to that asset inventory over a given accounting duration.",
-        "Negative Flow of Natural Capital: Forest contracted by -9.74 km\u00b2 (1990-2015), representing an unrecorded drain on biodiversity, water regulation, and carbon sinks.",
-        "Positive Flow of Manufactured Capital: Built-up space expanded by +59.16 km\u00b2 (1990-2017), generating commercial real estate while increasing municipal waste and carbon emissions.",
-        "Accounting Task: Translate physical negative flows into equivalent monetary damages on the national balance sheet."
+        "Stock Definition: The accumulated physical inventory of an asset measured at a single point in time (e.g. standing forest in 1990).",
+        "Flow Definition: The net addition or subtraction to that asset inventory over a defined accounting interval.",
+        "Negative Flow of Natural Capital: Forest contracted by \\(-9.74\\text{ km}^2\\) (1990–2015), representing an unrecorded drain on carbon storage, water filtration, and wildlife habitat.",
+        "Positive Flow of Manufactured Capital: Built-up area expanded by \\(+59.16\\text{ km}^2\\) (1990–2017), generating commercial real estate while increasing municipal waste and emissions.",
+        "Economic Mandate: Translating physical negative natural capital flows into recognized monetary depreciation on the national balance sheet."
       ],
-      "mental_model": "You empty your emergency savings account (-$10,000 flow) to buy a sports car (+$10,000 manufactured asset). You didn't become richer; you simply traded liquid safety for depreciating metal.",
       "checkpoint": {
-        "question": "Under the Stocks and Flows framework, how is the 9.74 km\u00b2 forest loss between 1990 and 2015 recorded?",
+        "question": "Under the Stocks and Flows framework, how is the 9.74 km² forest loss between 1990 and 2015 recorded?",
         "options": [
           "A negative flow of natural capital stock",
           "A positive addition to national natural wealth",
@@ -409,19 +408,16 @@
     {
       "slide_num": 17,
       "title": "Worked Example: Step-by-Step Forest Carbon Valuation",
-      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Let us execute a complete monetary valuation on Kondapalli's forest loss. We will convert lost tree hectares into metric tons of carbon, convert carbon into carbon dioxide, and price the climate damage.",
-      "eli15_takeaway": "By wiping out 974 hectares of trees, Kondapalli released over 107,000 tons of carbon dioxide into the air. Depending on carbon credit prices, that single environmental loss wiped out between $535,000 and $2.14 million.",
+      "eli15_takeaway": "By clearing 974 hectares of trees, Kondapalli released over 107,000 metric tons of carbon dioxide into the air. Depending on carbon credit prices, that single environmental loss wiped out between \\$535,700 and \\$2.14 million in natural wealth.",
+      "mental_model": "Pricing an accidental chemical spill: count the spilled barrels (974 hectares), find the active chemical per barrel (30 tC/ha), convert to gas volume (3.67 factor for CO2), and multiply by the market carbon fine (\\$5 to \\$20).",
       "key_facts": [
-        "Step 1 - Physical Area Conversion: 9.74 km\u00b2 = 974 hectares of forest cleared.",
-        "Step 2 - Biomass Carbon Calculation: 974 ha \u00d7 30 tC/ha (mean biomass carbon density) = 29,220 metric tons of Carbon (tC).",
-        "Step 3 - Stoichiometric Conversion to CO2: 29,220 tC \u00d7 3.67 (ratio of molecular weights 44/12) = 107,140 metric tons of CO2 (tCO2).",
-        "Step 4 - Economic Valuation Scenarios:",
-        "  - Scenario A (@ $5/tCO2): 107,140 \u00d7 $5 = $535,700",
-        "  - Scenario B (@ $10/tCO2): 107,140 \u00d7 $10 = $1,071,400",
-        "  - Scenario C (@ $20/tCO2): 107,140 \u00d7 $20 = $2,142,800."
+        "Step 1 — Physical Area Conversion: \\(9.74\\text{ km}^2 = 974\\text{ hectares (ha)}\\) of forest cleared.",
+        "Step 2 — Biomass Carbon Calculation: \\(974\\text{ ha} \\times 30\\text{ tC/ha}\\) (mean biomass carbon density) \\(= 29{,}220\\text{ metric tons of Carbon (tC)}\\).",
+        "Step 3 — Stoichiometric Conversion to CO2: Carbon (atomic weight 12) binds with two Oxygen atoms (16 each) to form \\(\\text{CO}_2\\) (molecular weight 44). Ratio \\(= 44/12 = 3.67\\). \\(29{,}220\\text{ tC} \\times 3.67 = 107{,}140\\text{ metric tons of }\\text{CO}_2\\text{ (tCO}_2\\text{)}\\).",
+        "Step 4 — Economic Valuation Scenarios: Scenario A (@ \\$5/tCO2) = \\(107{,}140 \\times \\$5 = \\$535{,}700\\); Scenario B (@ \\$10/tCO2) = \\(107{,}140 \\times \\$10 = \\$1{,}071{,}400\\); Scenario C (@ \\$20/tCO2) = \\(107{,}140 \\times \\$20 = \\$2{,}142{,}800\\)."
       ],
-      "mental_model": "It is like calculating the price of an accidental spill: count the spilled barrels (hectares), find the gallons per barrel (biomass density), and multiply by the market price per gallon (carbon price).",
       "checkpoint": {
         "question": "Why is the total carbon tonnage (29,220 tC) multiplied by 3.67 to calculate CO2 emissions?",
         "options": [
@@ -431,22 +427,22 @@
           "It converts metric tons into imperial pounds"
         ],
         "correct_index": 0,
-        "explanation": "Carbon (atomic weight 12) binds with two oxygen atoms (atomic weight 16 each) to form CO2 (molecular weight 44). The ratio 44/12 = 3.6667 (3.67)."
+        "explanation": "Carbon (atomic weight 12) binds with two oxygen atoms (atomic weight 16 each) to form \\(\\text{CO}_2\\) (molecular weight 44). The ratio \\(44/12 = 3.6667\\) (3.67)."
       }
     },
     {
       "slide_num": 18,
       "title": "Kerala Ramsar Wetlands: Critical Habitats Under Urban Assault",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Kondapalli proved how terrestrial forest loss can be audited for carbon. Now we turn to Case Study 2: aquatic wetland systems in Kerala, where ecological degradation threatens water security, fishing, and traditional farming.",
-      "eli15_takeaway": "Wetlands are nature's kidneys and storm buffers. Kerala's three internationally recognized Ramsar wetlands are legally protected, yet urban sewage, land grabbing, and factories are choking them anyway.",
+      "eli15_takeaway": "Wetlands are nature's kidneys and storm sponges. Kerala's three internationally recognized Ramsar wetlands are legally protected, yet city sewage, land reclamation, and industrial waste are choking them anyway.",
+      "mental_model": "A home water filter and storm drains combined. If you rip out the water filter and cement over the storm drain to expand your driveway, you get poisoned tap water and flooded bedrooms every monsoon.",
       "key_facts": [
-        "Wetland Services: Provide natural flood absorption, water purification, commercial fishery nurseries, and agricultural irrigation.",
-        "Ramsar Protection Paradox: Designated as Wetlands of International Importance under the UNESCO Ramsar Convention, yet actively degraded by industrial discharge, illegal reclamation, and municipal solid waste.",
-        "Study Scope: Encompasses three major southern wetland basins: Ashtamudi Wetland, Sasthamkotta Lake, and Vembanad-Kol.",
+        "Wetland Ecological Services: Provide natural flood absorption, water purification, commercial fishery nurseries, and agricultural irrigation.",
+        "The Protection Paradox: Designated as Wetlands of International Importance under the UNESCO Ramsar Convention, yet actively degraded by industrial discharge, illegal reclamation, and municipal solid waste.",
+        "Audited Basins: Encompasses Ashtamudi Wetland, Sasthamkotta Lake, and Vembanad-Kol in southern Kerala.",
         "NRA Mandate: Quantifying economic losses across provisioning, regulating, and cultural services to halt unchecked urban conversion."
       ],
-      "mental_model": "Wetlands act like household kidneys and storm gutters combined. Paving over them to build shops means you will end up with toxic drinking water and flooded living rooms every monsoon.",
       "checkpoint": {
         "question": "What is the primary management paradox facing Kerala's Ramsar wetland complexes?",
         "options": [
@@ -462,16 +458,16 @@
     {
       "slide_num": 19,
       "title": "Wetland Profiles: Ashtamudi, Sasthamkotta Lake, and Vembanad-Kol",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Before calculating financial damages, we must examine the specific physical geography and economic role of each of Kerala's three Ramsar sites.",
-      "eli15_takeaway": "The three sites span a brackish estuary known for clams (Ashtamudi), Kerala's largest freshwater drinking lake (Sasthamkotta), and a massive coastal wetland famous for farming rice below sea level (Vembanad-Kol).",
+      "eli15_takeaway": "The three sites cover a brackish estuary famous for clams (Ashtamudi), Kerala's largest freshwater drinking lake (Sasthamkotta), and a massive wetland famous for farming rice below sea level (Vembanad-Kol).",
+      "mental_model": "Ashtamudi is a coastal seafood nursery; Sasthamkotta is a giant municipal drinking water reservoir; Vembanad-Kol is an engineering marvel of ancient saltwater-resistant agriculture.",
       "key_facts": [
-        "Ashtamudi Wetland: 61.4 km\u00b2 palm-shaped brackish estuary in Kollam district; Kerala's second-largest wetland, renowned for short-neck clam fisheries.",
-        "Sasthamkotta Lake: 3.75 km\u00b2 freshwater lake in Kollam; largest natural freshwater lake in Kerala, designated 'Queen of Lakes', supplying drinking water to 500,000 people.",
-        "Vembanad-Kol Wetland: 2,033 km\u00b2; largest tropical brackish wetland complex in India, supporting centuries-old Pokkali farming (salt-tolerant rice alternating with shrimp culture below sea level).",
-        "NRA Link: Shrinking water spreads destroy fish breeding, vegetation loss degrades flood control, and built-up sprawl externalizes huge disaster costs."
+        "Ashtamudi Wetland: \\(61.4\\text{ km}^2\\) palm-shaped brackish estuary in Kollam district; Kerala's second-largest wetland, renowned for short-neck clam fisheries.",
+        "Sasthamkotta Lake: \\(3.75\\text{ km}^2\\) freshwater lake in Kollam; largest natural freshwater lake in Kerala, designated 'Queen of Lakes', supplying drinking water to 500,000 people.",
+        "Vembanad-Kol Wetland: \\(2{,}033\\text{ km}^2\\); largest tropical brackish wetland complex in India, supporting centuries-old Pokkali farming (salt-tolerant rice alternating with shrimp culture below sea level).",
+        "Economic Link: Shrinking water spreads destroy fish breeding, vegetation loss degrades flood control, and built-up sprawl creates expensive municipal disaster costs."
       ],
-      "mental_model": "Ashtamudi is a marine nursery, Sasthamkotta is a giant municipal drinking water reservoir, and Vembanad-Kol is an engineering wonder of saltwater-resistant farming.",
       "checkpoint": {
         "question": "What unique agricultural practice defines the Vembanad-Kol wetland system?",
         "options": [
@@ -481,23 +477,23 @@
           "Greenhouse-based hydroponic strawberry cultivation"
         ],
         "correct_index": 0,
-        "explanation": "Vembanad-Kol is globally renowned for Pokkali farming\u2014a heritage agricultural system where saltwater-tolerant rice is grown below sea level, alternating seasonally with shrimp farming."
+        "explanation": "Vembanad-Kol is globally renowned for Pokkali farming—a heritage agricultural system where saltwater-tolerant rice is grown below sea level, alternating seasonally with shrimp farming."
       }
     },
     {
       "slide_num": 20,
-      "title": "Ashtamudi & Sasthamkotta LULC Dynamics (1988\u20132022): The Built-Up Surge",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Ashtamudi & Sasthamkotta LULC Dynamics (1988–2022): The Built-Up Surge",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Let us look at what 34 years of satellite tracking reveals for Ashtamudi and Sasthamkotta. The data uncovers massive vegetation clearing and urban concrete expansion.",
-      "eli15_takeaway": "Between 1988 and 2022, built-up concrete around Ashtamudi and Sasthamkotta grew more than ten times larger, while lush vegetation collapsed by 81 square kilometers and farmland fell by over 80%.",
+      "eli15_takeaway": "Over 34 years of satellite tracking, concrete buildings around Ashtamudi and Sasthamkotta grew more than ten-fold, while lush greenery dropped by 81 square kilometers and farmland crashed by over 80%.",
+      "mental_model": "A peaceful lakeside village where shady coconut groves and quiet paddy fields were paved over by concrete hotels, resorts, and highways in just three decades.",
       "key_facts": [
-        "Observation Window: 34-year temporal analysis from 1988 to 2022 across six time slices (1988, 1997, 2002, 2014, 2018, 2022).",
-        "Built-Up Land Surge: Exploded from 15.6 km\u00b2 in 1988 to 167.8 km\u00b2 in 2022 (+152.2 km\u00b2 expansion).",
-        "Vegetation Collapse: Dense green cover plunged from 220.7 km\u00b2 down to 139.8 km\u00b2 (net loss of 80.9 km\u00b2 or 8,090 hectares).",
-        "Agricultural / Fallow Disappearance: Crashed from 84.8 km\u00b2 down to just 15.7 km\u00b2 (net loss of 69.1 km\u00b2 or 6,910 hectares).",
-        "Water Body Encroachment: Open water shrank slightly from 67.9 km\u00b2 to 65.7 km\u00b2 (net loss of 2.2 km\u00b2 or 220 hectares due to bank reclamation and siltation)."
+        "34-Year Observation Window: Multi-temporal satellite analysis from 1988 to 2022 across six time slices (1988, 1997, 2002, 2014, 2018, 2022).",
+        "Built-Up Surge: Exploded from \\(15.6\\text{ km}^2\\) in 1988 to \\(167.8\\text{ km}^2\\) in 2022 (\\(+152.2\\text{ km}^2\\) expansion).",
+        "Vegetation Collapse: Dense green cover plunged from \\(220.7\\text{ km}^2\\) down to \\(139.8\\text{ km}^2\\) (net loss of \\(80.9\\text{ km}^2\\) or 8,090 hectares).",
+        "Agricultural / Fallow Disappearance: Crashed from \\(84.8\\text{ km}^2\\) down to just \\(15.7\\text{ km}^2\\) (net loss of \\(69.1\\text{ km}^2\\) or 6,910 hectares).",
+        "Water Body Encroachment: Open water shrank from \\(67.9\\text{ km}^2\\) to \\(65.7\\text{ km}^2\\) (net loss of \\(2.2\\text{ km}^2\\) or 220 hectares due to bank reclamation and siltation)."
       ],
-      "mental_model": "A tranquil lakeside village where the peaceful tree groves and quiet paddy fields were paved over by hotels, shops, and highways in just three decades.",
       "checkpoint": {
         "question": "What was the dominant land use transformation observed in the Ashtamudi & Sasthamkotta catchment between 1988 and 2022?",
         "options": [
@@ -507,50 +503,50 @@
           "A conversion of 90% of urban settlements back into virgin mangroves"
         ],
         "correct_index": 0,
-        "explanation": "Built-up areas skyrocketed from 15.6 km\u00b2 to 167.8 km\u00b2, while vegetation and agricultural lands declined by 80.9 km\u00b2 and 69.1 km\u00b2 respectively."
+        "explanation": "Built-up areas skyrocketed from \\(15.6\\text{ km}^2\\) to \\(167.8\\text{ km}^2\\), while vegetation and agricultural lands declined by \\(80.9\\text{ km}^2\\) and \\(69.1\\text{ km}^2\\) respectively."
       }
     },
     {
       "slide_num": 21,
-      "title": "Vembanad-Kol LULC Dynamics (1988\u20132023): Open Water & Pokkali Paddy Collapse",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Vembanad-Kol LULC Dynamics (1988–2023): Open Water & Pokkali Paddy Collapse",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "While Ashtamudi suffered massive vegetation loss, Vembanad-Kol suffered a catastrophic loss of open water surface and its iconic heritage paddy fields.",
-      "eli15_takeaway": "Vembanad lost nearly 100 square kilometers of open water\u2014reclaimed by resorts and silted up by waste\u2014while 40% of its historic Pokkali rice paddies vanished and local fish catches collapsed.",
+      "eli15_takeaway": "Vembanad lost nearly 100 square kilometers of open water to resorts and mud silt, while 40% of its historic Pokkali rice paddies vanished and local fish catches were cut in half.",
+      "mental_model": "A giant fishing port losing a quarter of its water to illegal dirt fill and sludge, leaving commercial fishermen with empty nets and grounded boats.",
       "key_facts": [
-        "Observation Window: 35-year temporal satellite record from 1988 to 2023.",
-        "Open Water Body Shrinkage: Plunged from 442.1 km\u00b2 to 347.7 km\u00b2\u2014a staggering net loss of 94.4 km\u00b2 (9,440 hectares).",
-        "Pokkali Paddy Field Contraction: Heritage paddies dropped from 97.1 km\u00b2 down to 57.7 km\u00b2 (loss of 39.4 km\u00b2 or 3,940 hectares, representing a 40.6% decline).",
-        "Vegetation Decline: Catchment vegetation dropped from 767.3 km\u00b2 to 650.3 km\u00b2 (loss of 117.0 km\u00b2 or 11,700 hectares).",
-        "Built-Up Growth: Urban footprint expanded over 400%, from 80.8 km\u00b2 up to 340.6 km\u00b2 (+259.8 km\u00b2).",
-        "Ecological Shock: Annual commercial fish landings collapsed by more than 50% since the year 2000 due to breeding habitat destruction."
+        "35-Year Satellite Record: Evaluated catchment dynamics from 1988 to 2023.",
+        "Open Water Body Shrinkage: Plunged from \\(442.1\\text{ km}^2\\) to \\(347.7\\text{ km}^2\\)—a net loss of \\(94.4\\text{ km}^2\\) (9,440 hectares).",
+        "Pokkali Paddy Contraction: Heritage paddies dropped from \\(97.1\\text{ km}^2\\) down to \\(57.7\\text{ km}^2\\) (loss of \\(39.4\\text{ km}^2\\) or 3,940 hectares, representing a 40.6% decline).",
+        "Vegetation Decline: Catchment vegetation dropped from \\(767.3\\text{ km}^2\\) to \\(650.3\\text{ km}^2\\) (loss of \\(117.0\\text{ km}^2\\) or 11,700 hectares).",
+        "Built-Up Expansion: Urban footprint expanded over 400%, from \\(80.8\\text{ km}^2\\) up to \\(340.6\\text{ km}^2\\) (\\(+259.8\\text{ km}^2\\)).",
+        "Ecological Shock: Annual commercial fish landings collapsed by more than 50% since 2000 due to breeding mudflat destruction."
       ],
-      "mental_model": "Imagine a giant harbor losing a quarter of its water to illegal land filling and mud, leaving commercial fishermen with empty nets and dry boat ramps.",
       "checkpoint": {
         "question": "How much open water surface area was lost in the Vembanad-Kol wetland between 1988 and 2023?",
         "options": [
-          "94.4 km\u00b2 (9,440 hectares)",
-          "5.2 km\u00b2 (520 hectares)",
-          "340.6 km\u00b2 (34,060 hectares)",
+          "94.4 km² (9,440 hectares)",
+          "5.2 km² (520 hectares)",
+          "340.6 km² (34,060 hectares)",
           "Zero loss (water spread expanded)"
         ],
         "correct_index": 0,
-        "explanation": "Open water fell from 442.1 km\u00b2 to 347.7 km\u00b2, marking a severe ecological loss of 94.4 km\u00b2 (9,440 hectares)."
+        "explanation": "Open water fell from \\(442.1\\text{ km}^2\\) to \\(347.7\\text{ km}^2\\), marking a severe ecological loss of \\(94.4\\text{ km}^2\\) (9,440 hectares)."
       }
     },
     {
       "slide_num": 22,
       "title": "Economic Accounting Framework: Direct, Indirect, and Non-Use Losses",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "We have documented the exact physical loss of water, vegetation, and paddy fields across Kerala's wetlands. Now we apply Total Economic Valuation (TEV) to map each physical loss to an economic balance sheet category.",
-      "eli15_takeaway": "Nature's value comes in three layers: direct use goods you sell at market (fish and rice), indirect services that protect property (flood regulation), and non-use values for preserving species and culture for future generations.",
+      "eli15_takeaway": "Nature creates wealth in three ways: direct goods you can sell in a market (fish and rice), indirect shields that save you money (flood protection and clean water), and non-use values for preserving wildlife and cultural heritage for future generations.",
+      "mental_model": "A family home has direct value (you live in it or collect rent), indirect value (the roof protects your furniture from rainstorms), and non-use value (you cherish the home's historic architecture even if you don't enter every room).",
       "key_facts": [
-        "Total Economic Valuation (TEV) Taxonomy: Direct Use + Indirect Use + Non-Use Values.",
-        "Direct Use Value Losses: Vanishing water spread directly reduces fish catches and clam harvesting; disappearing Pokkali paddies undermines agricultural output and livelihoods.",
-        "Indirect Use Value Losses: Loss of catchment vegetation weakens flood attenuation, increasing municipal flood damage repair costs and water purification expenses.",
-        "Non-Use Value Losses: Loss of biodiversity, migratory bird stopovers, and vanishing cultural heritage of traditional salt-tolerant farming.",
-        "Key Synthesis Finding: 20-40% vegetation loss, 3-4x built-up growth, ~100 km\u00b2 open water lost in Vembanad, and a 40% collapse in Pokkali agriculture."
+        "Total Economic Valuation (TEV) Taxonomy: TEV = Direct Use + Indirect Use + Non-Use Values.",
+        "Direct Use Losses: Vanishing water spread directly reduces fish catches and clam harvesting; disappearing Pokkali paddies undermines agricultural output and rural livelihoods.",
+        "Indirect Use Losses: Loss of catchment vegetation weakens flood attenuation, increasing municipal flood repair costs and drinking water treatment expenses.",
+        "Non-Use Losses: Loss of migratory bird stopovers and vanishing cultural heritage of traditional salt-tolerant rice farming.",
+        "Synthesis Metrics: 20–40% vegetation loss, 3–4x built-up growth, \\(\\sim 100\\text{ km}^2\\) open water lost in Vembanad, and a 40% collapse in Pokkali agriculture."
       ],
-      "mental_model": "A house has direct value (you can live in it or rent it out), indirect value (its storm roof keeps water out), and non-use value (you take pride in its architectural history even if you don't enter every room).",
       "checkpoint": {
         "question": "Under Total Economic Valuation, which category encompasses wetland flood buffering and natural water purification?",
         "options": [
@@ -560,91 +556,85 @@
           "Manufactured Capital Depreciation"
         ],
         "correct_index": 0,
-        "explanation": "Indirect use values refer to functional regulatory services\u2014like flood control, wastewater treatment, and storm protection\u2014that support the economy without being sold in a retail shop."
+        "explanation": "Indirect use values refer to functional regulatory services—like flood control, wastewater treatment, and storm protection—that support the economy without being sold in a retail shop."
       }
     },
     {
       "slide_num": 23,
       "title": "Valuation Parameters: Mid-Point Unit Values via Benefit Transfer",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "To price these losses, economists use the Benefit Transfer method: adopting peer-reviewed per-hectare economic values from local field studies and taking their mid-point values.",
-      "eli15_takeaway": "Rather than guessing what a hectare of swamp is worth, researchers look at existing economic studies in the same state and pick balanced, realistic mid-point numbers for fish, rice, flood defense, and tourism.",
+      "eli15_takeaway": "Instead of guessing how much a hectare of swamp is worth, economists look at verified regional field studies and take balanced, realistic mid-point numbers for fish, rice, flood defense, and tourism.",
+      "mental_model": "An auto insurance adjuster using an official regional parts-and-labor price manual to calculate repair costs instead of pulling numbers out of thin air.",
       "key_facts": [
-        "Benefit-Transfer Method: Applies documented per-hectare economic values from local field studies to newly audited spatial footprints.",
-        "Fisheries Provisioning Mid-Points: Vembanad-Kol = \u20b9115,000 / ha / yr (estuarine fisheries); Ashtamudi & Sasthamkotta = \u20b980,000 / ha / yr (clam beds and freshwater finfish).",
-        "Agricultural Production Mid-Points: Pokkali fields (Vembanad) = \u20b950,000 / ha / yr; Paddy & fallow land (Ashtamudi/Sasthamkotta) = \u20b937,500 / ha / yr.",
-        "Regulating Services (Flood Control, Water Treatment, Carbon): \u20b942,500 / ha / yr (midpoint of documented \u20b925,000\u2013\u20b960,000 range).",
-        "Recreation & Ecotourism: \u20b915,000 / ha / yr (midpoint of \u20b912,000\u2013\u20b918,000 backwater tourism studies).",
-        "Biodiversity & Non-Use Value: \u20b98,000 / ha / yr (midpoint of \u20b96,000\u2013\u20b910,000 Willingness-To-Pay surveys)."
+        "Benefit-Transfer Method: Applies documented per-hectare economic values from local empirical field studies to newly audited spatial footprints.",
+        "Fisheries Provisioning Mid-Points: Vembanad-Kol \\(= ₹115{,}000/\\text{ha}/\\text{year}\\) (estuarine fisheries); Ashtamudi & Sasthamkotta \\(= ₹80{,}000/\\text{ha}/\\text{year}\\) (clam beds and freshwater finfish).",
+        "Agricultural Production Mid-Points: Pokkali fields (Vembanad) \\(= ₹50{,}000/\\text{ha}/\\text{year}\\); Paddy & fallow land (Ashtamudi/Sasthamkotta) \\(= ₹37{,}500/\\text{ha}/\\text{year}\\).",
+        "Regulating Services (Flood Control, Water Treatment, Carbon): \\(₹42{,}500/\\text{ha}/\\text{year}\\) (midpoint of documented \\(₹25{,}000\\)–\\(₹60{,}000\\) range).",
+        "Recreation & Ecotourism: \\(₹15{,}000/\\text{ha}/\\text{year}\\) (midpoint of \\(₹12{,}000\\)–\\(₹18{,}000\\) backwater tourism studies).",
+        "Biodiversity & Non-Use Value: \\(₹8{,}000/\\text{ha}/\\text{year}\\) (midpoint of \\(₹6{,}000\\)–\\(₹10{,}000\\) Willingness-To-Pay surveys)."
       ],
-      "mental_model": "Like an auto mechanic using a standard repair price manual to quote the replacement cost of broken car components, rather than making up numbers on the spot.",
       "checkpoint": {
         "question": "What mid-point valuation is assigned for regulating services (flood control, water purification, carbon storage) across the Kerala wetland accounts?",
         "options": [
-          "\u20b942,500 / ha / year",
-          "\u20b9115,000 / ha / year",
-          "\u20b98,000 / ha / year",
-          "\u20b91,000,000 / ha / year"
+          "₹42,500 / ha / year",
+          "₹115,000 / ha / year",
+          "₹8,000 / ha / year",
+          "₹1,000,000 / ha / year"
         ],
         "correct_index": 0,
-        "explanation": "The lecture sets regulating services at the exact mid-point of the \u20b925,000\u2013\u20b960,000 range, which equals \u20b942,500 per hectare per year."
+        "explanation": "The account sets regulating services at the exact midpoint of the \\(₹25{,}000\\) to \\(₹60{,}000\\) range, which equals \\(₹42{,}500\\) per hectare per year."
       }
     },
     {
       "slide_num": 24,
-      "title": "Vembanad-Kol Monetary Damage Account: Calculating \u20b9201.5 Crore/Year Loss",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Vembanad-Kol Monetary Damage Account: Calculating ₹201.5 Crore/Year Loss",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Now we multiply our physical losses in hectares by these mid-point unit values to calculate the total annual economic damage inflicted on Vembanad-Kol.",
-      "eli15_takeaway": "Adding up the losses in fish catches, rice harvests, flood control, tourism, and wildlife reveals that shrinking Vembanad-Kol drains over \u20b9201.5 crore in lost ecological wealth every single year.",
+      "eli15_takeaway": "Multiplying hectare losses by annual values reveals that shrinking Vembanad-Kol drains over ₹201.5 crore in lost natural wealth every single year—with lost fish catches making up more than half the bill.",
+      "mental_model": "A steady annual dividend check nature was depositing into the local economy that has now been canceled because the account was destroyed.",
       "key_facts": [
-        "1. Fisheries Loss: 9,440 ha water loss \u00d7 \u20b9115,000/ha = \u20b91,085,600,000 (~\u20b9108.56 cr/yr). Represents over 50% of total economic damages.",
-        "2. Agricultural Loss: 3,940 ha Pokkali loss \u00d7 \u20b950,000/ha = \u20b9197,000,000 (~\u20b919.70 cr/yr).",
-        "3. Regulating Services Loss: 11,700 ha vegetation loss \u00d7 \u20b942,500/ha = \u20b9497,250,000 (~\u20b949.73 cr/yr).",
-        "4. Recreation & Tourism Loss: 9,440 ha water loss \u00d7 \u20b915,000/ha = \u20b9141,600,000 (~\u20b914.16 cr/yr).",
-        "5. Biodiversity / Non-Use Loss: 11,700 ha vegetation loss \u00d7 \u20b98,000/ha = \u20b993,600,000 (~\u20b99.36 cr/yr).",
-        "Total Annual Damage for Vembanad-Kol: \u20b92,015,050,000 per year (~\u20b9201.51 crores / year)."
+        "1. Fisheries Loss: \\(9{,}440\\text{ ha water loss} \\times ₹115{,}000/\\text{ha} = ₹1{,}085{,}600{,}000\\) (\\(\\sim ₹108.56\\text{ cr/year}\\); accounts for >50% of total economic damages).",
+        "2. Agricultural Loss: \\(3{,}940\\text{ ha Pokkali loss} \\times ₹50{,}000/\\text{ha} = ₹197{,}000{,}000\\) (\\(\\sim ₹19.70\\text{ cr/year}\\)).",
+        "3. Regulating Services Loss: \\(11{,}700\\text{ ha vegetation loss} \\times ₹42{,}500/\\text{ha} = ₹497{,}250{,}000\\) (\\(\\sim ₹49.73\\text{ cr/year}\\)).",
+        "4. Recreation & Tourism Loss: \\(9{,}440\\text{ ha water loss} \\times ₹15{,}000/\\text{ha} = ₹141{,}600{,}000\\) (\\(\\sim ₹14.16\\text{ cr/year}\\)).",
+        "5. Biodiversity / Non-Use Loss: \\(11{,}700\\text{ ha vegetation loss} \\times ₹8{,}000/\\text{ha} = ₹93{,}600{,}000\\) (\\(\\sim ₹9.36\\text{ cr/year}\\)).",
+        "Total Annual Damage for Vembanad-Kol: \\(₹2{,}015{,}050{,}000/\\text{year}\\) (\\(\\sim ₹201.51\\text{ crores / year}\\))."
       ],
-      "mental_model": "Think of an annual subscription fee nature was paying into the local economy that has now been canceled because the account was shut down.",
       "checkpoint": {
         "question": "What single ecosystem service accounts for the largest monetary loss in the Vembanad-Kol balance sheet?",
         "options": [
-          "Fisheries provisioning loss (\u20b9108.56 crores/year)",
-          "Recreation and tourism loss (\u20b914.16 crores/year)",
-          "Pokkali agricultural loss (\u20b919.70 crores/year)",
-          "Biodiversity non-use loss (\u20b99.36 crores/year)"
+          "Fisheries provisioning loss (₹108.56 crores/year)",
+          "Recreation and tourism loss (₹14.16 crores/year)",
+          "Pokkali agricultural loss (₹19.70 crores/year)",
+          "Biodiversity non-use loss (₹9.36 crores/year)"
         ],
         "correct_index": 0,
-        "explanation": "Fisheries provisioning incurred the single largest annual loss: 9,440 ha \u00d7 \u20b9115,000 = \u20b91,085,600,000 (over \u20b9108.5 crore per year)."
+        "explanation": "Fisheries provisioning incurred the single largest annual loss: \\(9{,}440\\text{ ha} \\times ₹115{,}000 = ₹1{,}085{,}600{,}000\\) (over \\(₹108.56\\text{ crore per year}\\))."
       }
     },
     {
       "slide_num": 25,
-      "title": "Statewide Ramsar Damage Bill: \u20b9270.36 Crore Annual Economic Drain",
-      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Statewide Ramsar Damage Bill: ₹270.36 Crore Annual Economic Drain",
+      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Finally, we calculate the annual damage for Ashtamudi and Sasthamkotta and combine it with Vembanad-Kol to establish the grand statewide natural capital deficit for Kerala's premier wetlands.",
-      "eli15_takeaway": "Together, degradation across Kerala's three Ramsar wetlands destroys over \u20b9270 crore in natural wealth every year. Natural Resource Accounting makes this silent crisis visible to planners and lawmakers.",
+      "eli15_takeaway": "Combining all three Kerala Ramsar wetlands reveals a staggering loss of over ₹270 crore every single year. Natural Resource Accounting makes this silent bleeding visible so governments stop confusing environmental destruction with economic progress.",
+      "mental_model": "A household celebrating earning a \\$5,000 bonus at work while silently bleeding \\$2,700 every month from rotting walls, flooded basements, and ruined crops.",
       "key_facts": [
-        "Ashtamudi & Sasthamkotta Breakdown (Annual Losses):",
-        "  - Fisheries (220 ha water loss \u00d7 \u20b980,000): \u20b917,600,000 (~\u20b91.76 cr)",
-        "  - Agriculture (6,910 ha fallow/agri loss \u00d7 \u20b937,500): \u20b9259,125,000 (~\u20b925.91 cr)",
-        "  - Regulating Services (8,090 ha vegetation loss \u00d7 \u20b942,500): \u20b9343,825,000 (~\u20b934.38 cr)",
-        "  - Recreation (220 ha water loss \u00d7 \u20b915,000): \u20b93,300,000 (~\u20b90.33 cr)",
-        "  - Biodiversity (8,090 ha vegetation loss \u00d7 \u20b98,000): \u20b964,720,000 (~\u20b96.47 cr)",
-        "Ashtamudi & Sasthamkotta Subtotal: \u20b9688,570,000 per year (~\u20b968.86 crores / year).",
-        "Statewide Ramsar Grand Total: \u20b92,015,050,000 (Vembanad) + \u20b9688,570,000 (Ashtamudi/Sasthamkotta) = \u20b92,703,620,000 per year (~\u20b9270.36 crores / year).",
-        "Policy Conclusion: Without spatial NRA, real estate growth appears profitable while quietly draining hundreds of crores in natural capital annually."
+        "Ashtamudi & Sasthamkotta Subtotal (Annual Losses): Fisheries \\(₹1.76\\text{ cr}\\) (\\(220\\text{ ha} \\times ₹80{,}000\\)) + Agriculture \\(₹25.91\\text{ cr}\\) (\\(6{,}910\\text{ ha} \\times ₹37{,}500\\)) + Regulating \\(₹34.38\\text{ cr}\\) (\\(8{,}090\\text{ ha} \\times ₹42{,}500\\)) + Recreation \\(₹0.33\\text{ cr}\\) (\\(220\\text{ ha} \\times ₹15{,}000\\)) + Biodiversity \\(₹6.47\\text{ cr}\\) (\\(8{,}090\\text{ ha} \\times ₹8{,}000\\)) \\(= ₹688{,}570{,}000/\\text{year}\\) (\\(\\sim ₹68.86\\text{ crores / year}\\)).",
+        "Statewide Ramsar Grand Total: \\(₹2{,}015{,}050{,}000\\) (Vembanad) \\(+ ₹688{,}570{,}000\\) (Ashtamudi/Sasthamkotta) \\(= ₹2{,}703{,}620{,}000/\\text{year}\\) (\\(\\sim ₹270.36\\text{ crores / year}\\)).",
+        "Policy Takeaway: Without spatial natural resource accounting, real estate expansion appears profitable while quietly destroying hundreds of crores in natural capital annually."
       ],
-      "mental_model": "A household celebrating earning \u20b950,000 a month at work, while silently bleeding \u20b927,000 every single month from invisible leaks in the roof, crumbling foundations, and ruined crops.",
       "checkpoint": {
         "question": "What is the combined annual mid-case natural capital loss calculated across Kerala's audited Ramsar wetland sites?",
         "options": [
-          "\u20b92,703,620,000 per year (~\u20b9270.36 crores/yr)",
-          "\u20b968,857,000 per year (~\u20b96.89 crores/yr)",
-          "\u20b910,500,000,000 per year (~\u20b91,050 crores/yr)",
-          "\u20b9500,000 per year (~\u20b950 lakhs/yr)"
+          "₹2,703,620,000 per year (~₹270.36 crores/yr)",
+          "₹68,857,000 per year (~₹6.89 crores/yr)",
+          "₹10,500,000,000 per year (~₹1,050 crores/yr)",
+          "₹500,000 per year (~₹50 lakhs/yr)"
         ],
         "correct_index": 0,
-        "explanation": "Combining Vembanad-Kol (\u20b9201.51 crores) and Ashtamudi & Sasthamkotta (\u20b968.86 crores) produces a grand annual natural capital deficit of ~\u20b9270.36 crores per year."
+        "explanation": "Combining Vembanad-Kol (\\(₹201.51\\text{ crores}\\)) and Ashtamudi & Sasthamkotta (\\(₹68.86\\text{ crores}\\)) produces a grand annual natural capital deficit of \\(\\sim ₹270.36\\text{ crores per year}\\)."
       }
     }
   ]
