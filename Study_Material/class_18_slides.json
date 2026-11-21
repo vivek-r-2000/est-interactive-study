@@ -107,7 +107,7 @@
       "title": "Balance Sheet Mechanics: Physical Stocks to Monetary Values",
       "act": "Act 2: Accounting Architecture: Physical Stocks, Monetary Flows & Geospatial Bridge",
       "continuity_bridge": "We have defined NRA conceptually, but how does an accountant write it down in numbers? We look at a standard two-period ledger comparing timber board-feet and agricultural acreage.",
-      "eli15_takeaway": "A resource ledger starts by counting physical units—like timber board-feet or farmland hectares—and multiplies them by asset unit prices. If you cut down trees to clear farm plots, one asset shrinks while the other grows.",
+      "eli15_takeaway": "A resource ledger starts by counting physical units\u2014like timber board-feet or farmland hectares\u2014and multiplies them by asset unit prices. If you cut down trees to clear farm plots, one asset shrinks while the other grows.",
       "key_facts": [
         "Two-Period Asset Balance: Compares opening stock (Year 1) to closing stock (Year 2) across resource types.",
         "Timber Depletion Example: Standing timber drops from 500,000 to 400,000 board-feet; at $5/board-foot, asset value declines from $2.5M to $2.0M (-$500,000 loss).",
@@ -233,7 +233,7 @@
     {
       "slide_num": 10,
       "title": "Case Studies: Grounding NRA Theory in Real-World Landscapes",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "We have covered natural capital classifications, SEEA accounting matrices, and satellite advantages in theory. Now we put these tools to work in two contrasting Indian landscapes.",
       "eli15_takeaway": "Theory is useless without fieldwork data. We will examine two real Indian case studies: a threatened upland forest in Andhra Pradesh and a dying wetland network in Kerala.",
       "key_facts": [
@@ -258,7 +258,7 @@
     {
       "slide_num": 11,
       "title": "Kondapalli Reserve Forest: Geography and Regional Pressures",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "We start with Case Study 1: the Kondapalli Reserve Forest. Let us zoom into its location in Andhra Pradesh to understand why this specific woodland faces sudden extinction.",
       "eli15_takeaway": "Kondapalli is the last major forest pocket in Krishna District. Because it sits right next to the booming city of Vijayawada and the planned state capital, developers and roads are encroaching on its borders.",
       "key_facts": [
@@ -283,7 +283,7 @@
     {
       "slide_num": 12,
       "title": "Land Use Land Cover (LULC) as a Natural Capital Ledger",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "To conduct an audit of Kondapalli, what is our primary measurement unit? We use Land Use Land Cover (LULC) maps derived from satellite pixels to build nature's balance sheet.",
       "eli15_takeaway": "LULC maps are like regular bank statements for land. Every pixel shows whether a spot is healthy forest, open water, farmland, or pavement, showing exactly which natural assets were liquidated.",
       "key_facts": [
@@ -307,8 +307,8 @@
     },
     {
       "slide_num": 13,
-      "title": "Spatio-Temporal LULC Mapping (1990–2015): Tracking Forest Shrinkage",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "title": "Spatio-Temporal LULC Mapping (1990\u20132015): Tracking Forest Shrinkage",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Applying this LULC framework to Kondapalli, researchers processed satellite observations across four benchmark years: 1990, 2000, 2009, and 2015.",
       "eli15_takeaway": "Looking at satellite images across 25 years reveals a clear pattern: bright green crop zones and dark brown forest areas get eaten away from the edges, while red built-up patches spread like a stain.",
       "key_facts": [
@@ -333,7 +333,7 @@
     {
       "slide_num": 14,
       "title": "Capital Region Expansion: Denotification & Infrastructure Encroachment",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "The historical loss up to 2015 was driven by informal sprawl. But in 2017, a massive institutional shock hit the forest: official state plans to denotify protected land for capital city infrastructure.",
       "eli15_takeaway": "In 2017, state planners carved out black boundary boxes directly inside Kondapalli's protected borders to build government offices and roads, showing how public policy can legally liquidate natural capital.",
       "key_facts": [
@@ -358,44 +358,44 @@
     {
       "slide_num": 15,
       "title": "Quantitative Asset Balances: Forest Loss vs Built-up Explosion",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Visual maps clearly show forest degradation, but accountants require exact figures. We extract the hard area numbers from the satellite classification tables to quantify the net physical balance.",
-      "eli15_takeaway": "Between 1990 and 2015, Kondapalli lost nearly 10 square kilometers of natural forest—dropping from 41.6% down to 37.5% of the area—while urban built-up land exploded twenty-fold.",
+      "eli15_takeaway": "Between 1990 and 2015, Kondapalli lost nearly 10 square kilometers of natural forest\u2014dropping from 41.6% down to 37.5% of the area\u2014while urban built-up land exploded twenty-fold.",
       "key_facts": [
-        "Forest Extent Loss (1990-2015): Forest dropped from 115.74 km² (41.63% of study area) in 1990 to 106.00 km² (37.53%) in 2015.",
-        "Net Forest Depletion: Net loss of 9.74 km² (equivalent to 974 hectares), an average annual forest clearance rate of ~0.39 km²/year.",
-        "Built-Up Surge: Built-up footprint surged from 3.10 km² (1.11%) in 1990 to 22.49 km² (7.96%) in 2015, and climbed to 62.26 km² (22.07%) by 2017.",
-        "Degraded Forest Spike: Severely degraded scrub and canopy openings spiked from 0.21 km² in 1990 to 33.30 km² by 2017."
+        "Forest Extent Loss (1990-2015): Forest dropped from 115.74 km\u00b2 (41.63% of study area) in 1990 to 106.00 km\u00b2 (37.53%) in 2015.",
+        "Net Forest Depletion: Net loss of 9.74 km\u00b2 (equivalent to 974 hectares), an average annual forest clearance rate of ~0.39 km\u00b2/year.",
+        "Built-Up Surge: Built-up footprint surged from 3.10 km\u00b2 (1.11%) in 1990 to 22.49 km\u00b2 (7.96%) in 2015, and climbed to 62.26 km\u00b2 (22.07%) by 2017.",
+        "Degraded Forest Spike: Severely degraded scrub and canopy openings spiked from 0.21 km\u00b2 in 1990 to 33.30 km\u00b2 by 2017."
       ],
       "mental_model": "Imagine an apartment building where the communal garden shrank from 42% of the lot to 27%, while the parking garage expanded from 1% to 22%.",
       "checkpoint": {
         "question": "What was the net loss of forest cover in the Kondapalli study area between 1990 and 2015?",
         "options": [
-          "9.74 km² (974 hectares)",
-          "45.20 km² (4,520 hectares)",
-          "1.11 km² (111 hectares)",
+          "9.74 km\u00b2 (974 hectares)",
+          "45.20 km\u00b2 (4,520 hectares)",
+          "1.11 km\u00b2 (111 hectares)",
           "Zero forest change"
         ],
         "correct_index": 0,
-        "explanation": "Forest area fell from 115.74 km² in 1990 to 106.00 km² in 2015, resulting in an exact net physical loss of 9.74 km² (974 ha)."
+        "explanation": "Forest area fell from 115.74 km\u00b2 in 1990 to 106.00 km\u00b2 in 2015, resulting in an exact net physical loss of 9.74 km\u00b2 (974 ha)."
       }
     },
     {
       "slide_num": 16,
       "title": "Stocks and Flows Framework: Trading Natural for Manufactured Capital",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Now we map these raw hectare numbers directly into the formal economic language of capital stocks and periodic flows.",
       "eli15_takeaway": "A flow is simply the change in stock between two dates. Kondapalli logged a negative flow of 9.74 square kilometers of living natural capital, traded for a positive flow of 59 square kilometers of concrete.",
       "key_facts": [
         "Stock Definition: The accumulated physical inventory of an asset at a single point in time (e.g., total standing forest in 1990).",
         "Flow Definition: The net addition or subtraction to that asset inventory over a given accounting duration.",
-        "Negative Flow of Natural Capital: Forest contracted by -9.74 km² (1990-2015), representing an unrecorded drain on biodiversity, water regulation, and carbon sinks.",
-        "Positive Flow of Manufactured Capital: Built-up space expanded by +59.16 km² (1990-2017), generating commercial real estate while increasing municipal waste and carbon emissions.",
+        "Negative Flow of Natural Capital: Forest contracted by -9.74 km\u00b2 (1990-2015), representing an unrecorded drain on biodiversity, water regulation, and carbon sinks.",
+        "Positive Flow of Manufactured Capital: Built-up space expanded by +59.16 km\u00b2 (1990-2017), generating commercial real estate while increasing municipal waste and carbon emissions.",
         "Accounting Task: Translate physical negative flows into equivalent monetary damages on the national balance sheet."
       ],
       "mental_model": "You empty your emergency savings account (-$10,000 flow) to buy a sports car (+$10,000 manufactured asset). You didn't become richer; you simply traded liquid safety for depreciating metal.",
       "checkpoint": {
-        "question": "Under the Stocks and Flows framework, how is the 9.74 km² forest loss between 1990 and 2015 recorded?",
+        "question": "Under the Stocks and Flows framework, how is the 9.74 km\u00b2 forest loss between 1990 and 2015 recorded?",
         "options": [
           "A negative flow of natural capital stock",
           "A positive addition to national natural wealth",
@@ -409,17 +409,17 @@
     {
       "slide_num": 17,
       "title": "Worked Example: Step-by-Step Forest Carbon Valuation",
-      "act": "Act 3: Case Study 1 — Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
+      "act": "Act 3: Case Study 1 \u2014 Kondapalli Reserve Forest: LULC Depletion to Carbon Valuation",
       "continuity_bridge": "Let us execute a complete monetary valuation on Kondapalli's forest loss. We will convert lost tree hectares into metric tons of carbon, convert carbon into carbon dioxide, and price the climate damage.",
       "eli15_takeaway": "By wiping out 974 hectares of trees, Kondapalli released over 107,000 tons of carbon dioxide into the air. Depending on carbon credit prices, that single environmental loss wiped out between $535,000 and $2.14 million.",
       "key_facts": [
-        "Step 1 - Physical Area Conversion: 9.74 km² = 974 hectares of forest cleared.",
-        "Step 2 - Biomass Carbon Calculation: 974 ha × 30 tC/ha (mean biomass carbon density) = 29,220 metric tons of Carbon (tC).",
-        "Step 3 - Stoichiometric Conversion to CO2: 29,220 tC × 3.67 (ratio of molecular weights 44/12) = 107,140 metric tons of CO2 (tCO2).",
+        "Step 1 - Physical Area Conversion: 9.74 km\u00b2 = 974 hectares of forest cleared.",
+        "Step 2 - Biomass Carbon Calculation: 974 ha \u00d7 30 tC/ha (mean biomass carbon density) = 29,220 metric tons of Carbon (tC).",
+        "Step 3 - Stoichiometric Conversion to CO2: 29,220 tC \u00d7 3.67 (ratio of molecular weights 44/12) = 107,140 metric tons of CO2 (tCO2).",
         "Step 4 - Economic Valuation Scenarios:",
-        "  - Scenario A (@ $5/tCO2): 107,140 × $5 = $535,700",
-        "  - Scenario B (@ $10/tCO2): 107,140 × $10 = $1,071,400",
-        "  - Scenario C (@ $20/tCO2): 107,140 × $20 = $2,142,800."
+        "  - Scenario A (@ $5/tCO2): 107,140 \u00d7 $5 = $535,700",
+        "  - Scenario B (@ $10/tCO2): 107,140 \u00d7 $10 = $1,071,400",
+        "  - Scenario C (@ $20/tCO2): 107,140 \u00d7 $20 = $2,142,800."
       ],
       "mental_model": "It is like calculating the price of an accidental spill: count the spilled barrels (hectares), find the gallons per barrel (biomass density), and multiply by the market price per gallon (carbon price).",
       "checkpoint": {
@@ -437,7 +437,7 @@
     {
       "slide_num": 18,
       "title": "Kerala Ramsar Wetlands: Critical Habitats Under Urban Assault",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Kondapalli proved how terrestrial forest loss can be audited for carbon. Now we turn to Case Study 2: aquatic wetland systems in Kerala, where ecological degradation threatens water security, fishing, and traditional farming.",
       "eli15_takeaway": "Wetlands are nature's kidneys and storm buffers. Kerala's three internationally recognized Ramsar wetlands are legally protected, yet urban sewage, land grabbing, and factories are choking them anyway.",
       "key_facts": [
@@ -462,13 +462,13 @@
     {
       "slide_num": 19,
       "title": "Wetland Profiles: Ashtamudi, Sasthamkotta Lake, and Vembanad-Kol",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Before calculating financial damages, we must examine the specific physical geography and economic role of each of Kerala's three Ramsar sites.",
       "eli15_takeaway": "The three sites span a brackish estuary known for clams (Ashtamudi), Kerala's largest freshwater drinking lake (Sasthamkotta), and a massive coastal wetland famous for farming rice below sea level (Vembanad-Kol).",
       "key_facts": [
-        "Ashtamudi Wetland: 61.4 km² palm-shaped brackish estuary in Kollam district; Kerala's second-largest wetland, renowned for short-neck clam fisheries.",
-        "Sasthamkotta Lake: 3.75 km² freshwater lake in Kollam; largest natural freshwater lake in Kerala, designated 'Queen of Lakes', supplying drinking water to 500,000 people.",
-        "Vembanad-Kol Wetland: 2,033 km²; largest tropical brackish wetland complex in India, supporting centuries-old Pokkali farming (salt-tolerant rice alternating with shrimp culture below sea level).",
+        "Ashtamudi Wetland: 61.4 km\u00b2 palm-shaped brackish estuary in Kollam district; Kerala's second-largest wetland, renowned for short-neck clam fisheries.",
+        "Sasthamkotta Lake: 3.75 km\u00b2 freshwater lake in Kollam; largest natural freshwater lake in Kerala, designated 'Queen of Lakes', supplying drinking water to 500,000 people.",
+        "Vembanad-Kol Wetland: 2,033 km\u00b2; largest tropical brackish wetland complex in India, supporting centuries-old Pokkali farming (salt-tolerant rice alternating with shrimp culture below sea level).",
         "NRA Link: Shrinking water spreads destroy fish breeding, vegetation loss degrades flood control, and built-up sprawl externalizes huge disaster costs."
       ],
       "mental_model": "Ashtamudi is a marine nursery, Sasthamkotta is a giant municipal drinking water reservoir, and Vembanad-Kol is an engineering wonder of saltwater-resistant farming.",
@@ -481,21 +481,21 @@
           "Greenhouse-based hydroponic strawberry cultivation"
         ],
         "correct_index": 0,
-        "explanation": "Vembanad-Kol is globally renowned for Pokkali farming—a heritage agricultural system where saltwater-tolerant rice is grown below sea level, alternating seasonally with shrimp farming."
+        "explanation": "Vembanad-Kol is globally renowned for Pokkali farming\u2014a heritage agricultural system where saltwater-tolerant rice is grown below sea level, alternating seasonally with shrimp farming."
       }
     },
     {
       "slide_num": 20,
-      "title": "Ashtamudi & Sasthamkotta LULC Dynamics (1988–2022): The Built-Up Surge",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Ashtamudi & Sasthamkotta LULC Dynamics (1988\u20132022): The Built-Up Surge",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Let us look at what 34 years of satellite tracking reveals for Ashtamudi and Sasthamkotta. The data uncovers massive vegetation clearing and urban concrete expansion.",
       "eli15_takeaway": "Between 1988 and 2022, built-up concrete around Ashtamudi and Sasthamkotta grew more than ten times larger, while lush vegetation collapsed by 81 square kilometers and farmland fell by over 80%.",
       "key_facts": [
         "Observation Window: 34-year temporal analysis from 1988 to 2022 across six time slices (1988, 1997, 2002, 2014, 2018, 2022).",
-        "Built-Up Land Surge: Exploded from 15.6 km² in 1988 to 167.8 km² in 2022 (+152.2 km² expansion).",
-        "Vegetation Collapse: Dense green cover plunged from 220.7 km² down to 139.8 km² (net loss of 80.9 km² or 8,090 hectares).",
-        "Agricultural / Fallow Disappearance: Crashed from 84.8 km² down to just 15.7 km² (net loss of 69.1 km² or 6,910 hectares).",
-        "Water Body Encroachment: Open water shrank slightly from 67.9 km² to 65.7 km² (net loss of 2.2 km² or 220 hectares due to bank reclamation and siltation)."
+        "Built-Up Land Surge: Exploded from 15.6 km\u00b2 in 1988 to 167.8 km\u00b2 in 2022 (+152.2 km\u00b2 expansion).",
+        "Vegetation Collapse: Dense green cover plunged from 220.7 km\u00b2 down to 139.8 km\u00b2 (net loss of 80.9 km\u00b2 or 8,090 hectares).",
+        "Agricultural / Fallow Disappearance: Crashed from 84.8 km\u00b2 down to just 15.7 km\u00b2 (net loss of 69.1 km\u00b2 or 6,910 hectares).",
+        "Water Body Encroachment: Open water shrank slightly from 67.9 km\u00b2 to 65.7 km\u00b2 (net loss of 2.2 km\u00b2 or 220 hectares due to bank reclamation and siltation)."
       ],
       "mental_model": "A tranquil lakeside village where the peaceful tree groves and quiet paddy fields were paved over by hotels, shops, and highways in just three decades.",
       "checkpoint": {
@@ -507,40 +507,40 @@
           "A conversion of 90% of urban settlements back into virgin mangroves"
         ],
         "correct_index": 0,
-        "explanation": "Built-up areas skyrocketed from 15.6 km² to 167.8 km², while vegetation and agricultural lands declined by 80.9 km² and 69.1 km² respectively."
+        "explanation": "Built-up areas skyrocketed from 15.6 km\u00b2 to 167.8 km\u00b2, while vegetation and agricultural lands declined by 80.9 km\u00b2 and 69.1 km\u00b2 respectively."
       }
     },
     {
       "slide_num": 21,
-      "title": "Vembanad-Kol LULC Dynamics (1988–2023): Open Water & Pokkali Paddy Collapse",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Vembanad-Kol LULC Dynamics (1988\u20132023): Open Water & Pokkali Paddy Collapse",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "While Ashtamudi suffered massive vegetation loss, Vembanad-Kol suffered a catastrophic loss of open water surface and its iconic heritage paddy fields.",
-      "eli15_takeaway": "Vembanad lost nearly 100 square kilometers of open water—reclaimed by resorts and silted up by waste—while 40% of its historic Pokkali rice paddies vanished and local fish catches collapsed.",
+      "eli15_takeaway": "Vembanad lost nearly 100 square kilometers of open water\u2014reclaimed by resorts and silted up by waste\u2014while 40% of its historic Pokkali rice paddies vanished and local fish catches collapsed.",
       "key_facts": [
         "Observation Window: 35-year temporal satellite record from 1988 to 2023.",
-        "Open Water Body Shrinkage: Plunged from 442.1 km² to 347.7 km²—a staggering net loss of 94.4 km² (9,440 hectares).",
-        "Pokkali Paddy Field Contraction: Heritage paddies dropped from 97.1 km² down to 57.7 km² (loss of 39.4 km² or 3,940 hectares, representing a 40.6% decline).",
-        "Vegetation Decline: Catchment vegetation dropped from 767.3 km² to 650.3 km² (loss of 117.0 km² or 11,700 hectares).",
-        "Built-Up Growth: Urban footprint expanded over 400%, from 80.8 km² up to 340.6 km² (+259.8 km²).",
+        "Open Water Body Shrinkage: Plunged from 442.1 km\u00b2 to 347.7 km\u00b2\u2014a staggering net loss of 94.4 km\u00b2 (9,440 hectares).",
+        "Pokkali Paddy Field Contraction: Heritage paddies dropped from 97.1 km\u00b2 down to 57.7 km\u00b2 (loss of 39.4 km\u00b2 or 3,940 hectares, representing a 40.6% decline).",
+        "Vegetation Decline: Catchment vegetation dropped from 767.3 km\u00b2 to 650.3 km\u00b2 (loss of 117.0 km\u00b2 or 11,700 hectares).",
+        "Built-Up Growth: Urban footprint expanded over 400%, from 80.8 km\u00b2 up to 340.6 km\u00b2 (+259.8 km\u00b2).",
         "Ecological Shock: Annual commercial fish landings collapsed by more than 50% since the year 2000 due to breeding habitat destruction."
       ],
       "mental_model": "Imagine a giant harbor losing a quarter of its water to illegal land filling and mud, leaving commercial fishermen with empty nets and dry boat ramps.",
       "checkpoint": {
         "question": "How much open water surface area was lost in the Vembanad-Kol wetland between 1988 and 2023?",
         "options": [
-          "94.4 km² (9,440 hectares)",
-          "5.2 km² (520 hectares)",
-          "340.6 km² (34,060 hectares)",
+          "94.4 km\u00b2 (9,440 hectares)",
+          "5.2 km\u00b2 (520 hectares)",
+          "340.6 km\u00b2 (34,060 hectares)",
           "Zero loss (water spread expanded)"
         ],
         "correct_index": 0,
-        "explanation": "Open water fell from 442.1 km² to 347.7 km², marking a severe ecological loss of 94.4 km² (9,440 hectares)."
+        "explanation": "Open water fell from 442.1 km\u00b2 to 347.7 km\u00b2, marking a severe ecological loss of 94.4 km\u00b2 (9,440 hectares)."
       }
     },
     {
       "slide_num": 22,
       "title": "Economic Accounting Framework: Direct, Indirect, and Non-Use Losses",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "We have documented the exact physical loss of water, vegetation, and paddy fields across Kerala's wetlands. Now we apply Total Economic Valuation (TEV) to map each physical loss to an economic balance sheet category.",
       "eli15_takeaway": "Nature's value comes in three layers: direct use goods you sell at market (fish and rice), indirect services that protect property (flood regulation), and non-use values for preserving species and culture for future generations.",
       "key_facts": [
@@ -548,7 +548,7 @@
         "Direct Use Value Losses: Vanishing water spread directly reduces fish catches and clam harvesting; disappearing Pokkali paddies undermines agricultural output and livelihoods.",
         "Indirect Use Value Losses: Loss of catchment vegetation weakens flood attenuation, increasing municipal flood damage repair costs and water purification expenses.",
         "Non-Use Value Losses: Loss of biodiversity, migratory bird stopovers, and vanishing cultural heritage of traditional salt-tolerant farming.",
-        "Key Synthesis Finding: 20-40% vegetation loss, 3-4x built-up growth, ~100 km² open water lost in Vembanad, and a 40% collapse in Pokkali agriculture."
+        "Key Synthesis Finding: 20-40% vegetation loss, 3-4x built-up growth, ~100 km\u00b2 open water lost in Vembanad, and a 40% collapse in Pokkali agriculture."
       ],
       "mental_model": "A house has direct value (you can live in it or rent it out), indirect value (its storm roof keeps water out), and non-use value (you take pride in its architectural history even if you don't enter every room).",
       "checkpoint": {
@@ -560,91 +560,91 @@
           "Manufactured Capital Depreciation"
         ],
         "correct_index": 0,
-        "explanation": "Indirect use values refer to functional regulatory services—like flood control, wastewater treatment, and storm protection—that support the economy without being sold in a retail shop."
+        "explanation": "Indirect use values refer to functional regulatory services\u2014like flood control, wastewater treatment, and storm protection\u2014that support the economy without being sold in a retail shop."
       }
     },
     {
       "slide_num": 23,
       "title": "Valuation Parameters: Mid-Point Unit Values via Benefit Transfer",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "To price these losses, economists use the Benefit Transfer method: adopting peer-reviewed per-hectare economic values from local field studies and taking their mid-point values.",
       "eli15_takeaway": "Rather than guessing what a hectare of swamp is worth, researchers look at existing economic studies in the same state and pick balanced, realistic mid-point numbers for fish, rice, flood defense, and tourism.",
       "key_facts": [
         "Benefit-Transfer Method: Applies documented per-hectare economic values from local field studies to newly audited spatial footprints.",
-        "Fisheries Provisioning Mid-Points: Vembanad-Kol = ₹115,000 / ha / yr (estuarine fisheries); Ashtamudi & Sasthamkotta = ₹80,000 / ha / yr (clam beds and freshwater finfish).",
-        "Agricultural Production Mid-Points: Pokkali fields (Vembanad) = ₹50,000 / ha / yr; Paddy & fallow land (Ashtamudi/Sasthamkotta) = ₹37,500 / ha / yr.",
-        "Regulating Services (Flood Control, Water Treatment, Carbon): ₹42,500 / ha / yr (midpoint of documented ₹25,000–₹60,000 range).",
-        "Recreation & Ecotourism: ₹15,000 / ha / yr (midpoint of ₹12,000–₹18,000 backwater tourism studies).",
-        "Biodiversity & Non-Use Value: ₹8,000 / ha / yr (midpoint of ₹6,000–₹10,000 Willingness-To-Pay surveys)."
+        "Fisheries Provisioning Mid-Points: Vembanad-Kol = \u20b9115,000 / ha / yr (estuarine fisheries); Ashtamudi & Sasthamkotta = \u20b980,000 / ha / yr (clam beds and freshwater finfish).",
+        "Agricultural Production Mid-Points: Pokkali fields (Vembanad) = \u20b950,000 / ha / yr; Paddy & fallow land (Ashtamudi/Sasthamkotta) = \u20b937,500 / ha / yr.",
+        "Regulating Services (Flood Control, Water Treatment, Carbon): \u20b942,500 / ha / yr (midpoint of documented \u20b925,000\u2013\u20b960,000 range).",
+        "Recreation & Ecotourism: \u20b915,000 / ha / yr (midpoint of \u20b912,000\u2013\u20b918,000 backwater tourism studies).",
+        "Biodiversity & Non-Use Value: \u20b98,000 / ha / yr (midpoint of \u20b96,000\u2013\u20b910,000 Willingness-To-Pay surveys)."
       ],
       "mental_model": "Like an auto mechanic using a standard repair price manual to quote the replacement cost of broken car components, rather than making up numbers on the spot.",
       "checkpoint": {
         "question": "What mid-point valuation is assigned for regulating services (flood control, water purification, carbon storage) across the Kerala wetland accounts?",
         "options": [
-          "₹42,500 / ha / year",
-          "₹115,000 / ha / year",
-          "₹8,000 / ha / year",
-          "₹1,000,000 / ha / year"
+          "\u20b942,500 / ha / year",
+          "\u20b9115,000 / ha / year",
+          "\u20b98,000 / ha / year",
+          "\u20b91,000,000 / ha / year"
         ],
         "correct_index": 0,
-        "explanation": "The lecture sets regulating services at the exact mid-point of the ₹25,000–₹60,000 range, which equals ₹42,500 per hectare per year."
+        "explanation": "The lecture sets regulating services at the exact mid-point of the \u20b925,000\u2013\u20b960,000 range, which equals \u20b942,500 per hectare per year."
       }
     },
     {
       "slide_num": 24,
-      "title": "Vembanad-Kol Monetary Damage Account: Calculating ₹201.5 Crore/Year Loss",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Vembanad-Kol Monetary Damage Account: Calculating \u20b9201.5 Crore/Year Loss",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Now we multiply our physical losses in hectares by these mid-point unit values to calculate the total annual economic damage inflicted on Vembanad-Kol.",
-      "eli15_takeaway": "Adding up the losses in fish catches, rice harvests, flood control, tourism, and wildlife reveals that shrinking Vembanad-Kol drains over ₹201.5 crore in lost ecological wealth every single year.",
+      "eli15_takeaway": "Adding up the losses in fish catches, rice harvests, flood control, tourism, and wildlife reveals that shrinking Vembanad-Kol drains over \u20b9201.5 crore in lost ecological wealth every single year.",
       "key_facts": [
-        "1. Fisheries Loss: 9,440 ha water loss × ₹115,000/ha = ₹1,085,600,000 (~₹108.56 cr/yr). Represents over 50% of total economic damages.",
-        "2. Agricultural Loss: 3,940 ha Pokkali loss × ₹50,000/ha = ₹197,000,000 (~₹19.70 cr/yr).",
-        "3. Regulating Services Loss: 11,700 ha vegetation loss × ₹42,500/ha = ₹497,250,000 (~₹49.73 cr/yr).",
-        "4. Recreation & Tourism Loss: 9,440 ha water loss × ₹15,000/ha = ₹141,600,000 (~₹14.16 cr/yr).",
-        "5. Biodiversity / Non-Use Loss: 11,700 ha vegetation loss × ₹8,000/ha = ₹93,600,000 (~₹9.36 cr/yr).",
-        "Total Annual Damage for Vembanad-Kol: ₹2,015,050,000 per year (~₹201.51 crores / year)."
+        "1. Fisheries Loss: 9,440 ha water loss \u00d7 \u20b9115,000/ha = \u20b91,085,600,000 (~\u20b9108.56 cr/yr). Represents over 50% of total economic damages.",
+        "2. Agricultural Loss: 3,940 ha Pokkali loss \u00d7 \u20b950,000/ha = \u20b9197,000,000 (~\u20b919.70 cr/yr).",
+        "3. Regulating Services Loss: 11,700 ha vegetation loss \u00d7 \u20b942,500/ha = \u20b9497,250,000 (~\u20b949.73 cr/yr).",
+        "4. Recreation & Tourism Loss: 9,440 ha water loss \u00d7 \u20b915,000/ha = \u20b9141,600,000 (~\u20b914.16 cr/yr).",
+        "5. Biodiversity / Non-Use Loss: 11,700 ha vegetation loss \u00d7 \u20b98,000/ha = \u20b993,600,000 (~\u20b99.36 cr/yr).",
+        "Total Annual Damage for Vembanad-Kol: \u20b92,015,050,000 per year (~\u20b9201.51 crores / year)."
       ],
       "mental_model": "Think of an annual subscription fee nature was paying into the local economy that has now been canceled because the account was shut down.",
       "checkpoint": {
         "question": "What single ecosystem service accounts for the largest monetary loss in the Vembanad-Kol balance sheet?",
         "options": [
-          "Fisheries provisioning loss (₹108.56 crores/year)",
-          "Recreation and tourism loss (₹14.16 crores/year)",
-          "Pokkali agricultural loss (₹19.70 crores/year)",
-          "Biodiversity non-use loss (₹9.36 crores/year)"
+          "Fisheries provisioning loss (\u20b9108.56 crores/year)",
+          "Recreation and tourism loss (\u20b914.16 crores/year)",
+          "Pokkali agricultural loss (\u20b919.70 crores/year)",
+          "Biodiversity non-use loss (\u20b99.36 crores/year)"
         ],
         "correct_index": 0,
-        "explanation": "Fisheries provisioning incurred the single largest annual loss: 9,440 ha × ₹115,000 = ₹1,085,600,000 (over ₹108.5 crore per year)."
+        "explanation": "Fisheries provisioning incurred the single largest annual loss: 9,440 ha \u00d7 \u20b9115,000 = \u20b91,085,600,000 (over \u20b9108.5 crore per year)."
       }
     },
     {
       "slide_num": 25,
-      "title": "Statewide Ramsar Damage Bill: ₹270.36 Crore Annual Economic Drain",
-      "act": "Act 4: Case Study 2 — Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
+      "title": "Statewide Ramsar Damage Bill: \u20b9270.36 Crore Annual Economic Drain",
+      "act": "Act 4: Case Study 2 \u2014 Kerala Ramsar Wetlands: Mid-Point Monetary Damage Accounting",
       "continuity_bridge": "Finally, we calculate the annual damage for Ashtamudi and Sasthamkotta and combine it with Vembanad-Kol to establish the grand statewide natural capital deficit for Kerala's premier wetlands.",
-      "eli15_takeaway": "Together, degradation across Kerala's three Ramsar wetlands destroys over ₹270 crore in natural wealth every year. Natural Resource Accounting makes this silent crisis visible to planners and lawmakers.",
+      "eli15_takeaway": "Together, degradation across Kerala's three Ramsar wetlands destroys over \u20b9270 crore in natural wealth every year. Natural Resource Accounting makes this silent crisis visible to planners and lawmakers.",
       "key_facts": [
         "Ashtamudi & Sasthamkotta Breakdown (Annual Losses):",
-        "  - Fisheries (220 ha water loss × ₹80,000): ₹17,600,000 (~₹1.76 cr)",
-        "  - Agriculture (6,910 ha fallow/agri loss × ₹37,500): ₹259,125,000 (~₹25.91 cr)",
-        "  - Regulating Services (8,090 ha vegetation loss × ₹42,500): ₹343,825,000 (~₹34.38 cr)",
-        "  - Recreation (220 ha water loss × ₹15,000): ₹3,300,000 (~₹0.33 cr)",
-        "  - Biodiversity (8,090 ha vegetation loss × ₹8,000): ₹64,720,000 (~₹6.47 cr)",
-        "Ashtamudi & Sasthamkotta Subtotal: ₹688,570,000 per year (~₹68.86 crores / year).",
-        "Statewide Ramsar Grand Total: ₹2,015,050,000 (Vembanad) + ₹688,570,000 (Ashtamudi/Sasthamkotta) = ₹2,703,620,000 per year (~₹270.36 crores / year).",
+        "  - Fisheries (220 ha water loss \u00d7 \u20b980,000): \u20b917,600,000 (~\u20b91.76 cr)",
+        "  - Agriculture (6,910 ha fallow/agri loss \u00d7 \u20b937,500): \u20b9259,125,000 (~\u20b925.91 cr)",
+        "  - Regulating Services (8,090 ha vegetation loss \u00d7 \u20b942,500): \u20b9343,825,000 (~\u20b934.38 cr)",
+        "  - Recreation (220 ha water loss \u00d7 \u20b915,000): \u20b93,300,000 (~\u20b90.33 cr)",
+        "  - Biodiversity (8,090 ha vegetation loss \u00d7 \u20b98,000): \u20b964,720,000 (~\u20b96.47 cr)",
+        "Ashtamudi & Sasthamkotta Subtotal: \u20b9688,570,000 per year (~\u20b968.86 crores / year).",
+        "Statewide Ramsar Grand Total: \u20b92,015,050,000 (Vembanad) + \u20b9688,570,000 (Ashtamudi/Sasthamkotta) = \u20b92,703,620,000 per year (~\u20b9270.36 crores / year).",
         "Policy Conclusion: Without spatial NRA, real estate growth appears profitable while quietly draining hundreds of crores in natural capital annually."
       ],
-      "mental_model": "A household celebrating earning ₹50,000 a month at work, while silently bleeding ₹27,000 every single month from invisible leaks in the roof, crumbling foundations, and ruined crops.",
+      "mental_model": "A household celebrating earning \u20b950,000 a month at work, while silently bleeding \u20b927,000 every single month from invisible leaks in the roof, crumbling foundations, and ruined crops.",
       "checkpoint": {
         "question": "What is the combined annual mid-case natural capital loss calculated across Kerala's audited Ramsar wetland sites?",
         "options": [
-          "₹2,703,620,000 per year (~₹270.36 crores/yr)",
-          "₹68,857,000 per year (~₹6.89 crores/yr)",
-          "₹10,500,000,000 per year (~₹1,050 crores/yr)",
-          "₹500,000 per year (~₹50 lakhs/yr)"
+          "\u20b92,703,620,000 per year (~\u20b9270.36 crores/yr)",
+          "\u20b968,857,000 per year (~\u20b96.89 crores/yr)",
+          "\u20b910,500,000,000 per year (~\u20b91,050 crores/yr)",
+          "\u20b9500,000 per year (~\u20b950 lakhs/yr)"
         ],
         "correct_index": 0,
-        "explanation": "Combining Vembanad-Kol (₹201.51 crores) and Ashtamudi & Sasthamkotta (₹68.86 crores) produces a grand annual natural capital deficit of ~₹270.36 crores per year."
+        "explanation": "Combining Vembanad-Kol (\u20b9201.51 crores) and Ashtamudi & Sasthamkotta (\u20b968.86 crores) produces a grand annual natural capital deficit of ~\u20b9270.36 crores per year."
       }
     }
   ]

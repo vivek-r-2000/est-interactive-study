@@ -232,7 +232,7 @@
         "section": "Section I, Q2",
         "marks": "2 Marks",
         "question": "Explain the mechanism of Enhanced Rock Weathering (EW) and its dual impact on atmospheric carbon and ocean chemistry.",
-        "answer_guideline": "<ul><li><strong>Mechanism:</strong> Pulverizing reactive volcanic silicate rocks (basalt or olivine) multiplies their reactive surface area by millions, accelerating natural weathering kinetics: $\\text{CaSiO}_3 + 2\\text{CO}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{Ca}^{2+} + 2\\text{HCO}_3^- + \\text{SiO}_2$.</li><li><strong>Dual Impact:</strong> (1) Sequesters up to 3.7 billion tonnes of CO2eq per year globally; (2) Washes soluble bicarbonate ions ($\\text{HCO}_3^-$) into rivers and oceans, neutralizing carbonic acid and directly counteracting ocean acidification.</li></ul>"
+        "answer_guideline": "<ul><li><strong>Mechanism:</strong> Pulverizing reactive volcanic silicate rocks (basalt or olivine) multiplies their reactive surface area by millions, accelerating natural weathering kinetics: \\(\\text{CaSiO}_3 + 2\\text{CO}_2 + \\text{H}_2\\text{O} \u2192 \\text{Ca}^{2+} + 2\\text{HCO}_3^- + \\text{SiO}_2\\).</li><li><strong>Dual Impact:</strong> (1) Sequesters up to 3.7 billion tonnes of CO2eq per year globally; (2) Washes soluble bicarbonate ions (\\(\\text{HCO}_3^-\\)) into rivers and oceans, neutralizing carbonic acid and directly counteracting ocean acidification.</li></ul>"
       },
       {
         "paper": "EST Quiz-1 2023",
@@ -294,7 +294,7 @@
         "section": "Section III, Q2(b)",
         "marks": "3 Marks",
         "question": "Explain the chemical steps involved in high-temperature liquid Direct Air Capture systems (Carbon Engineering closed loop).",
-        "answer_guideline": "<ol><li><strong>Air Contactor:</strong> Ambient air passes through a potassium hydroxide spray: $2\\text{KOH} + \\text{CO}_2 \\rightarrow \\text{K}_2\\text{CO}_3 + \\text{H}_2\\text{O}$.</li><li><strong>Pellet Reactor:</strong> Potassium carbonate reacts with calcium hydroxide to precipitate solid calcium carbonate pellets: $\\text{K}_2\\text{CO}_3 + \\text{Ca(OH)}_2 \\rightarrow 2\\text{KOH} + \\text{CaCO}_3\\downarrow$.</li><li><strong>Oxy-fired Calciner:</strong> Pellets are heated to ~900\u00b0C: $\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2\\uparrow$ to release pure CO2 gas.</li><li><strong>Slaker:</strong> Calcium oxide is rehydrated with water: $\\text{CaO} + \\text{H}_2\\text{O} \\rightarrow \\text{Ca(OH)}_2$ to close and regenerate the loop.</li></ol>"
+        "answer_guideline": "<ol><li><strong>Air Contactor:</strong> Ambient air passes through a potassium hydroxide spray: $2\\text{KOH} + \\text{CO}_2 \u2192 \\text{K}_2\\text{CO}_3 + \\text{H}_2\\text{O}\\(.</li><li><strong>Pellet Reactor:</strong> Potassium carbonate reacts with calcium hydroxide to precipitate solid calcium carbonate pellets:\\)\\text{K}_2\\text{CO}_3 + \\text{Ca(OH)}_2 \u2192 2\\text{KOH} + \\text{CaCO}_3\\downarrow\\(.</li><li><strong>Oxy-fired Calciner:</strong> Pellets are heated to ~900\u00b0C:\\)\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2\\uparrow\\(to release pure CO2 gas.</li><li><strong>Slaker:</strong> Calcium oxide is rehydrated with water:\\)\\text{CaO} + \\text{H}_2\\text{O} \u2192 \\text{Ca(OH)}_2$ to close and regenerate the loop.</li></ol>"
       },
       {
         "paper": "EST Mid-1 2024",
@@ -417,14 +417,14 @@
         "section": "Section III, Q5",
         "marks": "3 Marks",
         "question": "Explain the process of diamond manufacturing by Aether (only the process).",
-        "answer_guideline": "<ol><li><strong>Sourcing:</strong> Atmospheric CO2 is purchased directly from Climeworks' commercial DAC collectors in Europe and shipped to the US.</li><li><strong>Methanation:</strong> CO2 is catalytically converted into ultra-high-purity methane ($CH_4$) via the Sabatier reduction process: $\\text{CO}_2 + 4\\text{H}_2 \\rightarrow \\text{CH}_4 + 2\\text{H}_2\\text{O}$.</li><li><strong>CVD Plasma Deposition:</strong> Pure $CH_4$ is injected into Chemical Vapor Deposition (CVD) diamond reactors heated to extreme temperatures under near-vacuum conditions, growing rough diamond crystal lattice layer by layer over several weeks.</li><li><strong>100% Clean Energy:</strong> Entire manufacturing synthesis is powered by zero-carbon solar and nuclear power.</li><li><strong>Surat Cutting:</strong> Rough diamonds are shipped to Surat, Gujarat, India for precision gem cutting and facet polishing, then returned to NYC for jewelry sales.</li></ol>"
+        "answer_guideline": "<ol><li><strong>Sourcing:</strong> Atmospheric CO2 is purchased directly from Climeworks' commercial DAC collectors in Europe and shipped to the US.</li><li><strong>Methanation:</strong> CO2 is catalytically converted into ultra-high-purity methane (\\(CH_4\\)) via the Sabatier reduction process: \\(\\text{CO}_2 + 4\\text{H}_2 \u2192 \\text{CH}_4 + 2\\text{H}_2\\text{O}\\).</li><li><strong>CVD Plasma Deposition:</strong> Pure \\(CH_4\\) is injected into Chemical Vapor Deposition (CVD) diamond reactors heated to extreme temperatures under near-vacuum conditions, growing rough diamond crystal lattice layer by layer over several weeks.</li><li><strong>100% Clean Energy:</strong> Entire manufacturing synthesis is powered by zero-carbon solar and nuclear power.</li><li><strong>Surat Cutting:</strong> Rough diamonds are shipped to Surat, Gujarat, India for precision gem cutting and facet polishing, then returned to NYC for jewelry sales.</li></ol>"
       },
       {
         "paper": "EVS End Exam 2022",
         "section": "Section X, Q(b)",
         "marks": "5 Marks",
         "question": "Give a detailed account on Diamonds from air pollution: include sourcing, intermediate chemical reactions, plasma synthesis, polishing hub, and environmental savings per carat.",
-        "answer_guideline": "<ul><li><strong>Sourcing & Chemistry:</strong> Procures DAC CO2 from Climeworks $\\rightarrow$ catalytic conversion to $CH_4$ $\\rightarrow$ Chemical Vapor Deposition (CVD) vacuum plasma synthesis powered 100% by solar and nuclear energy.</li><li><strong>Polishing Hub:</strong> Surat, India cuts and polishes the rough gems.</li><li><strong>Environmental Impact:</strong> Each 1-carat Aether diamond sequesters the equivalent of <strong>20 tonnes of atmospheric CO2</strong> (offsetting ~1.5 years of human emissions), avoids <strong>127 gallons of water</strong> wasted per mined carat, and uses half the energy of open-pit mining.</li></ul>"
+        "answer_guideline": "<ul><li><strong>Sourcing & Chemistry:</strong> Procures DAC CO2 from Climeworks \u2192 catalytic conversion to \\(CH_4\\) \u2192 Chemical Vapor Deposition (CVD) vacuum plasma synthesis powered 100% by solar and nuclear energy.</li><li><strong>Polishing Hub:</strong> Surat, India cuts and polishes the rough gems.</li><li><strong>Environmental Impact:</strong> Each 1-carat Aether diamond sequesters the equivalent of <strong>20 tonnes of atmospheric CO2</strong> (offsetting ~1.5 years of human emissions), avoids <strong>127 gallons of water</strong> wasted per mined carat, and uses half the energy of open-pit mining.</li></ul>"
       }
     ]
   },
@@ -490,7 +490,7 @@
         "section": "Section IV, Q3",
         "marks": "3 Marks",
         "question": "Describe two technological solutions to mitigate bovine enteric methane emissions: one biochemical dietary intervention and one wearable mechanical device.",
-        "answer_guideline": "<ul><li><strong>Dietary Supplement:</strong> Adding 0.2\u20130.5% red seaweed (<em>Asparagopsis taxiformis</em>) to feed reduces enteric methane by up to <strong>80%</strong> by inhibiting the bromoform enzyme pathway in rumen methanogenic archaea.</li><li><strong>Wearable Halter (Zelp, UK):</strong> A smart halter worn around the snout detects exhaled methane burps and routes them through a micro-catalytic converter that oxidizes $CH_4$ into water vapor and trace $CO_2$: $\\text{CH}_4 + 2\\text{O}_2 \\rightarrow \\text{CO}_2 + 2\\text{H}_2\\text{O}$.</li></ul>"
+        "answer_guideline": "<ul><li><strong>Dietary Supplement:</strong> Adding 0.2\u20130.5% red seaweed (<em>Asparagopsis taxiformis</em>) to feed reduces enteric methane by up to <strong>80%</strong> by inhibiting the bromoform enzyme pathway in rumen methanogenic archaea.</li><li><strong>Wearable Halter (Zelp, UK):</strong> A smart halter worn around the snout detects exhaled methane burps and routes them through a micro-catalytic converter that oxidizes \\(CH_4\\) into water vapor and trace \\(CO_2\\): \\(\\text{CH}_4 + 2\\text{O}_2 \u2192 \\text{CO}_2 + 2\\text{H}_2\\text{O}\\).</li></ul>"
       }
     ]
   },
@@ -855,7 +855,7 @@
         "section": "Section III, Q7",
         "marks": "3 Marks",
         "question": "Difference between Portland and Novacem cement.",
-        "answer_guideline": "<ol><li><strong>Raw Material & Temperature:</strong> Portland cement requires calcining limestone ($\\text{CaCO}_3$) at $1,450^\\circ\\text{C}$ in fossil-fueled rotary kilns, emitting 0.8\u20131.0 t CO2/t cement. Novacem uses magnesium silicates ($\\text{MgSiO}_3$) processed at only $650^\\circ\\text{C}$, cutting thermal fuel emissions in half.</li><li><strong>Chemical Reaction:</strong> Portland: $\\text{CaCO}_3 \\xrightarrow{1450^\\circ\\text{C}} \\text{CaO} + \\text{CO}_2\\uparrow$. Novacem: $\\text{MgSiO}_3 \\xrightarrow{650^\\circ\\text{C}} \\text{MgO} + \\text{SiO}_2$.</li><li><strong>Curing & Carbon Balance:</strong> Portland cures by hydration. Novacem cures by carbonation: $\\text{MgO} + \\text{CO}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{MgCO}_3\\cdot 3\\text{H}_2\\text{O}$, absorbing up to 100 kg CO2 net per tonne, making it carbon-negative.</li></ol>"
+        "answer_guideline": "<ol><li><strong>Raw Material & Temperature:</strong> Portland cement requires calcining limestone (\\(\\text{CaCO}_3\\)) at $1,450^\\circ\\text{C}\\(in fossil-fueled rotary kilns, emitting 0.8\u20131.0 t CO2/t cement. Novacem uses magnesium silicates (\\)\\text{MgSiO}_3\\() processed at only $650^\\circ\\text{C}\\), cutting thermal fuel emissions in half.</li><li><strong>Chemical Reaction:</strong> Portland: \\(\\text{CaCO}_3 \\xrightarrow{1450^\\circ\\text{C}} \\text{CaO} + \\text{CO}_2\\uparrow\\). Novacem: \\(\\text{MgSiO}_3 \\xrightarrow{650^\\circ\\text{C}} \\text{MgO} + \\text{SiO}_2\\).</li><li><strong>Curing & Carbon Balance:</strong> Portland cures by hydration. Novacem cures by carbonation: \\(\\text{MgO} + \\text{CO}_2 + \\text{H}_2\\text{O} \u2192 \\text{MgCO}_3\\cdot 3\\text{H}_2\\text{O}\\), absorbing up to 100 kg CO2 net per tonne, making it carbon-negative.</li></ol>"
       },
       {
         "paper": "EVS End Exam 2019",
@@ -869,7 +869,7 @@
         "section": "Q8(b)",
         "marks": "1.5 Marks",
         "question": "Answer in three sentences: brief account on Novacem (MgO + CO2 -> MgCO3).",
-        "answer_guideline": "<p><strong>Answer:</strong> (1) Novacem is a carbon-negative cement manufactured from magnesium silicates at 650\u00b0C instead of limestone at 1,450\u00b0C. (2) During hardening, it absorbs atmospheric carbon dioxide via the reaction $\\text{MgO} + \\text{CO}_2 \\rightarrow \\text{MgCO}_3$. (3) It sequesters up to 100 kg more CO2 per tonne than emitted during production.</p>"
+        "answer_guideline": "<p><strong>Answer:</strong> (1) Novacem is a carbon-negative cement manufactured from magnesium silicates at 650\u00b0C instead of limestone at 1,450\u00b0C. (2) During hardening, it absorbs atmospheric carbon dioxide via the reaction \\(\\text{MgO} + \\text{CO}_2 \u2192 \\text{MgCO}_3\\). (3) It sequesters up to 100 kg more CO2 per tonne than emitted during production.</p>"
       }
     ]
   }

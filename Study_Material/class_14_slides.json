@@ -83,14 +83,14 @@
       "title": "The 1.8-Ton Computer: Embodied Energy, Water, and Chemical Ratios",
       "act": "Act 1: The IT Footprint Crisis",
       "continuity_bridge": "Once minerals leave the mine, turning raw rocks into microchips demands an astonishing multiplier of fossil fuel, water, and caustic chemicals.",
-      "eli15_takeaway": "Building one desktop PC consumes 1.8 tons of raw resources—roughly 10 times its own weight in fossil fuels alone.",
+      "eli15_takeaway": "Building one desktop PC consumes 1.8 tons of raw resources\u2014roughly 10 times its own weight in fossil fuels alone.",
       "key_facts": [
         "Constructing an average 24-kg desktop computer and 27-cm (17-inch) monitor consumes at least 240 kg of fossil fuels, 22 kg of chemicals, and 1,500 kg of water.",
-        "Total resource input reaches 1,800 kg (1.8 metric tons)—matching the weight of an entire sport utility vehicle (SUV).",
+        "Total resource input reaches 1,800 kg (1.8 metric tons)\u2014matching the weight of an entire sport utility vehicle (SUV).",
         "While manufacturing a car or refrigerator requires only 1 to 2 times its finished weight in fossil fuels, microchip-heavy computer manufacturing demands an embodied fuel multiplier of over 10:1.",
         "Semiconductor fabrication plants (fabs) consume millions of liters of ultra-pure water daily, matching the water demand of a small city."
       ],
-      "mental_model": "The Factory Funnel: Ordinary manufacturing is 1:1, but silicon fabrication is an extreme funnel—compressing a mountain of fuel and a lake of pure water into a postage-stamp-sized chip.",
+      "mental_model": "The Factory Funnel: Ordinary manufacturing is 1:1, but silicon fabrication is an extreme funnel\u2014compressing a mountain of fuel and a lake of pure water into a postage-stamp-sized chip.",
       "checkpoint": {
         "question": "How does the fossil fuel intensity of computer manufacturing compare to conventional car manufacturing?",
         "options": [
@@ -160,7 +160,7 @@
       "continuity_bridge": "Energy Star targeted basic hardware, but the systemic crisis spans toxic chemicals in manufacturing, idle runtime power, and cooling constraints in server farms.",
       "eli15_takeaway": "Computers bleed energy when idle, screen savers waste electricity, and data centers spend nearly half their power just pumping out heat.",
       "key_facts": [
-        "Power Usage Effectiveness (PUE) and DCiE: $PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}$, while Data Center Infrastructure Efficiency ($DCiE$) is $DCiE = \\frac{1}{PUE} \\times 100\\%$. A legacy facility with PUE = 2.0 has a DCiE of only 50%.",
+        "Power Usage Effectiveness (PUE) and DCiE: \\(PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}\\), while Data Center Infrastructure Efficiency (\\(DCiE\\)) is \\(DCiE = \\frac{1}{PUE} \\times 100\\%\\). A legacy facility with PUE = 2.0 has a DCiE of only 50%.",
         "Thermal containment: Hot-aisle and cold-aisle containment physical barriers separate supply air (18-22 C) from server exhaust (35-45 C), preventing air mixing and reducing cooling power consumption by 20-30%.",
         "Thermal bottleneck: Server racks generate concentrated heat flux, forcing cooling infrastructure to consume 40% of overall data center electricity.",
         "Idle power draw: Office computers left running overnight burn full CPU and fan power; animated 3D screen savers keep GPUs active instead of entering low-power sleep.",
@@ -263,7 +263,7 @@
       "continuity_bridge": "Hardware settings only get us halfway; software engineering choices determine how many clock cycles a CPU executes for every user operation.",
       "eli15_takeaway": "Every database query, search request, and loop consumes joules; a single internet search releases between 0.2 and 0.4 grams of carbon dioxide.",
       "key_facts": [
-        "Algorithmic efficiency directly governs CPU instruction count, memory bus saturation, and electrical energy ($E = P \\times t$).",
+        "Algorithmic efficiency directly governs CPU instruction count, memory bus saturation, and electrical energy (\\(E = P \\times t\\)).",
         "Measured CO2 released per single web search query:",
         "- Google Search: approx 0.20 g CO2",
         "- Yahoo Search: approx 0.26 g CO2",
@@ -272,7 +272,7 @@
         "Multiplied across billions of daily global queries, algorithmic micro-optimizations prevent thousands of tons of grid carbon emissions.",
         "End-of-life disposal creates 20-50 million metric tons of e-waste per year (roughly 5% of all global municipal solid waste)."
       ],
-      "mental_model": "The Calorie Counter: Just as inefficient walking burns more physical calories per mile, inefficient $O(n^2)$ code burns electrical joules and spews invisible grams of coal exhaust into the atmosphere.",
+      "mental_model": "The Calorie Counter: Just as inefficient walking burns more physical calories per mile, inefficient \\(O(n^2)\\) code burns electrical joules and spews invisible grams of coal exhaust into the atmosphere.",
       "checkpoint": {
         "question": "What is the measured carbon dioxide emission associated with a single Google search query according to historical benchmarks?",
         "options": [
@@ -477,7 +477,7 @@
       "key_facts": [
         "Historical metric: System performance was evaluated almost exclusively on raw throughput, clock frequency (GHz), and Million Instructions Per Second (MIPS).",
         "Modern efficiency benchmark: Hardware and software systems are evaluated on energy-proportional computing: Performance per Watt (FLOPS/Watt).",
-        "Dynamic Voltage and Frequency Scaling (DVFS): Power consumption in CMOS circuits scales quadratically with voltage ($P \\propto C \\cdot V^2 \\cdot f$); throttling clock frequency ($f$) and supply voltage ($V$) during low workloads yields exponential energy reductions.",
+        "Dynamic Voltage and Frequency Scaling (DVFS): Power consumption in CMOS circuits scales quadratically with voltage (\\(P \\propto C \\cdot V^2 \\cdot f\\)); throttling clock frequency (\\(f\\)) and supply voltage (\\(V\\)) during low workloads yields exponential energy reductions.",
         "Whole-system lifecycle boundary: True green computing integrates operational energy efficiency with embodied manufacturing debt and non-toxic end-of-life recovery."
       ],
       "mental_model": "The Racecar vs. Electric Hybrid: A drag racer goes fast but burns 5 gallons per minute and blows its engine; a championship endurance racer wins by squeezing maximum distance out of every drop of energy.",
@@ -663,7 +663,7 @@
         "Indian Foreign Trade Policy (DGFT): Prohibits commercial importation of electronic waste and strictly restricts import of second-hand computers.",
         "Central Pollution Control Board (CPCB) 2008 Guidelines: India's first formal policy document outlining fundamental principles for e-waste channelization."
       ],
-      "mental_model": "The Patchwork Quilt: Early e-waste regulation was like stitching three old blankets together—one for city garbage, one for chemical factories, and one for customs ships—leaving huge gaps where electronics slipped through.",
+      "mental_model": "The Patchwork Quilt: Early e-waste regulation was like stitching three old blankets together\u2014one for city garbage, one for chemical factories, and one for customs ships\u2014leaving huge gaps where electronics slipped through.",
       "checkpoint": {
         "question": "What international treaty regulates and restricts the cross-border transport of hazardous electronic waste from developed to developing countries?",
         "options": [

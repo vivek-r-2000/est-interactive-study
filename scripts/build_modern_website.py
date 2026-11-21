@@ -17,7 +17,7 @@ def build_website():
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
-          onload="renderMathInElement(document.body, {{delimiters: [{{left: '$$', right: '$$', display: true}}, {{left: '$', right: '$', display: false}}, {{left: '\\\\(', right: '\\\\)', display: false}}, {{left: '\\\\[', right: '\\\\]', display: true}}], throwOnError: false}});"></script>
+          onload="renderMathInElement(document.body, {{delimiters: [{{left: '$$', right: '$$', display: true}}, {{left: '\\\\(', right: '\\\\)', display: false}}, {{left: '\\\\[', right: '\\\\]', display: true}}], throwOnError: false}});"></script>
   <style>
     :root {{
       --bg: #FBFBFA;
@@ -335,6 +335,8 @@ def build_website():
       padding: 22px 24px;
       position: relative;
       transition: border-color 0.15s ease;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
     }}
     .submodule-card:hover {{
       border-color: var(--border-accent);
@@ -674,9 +676,12 @@ def build_website():
     .bullets-list li {{
       position: relative;
       padding-left: 18px;
-      margin-bottom: 8px;
-      font-size: 13px;
+      margin-bottom: 9px;
+      font-size: 13.5px;
+      line-height: 1.6;
       color: var(--text);
+      overflow-wrap: break-word;
+      word-wrap: break-word;
     }}
     .bullets-list li::before {{
       content: "•";
@@ -684,6 +689,19 @@ def build_website():
       left: 4px;
       color: var(--accent);
       font-weight: bold;
+    }}
+
+    /* KaTeX math typography & overflow safety */
+    .katex {{
+      font-size: 1.05em;
+      text-rendering: auto;
+      white-space: normal;
+    }}
+    .katex-display {{
+      margin: 1em 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 4px 0;
     }}
 
     /* Mental Model Box */
@@ -1362,10 +1380,10 @@ def build_website():
         renderMathInElement(contentContainer, {{
           delimiters: [
             {{left: '$$', right: '$$', display: true}},
-            {{left: '$', right: '$', display: false}},
-            {{left: '\\(', right: '\\)', display: false}},
-            {{left: '\\[', right: '\\]', display: true}}
+            {{left: '\\\\(', right: '\\\\)', display: false}},
+            {{left: '\\\\[', right: '\\\\]', display: true}}
           ],
+          ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code"],
           throwOnError: false
         }});
       }}

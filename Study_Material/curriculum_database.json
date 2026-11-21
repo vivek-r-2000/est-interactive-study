@@ -176,8 +176,8 @@
           "title": "Thermodynamics of Ecological Systems",
           "eli15_takeaway": "Energy can never be created or destroyed, but every time an animal eats a plant or an engine burns fuel, high-quality energy degrades into useless waste heat.",
           "bullets": [
-            "First Law: Energy conservation ($E_{in} = E_{out}$). Energy only changes forms.",
-            "Second Law: Entropy increases ($\\Delta S > 0$). In every biological transfer, roughly 90% of energy is dissipated as metabolic heat.",
+            "First Law: Energy conservation (\\(E_{in} = E_{out}\\)). Energy only changes forms.",
+            "Second Law: Entropy increases (\\(\\Delta S > 0\\)). In every biological transfer, roughly 90% of energy is dissipated as metabolic heat.",
             "Trophic Efficiency: Only ~10% of energy stored in plant biomass transfers to primary herbivores, and only 10% of that to carnivores."
           ],
           "mental_model": "A 100-rupee note that gets hit with a 90% transaction fee at every transfer. By the third hand, you only hold 1 rupee.",
@@ -248,17 +248,17 @@
         {
           "id": "3.1",
           "title": "The IPAT Equation & Planetary Footprint",
-          "eli15_takeaway": "Environmental damage ($I$) is driven by three multiplying factors: how many people there are ($P$), how much stuff each person consumes ($A$), and how dirty the technology is ($T$).",
+          "eli15_takeaway": "Environmental damage (\\(I\\)) is driven by three multiplying factors: how many people there are (\\(P\\)), how much stuff each person consumes (\\(A\\)), and how dirty the technology is (\\(T\\)).",
           "bullets": [
-            "Formula: $I = P \\times A \\times T$",
-            "Population ($P$): Number of consumers.",
-            "Affluence ($A$): Consumption per capita (GDP per capita, goods, electricity, meat consumption).",
-            "Technology ($T$): Environmental degradation per unit of consumption (coal electricity vs solar, gas car vs EV).",
-            "Developed nations have lower population growth but vastly higher affluence ($A$), multiplying total impact."
+            "Formula: \\(I = P \\times A \\times T\\)",
+            "Population (\\(P\\)): Number of consumers.",
+            "Affluence (\\(A\\)): Consumption per capita (GDP per capita, goods, electricity, meat consumption).",
+            "Technology (\\(T\\)): Environmental degradation per unit of consumption (coal electricity vs solar, gas car vs EV).",
+            "Developed nations have lower population growth but vastly higher affluence (\\(A\\)), multiplying total impact."
           ],
-          "mental_model": "Impact is like a restaurant bill: Number of diners (P) $\\times$ dishes ordered per person (A) $\\times$ cost per dish (T).",
+          "mental_model": "Impact is like a restaurant bill: Number of diners (P) \\(\\times\\) dishes ordered per person (A) \\(\\times\\) cost per dish (T).",
           "checkpoint": {
-            "question": "In the IPAT formula ($I = P \\times A \\times T$), what does the 'A' represent?",
+            "question": "In the IPAT formula (\\(I = P \\times A \\times T\\)), what does the 'A' represent?",
             "options": [
               "Affluence, representing per capita resource consumption and material throughput",
               "Atmospheric pressure at sea level",
@@ -274,13 +274,13 @@
           "title": "Resource Depletion: Non-Renewable vs Renewable",
           "eli15_takeaway": "Non-renewable resources (coal, oil, copper) are like a fixed bank savings account; renewable resources (timber, water) are like an interest payment that runs dry if you overdraw the principal.",
           "bullets": [
-            "Carrying Capacity ($K$): The maximum sustainable population an environment can support without degrading.",
+            "Carrying Capacity (\\(K\\)): The maximum sustainable population an environment can support without degrading.",
             "Earth Overshoot Day: The calendar day when humanity has consumed all biological resources the planet can regenerate in that entire year.",
             "Depletion of groundwater: High-yield borewells draw fossil aquifers faster than precipitation can recharge them."
           ],
           "mental_model": "Drinking a thick milkshake with a jumbo straw faster than the bartender can pour it. The glass empties and makes a hollow sucking noise.",
           "checkpoint": {
-            "question": "What occurs when human resource extraction exceeds a region's ecological carrying capacity ($K$)?",
+            "question": "What occurs when human resource extraction exceeds a region's ecological carrying capacity (\\(K\\))?",
             "options": [
               "Ecological overshoot leading to resource degradation and eventual population crash",
               "Automatic infinite expansion of fertile topsoil",
@@ -371,7 +371,7 @@
           "title": "Normalized Difference Vegetation Index (NDVI)",
           "eli15_takeaway": "NDVI uses the contrast between Near-Infrared and Red reflection to give a health score from -1 to +1 for plants anywhere on Earth.",
           "bullets": [
-            "Formula: $NDVI = \\frac{NIR - Red}{NIR + Red}$",
+            "Formula: \\(NDVI = \\frac{NIR - Red}{NIR + Red}\\)",
             "High NDVI (+0.6 to +0.9): Dense, healthy green tropical forests and flourishing crops.",
             "Low Positive NDVI (+0.1 to +0.2): Dry grassland, stressed vegetation, sparse scrub.",
             "Negative NDVI (< 0): Water bodies (-0.5 to -1.0), snow, clouds.",
@@ -379,7 +379,7 @@
           ],
           "mental_model": "A medical thermometer for forests: above 0.7 means vibrant health; below 0.3 means drought or disease.",
           "checkpoint": {
-            "question": "If a satellite pixel records $NIR = 0.80$ and $Red = 0.20$, what is the calculated NDVI value?",
+            "question": "If a satellite pixel records \\(NIR = 0.80\\) and \\(Red = 0.20\\), what is the calculated NDVI value?",
             "options": [
               "+0.60",
               "-0.60",
@@ -474,11 +474,11 @@
           "bullets": [
             "Location: Minamata, Kumamoto Prefecture, Japan.",
             "Cause: Chisso Corporation dumped industrial wastewater containing inorganic mercury used as an acetaldehyde catalyst.",
-            "Biomagnification: Anaerobic marine bacteria converted mercury into organic methylmercury ($CH_3Hg^+$), which bioaccumulated in marine trophic chains.",
+            "Biomagnification: Anaerobic marine bacteria converted mercury into organic methylmercury (\\(CH_3Hg^+\\)), which bioaccumulated in marine trophic chains.",
             "Symptoms: Hunter-Russell syndrome\u2014severe ataxia, numbness, speech impairment, congenital birth deformities.",
             "Legacy: Minamata Convention on Mercury (2013 global treaty banning mercury mining and trade)."
           ],
-          "mental_model": "A pyramid where each brick drinks a drop of poison: 10,000 plankton $\\rightarrow$ 1,000 small fish $\\rightarrow$ 10 big fish $\\rightarrow$ 1 human who receives the concentrated poison of all 10,000.",
+          "mental_model": "A pyramid where each brick drinks a drop of poison: 10,000 plankton \u2192 1,000 small fish \u2192 10 big fish \u2192 1 human who receives the concentrated poison of all 10,000.",
           "checkpoint": {
             "question": "What chemical transformation makes industrial mercury exponentially more dangerous when dumped into aquatic ecosystems?",
             "options": [
@@ -526,9 +526,9 @@
           "title": "The Global Carbon Cycle",
           "eli15_takeaway": "Carbon is constantly traded between four giant reservoirs: air, ocean water, living plants/animals, and underground rocks/fossil fuels.",
           "bullets": [
-            "Photosynthesis: $6CO_2 + 6H_2O + \\text{light} \\rightarrow C_6H_{12}O_6 + 6O_2$",
-            "Respiration: $C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + \\text{energy}$",
-            "Ocean Biological Pump: Marine phytoplankton fix $CO_2$; when they die, their calcium carbonate ($CaCO_3$) shells sink to the deep sea floor.",
+            "Photosynthesis: $6CO_2 + 6H_2O + \\text{light} \u2192 C_6H_{12}O_6 + 6O_2$",
+            "Respiration: \\(C_6H_{12}O_6 + 6O_2 \u2192 6CO_2 + 6H_2O + \\text{energy}\\)",
+            "Ocean Biological Pump: Marine phytoplankton fix \\(CO_2\\); when they die, their calcium carbonate (\\(CaCO_3\\)) shells sink to the deep sea floor.",
             "Fossil Fuel Disruption: Humans are unearthing millions of years of buried geological carbon and venting it into the atmosphere in two centuries."
           ],
           "mental_model": "Earth's carbon budget is like an ATM network. Burning fossil fuels is like printing billions of counterfeit notes and dumping them into the cash pool.",
@@ -547,11 +547,11 @@
         {
           "id": "6.2",
           "title": "The Nitrogen Cycle & The Haber-Bosch Disruption",
-          "eli15_takeaway": "Plants need nitrogen to grow, but they can't breathe $N_2$ gas directly; bacteria must 'fix' it into ammonium and nitrates before plants can drink it.",
+          "eli15_takeaway": "Plants need nitrogen to grow, but they can't breathe \\(N_2\\) gas directly; bacteria must 'fix' it into ammonium and nitrates before plants can drink it.",
           "bullets": [
-            "Nitrogen Fixation: $N_2 \\rightarrow NH_3 / NH_4^+$ by symbiotic Rhizobium bacteria in legume root nodules or lightning.",
-            "Nitrification: Soil bacteria convert Ammonium ($NH_4^+$) $\\rightarrow$ Nitrite ($NO_2^-$) $\\rightarrow$ Nitrate ($NO_3^-$).",
-            "Denitrification: Anaerobic bacteria convert Nitrate back into inert $N_2$ gas.",
+            "Nitrogen Fixation: \\(N_2 \u2192 NH_3 / NH_4^+\\) by symbiotic Rhizobium bacteria in legume root nodules or lightning.",
+            "Nitrification: Soil bacteria convert Ammonium (\\(NH_4^+\\)) \u2192 Nitrite (\\(NO_2^-\\)) \u2192 Nitrate (\\(NO_3^-\\)).",
+            "Denitrification: Anaerobic bacteria convert Nitrate back into inert \\(N_2\\) gas.",
             "Human Disruption: The Haber-Bosch chemical process synthesizes synthetic fertilizer, doubling global reactive nitrogen and causing eutrophication."
           ],
           "mental_model": "Being stranded in the middle of the ocean dying of thirst\u2014there is water everywhere ($78\\% N_2$ air), but you can't drink salt water without a filter.",
@@ -564,7 +564,7 @@
               "Filtering ozone gas out of the troposphere"
             ],
             "correct_index": 0,
-            "explanation": "Denitrifying bacteria complete the nitrogen cycle by transforming soil nitrates back into molecular $N_2$ gas, returning it to the atmosphere."
+            "explanation": "Denitrifying bacteria complete the nitrogen cycle by transforming soil nitrates back into molecular \\(N_2\\) gas, returning it to the atmosphere."
           }
         },
         {
@@ -572,9 +572,9 @@
           "title": "The Phosphorus & Sulfur Cycles",
           "eli15_takeaway": "Unlike carbon and nitrogen, phosphorus has no gas phase in the air; it travels solely through rock erosion, soil, and water over millions of years.",
           "bullets": [
-            "Phosphorus Cycle: Weathering of phosphate rocks $\\rightarrow$ plant uptake $\\rightarrow$ animal food web $\\rightarrow$ marine sediments.",
+            "Phosphorus Cycle: Weathering of phosphate rocks \u2192 plant uptake \u2192 animal food web \u2192 marine sediments.",
             "Limiting Nutrient: Phosphorus is frequently the master limiting factor in freshwater lakes (excess leads to toxic algal blooms).",
-            "Sulfur Cycle: Emitted by volcanoes ($SO_2$) and marine algae (Dimethyl sulfide DMS); DMS acts as cloud condensation nuclei to reflect sunlight."
+            "Sulfur Cycle: Emitted by volcanoes (\\(SO_2\\)) and marine algae (Dimethyl sulfide DMS); DMS acts as cloud condensation nuclei to reflect sunlight."
           ],
           "mental_model": "Phosphorus is a ground-only railroad\u2014it cannot fly in an airplane (no atmospheric gas phase).",
           "checkpoint": {
@@ -625,9 +625,9 @@
           "eli15_takeaway": "Sunlight passes through greenhouse gases easily, but when the warm Earth tries to radiate that heat back to space as infrared, greenhouse gases trap it like a heavy winter blanket.",
           "bullets": [
             "Solar radiation enters as shortwave visible/UV light; surface absorbs it and reradiates longwave Infrared (IR).",
-            "Greenhouse Gases (GHGs): $CO_2$, $CH_4$ (Methane), $N_2O$ (Nitrous Oxide), Water Vapor, HFCs.",
-            "Global Warming Potential (GWP): Over a 20-year horizon, Methane has a GWP $\\sim 84\\times$ higher than $CO_2$; $N_2O$ is $\\sim 298\\times$ higher.",
-            "Radiative Forcing: Net change in Earth's energy balance (measured in $W/m^2$)."
+            "Greenhouse Gases (GHGs): \\(CO_2\\), \\(CH_4\\) (Methane), \\(N_2O\\) (Nitrous Oxide), Water Vapor, HFCs.",
+            "Global Warming Potential (GWP): Over a 20-year horizon, Methane has a GWP \\(\\sim 84\\times\\) higher than \\(CO_2\\); \\(N_2O\\) is \\(\\sim 298\\times\\) higher.",
+            "Radiative Forcing: Net change in Earth's energy balance (measured in \\(W/m^2\\))."
           ],
           "mental_model": "Sitting inside a parked car in the summer with closed glass windows. Sunlight comes in freely; heat cannot escape.",
           "checkpoint": {
@@ -639,7 +639,7 @@
               "Greenhouse gases contain tiny nuclear fire particles"
             ],
             "correct_index": 0,
-            "explanation": "Molecules with asymmetrical bonds ($CO_2, H_2O, CH_4$) vibrate at infrared wavelengths, absorbing thermal radiation that symmetrical $N_2$ and $O_2$ ignore."
+            "explanation": "Molecules with asymmetrical bonds (\\(CO_2, H_2O, CH_4\\)) vibrate at infrared wavelengths, absorbing thermal radiation that symmetrical \\(N_2\\) and \\(O_2\\) ignore."
           }
         },
         {
@@ -701,7 +701,7 @@
           "bullets": [
             "Hysteresis: Once a system flips to an alternate state, cooling temperatures back to previous levels does NOT immediately restore the original state.",
             "Bifurcation: A stable equilibrium loses stability and transitions abruptly to a new baseline.",
-            "Cascading Tipping Points: One collapse (e.g. Arctic ice loss) accelerates the next (e.g. permafrost methane release $\\rightarrow$ AMOC slowdown)."
+            "Cascading Tipping Points: One collapse (e.g. Arctic ice loss) accelerates the next (e.g. permafrost methane release \u2192 AMOC slowdown)."
           ],
           "mental_model": "Tilting back in a chair: you can tilt 5 degrees, 10 degrees, 15 degrees and bounce back. At 16 degrees, you flip backward onto the floor and cannot recover without standing back up.",
           "checkpoint": {
@@ -745,7 +745,7 @@
           "bullets": [
             "Ice-Albedo Positive Feedback: White ice reflects ~80% of sunlight. When ice melts into dark open water (albedo ~10%), ocean absorbs 90% of heat, accelerating melt.",
             "Permafrost Carbon Bomb: Arctic permafrost stores ~1,500 billion tons of frozen organic carbon (twice what is currently in the entire atmosphere).",
-            "Methanogenesis: Thawing waterlogged soils undergo anaerobic decomposition, emitting potent methane ($CH_4$) gas."
+            "Methanogenesis: Thawing waterlogged soils undergo anaerobic decomposition, emitting potent methane (\\(CH_4\\)) gas."
           ],
           "mental_model": "Wearing a white t-shirt on a sunny day keeps you cool. If your shirt magically turns pitch black, you instantly start sweating twice as hard.",
           "checkpoint": {
@@ -757,7 +757,7 @@
               "It cleans pollution from Arctic atmospheric layers"
             ],
             "correct_index": 0,
-            "explanation": "A positive feedback amplifies and accelerates the initial perturbation: warming $\\rightarrow$ melting $\\rightarrow$ lower reflectivity $\\rightarrow$ more heat absorbed $\\rightarrow$ more warming."
+            "explanation": "A positive feedback amplifies and accelerates the initial perturbation: warming \u2192 melting \u2192 lower reflectivity \u2192 more heat absorbed \u2192 more warming."
           }
         },
         {
@@ -796,8 +796,8 @@
           "eli15_takeaway": "Plants capture carbon through photosynthesis, but they also breathe out carbon. Net Ecosystem Productivity (NEP) is the real carbon that stays locked in the forest.",
           "bullets": [
             "Gross Primary Productivity (GPP): Total carbon fixed by plant photosynthesis.",
-            "Net Primary Productivity (NPP): $NPP = GPP - R_{\\text{plant}}$ (carbon remaining for plant wood and leaf growth).",
-            "Net Ecosystem Productivity (NEP): $NEP = NPP - R_{\\text{microbes/soil}}$ (net carbon stored after entire ecosystem respires).",
+            "Net Primary Productivity (NPP): \\(NPP = GPP - R_{\\text{plant}}\\) (carbon remaining for plant wood and leaf growth).",
+            "Net Ecosystem Productivity (NEP): \\(NEP = NPP - R_{\\text{microbes/soil}}\\) (net carbon stored after entire ecosystem respires).",
             "Afforestation (planting new trees where none existed) vs Reforestation (restoring cleared forests)."
           ],
           "mental_model": "GPP is your gross salary. NPP is your salary after personal taxes. NEP is your net savings at the end of the month after all living expenses are paid.",
@@ -841,7 +841,7 @@
           "eli15_takeaway": "To trade carbon credits, you must prove the carbon is actually there through Measurement, Reporting, and Verification (MRV).",
           "bullets": [
             "Allometric Equations: Calculating tree biomass and carbon content from Diameter at Breast Height (DBH) and tree height.",
-            "Eddy Covariance Towers: High-precision flux towers that measure instantaneous $CO_2$ exchanges between forest canopy and air.",
+            "Eddy Covariance Towers: High-precision flux towers that measure instantaneous \\(CO_2\\) exchanges between forest canopy and air.",
             "Satellite LiDAR: Scanning vertical 3D forest canopy structure from space (e.g. NASA GEDI sensor)."
           ],
           "mental_model": "A bank audit: You can't just claim you have a million dollars; an independent auditor must count the physical cash in the vault.",
@@ -872,7 +872,7 @@
           "bullets": [
             "Additionality Principle: The emissions reduction MUST be something that would NOT have occurred under business-as-usual without the carbon credit funding.",
             "Baseline Scenario: The projected counterfactual emissions without the clean project.",
-            "Certified Emission Reductions (CERs): 1 CER = 1 metric ton of $CO_2$ equivalent reduced.",
+            "Certified Emission Reductions (CERs): 1 CER = 1 metric ton of \\(CO_2\\) equivalent reduced.",
             "Criticisms: Fraudulent baselines, 'hot air' accounting, and lack of real sustainable community development."
           ],
           "mental_model": "Paying your gym-rat buddy to run an extra 5 miles so you can tell your doctor that '5 miles were run on your behalf.'",
@@ -891,10 +891,10 @@
         {
           "id": "10.2",
           "title": "Ocean Sequestration: Deep-Sea Injection",
-          "eli15_takeaway": "Scientists explored pumping liquid $CO_2$ thousands of meters under the ocean where extreme water pressure makes $CO_2$ denser than water, forming a deep-sea carbon lake.",
+          "eli15_takeaway": "Scientists explored pumping liquid \\(CO_2\\) thousands of meters under the ocean where extreme water pressure makes \\(CO_2\\) denser than water, forming a deep-sea carbon lake.",
           "bullets": [
-            "Phase Behavior: At ocean depths below 3,000 meters, liquid $CO_2$ becomes denser than ambient seawater.",
-            "Gas Hydrates / Clathrates: Under high pressure and cold temperatures, $CO_2$ and water form solid ice-like crystalline cages (clathrate hydrates).",
+            "Phase Behavior: At ocean depths below 3,000 meters, liquid \\(CO_2\\) becomes denser than ambient seawater.",
+            "Gas Hydrates / Clathrates: Under high pressure and cold temperatures, \\(CO_2\\) and water form solid ice-like crystalline cages (clathrate hydrates).",
             "Risks: Catastrophic overturn, seabed ecological destruction, and acceleration of deep benthic acidification."
           ],
           "mental_model": "Dropping a lead weight into a swimming pool\u2014it sinks straight to the tiled floor and stays there because of high density.",
@@ -907,7 +907,7 @@
               "Only inside shallow tidal pools"
             ],
             "correct_index": 0,
-            "explanation": "Due to high hydrostatic pressure and low water temperature, liquid $CO_2$ compresses to become denser than seawater at depths below ~3,000 m."
+            "explanation": "Due to high hydrostatic pressure and low water temperature, liquid \\(CO_2\\) compresses to become denser than seawater at depths below ~3,000 m."
           }
         },
         {
@@ -916,7 +916,7 @@
           "eli15_takeaway": "Oceanographer John Martin famously said, 'Give me half a tanker of iron, and I will give you an ice age.' Dumping iron dust into nutrient-rich ocean zones triggers massive algae blooms that suck up carbon.",
           "bullets": [
             "HNLC Regions: High-Nutrient, Low-Chlorophyll waters (Southern Ocean, Subarctic Pacific) have ample nitrates and phosphates but lack dissolved iron.",
-            "Iron Hypothesis: Iron is the micro-nutrient bottleneck. Adding soluble iron ($Fe$) triggers exponential diatom phytoplankton blooms.",
+            "Iron Hypothesis: Iron is the micro-nutrient bottleneck. Adding soluble iron (\\(Fe\\)) triggers exponential diatom phytoplankton blooms.",
             "The Biological Pump: When billions of diatoms die, they sink to the abyssal seabed, carrying carbon down with them.",
             "Unintended Consequences: Oxygen minimum zones (anoxia), toxic algal blooms (domoic acid), disrupted marine food webs."
           ],
@@ -936,11 +936,11 @@
         {
           "id": "10.4",
           "title": "Ocean Acidification & Carbonate Chemistry",
-          "eli15_takeaway": "The ocean absorbs 30% of human $CO_2$. In water, $CO_2$ turns into carbonic acid, stealing carbonate ions that shellfish and corals need to build their skeletons.",
+          "eli15_takeaway": "The ocean absorbs 30% of human \\(CO_2\\). In water, \\(CO_2\\) turns into carbonic acid, stealing carbonate ions that shellfish and corals need to build their skeletons.",
           "bullets": [
-            "Reaction: $CO_2 + H_2O \\rightleftharpoons H_2CO_3 \\rightleftharpoons H^+ + HCO_3^-$",
-            "Proton Surge: Excess $H^+$ ions bind to free carbonate ions ($CO_3^{2-}$), creating bicarbonate ($HCO_3^-$).",
-            "Shell Dissolution: Marine calcifiers (corals, oysters, pteropods / sea butterflies) cannot form aragonite/calcite shells ($Ca^{2+} + CO_3^{2-} \\rightarrow CaCO_3$).",
+            "Reaction: \\(CO_2 + H_2O \\rightleftharpoons H_2CO_3 \\rightleftharpoons H^+ + HCO_3^-\\)",
+            "Proton Surge: Excess \\(H^+\\) ions bind to free carbonate ions (\\(CO_3^{2-}\\)), creating bicarbonate (\\(HCO_3^-\\)).",
+            "Shell Dissolution: Marine calcifiers (corals, oysters, pteropods / sea butterflies) cannot form aragonite/calcite shells (\\(Ca^{2+} + CO_3^{2-} \u2192 CaCO_3\\)).",
             "pH Drop: Ocean pH has already dropped from 8.2 to 8.1 (a 30% increase in acidity on the logarithmic pH scale)."
           ],
           "mental_model": "Dropping a tooth into a glass of soda. The acid slowly corrodes and dissolves the enamel away until nothing is left.",
@@ -953,7 +953,7 @@
               "Acid evaporates all calcium atoms into the clouds"
             ],
             "correct_index": 0,
-            "explanation": "Acidification increases $H^+$ ions, which scavenge carbonate ions ($CO_3^{2-}$) to form bicarbonate, starving calcifying organisms of essential building blocks."
+            "explanation": "Acidification increases \\(H^+\\) ions, which scavenge carbonate ions (\\(CO_3^{2-}\\)) to form bicarbonate, starving calcifying organisms of essential building blocks."
           }
         }
       ]
@@ -990,12 +990,12 @@
         {
           "id": "11.2",
           "title": "Carbon Capture, Utilization & Storage (CCUS) & DAC",
-          "eli15_takeaway": "Point-source capture scrubs $CO_2$ directly out of smokestacks with chemical solvents, while Direct Air Capture (DAC) uses giant fans to suck dilute $CO_2$ right out of ambient outdoor air.",
+          "eli15_takeaway": "Point-source capture scrubs \\(CO_2\\) directly out of smokestacks with chemical solvents, while Direct Air Capture (DAC) uses giant fans to suck dilute \\(CO_2\\) right out of ambient outdoor air.",
           "bullets": [
-            "Post-Combustion Capture: Passing flue gas through chemical amine solvents (e.g. Monoethanolamine MEA), which bind $CO_2$ and release it when heated.",
-            "Oxy-Fuel Combustion: Burning fuel in pure oxygen instead of air, producing exhaust containing only $CO_2$ and water vapor (trivial separation).",
-            "Direct Air Capture (DAC): Capturing $CO_2$ at 420 ppm out of thin air using solid basic filters (e.g. Climeworks); highly energy-intensive.",
-            "Geological Mineralization: Injecting $CO_2$ into basalt rock formations (CarbFix in Iceland) where it reacts into solid stone within 2 years."
+            "Post-Combustion Capture: Passing flue gas through chemical amine solvents (e.g. Monoethanolamine MEA), which bind \\(CO_2\\) and release it when heated.",
+            "Oxy-Fuel Combustion: Burning fuel in pure oxygen instead of air, producing exhaust containing only \\(CO_2\\) and water vapor (trivial separation).",
+            "Direct Air Capture (DAC): Capturing \\(CO_2\\) at 420 ppm out of thin air using solid basic filters (e.g. Climeworks); highly energy-intensive.",
+            "Geological Mineralization: Injecting \\(CO_2\\) into basalt rock formations (CarbFix in Iceland) where it reacts into solid stone within 2 years."
           ],
           "mental_model": "Flue gas capture is scooping sugar out of a sugar bowl (15% concentration). DAC is finding single grains of sugar scattered across an entire soccer field (0.04% concentration).",
           "checkpoint": {
@@ -1015,7 +1015,7 @@
           "title": "Solar Radiation Management (SRM) Geoengineering",
           "eli15_takeaway": "SRM doesn't remove carbon; it mimics a volcanic eruption by spraying sulfur particles into the upper atmosphere to bounce 1% of sunlight back into space and cool the planet immediately.",
           "bullets": [
-            "Stratospheric Aerosol Injection (SAI): Dispersing sulfur dioxide ($SO_2$) in the stratosphere to create reflective sulfate aerosol haze.",
+            "Stratospheric Aerosol Injection (SAI): Dispersing sulfur dioxide (\\(SO_2\\)) in the stratosphere to create reflective sulfate aerosol haze.",
             "Marine Cloud Brightening: Spraying sea-salt aerosols over oceans to seed low reflective stratocumulus clouds.",
             "Termination Shock: If an SRM program is suddenly halted due to war or political breakdown, decades of masked warming rebound within months with catastrophic velocity.",
             "Governance & Moral Hazard: Critics warn SRM offers a dangerous excuse to avoid cutting fossil fuels while failing to solve ocean acidification."
@@ -1169,7 +1169,7 @@
           "key_facts": [
             "Atmospheric spray proposal: Spraying 56 million tonnes of Potassium Hydroxide (KOH) into clouds across 0.4% of Earth's surface (roughly the land area of Greenland).",
             "Ocean liming: Adding 2.5 billion to 8 billion tonnes of crushed limestone per year directly to surface ocean currents.",
-            "Chemical effect: Counteracts ocean acidification and forces dissolved CO2 into stable bicarbonate ions ($HCO_3^-$).",
+            "Chemical effect: Counteracts ocean acidification and forces dissolved CO2 into stable bicarbonate ions (\\(HCO_3^-\\)).",
             "Logistical challenge: Massive mining, grinding, and marine distribution footprint."
           ],
           "mental_model": "Chewing an antacid tablet when your stomach is churning with acid. Adding alkaline mineral powder to acidic oceans neutralizes the burn and locks the acid into dissolved salt.",
@@ -1394,7 +1394,7 @@
           "eli15_takeaway": "Aether buys carbon captured from ambient air by Climeworks, turns it into methane, and grows certified vegan diamonds in solar-powered vacuum reactors; 1 carat removes 20 tons of carbon.",
           "key_facts": [
             "Feedstock: Atmospheric CO2 captured directly from outdoor air by Climeworks in Europe.",
-            "Synthesis: CO2 is chemically reduced into high-purity methane ($CH_4$).",
+            "Synthesis: CO2 is chemically reduced into high-purity methane (\\(CH_4\\)).",
             "Growth reactor: Chemical Vapor Deposition (CVD) heats gasses to extreme temperatures in near-vacuum to crystallize rough diamond material over several weeks.",
             "Global craftsmanship: Raw diamonds are shipped to Surat, India, for precision laser cutting and facet polishing, then sold in New York City.",
             "Impact: Powered by solar and nuclear energy; each 1-carat diamond removes the equivalent of 20 metric tons of carbon from the atmosphere."
@@ -1548,7 +1548,7 @@
           "key_facts": [
             "Transport wedge: Passenger vehicle transport accounts for a major slice of urban oil consumption and smog.",
             "Avoided energy: Working from home eliminates the physical energy burned transporting a 1,500 kg metal automobile to carry one 75 kg human to a desk.",
-            "Urban co-benefits: Reduces highway gridlock, lowers tire-wear particulate pollution ($PM_{2.5}$), and avoids office building HVAC energy peaks.",
+            "Urban co-benefits: Reduces highway gridlock, lowers tire-wear particulate pollution (\\(PM_{2.5}\\)), and avoids office building HVAC energy peaks.",
             "Trade-off: Must ensure residential home heating/cooling does not cancel out the transport savings."
           ],
           "mental_model": "Attending a meeting over a high-definition video call burns a few watts of fiber-optic electricity instead of exploding two gallons of gasoline in an engine.",
@@ -2005,7 +2005,7 @@
               "section": "Section I, Q2",
               "marks": "2 Marks",
               "question": "Explain the mechanism of Enhanced Rock Weathering (EW) and its dual impact on atmospheric carbon and ocean chemistry.",
-              "answer_guideline": "<ul><li><strong>Mechanism:</strong> Pulverizing reactive volcanic silicate rocks (basalt or olivine) multiplies their reactive surface area by millions, accelerating natural weathering kinetics: $\\text{CaSiO}_3 + 2\\text{CO}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{Ca}^{2+} + 2\\text{HCO}_3^- + \\text{SiO}_2$.</li><li><strong>Dual Impact:</strong> (1) Sequesters up to 3.7 billion tonnes of CO2eq per year globally; (2) Washes soluble bicarbonate ions ($\\text{HCO}_3^-$) into rivers and oceans, neutralizing carbonic acid and directly counteracting ocean acidification.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Mechanism:</strong> Pulverizing reactive volcanic silicate rocks (basalt or olivine) multiplies their reactive surface area by millions, accelerating natural weathering kinetics: \\(\\text{CaSiO}_3 + 2\\text{CO}_2 + \\text{H}_2\\text{O} \u2192 \\text{Ca}^{2+} + 2\\text{HCO}_3^- + \\text{SiO}_2\\).</li><li><strong>Dual Impact:</strong> (1) Sequesters up to 3.7 billion tonnes of CO2eq per year globally; (2) Washes soluble bicarbonate ions (\\(\\text{HCO}_3^-\\)) into rivers and oceans, neutralizing carbonic acid and directly counteracting ocean acidification.</li></ul>"
             },
             {
               "paper": "EST Quiz-1 2023",
@@ -2067,7 +2067,7 @@
               "section": "Section III, Q2(b)",
               "marks": "3 Marks",
               "question": "Explain the chemical steps involved in high-temperature liquid Direct Air Capture systems (Carbon Engineering closed loop).",
-              "answer_guideline": "<ol><li><strong>Air Contactor:</strong> Ambient air passes through a potassium hydroxide spray: $2\\text{KOH} + \\text{CO}_2 \\rightarrow \\text{K}_2\\text{CO}_3 + \\text{H}_2\\text{O}$.</li><li><strong>Pellet Reactor:</strong> Potassium carbonate reacts with calcium hydroxide to precipitate solid calcium carbonate pellets: $\\text{K}_2\\text{CO}_3 + \\text{Ca(OH)}_2 \\rightarrow 2\\text{KOH} + \\text{CaCO}_3\\downarrow$.</li><li><strong>Oxy-fired Calciner:</strong> Pellets are heated to ~900\u00b0C: $\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2\\uparrow$ to release pure CO2 gas.</li><li><strong>Slaker:</strong> Calcium oxide is rehydrated with water: $\\text{CaO} + \\text{H}_2\\text{O} \\rightarrow \\text{Ca(OH)}_2$ to close and regenerate the loop.</li></ol>"
+              "answer_guideline": "<ol><li><strong>Air Contactor:</strong> Ambient air passes through a potassium hydroxide spray: $2\\text{KOH} + \\text{CO}_2 \u2192 \\text{K}_2\\text{CO}_3 + \\text{H}_2\\text{O}\\(.</li><li><strong>Pellet Reactor:</strong> Potassium carbonate reacts with calcium hydroxide to precipitate solid calcium carbonate pellets:\\)\\text{K}_2\\text{CO}_3 + \\text{Ca(OH)}_2 \u2192 2\\text{KOH} + \\text{CaCO}_3\\downarrow\\(.</li><li><strong>Oxy-fired Calciner:</strong> Pellets are heated to ~900\u00b0C:\\)\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2\\uparrow\\(to release pure CO2 gas.</li><li><strong>Slaker:</strong> Calcium oxide is rehydrated with water:\\)\\text{CaO} + \\text{H}_2\\text{O} \u2192 \\text{Ca(OH)}_2$ to close and regenerate the loop.</li></ol>"
             },
             {
               "paper": "EST Mid-1 2024",
@@ -2190,14 +2190,14 @@
               "section": "Section III, Q5",
               "marks": "3 Marks",
               "question": "Explain the process of diamond manufacturing by Aether (only the process).",
-              "answer_guideline": "<ol><li><strong>Sourcing:</strong> Atmospheric CO2 is purchased directly from Climeworks' commercial DAC collectors in Europe and shipped to the US.</li><li><strong>Methanation:</strong> CO2 is catalytically converted into ultra-high-purity methane ($CH_4$) via the Sabatier reduction process: $\\text{CO}_2 + 4\\text{H}_2 \\rightarrow \\text{CH}_4 + 2\\text{H}_2\\text{O}$.</li><li><strong>CVD Plasma Deposition:</strong> Pure $CH_4$ is injected into Chemical Vapor Deposition (CVD) diamond reactors heated to extreme temperatures under near-vacuum conditions, growing rough diamond crystal lattice layer by layer over several weeks.</li><li><strong>100% Clean Energy:</strong> Entire manufacturing synthesis is powered by zero-carbon solar and nuclear power.</li><li><strong>Surat Cutting:</strong> Rough diamonds are shipped to Surat, Gujarat, India for precision gem cutting and facet polishing, then returned to NYC for jewelry sales.</li></ol>"
+              "answer_guideline": "<ol><li><strong>Sourcing:</strong> Atmospheric CO2 is purchased directly from Climeworks' commercial DAC collectors in Europe and shipped to the US.</li><li><strong>Methanation:</strong> CO2 is catalytically converted into ultra-high-purity methane (\\(CH_4\\)) via the Sabatier reduction process: \\(\\text{CO}_2 + 4\\text{H}_2 \u2192 \\text{CH}_4 + 2\\text{H}_2\\text{O}\\).</li><li><strong>CVD Plasma Deposition:</strong> Pure \\(CH_4\\) is injected into Chemical Vapor Deposition (CVD) diamond reactors heated to extreme temperatures under near-vacuum conditions, growing rough diamond crystal lattice layer by layer over several weeks.</li><li><strong>100% Clean Energy:</strong> Entire manufacturing synthesis is powered by zero-carbon solar and nuclear power.</li><li><strong>Surat Cutting:</strong> Rough diamonds are shipped to Surat, Gujarat, India for precision gem cutting and facet polishing, then returned to NYC for jewelry sales.</li></ol>"
             },
             {
               "paper": "EVS End Exam 2022",
               "section": "Section X, Q(b)",
               "marks": "5 Marks",
               "question": "Give a detailed account on Diamonds from air pollution: include sourcing, intermediate chemical reactions, plasma synthesis, polishing hub, and environmental savings per carat.",
-              "answer_guideline": "<ul><li><strong>Sourcing & Chemistry:</strong> Procures DAC CO2 from Climeworks $\\rightarrow$ catalytic conversion to $CH_4$ $\\rightarrow$ Chemical Vapor Deposition (CVD) vacuum plasma synthesis powered 100% by solar and nuclear energy.</li><li><strong>Polishing Hub:</strong> Surat, India cuts and polishes the rough gems.</li><li><strong>Environmental Impact:</strong> Each 1-carat Aether diamond sequesters the equivalent of <strong>20 tonnes of atmospheric CO2</strong> (offsetting ~1.5 years of human emissions), avoids <strong>127 gallons of water</strong> wasted per mined carat, and uses half the energy of open-pit mining.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Sourcing & Chemistry:</strong> Procures DAC CO2 from Climeworks \u2192 catalytic conversion to \\(CH_4\\) \u2192 Chemical Vapor Deposition (CVD) vacuum plasma synthesis powered 100% by solar and nuclear energy.</li><li><strong>Polishing Hub:</strong> Surat, India cuts and polishes the rough gems.</li><li><strong>Environmental Impact:</strong> Each 1-carat Aether diamond sequesters the equivalent of <strong>20 tonnes of atmospheric CO2</strong> (offsetting ~1.5 years of human emissions), avoids <strong>127 gallons of water</strong> wasted per mined carat, and uses half the energy of open-pit mining.</li></ul>"
             }
           ]
         },
@@ -2263,7 +2263,7 @@
               "section": "Section IV, Q3",
               "marks": "3 Marks",
               "question": "Describe two technological solutions to mitigate bovine enteric methane emissions: one biochemical dietary intervention and one wearable mechanical device.",
-              "answer_guideline": "<ul><li><strong>Dietary Supplement:</strong> Adding 0.2\u20130.5% red seaweed (<em>Asparagopsis taxiformis</em>) to feed reduces enteric methane by up to <strong>80%</strong> by inhibiting the bromoform enzyme pathway in rumen methanogenic archaea.</li><li><strong>Wearable Halter (Zelp, UK):</strong> A smart halter worn around the snout detects exhaled methane burps and routes them through a micro-catalytic converter that oxidizes $CH_4$ into water vapor and trace $CO_2$: $\\text{CH}_4 + 2\\text{O}_2 \\rightarrow \\text{CO}_2 + 2\\text{H}_2\\text{O}$.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Dietary Supplement:</strong> Adding 0.2\u20130.5% red seaweed (<em>Asparagopsis taxiformis</em>) to feed reduces enteric methane by up to <strong>80%</strong> by inhibiting the bromoform enzyme pathway in rumen methanogenic archaea.</li><li><strong>Wearable Halter (Zelp, UK):</strong> A smart halter worn around the snout detects exhaled methane burps and routes them through a micro-catalytic converter that oxidizes \\(CH_4\\) into water vapor and trace \\(CO_2\\): \\(\\text{CH}_4 + 2\\text{O}_2 \u2192 \\text{CO}_2 + 2\\text{H}_2\\text{O}\\).</li></ul>"
             }
           ]
         },
@@ -2628,7 +2628,7 @@
               "section": "Section III, Q7",
               "marks": "3 Marks",
               "question": "Difference between Portland and Novacem cement.",
-              "answer_guideline": "<ol><li><strong>Raw Material & Temperature:</strong> Portland cement requires calcining limestone ($\\text{CaCO}_3$) at $1,450^\\circ\\text{C}$ in fossil-fueled rotary kilns, emitting 0.8\u20131.0 t CO2/t cement. Novacem uses magnesium silicates ($\\text{MgSiO}_3$) processed at only $650^\\circ\\text{C}$, cutting thermal fuel emissions in half.</li><li><strong>Chemical Reaction:</strong> Portland: $\\text{CaCO}_3 \\xrightarrow{1450^\\circ\\text{C}} \\text{CaO} + \\text{CO}_2\\uparrow$. Novacem: $\\text{MgSiO}_3 \\xrightarrow{650^\\circ\\text{C}} \\text{MgO} + \\text{SiO}_2$.</li><li><strong>Curing & Carbon Balance:</strong> Portland cures by hydration. Novacem cures by carbonation: $\\text{MgO} + \\text{CO}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{MgCO}_3\\cdot 3\\text{H}_2\\text{O}$, absorbing up to 100 kg CO2 net per tonne, making it carbon-negative.</li></ol>"
+              "answer_guideline": "<ol><li><strong>Raw Material & Temperature:</strong> Portland cement requires calcining limestone (\\(\\text{CaCO}_3\\)) at $1,450^\\circ\\text{C}\\(in fossil-fueled rotary kilns, emitting 0.8\u20131.0 t CO2/t cement. Novacem uses magnesium silicates (\\)\\text{MgSiO}_3\\() processed at only $650^\\circ\\text{C}\\), cutting thermal fuel emissions in half.</li><li><strong>Chemical Reaction:</strong> Portland: \\(\\text{CaCO}_3 \\xrightarrow{1450^\\circ\\text{C}} \\text{CaO} + \\text{CO}_2\\uparrow\\). Novacem: \\(\\text{MgSiO}_3 \\xrightarrow{650^\\circ\\text{C}} \\text{MgO} + \\text{SiO}_2\\).</li><li><strong>Curing & Carbon Balance:</strong> Portland cures by hydration. Novacem cures by carbonation: \\(\\text{MgO} + \\text{CO}_2 + \\text{H}_2\\text{O} \u2192 \\text{MgCO}_3\\cdot 3\\text{H}_2\\text{O}\\), absorbing up to 100 kg CO2 net per tonne, making it carbon-negative.</li></ol>"
             },
             {
               "paper": "EVS End Exam 2019",
@@ -2642,7 +2642,7 @@
               "section": "Q8(b)",
               "marks": "1.5 Marks",
               "question": "Answer in three sentences: brief account on Novacem (MgO + CO2 -> MgCO3).",
-              "answer_guideline": "<p><strong>Answer:</strong> (1) Novacem is a carbon-negative cement manufactured from magnesium silicates at 650\u00b0C instead of limestone at 1,450\u00b0C. (2) During hardening, it absorbs atmospheric carbon dioxide via the reaction $\\text{MgO} + \\text{CO}_2 \\rightarrow \\text{MgCO}_3$. (3) It sequesters up to 100 kg more CO2 per tonne than emitted during production.</p>"
+              "answer_guideline": "<p><strong>Answer:</strong> (1) Novacem is a carbon-negative cement manufactured from magnesium silicates at 650\u00b0C instead of limestone at 1,450\u00b0C. (2) During hardening, it absorbs atmospheric carbon dioxide via the reaction \\(\\text{MgO} + \\text{CO}_2 \u2192 \\text{MgCO}_3\\). (3) It sequesters up to 100 kg more CO2 per tonne than emitted during production.</p>"
             }
           ]
         }
@@ -2660,7 +2660,7 @@
           "title": "Data Center Efficiency & The PUE Metric",
           "eli15_takeaway": "Power Usage Effectiveness (PUE) measures how much electricity in a data center actually powers the servers versus being wasted on air conditioning and lighting.",
           "bullets": [
-            "Formula: $PUE = \\frac{\\text{Total Facility Energy}}{\\text{IT Equipment Energy}}$",
+            "Formula: \\(PUE = \\frac{\\text{Total Facility Energy}}{\\text{IT Equipment Energy}}\\)",
             "Ideal PUE: 1.0 (every single watt powers compute chips; zero overhead for cooling or lighting).",
             "Traditional Data Centers: PUE ~1.8 to 2.0 (meaning for every 100W running servers, another 80-100W is burned on fans and chillers).",
             "Hyperscale Modern Facilities (Google, AWS): PUE ~1.1 to 1.15 using free-air economizers and machine learning cooling optimizations."
@@ -2881,7 +2881,7 @@
           "continuity_bridge": "Energy Star targeted basic hardware, but the systemic crisis spans toxic chemicals in manufacturing, idle runtime power, and cooling constraints in server farms.",
           "eli15_takeaway": "Computers bleed energy when idle, screen savers waste electricity, and data centers spend nearly half their power just pumping out heat.",
           "key_facts": [
-            "Power Usage Effectiveness (PUE) and DCiE: $PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}$, while Data Center Infrastructure Efficiency ($DCiE$) is $DCiE = \\frac{1}{PUE} \\times 100\\%$. A legacy facility with PUE = 2.0 has a DCiE of only 50%.",
+            "Power Usage Effectiveness (PUE) and DCiE: \\(PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}\\), while Data Center Infrastructure Efficiency (\\(DCiE\\)) is \\(DCiE = \\frac{1}{PUE} \\times 100\\%\\). A legacy facility with PUE = 2.0 has a DCiE of only 50%.",
             "Thermal containment: Hot-aisle and cold-aisle containment physical barriers separate supply air (18-22 C) from server exhaust (35-45 C), preventing air mixing and reducing cooling power consumption by 20-30%.",
             "Thermal bottleneck: Server racks generate concentrated heat flux, forcing cooling infrastructure to consume 40% of overall data center electricity.",
             "Idle power draw: Office computers left running overnight burn full CPU and fan power; animated 3D screen savers keep GPUs active instead of entering low-power sleep.",
@@ -2984,7 +2984,7 @@
           "continuity_bridge": "Hardware settings only get us halfway; software engineering choices determine how many clock cycles a CPU executes for every user operation.",
           "eli15_takeaway": "Every database query, search request, and loop consumes joules; a single internet search releases between 0.2 and 0.4 grams of carbon dioxide.",
           "key_facts": [
-            "Algorithmic efficiency directly governs CPU instruction count, memory bus saturation, and electrical energy ($E = P \\times t$).",
+            "Algorithmic efficiency directly governs CPU instruction count, memory bus saturation, and electrical energy (\\(E = P \\times t\\)).",
             "Measured CO2 released per single web search query:",
             "- Google Search: approx 0.20 g CO2",
             "- Yahoo Search: approx 0.26 g CO2",
@@ -2993,7 +2993,7 @@
             "Multiplied across billions of daily global queries, algorithmic micro-optimizations prevent thousands of tons of grid carbon emissions.",
             "End-of-life disposal creates 20-50 million metric tons of e-waste per year (roughly 5% of all global municipal solid waste)."
           ],
-          "mental_model": "The Calorie Counter: Just as inefficient walking burns more physical calories per mile, inefficient $O(n^2)$ code burns electrical joules and spews invisible grams of coal exhaust into the atmosphere.",
+          "mental_model": "The Calorie Counter: Just as inefficient walking burns more physical calories per mile, inefficient \\(O(n^2)\\) code burns electrical joules and spews invisible grams of coal exhaust into the atmosphere.",
           "checkpoint": {
             "question": "What is the measured carbon dioxide emission associated with a single Google search query according to historical benchmarks?",
             "options": [
@@ -3198,7 +3198,7 @@
           "key_facts": [
             "Historical metric: System performance was evaluated almost exclusively on raw throughput, clock frequency (GHz), and Million Instructions Per Second (MIPS).",
             "Modern efficiency benchmark: Hardware and software systems are evaluated on energy-proportional computing: Performance per Watt (FLOPS/Watt).",
-            "Dynamic Voltage and Frequency Scaling (DVFS): Power consumption in CMOS circuits scales quadratically with voltage ($P \\propto C \\cdot V^2 \\cdot f$); throttling clock frequency ($f$) and supply voltage ($V$) during low workloads yields exponential energy reductions.",
+            "Dynamic Voltage and Frequency Scaling (DVFS): Power consumption in CMOS circuits scales quadratically with voltage (\\(P \\propto C \\cdot V^2 \\cdot f\\)); throttling clock frequency (\\(f\\)) and supply voltage (\\(V\\)) during low workloads yields exponential energy reductions.",
             "Whole-system lifecycle boundary: True green computing integrates operational energy efficiency with embodied manufacturing debt and non-toxic end-of-life recovery."
           ],
           "mental_model": "The Racecar vs. Electric Hybrid: A drag racer goes fast but burns 5 gallons per minute and blows its engine; a championship endurance racer wins by squeezing maximum distance out of every drop of energy.",
@@ -3784,7 +3784,7 @@
           "key_facts": [
             "<strong>Slide 6 \u2014 Genesis of Green Computing & Energy Star:</strong> The term 'Green Computing' was coined shortly after the US Environmental Protection Agency (EPA) launched the <strong>Energy Star</strong> labeling program in <strong>1992</strong>.",
             "<strong>Slide 6 \u2014 80 PLUS Power Supply Standards:</strong> Energy Star introduced mandatory low-power sleep modes and the <strong>80 PLUS</strong> standard, ensuring desktop and server power supply units (PSUs) convert at least 80% of drawn AC electricity into usable DC power, limiting thermal waste to 20% or less.",
-            "<strong>Slide 7 \u2014 PUE and DCiE Quantitative Metrics:</strong> Power Usage Effectiveness ($PUE$) is defined as $PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}$. Data Center Infrastructure Efficiency ($DCiE$) is its reciprocal: $DCiE = \\frac{1}{PUE} \\times 100\\%$. An inefficient legacy data center with $PUE = 2.0$ has a $DCiE$ of only 50%, meaning half of all drawn grid power is consumed by overhead.",
+            "<strong>Slide 7 \u2014 PUE and DCiE Quantitative Metrics:</strong> Power Usage Effectiveness (\\(PUE\\)) is defined as \\(PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}\\). Data Center Infrastructure Efficiency (\\(DCiE\\)) is its reciprocal: \\(DCiE = \\frac{1}{PUE} \\times 100\\%\\). An inefficient legacy data center with \\(PUE = 2.0\\) has a \\(DCiE\\) of only 50%, meaning half of all drawn grid power is consumed by overhead.",
             "<strong>Slide 7 \u2014 The Thermal Bottleneck & Containment:</strong> Concentrated CPU/GPU heat flux forces cooling systems to consume roughly <strong>40% of total data center electricity</strong>. Physical hot-aisle and cold-aisle containment barriers prevent cold supply air (18\u201322\u00b0C) from mixing with hot exhaust (35\u201345\u00b0C), slashing cooling energy demand by <strong>20% to 30%</strong>.",
             "<strong>Slide 7 \u2014 Idle Power & Screen Saver Fallacy:</strong> Office workstations left on overnight draw 60\u2013100W continuously. Complex 3D screen savers prevent GPUs from throttling down, burning full wattage instead of entering low-power sleep.",
             "<strong>Slide 8 \u2014 The Three Strategic Arenas:</strong> 1) <em>Reducing Waste (Dematerialization):</em> Using software to replace physical materials (digital workflows); 2) <em>Energy Conservation:</em> Deploying power management, sleep states, and efficient displays; 3) <em>Environmentally Preferable Purchasing (EPP) & Safe Disposal:</em> Mandating EPEAT/RoHS standards during procurement and formal take-back recycling."
@@ -3807,7 +3807,7 @@
               "section": "Section II, Q3",
               "marks": "2 Marks",
               "question": "Define Power Usage Effectiveness (PUE) and Data Center Infrastructure Efficiency (DCiE). What do these metrics indicate about data center cooling overhead?",
-              "answer_guideline": "<ul><li><strong>Mathematical Definitions:</strong> $PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}$ and $DCiE = \\frac{1}{PUE} \\times 100\\%$.</li><li><strong>Significance:</strong> A PUE close to 1.0 indicates virtually all drawn electricity directly powers servers and storage. A PUE of 2.0 indicates that for every watt powering IT silicon, another watt is wasted on cooling chillers, lighting, and power conversion losses (DCiE = 50%).</li></ul>"
+              "answer_guideline": "<ul><li><strong>Mathematical Definitions:</strong> \\(PUE = \\frac{\\text{Total Facility Power}}{\\text{IT Equipment Power}}\\) and \\(DCiE = \\frac{1}{PUE} \\times 100\\%\\).</li><li><strong>Significance:</strong> A PUE close to 1.0 indicates virtually all drawn electricity directly powers servers and storage. A PUE of 2.0 indicates that for every watt powering IT silicon, another watt is wasted on cooling chillers, lighting, and power conversion losses (DCiE = 50%).</li></ul>"
             },
             {
               "paper": "EST End Exam 2022",
@@ -3899,7 +3899,7 @@
           },
           "eli15_takeaway": "Every single Google search you run puffs out 0.2 grams of CO2 from remote server chips. The Blackle search engine tried to save power with a black screen, which works great on glowing OLED screens, but does almost nothing on standard LCD monitors where backlights never turn off.",
           "key_facts": [
-            "<strong>Slide 11 \u2014 Algorithmic Efficiency & Compute Energy:</strong> Algorithmic time and space complexity directly determines CPU clock cycles, memory bus traffic, and total electrical energy consumed ($E = P \\times t$).",
+            "<strong>Slide 11 \u2014 Algorithmic Efficiency & Compute Energy:</strong> Algorithmic time and space complexity directly determines CPU clock cycles, memory bus traffic, and total electrical energy consumed (\\(E = P \\times t\\)).",
             "<strong>Slide 11 \u2014 Carbon Footprint per Web Search Query:</strong> Empirical measurements show the CO2 emitted per individual search query: <strong>Google Search: ~0.20 g CO2</strong>; <strong>Yahoo Search: ~0.26 g CO2</strong>; <strong>Microsoft Live Search: ~0.32 g CO2</strong>; <strong>AOL Search: ~0.37 g CO2</strong>. Multiplied over billions of daily queries, algorithmic optimization prevents megatons of carbon emissions.",
             "<strong>Slide 12 \u2014 The Four Pillars of Green Computing:</strong> 1) <em>Green Design:</em> Designing energy-efficient chips, cooling paths, and recyclable materials; 2) <em>Green Manufacturing:</em> Fabricating wafers and components with closed-loop water, non-toxic fluxes, and minimal greenhouse venting; 3) <em>Green Use:</em> Minimizing electricity consumption during operation via virtualization, DVFS, and efficient code; 4) <em>Green Disposal:</em> Refurbishing, remarketing, and formal non-polluting material recovery.",
             "<strong>Slide 13 \u2014 The Blackle Experiment:</strong> Launched as an energy-saving custom search engine based on the premise that displaying black pixels consumes less electrical power than a white background; by July 2023, Blackle documented cumulative savings of over <strong>10.07 MWh</strong>.",
@@ -4015,7 +4015,7 @@
               "End Exam 2022 (Sec V)",
               "End Exam 2019 (Sec III)"
             ],
-            "exam_tip": "Focus on corporate case studies: Wipro Green Ware (first Indian non-toxic RoHS-compliant PC), Infosys Eco Club, Userful multi-seat virtualization (1 PC driving 10 stations, -15t CO2/yr, -80% e-waste). Memorize paper lifecycle metrics: 1 ton paper = 24 trees, 1 ream = 6% tree; recycling 1 ton saves 17 trees, 4000 kWh, 26000L water. Understand DVFS ($P \\propto C \\cdot V^2 \\cdot f$) and Performance/Watt (FLOPS/W)."
+            "exam_tip": "Focus on corporate case studies: Wipro Green Ware (first Indian non-toxic RoHS-compliant PC), Infosys Eco Club, Userful multi-seat virtualization (1 PC driving 10 stations, -15t CO2/yr, -80% e-waste). Memorize paper lifecycle metrics: 1 ton paper = 24 trees, 1 ream = 6% tree; recycling 1 ton saves 17 trees, 4000 kWh, 26000L water. Understand DVFS (\\(P \\propto C \\cdot V^2 \\cdot f\\)) and Performance/Watt (FLOPS/W)."
           },
           "eli15_takeaway": "Instead of buying 10 computers for 10 workers, multi-seat software lets 10 monitors and keyboards plug into a single box, cutting e-waste by 80%. In the office, printing one ream of paper kills 6% of a mature tree, so going paperless saves entire forests and millions of liters of water.",
           "key_facts": [
@@ -4026,7 +4026,7 @@
             "<strong>Slide 18 \u2014 Benefits of Paper Recycling:</strong> Recycling 1 metric ton of office paper saves <strong>17 mature trees</strong>, <strong>4,000 kWh of grid electricity</strong>, and <strong>26,000 liters of fresh water</strong>, while avoiding 3 cubic yards of landfill space.",
             "<strong>Slide 18 \u2014 Corporate Green Computing Action Plan:</strong> Encompasses 5 actionable pillars: 1) Formal corporate green ICT policy; 2) EPEAT/Energy Star procurement; 3) Automated network power-down policies; 4) Paperless document management; 5) Certified recycling partnerships.",
             "<strong>Slide 19 \u2014 Modern Energy Proportionality (FLOPS/Watt):</strong> Shifts evaluation from raw clock frequency (GHz) or throughput (MIPS) to energy-proportional computing: <strong>Performance per Watt (FLOPS/Watt)</strong>.",
-            "<strong>Slide 19 \u2014 Dynamic Voltage and Frequency Scaling (DVFS):</strong> Power dissipation in CMOS digital circuits scales quadratically with voltage: $P \\propto C \\cdot V^2 \\cdot f$. Dynamically throttling operating frequency ($f$) and supply voltage ($V$) during idle or light workloads yields exponential energy reductions."
+            "<strong>Slide 19 \u2014 Dynamic Voltage and Frequency Scaling (DVFS):</strong> Power dissipation in CMOS digital circuits scales quadratically with voltage: \\(P \\propto C \\cdot V^2 \\cdot f\\). Dynamically throttling operating frequency (\\(f\\)) and supply voltage (\\(V\\)) during idle or light workloads yields exponential energy reductions."
           ],
           "mental_model": "The 10-Headed Octopus: Multi-seat computing gives 10 clerks their own screen and keyboard, but connects them all to one shared computer brain under the desk, throwing away 9 unnecessary power cords and metal boxes.",
           "checkpoint": {
@@ -4148,7 +4148,7 @@
             "<strong>Slide 25 \u2014 Regulatory Rationale:</strong> E-waste cannot be governed by generic municipal waste rules because electronics contain hazardous heavy metals alongside valuable precious metals dispersed across millions of consumer households, demanding tailored statutory oversight under the Environment Protection Act 1986.",
             "<strong>Slide 26 \u2014 The Basel Convention (1989):</strong> An international UN treaty governing the control of transboundary movements of hazardous wastes. It prohibits developed nations from dumping hazardous e-waste into developing countries without prior informed written consent.",
             "<strong>Slide 26 \u2014 India's Early Regulatory History:</strong> Initial governance under Hazardous Waste Rules 1998/2008 and Municipal Solid Waste Rules 2000 failed to capture consumer electronics. Central Pollution Control Board (CPCB) notified dedicated E-Waste Guidelines in April 2008, while DGFT foreign trade rules prohibited commercial import of toxic e-waste.",
-            "<strong>Slide 27 \u2014 RoHS Six Hazardous Substances & Concentration Limits:</strong> Restriction of Hazardous Substances (RoHS) sets legally binding maximum concentration limits in homogeneous electronic materials:<br>\u2022 <strong>Lead (Pb) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Mercury (Hg) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Cadmium (Cd) < 0.01% (100 ppm)</strong><br>\u2022 <strong>Hexavalent Chromium ($Cr^{6+}$) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Polybrominated Biphenyls (PBB) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Polybrominated Diphenyl Ethers (PBDE) < 0.1% (1,000 ppm)</strong>",
+            "<strong>Slide 27 \u2014 RoHS Six Hazardous Substances & Concentration Limits:</strong> Restriction of Hazardous Substances (RoHS) sets legally binding maximum concentration limits in homogeneous electronic materials:<br>\u2022 <strong>Lead (Pb) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Mercury (Hg) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Cadmium (Cd) < 0.01% (100 ppm)</strong><br>\u2022 <strong>Hexavalent Chromium (\\(Cr^{6+}\\)) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Polybrominated Biphenyls (PBB) < 0.1% (1,000 ppm)</strong><br>\u2022 <strong>Polybrominated Diphenyl Ethers (PBDE) < 0.1% (1,000 ppm)</strong>",
             "<strong>Slide 27 \u2014 Extended Producer Responsibility (EPR):</strong> Environmental policy mandate placing cradle-to-grave financial and physical responsibility on manufacturers to establish authorized take-back centers and safe recycling channels.",
             "<strong>Slide 28 \u2014 India's E-Waste (Management) Rules 2022:</strong> Notified by MoEFCC, establishing aggressive statutory recycling targets: <strong>60% of sales volume in 2023\u20132024</strong>, <strong>70% in 2024\u20132025</strong>, and <strong>80% by 2025\u20132026</strong>.",
             "<strong>Slide 28 \u2014 Tradable EPR Certificates:</strong> Registered recyclers generate digital EPR certificates on an online CPCB portal based on verified recycled tonnage; hardware brands must purchase these certificates to fulfill legal mandates or face punitive environmental compensation penalties.",
@@ -4270,7 +4270,7 @@
           "key_facts": [
             "<strong>Slide 33 \u2014 Recyclable Paper Laptop:</strong> Chassis engineered entirely from multi-layered <strong>compressed paper pulp</strong> and post-consumer recycled paper sheets. The pulp structure provides structural shock resistance and rigidity while remaining 100% biodegradable; during decommissioning, the thin electronic substrate peels away, leaving zero petroleum plastic.",
             "<strong>Slide 33 \u2014 Napkin PC Collaborative System:</strong> Replaces desktop workstations in conference settings with a central hub communicating wirelessly with multiple electronic-paper 'napkins' and digital pens, enabling paperless multi-user design without redundant hardware towers.",
-            "<strong>Slide 34 \u2014 Power Flower Hydrogen Fuel-Cell PC:</strong> Replaces traditional AC power supplies and wall cords with an onboard <strong>miniature hydrogen fuel cell</strong>. The electrochemical reaction between hydrogen ($H_2$) and ambient oxygen ($O_2$) produces electricity and <strong>pure, potable water ($H_2O$)</strong> as its sole byproduct, which collects in a decorative transparent reservoir for drinking or watering plants.",
+            "<strong>Slide 34 \u2014 Power Flower Hydrogen Fuel-Cell PC:</strong> Replaces traditional AC power supplies and wall cords with an onboard <strong>miniature hydrogen fuel cell</strong>. The electrochemical reaction between hydrogen (\\(H_2\\)) and ambient oxygen (\\(O_2\\)) produces electricity and <strong>pure, potable water (\\(H_2O\\))</strong> as its sole byproduct, which collects in a decorative transparent reservoir for drinking or watering plants.",
             "<strong>Slide 34 \u2014 Peripheral-Free Interaction:</strong> Dispenses with physical monitors, mice, and keyboards: uses an integrated micro-projector for display, desk cameras with computer vision for gesture and finger tracking, facial tracking for login, and Wi-Fi/Bluetooth to eliminate copper cabling.",
             "<strong>Slide 35 \u2014 Solar-Powered Clamshell PC for Rural Communities:</strong> Engineered specifically for rural agricultural villages in India and emerging markets that lack stable grid electricity. Incorporates built-in solar photovoltaic panels that charge an internal battery, enabling completely autonomous off-grid operation.",
             "<strong>Slide 35 \u2014 Roll-Out Flexible Display & Village Projector:</strong> Houses a roll-out flexible LCD screen that stows away for dust protection, alongside an integrated LED micro-projector that allows agricultural extension officers and community leaders to project real-time weather forecasts, mandi market prices, and farming guidance to entire village assemblies."
@@ -4280,12 +4280,12 @@
             "question": "What is the sole physical byproduct generated by the onboard power source of the Power Flower PC concept, and how can it be utilized?",
             "options": [
               "Toxic lead slag that must be landfilled",
-              "Pure, potable water ($H_2O$) that drips into a reservoir for drinking or watering plants",
+              "Pure, potable water (\\(H_2O\\)) that drips into a reservoir for drinking or watering plants",
               "Carbon dioxide gas that vents through exhaust fans",
               "Ozone gas that cleans the office air"
             ],
             "correct": 1,
-            "explanation": "The Power Flower PC utilizes a hydrogen fuel cell whose electrochemical reaction ($2H_2 + O_2 \\rightarrow 2H_2O + \\text{electricity}$) generates pure water as its only byproduct, collected for drinking or plant care."
+            "explanation": "The Power Flower PC utilizes a hydrogen fuel cell whose electrochemical reaction ($2H_2 + O_2 \u2192 2H_2O + \\text{electricity}$) generates pure water as its only byproduct, collected for drinking or plant care."
           },
           "exam_questions": [
             {
@@ -4300,7 +4300,7 @@
               "section": "Section VIII, Q1",
               "marks": "2 Marks",
               "question": "Explain the electrochemical and interface innovations of the Power Flower PC concept, highlighting its emission-free operation and peripheral-free design.",
-              "answer_guideline": "<ul><li><strong>Electrochemical Clean Power:</strong> Powered by an on-board hydrogen fuel cell generating zero greenhouse emissions, discharging drinkable water ($H_2O$) collected in a decorative base reservoir.</li><li><strong>Peripheral-Free Interface:</strong> Eliminates plastic keyboards, mice, and LCD monitors by using a desktop laser projector for visual display and optical motion tracking for gesture navigation.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Electrochemical Clean Power:</strong> Powered by an on-board hydrogen fuel cell generating zero greenhouse emissions, discharging drinkable water (\\(H_2O\\)) collected in a decorative base reservoir.</li><li><strong>Peripheral-Free Interface:</strong> Eliminates plastic keyboards, mice, and LCD monitors by using a desktop laser projector for visual display and optical motion tracking for gesture navigation.</li></ul>"
             }
           ]
         }
@@ -4348,7 +4348,7 @@
           "title": "Life Cycle Assessment (LCA)",
           "eli15_takeaway": "LCA calculates the total environmental damage of a product from the moment raw ore is dug out of the earth until it is buried in a landfill (cradle-to-grave) or recycled (cradle-to-cradle).",
           "bullets": [
-            "Four ISO 14040 Steps: Goal & Scope Definition $\\rightarrow$ Inventory Analysis (LCI) $\\rightarrow$ Impact Assessment (LCIA) $\\rightarrow$ Interpretation.",
+            "Four ISO 14040 Steps: Goal & Scope Definition \u2192 Inventory Analysis (LCI) \u2192 Impact Assessment (LCIA) \u2192 Interpretation.",
             "System Boundary: Defining what is inside the audit (raw material extraction, manufacturing, transportation, consumer usage phase, end-of-life disposal).",
             "Functional Unit: The standardized basis of comparison (e.g. 'drying 1,000 pairs of hands' comparing electric air blowers vs paper towels)."
           ],
@@ -4372,7 +4372,7 @@
           "bullets": [
             "The Kalundborg Network: An electric power station, oil refinery, enzyme manufacturer, and plasterboard plant trade byproducts.",
             "Steam Exchange: Power station sends residual steam to heat the refinery and city homes, eliminating individual fossil heating boilers.",
-            "Gypsum Recycling: Power plant flue-gas desulfurization produces synthetic gypsum ($CaSO_4$), which feeds the adjacent drywall plasterboard factory.",
+            "Gypsum Recycling: Power plant flue-gas desulfurization produces synthetic gypsum (\\(CaSO_4\\)), which feeds the adjacent drywall plasterboard factory.",
             "Biological Sludge: Enzyme plant yeast waste is fermented into agricultural fertilizer for local Danish farms."
           ],
           "mental_model": "A natural forest where nothing is thrown into a garbage bin: fallen autumn leaves feed soil fungi, fungi nourish tree roots, and trees provide shelter for birds.",
@@ -5330,7 +5330,7 @@
               "section": "Section IV, Q2",
               "marks": "3 Marks",
               "question": "Explain Green Engineering Principle 5 (Output-pulled rather than input-pushed) using Le Chatelier's Principle and a reversible condensation reaction.",
-              "answer_guideline": "<ul><li><strong>Thermodynamic Foundation:</strong> According to Le Chatelier's Principle, disturbing a dynamic equilibrium causes the system to shift in a direction that counteracts the disturbance. Continuously extracting products pulls forward the forward reaction rate.</li><li><strong>Industrial Condensation Case:</strong> In reversible condensation reactions ($A + B \\rightleftharpoons C + H_2O$), standard plants dump excess reactant $A$ to push yield. Principle 5 uses membrane pervaporation or selective adsorbents to continuously extract water, pulling the reaction to 100% conversion at ambient temperatures without chemical waste.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Thermodynamic Foundation:</strong> According to Le Chatelier's Principle, disturbing a dynamic equilibrium causes the system to shift in a direction that counteracts the disturbance. Continuously extracting products pulls forward the forward reaction rate.</li><li><strong>Industrial Condensation Case:</strong> In reversible condensation reactions (\\(A + B \\rightleftharpoons C + H_2O\\)), standard plants dump excess reactant \\(A\\) to push yield. Principle 5 uses membrane pervaporation or selective adsorbents to continuously extract water, pulling the reaction to 100% conversion at ambient temperatures without chemical waste.</li></ul>"
             },
             {
               "paper": "EST End Exam 2018",
@@ -5371,7 +5371,7 @@
             "<strong>Slide 15 \u2014 Principle 8 (Meet Need, Minimize Excess Capacity):</strong> 'Design for unnecessary capacity or capability (e.g., 'one size fits all') solutions should be considered a design flaw.' Right-sizing industrial motors, chemical reactors, and processing units prevents parasitic standby losses; modular units scale dynamically with real-time demand.",
             "<strong>Slide 16 \u2014 Principle 9 (Minimize Material Diversity):</strong> 'Options for final disposition are increased through upfront designs that minimize material diversity yet accomplish needed functions.' Multi-layer composite packaging (e.g., aluminum foil glued between polyethylene and paperboard) cannot be mechanically or chemically separated, ensuring incineration or landfilling. Monomaterial design (e.g., 100% PET bottles with PET caps and wash-away inks) guarantees high-yield, high-value mechanical recycling.",
             "<strong>Slide 17 \u2014 Principle 10 (Integrate Local Material and Energy Flows):</strong> 'Design of products, processes, and systems must include integration and interconnectivity with available energy and materials flows.' The cornerstone of <strong>Industrial Ecology</strong>: transforming linear manufacturing into closed-loop networks where one facility's byproduct becomes another's feedstock.",
-            "<strong>Slide 17 \u2014 The Kalundborg Eco-Industrial Symbiosis (Denmark):</strong> The world's primary benchmark for industrial symbiosis, operating a dense web of shared material and energy exchanges:<br>1) <em>Asnaes Power Station (Coal/Biomass):</em> Pipes waste low-pressure steam to the <em>Kalundborg Municipality</em> for district heating (eliminating 3,500 oil furnaces) and to pharmaceutical giant <em>Novo Nordisk</em> for enzyme fermenters.<br>2) <em>Flue-Gas Desulfurization:</em> Asnaes uses limestone scrubbers to capture sulfur dioxide ($SO_2$), producing <strong>calcium sulfate (synthetic gypsum)</strong> that is piped directly to the <em>Gyproc</em> plasterboard factory, displacing 100% of imported natural mined gypsum.<br>3) <em>Organic Byproducts:</em> Novo Nordisk treats fermentation biomass sludge into nutrient-rich <strong>fertilizer</strong> distributed to local Danish farms or pig feed.<br>4) <em>Cooling Water & Gas:</em> Equinor oil refinery sends treated wastewater and waste gas to the power station, conserving 3 million cubic meters of fresh groundwater annually."
+            "<strong>Slide 17 \u2014 The Kalundborg Eco-Industrial Symbiosis (Denmark):</strong> The world's primary benchmark for industrial symbiosis, operating a dense web of shared material and energy exchanges:<br>1) <em>Asnaes Power Station (Coal/Biomass):</em> Pipes waste low-pressure steam to the <em>Kalundborg Municipality</em> for district heating (eliminating 3,500 oil furnaces) and to pharmaceutical giant <em>Novo Nordisk</em> for enzyme fermenters.<br>2) <em>Flue-Gas Desulfurization:</em> Asnaes uses limestone scrubbers to capture sulfur dioxide (\\(SO_2\\)), producing <strong>calcium sulfate (synthetic gypsum)</strong> that is piped directly to the <em>Gyproc</em> plasterboard factory, displacing 100% of imported natural mined gypsum.<br>3) <em>Organic Byproducts:</em> Novo Nordisk treats fermentation biomass sludge into nutrient-rich <strong>fertilizer</strong> distributed to local Danish farms or pig feed.<br>4) <em>Cooling Water & Gas:</em> Equinor oil refinery sends treated wastewater and waste gas to the power station, conserving 3 million cubic meters of fresh groundwater annually."
           ],
           "mental_model": "The Forest Food Web: In an oak forest, dead leaves feed earthworms, worms feed birds, and bird droppings nourish the tree. Kalundborg turns smokestacks and wastewater pipes into the exact same circular food web.",
           "checkpoint": {
@@ -5699,7 +5699,7 @@
           "title": "The Environmental Management Plan (EMP) & Monitoring",
           "eli15_takeaway": "An EIA is useless unless the builder actually follows the rules; the EMP is the legally binding contract specifying green belts, sewage plants, and air filters.",
           "bullets": [
-            "Mitigation Hierarchy: Avoid impact $\\rightarrow$ Minimize impact $\\rightarrow$ Rectify/Remediate $\\rightarrow$ Compensate/Offset.",
+            "Mitigation Hierarchy: Avoid impact \u2192 Minimize impact \u2192 Rectify/Remediate \u2192 Compensate/Offset.",
             "EMP Components: Effluent treatment plant (ETP) capacity, acoustic sound barriers, ambient air quality sensors, green belt reforestation width.",
             "Post-Clearance Monitoring: Mandatory submission of compliance reports every six months to regional regulatory offices."
           ],
@@ -6569,7 +6569,7 @@
           "key_facts": [
             "<strong>Slide 1 \u2014 Genesis & Purpose:</strong> EIA originated under the ENCAP EA-ESD framework (Basic Concepts for Environmental Impact Assessment) to institutionalize environmentally sound design. It acts as an upstream legal and technical gatekeeper, reconciling industrial growth with ecological stability and pollution tolerance thresholds before capital commitments are made.",
             "<strong>Slide 2 \u2014 Legal Definition of EIA:</strong> Formally defined as a structured, systematic process for identifying and forecasting the likely biophysical and socio-economic effects of a proposed development activity on the environment and human health, and formulating actionable measures to avoid, mitigate, and monitor those effects throughout the project lifecycle.",
-            "<strong>Slide 2 \u2014 Impact as Baseline Deviation:</strong> The environment is interpreted broadly across physical, chemical, biological, and human socio-economic dimensions. An <em>environmental impact</em> is rigorously defined as: $\\text{Impact} = \\text{Condition with Project} - \\text{Baseline Condition without Project}$. It is the net deviation from the baseline condition directly or indirectly attributable to the activity.",
+            "<strong>Slide 2 \u2014 Impact as Baseline Deviation:</strong> The environment is interpreted broadly across physical, chemical, biological, and human socio-economic dimensions. An <em>environmental impact</em> is rigorously defined as: \\(\\text{Impact} = \\text{Condition with Project} - \\text{Baseline Condition without Project}\\). It is the net deviation from the baseline condition directly or indirectly attributable to the activity.",
             "<strong>Slide 3 \u2014 Six Primary Baseline Components:</strong> Baseline assessments must systematically investigate six core environmental subsystems: (1) <em>Water</em> (flow quantity, physical/chemical quality, seasonal reliability, accessibility); (2) <em>Soils</em> (erosion vulnerability, agricultural productivity, fallow periods, salinization, nutrient profiles); (3) <em>Flora</em> (native species density, canopy cover, endemic and commercial timber species); (4) <em>Fauna</em> (wildlife populations, migratory corridors, endangered indicator species); (5) <em>Special Ecosystems</em> (wetlands, mangroves, estuaries, sacred groves, coral reefs); and (6) <em>Environmental Health</em> (prevalence of disease vectors, waterborne pathogens, and chemical toxicity burdens).",
             "<strong>Slide 3 \u2014 The Cardinal Component Selection Rule:</strong> Assessors must not waste resources compiling encyclopedic inventories of unaffected species. The statutory rule dictates analyzing only environmental components that: (a) will be significantly altered or damaged by project actions, OR (b) upon which the project relies for operational viability and resource feedstocks."
           ],
@@ -6591,7 +6591,7 @@
               "section": "Section I, Q16",
               "marks": "2 Marks",
               "question": "Define Environmental Impact Assessment (EIA) and explain how an 'impact' is formally distinguished from a simple temporal change.",
-              "answer_guideline": "<ul><li><strong>Formal EIA Definition:</strong> A systematic process for identifying, predicting, evaluating, and mitigating the biophysical, social, and human health effects of proposed development activities prior to major decisions and commitments being made.</li><li><strong>Impact vs Temporal Change:</strong> An 'impact' is not simply any change observed over time; it is strictly defined as the net deviation between the future state of the environment <em>with</em> the project versus the baseline state of the environment <em>without</em> the project ($\\text{Impact} = \\text{State}_{\\text{with}} - \\text{State}_{\\text{without}}$).</li></ul>"
+              "answer_guideline": "<ul><li><strong>Formal EIA Definition:</strong> A systematic process for identifying, predicting, evaluating, and mitigating the biophysical, social, and human health effects of proposed development activities prior to major decisions and commitments being made.</li><li><strong>Impact vs Temporal Change:</strong> An 'impact' is not simply any change observed over time; it is strictly defined as the net deviation between the future state of the environment <em>with</em> the project versus the baseline state of the environment <em>without</em> the project (\\(\\text{Impact} = \\text{State}_{\\text{with}} - \\text{State}_{\\text{without}}\\)).</li></ul>"
             },
             {
               "paper": "EST End Exam 2022",
@@ -6688,7 +6688,7 @@
           "key_facts": [
             "<strong>Slide 7 \u2014 Two-Phase Master Architecture:</strong> EIA is divided into <em>Phase 1 (Initial Inquiries)</em> and <em>Phase 2 (Full EIA Study)</em>. Phase 1 focuses on deconstructing proposed activities, rapid screening, and conducting a Preliminary Assessment when risk is uncertain. Phase 2 entails rigorous scoping, comprehensive multi-season baseline data collection, alternatives evaluation, predictive numerical modeling, full Environmental Management Plans (EMP), and mandatory public consultations.",
             "<strong>Slide 7 \u2014 Rationale for Staged Architecture:</strong> Prevents administrative bottlenecks and wasteful expenditure of public/private capital by ensuring that over 90% of routine, low-risk development initiatives bypass cumbersome multi-year impact studies while routing genuinely dangerous projects into high-scrutiny channels.",
-            "<strong>Slide 8 \u2014 Phase 1 Decision Matrix & Triage Gateway:</strong> Projects enter the screening gateway and are sorted into three pathways: (1) <em>Low Risk</em> $\\rightarrow$ Clear immediately with standard operating procedures; (2) <em>High Risk</em> $\\rightarrow$ Mandatory escalation to Phase 2 Full EIA; (3) <em>Moderate or Unknown Risk</em> $\\rightarrow$ Subject to an intermediate Preliminary Assessment. The Preliminary Assessment then yields a binary outcome: if significant impacts are unlikely $\\rightarrow$ grant conditional clearance; if significant impacts are possible $\\rightarrow$ escalate to Phase 2.",
+            "<strong>Slide 8 \u2014 Phase 1 Decision Matrix & Triage Gateway:</strong> Projects enter the screening gateway and are sorted into three pathways: (1) <em>Low Risk</em> \u2192 Clear immediately with standard operating procedures; (2) <em>High Risk</em> \u2192 Mandatory escalation to Phase 2 Full EIA; (3) <em>Moderate or Unknown Risk</em> \u2192 Subject to an intermediate Preliminary Assessment. The Preliminary Assessment then yields a binary outcome: if significant impacts are unlikely \u2192 grant conditional clearance; if significant impacts are possible \u2192 escalate to Phase 2.",
             "<strong>Slide 9 \u2014 Deconstructing the 'Why': The Development Objective:</strong> The fundamental rule: <em>'If we do not understand the project's true development objective, we cannot design alternatives or assess impacts.'</em> Evaluators must dissect the fundamental human need being served (e.g., increasing rural food security vs generating municipal revenue) rather than accepting the proponent's pre-selected engineering design as an unchangeable given.",
             "<strong>Slide 10 \u2014 Uncovering the 'What': Hidden Ancillary Footprints:</strong> Project proponents typically submit narrow dossiers detailing only the central installation (e.g., the dam wall or factory floor). The EIA team must expose all <em>ancillary and supporting actions</em>: (a) heavy haulage access roads, (b) temporary labor colonies and sanitation facilities, (c) aggregate borrow pits and rock blasting quarries, (d) high-voltage transmission corridors, (e) fuel storage depots, and (f) construction solid waste spoil dumps. Often these secondary footprints inflict far greater localized ecological damage than the primary structure."
           ],
@@ -6752,7 +6752,7 @@
             "<strong>Slide 12 \u2014 Three Distinct Screening Outcomes:</strong> (1) <em>Clearance with Standard Mitigation:</em> Project has negligible risk; proceeds under general standard environmental rules. (2) <em>Preliminary Assessment Required:</em> Potential environmental risks exist but are ambiguous or localized; requires focused empirical diagnostic study. (3) <em>Mandatory Full EIA (Phase 2):</em> Project falls under statutory Schedule 1 (e.g., nuclear plants, crude refineries, major dams) or sits in ecologically fragile protected zones; full multi-season study required.",
             "<strong>Slide 13 \u2014 Scope and Diagnostic Purpose of Preliminary Assessment:</strong> A rapid, targeted diagnostic assessment conducted when risks cannot be dismissed outright during screening. It investigates specific localized vulnerabilities (e.g., local aquifer drawdown, proximity to an elephant migration corridor) using existing secondary data and rapid site reconnaissance, completing within weeks.",
             "<strong>Slide 14 \u2014 Structure and The Three Verdicts of Preliminary Assessment:</strong> A standard Preliminary Assessment consists of: (a) Project description, (b) Targeted baseline profile, (c) Screening checklist analysis, and (d) Initial Environmental Examination (IEE) findings. It concludes with one of three formal regulatory verdicts: (1) <em>No Significant Impact:</em> Clearance issued; (2) <em>Mitigation Redesign Required:</em> Proponent must modify design to eliminate identified hazards; (3) <em>Escalate to Full EIA:</em> Unresolvable, complex, or high-magnitude ecological risks confirmed.",
-            "<strong>Slide 15 \u2014 The Impact Judgment Trinity (Identify, Predict, Judge):</strong> The three-step analytical sequence governing all environmental evaluations: (1) <strong>Identify:</strong> Pinpoint what biophysical or human components will change (e.g., sulfur dioxide emitted, fish spawning disrupted); (2) <strong>Predict:</strong> Quantify the magnitude, spatial spread, and temporal duration of the change using physical or mathematical modeling (e.g., ambient SO2 will rise by 35 $\\mu\\text{g/m}^3$ across 12 km); (3) <strong>Judge:</strong> Determine whether the predicted change is acceptable, manageable, or legally impermissible against statutory ambient standards, ecological carrying capacities, and social values."
+            "<strong>Slide 15 \u2014 The Impact Judgment Trinity (Identify, Predict, Judge):</strong> The three-step analytical sequence governing all environmental evaluations: (1) <strong>Identify:</strong> Pinpoint what biophysical or human components will change (e.g., sulfur dioxide emitted, fish spawning disrupted); (2) <strong>Predict:</strong> Quantify the magnitude, spatial spread, and temporal duration of the change using physical or mathematical modeling (e.g., ambient SO2 will rise by 35 \\(\\mu\\text{g/m}^3\\) across 12 km); (3) <strong>Judge:</strong> Determine whether the predicted change is acceptable, manageable, or legally impermissible against statutory ambient standards, ecological carrying capacities, and social values."
           ],
           "mental_model": "Think of a courtroom trial: first the prosecution identifies the crime (Identify), then forensic scientists quantify the exact physical evidence and trajectory of the bullet (Predict), and finally the jury weighs the law and standards to deliver a verdict on guilt and punishment (Judge).",
           "checkpoint": {
@@ -6772,7 +6772,7 @@
               "section": "Section IV, Q2",
               "marks": "3 Marks",
               "question": "Explain the three-step Judgment Trinity in Environmental Impact Assessment: Identify, Predict, and Judge.",
-              "answer_guideline": "<ul><li><strong>Step 1: Identify:</strong> Qualitative determination of which environmental and social components will be affected by project actions (e.g., loss of mangrove canopy, increase in ambient particulate matter PM2.5).</li><li><strong>Step 2: Predict:</strong> Scientific and quantitative forecasting of the magnitude, spatial scale, timing, and duration of the impact using mathematical dispersion models, ecological indicators, or hydrology equations (e.g., predicting an increase of 42 $\\mu\\text{g/m}^3$ in ground-level PM10 within a 5 km radius).</li><li><strong>Step 3: Judge:</strong> Value-based evaluation of whether the predicted magnitude of impact is acceptable, severe, or legally intolerable when evaluated against regulatory ambient standards, ecosystem thresholds, and community acceptance.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Step 1: Identify:</strong> Qualitative determination of which environmental and social components will be affected by project actions (e.g., loss of mangrove canopy, increase in ambient particulate matter PM2.5).</li><li><strong>Step 2: Predict:</strong> Scientific and quantitative forecasting of the magnitude, spatial scale, timing, and duration of the impact using mathematical dispersion models, ecological indicators, or hydrology equations (e.g., predicting an increase of 42 \\(\\mu\\text{g/m}^3\\) in ground-level PM10 within a 5 km radius).</li><li><strong>Step 3: Judge:</strong> Value-based evaluation of whether the predicted magnitude of impact is acceptable, severe, or legally intolerable when evaluated against regulatory ambient standards, ecosystem thresholds, and community acceptance.</li></ul>"
             },
             {
               "paper": "EST Mid-1 2024",
@@ -7045,7 +7045,7 @@
             "<strong>Slide 29 \u2014 Metropolitan 25 km Buffer Zone:</strong> Mandates an absolute protective buffer belt of <strong>25 km</strong> around the periphery of all metropolitan cities having a population exceeding <strong>1 million inhabitants</strong>, preventing the encirclement of urban centers with industrial toxic airsheds.",
             "<strong>Slide 29 \u2014 Wetland 7 km Absolute Exclusion & Transport Strip:</strong> (a) Enforces an absolute <strong>7 km</strong> protective buffer around the boundary of notified wetlands and ecologically sensitive water bodies (Annexure II); (b) Mandates a <strong>0.5 km (500 meter)</strong> wide safety buffer on both sides of national highways and railway trunk lines to prevent toxic chemical transport hazards and roadside contamination.",
             "<strong>Slide 30 \u2014 Conditional Wetland Buffer (7 km to 25 km):</strong> In the secondary perimeter stretching from <strong>7 km to 25 km</strong> from a notified wetland, establishing an industrial unit is prohibited unless the developer presents rigorous scientific evidence and predictive modeling proving that industrial effluent discharges, groundwater abstraction, and atmospheric deposition will cause zero ecological harm to the wetland ecosystem.",
-            "<strong>Slide 30 \u2014 Archaeological Monument 7 km Absolute Protection Bubble:</strong> Establishing polluting industries (Annexure III) is strictly banned within a <strong>7 km periphery</strong> around all nationally significant notified archaeological monuments and heritage sites (Annexure IV). Established to safeguard historical marble and sandstone architecture from corrosive sulfur dioxide ($SO_2$), acid precipitation, and diesel soot (embodying the legal precedent of the historic <em>Taj Trapezium Zone / M.C. Mehta v. Union of India</em> Supreme Court litigation)."
+            "<strong>Slide 30 \u2014 Archaeological Monument 7 km Absolute Protection Bubble:</strong> Establishing polluting industries (Annexure III) is strictly banned within a <strong>7 km periphery</strong> around all nationally significant notified archaeological monuments and heritage sites (Annexure IV). Established to safeguard historical marble and sandstone architecture from corrosive sulfur dioxide (\\(SO_2\\)), acid precipitation, and diesel soot (embodying the legal precedent of the historic <em>Taj Trapezium Zone / M.C. Mehta v. Union of India</em> Supreme Court litigation)."
           ],
           "mental_model": "Think of siting buffers like protective force fields: million-person cities get a 25 km shield, precious ancient monuments and delicate wetlands get a 7 km shield, and busy transit arteries get a 500-meter safety clearance so accidents don't spill chemicals directly onto tracks or roads.",
           "checkpoint": {
@@ -7987,7 +7987,7 @@
           "bullets": [
             "Flaw of GDP: If an oil tanker crashes and spills, GDP goes UP because millions are spent on cleanup boats, lawyers, and hospital bills.",
             "Depreciation: Standard business accounting depreciates machinery wear-and-tear; traditional GDP treats Earth's resources as if they have infinite free replacement.",
-            "Formula: $\\text{Green GDP} = \\text{Conventional GDP} - \\text{Environmental Degradation Costs} - \\text{Natural Resource Depletion}$"
+            "Formula: \\(\\text{Green GDP} = \\text{Conventional GDP} - \\text{Environmental Degradation Costs} - \\text{Natural Resource Depletion}\\)"
           ],
           "mental_model": "Emptying your bank savings account and spending it on parties. Your daily cash spending looks wealthy (GDP), but you are going bankrupt in the background.",
           "checkpoint": {
@@ -8008,7 +8008,7 @@
           "eli15_takeaway": "SEEA is the internationally agreed rulebook for integrating natural assets (water reserves, forests, clean air) directly alongside national treasury accounts.",
           "bullets": [
             "Physical Accounts: Tracking material flows in physical units (megalitres of water extracted, cubic meters of timber felled).",
-            "Asset Accounts: Measuring opening stock $\\rightarrow$ net additions $\\rightarrow$ reductions $\\rightarrow$ closing stock of natural capital.",
+            "Asset Accounts: Measuring opening stock \u2192 net additions \u2192 reductions \u2192 closing stock of natural capital.",
             "Ecosystem Accounts: Measuring ecosystem extent (hectares of wetlands) and ecosystem condition (water quality index)."
           ],
           "mental_model": "A spreadsheet that balances both your money account and your pantry groceries, so you don't starve while bragging about having cash in your wallet.",
@@ -9224,9 +9224,9 @@
             "<strong>Slide 1 \u2014 Green Accounting & Natural Capital Overview:</strong> Course focus on integrating environmental degradation and natural resource depletion into national income accounts. Core premise: Modern GDP ignores natural capital depletion and ecological degradation.",
             "<strong>Slide 2 \u2014 National Income & The Four Factors of Production:</strong> National Income is defined as the money value of all final goods and services produced in a country over a given accounting year. It tracks output across the four classical factors of production: Land (natural resources receiving rent), Labor (human effort receiving wages), Capital (manufactured assets receiving interest), and Entrepreneurship (risk-taking enterprise receiving profit).",
             "<strong>Slide 2 \u2014 Double Counting Avoidance & Sectoral Coverage:</strong> Counts only final products without duplication after accounting for physical capital depreciation. Combines output from public and private sectors, covering consumption goods, capital goods, and net foreign trade balances.",
-            "<strong>Slide 3 \u2014 GDP (Gross Domestic Product):</strong> Market value of all final goods and services produced within the geographic borders of a country over one financial year ($GDP = C + I + G + (X - M)$). Measures domestic economic activity regardless of whether assets are owned by citizens or foreigners.",
-            "<strong>Slide 3 \u2014 NDP (Net Domestic Product):</strong> Calculated as GDP minus depreciation of physical manufactured capital ($NDP = GDP - D$). Measures sustainable domestic output after accounting for factory and machine wear-and-tear, but completely omits natural resource depletion.",
-            "<strong>Slide 3 \u2014 GNP (Gross National Product) & NNP (Net National Product):</strong> GNP measures output produced by a nation's citizens and enterprises globally ($GNP = GDP + \\text{Net Factor Income from Abroad}$). NNP equals GNP minus physical capital depreciation ($NNP = GNP - D$), historically viewed as the purest conventional measure of national income."
+            "<strong>Slide 3 \u2014 GDP (Gross Domestic Product):</strong> Market value of all final goods and services produced within the geographic borders of a country over one financial year (\\(GDP = C + I + G + (X - M)\\)). Measures domestic economic activity regardless of whether assets are owned by citizens or foreigners.",
+            "<strong>Slide 3 \u2014 NDP (Net Domestic Product):</strong> Calculated as GDP minus depreciation of physical manufactured capital (\\(NDP = GDP - D\\)). Measures sustainable domestic output after accounting for factory and machine wear-and-tear, but completely omits natural resource depletion.",
+            "<strong>Slide 3 \u2014 GNP (Gross National Product) & NNP (Net National Product):</strong> GNP measures output produced by a nation's citizens and enterprises globally (\\(GNP = GDP + \\text{Net Factor Income from Abroad}\\)). NNP equals GNP minus physical capital depreciation (\\(NNP = GNP - D\\)), historically viewed as the purest conventional measure of national income."
           ],
           "mental_model": "Checking your bank account and celebrating high spending, while completely ignoring that you emptied your retirement savings to buy groceries.",
           "checkpoint": {
@@ -9253,7 +9253,7 @@
               "section": "Section I, Q2",
               "marks": "3 Marks",
               "question": "Distinguish mathematically and conceptually between Gross Domestic Product (GDP), Net Domestic Product (NDP), Gross National Product (GNP), and Net National Product (NNP). Why does conventional NDP subtract only physical capital depreciation?",
-              "answer_guideline": "<ul><li><strong>Mathematical Formulations:</strong><ul><li>$GDP = C + I + G + (X - M)$ (Final market value within domestic borders).</li><li>$NDP = GDP - D$ (where $D$ is the depreciation of produced/manufactured physical assets).</li><li>$GNP = GDP + \\text{NFIA}$ (where $\\text{NFIA}$ is Net Factor Income from Abroad).</li><li>$NNP = GNP - D$.</li></ul></li><li><strong>The Physical Depreciation Limitation:</strong> Conventional national accounting was designed during 20th-century industrialization when produced plant, machinery, and equipment were considered the only finite capital stocks needing replacement. Natural capital (forests, clean air, subsoil minerals) was treated as an infinite, free gift of nature, so zero depreciation allowance was assigned to ecological liquidation.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Mathematical Formulations:</strong><ul><li>\\(GDP = C + I + G + (X - M)\\) (Final market value within domestic borders).</li><li>\\(NDP = GDP - D\\) (where \\(D\\) is the depreciation of produced/manufactured physical assets).</li><li>\\(GNP = GDP + \\text{NFIA}\\) (where \\(\\text{NFIA}\\) is Net Factor Income from Abroad).</li><li>\\(NNP = GNP - D\\).</li></ul></li><li><strong>The Physical Depreciation Limitation:</strong> Conventional national accounting was designed during 20th-century industrialization when produced plant, machinery, and equipment were considered the only finite capital stocks needing replacement. Natural capital (forests, clean air, subsoil minerals) was treated as an infinite, free gift of nature, so zero depreciation allowance was assigned to ecological liquidation.</li></ul>"
             }
           ]
         },
@@ -9313,7 +9313,7 @@
               "section": "Section X, Q(a)",
               "marks": "3 Marks",
               "question": "Explain the Henderson GNP Dilemma (Hazel Henderson, 1978). Why does conventional GDP perversely increase following environmental disasters and industrial cleanups?",
-              "answer_guideline": "<ul><li><strong>Henderson's GNP Dilemma:</strong> Hazel Henderson (1978) demonstrated that Gross GNP and Net Human Well-being diverge over time. While industrial output increases gross monetary transactions, the mounting externalized social costs (pollution, toxic disease, ecosystem destruction) degrade real net welfare.</li><li><strong>The Perverse Accounting Mechanism:</strong> Conventional SNA treats all monetary expenditures identically regardless of whether they represent final consumer utility or defensive remediation. When an oil tanker crashes (e.g., Exxon Valdez), hiring cleanup boats, buying chemical dispersants, and treating affected workers are recorded as positive additions to Consumption ($C$) and Government Spending ($G$), thus expanding headline GDP while the underlying biological asset is destroyed.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Henderson's GNP Dilemma:</strong> Hazel Henderson (1978) demonstrated that Gross GNP and Net Human Well-being diverge over time. While industrial output increases gross monetary transactions, the mounting externalized social costs (pollution, toxic disease, ecosystem destruction) degrade real net welfare.</li><li><strong>The Perverse Accounting Mechanism:</strong> Conventional SNA treats all monetary expenditures identically regardless of whether they represent final consumer utility or defensive remediation. When an oil tanker crashes (e.g., Exxon Valdez), hiring cleanup boats, buying chemical dispersants, and treating affected workers are recorded as positive additions to Consumption (\\(C\\)) and Government Spending (\\(G\\)), thus expanding headline GDP while the underlying biological asset is destroyed.</li></ul>"
             }
           ]
         },
@@ -9346,7 +9346,7 @@
             "<strong>Slide 7 \u2014 Historical Milestones in National Accounting:</strong> 1930: Simon Kuznets develops the first systematic accounting of US national income to measure the Great Depression collapse. 1934: Kuznets presents national accounts to US Congress, explicitly warning: 'The welfare of a nation can scarcely be inferred from a measure of national income.'",
             "<strong>Slide 7 \u2014 Wartime Planning & Post-War Expansion:</strong> 1940: Intermediate products subtracted to formalize value-added accounting for wartime weapons mobilization. 1950: Wassily Leontief integrates input-output matrices. 1964: US Bureau of Economic Analysis (BEA) formalizes modern GDP accounting under the assumption of infinite environmental resources.",
             "<strong>Slide 8 \u2014 UN System of National Accounts (SNA):</strong> Standardized international macroeconomic accounting system maintained by the United Nations Statistics Division (UNSTAT), IMF, World Bank, and OECD. Standardizes GDP/GNP formulas, dictates sovereign debt capacity, and guides global development rankings.",
-            "<strong>Slide 9 \u2014 Standard SNA Expenditure Formula:</strong> $GDP = C + I + G + (X - M)$; $GNP = GDP + (R - P)$, where $R$ = factor receipts from abroad and $P$ = factor payments to foreigners. $NNP = GNP - D$, subtracting only physical manufactured depreciation.",
+            "<strong>Slide 9 \u2014 Standard SNA Expenditure Formula:</strong> \\(GDP = C + I + G + (X - M)\\); \\(GNP = GDP + (R - P)\\), where \\(R\\) = factor receipts from abroad and \\(P\\) = factor payments to foreigners. \\(NNP = GNP - D\\), subtracting only physical manufactured depreciation.",
             "<strong>Slide 10 \u2014 Five Pillars of SNA Dominance (Why SNA Remained Popular):</strong><ol><li><strong>Post-War Growth Urgency:</strong> Rebuilding destroyed post-WWII infrastructure demanded rapid physical output maximization.</li><li><strong>Environmental Ignorance:</strong> Neoclassical economists operated under the myth of boundless ecological sinks and infinite resources.</li><li><strong>Market System Hegemony:</strong> Ideological focus restricted strictly to cash-market price transactions.</li><li><strong>Measurement Complexity:</strong> Pricing commodities via cash registers is simple and verifiable; pricing ozone layers or biodiversity lacks market bids.</li><li><strong>Institutional Resistance:</strong> Deep bureaucratic and political entrenchment resisting structural revisions to sovereign credit and fiscal scorecards.</li></ol>"
           ],
           "mental_model": "Using an industrial production meter designed for WWII munitions factories to measure the biological health of an 80-year-old human patient.",
@@ -9367,14 +9367,14 @@
               "section": "Section VI, Q4",
               "marks": "3 Marks",
               "question": "What is SNA? Define its framework? Why did the concept of SNA remain so popular for a longer time (only list the factors)?",
-              "answer_guideline": "<ul><li><strong>Definition of SNA:</strong> The System of National Accounts (SNA) is the internationally agreed standard set of recommendations on how to compile measures of economic activity, formulated by the United Nations, World Bank, IMF, and OECD.</li><li><strong>Framework:</strong> It utilizes double-entry bookkeeping across institutional sectors to calculate Gross Domestic Product (GDP), Gross National Product (GNP), and Net National Product (NNP) based on market transactions ($GDP = C + I + G + (X - M)$).</li><li><strong>Factors for Prolonged Popularity (Five Pillars):</strong><ol><li><em>Post-war growth urgency:</em> Escaping the Great Depression and post-WWII reconstruction demanded physical volume output.</li><li><em>Environmental ignorance:</em> Prevailing assumption of limitless natural resources and boundless waste absorption sinks.</li><li><em>Market system hegemony:</em> Neoclassical dogma limiting measurement strictly to monetized cash exchanges.</li><li><em>Measurement complexity:</em> High mathematical difficulty and subjectivity in assigning prices to non-market public environmental goods.</li><li><em>Institutional resistance:</em> Bureaucratic inertia and vested political interests tied to GDP-linked sovereign ratings and debt metrics.</li></ol></li></ul>"
+              "answer_guideline": "<ul><li><strong>Definition of SNA:</strong> The System of National Accounts (SNA) is the internationally agreed standard set of recommendations on how to compile measures of economic activity, formulated by the United Nations, World Bank, IMF, and OECD.</li><li><strong>Framework:</strong> It utilizes double-entry bookkeeping across institutional sectors to calculate Gross Domestic Product (GDP), Gross National Product (GNP), and Net National Product (NNP) based on market transactions (\\(GDP = C + I + G + (X - M)\\)).</li><li><strong>Factors for Prolonged Popularity (Five Pillars):</strong><ol><li><em>Post-war growth urgency:</em> Escaping the Great Depression and post-WWII reconstruction demanded physical volume output.</li><li><em>Environmental ignorance:</em> Prevailing assumption of limitless natural resources and boundless waste absorption sinks.</li><li><em>Market system hegemony:</em> Neoclassical dogma limiting measurement strictly to monetized cash exchanges.</li><li><em>Measurement complexity:</em> High mathematical difficulty and subjectivity in assigning prices to non-market public environmental goods.</li><li><em>Institutional resistance:</em> Bureaucratic inertia and vested political interests tied to GDP-linked sovereign ratings and debt metrics.</li></ol></li></ul>"
             },
             {
               "paper": "EST End Exam 2022",
               "section": "Section X, Q1",
               "marks": "3 Marks",
               "question": "Write down the standard System of National Accounts (SNA) expenditure equation for GDP and GNP. What historical warning did Simon Kuznets give to the US Congress in 1934 regarding national income?",
-              "answer_guideline": "<ul><li><strong>SNA Expenditure Equations:</strong><ul><li>$GDP = C + I + G + (X - M)$ where $C$ = Private Consumption, $I$ = Gross Capital Investment, $G$ = Government Final Expenditure, $X$ = Exports, $M$ = Imports.</li><li>$GNP = GDP + (R - P)$ where $R$ = Factor income received from abroad, $P$ = Factor income paid to foreign units.</li></ul></li><li><strong>Kuznets's 1934 Warning:</strong> When delivering the first comprehensive national income report to the US Senate (Senate Document No. 124), Simon Kuznets explicitly warned: <em>'The welfare of a nation can scarcely be inferred from a measure of national income as defined above.'</em> He cautioned that GDP measures market throughput, not human distribution, quality, or long-term ecological sustainability.</li></ul>"
+              "answer_guideline": "<ul><li><strong>SNA Expenditure Equations:</strong><ul><li>\\(GDP = C + I + G + (X - M)\\) where \\(C\\) = Private Consumption, \\(I\\) = Gross Capital Investment, \\(G\\) = Government Final Expenditure, \\(X\\) = Exports, \\(M\\) = Imports.</li><li>\\(GNP = GDP + (R - P)\\) where \\(R\\) = Factor income received from abroad, \\(P\\) = Factor income paid to foreign units.</li></ul></li><li><strong>Kuznets's 1934 Warning:</strong> When delivering the first comprehensive national income report to the US Senate (Senate Document No. 124), Simon Kuznets explicitly warned: <em>'The welfare of a nation can scarcely be inferred from a measure of national income as defined above.'</em> He cautioned that GDP measures market throughput, not human distribution, quality, or long-term ecological sustainability.</li></ul>"
             }
           ]
         },
@@ -9426,7 +9426,7 @@
               "section": "Section VI, Q2",
               "marks": "3 Marks",
               "question": "How has the System of Environmental-Economic Accounting (SEEA) expanded and complemented the conventional System of National Accounts (SNA)?",
-              "answer_guideline": "<ul><li><strong>Expansion of SNA Framework:</strong><ol><li><strong>Integrates Environmental Balance Sheets:</strong> Complements SNA's produced assets by constructing explicit Natural Resource Asset Accounts for subsoil minerals, timber, soil, and aquatic stocks.</li><li><strong>Tracks Physical Material Flows:</strong> Adds physical input-output tables recording natural resource extraction, ecosystem inputs (oxygen, water), and residual waste outputs (greenhouse gases, toxic effluents).</li><li><strong>Disaggregates Defensive Costs (EPEA):</strong> Isolates environmental protection and remediation spending, separating genuine economic expansion from defensive repair.</li><li><strong>Derives Environmentally Adjusted Indicators (EDP):</strong> Calculates Green GDP / Green NDP by subtracting natural resource depletion and environmental degradation costs from conventional NDP ($EDP = NDP - \\text{Depletion} - \\text{Degradation}$).</li></ol></li></ul>"
+              "answer_guideline": "<ul><li><strong>Expansion of SNA Framework:</strong><ol><li><strong>Integrates Environmental Balance Sheets:</strong> Complements SNA's produced assets by constructing explicit Natural Resource Asset Accounts for subsoil minerals, timber, soil, and aquatic stocks.</li><li><strong>Tracks Physical Material Flows:</strong> Adds physical input-output tables recording natural resource extraction, ecosystem inputs (oxygen, water), and residual waste outputs (greenhouse gases, toxic effluents).</li><li><strong>Disaggregates Defensive Costs (EPEA):</strong> Isolates environmental protection and remediation spending, separating genuine economic expansion from defensive repair.</li><li><strong>Derives Environmentally Adjusted Indicators (EDP):</strong> Calculates Green GDP / Green NDP by subtracting natural resource depletion and environmental degradation costs from conventional NDP (\\(EDP = NDP - \\text{Depletion} - \\text{Degradation}\\)).</li></ol></li></ul>"
             },
             {
               "paper": "EST End Exam 2019",
@@ -9493,7 +9493,7 @@
               "section": "Section X, Q(c)",
               "marks": "3 Marks",
               "question": "Illustrate the SEEA 4-way material exchange between the Economic Sphere and the Environmental Sphere (Products, Natural Resources, Ecosystem Inputs, Residuals) and explain the three life-support functions of environmental assets.",
-              "answer_guideline": "<ul><li><strong>SEEA 4-Way Material Exchange:</strong><ol><li><em>Natural Resources (Environment $\\rightarrow$ Economy):</em> Raw materials drawn into industry (minerals, fossil fuels, timber).</li><li><em>Ecosystem Inputs (Environment $\\rightarrow$ Economy):</em> Unharvested biophysical inputs consumed in production (oxygen for combustion, natural soil moisture).</li><li><em>Products (Economy $\\rightarrow$ Economy):</em> Fabricated goods and commercial services traded among economic actors.</li><li><em>Residuals (Economy $\\rightarrow$ Environment):</em> Waste streams ejected back into nature (greenhouse gases, toxic effluents, municipal solid waste).</li></ol></li><li><strong>Three Life-Support Functions:</strong><ol><li><em>Waste Assimilation:</em> Natural capacity of soils, rivers, and atmosphere to degrade, absorb, and detoxify waste.</li><li><em>Biophysical Regulation:</em> Maintenance of atmospheric chemistry, climate stability, hydrological flows, and coastal buffer defense.</li><li><em>Direct Human Amenity:</em> Wilderness aesthetics, outdoor recreation, spiritual wellness, and mental health.</li></ol></li></ul>"
+              "answer_guideline": "<ul><li><strong>SEEA 4-Way Material Exchange:</strong><ol><li><em>Natural Resources (Environment \u2192 Economy):</em> Raw materials drawn into industry (minerals, fossil fuels, timber).</li><li><em>Ecosystem Inputs (Environment \u2192 Economy):</em> Unharvested biophysical inputs consumed in production (oxygen for combustion, natural soil moisture).</li><li><em>Products (Economy \u2192 Economy):</em> Fabricated goods and commercial services traded among economic actors.</li><li><em>Residuals (Economy \u2192 Environment):</em> Waste streams ejected back into nature (greenhouse gases, toxic effluents, municipal solid waste).</li></ol></li><li><strong>Three Life-Support Functions:</strong><ol><li><em>Waste Assimilation:</em> Natural capacity of soils, rivers, and atmosphere to degrade, absorb, and detoxify waste.</li><li><em>Biophysical Regulation:</em> Maintenance of atmospheric chemistry, climate stability, hydrological flows, and coastal buffer defense.</li><li><em>Direct Human Amenity:</em> Wilderness aesthetics, outdoor recreation, spiritual wellness, and mental health.</li></ol></li></ul>"
             }
           ]
         },
@@ -9524,8 +9524,8 @@
           "key_facts": [
             "<strong>Slide 17 \u2014 SEEA Environmental Protection Expenditure Accounts (EPEA):</strong> Disaggregates national accounts to isolate public and private capital and operational spending dedicated to environmental protection (wastewater management, air pollution abatement, solid waste recycling, biodiversity conservation).",
             "<strong>Slide 17 \u2014 Distinguishing Defensive vs. Productive Capital:</strong> Prevents policymakers from confusing defensive expenditures (remediating toxic chemical plumes) with genuine productive capital investment.",
-            "<strong>Slide 18 \u2014 SEEA Natural Resource Asset Accounts (Tracking Physical Stocks):</strong> Maintains formal balance sheets tracking stocks of mineral, timber, soil, and aquatic resources. Formula: $\\text{Closing Stock} = \\text{Opening Stock} + \\text{Discoveries/Regrowth} - \\text{Physical Extraction} - \\text{Catastrophic Loss} \\pm \\text{Revaluations}$.",
-            "<strong>Slide 19 \u2014 Environmentally Adjusted Domestic Product (EDP / Green GDP):</strong> Formally defines Green NDP by deducting natural capital losses from conventional NDP: $\\text{EDP} = \\text{NDP} - \\text{Depletion of Natural Capital} - \\text{Degradation of Environmental Quality}$.",
+            "<strong>Slide 18 \u2014 SEEA Natural Resource Asset Accounts (Tracking Physical Stocks):</strong> Maintains formal balance sheets tracking stocks of mineral, timber, soil, and aquatic resources. Formula: \\(\\text{Closing Stock} = \\text{Opening Stock} + \\text{Discoveries/Regrowth} - \\text{Physical Extraction} - \\text{Catastrophic Loss} \\pm \\text{Revaluations}\\).",
+            "<strong>Slide 19 \u2014 Environmentally Adjusted Domestic Product (EDP / Green GDP):</strong> Formally defines Green NDP by deducting natural capital losses from conventional NDP: \\(\\text{EDP} = \\text{NDP} - \\text{Depletion of Natural Capital} - \\text{Degradation of Environmental Quality}\\).",
             "<strong>Slide 19 \u2014 Genuine Progress vs. Liquidating Wealth:</strong> A nation increasing its conventional GDP while its EDP shrinks is not generating true income; it is liquidating sovereign natural capital to fund immediate consumption.",
             "<strong>Slide 20 \u2014 Redrawing SNA Boundaries (Satellite vs. Core Accounts):</strong> SEEA expands the asset boundary beyond commercial property to include non-marketed public ecosystems, but preserves core SNA accounting conventions by implementing them primarily through parallel 'Satellite Accounts' without destabilizing international credit metrics."
           ],
@@ -9547,14 +9547,14 @@
               "section": "Section II, Q4",
               "marks": "3 Marks",
               "question": "Explain the structure of SEEA Environmental Protection Expenditure Accounts (EPEA) and write down the formal mathematical derivation of Environmentally Adjusted Domestic Product (EDP / Green NDP).",
-              "answer_guideline": "<ul><li><strong>Structure of EPEA:</strong> Environmental Protection Expenditure Accounts isolate and classify all economic resources allocated to prevent, reduce, and eliminate environmental pollution and degradation. It categorizes spending by environmental domain (air, wastewater, waste management, soil, biodiversity) and by institutional sector (general government, corporations, households).</li><li><strong>Derivation of EDP:</strong><ol><li>Conventional Net Domestic Product: $NDP = GDP - D_m$ (where $D_m$ is depreciation of produced/manufactured capital).</li><li>Environmentally Adjusted Domestic Product (EDP-1): $EDP_1 = NDP - \\text{Depletion of Natural Resources}$ (deducting the physical exhaustion of subsoil minerals, fossil fuels, and commercial timber).</li><li>Fully Environmentally Adjusted Domestic Product (EDP-2 / Green NDP): $EDP_2 = EDP_1 - \\text{Cost of Environmental Degradation}$ (deducting monetary valuation of pollution damages and loss of ecosystem regulation services).</li></ol></li></ul>"
+              "answer_guideline": "<ul><li><strong>Structure of EPEA:</strong> Environmental Protection Expenditure Accounts isolate and classify all economic resources allocated to prevent, reduce, and eliminate environmental pollution and degradation. It categorizes spending by environmental domain (air, wastewater, waste management, soil, biodiversity) and by institutional sector (general government, corporations, households).</li><li><strong>Derivation of EDP:</strong><ol><li>Conventional Net Domestic Product: \\(NDP = GDP - D_m\\) (where \\(D_m\\) is depreciation of produced/manufactured capital).</li><li>Environmentally Adjusted Domestic Product (EDP-1): \\(EDP_1 = NDP - \\text{Depletion of Natural Resources}\\) (deducting the physical exhaustion of subsoil minerals, fossil fuels, and commercial timber).</li><li>Fully Environmentally Adjusted Domestic Product (EDP-2 / Green NDP): \\(EDP_2 = EDP_1 - \\text{Cost of Environmental Degradation}\\) (deducting monetary valuation of pollution damages and loss of ecosystem regulation services).</li></ol></li></ul>"
             },
             {
               "paper": "EST End Exam 2022",
               "section": "Section X, Q(d)",
               "marks": "3 Marks",
               "question": "How does SEEA redraw production, consumption, and asset boundaries compared to the 1993 SNA? Distinguish between internal environmental satellite accounts and fully integrated economic accounts.",
-              "answer_guideline": "<ul><li><strong>Redrawing Boundaries:</strong> Conventional 1993 SNA limits assets to those with legal deeds and financial returns. SEEA expands the <em>Asset Boundary</em> to include all naturally occurring environmental assets (unowned aquifers, wilderness biomes, atmosphere). It expands the <em>Production Boundary</em> to track ecosystem inputs and residual outputs, and treats degradation as capital consumption.</li><li><strong>Satellite vs. Integrated Accounts:</strong><ul><li><em>Satellite Accounts:</em> Maintain environmental data (physical flow matrices, defensive expenditure tables, natural capital stock tables) in parallel modules linked to national accounts. This avoids altering official GDP headline figures used for international taxation and sovereign debt covenants.</li><li><em>Fully Integrated Accounts:</em> Directly rewrite the headline macroeconomic aggregates ($GDP \\rightarrow EDP$), replacing standard growth figures with environmentally adjusted net product.</li></ul></li></ul>"
+              "answer_guideline": "<ul><li><strong>Redrawing Boundaries:</strong> Conventional 1993 SNA limits assets to those with legal deeds and financial returns. SEEA expands the <em>Asset Boundary</em> to include all naturally occurring environmental assets (unowned aquifers, wilderness biomes, atmosphere). It expands the <em>Production Boundary</em> to track ecosystem inputs and residual outputs, and treats degradation as capital consumption.</li><li><strong>Satellite vs. Integrated Accounts:</strong><ul><li><em>Satellite Accounts:</em> Maintain environmental data (physical flow matrices, defensive expenditure tables, natural capital stock tables) in parallel modules linked to national accounts. This avoids altering official GDP headline figures used for international taxation and sovereign debt covenants.</li><li><em>Fully Integrated Accounts:</em> Directly rewrite the headline macroeconomic aggregates (\\(GDP \u2192 EDP\\)), replacing standard growth figures with environmentally adjusted net product.</li></ul></li></ul>"
             }
           ]
         },
@@ -9639,11 +9639,11 @@
               "End Exam 2019 (Section IV)",
               "End Exam 2018"
             ],
-            "exam_tip": "Crucial exam concept: The Asymmetry of Depreciation! In standard SNA, physical machinery is depreciated annually ($NDP = GDP - D$), whereas cutting an ancient forest or draining an oil well is recorded as 100% current income with ZERO asset write-down. Understand Ernst Lutz and Salah El Serafy's user-cost method."
+            "exam_tip": "Crucial exam concept: The Asymmetry of Depreciation! In standard SNA, physical machinery is depreciated annually (\\(NDP = GDP - D\\)), whereas cutting an ancient forest or draining an oil well is recorded as 100% current income with ZERO asset write-down. Understand Ernst Lutz and Salah El Serafy's user-cost method."
           },
           "eli15_takeaway": "If a factory machine wears out over 10 years, companies write off 10% of its value every year as depreciation so they don't fool themselves. But when a country clear-cuts a 500-year-old forest, it writes down zero depreciation and pretends all the lumber cash is pure economic profit.",
           "key_facts": [
-            "<strong>Slide 25 \u2014 The Asymmetry of Depreciation (Factory vs. Forest):</strong> Under standard SNA, man-made physical capital (machines, buildings, vehicles) is subject to annual depreciation write-offs ($NDP = GDP - D$) recognizing physical wear-and-tear. In stark contrast, when a nation depletes natural capital (pumping petroleum, mining iron ore, felling virgin forests), all revenues are booked as 100% current income, with zero capital depreciation recorded.",
+            "<strong>Slide 25 \u2014 The Asymmetry of Depreciation (Factory vs. Forest):</strong> Under standard SNA, man-made physical capital (machines, buildings, vehicles) is subject to annual depreciation write-offs (\\(NDP = GDP - D\\)) recognizing physical wear-and-tear. In stark contrast, when a nation depletes natural capital (pumping petroleum, mining iron ore, felling virgin forests), all revenues are booked as 100% current income, with zero capital depreciation recorded.",
             "<strong>Slide 25 \u2014 Economic Illusion of Liquidation:</strong> A nation that completely liquidates its primary forests, exhausts its fisheries, and drains its aquifers will show booming GDP and NDP, concealing the catastrophic loss of its productive asset base.",
             "<strong>Slide 26 \u2014 The Lutz & Salah El Serafy Foundation:</strong> Ernst Lutz (World Bank) and Salah El Serafy developed the 'User Cost' method, proving that receipts from exhaustible natural resources cannot be treated entirely as true income. A portion represents capital consumption that must be reinvested into reproducible assets to sustain consumption infinitely.",
             "<strong>Slide 27 \u2014 Integrating Economics & Ecology:</strong> Replaces neoclassical monoculture with an integrated model: Ecological Systems provide thermodynamic energy, materials, and life-support; Economic Systems organize human production and allocation. Sustainable development requires that the physical throughput of the economy does not breach the carrying capacity of the ecosphere.",
@@ -9659,7 +9659,7 @@
               "Agricultural output depreciates while industrial technology gains permanent value."
             ],
             "correct": 1,
-            "explanation": "Conventional SNA deducts depreciation for wear-and-tear of man-made machines ($NDP = GDP - D$), but books the irreversible liquidation of finite natural capital (minerals, forests) as 100% current profit."
+            "explanation": "Conventional SNA deducts depreciation for wear-and-tear of man-made machines (\\(NDP = GDP - D\\)), but books the irreversible liquidation of finite natural capital (minerals, forests) as 100% current profit."
           },
           "exam_questions": [
             {
@@ -9667,7 +9667,7 @@
               "section": "Section X, Q(b)",
               "marks": "4 Marks",
               "question": "Explain the 'Asymmetry of Depreciation' between man-made capital (factory) and natural capital (forest/oil field) in standard SNA. How do Ernst Lutz and Salah El Serafy propose correcting this bias?",
-              "answer_guideline": "<ul><li><strong>The Asymmetry of Depreciation:</strong><ul><li><em>Man-Made Capital:</em> An industrial machine has a finite working life. Under SNA rules, its annual wear-and-tear is deducted from GDP as physical depreciation ($NDP = GDP - D$) to recognize that capital was consumed to generate output.</li><li><em>Natural Capital:</em> When an ancient forest is clear-cut or an oil field is extracted, the entire sale revenue is credited as value-added production. No depreciation allowance is booked for the permanent liquidation of the biological or subsoil stock.</li><li><em>Perverse Consequence:</em> A country can systematically liquidate its irreplaceable ecological capital, creating an illusion of booming GDP growth while plunging into ecological bankruptcy.</li></ul></li><li><strong>The Lutz and El Serafy Correction (User-Cost Method):</strong> Ernst Lutz and Salah El Serafy established that revenues from non-renewable resource extraction consist of two parts: (1) <em>True Hicksian Income</em> (the fraction that can be consumed without reducing future consumption) and (2) <em>User Cost / Capital Component</em> (the fraction representing capital depletion, which must be set aside and reinvested in reproducible physical or human capital to generate an equivalent perpetual income stream).</li></ul>"
+              "answer_guideline": "<ul><li><strong>The Asymmetry of Depreciation:</strong><ul><li><em>Man-Made Capital:</em> An industrial machine has a finite working life. Under SNA rules, its annual wear-and-tear is deducted from GDP as physical depreciation (\\(NDP = GDP - D\\)) to recognize that capital was consumed to generate output.</li><li><em>Natural Capital:</em> When an ancient forest is clear-cut or an oil field is extracted, the entire sale revenue is credited as value-added production. No depreciation allowance is booked for the permanent liquidation of the biological or subsoil stock.</li><li><em>Perverse Consequence:</em> A country can systematically liquidate its irreplaceable ecological capital, creating an illusion of booming GDP growth while plunging into ecological bankruptcy.</li></ul></li><li><strong>The Lutz and El Serafy Correction (User-Cost Method):</strong> Ernst Lutz and Salah El Serafy established that revenues from non-renewable resource extraction consist of two parts: (1) <em>True Hicksian Income</em> (the fraction that can be consumed without reducing future consumption) and (2) <em>User Cost / Capital Component</em> (the fraction representing capital depletion, which must be set aside and reinvested in reproducible physical or human capital to generate an equivalent perpetual income stream).</li></ul>"
             },
             {
               "paper": "End Exam 2019",
@@ -9823,16 +9823,16 @@
               "End Exam 2019",
               "End Exam 2018 (Section V)"
             ],
-            "exam_tip": "Directly tested in End Exam 2024 Section IV Q(b) (2 Marks): 'Differentiate between Strong and Weak sustainability.' Strong sustainability (ecological view) asserts natural capital is non-substitutable life-support; Weak sustainability (neoclassical view) asserts total capital ($K = K_m + K_n + K_h$) must not decline, assuming machinery/technology can perfectly substitute for exhausted resources."
+            "exam_tip": "Directly tested in End Exam 2024 Section IV Q(b) (2 Marks): 'Differentiate between Strong and Weak sustainability.' Strong sustainability (ecological view) asserts natural capital is non-substitutable life-support; Weak sustainability (neoclassical view) asserts total capital (\\(K = K_m + K_n + K_h\\)) must not decline, assuming machinery/technology can perfectly substitute for exhausted resources."
           },
           "eli15_takeaway": "Sustainable development means meeting our needs today without stealing the future from our grandkids. The big argument between economists and ecologists is whether you can destroy nature as long as you build enough machines to replace it (Weak Sustainability) or whether nature does things that no machine can ever replace (Strong Sustainability).",
           "key_facts": [
             "<strong>Slide 36 \u2014 Pavan Sukhdev & TEEB Metric Mandate:</strong> 'You cannot manage what you do not measure.' Holistic National Wealth consists of four capital stocks: 1. Natural Capital; 2. Human Capital; 3. Social Capital; 4. Produced Physical Capital. First introduced at 1972 UN Stockholm Conference.",
             "<strong>Slide 37 \u2014 The 1987 Brundtland Benchmark:</strong> Published by the World Commission on Environment and Development (WCED, 'Our Common Future'): 'Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.' Establishes the ethical principle of <em>Intergenerational Equity</em>.",
-            "<strong>Slide 38 \u2014 The Economic Definition of Sustainability:</strong> Defined by economists as <em>Non-declining human well-being (utility) over time</em>. Mathematical criterion: $\\frac{dW}{dt} \\ge 0$, where $W$ represents intertemporal social welfare.",
-            "<strong>Slide 39 \u2014 The Great Theoretical Divide:</strong> The central debate hinges on the substitutability between human-made capital ($K_m$) and natural capital ($K_n$).",
-            "<strong>Slide 40 \u2014 Strong Sustainability (Ecological Paradigm):</strong> Championed by ecologists and ecological economists (Herman Daly, Robert Costanza). Core tenet: Natural capital provides non-substitutable, critical life-support services (ozone shield, biogeochemical cycles, genetic diversity). Natural capital stock must be preserved independently in physical units ($dK_n / dt \\ge 0$).",
-            "<strong>Slide 40 \u2014 Weak Sustainability (Neoclassical Paradigm):</strong> Championed by neoclassical economists (Robert Solow, John Hartwick). Core tenet: Assumes near-perfect or high substitutability between natural, manufactured, and human capital. Total aggregate capital stock must not decline ($dK / dt \\ge 0$, where $K = K_m + K_n + K_h$). Exhausting oil or forests is acceptable if the economic rents are reinvested into schools, factories, and technology."
+            "<strong>Slide 38 \u2014 The Economic Definition of Sustainability:</strong> Defined by economists as <em>Non-declining human well-being (utility) over time</em>. Mathematical criterion: \\(\\frac{dW}{dt} \\ge 0\\), where \\(W\\) represents intertemporal social welfare.",
+            "<strong>Slide 39 \u2014 The Great Theoretical Divide:</strong> The central debate hinges on the substitutability between human-made capital (\\(K_m\\)) and natural capital (\\(K_n\\)).",
+            "<strong>Slide 40 \u2014 Strong Sustainability (Ecological Paradigm):</strong> Championed by ecologists and ecological economists (Herman Daly, Robert Costanza). Core tenet: Natural capital provides non-substitutable, critical life-support services (ozone shield, biogeochemical cycles, genetic diversity). Natural capital stock must be preserved independently in physical units (\\(dK_n / dt \\ge 0\\)).",
+            "<strong>Slide 40 \u2014 Weak Sustainability (Neoclassical Paradigm):</strong> Championed by neoclassical economists (Robert Solow, John Hartwick). Core tenet: Assumes near-perfect or high substitutability between natural, manufactured, and human capital. Total aggregate capital stock must not decline (\\(dK / dt \\ge 0\\), where \\(K = K_m + K_n + K_h\\)). Exhausting oil or forests is acceptable if the economic rents are reinvested into schools, factories, and technology."
           ],
           "mental_model": "Weak sustainability says you can cut down all the fruit trees in your backyard as long as you invest the wood money into buying a modern refrigerator; strong sustainability warns that once the trees are dead, the refrigerator has no fruit to keep cold.",
           "checkpoint": {
@@ -9844,7 +9844,7 @@
               "Weak sustainability tracks physical biomass in kilograms; Strong sustainability tracks monetary cash balances."
             ],
             "correct": 1,
-            "explanation": "Weak sustainability assumes technology and man-made machines can substitute for depleted natural resources (preserving total capital $K$), whereas strong sustainability insists natural life-support systems have no technological substitutes."
+            "explanation": "Weak sustainability assumes technology and man-made machines can substitute for depleted natural resources (preserving total capital \\(K\\)), whereas strong sustainability insists natural life-support systems have no technological substitutes."
           },
           "exam_questions": [
             {
@@ -9852,14 +9852,14 @@
               "section": "Section IV, Q(b)",
               "marks": "2 Marks",
               "question": "Differentiate between Strong Sustainability and Weak Sustainability. What fundamental assumption do they make regarding the substitutability between natural and manufactured capital?",
-              "answer_guideline": "<ul><li><strong>Weak Sustainability (Neoclassical Perspective):</strong> Assumes that natural capital ($K_n$) and manufactured physical capital ($K_m$) are essentially substitutable in production and human welfare. As long as the aggregate capital stock ($K = K_m + K_n + K_h$) is maintained or expanding ($dK/dt \\ge 0$), depleting natural resources (e.g., exhausting subsoil minerals or clearing forests) is considered fully sustainable provided the economic proceeds are reinvested into factories, machines, or human education.</li><li><strong>Strong Sustainability (Ecological Perspective):</strong> Rejects perfect substitutability and insists that natural capital provides unique, irreplaceable, and non-linear life-support services (climate regulation, ozone filtering, biogeochemical balances, genetic diversity). It demands that critical natural capital ($K_n$) must be preserved independently in physical non-declining stocks ($dK_n/dt \\ge 0$), regardless of the growth in manufactured machinery.</li></ul>"
+              "answer_guideline": "<ul><li><strong>Weak Sustainability (Neoclassical Perspective):</strong> Assumes that natural capital (\\(K_n\\)) and manufactured physical capital (\\(K_m\\)) are essentially substitutable in production and human welfare. As long as the aggregate capital stock (\\(K = K_m + K_n + K_h\\)) is maintained or expanding (\\(dK/dt \\ge 0\\)), depleting natural resources (e.g., exhausting subsoil minerals or clearing forests) is considered fully sustainable provided the economic proceeds are reinvested into factories, machines, or human education.</li><li><strong>Strong Sustainability (Ecological Perspective):</strong> Rejects perfect substitutability and insists that natural capital provides unique, irreplaceable, and non-linear life-support services (climate regulation, ozone filtering, biogeochemical balances, genetic diversity). It demands that critical natural capital (\\(K_n\\)) must be preserved independently in physical non-declining stocks (\\(dK_n/dt \\ge 0\\)), regardless of the growth in manufactured machinery.</li></ul>"
             },
             {
               "paper": "EST End Exam 2022",
               "section": "Section IV, Q(b)",
               "marks": "3 Marks",
-              "question": "State the economic definition of sustainable development as non-declining intertemporal utility ($dW/dt \\ge 0$). How does Pavan Sukhdev's 'Four Capital Stocks' model evaluate whether an economy is living on income or liquidating capital?",
-              "answer_guideline": "<ul><li><strong>Economic Definition of Sustainability:</strong> Neoclassical welfare economists define sustainable development as a development path where per-capita social well-being (utility $W$) does not decline over time ($dW/dt \\ge 0$). An economy is on an unsustainable trajectory if current consumption levels can only be sustained by eroding the productive resource base needed by subsequent generations.</li><li><strong>Pavan Sukhdev's Four Capital Stocks Model:</strong> Holistic national wealth comprises: (1) <em>Natural Capital</em> (ecosystems, clean air, mineral stocks); (2) <em>Human Capital</em> (health, skills, education); (3) <em>Social Capital</em> (trust, civic institutions, governance); and (4) <em>Produced Physical Capital</em> (machines, buildings, roads). An economy is living off genuine income only when it consumes the sustainable interest/yield generated by these four stocks. If a country liquidates its natural capital to finance daily consumption without equivalent reinvestment, it is living off capital principal, depleting intergenerational wealth.</li></ul>"
+              "question": "State the economic definition of sustainable development as non-declining intertemporal utility (\\(dW/dt \\ge 0\\)). How does Pavan Sukhdev's 'Four Capital Stocks' model evaluate whether an economy is living on income or liquidating capital?",
+              "answer_guideline": "<ul><li><strong>Economic Definition of Sustainability:</strong> Neoclassical welfare economists define sustainable development as a development path where per-capita social well-being (utility \\(W\\)) does not decline over time (\\(dW/dt \\ge 0\\)). An economy is on an unsustainable trajectory if current consumption levels can only be sustained by eroding the productive resource base needed by subsequent generations.</li><li><strong>Pavan Sukhdev's Four Capital Stocks Model:</strong> Holistic national wealth comprises: (1) <em>Natural Capital</em> (ecosystems, clean air, mineral stocks); (2) <em>Human Capital</em> (health, skills, education); (3) <em>Social Capital</em> (trust, civic institutions, governance); and (4) <em>Produced Physical Capital</em> (machines, buildings, roads). An economy is living off genuine income only when it consumes the sustainable interest/yield generated by these four stocks. If a country liquidates its natural capital to finance daily consumption without equivalent reinvestment, it is living off capital principal, depleting intergenerational wealth.</li></ul>"
             }
           ]
         },
@@ -9891,7 +9891,7 @@
           "eli15_takeaway": "Sir John Hicks taught that true income is like living off the interest of your bank savings without ever touching the principal. Economist John Hartwick proved that if you pump oil, you must invest every single dollar of profit into schools and technology; otherwise, you're just burning your capital and leaving your kids broke.",
           "key_facts": [
             "<strong>Slide 41 \u2014 John Hartwick's Rule (1977):</strong> In an economy dependent on exhaustible natural resources, constant per-capita consumption can be maintained over time IF AND ONLY IF all economic resource rents generated from extracting the non-renewable resource are fully reinvested into reproducible man-made physical and human capital.",
-            "<strong>Slide 41 \u2014 Mathematical Condition & Real-World Failure:</strong> Requires net capital investment to equal zero ($\\dot{K} = 0$, where resource depletion is exactly offset by reproducible investment). In reality, resource-rich developing nations almost universally fail the Hartwick rule by spending resource rents on immediate consumption and military budgets.",
+            "<strong>Slide 41 \u2014 Mathematical Condition & Real-World Failure:</strong> Requires net capital investment to equal zero (\\(\\dot{K} = 0\\), where resource depletion is exactly offset by reproducible investment). In reality, resource-rich developing nations almost universally fail the Hartwick rule by spending resource rents on immediate consumption and military budgets.",
             "<strong>Slide 42 \u2014 Sir John Hicks's Concept of Income (1946, Value & Capital):</strong> 'The maximum value which an individual can consume during a week, and still expect to be as well off at the end of the week as he was at the beginning.' True income is sustainable yield; consuming capital principal is not income, but an asset loss.",
             "<strong>Slide 42 \u2014 Conceptual Foundation of Green Accounting:</strong> Translates Hicksian income to national economies: Sustainable National Income is the maximum consumption an economy can enjoy while leaving its aggregate productive capital base (produced + natural + human) intact.",
             "<strong>Slide 43 \u2014 Why Green Accounting Conforms to Weak Sustainability:</strong> Practical realism: Pragmatically pricing nature in currency units allows integration into existing SNA ledgers without overthrowing the global financial architecture. Weak sustainability provides the mathematical basis for converting ecological depreciation into currency deductions.",
@@ -9923,7 +9923,7 @@
               "section": "Section X, Q(f)",
               "marks": "4 Marks",
               "question": "Explain John Hartwick's Rule (1977) for exhaustible resource economies. Why does green accounting conform to Weak Sustainability, and what is Keith Suter's 'Price of Everything and Value of Nothing' critique?",
-              "answer_guideline": "<ul><li><strong>The Hartwick Rule (1977):</strong> In an economy heavily reliant on non-renewable exhaustible resources (such as oil or minerals), a constant intergenerational stream of per-capita consumption can be maintained indefinitely if and only if all economic rents generated from resource extraction are fully reinvested into reproducible physical and human capital ($dK/dt = 0$).</li><li><strong>Alignment with Weak Sustainability:</strong> Green accounting converts physical ecological degradation into monetary currency deductions ($EDP = NDP - \\text{Depletion} - \\text{Degradation}$). By assigning dollar values to natural assets, it implicitly adopts the neoclassical assumption of Weak Sustainability\u2014that depleted natural capital can be compensated for by equivalent investments in reproducible manufactured capital or technical education.</li><li><strong>Keith Suter's Critique ('Price of Everything and Value of Nothing'):</strong> Echoing Oscar Wilde, Suter cautions that financializing nature creates an ontological illusion. Markets can assign a commercial price tag to a dead tree as timber or an aquifer as bottled water, but cannot calculate the true systemic, cultural, or thermodynamic value of intact biospheres. Pricing nature risks reducing sacred, irreplaceable life-support systems to fungible balance-sheet commodities.</li></ul>"
+              "answer_guideline": "<ul><li><strong>The Hartwick Rule (1977):</strong> In an economy heavily reliant on non-renewable exhaustible resources (such as oil or minerals), a constant intergenerational stream of per-capita consumption can be maintained indefinitely if and only if all economic rents generated from resource extraction are fully reinvested into reproducible physical and human capital (\\(dK/dt = 0\\)).</li><li><strong>Alignment with Weak Sustainability:</strong> Green accounting converts physical ecological degradation into monetary currency deductions (\\(EDP = NDP - \\text{Depletion} - \\text{Degradation}\\)). By assigning dollar values to natural assets, it implicitly adopts the neoclassical assumption of Weak Sustainability\u2014that depleted natural capital can be compensated for by equivalent investments in reproducible manufactured capital or technical education.</li><li><strong>Keith Suter's Critique ('Price of Everything and Value of Nothing'):</strong> Echoing Oscar Wilde, Suter cautions that financializing nature creates an ontological illusion. Markets can assign a commercial price tag to a dead tree as timber or an aquifer as bottled water, but cannot calculate the true systemic, cultural, or thermodynamic value of intact biospheres. Pricing nature risks reducing sacred, irreplaceable life-support systems to fungible balance-sheet commodities.</li></ul>"
             }
           ]
         }
@@ -11207,11 +11207,11 @@
               "Mid-1 2024",
               "High-Yield Pattern"
             ],
-            "exam_tip": "Step 1: Raw indicator selection; Step 2: Target identification (national/global 2030 benchmarks); Step 3: Min-Max normalization ($I = \\frac{x - x_{min}}{x_{max} - x_{min}} \\times 100$ for positive, reversed for negative); Step 4: Arithmetic mean across indicators for Goal Score; Step 5: Arithmetic mean across Goal scores for Composite Index. Master the 'Periodicity Trap' (mixing annual administrative data with multi-year surveys like NFHS and NSO)."
+            "exam_tip": "Step 1: Raw indicator selection; Step 2: Target identification (national/global 2030 benchmarks); Step 3: Min-Max normalization (\\(I = \\frac{x - x_{min}}{x_{max} - x_{min}} \\times 100\\) for positive, reversed for negative); Step 4: Arithmetic mean across indicators for Goal Score; Step 5: Arithmetic mean across Goal scores for Composite Index. Master the 'Periodicity Trap' (mixing annual administrative data with multi-year surveys like NFHS and NSO)."
           },
           "eli15_takeaway": "NITI Aayog acts like an Olympic judge for all 28 states, grading them on a 0-to-100 scale using a strict 5-step math formula. But it faces a sneaky math trap: while electricity numbers are updated every month, big health and poverty surveys only happen once every five years, creating a data time warp.",
           "key_facts": [
-            "<strong>Slide 19 \u2014 The 5-Step Data Engine of NITI Aayog SDG Index:</strong><ol><li><strong>Step 1: Indicator Selection:</strong> Selects priority indicators that map national schemes directly to UN SDG targets (113 indicators in the 2023\u201324 edition).</li><li><strong>Step 2: Target Setting:</strong> Establishes quantitative national target values for 2030 based on official government commitments (e.g., zero maternal deaths, 100% tap water).</li><li><strong>Step 3: Data Normalization (Min-Max Scaling):</strong> Rescales raw physical metrics onto a standard 0 to 100 scale:<ul><li><em>Positive Indicators (higher is better):</em> $I = \\frac{x - x_{min}}{x_{max} - x_{min}} \\times 100$</li><li><em>Negative Indicators (lower is better, e.g., infant mortality):</em> $I = \\frac{x_{max} - x}{x_{max} - x_{min}} \\times 100$</li></ul></li><li><strong>Step 4: Goal Score Calculation:</strong> Computes the arithmetic mean of all normalized indicator scores under that specific goal (equal weighting).</li><li><strong>Step 5: Composite State Index:</strong> Computes the arithmetic mean of all 16 Goal Scores for that State or Union Territory.</li></ol>",
+            "<strong>Slide 19 \u2014 The 5-Step Data Engine of NITI Aayog SDG Index:</strong><ol><li><strong>Step 1: Indicator Selection:</strong> Selects priority indicators that map national schemes directly to UN SDG targets (113 indicators in the 2023\u201324 edition).</li><li><strong>Step 2: Target Setting:</strong> Establishes quantitative national target values for 2030 based on official government commitments (e.g., zero maternal deaths, 100% tap water).</li><li><strong>Step 3: Data Normalization (Min-Max Scaling):</strong> Rescales raw physical metrics onto a standard 0 to 100 scale:<ul><li><em>Positive Indicators (higher is better):</em> \\(I = \\frac{x - x_{min}}{x_{max} - x_{min}} \\times 100\\)</li><li><em>Negative Indicators (lower is better, e.g., infant mortality):</em> \\(I = \\frac{x_{max} - x}{x_{max} - x_{min}} \\times 100\\)</li></ul></li><li><strong>Step 4: Goal Score Calculation:</strong> Computes the arithmetic mean of all normalized indicator scores under that specific goal (equal weighting).</li><li><strong>Step 5: Composite State Index:</strong> Computes the arithmetic mean of all 16 Goal Scores for that State or Union Territory.</li></ol>",
             "<strong>Slide 20 \u2014 Step-by-Step Calculation Walkthrough (SDG 3 Good Health):</strong> Demonstrates how diverse indicators\u2014Maternal Mortality Ratio (target 70), Under-5 Mortality Rate (target 25), Full Immunization Coverage (target 100%), Institutional Deliveries (target 100%), and TB Incidence (target 0)\u2014are normalized via Min-Max formulas and averaged to generate a single composite health score (e.g., 77 for India).",
             "<strong>Slide 21 \u2014 The Periodicity Trap (Tracking 113 Indicators Across Time Lags):</strong> NITI Aayog's index relies on two fundamentally different data sources: 1. <em>Administrative MIS Data:</em> Updated annually or in real time (e.g., Saubhagya power connections, Jal Jeevan Mission taps); 2. <em>Sample Household Surveys:</em> Conducted only once every 3 to 5 years (e.g., National Family Health Survey / NFHS, NSO consumer expenditure surveys). Mixing rapid administrative logs with multi-year lagged health surveys distorts year-on-year performance rankings."
           ],
@@ -11220,12 +11220,12 @@
             "question": "In the NITI Aayog SDG Index methodology, how is a 'negative indicator' (such as Maternal Mortality Ratio or Stunting) normalized onto the 0\u2013100 scale?",
             "options": [
               "By multiplying the raw value by the national GDP growth rate.",
-              "Using the formula: $I = \\frac{x_{max} - x}{x_{max} - x_{min}} \\times 100$, so that lower mortality yields a score closer to 100.",
+              "Using the formula: \\(I = \\frac{x_{max} - x}{x_{max} - x_{min}} \\times 100\\), so that lower mortality yields a score closer to 100.",
               "By taking the natural logarithm of the raw value and dividing by 100.",
-              "Using the formula: $I = \\frac{x - x_{min}}{x_{max} - x_{min}} \\times 100$."
+              "Using the formula: \\(I = \\frac{x - x_{min}}{x_{max} - x_{min}} \\times 100\\)."
             ],
             "correct": 1,
-            "explanation": "For negative indicators where lower values represent better outcomes (like mortality or pollution), the numerator is inverted ($x_{max} - x$) so that reducing the negative outcome raises the normalized score toward 100."
+            "explanation": "For negative indicators where lower values represent better outcomes (like mortality or pollution), the numerator is inverted (\\(x_{max} - x\\)) so that reducing the negative outcome raises the normalized score toward 100."
           },
           "exam_questions": [
             {
@@ -11233,7 +11233,7 @@
               "section": "Section VI, Q3",
               "marks": "3 Marks",
               "question": "Describe the 5-step mathematical methodology formulated by NITI Aayog to compute the subnational SDG India Index. How are positive and negative indicators normalized?",
-              "answer_guideline": "<ul><li><strong>NITI Aayog 5-Step Methodology:</strong><ol><li><strong>Indicator Identification:</strong> Selects a robust set of national indicators (113 in recent reports) mapped to UN targets with available state-level data.</li><li><strong>Target Setting:</strong> Sets explicit quantitative benchmarks for 2030 (drawn from national policies or global UN benchmarks).</li><li><strong>Normalization (Min-Max Scaling):</strong> Rescales raw indicators to a standard 0\u2013100 range:<ul><li><em>Positive Indicators (higher is desirable, e.g., forest cover, literacy):</em> $$I = \\frac{x - x_{\\min}}{x_{\\max} - x_{\\min}} \\times 100$$</li><li><em>Negative Indicators (lower is desirable, e.g., infant mortality, poverty rate):</em> $$I = \\frac{x_{\\max} - x}{x_{\\max} - x_{\\min}} \\times 100$$</li></ul></li><li><strong>Goal Score Computation:</strong> Calculates the unweighted arithmetic mean of normalized indicator scores within each goal ($S_g = \\frac{1}{N_g} \\sum I_i$).</li><li><strong>Composite Index Calculation:</strong> Computes the arithmetic mean of all 16 Goal scores to produce a single composite score ($0\u2013100$) for each State and UT.</li></ol></li></ul>"
+              "answer_guideline": "<ul><li><strong>NITI Aayog 5-Step Methodology:</strong><ol><li><strong>Indicator Identification:</strong> Selects a robust set of national indicators (113 in recent reports) mapped to UN targets with available state-level data.</li><li><strong>Target Setting:</strong> Sets explicit quantitative benchmarks for 2030 (drawn from national policies or global UN benchmarks).</li><li><strong>Normalization (Min-Max Scaling):</strong> Rescales raw indicators to a standard 0\u2013100 range:<ul><li><em>Positive Indicators (higher is desirable, e.g., forest cover, literacy):</em> $\\(I = \\frac{x - x_{\\min}}{x_{\\max} - x_{\\min}} \\times 100\\)\\(</li><li><em>Negative Indicators (lower is desirable, e.g., infant mortality, poverty rate):</em>\\)\\(I = \\frac{x_{\\max} - x}{x_{\\max} - x_{\\min}} \\times 100\\)\\(</li></ul></li><li><strong>Goal Score Computation:</strong> Calculates the unweighted arithmetic mean of normalized indicator scores within each goal (\\)S_g = \\frac{1}{N_g} \\sum I_i\\().</li><li><strong>Composite Index Calculation:</strong> Computes the arithmetic mean of all 16 Goal scores to produce a single composite score ($0\u2013100\\)) for each State and UT.</li></ol></li></ul>"
             },
             {
               "paper": "High-Yield Syllabus Pattern",
@@ -11274,7 +11274,7 @@
           "key_facts": [
             "<strong>Slide 22 \u2014 Subnational Frontrunners:</strong> <em>States:</em> Kerala (leads SDG 1 No Poverty, SDG 3 Health, SDG 4 Education), Tamil Nadu (leads SDG 8 Decent Work, SDG 9 Industry), Himachal Pradesh (leads SDG 6 Water, SDG 15 Forests), Goa (leads SDG 7 Energy, SDG 11 Cities). <em>Union Territories:</em> Chandigarh (#1 UT overall).",
             "<strong>Slide 23 \u2014 Six Major Statistical Flaws of the Index:</strong> 1. <em>Incomplete Indicator Coverage:</em> Missing data in remote hill/tribal tracts; 2. <em>Different Periodicities:</em> Mixing annual MIS with 5-year surveys; 3. <em>One-Size-Fits-All Targets:</em> Identical targets ignore desert or Himalayan topographies; 4. <em>Data Quality & Consistency:</em> Unequal state statistical machinery; 5. <em>Ignored Local Context:</em> Regional crises (mining soil pollution, tribal land displacement) omitted; 6. <em>Over-Simplification:</em> Collapsing diverse realities into a single aggregate score masks acute intra-state inequalities.",
-            "<strong>Slide 24 \u2014 The 2023\u201324 Milestone (National Score 71):</strong> India's composite score progressed rapidly: <strong>57 (2018 baseline) $\\rightarrow$ 60 (2019\u201320) $\\rightarrow$ 66 (2020\u201321) $\\rightarrow$ 71 (2023\u201324)</strong>. 32 States and UTs now reside in the Front-Runner tier (65\u201399). 10 new Front-Runner entrants: Arunachal Pradesh, Assam, Chhattisgarh, MP, Manipur, Odisha, Rajasthan, UP, West Bengal, and Dadra & Nagar Haveli.",
+            "<strong>Slide 24 \u2014 The 2023\u201324 Milestone (National Score 71):</strong> India's composite score progressed rapidly: <strong>57 (2018 baseline) \u2192 60 (2019\u201320) \u2192 66 (2020\u201321) \u2192 71 (2023\u201324)</strong>. 32 States and UTs now reside in the Front-Runner tier (65\u201399). 10 new Front-Runner entrants: Arunachal Pradesh, Assam, Chhattisgarh, MP, Manipur, Odisha, Rajasthan, UP, West Bengal, and Dadra & Nagar Haveli.",
             "<strong>Slide 24 \u2014 State & UT Score Spread:</strong> State scores range from <strong>57 (Bihar)</strong> to <strong>79 (Uttarakhand & Kerala tied at #1)</strong>, followed by Tamil Nadu (78), Goa (77), and Himachal Pradesh (77). UT scores range from 65 (Ladakh) to 77 (Chandigarh).",
             "<strong>Slide 25 \u2014 Goal Triumphs vs. The Gender Alarm:</strong> <em>Top Goals:</em> <strong>SDG 7 (Clean Energy) leads the nation at 96</strong>; SDG 6 (Water) at 89; SDG 11 (Cities) at 83; SDG 12 (Consumption) at 78; SDG 3 (Health) at 77; SDG 1 (Poverty) at 72. <em>The Gender Alarm:</em> <strong>SDG 5 (Gender Equality) scored 49</strong>\u2014the sole goal in the entire country lingering in the red Aspirant band (0\u201349), crippled by low female labor force participation (~25-30%), wage gaps, unpaid domestic burdens, and skewed property ownership.",
             "<strong>Slide 26 & 27 \u2014 The Vanishing Red Zone:</strong> In 2023\u201324, <strong>exactly ZERO states or UTs remain in the Aspirant tier (0\u201349)</strong>, down from massive portions of the country in 2018. Only four states remain in the Performer tier (50\u201364): Bihar (57), Jharkhand (62), Meghalaya (63), and Nagaland (63). All other 24 states and 8 UTs are Front-Runners (65\u201399)."
@@ -11396,7 +11396,7 @@
             "<strong>Slide 32 \u2014 Landmark Indian Case Study (Solar vs. Great Indian Bustard):</strong> Utility-scale solar parks in the Thar desert of Rajasthan and Gujarat expanded clean solar energy, but thousands of kilometers of overhead high-voltage transmission lines intersect the flight paths of the critically endangered Great Indian Bustard (GIB, <100 individuals remaining). GIBs lack frontal vision and collide fatal with cables, prompting Supreme Court intervention mandating underground cabling; Large hydroelectric dams (SDG 7) submerge pristine forest river valleys and displace indigenous tribes (SDG 10).",
             "<strong>Slide 33 \u2014 The Poly-Crisis Horizon (10 Systemic Bottlenecks):</strong> 1. <em>Climate Change:</em> Escalating heatwaves, glacier retreat, and sea-level rise; 2. <em>Biodiversity Collapse:</em> 1 million species threatened with extinction; 3. <em>Unsustainable Consumption:</em> E-waste mountains and microplastic inundation; 4. <em>Energy Transition:</em> Rare-earth mineral shortages; 5. <em>Water Scarcity:</em> Aquifer depletion; 6. <em>Food Insecurity:</em> Soil degradation; 7. <em>Urban Pollution:</em> Severe PM2.5 spikes; 8. <em>Inequality Divide:</em> Extreme wealth concentration; 9. <em>Health Vulnerability:</em> Zoonotic pandemics; 10. <em>Geopolitical Fragmentation:</em> Weakening multilateral cooperation.",
             "<strong>Slide 34 \u2014 The Core Dilemma: Decoupling Growth from Ecological Destruction:</strong> Breaking the historical coupling where rising GDP mandates rising raw material extraction and rising pollution.",
-            "<strong>Slide 34 \u2014 Relative Decoupling vs. Absolute Decoupling:</strong><ol><li><strong>Relative Decoupling:</strong> Resource consumption or emissions continue to increase, but at a percentage rate slower than the rate of GDP growth ($0 < %\\Delta \\text{Resource} < %\\Delta \\text{GDP}$).</li><li><strong>Absolute Decoupling:</strong> Economic output (GDP) expands while absolute physical resource throughput and greenhouse emissions decline ($%\\Delta \\text{GDP} > 0$ while $\\%\\Delta \\text{Emissions} < 0$). Essential for true sustainability.</li></ol>",
+            "<strong>Slide 34 \u2014 Relative Decoupling vs. Absolute Decoupling:</strong><ol><li><strong>Relative Decoupling:</strong> Resource consumption or emissions continue to increase, but at a percentage rate slower than the rate of GDP growth ($0 < %\\Delta \\text{Resource} < %\\Delta \\text{GDP}\\().</li><li><strong>Absolute Decoupling:</strong> Economic output (GDP) expands while absolute physical resource throughput and greenhouse emissions decline (\\)%\\Delta \\text{GDP} > 0\\(while\\)\\%\\Delta \\text{Emissions} < 0$). Essential for true sustainability.</li></ol>",
             "<strong>Slide 34 \u2014 Critique of the Environmental Kuznets Curve (EKC):</strong> Neoclassical EKC posits that pollution first rises with GDP, peaks at an inflection point, and then naturally declines as a nation grows rich (inverted U-curve). <em>Why EKC Fails:</em> 1. Works only for visible, localized, reversible pollutants (SO2, urban smoke); 2. Fails completely for cumulative global pollutants (CO2, plastic waste); 3. Rich nations merely outsource dirty smelting and manufacturing to the Global South (carbon leakage), creating a false statistical illusion of domestic decoupling."
           ],
           "mental_model": "Relative decoupling is driving a gas-guzzling car 50% more miles while improving fuel efficiency by 10% (you still burn more total gasoline); absolute decoupling is switching entirely to a solar-powered electric car.",
@@ -11424,7 +11424,7 @@
               "section": "Section IV, Q(a)",
               "marks": "3 Marks",
               "question": "Differentiate between Relative Decoupling and Absolute Decoupling of economic growth from environmental degradation. Why does the Environmental Kuznets Curve (EKC) hypothesis break down for carbon dioxide emissions?",
-              "answer_guideline": "<ul><li><strong>Relative vs. Absolute Decoupling:</strong><ul><li><em>Relative Decoupling:</em> The resource intensity or emission intensity per unit of economic output declines, but aggregate physical resource consumption and emissions continue to grow in absolute terms because total economic volume expands faster than efficiency gains ($0 < \\%\\Delta \\text{Resource} < \\%\\Delta \\text{GDP}$).</li><li><em>Absolute Decoupling:</em> Total physical material extraction, energy throughput, and greenhouse gas emissions decrease in absolute volume even as real gross domestic product continues to grow ($\\Delta \\text{GDP} > 0$ and $\\Delta \\text{Emissions} < 0$).</li></ul></li><li><strong>Why Environmental Kuznets Curve (EKC) Fails for CO2:</strong><ol><li><em>Global & Cumulative Nature:</em> The EKC inverted-U curve only holds for local, immediately toxic, short-lived pollutants (such as urban smoke, SO2, or river sewage) where local citizens demand regulation. CO2 is a global, long-lived, invisible stock pollutant whose damages are geographically dispersed and delayed across decades.</li><li><em>Offshoring / Carbon Leakage:</em> Developed nations that appear to show decoupling achieved it largely by de-industrializing and importing carbon-embedded steel, electronics, and cement from developing countries like China and India.</li><li><em>Thermodynamic Scale Effects:</em> As per-capita incomes rise, consumer demand shifts toward energy-intensive air travel, oversized housing, and high electronics turnover, outpacing marginal thermodynamic efficiency gains.</li></ol></li></ul>"
+              "answer_guideline": "<ul><li><strong>Relative vs. Absolute Decoupling:</strong><ul><li><em>Relative Decoupling:</em> The resource intensity or emission intensity per unit of economic output declines, but aggregate physical resource consumption and emissions continue to grow in absolute terms because total economic volume expands faster than efficiency gains ($0 < \\%\\Delta \\text{Resource} < \\%\\Delta \\text{GDP}\\().</li><li><em>Absolute Decoupling:</em> Total physical material extraction, energy throughput, and greenhouse gas emissions decrease in absolute volume even as real gross domestic product continues to grow (\\)\\Delta \\text{GDP} > 0\\(and\\)\\Delta \\text{Emissions} < 0$).</li></ul></li><li><strong>Why Environmental Kuznets Curve (EKC) Fails for CO2:</strong><ol><li><em>Global & Cumulative Nature:</em> The EKC inverted-U curve only holds for local, immediately toxic, short-lived pollutants (such as urban smoke, SO2, or river sewage) where local citizens demand regulation. CO2 is a global, long-lived, invisible stock pollutant whose damages are geographically dispersed and delayed across decades.</li><li><em>Offshoring / Carbon Leakage:</em> Developed nations that appear to show decoupling achieved it largely by de-industrializing and importing carbon-embedded steel, electronics, and cement from developing countries like China and India.</li><li><em>Thermodynamic Scale Effects:</em> As per-capita incomes rise, consumer demand shifts toward energy-intensive air travel, oversized housing, and high electronics turnover, outpacing marginal thermodynamic efficiency gains.</li></ol></li></ul>"
             }
           ]
         },
@@ -11521,8 +11521,8 @@
           "title": "Natural Resource Asset Accounting (Water, Forest, Minerals)",
           "eli15_takeaway": "Asset accounting measures the opening volume of a resource, subtracts what humans extracted or destroyed, adds what regenerated, and shows the closing balance.",
           "bullets": [
-            "Physical Balance Equation: $\\text{Closing Stock} = \\text{Opening Stock} + \\text{Natural Growth} - \\text{Extraction} - \\text{Catastrophic Losses}$.",
-            "Forest Accounts: Total timber volume ($m^3$) and carbon stocks across forest canopy density classes.",
+            "Physical Balance Equation: \\(\\text{Closing Stock} = \\text{Opening Stock} + \\text{Natural Growth} - \\text{Extraction} - \\text{Catastrophic Losses}\\).",
+            "Forest Accounts: Total timber volume (\\(m^3\\)) and carbon stocks across forest canopy density classes.",
             "Water Accounts: Inflow (precipitation, river inflow) versus outflow (evapotranspiration, agricultural abstraction, industrial withdrawal)."
           ],
           "mental_model": "A warehouse inventory check: Count the pallets on Monday morning, subtract what trucks shipped out, add new factory deliveries, and see what is left on Friday.",
@@ -11535,7 +11535,7 @@
               "Measuring the speed of sound through water pipes"
             ],
             "correct_index": 0,
-            "explanation": "Physical asset accounts track physical quantities ($m^3$, tons, hectares) over time to ensure extraction rates do not exceed replenishment."
+            "explanation": "Physical asset accounts track physical quantities (\\(m^3\\), tons, hectares) over time to ensure extraction rates do not exceed replenishment."
           }
         },
         {
@@ -12570,8 +12570,8 @@
               "paper": "EST End Exam 2024",
               "section": "Section VI: Computational Problems",
               "marks": "5 Marks",
-              "question": "A tropical forest reserve experienced a net deforestation of 9.74 km\u00b2 over a 25-year period. Assuming an average standing biomass carbon density of 30 tC/ha, calculate: (a) Total carbon loss in tonnes; (b) Total CO2 equivalent released into the atmosphere; (c) The monetary value of the carbon lost under a carbon price scenario of US$ 10 / tCO2 and US$ 20 / tCO2.",
-              "answer_guideline": "<ol><li><strong>Convert area to hectares:</strong> <code>9.74 km\u00b2 \u00d7 100 ha/km\u00b2 = 974 ha</code>.</li><li><strong>Calculate total elemental carbon loss:</strong> <code>974 ha \u00d7 30 tC/ha = 29,220 tonnes C (tC)</code>.</li><li><strong>Convert elemental C to CO2 equivalent:</strong> Stoichiometric ratio <code>44 / 12 = 3.667</code>. <code>29,220 tC \u00d7 3.667 = 107,140 tonnes CO2 (tCO2)</code>.</li><li><strong>Calculate monetary valuation:</strong><ul><li>At US$ 10 / tCO2: <code>107,140 \u00d7 $10 = US$ 1,071,400</code> (~$1.07 Million).</li><li>At US$ 20 / tCO2: <code>107,140 \u00d7 $20 = US$ 2,142,800</code> (~$2.14 Million).</li></ul></li></ol>"
+              "question": "A tropical forest reserve experienced a net deforestation of 9.74 km\u00b2 over a 25-year period. Assuming an average standing biomass carbon density of 30 tC/ha, calculate: (a) Total carbon loss in tonnes; (b) Total CO2 equivalent released into the atmosphere; (c) The monetary value of the carbon lost under a carbon price scenario of US\\(10 / tCO2 and US\\) 20 / tCO2.",
+              "answer_guideline": "<ol><li><strong>Convert area to hectares:</strong> <code>9.74 km\u00b2 \u00d7 100 ha/km\u00b2 = 974 ha</code>.</li><li><strong>Calculate total elemental carbon loss:</strong> <code>974 ha \u00d7 30 tC/ha = 29,220 tonnes C (tC)</code>.</li><li><strong>Convert elemental C to CO2 equivalent:</strong> Stoichiometric ratio <code>44 / 12 = 3.667</code>. <code>29,220 tC \u00d7 3.667 = 107,140 tonnes CO2 (tCO2)</code>.</li><li><strong>Calculate monetary valuation:</strong><ul><li>At US\\(10 / tCO2: <code>107,140 \u00d7 $10 = US\\) 1,071,400</code> (~$1.07 Million).</li><li>At US\\(20 / tCO2: <code>107,140 \u00d7 $20 = US\\) 2,142,800</code> (~$2.14 Million).</li></ul></li></ol>"
             },
             {
               "paper": "EST End Exam 2022",
@@ -13680,7 +13680,7 @@
       "class_id": 2,
       "pillar": "Planetary Foundations & Human Pressures",
       "what_happened": "A thriving Polynesian society settled Easter Island ~300 AD with rich palm forests, fertile soils, and seabird colonies. Over centuries, they clear-cut every palm tree on the island for agriculture, timber, and rolling giant Moai stone statues. By 1722, the island was an eroded, treeless wasteland with starving tribal warfare.",
-      "root_cause": "Exceeding the carrying capacity ($K$) of an isolated island ecosystem: deforestation caused rapid topsoil erosion, destroying crop yields, while the loss of timber eliminated ocean canoes, cutting off deep-sea fishing.",
+      "root_cause": "Exceeding the carrying capacity (\\(K\\)) of an isolated island ecosystem: deforestation caused rapid topsoil erosion, destroying crop yields, while the loss of timber eliminated ocean canoes, cutting off deep-sea fishing.",
       "takeaway": "Earth is an isolated island in space. When resource consumption outpaces natural replenishment, civilizational collapse follows inevitably once ecological thresholds are crossed."
     },
     {
@@ -13716,7 +13716,7 @@
       "class_id": 5,
       "pillar": "Earth Observation & Biogeochemical Dynamics",
       "what_happened": "In Minamata City, Japan, cats began convulsing and falling into the sea, followed by hundreds of humans developing severe slurred speech, ataxia, involuntary tremors, and blindness. Babies were born with congenital cerebral palsy. Over 2,200 victims were officially certified and thousands died.",
-      "root_cause": "Chisso Corporation discharged industrial wastewater containing inorganic mercury into Minamata Bay. Anaerobic bacteria methylated it into lipid-soluble methylmercury ($CH_3Hg^+$), which biomagnified thousands of times up the food chain into fish consumed daily by local fishing families.",
+      "root_cause": "Chisso Corporation discharged industrial wastewater containing inorganic mercury into Minamata Bay. Anaerobic bacteria methylated it into lipid-soluble methylmercury (\\(CH_3Hg^+\\)), which biomagnified thousands of times up the food chain into fish consumed daily by local fishing families.",
       "takeaway": "Persistent chemical pollutants do not dilute harmlessly into the ocean; biological food webs actively concentrate toxic heavy metals, delivering lethal doses to apex predators and humans. Inspired the global Minamata Convention on Mercury (2013)."
     },
     {

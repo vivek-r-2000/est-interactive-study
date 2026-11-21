@@ -237,15 +237,15 @@
     },
     {
       "slide_num": 10,
-      "title": "Measuring Progress: The 0–100 SDG Index and the LNOB Mandate",
+      "title": "Measuring Progress: The 0\u2013100 SDG Index and the LNOB Mandate",
       "act": "Act 2: From MDGs to SDGs: The Universal Architecture",
       "continuity_bridge": "Writing down 169 targets is useless without a rigorous grading system; the SDG Index converts complex raw metrics into a standardized report card.",
       "eli15_takeaway": "The SDG Index scores a region from 0 to 100 on how close it is to hitting its 2030 targets, guided by one golden rule: nobody gets left behind.",
       "key_facts": [
         "Standardized metric: Rescales diverse raw indicators onto a uniform scale from 0 (worst) to 100 (target achieved).",
-        "Aspirant (0–49): Severe performance deficits; requires immediate, accelerated intervention.",
-        "Performer (50–64): Meaningful initial progress, but far behind the trajectory needed for 2030.",
-        "Front-Runner (65–99): Strong progress; within striking distance of the final benchmark.",
+        "Aspirant (0\u201349): Severe performance deficits; requires immediate, accelerated intervention.",
+        "Performer (50\u201364): Meaningful initial progress, but far behind the trajectory needed for 2030.",
+        "Front-Runner (65\u201399): Strong progress; within striking distance of the final benchmark.",
         "Achiever (100): The specific 2030 target has been fully met.",
         "Anchored by the United Nations principle 'Leave No One Behind' (LNOB), mirrored in India by the national motto 'Sabka Saath, Sabka Vikas'."
       ],
@@ -455,7 +455,7 @@
       "key_facts": [
         "Step 01 - Raw Data Compilation: Gathers hard data from central ministries and surveys, auditing records to detect and handle missing data points.",
         "Step 02 - Target Setting: Defines an absolute 2030 national target value for each indicator based on UN declarations or national policy mandates.",
-        "Step 03 - Normalisation: Converts raw indicator metrics onto a uniform 0–100 scale using min-max scaling to represent the percentage distance achieved toward the target.",
+        "Step 03 - Normalisation: Converts raw indicator metrics onto a uniform 0\u2013100 scale using min-max scaling to represent the percentage distance achieved toward the target.",
         "Step 04 - Goal Score: Calculates the simple arithmetic mean of all normalized indicator scores nested under that specific SDG.",
         "Step 05 - Composite SDG Score: Averages all individual Goal Scores together with equal weighting to produce the state or national master index score."
       ],
@@ -586,7 +586,7 @@
     },
     {
       "slide_num": 24,
-      "title": "The 2023–24 Milestone: India Reaches a Score of 71",
+      "title": "The 2023\u201324 Milestone: India Reaches a Score of 71",
       "act": "Act 4: India's Subnational Scorecard & Spatial Reality",
       "continuity_bridge": "Despite those statistical flaws, looking at the long-term trend line confirms measurable national improvement: India has steadily increased its overall index score since 2018.",
       "eli15_takeaway": "India lifted its national score from 57 in 2018 up to 71 in 2024, graduating 32 states and union territories into the Front-Runner green zone.",
@@ -620,7 +620,7 @@
       "key_facts": [
         "Top performing goals (Front-Runner tier): SDG 7 Clean Energy leads at 96; SDG 6 Clean Water at 89; SDG 11 Sustainable Cities at 83; SDG 12 Responsible Consumption at 78; SDG 3 Good Health at 77; SDG 15 Life on Land at 75; SDG 16 Peace and Institutions at 74; SDG 1 No Poverty at 72; SDG 8 Decent Work at 68; SDG 13 Climate Action at 67; SDG 10 Reduced Inequality at 65.",
         "Moderate progress (Performer tier): SDG 4 Education at 61; SDG 9 Industry & Infrastructure at 61; SDG 2 Zero Hunger at 52.",
-        "Critical warning (Aspirant tier): SDG 5 Gender Equality scored 49—the sole goal in the entire country lingering in the red Aspirant band (0–49).",
+        "Critical warning (Aspirant tier): SDG 5 Gender Equality scored 49\u2014the sole goal in the entire country lingering in the red Aspirant band (0\u201349).",
         "Gender deficits: Driven by low female labor-force participation, wage gaps, property ownership limits, and uneven political representation."
       ],
       "mental_model": "An athlete with muscular legs and strong lungs who cannot win a race because their left foot has a painful, untreated fracture.",
@@ -668,9 +668,9 @@
       "continuity_bridge": "When we map these league table scores onto the geography of India, the spatial spread shows how green Front-Runner status expanded across the subcontinent.",
       "eli15_takeaway": "Green Front-Runner status now covers almost the entire map of India; zero states remain in the red zone, leaving just four states in yellow.",
       "key_facts": [
-        "Front-Runner (green, 65–99): Dominates almost the entire geographical area of India, including northern, western, southern, and central states.",
-        "Performer (yellow, 50–64): Confined to exactly four states: Bihar (57), Jharkhand (62), Meghalaya (63), and Nagaland (63).",
-        "Aspirant (red, 0–49): Exactly zero states or UTs remain in this bottom category in 2023-24, down from significant portions of the country in 2018.",
+        "Front-Runner (green, 65\u201399): Dominates almost the entire geographical area of India, including northern, western, southern, and central states.",
+        "Performer (yellow, 50\u201364): Confined to exactly four states: Bihar (57), Jharkhand (62), Meghalaya (63), and Nagaland (63).",
+        "Aspirant (red, 0\u201349): Exactly zero states or UTs remain in this bottom category in 2023-24, down from significant portions of the country in 2018.",
         "Achiever (blue, 100): Zero states have achieved a composite score of 100, though many states achieved 100 on individual goals (such as SDG 7).",
         "Geographic concentration: Development deficits are now tightly clustered in specific eastern and north-eastern pockets."
       ],
