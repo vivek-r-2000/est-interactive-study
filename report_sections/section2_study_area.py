@@ -1,33 +1,36 @@
 """
-section2_study_area.py - Section 2: Study Area and Paleoenvironmental Setting (600–750 words)
-Geographic boundaries, physiographic provinces, deglacial terrain, hydroclimate, and topographic corridors.
+section2_study_area.py
+Section 2 (Study Area and Paleoenvironmental Setting) for Course ES1.101 Project 25 Report.
 """
 
 STUDY_AREA_PARAGRAPHS = [
     (
-        "The study region encompasses Eastern and Upper Midwestern North America, bounded between latitudes 34° N and 52° N and longitudes 100° W and 60° W (Figure 1). "
-        "This domain spans approximately 4.2 million square kilometres across the United States and eastern Canada, encompassing four major physiographic divisions: the Atlantic and Gulf Coastal Plains, the Appalachian Highlands extending from northern Georgia to the Gaspé Peninsula, the Interior Lowlands and Great Lakes basin, and the southern margin of the Canadian Shield (Shuman and Marsicek 2016). "
-        "Elevations range from sea level along the Atlantic coast to 2,037 m above sea level at Mount Mitchell in the Blue Ridge Mountains and 1,917 m at Mount Washington in the White Mountains. "
-        "This topographic relief created steep microclimatic gradients and localized thermal refugia that persisted throughout late-Pleistocene glacial cycles (Gavin et al. 2014)."
+        "Our study region covers Eastern and Upper Midwestern North America, bounded between latitudes 34° N and 52° N and longitudes 100° W and 60° W (Figure 1). "
+        "This area spans approximately 4.2 million square kilometres across the United States and eastern Canada. "
+        "It includes four major landform divisions: the Atlantic and Gulf Coastal Plains, the Appalachian Highlands stretching from northern Georgia to the Gaspé Peninsula, the Interior Lowlands and Great Lakes basin, and the southern edge of the Canadian Shield (Shuman and Marsicek 2016). "
+        "Elevations range from sea level along the Atlantic coast to 2,037 m at Mount Mitchell in the Blue Ridge Mountains and 1,917 m at Mount Washington in the White Mountains. "
+        "This steep topography created localized microclimates and protected mountain valleys that served as thermal refugia for plant species during late-Pleistocene glacial cycles (Gavin et al. 2014)."
     ),
     (
-        "During the Last Glacial Maximum (~21,000 cal yr BP), the continental Laurentide Ice Sheet extended southward into the northern United States, terminating along a lobate margin reaching approximately 39°–41° N from New Jersey to Illinois and Wisconsin (Dyke et al. 2003; Shuman et al. 2002). "
-        "South of the glacial limit, tundra and open spruce parklands occupied the periglacial zone, while mixed conifer-hardwood and temperate deciduous taxa were restricted to refugial pockets across the unglaciated interior, the Cumberland Plateau, and the Gulf Coastal Plain (Davis 1981; Jackson and Overpeck 2000; Williams et al. 2004). "
-        "Rapid ice retreat initiated after 17,000 cal yr BP and accelerated during the Bølling–Allerød warming (~14.7–12.9 ka BP), exposing millions of square kilometres of crushed bedrock and glacial till (Dyke et al. 2003; Liu et al. 2009). "
-        "Freshwater melt formed extensive proglacial lakes—including Lake Agassiz and Lake Algonquin—which evolved into the modern Laurentian Great Lakes (Dyke et al. 2003; Shuman and Marsicek 2016). "
-        "These water bodies presented physical dispersal barriers to terrestrial plant propagules while creating maritime-like microclimates that buffered shoreline habitats against extreme seasonal temperature swings."
+        "During the Last Glacial Maximum (~21,000 cal yr BP), the continental Laurentide Ice Sheet pushed south into the northern United States, reaching its southern limit around 39°–41° N from New Jersey out through Illinois and Wisconsin (Dyke et al. 2003; Shuman et al. 2002). "
+        "South of this ice margin, tundra and open spruce parklands grew across the periglacial zone, while mixed conifer-hardwood and temperate deciduous trees survived in scattered refugia across the unglaciated interior, the Cumberland Plateau, and the Gulf Coastal Plain (Davis 1981; Jackson and Overpeck 2000; Williams et al. 2004). "
+        "Ice retreat began after 17,000 cal yr BP and accelerated rapidly during the Bølling–Allerød warming (~14.7–12.9 ka BP), exposing millions of square kilometres of crushed bedrock and bare glacial till (Dyke et al. 2003; Liu et al. 2009). "
+        "Vast volumes of glacial meltwater formed large proglacial lakes, including Lake Agassiz and Lake Algonquin, which eventually shaped the modern Great Lakes (Dyke et al. 2003; Shuman and Marsicek 2016). "
+        "These massive water bodies acted as physical barriers to dispersing seeds while creating lake-effect microclimates that moderated seasonal temperature swings along nearby shores."
     ),
     (
-        "Climatically, the study domain transitions across strong meridional and zonal gradients. "
-        "In the modern baseline, mean annual temperatures range from -2 °C along the southern Canadian Shield to +18 °C in the southeastern coastal plain, representing a regional spatial temperature gradient of approximately 0.0121 °C per kilometre southward (Loarie et al. 2009). "
-        "Precipitation varies from 750 mm/yr along the western prairie-forest ecotone to over 1,600 mm/yr along the humid Appalachian ridges (Shuman and Marsicek 2016). "
-        "During early deglaciation, the lingering Laurentide Ice Sheet diverted moisture-bearing storm tracks and maintained steep thermal contrasts between ice-adjacent boreal zones and unglaciated southern valleys (Liu et al. 2009; He et al. 2013). "
-        "Furthermore, orbital variations during early deglaciation increased summer insolation while reducing winter insolation, producing seasonal thermal contrasts 4–8 °C greater than present (Williams et al. 2004)."
+        "From north to south and east to west, our study domain spans steep climatic gradients. "
+        "Under modern conditions, mean annual temperatures range from -2 °C along the southern Canadian Shield to +18 °C across the southeastern coastal plain, representing a regional temperature gradient of about 0.0121 °C per kilometre southward (Loarie et al. 2009). "
+        "Mean annual precipitation ranges from 750 mm/yr along the western prairie-forest border to more than 1,600 mm/yr along the humid Appalachian ridges (Shuman and Marsicek 2016). "
+        "During the early postglacial period, the lingering ice sheet altered regional wind patterns and storm tracks, maintaining sharp temperature contrasts between cold, ice-adjacent boreal zones and warmer southern valleys (Liu et al. 2009; He et al. 2013). "
+        "In addition, orbital changes during early deglaciation increased summer solar radiation and reduced winter radiation, producing seasonal temperature swings 4–8 °C wider than those observed today (Williams et al. 2004)."
     ),
     (
-        "Edaphic and topographic heterogeneity across the corridor exerted direct control on postglacial vegetation establishment (Davis 1981; Clark et al. 1998). "
-        "Glaciated northern soils developed on primary, unweathered till characterized by low nitrogen availability and coarse texture, requiring centuries of primary succession and nitrogen fixation by pioneer taxa (such as Alnus and Dryas) before canopy hardwoods could establish (Davis 1981). "
-        "In contrast, unglaciated southern soils across the Appalachian plateaus and Ohio River basin consisted of deep, weathered alfisols that retained moisture and nutrients (Gavin et al. 2014). "
-        "The Appalachian Mountain chains and the dendritic drainage networks of the Mississippi, Ohio, and Susquehanna river systems functioned as primary physical conduits for plant migration, steering expanding populations along moisture-retaining river valleys while deflecting seed dispersal away from high-elevation ridgelines (Blois et al. 2013)."
+        "Soil development and local landforms strongly influenced where trees could take root following deglaciation (Davis 1981; Clark et al. 1998). "
+        "In the north, glaciated soils formed on fresh, unweathered till that lacked nitrogen and had coarse, rocky textures. "
+        "This substrate required centuries of primary succession and nitrogen-fixing pioneer plants (such as Alnus and Dryas) before canopy hardwoods could establish (Davis 1981). "
+        "In contrast, unglaciated soils south of the ice sheet across the Appalachian plateaus and Ohio River basin were deep, weathered alfisols with good nutrient and moisture retention (Gavin et al. 2014). "
+        "The Appalachian Mountain chain and the river networks of the Mississippi, Ohio, and Susquehanna acted as natural corridors for migrating plants. "
+        "These river valleys provided moist pathways that guided expanding populations northward while deflecting dispersal away from exposed, high-elevation ridges (Blois et al. 2013)."
     )
 ]

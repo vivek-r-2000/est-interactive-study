@@ -1,118 +1,115 @@
 """
-section5_discussion.py - Section 5: Discussion (1,700–1,850 words)
-Deep ecological, physiological, and methodological discussion separate from results.
-Contextualizes findings with global and regional literature, biophysical mechanisms,
-and conservation policy.
+section5_discussion.py
+Section 5 (Discussion) for Course ES1.101 Project 25 Report.
 """
 
 DISCUSSION_PARAGRAPHS = {
     "5.1": [
         (
-            "Our finding that late-Quaternary tree genera exhibited response lags spanning 750 to 2,500 years (Figure 3, Table 2) resolves long-standing debates regarding the degree of climatic equilibrium in postglacial forests (Webb 1986; Prentice et al. 1991; Svenning and Skov 2007; Knight et al. 2020). "
-            "Classical palynological models frequently presumed that vegetation tracked macroclimatic shifts with negligible delays, asserting that fossil pollen diagrams directly documented prevailing climate states (Prentice et al. 1991). "
-            "Our detrended cross-correlation analysis, verified against 1,000 Ebisuzaki phase-randomized surrogate series, demonstrates statistically significant taxonomic differentiation in response speed (H = 30.54, p = 0.0023). "
-            "This empirical speed hierarchy is governed by three fundamental biophysical bottlenecks: reproductive life-history traits, pedogenic soil development, and canopy microclimatic inertia."
+            "Our finding that late-Quaternary tree genera showed response lags ranging from 750 to 2,500 years (Figure 3, Table 2) helps resolve long-standing debates about whether postglacial forests were in equilibrium with climate (Webb 1986; Prentice et al. 1991; Svenning and Skov 2007; Knight et al. 2020). "
+            "Classical palynological models often assumed that vegetation tracked climate shifts with minimal delay, treating fossil pollen diagrams as direct records of prevailing regional temperatures (Prentice et al. 1991). "
+            "Our detrended cross-correlation analysis, tested against 1,000 Ebisuzaki phase-randomized surrogate series, shows clear and statistically significant differences in response speed across genera (H = 30.54, p = 0.0023). "
+            "This speed hierarchy can be explained by three main biological bottlenecks: reproductive life-history traits, slow soil development, and canopy microclimatic inertia."
         ),
         (
-            "First, reproductive life-history traits dictate intrinsic population growth and dispersal capacities (Clark et al. 1998; Aitken and Bemmels 2016). "
-            "Pioneer taxa like Larix laricina achieve reproductive maturity within 10 to 15 years, produce abundant, light, wind-dispersed winged seeds capable of traveling hundreds of metres, and tolerate saturated, nitrogen-poor mineral soils, explaining their rapid 750-year response time (Table 2). "
-            "In contrast, mid-successional and climax hardwoods (Quercus, Carya, Fagus) require 20 to 40 years to reach full reproductive maturity and exhibit intermittent masting cycles where heavy nut crops occur only once every 3 to 7 years (Clark et al. 1998; Corlett and Westcott 2013). "
-            "Furthermore, their heavy seeds possess physical ballistic drop shadows restricted to 15–30 m from parent stems, relying entirely on scatter-hoarding rodents and birds—such as the blue jay (Cyanocitta cristata) and the extinct passenger pigeon (Ectopistes migratorius)—for rare long-distance jump-dispersal events (Clark 1998; McLachlan et al. 2005). "
-            "These reproductive constraints impose multi-century delays before expanding populations can achieve high local pollen densities."
+            "First, reproductive life-history traits set the basic pace of population expansion and seed dispersal (Clark et al. 1998; Aitken and Bemmels 2016). "
+            "Pioneer species like tamarack (Larix laricina) reach reproductive age within 10 to 15 years, produce abundant, lightweight, wind-blown seeds that can travel hundreds of metres, and readily colonize cold, nitrogen-poor mineral soils. These traits explain their rapid 750-year response time (Table 2). "
+            "In contrast, mid-successional and climax hardwoods (Quercus, Carya, Fagus) take 20 to 40 years to produce full seed crops and experience boom-and-bust masting cycles where heavy nut crops only appear every 3 to 7 years (Clark et al. 1998; Corlett and Westcott 2013). "
+            "Their heavy seeds simply fall within 15–30 m of the parent tree, so they rely almost entirely on scatter-hoarding rodents and birds (such as the blue jay, Cyanocitta cristata, and the extinct passenger pigeon, Ectopistes migratorius) to carry them longer distances (Clark 1998; McLachlan et al. 2005). "
+            "These reproductive limits mean expanding hardwood populations require several centuries to build up dense regional stands."
         ),
         (
-            "Second, postglacial edaphic succession created a substantial pedogenic bottleneck (Davis 1981). "
-            "As the Laurentide Ice Sheet retreated, newly exposed landscapes consisted of raw, unweathered till, outwash gravels, and barren bedrock devoid of organic nitrogen and mycorrhizal networks (Dyke et al. 2003). "
-            "Demanding, shade-tolerant climax taxa like Fagus grandifolia and Acer saccharum cannot establish on raw mineral till; they require mature, deep forest alfisols with developed organic horizons (Davis 1981). "
-            "Building fertile forest topsoils required centuries of chemical weathering, organic accumulation, and biological nitrogen fixation by pioneer plants such as Alnus incana and Dryas species (Davis 1981; Shuman and Marsicek 2016). "
-            "Consequently, even when regional macrotemperatures became thermally suitable for American beech or sugar maple, establishment was delayed by centuries until soil development matured."
+            "Second, postglacial soil development created a significant physical bottleneck (Davis 1981). "
+            "As the Laurentide Ice Sheet melted, the newly exposed land consisted of crushed till, gravel outwash, and bare bedrock that contained almost no organic matter, nitrogen, or established mycorrhizal networks (Dyke et al. 2003). "
+            "Demanding, shade-tolerant climax trees like American beech (Fagus grandifolia) and sugar maple (Acer saccharum) cannot take root on bare mineral gravel; they require deep, mature forest alfisols with rich organic topsoil (Davis 1981). "
+            "Building fertile forest soils required centuries of weathering, leaf litter accumulation, and biological nitrogen fixation by early colonizers like speckled alder (Alnus incana) and mountain avens (Dryas) (Davis 1981; Shuman and Marsicek 2016). "
+            "Even after regional temperatures became warm enough for beech or maple, these trees could not establish successfully until local soils matured."
         ),
         (
-            "Third, established adult forest canopies exerted powerful microclimatic and competitive inertia (Svenning and Skov 2007; Knight et al. 2020). "
-            "Mature boreal conifers like Picea and Pinus banksiana form dense canopies that shade the forest floor, acidify topsoils, and depress understory summer temperatures by 2–5 °C through dense canopy buffering (Svenning and Skov 2007). "
-            "Even when macroclimate warmed, established conifer canopies prevented incoming temperate hardwood seedlings from intercepting light and outcompeting resident adults. "
-            "Hardwood invasion could proceed only after canopy gaps were opened by senescence, windthrow, or wildfire (Davis 1981; Gill et al. 2009). "
-            "This explains the pronounced polarity asymmetry observed in our results: cold-adapted Picea underwent rapid collapse (mean r = -0.637; 78% significant) because thermal stress exceeded physiological adult tolerances, whereas warm-adapted Quercus and Fagus expanded slowly (mean r = +0.248 and +0.158) because population growth was gated by dispersal shadows and competitive replacement."
+            "Third, established adult forest canopies created strong microclimatic and competitive inertia (Svenning and Skov 2007; Knight et al. 2020). "
+            "Mature boreal conifers like spruce (Picea) and jack pine (Pinus banksiana) form dense, closed canopies that shade the forest floor, acidify topsoils, and lower summer soil temperatures by 2–5 °C through local canopy buffering (Svenning and Skov 2007). "
+            "Even when macroclimate warmed, existing conifer stands blocked light and prevented incoming hardwood seedlings from outcompeting established trees. "
+            "Hardwood invasion could only take place after canopy gaps opened through old-age mortality, windthrow, or wildfire (Davis 1981; Gill et al. 2009). "
+            "This mechanism explains the clear difference in response direction we observed: cold-adapted Picea collapsed quickly (mean r = -0.637; 78% significant) because heat stress exceeded adult survival limits, whereas warm-adapted Quercus and Fagus expanded slowly (mean r = +0.248 and +0.158) because their growth was limited by seed dispersal and competitive replacement."
         )
     ],
     "5.2": [
         (
-            "The emergence of extensive no-analogue forest communities during early deglaciation—peaking at 79.0% at 14.5 ka BP and persisting through the Younger Dryas (Figure 4)—confirms that past climate shifts recombined existing species into novel functional assemblages rather than displacing static biomes intact (Williams et al. 2001, 2004; Gill et al. 2009). "
-            "Our per-taxon Squared Chord Distance (SCD) decomposition directly reveals that this novelty was driven primarily by co-occurring mixtures of Quercus (0.0192 deglacial SCD), Alnus (0.0164), Betula (0.0161), Populus (0.0139), and Picea (0.0112) (Table 3). "
-            "Such assemblages—where temperate oaks and poplars shared regional canopy space with boreal spruce and alder—have no counterpart in the modern vegetation of North America."
+            "The rise of extensive no-analogue forest communities during early deglaciation, which peaked at 79.0% at 14.5 ka BP and persisted through the Younger Dryas (Figure 4), shows that past climate shifts shuffled species into new combinations rather than moving whole forest biomes northward intact (Williams et al. 2001, 2004; Gill et al. 2009). "
+            "Our taxon-level Squared Chord Distance (SCD) decomposition shows that this novelty was driven primarily by unusual mixtures of Quercus (0.0192 deglacial SCD), Alnus (0.0164), Betula (0.0142), Populus (0.0095), and Picea (0.0088) (Table 3). "
+            "These mixtures, in which temperate oaks and poplars grew right alongside boreal spruce and alder, have no modern equivalent in North America."
         ),
         (
-            "Our findings provide strong support for the climatic seasonality hypothesis as the primary driver of late-glacial community novelty (Overpeck et al. 1992; Williams et al. 2001, 2004). "
-            "During the late-glacial period, orbital geometry produced a perihelion alignment in Northern Hemisphere summer, driving extreme summer insolation while winter insolation was reduced (Williams et al. 2004). "
-            "In our TraCE-21ka extraction, mean annual temperature at 14.5 ka BP was -9.5 °C, but this encompassed an extreme seasonal amplitude of 32.6 °C: winter temperatures averaged -27.4 °C, while summer temperatures reached +5.2 °C (Liu et al. 2009). "
-            "This non-analogue thermal regime allowed species with contrasting ecological requirements to coexist: intense winter freezing excluded freezing-intolerant broadleaf competitors and favored boreal conifers, while warm, long summer days provided sufficient growing degree-days for temperate deciduous hardwoods (Quercus, Fraxinus) to mature viable seeds (Williams et al. 2004)."
+            "Our results strongly support the climatic seasonality hypothesis as the main cause of late-glacial novel forests (Overpeck et al. 1992; Williams et al. 2001, 2004). "
+            "During the late-glacial transition (15.0–12.0 ka BP), changes in Earth's orbit created extreme seasonal insolation contrast, producing winter-to-summer temperature ranges exceeding 32.6 °C in the TraCE-21ka simulation. "
+            "This extreme seasonality allowed cold-tolerant boreal trees like Picea and Larix to survive freezing winters, while long, hot summers allowed temperate hardwoods like Quercus and Fraxinus to thrive within the same regional forests (Williams et al. 2004). "
+            "The temporal peak in community novelty (79.0% at 14.5 ka BP) coincided directly with the maximum rate of deglacial temperature change (|dT/dt| = 0.44 °C/century) and peak Hellinger turnover, confirming that novel assemblages formed when rapid climate warming drove species out of equilibrium (Figures 2, 4)."
         ),
         (
-            "Furthermore, our results illuminate the role of hydroclimatic decoupling. "
-            "While regional temperature surged by over 7 °C between 14.75 and 12.9 ka BP, TraCE-21ka precipitation remained suppressed at 2.22–2.24 mm/day, creating an anomalous regime of high summer temperatures paired with severe soil moisture deficits (Figure 2). "
-            "This moisture limitation favored drought-tolerant scrub oaks and poplars over mesic hardwoods like Fagus and Tsuga. "
-            "Our data also align with the ecological release hypothesis proposed by Gill et al. (2009). "
-            "The catastrophic extinction of Late-Pleistocene megaherbivores between 14.5 and 13.5 ka BP eliminated heavy browsing pressure on palatable hardwoods like Fraxinus, Quercus, and Populus, allowing them to proliferate into dense thickets alongside unbrowsed Picea before increased wildfire activity and early Holocene climatic stabilization dissolved these transient mixtures."
+            "Our findings also highlight the decoupling between moisture and temperature during deglaciation. "
+            "While regional temperatures jumped by over 7 °C between 15.0 and 12.0 ka BP, TraCE-21ka records show that precipitation increased by only 6.1% (from 2.45 to 2.60 mm/day). "
+            "This created an unusual cold-dry to warm-dry climate regime across the interior lowlands that does not exist in modern Eastern North America (Liu et al. 2009; Shuman and Marsicek 2016). "
+            "Although the extinction of late-Pleistocene megaherbivores around 12.8 ka BP removed heavy browsing pressure and likely contributed to local shifts in fire and plant density (Gill et al. 2009), the fact that no-analogue communities had already reached 79.0% by 14.5 ka BP demonstrates that novel climates, rather than animal loss alone, were the primary trigger for novel forests."
         ),
         (
-            "Once postglacial climate seasonality moderated and Holocene rainfall increased after 11.7 ka BP, no-analogue prevalence declined smoothly, reaching an 8.0% pre-colonial baseline at 500 BP (Figure 4). "
-            "This low baseline demonstrates the vital importance of our TRSH-only taxonomic filtering protocol. "
-            "In previous analyses that included herbaceous pollen, post-colonial agricultural land clearance created massive weed pollen spikes (Ambrosia, Poaceae) that falsely inflated modern dissimilarity against pre-industrial sediments (Williams et al. 2004). "
-            "By isolating woody taxa, we demonstrate that pre-industrial late-Holocene forests were ecologically stable and taxonomically comparable to modern unfragmented forests."
+            "Once seasonal temperature extremes softened and Holocene rainfall increased after 11.7 ka BP, no-analogue community prevalence dropped steadily from 56.4% at 11.5 ka BP to an 8.0% pre-colonial baseline by 500 BP (Figure 4, Table 3). "
+            "This decline took place because temperate broadleaf hardwoods outcompeted light-demanding boreal conifers once summer insolation dropped and growing seasons stabilized (Williams et al. 2004). "
+            "By 6.0 ka BP, modern deciduous forest zonation was fully established across Eastern North America."
         )
     ],
     "5.3": [
         (
-            "Our empirical 2D migration velocities—ranging from 116.9 m/yr in Tsuga to 277.0 m/yr in Carya, with a multi-genus median of 169.6 m/yr (Figure 5, Table 4)—provide a realistic, data-driven resolution to Reid's paradox (Clark et al. 1998; Feurdean et al. 2013). "
-            "Earlier 20th-century studies reporting postglacial migration rates exceeding 500 to 1,000 m/yr relied on one-dimensional meridional models assuming uniform northward marches from southern refugia (Davis 1981; Clark et al. 1998). "
-            "Recent molecular phylogeography and high-precision radiocarbon dating have established that those inflated estimates resulted from unrecognised northern microrefugia surviving in protected river ravines near the ice margin (McLachlan et al. 2005; Gavin et al. 2014; Parducci et al. 2017). "
-            "When expansion is measured from local arrival isochrones on equal-area projections and gated by planar regression significance (p_2d <= 0.05), true population front velocities do not exceed 300 m/yr."
+            "Our empirical 2D migration speeds, which ranged from 116.9 m/yr in Tsuga to 277.0 m/yr in Carya with a median of 169.6 m/yr (Figure 5, Table 4), offer a realistic, data-backed answer to Reid's paradox (Clark et al. 1998; Feurdean et al. 2013). "
+            "Early palynological estimates that suggested trees moved at 500 to 1,000 m/yr were often inflated because they assumed straight northward migration, used low pollen thresholds that mistook wind-blown pollen for local trees, or overlooked northern microrefugia (McLachlan et al. 2005; Gavin et al. 2014). "
+            "By mapping arrival times across two dimensions, applying strict 20% peak abundance thresholds, and requiring planar regression models to pass statistical tests (p <= 0.05), our analysis filters out background pollen and identifies actual geographic expansion fronts. "
+            "Our median speed of 169.6 m/yr aligns well with modern biological dispersal models that incorporate rare long-distance animal dispersal events without requiring unrealistic jump distances (Clark 1998; Nathan et al. 2008)."
         ),
         (
-            "Furthermore, our 2D spatial maps demonstrate that postglacial dispersal was strongly steered by topography and hydrography (Figure 5). "
-            "Carya migrated at 277.0 m/yr along an azimuth of 65.0° (ENE), channeling along the broad, fertile valleys of the Mississippi, Ohio, and Kanawha rivers toward the Atlantic seaboard (Blois et al. 2013). "
-            "Alnus advanced at 264.6 m/yr along an azimuth of 308.2° (WNW), tracking proglacial wetland margins and the northern Great Lakes shoreline. "
-            "Fagus (169.6 m/yr) and Tsuga (116.9 m/yr) advanced northward along nearly parallel tracks (azimuth ~344° NNW), following the continuous humid microclimates of the Appalachian mountain chain. "
-            "Only pioneer Larix (124.0 m/yr) followed a true northward meridian (azimuth 1.2° N), directly tracking the melting margin of the Laurentide ice sheet."
+            "Our 2D maps also show that postglacial tree migration was strongly shaped by regional landforms and river networks (Figure 5). "
+            "Carya achieved the fastest hardwood speed (277.0 m/yr, local maximum 296 m/yr) along an east-northeast path (azimuth 65.0° ENE), expanding along warm, moist river corridors of the Mississippi and Ohio basins before entering the Mid-Atlantic. "
+            "Alnus moved west-northwest (264.6 m/yr, azimuth 308.2° WNW) from coastal New England across the northern Great Lakes, using damp shorelines for rapid colonization. "
+            "In contrast, American beech (169.6 m/yr) and eastern hemlock (116.9 m/yr) advanced along nearly parallel tracks (azimuth ~344° NNW), closely tracking the moist, continuous slopes of the Appalachian Mountains. "
+            "These results demonstrate that trees did not move in simple straight lines; instead, they followed specific terrain and river corridors that provided moisture and shelter."
         ),
         (
-            "Comparing these empirical velocities against climate velocities exposes the magnitude of the modern velocity deficit (Figure 6, Table 6). "
-            "During late-glacial deglaciation, median climate velocity across Eastern North America was 28.2 m/yr, well within the dispersal capacity of all tree taxa (Table 6). "
-            "However, during abrupt warming pulses—such as the exit from the Younger Dryas (0.401 °C/century)—95th-percentile deglacial climate velocity spiked to 332.1 m/yr, surpassing the empirical migration ceilings of all five tree genera (116.9–277.0 m/yr). "
-            "It was precisely during these abrupt velocity spikes that tree species fell out of sync with climate, generating the 1,500-year response lags and triggering peak no-analogue communities (Figures 2, 4)."
+            "Comparing these tree speeds to past climate velocities shows when and why forests fell behind changing climates (Figure 6, Table 6). "
+            "During general deglaciation, the median climate velocity across Eastern North America was 28.2 m/yr, which was well within the dispersal capacity of all tree genera (Table 6). "
+            "However, during abrupt warming pulses, such as the exit from the Younger Dryas (0.401 °C/century), the 95th-percentile climate velocity jumped to 332.1 m/yr. "
+            "This rate exceeded the empirical migration ceiling of every tree genus in our study (116.9–277.0 m/yr). "
+            "It was during these sudden warming spikes that trees lagged behind climate, producing multi-century response delays and giving rise to peak no-analogue forests (Figures 2, 4)."
         ),
         (
-            "Under contemporary anthropogenic climate change, the velocity challenge is an order of magnitude more severe. "
-            "Dividing projected 21st-century warming (1.9 °C/century; IPCC 2021) by the regional thermal gradient (-0.01207 °C/km) yields an unprecedented contemporary climate-zone velocity of 1,573.8 m/yr (Figure 6). "
-            "This required tracking speed exceeds the empirical postglacial migration capacity of Eastern North American forests by 9.3 times (1,573.8 / 169.6 = 9.28x deficit; Table 6). "
-            "Even under an optimistic low-emissions scenario of 1.5 °C/century, modern climate velocity reaches 1,242.4 m/yr, imposing a 7.3x velocity deficit. "
-            "Under a high-emissions 2.5 °C/century trajectory, modern velocity exceeds 2,070 m/yr, creating a 12.2x velocity gap that surpasses natural dispersal speeds of climax dominants like Tsuga and Fagus by 17.7x and 12.2x, respectively."
+            "Under modern human-caused climate change, the migration challenge is far more severe. "
+            "Dividing projected 21st-century warming (1.9 °C/century; IPCC 2021) by the regional temperature gradient (-0.01207 °C/km) gives an expected climate-zone velocity of 1,573.8 m/yr (Figure 6). "
+            "This required tracking speed is 9.3 times faster than the average migration speed of postglacial trees (1,573.8 / 169.6 = 9.28x deficit; Table 6). "
+            "Even under an optimistic low-emissions warming rate of 1.5 °C/century, modern climate velocity reaches 1,242.4 m/yr, representing a 7.3x velocity gap. "
+            "Under a high-emissions 2.5 °C/century scenario, climate velocity exceeds 2,070 m/yr, creating a 12.2x gap that is 17.7 times faster than hemlock and 12.2 times faster than beech."
         )
     ],
     "5.4": [
         (
-            "Methodologically, this study advances beyond earlier palaeoecological syntheses in four critical aspects. "
-            "First, by anchoring 57 of 69 sediment cores directly to the LegacyAge 1.0 harmonized Bayesian depth-age framework (Li et al. 2022) and stress-testing results across a 50-member Monte Carlo ensemble (Table 5), we eliminate chronological artifacts that previously blurred the timing of rapid events like the Younger Dryas. "
-            "Second, applying empirical REVEALS Relative Pollen Productivity divisors (Sugita 2007; Wieczorek and Herzschuh 2020) successfully neutralized the massive over-representation of anemophilous Pinus (RPP 14.10) and Betula (RPP 6.19), allowing biologically dominant but quiet hardwoods like Acer (RPP 0.23), Carya (RPP 1.00), and Tilia to be accurately represented in biomass reconstructions."
+            "From a methodological standpoint, our study improves on earlier paleoecological syntheses in four important ways. "
+            "First, by anchoring 57 of 69 sediment cores directly to the LegacyAge 1.0 Bayesian depth-age framework (Li et al. 2022) and testing results across a 50-member Monte Carlo ensemble (Table 5), we remove dating errors that previously blurred the timing of rapid climate events like the Younger Dryas. "
+            "Second, using REVEALS Relative Pollen Productivity corrections (Sugita 2007; Wieczorek and Herzschuh 2020) neutralized the massive over-representation of heavy pollen producers like Pinus (RPP = 14.10) and Betula (RPP = 6.19), allowing biologically important but quiet canopy hardwoods like Acer (RPP = 0.23), Carya (RPP = 1.00), and Tilia to be accurately represented in our biomass reconstructions."
         ),
         (
-            "Third, evaluating vegetation lags against the independent, physics-driven NCAR TraCE-21ka simulation completely avoids the circularity of pollen-inferred climate reconstructions (Liu et al. 2009; Fordham et al. 2020). "
-            "Fourth, applying stationary first-differencing paired with 1,000-surrogate Ebisuzaki (1997) phase randomization eliminated spurious trend correlations, ensuring that our 47.8% pass rate reflects genuine dynamic coupling rather than shared millennial trajectories."
+            "Third, evaluating vegetation lags against the independent, physics-driven NCAR TraCE-21ka simulation completely avoids the circular logic of reconstructing past temperatures from pollen and then correlating those temperatures back to pollen (Liu et al. 2009; Fordham et al. 2020). "
+            "Fourth, applying stationary first-differencing alongside 1,000-surrogate Ebisuzaki (1997) phase randomization removed misleading trend correlations, ensuring that our 47.8% pass rate reflects true ecological coupling rather than shared millennial trends."
         )
     ],
     "5.5": [
         (
-            "The 9.3x velocity tracking deficit carries profound implications for biodiversity conservation and forest management under 21st-century climate change (Aitken and Bemmels 2016; Fordham et al. 2020). "
-            "During the late-glacial transition, trees migrated through an unbroken, contiguous wilderness featuring continuous forest cover, interconnected river valleys, and intact animal seed dispersers (Davis 1981). "
-            "Today, the landscape of Eastern North America is severely fragmented by agricultural expanses, urban infrastructure, multi-lane highways, and suburban sprawl (Corlett and Westcott 2013; Aitken and Bemmels 2016). "
-            "This habitat fragmentation dismantles the very topographic and alluvial corridors that Carya, Alnus, and Fagus historically followed for northward migration."
+            "This 9.3x velocity tracking deficit has urgent, practical consequences for forest conservation and management under modern climate change (Aitken and Bemmels 2016; Fordham et al. 2020). "
+            "During the postglacial period, trees migrated through continuous, connected natural landscapes with unbroken forest cover, intact river valleys, and healthy animal disperser populations (Davis 1981). "
+            "Today, the landscape of Eastern North America is heavily fragmented by farmlands, urban centers, multi-lane highways, and residential development (Corlett and Westcott 2013; Aitken and Bemmels 2016). "
+            "This fragmentation cuts off the very river corridors and forest pathways that trees like Carya, Alnus, and Fagus used to move north."
         ),
         (
-            "Furthermore, contemporary climate change is shifting thermal boundaries nearly ten times faster than postglacial warming (1,573.8 m/yr vs. 28.2–332.1 m/yr). "
-            "Given that natural seed dispersal cannot bridge this velocity deficit across fragmented terrain, unassisted migration will result in widespread trailing-edge dieback, localized extirpations, and severe forest health decline along southern range boundaries (Aitken and Bemmels 2016). "
-            "To prevent widespread ecological decoupling, forest managers and conservation agencies must transition from passive wilderness preservation to active climate adaptation strategies. "
-            "Foremost among these is assisted population migration (assisted gene flow), wherein seedlots from southern, drought- and heat-adapted populations are intentionally transferred 100 to 300 km northward into current species ranges to bolster genomic resilience (Aitken and Bemmels 2016). "
-            "Priority must be assigned to slow-migrating, heavy-seeded climax dominants—including American beech, eastern hemlock, sugar maple, and northern red oak—which face the greatest biological dispersal deficits under rapid warming."
+            "In addition, modern climate is warming nearly ten times faster than postglacial climate (1,573.8 m/yr vs. 28.2–332.1 m/yr). "
+            "Because natural seed dispersal cannot cross fragmented terrain at this speed, unassisted migration will likely lead to widespread canopy dieback, local population extinctions, and declining forest health along southern range edges (Aitken and Bemmels 2016). "
+            "To protect forest ecosystems, conservation planning must shift from passive preservation to proactive, climate-informed management. "
+            "An important strategy is assisted population migration (assisted gene flow), in which seedlots from southern, drought- and heat-adapted populations are intentionally planted 100 to 300 km north into current species ranges to improve genetic resilience (Aitken and Bemmels 2016). "
+            "Priority should be given to slow-migrating, heavy-seeded climax species (like American beech, eastern hemlock, sugar maple, and northern red oak) because they face the largest dispersal deficits under rapid warming."
         )
     ]
 }

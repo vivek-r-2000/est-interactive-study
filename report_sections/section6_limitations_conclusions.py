@@ -1,67 +1,76 @@
 """
-section6_limitations_conclusions.py - Section 6: Limitations & Future Scope; Section 7: Conclusions;
-Acknowledgements, and Declarations. (~1,000–1,200 words total)
+section6_limitations_conclusions.py
+Section 6 (Limitations and Future Directions) and Section 7 (Conclusions) plus Acknowledgements & Declarations
+for Course ES1.101 Project 25 Report.
 """
 
 LIMITATIONS_PARAGRAPHS = [
     (
-        "While this study delivers an end-to-end, reproducible assessment of late-Quaternary forest dynamics, several methodological and taphonomic constraints warrant careful consideration. "
-        "First, standard light-microscopy palynology resolves plant taxa primarily to the genus or family level, obscuring species-level ecological differentiation (Birks 2019; Dawson et al. 2016). "
-        "In our dataset, Quercus aggregates over 20 eastern oak species with widely varying moisture and temperature niches (such as mesic Quercus rubra versus xeric Quercus velutina). "
-        "Similarly, Picea blends cold-adapted boreal black spruce (Picea mariana) with upland white spruce (Picea glauca) and temperate red spruce (Picea rubens). "
-        "Consequently, observed genus-level lags represent aggregate population turnover rather than individual species range dynamics. "
-        "Future investigations should pair sediment palynology with sedimentary ancient DNA (sedaDNA) to resolve cryptic species-level identities and detect low-density founder populations centuries before local pollen reaches the 1% palynological detection threshold (Parducci et al. 2017)."
+        "While this study provides a comprehensive look at late-Quaternary forest changes, several methodological and taphonomic constraints should be recognized. "
+        "First, standard light-microscopy pollen analysis identifies plant taxa primarily to the genus or family level, which masks ecological differences among individual species (Birks 2019; Dawson et al. 2016). "
+        "In our dataset, Quercus includes more than 20 eastern oak species with widely varying moisture and temperature preferences (such as drought-tolerant Quercus velutina versus upland Quercus rubra). "
+        "Similarly, Picea combines cold-adapted boreal black spruce (Picea mariana) with white spruce (Picea glauca) and temperate red spruce (Picea rubens). "
+        "As a result, observed genus-level lags represent the combined response of several species rather than individual species shifts. "
+        "Future research should pair traditional pollen analysis with sedimentary ancient DNA (sedaDNA) to identify exact species and detect small founder populations centuries before local pollen reaches the 1% detection threshold (Parducci et al. 2017)."
     ),
     (
-        "Second, temporal regularization into 500-year time bins—necessary to harmonize cores with disparate sedimentation rates across 15,000 years—inherently attenuates high-frequency, sub-century ecological pulses (Mottl et al. 2021). "
-        "While our 250-year sensitivity test (Table 5) confirmed that our three-tier lag hierarchy remains consistent under finer binning, 500-year windows cannot capture rapid decadal responses to multi-year mega-droughts or transient fire episodes. "
-        "Applying our analytical pipeline to annually laminated (varved) lake sediments, speleothem records, and sub-fossil tree-ring chronologies will be vital for quantifying decade-scale climate–vegetation lags."
+        "Second, grouping records into 500-year time bins (which was necessary to harmonize cores with different sedimentation rates over 15,000 years) naturally smooths out rapid, sub-century environmental pulses (Mottl et al. 2021). "
+        "While our 250-year sensitivity test (Table 5) confirmed that our three-tier lag pattern holds under finer binning, 500-year windows cannot capture decade-scale responses to multi-year droughts or sudden fire episodes. "
+        "Testing our analytical pipeline on annually layered (varved) lake sediments, speleothems, or sub-fossil tree-ring records will be valuable for measuring decade-scale forest lags."
     ),
     (
-        "Third, the spatial resolution of the TraCE-21ka paleoclimate simulation (~3.75° spectral atmospheric grid, ~300 km) smooths out fine-scale, topographically mediated microclimates (Liu et al. 2009; He 2011). "
-        "In rugged terrain like the Appalachian Mountains, steep north-facing ravines and riparian corridors maintained localized thermal buffers that allowed temperate hardwoods to persist throughout glacial maxima in microrefugia (Gavin et al. 2014). "
-        "Coarse general circulation models cannot capture these microclimatic pockets, potentially overestimating the distance trees were forced to migrate. "
-        "Coupling high-resolution regional climate models (RCMs) or dynamical downscaling with local digital elevation models represents an essential frontier for late-Quaternary spatial modeling."
+        "Third, the spatial resolution of the TraCE-21ka climate model (~3.75° atmospheric grid, ~300 km) smooths out fine-scale, topographically sheltered microclimates (Liu et al. 2009; He 2011). "
+        "In complex terrain like the Appalachian Mountains, steep north-facing ravines and sheltered river valleys provided local microclimates that allowed temperate trees to survive glacial cold in microrefugia (Gavin et al. 2014). "
+        "Coarse global climate models cannot capture these small pockets, which may slightly overestimate how far trees had to migrate. "
+        "Linking high-resolution regional climate models (RCMs) or downscaling methods with local elevation models will be an important next step for late-Quaternary spatial modeling."
     ),
     (
-        "Finally, although our 2D planar arrival regression isolated coherent regional migration wavefronts, thin-plate splines interpolate across intervening landscapes that may have contained unobserved physical barriers. "
-        "Integrating sedimentary charcoal fire histories, Sporormiella dung fungal spore indices of megafaunal herbivore density across all 69 cores (Gill et al. 2009), and mechanistic spatio-temporal forest simulators (such as TreeMig or SORTIE) will allow researchers to model the coupled interactions of climate, fire, seed dispersal, and competition under future climate scenarios."
+        "Finally, although our 2D planar arrival regression successfully isolated broad regional migration fronts, thin-plate splines interpolate across landscapes that may have contained unrecorded physical barriers. "
+        "Combining sedimentary charcoal records of fire history, Sporormiella fungal spore counts of herbivore abundance across all 69 cores (Gill et al. 2009), and individual-based forest simulators (such as TreeMig or SORTIE) will help researchers model how climate, wildfire, seed dispersal, and competition interact under future warming scenarios."
     )
 ]
 
 CONCLUSIONS_PARAGRAPHS = [
     (
-        "This study synthesised 15,000 years of sedimentary fossil pollen records from 69 Eastern North American lakes alongside independent TraCE-21ka paleoclimate simulations to provide an empirical assessment of postglacial forest dynamics. "
-        "By applying REVEALS Relative Pollen Productivity calibrations, LegacyAge 1.0 Bayesian chronologies, stationary first-differencing, 1,000 Ebisuzaki surrogate tests, and two-dimensional equal-area planar migration models, we resolve three major ecological questions:"
+        "In this study, we synthesized 15,000 years of fossil pollen records from 69 Eastern North American sediment cores alongside independent TraCE-21ka paleoclimate simulations to evaluate postglacial forest dynamics. "
+        "By using REVEALS pollen productivity corrections, LegacyAge 1.0 Bayesian chronologies, stationary first-differencing, 1,000 Ebisuzaki surrogate tests, and two-dimensional planar migration models, we answered three key ecological questions:"
     ),
     (
-        "1. Forests do not respond as unified biome units. Tree taxa operate on distinct biological clocks structured into three ecological speed tiers (Kruskal–Wallis H = 30.54, p = 0.0023): pioneer conifer Larix adjusted in 750 yr, nine canopy reorganization taxa clustered at 1,500 yr, and shade-tolerant climax dominants (Fagus, Tsuga) lagged by 2,500 yr. Response polarity separated abrupt boreal retreat (Picea, 94.9% negative, mean r = -0.637) from gradual temperate hardwood expansion (Quercus, 79.1% positive)."
+        "1. Forests did not respond as single, unified biome units. Different tree genera responded on distinct biological schedules structured into three clear speed tiers (Kruskal–Wallis H = 30.54, p = 0.0023): pioneer tamarack (Larix) adjusted in 750 yr, nine canopy reorganization genera clustered around 1,500 yr, and heavy-seeded climax dominants (Fagus, Tsuga) lagged by 2,500 yr. Response direction separated rapid boreal dieback (Picea, 94.9% negative, mean r = -0.637) from gradual temperate hardwood expansion (Quercus, 79.1% positive)."
     ),
     (
-        "2. No-analogue forest communities were a transient phenomenon that peaked at 79.0% at 14.5 ka BP during early deglacial warming before declining to an 8.0% pre-colonial floor at 500 BP under TRSH-only filtering. Additive Squared Chord Distance decomposition proved that novelty was driven by anomalous mixtures of Quercus, Alnus, Betula, Populus, and Picea, sustained by extreme orbital seasonal contrast (32.6 °C winter-summer range) and early-deglacial hydroclimatic decoupling."
+        "2. No-analogue forest communities were a temporary phenomenon that peaked at 79.0% at 14.5 ka BP during early deglacial warming before falling to an 8.0% pre-colonial baseline by 500 BP under TRSH-only filtering. Decomposing Squared Chord Distance scores proved that community novelty was driven by unusual co-occurrences of Quercus, Alnus, Betula, Populus, and Picea, supported by extreme late-Pleistocene seasonal contrast (32.6 °C winter-summer range) and early-deglacial moisture decoupling."
     ),
     (
-        "3. Postglacial tree migration followed distinct two-dimensional geomorphic corridors—such as Carya along the Ohio and Mississippi river valleys (azimuth 65.0° ENE) and Fagus along the Appalachian spine (azimuth 344.4° NNW)—with empirical population front speeds hitting a ceiling between 116.9 and 277.0 m/yr (median 169.6 m/yr). Empirical tree migration fell roughly 9.3 times slower than contemporary 21st-century climate-zone velocity (1,573.8 m/yr under 1.9 °C/century warming)."
+        "3. Postglacial tree migration followed distinct two-dimensional terrain corridors, such as Carya moving along the Ohio and Mississippi river valleys (azimuth 65.0° ENE) and Fagus following the Appalachian mountain spine (azimuth 344.4° NNW). Empirical migration speeds reached an upper limit between 116.9 and 277.0 m/yr (median 169.6 m/yr). This historical tree migration speed is roughly 9.3 times slower than projected 21st-century climate velocity (1,573.8 m/yr under 1.9 °C/century warming)."
     ),
     (
-        "These empirical speed limits demonstrate that unassisted natural tree migration will fail to keep pace with contemporary anthropogenic warming across today's highly fragmented landscapes. "
-        "Safeguarding future forest ecosystems requires transitioning from passive preservation to proactive, climate-informed management, including assisted population migration and the strategic conservation of continuous, topographically buffered migration corridors."
+        "These empirical speed limits show that natural seed dispersal alone cannot keep pace with modern human-driven warming across today's heavily fragmented landscapes. Protecting future forests will require moving beyond passive conservation toward active, climate-informed management, including assisted population migration and the protection of continuous, topographically buffered migration pathways."
     )
 ]
 
 ACKNOWLEDGEMENTS_TEXT = (
-    "The authors acknowledge the Neotoma Paleoecology Database and the global community of palynologists and data contributors whose open-science archiving made this synthesis possible. "
-    "We thank the creators and maintainers of the LegacyAge 1.0 dataset (Alfred Wegener Institute and PANGAEA) for providing harmonized Bayesian age-depth models, and the National Center for Atmospheric Research (NCAR) for providing the open-access TraCE-21ka transient paleoclimate model simulation archives via the Climate Data Gateway (GDEX dataset d651050). "
-    "The open-source scientific Python community (NumPy, SciPy, Pandas, Matplotlib, Seaborn, python-docx, and Project Jupyter) is sincerely recognized for facilitating reproducible computational analyses."
+    "We thank the course instructors and teaching assistants of ES1.101 (Introduction to Environmental Sciences, Monsoon 2026) at IIIT Hyderabad for project guidance and technical feedback. "
+    "We gratefully acknowledge the data contributors and database maintainers of the Neotoma Paleoecology Database and the developers of the NCAR TraCE-21ka climate simulation project. "
+    "Computational analyses, Bayesian age-depth modeling, and spatial interpolations were executed using open-source Python scientific computing environments (NumPy, SciPy, Pandas, Scikit-learn, and Geopandas)."
 )
 
 DECLARATIONS = {
     "CRediT author statement": (
-        "Vivek R: Conceptualization, Methodology, Software, Formal Analysis, Data Curation, Writing – Original Draft, Visualization, Project Administration. "
-        "Nandan Rajesh Kamat: Methodology, Validation, Investigation, Formal Analysis, Writing – Review & Editing. "
-        "Shaurya Gupta: Investigation, Resources, Data Curation, Validation, Writing – Review & Editing, Supervision."
+        "Vivek R: Conceptualization, Methodology, Software, Formal Analysis, Writing - Original Draft, Visualization. "
+        "Nandan Rajesh Kamat: Data Curation, Validation, Investigation, Writing - Review & Editing. "
+        "Shaurya Gupta: Software, Data Curation, Formal Analysis, Writing - Review & Editing."
     ),
-    "Funding": "This research received no specific grant from funding agencies in the public, commercial, or not-for-profit sectors.",
-    "Data Availability": "All fossil pollen datasets and modern surface analogue records are openly accessible via the Neotoma Paleoecology Database (https://www.neotomadb.org). The LegacyAge 1.0 chronological models are available via PANGAEA (https://doi.pangaea.de/10.1594/PANGAEA.931819). The TraCE-21ka paleoclimate model outputs are available from NCAR GDEX (https://doi.org/10.5065/CXB5-TV56). Processed data and Python analysis scripts generated during this study are archived in the project repository.",
-    "Conflict of Interest": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper."
+    "Funding": (
+        "This project was completed as part of the academic curriculum for Course ES1.101 at the International Institute of Information Technology, Hyderabad. No external funding was received."
+    ),
+    "Data Availability": (
+        "All raw palynological count datasets are openly available from the Neotoma Paleoecology Database (https://www.neotomadb.org). "
+        "TraCE-21ka climate simulation outputs are archived at the NCAR Climate Data Gateway (https://www.earthsystemgrid.org). "
+        "Standardized Bayesian chronologies are accessible via the LegacyAge 1.0 PANGAEA repository (https://doi.org/10.1594/PANGAEA.933132). "
+        "All analytical Python scripts, data processing workflows, and figure generation code are archived in the project repository."
+    ),
+    "Conflict of Interest": (
+        "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper."
+    )
 }
