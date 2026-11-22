@@ -2504,6 +2504,7 @@ ${detText}`;
     function renderPillarView(pId) {
       currentView = "curriculum";
       currentPillar = pId;
+      classPills.style.display = "";
       const pillarObj = DB.pillars.find(p => p.id === currentPillar);
       if (pillarObj && !pillarObj.classes.includes(currentClassId)) {
         currentClassId = pillarObj.classes[0];
@@ -2524,23 +2525,77 @@ ${detText}`;
       const v = tab.dataset.view;
 
       if (pId) {
+        window.location.hash = "pillar-" + pId;
         renderPillarView(parseInt(pId, 10));
       } else if (v === "case-studies") {
+        window.location.hash = "case-studies";
         currentView = "case-studies";
         classPills.style.display = "none";
         renderCaseStudies();
       } else if (v === "cheat-sheet") {
+        window.location.hash = "cheat-sheet";
         currentView = "cheat-sheet";
         classPills.style.display = "none";
         renderCheatSheet();
+      } else if (v === "endsem-qb") {
+        window.location.hash = "endsem-qb";
+        currentView = "endsem-qb";
+        classPills.style.display = "none";
+        renderEndsemQuestionBank();
       }
     });
+
+    function handleHashNavigation() {
+      const hash = (window.location.hash || "").replace("#", "");
+      if (hash === "endsem-qb") {
+        const tab = document.getElementById("endsem-qb-tab");
+        if (tab) {
+          document.querySelectorAll(".pillar-tab").forEach(t => t.classList.remove("active"));
+          tab.classList.add("active");
+          currentView = "endsem-qb";
+          classPills.style.display = "none";
+          renderEndsemQuestionBank();
+        }
+      } else if (hash === "case-studies") {
+        const tab = document.getElementById("case-study-hub");
+        if (tab) {
+          document.querySelectorAll(".pillar-tab").forEach(t => t.classList.remove("active"));
+          tab.classList.add("active");
+          currentView = "case-studies";
+          classPills.style.display = "none";
+          renderCaseStudies();
+        }
+      } else if (hash === "cheat-sheet") {
+        const tab = document.getElementById("formula-sheet");
+        if (tab) {
+          document.querySelectorAll(".pillar-tab").forEach(t => t.classList.remove("active"));
+          tab.classList.add("active");
+          currentView = "cheat-sheet";
+          classPills.style.display = "none";
+          renderCheatSheet();
+        }
+      } else if (hash.startsWith("pillar-")) {
+        const pId = parseInt(hash.replace("pillar-", ""), 10);
+        const tab = document.querySelector(`.pillar-tab[data-pillar="${pId}"]`);
+        if (tab) {
+          document.querySelectorAll(".pillar-tab").forEach(t => t.classList.remove("active"));
+          tab.classList.add("active");
+          renderPillarView(pId);
+        }
+      }
+    }
+
+    window.addEventListener("hashchange", handleHashNavigation);
 
     // Boot
     initTheme();
     updateProgress();
     renderClassPills();
-    renderCurrentClassContent();
+    if (window.location.hash) {
+      handleHashNavigation();
+    } else {
+      renderCurrentClassContent();
+    }
   </script>
 </body>
 </html>
