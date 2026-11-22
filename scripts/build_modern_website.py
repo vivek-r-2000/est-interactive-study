@@ -1333,6 +1333,26 @@ def build_website():
       margin: 6px 0;
       overflow-x: auto;
     }}
+    .qb-section-exp .exam-mark-guide {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 9px;
+      background: #fef3c7;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #92400e;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }}
+    html.dark .qb-section-exp .exam-mark-guide {{
+      background: #451a03;
+      border-color: #78350f;
+      color: #fde68a;
+    }}
 
     /* Section 1: Key Points */
     .qb-section-key {{
@@ -2467,7 +2487,7 @@ def build_website():
                 <summary class="qb-summary">
                   <span class="qb-summary-title">
                     <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    <span>Expected Answer</span>
+                    <span>Expected Answer (${{q.marks ? q.marks + ' ' : ''}}Exam Script)</span>
                   </span>
                   <span class="qb-summary-hint">Toggle</span>
                 </summary>
@@ -2796,7 +2816,7 @@ def build_website():
                   <summary class="qb-summary">
                     <span class="qb-summary-title">
                       <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                      <span>Expected Answer</span>
+                      <span>Expected Answer (${{q.marks ? q.marks + ' ' : ''}}Exam Script)</span>
                     </span>
                     <span class="qb-summary-hint">Toggle</span>
                   </summary>
