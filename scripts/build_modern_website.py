@@ -1282,6 +1282,58 @@ def build_website():
       opacity: 1;
     }}
 
+    /* Section 0: Expected Answer */
+    .qb-section-exp {{
+      border-color: #cbd5e1;
+      margin-bottom: 8px;
+    }}
+    html.dark .qb-section-exp {{
+      border-color: #27272a;
+    }}
+    .qb-section-exp .qb-summary {{
+      background: rgba(217, 119, 6, 0.05);
+      border-bottom: 1px solid transparent;
+    }}
+    details.qb-section-exp[open] .qb-summary {{
+      border-bottom-color: rgba(217, 119, 6, 0.18);
+    }}
+    html.dark .qb-section-exp .qb-summary {{
+      background: rgba(217, 119, 6, 0.09);
+    }}
+    .qb-section-exp .qb-summary-title {{
+      color: #b45309;
+    }}
+    html.dark .qb-section-exp .qb-summary-title {{
+      color: #fbbf24;
+    }}
+    .qb-section-exp .qb-section-body {{
+      padding: 13px 16px;
+      background: var(--card-bg);
+    }}
+    .qb-section-exp .expected-body {{
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }}
+    .qb-section-exp ol, .qb-section-exp ul {{
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }}
+    .qb-section-exp .formula-box {{
+      background: var(--card-hover);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      text-align: center;
+      margin: 6px 0;
+      overflow-x: auto;
+    }}
+
     /* Section 1: Key Points */
     .qb-section-key {{
       border-color: #cbd5e1;
@@ -2019,7 +2071,7 @@ def build_website():
     let qbCurrentPaper = "ALL";
     let qbSelectedCats = new Set(["ALL"]);
     let qbSearchQuery = "";
-    let qbViewMode = "both"; // "both", "key", "detailed"
+    let qbViewMode = "all"; // "all", "expected", "key", "detailed"
     let qbMastered = new Set(JSON.parse(localStorage.getItem("est_qb_mastered") || "[]"));
 
     window.setQBClass = function(cid) {{
@@ -2137,12 +2189,17 @@ def build_website():
       if (!q) return;
 
       const tempDiv = document.createElement("div");
+      let expText = "";
+      if (q.expected_answer) {{
+        tempDiv.innerHTML = q.expected_answer;
+        expText = `\n\n=========================\nEXPECTED ANSWER (MODEL EXAM SCRIPT)\n=========================\n${{tempDiv.innerText}}`;
+      }}
       tempDiv.innerHTML = q.key_answer_points;
       const keyText = tempDiv.innerText;
       tempDiv.innerHTML = q.detailed_answer;
       const detText = tempDiv.innerText;
 
-      const copyPayload = `[${{q.id}}] ${{q.topic}} (${{q.class_name}})\nMarks: ${{q.marks}} | Importance: ${{q.importance}}\nQuestion:\n${{q.prompt}}\n\n=========================\nKEY POINTS\n=========================\n${{keyText}}\n\n=========================\nDETAILED ANSWER\n=========================\n${{detText}}`;
+      const copyPayload = `[${{q.id}}] ${{q.topic}} (${{q.class_name}})\nMarks: ${{q.marks}} | Importance: ${{q.importance}}\nQuestion:\n${{q.prompt}}${{expText}}\n\n=========================\nKEY POINTS\n=========================\n${{keyText}}\n\n=========================\nDETAILED ANSWER\n=========================\n${{detText}}`;
 
       navigator.clipboard.writeText(copyPayload).then(() => {{
         const orig = btn.innerHTML;
@@ -2162,7 +2219,7 @@ def build_website():
       qbCurrentPaper = "ALL";
       qbSelectedCats = new Set(["ALL"]);
       qbSearchQuery = "";
-      qbViewMode = "both";
+      qbViewMode = "all";
       renderEndsemQuestionBank();
     }};
 
@@ -2262,9 +2319,10 @@ def build_website():
               <div class="qb-filter-group">
                 <!-- VIEW MODE SWITCHER -->
                 <div class="qb-mode-group">
-                  <button class="qb-mode-btn ${{qbViewMode === 'both' ? 'active' : ''}}" data-mode="both" onclick="setQBViewMode('both')">Both Sections</button>
-                  <button class="qb-mode-btn ${{qbViewMode === 'key' ? 'active' : ''}}" data-mode="key" onclick="setQBViewMode('key')">Key Points Only</button>
-                  <button class="qb-mode-btn ${{qbViewMode === 'detailed' ? 'active' : ''}}" data-mode="detailed" onclick="setQBViewMode('detailed')">Detailed Only</button>
+                  <button class="qb-mode-btn ${{ (qbViewMode === 'all' || qbViewMode === 'both') ? 'active' : '' }}" data-mode="all" onclick="setQBViewMode('all')">All Sections</button>
+                  <button class="qb-mode-btn ${{ qbViewMode === 'expected' ? 'active' : '' }}" data-mode="expected" onclick="setQBViewMode('expected')">Expected Answer</button>
+                  <button class="qb-mode-btn ${{ qbViewMode === 'key' ? 'active' : '' }}" data-mode="key" onclick="setQBViewMode('key')">Key Points</button>
+                  <button class="qb-mode-btn ${{ qbViewMode === 'detailed' ? 'active' : '' }}" data-mode="detailed" onclick="setQBViewMode('detailed')">Detailed Answer</button>
                 </div>
 
                 <div class="qb-collapse-group" style="display: flex; gap: 4px;">
@@ -2403,8 +2461,24 @@ def build_website():
               ${{q.prompt}}
             </div>
 
-            <!-- SECTION 1: KEY POINTS -->
-            ${{(qbViewMode === 'both' || qbViewMode === 'key') ? `
+            <!-- SECTION 1: EXPECTED ANSWER (MODEL EXAM SCRIPT) -->
+            ${{(q.expected_answer && (qbViewMode === 'all' || qbViewMode === 'both' || qbViewMode === 'expected')) ? `
+              <details class="qb-section qb-section-exp" open id="sec-exp-${{q.id}}">
+                <summary class="qb-summary">
+                  <span class="qb-summary-title">
+                    <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <span>Expected Answer</span>
+                  </span>
+                  <span class="qb-summary-hint">Toggle</span>
+                </summary>
+                <div class="qb-section-body">
+                  ${{q.expected_answer}}
+                </div>
+              </details>
+            ` : ''}}
+
+            <!-- SECTION 2: KEY POINTS -->
+            ${{(qbViewMode === 'all' || qbViewMode === 'both' || qbViewMode === 'key') ? `
               <details class="qb-section qb-section-key" open id="sec-key-${{q.id}}">
                 <summary class="qb-summary">
                   <span class="qb-summary-title">
@@ -2419,8 +2493,8 @@ def build_website():
               </details>
             ` : ''}}
 
-            <!-- SECTION 2: DETAILED ANSWER -->
-            ${{(qbViewMode === 'both' || qbViewMode === 'detailed') ? `
+            <!-- SECTION 3: DETAILED ANSWER -->
+            ${{(qbViewMode === 'all' || qbViewMode === 'both' || qbViewMode === 'detailed') ? `
               <details class="qb-section qb-section-det" open id="sec-det-${{q.id}}">
                 <summary class="qb-summary">
                   <span class="qb-summary-title">
@@ -2715,6 +2789,22 @@ def build_website():
               <div class="qb-prompt-box">
                 ${{q.prompt}}
               </div>
+
+              <!-- EXPECTED ANSWER -->
+              ${{q.expected_answer ? `
+                <details class="qb-section qb-section-exp" open id="search-sec-exp-${{q.id}}">
+                  <summary class="qb-summary">
+                    <span class="qb-summary-title">
+                      <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                      <span>Expected Answer</span>
+                    </span>
+                    <span class="qb-summary-hint">Toggle</span>
+                  </summary>
+                  <div class="qb-section-body">
+                    ${{q.expected_answer}}
+                  </div>
+                </details>
+              ` : ''}}
 
               <details class="qb-section qb-section-key" open id="search-sec-key-${{q.id}}">
                 <summary class="qb-summary">

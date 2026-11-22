@@ -146,7 +146,7 @@ def generate_markdown(qb_data, out_path):
     lines.append("")
     lines.append("> **Coverage:** Verified against all 14 past exam papers (2018–2024).")
     lines.append(f"> **Total Questions:** {len(qs)}")
-    lines.append("> **Structure:** Every question features two separate sections: **Key Points** and **Detailed Answer**.")
+    lines.append("> **Structure:** Every question features three separate sections: **Expected Answer**, **Key Points**, and **Detailed Answer**.")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -182,6 +182,12 @@ def generate_markdown(qb_data, out_path):
             lines.append(f"- **Exam Appearances:** {exam_str}")
             lines.append("")
             
+            # Expected Answer
+            if q.get("expected_answer"):
+                lines.append("#### Expected Answer")
+                lines.append(clean_html_for_md(q["expected_answer"]))
+                lines.append("")
+
             # Key Points
             lines.append("#### Key Points")
             lines.append(clean_html_for_md(q["key_answer_points"]))

@@ -21,6 +21,16 @@ def get_class12_grounded_questions():
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "The Government of India approved the statutory EIA notification in the year: [a] 1996 [b] 1998 [c] 1994 [d] 2006.",
             "key_answer_points": "<ul>\n<li><strong>Correct Option:</strong> <strong>[ c ] 1994</strong> (promulgated on <strong>27th January 1994</strong>).</li>\n<li><strong>Statutory Authority:</strong> Enacted by the Ministry of Environment and Forests (MoEF), Government of India, under Section 3 of the <strong>Environment (Protection) Act, 1986</strong> and sub-rule (3) of Rule 5 of the Environment (Protection) Rules, 1986.</li>\n<li><strong>Core Mandate:</strong> Made prior Environmental Clearance (EC) mandatory for the expansion, modernization, or commissioning of any new project across <strong>30 designated industrial categories</strong> listed in Schedule-I.</li>\n<li><strong>Institutional Mechanism:</strong> Established a multi-disciplinary Expert Committee covering ecosystem management, pollution control, resource management, land use, and rehabilitation, alongside a comprehensive standardized Application Form.</li>\n<li><strong>Subsequent Evolution:</strong> The notification was subsequently amended and later re-engineered on 14th September 2006 to decentralize regulatory appraisal into Category A (Central MoEFCC) and Category B (State SEIAA).</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<p><strong>Correct Option: [ c ] 1994</strong></p>
+<ul>
+<li><strong>Statutory Promulgation:</strong> The first statutory EIA notification was approved and published on <strong>27th January 1994</strong> by the Ministry of Environment and Forests (MoEF), Government of India.</li>
+<li><strong>Legal Authority:</strong> Enacted under <strong>Section 3 of the Environment (Protection) Act, 1986 (EPA 1986)</strong> and sub-rule (3) of Rule 5 of the Environment (Protection) Rules, 1986.</li>
+<li><strong>Regulatory Scope:</strong> Made prior Environmental Clearance (EC) mandatory across India for the expansion, modernization, or establishment of projects across <strong>30 designated industrial categories</strong> in Schedule-I.</li>
+<li><strong>Institutional Appraisal:</strong> Mandated appraisal by a multi-disciplinary Expert Committee and submission of a standardized comprehensive Application Form.</li>
+<li><em>Note:</em> The notification was later comprehensively re-engineered and decentralized on <strong>14th September 2006</strong> into Category A (Central) and Category B (State), but the initial statutory approval was in <strong>1994</strong>.</li>
+</ul>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <p><strong>Correct Option: [ c ] 1994</strong></p>
 
@@ -73,6 +83,21 @@ def get_class12_grounded_questions():
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "What is the significance of the Screening activity in EIA?",
             "key_answer_points": "<ul>\n<li><strong>Gateway Regulatory Filter:</strong> Screening is the initial gateway step in Phase 1 of the EIA process that evaluates the nature, scale, and location of a proposed activity to determine whether an environmental clearance is needed and what level of environmental review is indicated.</li>\n<li><strong>Three-Tier Risk Classification:</strong>\n<br>• <strong>Very Low Risk:</strong> Inherently benign activities $\\rightarrow$ EIA process stops immediately.\n<br>• <strong>Moderate or Unknown Risk:</strong> Uncertain consequences $\rightarrow$ Triggers a rapid Preliminary Assessment (Initial Environmental Examination - IEE).\n<br>• <strong>High / Very High Risk:</strong> Significant adverse impacts likely $\rightarrow$ Mandates a comprehensive Full EIA Study (Phase II).</li>\n<li><strong>Standardized Low-Burden Questioning:</strong> Uses rapid, basic questions (e.g., does it involve penetration roads, large-scale irrigation, or non-native species?) that do <em>not</em> require extensive technical analysis or site data.</li>\n<li><strong>Institutional Efficiency & Proportionality:</strong> Prevents regulatory agencies from being overwhelmed by minor projects, ensuring public oversight and scientific resources are focused strictly on projects with substantial environmental risk.</li>\n<li><strong>Indian Legal Alignment:</strong> Under the EIA 2006 Notification, screening specifically sorts Category B projects into <strong>Category B1</strong> (mandatory full EIA and public hearing) and <strong>Category B2</strong> (exempted from full EIA).</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<p><strong>Screening</strong> is the initial gateway filter (Phase 1) in the EIA process that evaluates the nature, scale, and location of a proposed activity to determine: (1) whether environmental clearance is required, and (2) what level of environmental review is indicated.</p>
+<p><strong>Core Significance Points:</strong></p>
+<ol>
+<li><strong>Three-Tier Regulatory Triage:</strong>
+<ul>
+<li><em>Very Low Risk:</em> Benign activities $\rightarrow$ <strong>STOP</strong> the EIA process (exempt).</li>
+<li><em>Moderate / Unknown Risk:</em> Uncertain consequences $\rightarrow$ Triggers a <strong>Preliminary Assessment (Initial Environmental Examination - IEE)</strong>.</li>
+<li><em>High / Very High Risk:</em> Major industrial/infrastructure works with severe potential damage $\rightarrow$ Mandates a comprehensive <strong>Full EIA Study (Phase II)</strong>.</li>
+</ul>
+</li>
+<li><strong>Resource Efficiency & Proportionality:</strong> Uses rapid, low-burden diagnostic questions (e.g., penetration roads, large-scale irrigation, non-native species, proximity to wetlands) to prevent regulatory agencies from being overwhelmed by minor projects, focusing technical and public scrutiny strictly on high-risk projects.</li>
+<li><strong>Indian Statutory Alignment (EIA 2006):</strong> Applied by the State Expert Appraisal Committee (SEAC) to sort Category B projects into <strong>Category B1</strong> (mandatory full EIA and public hearing) and <strong>Category B2</strong> (exempted from full EIA and public consultation, appraised directly).</li>
+</ol>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <h4>1. Definition and Core Role in Phase 1</h4>
 <p><strong>Screening</strong> represents the very first operational filter in Phase 1 of the Environmental Impact Assessment process. Before committing substantial financial, technical, and administrative resources to detailed field investigations, screening answers one fundamental regulatory question: <em>Based on the nature of the activity, what level of environmental review is indicated?</em></p>
@@ -122,6 +147,56 @@ def get_class12_grounded_questions():
             "importance": "HIGH (⭐⭐⭐⭐)",
             "prompt": "How full EIA study differs from preliminary assessment.",
             "key_answer_points": "<ul>\n<li><strong>Scope & Trigger:</strong> Preliminary Assessment (IEE) is a rapid, simplified evaluation conducted during Phase 1 for moderate or unknown risk projects using simple tools; Full EIA is an exhaustive Phase II statutory study reserved for high-risk projects where significant adverse impacts are likely.</li>\n<li><strong>Scoping Process:</strong> Preliminary assessment follows a basic template without formal scoping; Full EIA is mandatorily preceded by a formal Scoping exercise that establishes site-specific Terms of Reference (ToR).</li>\n<li><strong>Baseline Data Depth:</strong> Preliminary assessment relies on existing published secondary data and rapid site surveys; Full EIA requires rigorous primary baseline field monitoring capturing temporal variability and multi-seasonal trends (water, air, soils, flora, fauna, health).</li>\n<li><strong>Analysis of Alternatives:</strong> Preliminary assessment reviews the proposed action as submitted; Full EIA mandatorily defines and analyzes real alternatives (siting, technology, design, and 'no-action' option), evaluates their impacts, and formally compares them.</li>\n<li><strong>Public Participation:</strong> Public consultation is recommended good practice for preliminary assessment but usually <strong>mandatory</strong> for full EIA studies.</li>\n<li><strong>Team & Resources:</strong> Preliminary assessment can be executed rapidly by project staff or general practitioners; Full EIA strictly requires a certified multi-disciplinary team of professional experts.</li>\n<li><strong>Possible Findings:</strong> Preliminary assessment yields 3 possible findings (no significant impacts $\\rightarrow$ ends; impacts mitigated $\\rightarrow$ proceed; significant impacts likely $\rightarrow$ full EIA needed). Full EIA results in a comprehensive Environmental Impact Statement (EIS) and legally binding Environmental Management Plan (EMP).</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<p>While both evaluate potential impacts and propose mitigation, a <strong>Preliminary Assessment (IEE)</strong> is a rapid diagnostic tool in Phase 1 for moderate/unknown risk activities, whereas a <strong>Full EIA Study</strong> is an exhaustive, multi-season statutory investigation in Phase 2 for high-risk projects.</p>
+
+<table class="exam-table">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Preliminary Assessment (IEE)</th>
+<th>Full EIA Study (Phase II)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Phase & Trigger</strong></td>
+<td><strong>Phase 1:</strong> Triggered by moderate or unknown environmental risk.</td>
+<td><strong>Phase 2:</strong> Triggered when significant adverse impacts are likely.</td>
+</tr>
+<tr>
+<td><strong>Scoping Requirement</strong></td>
+<td>No formal scoping; follows a standard rapid outline.</td>
+<td><strong>Mandatory formal Scoping</strong> to formulate legally binding, site-specific Terms of Reference (ToR).</td>
+</tr>
+<tr>
+<td><strong>Baseline Data Depth</strong></td>
+<td>Relies on existing secondary published literature and rapid site reconnaissance.</td>
+<td>Requires extensive <strong>primary multi-season field monitoring</strong> capturing seasonal variability and historical trends (air, water, soil, ecology, health).</td>
+</tr>
+<tr>
+<td><strong>Analysis of Alternatives</strong></td>
+<td>Examines the project essentially as proposed with minor operational adjustments.</td>
+<td><strong>Mandatory rigorous comparison of real alternatives</strong> (site location, technologies, raw materials, and the 'no-action' alternative).</td>
+</tr>
+<tr>
+<td><strong>Public Consultation</strong></td>
+<td>Good practice, but <strong>not legally mandatory</strong>.</td>
+<td><strong>Statutorily mandatory</strong> broad-based public consultation, including structured public hearings.</td>
+</tr>
+<tr>
+<td><strong>Study Team & Duration</strong></td>
+<td>Internal planners/engineers; completed rapidly in weeks using simple tools.</td>
+<td><strong>Accredited multidisciplinary team of certified specialists</strong>; spans 12–18 months.</td>
+</tr>
+<tr>
+<td><strong>Decision Outcomes</strong></td>
+<td>Produces 3 possible findings: (1) Process stops; (2) Proceed with EMP; (3) Elevate to Full EIA.</td>
+<td>Produces a statutory <strong>Environmental Impact Statement (EIS)</strong> and an enforceable <strong>Environmental Management Plan (EMP)</strong>.</td>
+</tr>
+</tbody>
+</table>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <h4>1. Conceptual Overview and Framework</h4>
 <p>While both a <strong>Preliminary Assessment</strong> (often termed an <em>Initial Environmental Examination - IEE</em>) and a <strong>Full EIA Study</strong> share similar conceptual objectives and basic structural components (understanding activities, assessing baseline conditions, evaluating potential impacts, and specifying mitigation measures), they represent fundamentally different levels of environmental review within the EIA project lifecycle.</p>
@@ -203,6 +278,86 @@ def get_class12_grounded_questions():
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "An Investor wants to put up an Industrial Plant for the manufacture of paper and its derivatives in the wet and forested slopes of Laikipia District, Mt. Kenya. Discuss the logical steps in the EIA process that your study team is likely to follow. Justify the formation of the Interdisciplinary Team for this EIA study.",
             "key_answer_points": "<ul>\n<li><strong>Industrial Classification & Siting Context:</strong> Pulp, paper, and newsprint manufacture is a high-polluting Red-category industry (Schedule-I, Item 25) requiring mandatory full EIA and Central clearance. Siting on the wet, forested montane slopes of Mt. Kenya triggers critical environmental siting rules: buffer restrictions around wetlands (7 km prohibition zone; 7–25 km controlled zone), municipal peripheries, and fragile montane forest watersheds.</li>\n<li><strong>Phase 1: Initial Inquiries & Screening:</strong>\n<br>• <em>Understand Activity & Development Objective (DO):</em> Define the development objective (e.g., regional paper production and agroforestry value addition) and delineate primary activities (chemical pulping, bleaching, chemical recovery) from associated actions (logging roads, borrow pits, worker camps, water intake structures, effluent outfalls).\n<br>• <em>Screening:</em> Classified as High-Risk $\\rightarrow$ triggers a mandatory Full EIA Study (Phase II).</li>\n<li><strong>Phase 2: Logical Steps in the Full EIA Study:</strong>\n<br>1. <em>Formal Scoping:</em> Establish site-specific Terms of Reference (ToR) delineating study boundaries, watershed impact zones, and critical environmental components.\n<br>2. <em>Baseline Situation Evaluation:</em> Assess both normal seasonal variability and long-term trends across water (upstream/downstream river discharge, $\\text{DO}$, $\\text{BOD}$, groundwater table), soils (slope stability, erosion, nutrient leaching), flora (canopy density, montane forest biodiversity), fauna (wildlife corridors), and environmental health.\n<br>3. <em>Identify & Choose Alternatives:</em> Evaluate site alternatives outside sensitive watershed buffer zones, raw material choices (sustainable plantation bamboo/waste fiber vs native timber logging), and process alternatives (Elemental Chlorine-Free [ECF] / Totally Chlorine-Free [TCF] bleaching vs toxic elemental chlorine).\n<br>4. <em>Identify & Characterize Potential Impacts:</em> Predict direct, indirect, and cumulative impacts using attributes such as intensity, duration, reversibility, and spatial extent (e.g., high organic load in river, toxic black liquor spill risks, sulfur dioxide $\\text{SO}_2$ and TRS odor emissions, deforestation on steep slopes).\n<br>5. <em>Develop Mitigation & Monitoring (EMP):</em> Design closed-loop chemical recovery boilers, advanced Effluent Treatment Plants (ETP) targeting Zero Liquid Discharge (ZLD), electrostatic precipitators (ESP), and dedicated commercial afforestation covenants.\n<br>6. <em>Public Participation:</em> Conduct mandatory public consultations and hearings involving downstream agricultural users, forest communities, women and men, and local civil society.\n<br>7. <em>Communicate & Document:</em> Compile draft and final EIA reports for statutory appraisal.</li>\n<li><strong>Justification of Interdisciplinary Team:</strong> Grounded in statutory expert disciplines (Slide 24), pulp and paper manufacture simultaneously alters chemical, ecological, hydrological, and social domains:\n<br>• <em>Chemical / Environmental Engineer:</em> Pulp digestion chemistry, black liquor recovery boilers, and multi-stage ETP design.\n<br>• <em>Hydrologist & Water Resources Specialist:</em> River streamflow modeling, seasonal water table dynamics, and effluent dilution capacity.\n<br>• <em>Forest Ecologist & Botanist:</em> Montane flora inventory, canopy fragmentation, and sustainable timber harvesting yields.\n<br>• <em>Wildlife Biologist & Zoologist:</em> Faunal populations, endangered habitats, and migration corridor preservation.\n<br>• <em>Soil Scientist & Geotechnical Engineer:</em> Slope stability, landslide risk, and soil erosion dynamics under high rainfall.\n<br>• <em>Air Quality & Dispersion Modeler:</em> Boiler stack emissions, $\\text{SO}_2$, and mercaptan/TRS odor dispersion in mountain terrain.\n<br>• <em>Socio-Economist & Public Health Expert:</em> Downstream community water rights, indigenous livelihoods, worker safety, and public hearing facilitation.</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<h4>1. Project Classification & Siting Constraints</h4>
+<ul>
+<li><strong>Industrial Classification:</strong> Pulp and paper manufacture is a high-polluting <strong>Schedule-I (Item 25) Red-Category</strong> industry requiring mandatory prior Environmental Clearance via a Full EIA study.</li>
+<li><strong>Siting Rules on Mt. Kenya Slopes:</strong> Siting in a wet, forested montane watershed triggers strict environmental buffer restrictions:
+<ul>
+<li><em>Prohibition Zone:</em> Absolute ban within <strong>$7\text{ km}$ buffer around wetlands</strong> and ecologically sensitive water bodies.</li>
+<li><em>Controlled Zone:</em> Development restricted within <strong>$7\text{ to }25\text{ km}$</strong>, requiring proof of zero adverse hydrological impact.</li>
+<li><em>Montane Forest Protection:</em> Steep slopes with high precipitation create severe soil erosion, landslide, and watershed contamination hazards.</li>
+</ul>
+</li>
+</ul>
+
+<h4>2. Logical Steps in the EIA Study Workflow</h4>
+<ol>
+<li><strong>Phase 1: Initial Inquiries & Project Definition:</strong>
+<ul>
+<li><em>Understand Development Objective (DO):</em> Differentiate <em>why</em> the project is needed (regional paper supply, commercial agroforestry) from <em>what</em> is built, allowing exploration of non-destructive alternatives.</li>
+<li><em>Delineate Primary Activities vs Associated Actions:</em> Map core Kraft pulping, chemical bleaching, and recovery boilers alongside associated actions (forest logging roads, aggregate borrow pits, construction camps, raw water weirs, and effluent outfalls).</li>
+<li><em>Screening:</em> Classified as <strong>High Risk</strong> $\rightarrow$ Bypasses preliminary assessment to trigger a <strong>Full EIA Study (Phase II)</strong>.</li>
+</ul>
+</li>
+<li><strong>Phase 2: Full EIA Execution Steps:</strong>
+<ul>
+<li><strong>Step 1: Formal Scoping:</strong> Formulate site-specific Terms of Reference (ToR) approved by regulators, defining a $10\text{ km}$ study radius and critical impact zones.</li>
+<li><strong>Step 2: Baseline Environmental Evaluation:</strong> Establish multi-seasonal primary baseline data capturing normal seasonal variability and trends across:
+<br>• <em>Hydrology:</em> River streamflow, groundwater table depth, baseline $\text{DO}$, $\text{BOD}$, $\text{COD}$, turbidity.
+<br>• <em>Soils & Geology:</em> Slope stability, landslide susceptibility, soil erosion rates under heavy montane rainfall.
+<br>• <em>Ecology:</em> Canopy density, montane forest flora, endemic species, and wildlife migration corridors.
+<br>• <em>Socio-Economic & Health:</em> Downstream community water rights, indigenous livelihoods, disease vectors.</li>
+<li><strong>Step 3: Identification & Systematic Evaluation of Alternatives:</strong> Evaluate alternative sites outside sensitive watershed buffers ($>7\text{ km}$ from wetlands); substitute native timber with dedicated commercial bamboo/eucalyptus plantations; adopt Elemental Chlorine-Free (ECF) or Totally Chlorine-Free (TCF) bleaching over toxic elemental chlorine; evaluate the "no-action" option.</li>
+<li><strong>Step 4: Impact Prediction & Characterization:</strong> Quantify direct, indirect, and cumulative impacts by intensity, extent, duration, and reversibility: high organic/lignin wastewater discharge, boiler flue gas ($\text{SO}_2, \text{PM}$) and Total Reduced Sulfur (TRS/mercaptan) malodors, and slope deforestation-induced soil erosion.</li>
+<li><strong>Step 5: Environmental Management Plan (EMP) & Mitigation:</strong> Closed-loop chemical recovery boilers ($>98\%$ recovery of black liquor); multi-stage Effluent Treatment Plant (ETP: primary clarification, activated sludge, tertiary RO) targeting Zero Liquid Discharge (ZLD); Electrostatic Precipitators (ESP) on boilers; mandatory 1:3 compensatory afforestation covenants.</li>
+<li><strong>Step 6: Broad-Based Public Consultation:</strong> Mandatory public hearings with downstream agricultural/pastoral communities, indigenous groups (men and women), and NGOs to record concerns.</li>
+<li><strong>Step 7: Documentation & Communication:</strong> Prepare comprehensive EIA Report and legally binding EMP for statutory appraisal.</li>
+</ul>
+</li>
+</ol>
+
+<h4>3. Justification of the Interdisciplinary Study Team</h4>
+<p>Paper manufacture on wet montane slopes impacts chemical, hydrological, terrestrial, and socio-economic systems simultaneously. Grounded in the statutory disciplines of EIA Expert Committees (Class 12, Slide 24), a multidisciplinary team is essential:</p>
+<table class="exam-table">
+<thead>
+<tr>
+<th>Specialist Discipline</th>
+<th>Specific Technical Role in Paper Mill EIA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chemical / Environmental Process Engineer</strong></td>
+<td>Audits Kraft pulping chemistry, black liquor chemical recovery boiler balances, and designs multi-stage ETP (ZLD).</td>
+</tr>
+<tr>
+<td><strong>Hydrologist & Water Resources Specialist</strong></td>
+<td>Models river flow variability, groundwater table dynamics, water intake impact, and downstream hydraulic dilution capacity.</td>
+</tr>
+<tr>
+<td><strong>Forest Ecologist & Botanist</strong></td>
+<td>Assesses canopy loss, montane forest biodiversity, protected tree species, and sets sustainable plantation harvesting yields.</td>
+</tr>
+<tr>
+<td><strong>Wildlife Biologist & Zoologist</strong></td>
+<td>Surveys wildlife populations, identifies critical migratory corridors on Mt. Kenya, and evaluates habitat disruption.</td>
+</tr>
+<tr>
+<td><strong>Soil Scientist & Geotechnical Engineer</strong></td>
+<td>Evaluates soil erosion, landslide risks on wet steep slopes, and soil-bearing capacity for heavy industrial structures.</td>
+</tr>
+<tr>
+<td><strong>Air Quality & Dispersion Modeler</strong></td>
+<td>Simulates boiler stack emissions ($\text{SO}_2, \text{NO}_x, \text{PM}$) and TRS odor dispersion under complex mountain valley winds.</td>
+</tr>
+<tr>
+<td><strong>Socio-Economist & Public Health Expert</strong></td>
+<td>Assesses downstream water usage rights, community livelihoods, worker health/safety, and conducts statutory public hearings.</td>
+</tr>
+</tbody>
+</table>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <h4>1. Project Categorization and Environmental Siting Constraints</h4>
 <p>An industrial paper manufacturing plant proposed on the wet and forested montane slopes of Laikipia District, Mt. Kenya, represents an ecologically sensitive, high-impact developmental intervention. Under national and international environmental regulatory frameworks (including Schedule-I, Item 25 of the statutory EIA framework), <strong>Pulp, paper, and newsprint mills</strong> are categorized as high-risk, heavy-polluting industries requiring mandatory prior Environmental Clearance (EC) based on a comprehensive Full EIA Study.</p>
@@ -324,6 +479,55 @@ def get_class12_grounded_questions():
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "An important mining company has operated for 4 years in a coastal region. During a trial, the community argues water quality deteriorated and that the company is in a protected area. (a) What document must the company present to prove water was already deteriorated before their activities began, and why is it important? (b) What document proves they are not in a protected area and which institution issues it? (c) Mention 2 environmental impacts and 2 mitigation measures for their EMP.",
             "key_answer_points": "<ul>\n<li><strong>(a) Baseline Environmental Status Report & Legal Defense:</strong>\n<br>• <em>Document:</em> The certified <strong>Pre-Project Baseline Environmental Status Report</strong> (specifically the Comprehensive Pre-Operational Baseline Water Quality and Hydrogeological Data) contained within the statutory approved EIA Report.\n<br>• <em>Importance:</em> Establishes the scientific benchmark of water quality prior to mine construction. As per Class 12 slides, baseline is not a static snapshot but records natural variability and historical trends. Under environmental jurisprudence (Precautionary Principle), the burden of proof rests on the proponent; the approved baseline report is a legally binding document that proves pre-existing deterioration (e.g., natural salinity intrusion or upstream mineral contamination) before year 0, serving as a protective shield against unwarranted liability.</li>\n<li><strong>(b) Siting / Protected Area Clearance & Issuing Authority:</strong>\n<br>• <em>Documents:</em> The <strong>Prior Environmental Clearance (EC) Letter</strong> and authenticated <strong>Coastal Regulation Zone (CRZ) Clearance Map / Siting Certificate</strong> with Survey of India geo-coordinates, demonstrating compliance with environmental siting rules (prohibition in CRZ-I intertidal eco-sensitive zones, wetlands, and designated protected areas).\n<br>• <em>Issuing Authority:</em> The <strong>Ministry of Environment, Forest and Climate Change (MoEFCC)</strong>, Government of India, issued in formal concurrence with the <strong>National / State Coastal Zone Management Authority (NCZMA / SCZMA)</strong>.</li>\n<li><strong>(c) Two Impacts & Two EMP Mitigation Measures:</strong>\n<br>• <em>Impact 1 (Acid Mine Drainage & Sediment Runoff):</em> Rainwater leaching through sulfide mineral dumps and open pits generates acidic runoff laden with heavy metals, causing estuarine acidification, sedimentation, and fish mortality.\n<br>• <em>Mitigation 1:</em> Construct peripheral lined garland drains, multi-chamber settling ponds with lime neutralization dosing to adjust $\\text{pH}$ to 7.0–8.5, and geotextile silt curtains at outfalls.\n<br>• <em>Impact 2 (Saltwater Intrusion into Aquifers):</em> Excessive dewatering of coastal mining pits lowers the groundwater table below sea level, reversing the hydraulic gradient and drawing seawater into regional freshwater drinking wells.\n<br>• <em>Mitigation 2:</em> Install an engineered impermeable peripheral grout curtain / bentonite slurry cutoff wall around the pit perimeter, coupled with managed aquifer recharge (MAR) injection wells and continuous piezometric automated groundwater monitoring.</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<h4>Part (a): Baseline Document & Legal Defense (Precautionary Principle)</h4>
+<ol>
+<li><strong>Required Document:</strong> The certified <strong>Pre-Project Baseline Environmental Status Report</strong> (specifically the <em>Pre-Operational Baseline Water Quality and Hydrogeological Data</em>) submitted and approved as part of the original statutory <strong>EIA Report</strong> before Environmental Clearance was granted.</li>
+<li><strong>Scientific and Legal Importance:</strong>
+<ul>
+<li><strong>Temporal Variability vs. Snapshot:</strong> Baseline environmental conditions are not a single-point snapshot; they record natural multi-seasonal variations (e.g., pre-monsoon vs. post-monsoon salinity) and historical trends prior to year 0 (Class 12, Slide 4).</li>
+<li><strong>EIA as a Statutory Legal Shield:</strong> EIA is a legal document under the Environment (Protection) Act, 1986. A certified baseline report serves as a scientific and legal defense against unwarranted litigation by proving that elevated salinity, TDS, or heavy metals existed naturally due to coastal geology, tidal dynamics, or upstream sources prior to mining (Class 12, Slide 31).</li>
+<li><strong>Burden of Proof (Precautionary Principle):</strong> Under environmental jurisprudence, the burden of proof (*onus probandi*) rests on the industrial proponent. Without baseline documentation, courts legally presume that all observed deterioration was caused by the mine. The baseline report provides admissible evidence rebutting this presumption.</li>
+</ul>
+</li>
+</ol>
+
+<h4>Part (b): Protected Area Clearance & Issuing Institution</h4>
+<ol>
+<li><strong>Required Documents:</strong>
+<ul>
+<li><strong>Prior Environmental Clearance (EC) Letter:</strong> Statutory clearance granted under Schedule-I (Item 20: mining leases $>5\text{ ha}$).</li>
+<li><strong>Coastal Regulation Zone (CRZ) Clearance & Authenticated Cadastral Siting Map:</strong> Prepared by an authorized central agency (e.g., NCSCM / Survey of India) with GPS coordinates confirming the mine is situated outside <strong>CRZ-I</strong> (sensitive intertidal zones, mangroves, turtle nesting sites) and adheres to statutory buffer zones (e.g., $>7\text{ km}$ buffer from wetlands/sanctuaries as per Environmental Siting Rules; Class 12, Slides 29–30).</li>
+</ul>
+</li>
+<li><strong>Issuing Authority:</strong>
+<ul>
+<li>The <strong>Ministry of Environment, Forest and Climate Change (MoEFCC)</strong>, Government of India.</li>
+<li>Issued in formal concurrence with the <strong>National Coastal Zone Management Authority (NCZMA)</strong> and the respective <strong>State Coastal Zone Management Authority (SCZMA)</strong>.</li>
+</ul>
+</li>
+</ol>
+
+<h4>Part (c): Two Environmental Impacts & EMP Mitigation Measures</h4>
+<table class="exam-table">
+<thead>
+<tr>
+<th>Impact Description</th>
+<th>EMP Mitigation Measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Acid Mine Drainage (AMD) & Heavy Metal Runoff:</strong><br>Excavation exposes sulfide minerals (pyrite, $\text{FeS}_2$) to air and rainwater, producing sulfuric acid ($2\text{FeS}_2 + 7\text{O}_2 + 2\text{H}_2\text{O} \rightarrow 2\text{Fe}^{2+} + 4\text{SO}_4^{2-} + 4\text{H}^+$) that leaches toxic heavy metals ($\text{Fe, Cu, Zn}$) into coastal waters and destroys estuarine ecology.</td>
+<td><ul><li><strong>Garland Drains & Sediment Basins:</strong> Excavate concrete-lined peripheral garland drains around pits and waste dumps to divert clean runoff, routing dirty runoff into multi-chamber settling ponds.</li><li><strong>Lime Neutralization:</strong> Dosing with hydrated lime ($\text{Ca(OH)}_2$) to raise $\text{pH}$ to 7.5–8.5, precipitating heavy metals as insoluble hydroxides, supplemented by geotextile silt curtains at marine discharge points.</li></ul></td>
+</tr>
+<tr>
+<td><strong>2. Saltwater Intrusion from Pit Dewatering:</strong><br>Continuous deep pumping to keep coastal pits dry creates a deep cone of depression, dropping the water table below sea level. This reverses the natural hydraulic gradient and pulls saline seawater into freshwater aquifers, contaminating domestic drinking wells.</td>
+<td><ul><li><strong>Engineered Slurry Cutoff Wall:</strong> Construct a low-permeability peripheral bentonite-cement grout cutoff wall around the seaward perimeter of the pit to physically sever hydraulic connectivity with the sea.</li><li><strong>Managed Aquifer Recharge (MAR) & Piezometric Surveillance:</strong> Inject treated harvested stormwater into coastal barrier recharge wells to maintain positive freshwater head, supported by real-time automated telemetry piezometers monitoring conductivity and water levels.</li></ul></td>
+</tr>
+</tbody>
+</table>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <h4>Part (a): Document Proving Pre-Existing Water Quality and Its Legal Importance</h4>
 
@@ -392,6 +596,16 @@ def get_class12_grounded_questions():
             "importance": "HIGH (⭐⭐⭐⭐)",
             "prompt": "List any two incorrect/incomplete information furnished in the EIA report of Great Nicobar case.",
             "key_answer_points": "<ul>\n<li><strong>Statutory Mandate on Report Integrity:</strong> As emphasized in Class 12 Slide 31, <em>\"EIA is a legal document and any attempt to provide wrong facts or down playing of relevant information is an offence.\"</em> Slide 32 specifically directs study of the Great Nicobar mega-project EIA controversies.</li>\n<li><strong>Flaw 1 (Underreporting / Omission of Sea Turtle Nesting Sanctuaries):</strong> The EIA report downplayed the ecological significance of Galathea Bay, claiming low nesting density, whereas Galathea Bay is globally acknowledged as one of the world's most critical nesting sanctuaries for the vulnerable <strong>Giant Leatherback Sea Turtle</strong> (<em>Dermochelys coriacea</em>) and the endemic Nicobar Megapode bird.</li>\n<li><strong>Flaw 2 (Ignoring / Glossing Over Indigenous Tribal Rights):</strong> The EIA failed to adequately account for irreversible impacts on Particularly Vulnerable Tribal Groups (PVTGs)—specifically the semi-nomadic <strong>Shompen</strong> and the coastal <strong>Nicobarese</strong>—omitting the full implications of de-notifying nearly $84\text{ km}^2$ of pristine Tribal Reserve forest.</li>\n<li><strong>Flaw 3 (Severe Under-Assessment of Extreme Seismic & Tsunami Hazards):</strong> Great Nicobar is situated in <strong>Seismic Zone V</strong> along the active Sunda subduction megathrust (the epicentral zone of the 2004 earthquake that caused 3–4 meters of island land subsidence); the EIA failed to incorporate adequate seismic risk analysis and tectonic stability assessments for the deep-sea transshipment port.</li>\n<li><strong>Flaw 4 (Rushed Single-Season Baseline Data):</strong> Violated the fundamental EIA principle that baseline data requires temporal variability and trends (Slide 4), utilizing rapid, single-season surveys during monsoonal conditions that severely under-recorded rich coral reef and marine biodiversity.</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<p>As established in Class 12 Slide 31, <em>"EIA is a legal document and any attempt to provide wrong facts or downplaying of relevant information is an offence."</em> In the ₹72,000-crore <strong>Great Nicobar Island Mega-Project EIA</strong> (Slide 32), key flawed/incomplete disclosures included:</p>
+<ol>
+<li><strong>Underreporting & Omission of Giant Leatherback Turtle Nesting at Galathea Bay:</strong>
+<br>The EIA report downplayed the ecological sensitivity of Galathea Bay (the designated site for the transshipment port), claiming low nesting density. In reality, Galathea Bay is globally recognized as one of the world's most critical nesting grounds for the vulnerable <strong>Giant Leatherback Sea Turtle</strong> (<em>Dermochelys coriacea</em>) and the endemic Nicobar Megapode bird. Port dredging and breakwaters threaten total habitat destruction.</li>
+<li><strong>Inadequate Assessment of Indigenous Tribal Rights & Forest De-Notification:</strong>
+<br>The EIA failed to assess the severe irreversible impacts on Particularly Vulnerable Tribal Groups (PVTGs)—specifically the semi-nomadic <strong>Shompen</strong> (~200–300 individuals) and coastal <strong>Nicobarese</strong>. It omitted free, prior, and informed consent protocols and glossed over the de-notification of approximately <strong>$84\text{ km}^2$ of pristine Tribal Reserve forest</strong>.</li>
+</ol>
+<p><em>(Alternative valid examiner points: Underestimation of extreme Seismic Zone V / tsunami hazards along the Sunda subduction zone, or reliance on rushed single-season baseline ecological surveys).</em></p>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <h4>1. Legal Framework and Background Context</h4>
 <p>As explicitly laid out in the lecture conclusions (Class 12, Slide 31):</p>
@@ -433,6 +647,39 @@ def get_class12_grounded_questions():
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "Explain the four core stages of Environmental Impact Assessment (EIA) according to the Indian EIA Notification 2006.",
             "key_answer_points": "<ul>\n<li><strong>Regulatory Foundation:</strong> Promulgated on 14th September 2006 under the Environment (Protection) Act, 1986, superseding the 1994 notification. It established a decentralized clearance process, categorizing projects into Category A (Central MoEFCC / EAC) and Category B (State SEIAA / SEAC).</li>\n<li><strong>Stage 1: Screening:</strong> Applied strictly to Category B projects to determine whether a project requires a full EIA study (<strong>Category B1</strong>) or is appraised directly based on Form 1/1A without an EIA study (<strong>Category B2</strong>). Category A projects bypass screening and require mandatory full EIA.</li>\n<li><strong>Stage 2: Scoping:</strong> Formulates detailed, comprehensive <strong>Terms of Reference (ToR)</strong> by the Expert Appraisal Committee (EAC / SEAC) delineating all environmental concerns, baseline study boundaries (e.g., 10 km radius), multi-season sampling parameters, and impact modeling guidelines.</li>\n<li><strong>Stage 3: Public Consultation:</strong> Structured process ensuring transparency and local stakeholder engagement. Contains two mandatory limbs: (a) <em>Public Hearing</em> at the project site conducted by the State Pollution Control Board (SPCB) and presided by the District Collector/Magistrate (videographed); and (b) <em>Written Stakeholder Representations</em>. Proponent must address all concerns in the Final EIA/EMP.</li>\n<li><strong>Stage 4: Appraisal:</strong> Multidisciplinary scrutiny by the EAC/SEAC of the Final EIA report, public hearing proceedings, and EMP to formulate categorical recommendations to MoEFCC/SEIAA for the grant of Prior Environmental Clearance (with binding conditions) or rejection.</li>\n</ul>",
+            "expected_answer": r"""<div class="expected-body">
+<p>The <strong>Indian EIA Notification 2006</strong> (promulgated on 14th September 2006 under the Environment (Protection) Act, 1986) decentralized environmental clearance into <strong>Category A</strong> (Central MoEFCC / EAC) and <strong>Category B</strong> (State SEIAA / SEAC). The regulatory clearance process is structured into <strong>four sequential core stages</strong>:</p>
+
+<ol>
+<li><strong>Stage 1: Screening (Category B Only):</strong>
+<ul>
+<li>Scrutinizes the project application (Form 1 / Form 1A) to determine whether a Category B project requires an EIA study.</li>
+<li>Categorizes projects into <strong>Category B1</strong> (mandatory full EIA study and public consultation) or <strong>Category B2</strong> (exempted from full EIA and public hearing; appraised directly on Form 1).</li>
+<li><em>Note:</em> Category A projects bypass screening and mandatorily require a full EIA study.</li>
+</ul>
+</li>
+<li><strong>Stage 2: Scoping:</strong>
+<ul>
+<li>The Expert Appraisal Committee (EAC for Category A, SEAC for Category B1) formulates comprehensive, site-specific <strong>Terms of Reference (ToR)</strong>.</li>
+<li>ToR defines spatial boundaries (e.g., $10\text{ km}$ radius buffer), multi-season baseline monitoring parameters (air, water, noise, soil, biodiversity, socio-economics), mathematical dispersion models, and alternatives to be evaluated.</li>
+</ul>
+</li>
+<li><strong>Stage 3: Public Consultation:</strong>
+<ul>
+<li>Statutory mechanism to ascertain concerns of locally affected communities and stakeholders before finalizing the report. Comprises two mandatory components:
+<br>1. <em>Public Hearing:</em> Conducted at or near the project site by the State Pollution Control Board (SPCB), presided over by the District Magistrate/Collector; proceedings are videographed with signed minutes.
+<br>2. <em>Written Stakeholder Representations:</em> Inviting written objections and recommendations from civil society and interested citizens.</li>
+<li>The project proponent must address all concerns and incorporate corresponding mitigations into the final EIA/EMP.</li>
+</ul>
+</li>
+<li><strong>Stage 4: Appraisal:</strong>
+<ul>
+<li>Detailed multidisciplinary scrutiny by the EAC or SEAC of the Final EIA Report, Public Hearing minutes/videography, and the Environmental Management Plan (EMP).</li>
+<li>The committee invites the proponent for a technical defense and formulates categorical recommendations to the regulatory authority (MoEFCC or SEIAA): either <strong>Grant Prior Environmental Clearance</strong> (with legally binding environmental safeguards) or <strong>Reject</strong> (with recorded scientific reasons).</li>
+</ul>
+</li>
+</ol>
+</div>""",
             "detailed_answer": r"""<div class="detailed-body">
 <h4>1. Regulatory Framework and Decentralization</h4>
 <p>The <strong>EIA Notification of 14th September 2006</strong>, issued by the Ministry of Environment and Forests (MoEF, now MoEFCC) under the <strong>Environment (Protection) Act, 1986</strong>, fundamentally restructured the environmental clearance process in India. It replaced the centralized single-tier system of the 1994 notification with a decentralized two-tier architectural framework:</p>

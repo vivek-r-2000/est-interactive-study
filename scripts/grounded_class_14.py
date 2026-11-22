@@ -20,6 +20,61 @@ def get_class14_grounded_questions():
             "marks": "2M – 10M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "Define Green Computing. Explain the four fundamental approaches across the hardware lifecycle: Green Design, Green Manufacturing, Green Use, and Green Disposal.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Definition:</strong> Green computing is the environmentally responsible and eco-friendly study and practice of designing, manufacturing, using, and disposing of computers, servers, and associated subsystems with minimal environmental impact. The term emerged shortly after 1992, following the US Environmental Protection Agency's (EPA) launch of the <strong>Energy Star</strong> labeling program. Today, Information and Communications Technology (ICT) accounts for approximately <strong>2% of global CO2 emissions</strong>.</p>
+
+<p><strong>The Four Fundamental Lifecycle Approaches (Murugesan Model):</strong></p>
+<ol>
+  <li><strong>Green Design:</strong> Architecting energy-efficient processors, passive cooling (fanless systems), modular upgradeability, and non-toxic materials (e.g. bio-resins, cornstarch polymers). Slide 10 emphasizes choosing laptops over desktops because mobile-optimized laptops consume up to 70% less operational electricity.</li>
+  <li><strong>Green Manufacturing:</strong> Eliminating hazardous substances (lead, mercury, cadmium, hexavalent chromium) in cleanrooms and chip fabrication. This prevents toxic wastewater—often equaling the water consumption of an entire small city per fabrication plant—from polluting surrounding watersheds and entering the human food chain.</li>
+  <li><strong>Green Use:</strong> Slashing operational electricity draw during active deployment through:
+    <ul>
+      <li><em>Server Virtualization:</em> Consolidating multiple logical systems onto one physical server, drastically shrinking data center power and cooling footprints.</li>
+      <li><em>Power Management:</em> Enabling automated sleep modes and turning off idle systems (recognizing that screen savers consume active electrical power rather than saving it).</li>
+      <li><em>Display Technology:</em> Upgrading from 17" CRT monitors (<strong>80 W</strong>) to LCD panels (<strong>35 W</strong>) or LED monitors (<strong>25 W</strong>). Energy Star systems operate at <strong>80% efficiency</strong> (vs 70% for unrated machines).</li>
+      <li><em>Algorithmic Efficiency:</em> Streamlining code reduces server CPU cycles and carbon emissions per query: Google ($\approx 0.20\text{ g }\text{CO}_2$), Yahoo ($\approx 0.26\text{ g }\text{CO}_2$), MS Live ($\approx 0.32\text{ g }\text{CO}_2$), and AOL ($\approx 0.37\text{ g }\text{CO}_2$).</li>
+    </ul>
+  </li>
+  <li><strong>Green Disposal:</strong> Responsibly managing <strong>20 to 50 million tons of annual global e-waste</strong> (~5% of all solid waste on Earth). Prioritizes hardware reuse, refurbishment, and certified closed-loop metal recycling over hazardous dumping.</li>
+</ol>
+
+<table class="exam-table">
+  <thead>
+    <tr>
+      <th>Approach</th>
+      <th>Lifecycle Phase</th>
+      <th>Primary Technical Interventions</th>
+      <th>Quantifiable Metric / Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Green Design</strong></td>
+      <td>R&D & Engineering</td>
+      <td>Low-TDP chips, passive cooling, modular chassis, laptops over desktops</td>
+      <td>Laptops consume up to 70% less energy than desktop towers</td>
+    </tr>
+    <tr>
+      <td><strong>Green Manufacturing</strong></td>
+      <td>Semiconductor Fabrication</td>
+      <td>Closed-loop water reuse, RoHS compliance, eco-packaging</td>
+      <td>Prevents cleanroom effluents (small city equivalent) from polluting watersheds</td>
+    </tr>
+    <tr>
+      <td><strong>Green Use</strong></td>
+      <td>Active Deployment</td>
+      <td>Server virtualization, sleep modes, LED displays, efficient algorithms</td>
+      <td>Energy Star cuts power loss (80% vs 70% efficiency); Google 0.20g CO2 per query</td>
+    </tr>
+    <tr>
+      <td><strong>Green Disposal</strong></td>
+      <td>Retirement & End-of-Life</td>
+      <td>Refurbishing, component reuse, certified closed-loop metal recycling</td>
+      <td>Diverts 20–50 million tons/year of e-waste from toxic open dumping</td>
+    </tr>
+  </tbody>
+</table>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Definition:</strong> Green computing is the environmentally responsible and eco-friendly use of computers and their resources. It is the comprehensive study and practice of designing, manufacturing, using, and disposing of computing devices in such a way that reduces environmental impact.</li>
 <li><strong>Origins:</strong> The term was coined shortly after 1992, when the US Environmental Protection Agency (EPA) launched the <strong>Energy Star</strong> labeling program to recognize energy efficiency in monitors and climate control equipment.</li>
@@ -121,6 +176,62 @@ def get_class14_grounded_questions():
             "marks": "2M – 4M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "Differentiate thoroughly between Thick Clients and Thin Clients. Compare their system architecture, operational energy, embodied resources, hardware lifespan, purchase cost, and environmental footprint. Include the Queen Margaret University case study.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>System Architecture:</strong></p>
+<ul>
+  <li><strong>Thin Client:</strong> A compact, solid-state terminal device with <em>no mechanical hard drives or moving parts</em> (fanless). It contains minimal local processing power and RAM, executing zero user applications locally. It sends user inputs over the network to a centralized server, which executes all workloads and returns updated display frames.</li>
+  <li><strong>Thick Client:</strong> A standard standalone desktop computer equipped with local hard drives, a powerful multi-core CPU, dedicated memory, and a local operating system. It processes instructions, runs applications, and stores data locally without requiring a network server connection.</li>
+</ul>
+
+<table class="exam-table">
+  <thead>
+    <tr>
+      <th>Comparison Parameter</th>
+      <th>Thick Client (Desktop PC)</th>
+      <th>Thin Client (VDI Terminal)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Operational Power Draw</strong></td>
+      <td><strong>75 Watts</strong> (active baseline)</td>
+      <td><strong>5 Watts</strong> (slashes operational power by <strong>93.3%</strong>)</td>
+    </tr>
+    <tr>
+      <td><strong>Capital Purchase Cost</strong></td>
+      <td><strong>£400</strong> (low-spec office PC)</td>
+      <td><strong>£210</strong> (terminal unit)</td>
+    </tr>
+    <tr>
+      <td><strong>Hardware Useful Lifespan</strong></td>
+      <td><strong>5 years</strong> (rapid obsolescence)</td>
+      <td><strong>7 years</strong> (centralized server upgrades)</td>
+    </tr>
+    <tr>
+      <td><strong>Moving Parts & Acoustic Noise</strong></td>
+      <td>Mechanical cooling fans & HDDs; noisy</td>
+      <td><strong>Zero moving parts</strong>; completely silent</td>
+    </tr>
+    <tr>
+      <td><strong>Embodied Production Footprint</strong></td>
+      <td>Requires <strong>20 kg materials</strong>, <strong>3,244 MJ energy</strong>, <strong>920 L water</strong>, emits <strong>193 kg GHGs</strong></td>
+      <td>Drastically lower embodied energy, minimal plastics, copper, and silicon area</td>
+    </tr>
+    <tr>
+      <td><strong>Lifecycle Solid Waste</strong></td>
+      <td>Generates <strong>37 kg non-hazardous</strong> + <strong>0.7 kg hazardous waste</strong></td>
+      <td>Fraction of desktop e-waste mass; highly recyclable</td>
+    </tr>
+    <tr>
+      <td><strong>Server & Network Dependency</strong></td>
+      <td>Autonomous; functions fully offline</td>
+      <td><strong>100% dependent</strong> on continuous 24x7 active server availability</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Environmental & Financial Case Study (Queen Margaret University, Edinburgh):</strong> By replacing conventional desktop workstations with thin client terminals, the university saved <strong>£50,000 in direct electricity costs alone</strong> at the halfway stage of deployment, while eliminating internal lab heat dissipation and slashing secondary air-conditioning energy demand.</p>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>System Architecture:</strong>
 <br>• <em>Thin Client:</em> A small, silent device with no hard drives or internal moving parts and minimal local processing/RAM. It sends user inputs to a centralized server, which executes all applications and returns an updated display image to the terminal screen.
@@ -239,6 +350,16 @@ def get_class14_grounded_questions():
             "marks": "1M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "What is Moore's law? Explain how it drives rapid technological obsolescence and accelerates the global e-waste crisis.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Moore's Law:</strong> An empirical observation formulated by Gordon Moore (co-founder of Intel) predicting that computer processing power—governed by the density of transistors packed onto an integrated silicon circuit—roughly doubles every two years.</p>
+
+<p><strong>Link to Technological Obsolescence & E-Waste Crisis:</strong></p>
+<ul>
+  <li><strong>Rapid Technological Obsolescence:</strong> Because processor performance doubles every 24 months, software vendors continuously engineer heavier operating systems and applications. This renders fully functional, undamaged computing hardware obsolete within 24 to 36 months simply because it cannot execute newer software workloads.</li>
+  <li><strong>Global E-Waste Surge:</strong> According to the United Nations Environment Programme (UNEP), approximately <strong>50 million tons of electronic waste</strong> are generated worldwide each year (~5% of all solid waste on Earth), with as much as <strong>4,000 tonnes discarded every single hour</strong>.</li>
+  <li><strong>Upstream Resource Depletion:</strong> Information and Communications Technology (ICT) accounts for <strong>2% of global CO2 emissions</strong>. Rapid turnover accelerates destructive mineral extraction, requiring around <strong>35 different raw materials</strong> per smartphone (including copper, lead, zinc, tin, nickel, barium, and gold). Mining and smelting cause deforestation, erosion, water pollution, and massive CO and CO2 emissions.</li>
+</ul>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Moore's Law Definition:</strong> An empirical prediction formulated by Gordon Moore (co-founder of Intel) stating that computer processing power roughly doubles every two years.</li>
 <li><strong>Technological Obsolescence:</strong> Rapid exponential growth in microchip density causes state-of-the-art computing equipment to become functionally obsolete within 2–3 years, driving premature hardware replacement long before physical component failure.</li>
@@ -274,6 +395,18 @@ def get_class14_grounded_questions():
             "marks": "1M – 2M",
             "importance": "HIGH (⭐⭐⭐⭐)",
             "prompt": "Is e-waste hazardous? Explain the legal and chemical distinction, and describe how non-hazardous electronic goods become acute environmental and health hazards.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Legal & Physical Distinction:</strong> <em>E-waste is not hazardous waste per-se.</em> While in operational use or intact storage on an office desk, electronic devices safely encapsulate their toxic constituents inside solid matrices, chip packages, and insulated housings, posing no immediate chemical or radiological hazard.</p>
+
+<p><strong>How E-Waste Becomes Acutely Hazardous:</strong> E-waste becomes an acute environmental and health hazard when devices are <strong>dismantled, smashed, incinerated, or acid-stripped</strong> during informal end-of-life processing, releasing toxic constituents into ecosystems:</p>
+<ul>
+  <li><strong>Lead (Pb) & Cadmium (Cd):</strong> Torching printed circuit boards (solder) or cracking CRT funnel glass releases lead fumes and carcinogens into ambient air, soil, and groundwater.</li>
+  <li><strong>Mercury (Hg):</strong> Broken tilt switches and Cold Cathode Fluorescent Lamp (CCFL) flat-screen backlights volatilize elemental mercury vapor, which transforms into bioaccumulative neurotoxic methylmercury in aquatic food chains.</li>
+  <li><strong>Cadmium (Cd):</strong> Discarded rechargeable laptop and CMOS backup batteries corrode in unlined dumps, leaching cadmium that causes severe renal failure and bone demineralization.</li>
+  <li><strong>Polychlorinated Biphenyls (PCBs):</strong> Leaking capacitors and transformers release persistent organic pollutants (POPs) that act as potent endocrine disruptors and carcinogens.</li>
+  <li><strong>Brominated Flame Retardants (BFRs) & PVC:</strong> Open burning of circuit boards and polyvinyl chloride (PVC) cable insulation over tire fires generates acutely toxic brominated and chlorinated dioxins (TCDD) and corrosive hydrochloric acid gas.</li>
+</ul>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Core Definition:</strong> Electronic Waste (e-waste) refers to discarded electronic or electrical equipment that is no longer fit for its originally intended use (e.g. computers, cellular phones, stereos, refrigerators, air conditioners, and consumer durables).</li>
 <li><strong>Is E-Waste Hazardous?:</strong> <em>e-waste is not hazardous waste per-se.</em> Intact electronic goods resting on an office desk or in home storage pose no immediate toxicity or radiation danger.</li>
@@ -361,6 +494,18 @@ def get_class14_grounded_questions():
             "marks": "1M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "What is the Basel Convention? Explain its core objective in governing transboundary movement of e-waste and its relevance to developing nations.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Definition & Treaty Identity:</strong> The <strong>Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and Their Disposal</strong> is a comprehensive multilateral environmental treaty adopted in 1989 (entered into force in 1992) under the auspices of the United Nations Environment Programme (UNEP).</p>
+
+<p><strong>Core Objective:</strong> To strictly regulate and restrict the cross-border movement of hazardous chemical and electronic wastes, preventing industrialized nations from dumping toxic waste onto developing countries lacking environmentally sound recycling infrastructure ("toxic colonialism").</p>
+
+<p><strong>Key Operational Provisions & Relevance to Developing Nations:</strong></p>
+<ul>
+  <li><strong>Prior Informed Consent (PIC):</strong> Requires mandatory, written notification and verified formal consent from the competent national authority of the importing country before hazardous waste shipments can legally depart. Unauthorized shipments are criminalized as illegal trafficking.</li>
+  <li><strong>Protecting Informal Hubs:</strong> Targets illegal export practices that flood hubs such as Guiyu (China) and Agbogbloshie (Ghana, where European electronic waste contaminated local free-range chicken eggs with lethal levels of chlorinated dioxins and PCBs).</li>
+  <li><strong>Indian Statutory Alignment:</strong> Underpins India's Foreign Trade Policy, which strictly prohibits the commercial importation of e-waste and heavily restricts the import of second-hand computers.</li>
+</ul>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Treaty Identity:</strong> The <strong>Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and Their Disposal</strong> is a comprehensive multilateral environmental agreement adopted in 1989 (entered into force in 1992).</li>
 <li><strong>Core Regulatory Objective:</strong> Engineered specifically to regulate and strictly restrict the transboundary movement of hazardous chemical and electronic wastes, preventing industrialized, wealthy nations from dumping toxic waste on developing countries that lack environmentally sound recycling technologies.</li>
@@ -404,6 +549,25 @@ def get_class14_grounded_questions():
             "marks": "1M – 2M",
             "importance": "HIGH (⭐⭐⭐⭐)",
             "prompt": "What is a Green Website? Give examples and explain how search engine algorithms and display color palettes impact electrical power consumption and carbon emissions.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Definition:</strong> A Green Website is a website designed, developed, hosted, and maintained to minimize electrical energy consumption and carbon emissions across data center servers, transmission networks, and client display monitors.</p>
+
+<p><strong>Display Color Palette & Power Consumption (Blackle Example):</strong></p>
+<ul>
+  <li>On Cathode Ray Tube (CRT) monitors (consuming <strong>80 W</strong> baseline) and emissive OLED screens, displaying pure white illuminates subpixels at maximum luminosity, drawing peak wattage. Displaying black or dark pixels cuts electrical draw substantially.</li>
+  <li><strong>Blackle:</strong> An energy-saving search engine created by Heap Media and powered by Google Custom Search that utilizes a predominantly black background. As documented in Slide 13, as of July 2023, Blackle claims to have saved over <strong>10.07 MWh (Megawatt-hours)</strong> of electrical energy worldwide.</li>
+</ul>
+
+<p><strong>Search Algorithm Efficiency & Carbon Emissions (Slide 11):</strong> Efficient indexing algorithms reduce server processing cycles, directly cutting carbon emissions per search query:</p>
+<ul>
+  <li><strong>Google Search:</strong> $\approx 0.20\text{ g }\text{CO}_2$ per query (most efficient baseline)</li>
+  <li><strong>Yahoo Search:</strong> $\approx 0.26\text{ g }\text{CO}_2$ per query (30% higher carbon footprint)</li>
+  <li><strong>Microsoft Live Search:</strong> $\approx 0.32\text{ g }\text{CO}_2$ per query (60% higher carbon footprint)</li>
+  <li><strong>AOL Search:</strong> $\approx 0.37\text{ g }\text{CO}_2$ per query (85% higher carbon footprint)</li>
+</ul>
+
+<p><strong>Key Green Web Best Practices:</strong> Clean semantic code, dark-mode styling, server-side caching, vector asset compression, and green web hosting powered by renewable energy.</p>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Definition:</strong> A Green Website is a website engineered, hosted, and operated to minimize electrical energy consumption and carbon emissions across server data centers, telecommunications networks, and client display monitors.</li>
 <li><strong>Display Energy Dynamics:</strong>
@@ -482,6 +646,34 @@ def get_class14_grounded_questions():
             "marks": "3M – 5M",
             "importance": "HIGH (⭐⭐⭐⭐)",
             "prompt": "Explain the environmental impact of manufacturing computers, smartphones, and mobile devices. Detail the raw material footprint, water consumption, fossil fuel requirements, and mineral intensity.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Upstream Resource Extraction & Manufacturing Dominance:</strong> Popular perception assumes the primary ecological impact of computing occurs during consumer operation. However, the lecture slides reveal that the overwhelming majority of environmental damage occurs upstream during raw material extraction, chemical processing, and cleanroom fabrication.</p>
+
+<p><strong>1. The 1.8-Ton Material Footprint of a Personal Computer (Slide 4):</strong></p>
+<p>Manufacturing a single average <strong>24-kg desktop computer and 27-cm monitor</strong> demands at least:</p>
+<ul>
+  <li><strong>240 kg of fossil fuels</strong> (coal, petroleum, natural gas)</li>
+  <li><strong>22 kg of industrial chemicals</strong> (solvents, acids, toxic dopants)</li>
+  <li><strong>1,500 kg of water</strong></li>
+  <li><strong>Totaling 1.8 tons of physical resources</strong>—equivalent to the weight of a full-size sports utility vehicle (SUV)!</li>
+</ul>
+
+<p><strong>2. Extreme Material Intensity Ratio:</strong></p>
+<ul>
+  <li>Manufacturing an automobile or a household refrigerator requires only <strong>1 to 2 times its finished weight</strong> in fossil fuels.</li>
+  <li>Manufacturing a computer requires <strong>10 times its finished weight in fossil fuels</strong> (240 kg fossil fuels for a 24 kg computer), making microelectronics one of the most resource-intensive manufacturing processes in industrial history.</li>
+</ul>
+
+<p><strong>3. Semiconductor Fabrication Water Depletion:</strong> Semiconductor cleanrooms consume staggering quantities of ultra-pure process water to rinse microchip wafers between lithographic etching cycles—often equivalent to the water consumption of an entire small city.</p>
+
+<p><strong>4. Smartphone Mineral Metallurgy (Slide 2):</strong></p>
+<ul>
+  <li>Fabricating a single smartphone requires around <strong>35 different raw materials</strong>. Silicon is primary; plastic is the second most-used material. Devices contain finished fractions of iron, aluminium, copper, lead, zinc, tin, nickel, and barium.</li>
+  <li>Open-pit mining and smelting cause extensive deforestation, topsoil erosion, landscape scarring, acid mine drainage, and massive atmospheric emissions of CO and CO2 from heavy mining machinery.</li>
+</ul>
+
+<p><strong>5. Lifecycle Embodied Energy & Solid Waste (Slide 15):</strong> Manufacturing a desktop PC and 17" monitor consumes <strong>3,244 MJ of energy</strong>, <strong>920 liters of process water</strong>, and emits <strong>193 kg of greenhouse gases</strong>, generating <strong>37 kg of non-hazardous waste</strong> and <strong>0.7 kg of hazardous waste</strong> over its operational lifetime.</p>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>The 1.8-Ton Material Footprint:</strong> Constructing a single average <strong>24-kg desktop computer and 27-cm monitor</strong> requires at least:
 <br>• <strong>240 kg of fossil fuel</strong>
@@ -570,6 +762,72 @@ def get_class14_grounded_questions():
             "marks": "5M – 10M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "How can computers be made green? Explain key operational measures, paper conservation metrics, and describe at least five sustainable concept computers featured in green computing design.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Operational Measures for Green Computing:</strong></p>
+<ul>
+  <li><strong>Hardware Form-Factor:</strong> Laptops must be preferred over desktop PCs due to their compact, mobile-optimized chipsets and lower power draw (up to 70% energy reduction).</li>
+  <li><strong>Display Upgrades:</strong> Transitioning away from 17" CRT monitors (<strong>80 W</strong>) to 17" LCD panels (<strong>35 W</strong>) or LED monitors (<strong>25 W</strong>) slashes display energy consumption by up to 68%.</li>
+  <li><strong>Energy Star Compliance:</strong> Deploying Energy Star rated equipment, which operates at <strong>80% electrical efficiency</strong> compared to only <strong>70% efficiency</strong> for non-rated computers.</li>
+  <li><strong>Active Power Management:</strong> Turning off computers and printers when not in use and enforcing automated sleep modes (recognizing that screen savers consume active power rather than saving it).</li>
+</ul>
+
+<p><strong>Office Paper Conservation Metrics (Slide 18):</strong></p>
+<ul>
+  <li><strong>1 ton of office paper</strong> consumes <strong>24 mature trees</strong>.</li>
+  <li><strong>1 tree</strong> yields approximately <strong>16.67 reams of paper</strong> (meaning 1 single ream of 500 sheets consumes <strong>6% of a tree</strong>).</li>
+  <li>Manufacturing and using <strong>1 ton of recycled paper</strong> saves <strong>17 mature trees</strong> from logging.</li>
+</ul>
+
+<p><strong>Sustainable Concept Computers in Green Design (Slides 29–35):</strong></p>
+<table class="exam-table">
+  <thead>
+    <tr>
+      <th>Concept Name & Designer</th>
+      <th>Slide</th>
+      <th>Key Eco-Innovation</th>
+      <th>Technical & Material Architecture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Nikola Knezevic Solar Laptop</strong></td>
+      <td>Slide 30</td>
+      <td>Fold-out integrated solar harvesting</td>
+      <td>Features a solar panel attached to its top half that folds out to catch sunlight whether the laptop is open or closed, charging battery packs and saving grid power.</td>
+    </tr>
+    <tr>
+      <td><strong>Lawn PC</strong></td>
+      <td>Slide 30</td>
+      <td>Self-generating biomimetic solar grass</td>
+      <td>Engineered with recyclable synthetic grass blades embedding micro-circuits and solar cells; generates its own electricity and saves approximately <strong>876 kWh of power per year</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Dell O Project & Biodegradable PC</strong></td>
+      <td>Slide 29</td>
+      <td>Floor projection & bio-skin</td>
+      <td>Eliminates physical monitors and keyboards via laser floor projection. Chassis skin is molded from biodegradable polymers derived from bamboo and cornstarch; parts returnable to OEM.</td>
+    </tr>
+    <tr>
+      <td><strong>Igglu Modular PC</strong></td>
+      <td>Slide 31</td>
+      <td>Standardized modular upgradeability</td>
+      <td>Built from standardized, reusable, and recyclable modular blocks for PCI slots, graphics cards, RAM, and hard drives, enabling individual component upgrades without chassis disposal.</td>
+    </tr>
+    <tr>
+      <td><strong>Power Flower PC</strong></td>
+      <td>Slide 34</td>
+      <td>Hydrogen fuel cell with potable water byproduct</td>
+      <td>Powered by a clean hydrogen fuel cell. Byproduct water drips into a clear container and can be reused for <strong>drinking, cooking, or watering flowers</strong>! Gesture tracking and a pico projector eliminate mouse, keyboard, and physical monitor.</td>
+    </tr>
+    <tr>
+      <td><strong>Solar Clamshell PC for Rural India</strong></td>
+      <td>Slide 35</td>
+      <td>Solar-powered rural agricultural hub</td>
+      <td>Portable mini PC equipped with a roll-out flexible LCD screen, built-in LED projector, Wi-Fi, and onboard solar charging panels to deliver agricultural advisory to farmers in remote off-grid villages.</td>
+    </tr>
+  </tbody>
+</table>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Operational & Behavioral Measures:</strong>
 <br>• Turn off computers and printers when not in use; set systems to sleep modes when idle.
@@ -705,6 +963,31 @@ def get_class14_grounded_questions():
             "marks": "3M – 5M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "Explain the regulatory framework and legislations governing e-waste management. Why is dedicated e-waste legislation necessary, and what are the salient features of the Central Pollution Control Board (CPCB) 2008 Guidelines?",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Why Dedicated E-Waste Legislation is Necessary (Slide 25):</strong></p>
+<ol>
+  <li><strong>End-of-Consumption Nature:</strong> Unlike traditional industrial hazardous waste originating from point-source factories, e-waste is generated at the end of consumer utilization across millions of dispersed homes, schools, and offices.</li>
+  <li><strong>Statutory Precedents under the Environment Protection Act:</strong> The Indian EPA provides for separate, specialized rules for distinct waste streams, such as the <em>Biomedical Wastes Rules 1998</em> and <em>Batteries Rules 2001</em>. E-waste demanded an equivalent standalone regime.</li>
+  <li><strong>Complex Multi-Stakeholder Chain:</strong> Spans an intricate network: original equipment manufacturers (producers), distributors, retailers, millions of end consumers, scrap pickers, aggregators, and formal/informal dismantlers.</li>
+  <li><strong>Dual Characteristics (Value vs Toxicity):</strong> Combines high economic value (gold, silver, copper) with acute environmental hazards (lead, mercury, cadmium), requiring distinct technical standards for safe refurbishment, dismantling, and precious metal recovery.</li>
+</ol>
+
+<p><strong>Multi-Tiered Regulatory Framework Governing E-Waste (Slide 26):</strong></p>
+<ul>
+  <li><em>Hazardous Waste Rules 1998 (as amended in 2008):</em> Governs toxic chemical constituents and made formal environmental registration mandatory for all electronic waste recyclers.</li>
+  <li><em>Municipal Solid Waste Rules:</em> Covers non-toxic solid waste fractions and mixed garbage disposal.</li>
+  <li><em>Basel Convention:</em> Regulates transboundary movements to prohibit international dumping in non-equipped developing states via Prior Informed Consent (PIC).</li>
+  <li><em>Foreign Trade Policy (DGFT):</em> Restricts the importation of second-hand computers and <strong>strictly prohibits the import of e-waste into India</strong>.</li>
+</ul>
+
+<p><strong>Salient Features of CPCB Guidelines (April 2008) (Slide 27):</strong></p>
+<ul>
+  <li><strong>Extended Producer Responsibility (EPR):</strong> Mandates that producers and brand owners bear financial and physical responsibility for establishing take-back mechanisms, collection centers, and certified recycling infrastructure.</li>
+  <li><strong>Restriction on Hazardous Substances (RoHS):</strong> Sets thresholds restricting hazardous heavy metals (lead, cadmium, mercury, hexavalent chromium) and flame retardants in electronic manufacturing.</li>
+  <li><strong>Recycling Standards & Best Practices:</strong> Outlines environmental guidelines for dismantling, mechanical shredding, and hydrometallurgical recovery.</li>
+  <li><strong>Call for Dedicated Legislation:</strong> Formally recommended enacting binding standalone e-waste legislation, which crystallized as India's E-Waste (Management and Handling) Rules.</li>
+</ul>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Why Dedicated E-Waste Legislation is Necessary (Slide 25):</strong>
 <br>• E-waste is <strong>distinct</strong> because it is an <em>end-of-consumption waste</em>, whereas hazardous waste typically results from a distinct industrial manufacturing process.
@@ -797,6 +1080,29 @@ def get_class14_grounded_questions():
             "marks": "3M – 5M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "Discuss the environmental and occupational health hazards associated with informal e-waste recycling. Detail the case studies of Guiyu (China) and Agbogbloshie (Ghana) as highlighted in the lecture slides.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Informal E-Waste Recycling Reality in Developing Nations (Slides 22 & 23):</strong></p>
+<ul>
+  <li><strong>Unorganized & Unregulated:</strong> Over 90% of e-waste recycling in developing nations is concentrated in the informal sector without organized collection systems. Operations are mostly illegal and rely on crude methods: manual hammer smashing of CRTs, open-pan acid leaching using aqua regia to strip gold, and burning insulated wiring over vehicle tires to harvest copper wire.</li>
+  <li><strong>Low Recovery & Severe Pollution:</strong> Primitive chemical leaching achieves recovery rates below 20%, squandering over 80% of precious minerals while discharging toxic metal-saturated acid slurries directly into municipal gutters and soils.</li>
+  <li><strong>Severe Occupational Illnesses:</strong> Workers continuously inhale toxic metal fumes (lead, cadmium), acid mists, and brominated dioxins without personal protective equipment (PPE), causing chronic pulmonary disease, kidney failure, and neurological damage.</li>
+  <li><strong>Exploitation of Vulnerable Groups:</strong> These hazardous backyard operations disproportionately exploit <strong>women, children, and impoverished migrant labourers</strong> who manually sort and desolder circuit boards over open charcoal fires.</li>
+</ul>
+
+<p><strong>Case Study 1: Guiyu, Guangdong, China (Slide 20):</strong></p>
+<ul>
+  <li>Recognized as the world's largest informal e-waste dumping hub, where vast roadsides were lined with mounds of discarded computers and circuit boards.</li>
+  <li>Handled an influx where as much as <strong>4,000 tonnes of toxic e-waste were discarded every hour</strong>, with massive shipments illegally imported from Europe, the USA, and Japan.</li>
+  <li>Resulted in pervasive heavy metal saturation of local river systems and record-high blood lead levels in local children.</li>
+</ul>
+
+<p><strong>Case Study 2: Agbogbloshie, Accra, Ghana (Slide 24):</strong></p>
+<ul>
+  <li>A landmark 2019 investigative report (<em>The Guardian</em>) titled <em>"Rotten eggs: e-waste from Europe poisons Ghana's food chain"</em> documented open burning of European electronic scrap in a slum settlement of <strong>80,000 residents</strong>.</li>
+  <li>Open burning of wire insulation and plastic casings deposited dense toxic ash laden with chlorinated dioxins and polychlorinated biphenyls (PCBs) across surrounding foraging grounds.</li>
+  <li>Free-range chickens foraging on the dumpsite ingested contaminated ash; laboratory testing revealed that chicken eggs contained chlorinated dioxins and PCBs hundreds of times above European food safety limits, demonstrating direct transfer of toxic e-waste chemicals into the human food supply.</li>
+</ul>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Informal Recycling Reality in India & Developing Nations (Slide 22):</strong>
 <br>• Concentrated heavily in the informal (unorganized) sector without organized collection systems.
@@ -869,6 +1175,81 @@ def get_class14_grounded_questions():
             "marks": "5M",
             "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
             "prompt": "Match the following computer components with their toxic chemical constituents. Explain the technical function of each chemical in the hardware component and its specific environmental and toxicological impact when improperly discarded.",
+            "expected_answer": """<div class="expected-body">
+<p><strong>Hardware Component to Toxic Chemical Constituent Match (Slide 21):</strong></p>
+<ol>
+  <li><strong>Printed circuit boards</strong> $\rightarrow$ <strong>Lead & cadmium</strong></li>
+  <li><strong>Cathode ray tubes (CRTs)</strong> $\rightarrow$ <strong>Lead oxide & Cadmium</strong></li>
+  <li><strong>Switches & flat screen monitors</strong> $\rightarrow$ <strong>Mercury</strong></li>
+  <li><strong>Computer batteries</strong> $\rightarrow$ <strong>Cadmium</strong></li>
+  <li><strong>Capacitors and transformers</strong> $\rightarrow$ <strong>Poly Chlorinated Bi-phenyls (PCB)</strong></li>
+  <li><strong>Printed circuit boards, plastic casings cable</strong> $\rightarrow$ <strong>Brominated Flame Retardant (BFR)</strong></li>
+  <li><strong>Cable insulation / coating</strong> $\rightarrow$ <strong>Poly Vinyl Chloride (PVC)</strong></li>
+</ol>
+
+<table class="exam-table">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Hardware Component</th>
+      <th>Toxic Constituent</th>
+      <th>Engineering Function</th>
+      <th>Environmental & Toxicological Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><strong>Printed circuit boards</strong></td>
+      <td><strong>Lead & cadmium</strong></td>
+      <td>Lead is used in tin-lead solder alloys for electrical connections; cadmium is used in SMD chip resistors and semiconductor passivators.</td>
+      <td>Lead causes neurotoxicity and brain damage; cadmium causes proximal renal tubular dysfunction and severe bone demineralization (Itai-Itai disease).</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>Cathode ray tubes (CRTs)</strong></td>
+      <td><strong>Lead oxide & Cadmium</strong></td>
+      <td>Lead oxide (2–3 kg per monitor) shields users from X-rays; cadmium is used as a phosphor coating inside the tube screen.</td>
+      <td>Crushed funnel glass leaches lead into acidic groundwater; cadmium phosphor dust causes severe respiratory inflammation and pulmonary edema.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>Switches & flat screen monitors</strong></td>
+      <td><strong>Mercury</strong></td>
+      <td>Used in mechanical tilt switches and as an excitation gas inside Cold Cathode Fluorescent Lamps (CCFLs) backlighting older LCD panels.</td>
+      <td>Volatilizes into toxic mercury vapor; converts to bioaccumulative methylmercury in aquatic food chains, destroying central nervous systems.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><strong>Computer batteries</strong></td>
+      <td><strong>Cadmium</strong></td>
+      <td>Active cathode material in rechargeable Nickel-Cadmium (Ni-Cd) laptop and CMOS backup battery cells.</td>
+      <td>Classified as an IARC Group 1 human carcinogen; bioaccumulates in kidneys and causes severe bone softening.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>Capacitors and transformers</strong></td>
+      <td><strong>Poly Chlorinated Bi-phenyls (PCB)</strong></td>
+      <td>Historically functioned as dielectric insulating fluids due to exceptional thermal stability and high dielectric constants.</td>
+      <td>Persistent Organic Pollutants (POPs) under the Stockholm Convention; potent endocrine disruptor, causes liver cancer and immune suppression.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><strong>Printed circuit boards, plastic casings cable</strong></td>
+      <td><strong>Brominated Flame Retardant (BFR)</strong></td>
+      <td>Polybrominated diphenyl ethers (PBDEs) are blended into polymer casings and resin boards to retard thermal ignition and satisfy fire safety ratings.</td>
+      <td>Bioaccumulates in adipose tissue and breast milk; open-air burning releases acutely toxic polybrominated dibenzodioxins and dibenzofurans.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><strong>Cable insulation / coating</strong></td>
+      <td><strong>Poly Vinyl Chloride (PVC)</strong></td>
+      <td>Thermoplastic polymer blended with plasticizers used to coat electrical wiring for flexible electrical insulation.</td>
+      <td>Contains chlorine; open burning to harvest copper wire pyrolyzes into highly carcinogenic chlorinated dioxins (TCDD) and corrosive hydrochloric acid gas.</td>
+    </tr>
+  </tbody>
+</table>
+</div>""",
             "key_answer_points": """<ul>
 <li><strong>Authoritative Slide 21 Match:</strong>
 <br>1. <strong>Printed circuit boards</strong> $\\rightarrow$ <strong>Lead & cadmium</strong>
