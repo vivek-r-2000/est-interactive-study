@@ -977,6 +977,76 @@ def build_website():
       outline: none;
       cursor: pointer;
     }}
+    .qb-cat-checkbox-group {{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border);
+    }}
+    .qb-cat-label-row {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }}
+    .qb-cat-title {{
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }}
+    .qb-cat-chips-row {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }}
+    .qb-check-chip {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 11.5px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }}
+    .qb-check-chip:hover {{
+      background: var(--card-hover);
+      border-color: var(--accent);
+    }}
+    .qb-check-chip.active {{
+      background: var(--accent-subtle, rgba(46, 125, 50, 0.08));
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }}
+    .qb-check-chip input[type="checkbox"] {{
+      margin: 0;
+      cursor: pointer;
+      accent-color: var(--accent);
+      width: 13px;
+      height: 13px;
+    }}
+    .qb-check-chip .chip-count {{
+      font-size: 10.5px;
+      padding: 1px 6px;
+      border-radius: 10px;
+      background: var(--card-hover);
+      color: var(--text-muted);
+    }}
+    .qb-check-chip.active .chip-count {{
+      background: var(--accent);
+      color: #ffffff;
+    }}
     .qb-search-input {{
       padding: 6px 12px;
       border-radius: 6px;
@@ -1855,6 +1925,7 @@ def build_website():
         renderMathInElement(contentContainer, {{
           delimiters: [
             {{left: '$$', right: '$$', display: true}},
+            {{left: '$', right: '$', display: false}},
             {{left: '\\\\(', right: '\\\\)', display: false}},
             {{left: '\\\\[', right: '\\\\]', display: true}}
           ],
@@ -1946,7 +2017,7 @@ def build_website():
     // ============================================================
     let qbCurrentClass = "ALL";
     let qbCurrentPaper = "ALL";
-    let qbCurrentCat = "ALL";
+    let qbSelectedCats = new Set(["ALL"]);
     let qbSearchQuery = "";
     let qbViewMode = "both"; // "both", "key", "detailed"
     let qbMastered = new Set(JSON.parse(localStorage.getItem("est_qb_mastered") || "[]"));
@@ -1964,8 +2035,45 @@ def build_website():
       renderQBQuestions();
     }};
 
+    window.toggleQBCat = function(cat) {{
+      if (cat === "ALL") {{
+        qbSelectedCats.clear();
+        qbSelectedCats.add("ALL");
+      }} else {{
+        qbSelectedCats.delete("ALL");
+        if (qbSelectedCats.has(cat)) {{
+          qbSelectedCats.delete(cat);
+          if (qbSelectedCats.size === 0) {{
+            qbSelectedCats.add("ALL");
+          }}
+        }} else {{
+          qbSelectedCats.add(cat);
+        }}
+      }}
+      updateQBCatChips();
+      renderQBQuestions();
+    }};
+
+    function updateQBCatChips() {{
+      document.querySelectorAll(".qb-check-chip").forEach(chip => {{
+        const inp = chip.querySelector("input");
+        if (!inp) return;
+        const cat = inp.getAttribute("data-cat");
+        const isChecked = (cat === "ALL") ? qbSelectedCats.has("ALL") : qbSelectedCats.has(cat);
+        inp.checked = isChecked;
+        chip.classList.toggle("active", isChecked);
+      }});
+    }}
+
     window.setQBCategory = function(val) {{
-      qbCurrentCat = val;
+      if (val === "ALL") {{
+        qbSelectedCats.clear();
+        qbSelectedCats.add("ALL");
+      }} else {{
+        qbSelectedCats.clear();
+        qbSelectedCats.add(val);
+      }}
+      updateQBCatChips();
       renderQBQuestions();
     }};
 
@@ -2052,7 +2160,7 @@ def build_website():
     window.resetQBFilters = function() {{
       qbCurrentClass = "ALL";
       qbCurrentPaper = "ALL";
-      qbCurrentCat = "ALL";
+      qbSelectedCats = new Set(["ALL"]);
       qbSearchQuery = "";
       qbViewMode = "both";
       renderEndsemQuestionBank();
@@ -2060,7 +2168,7 @@ def build_website():
 
     function updateQBStats() {{
       const total = (DB.endsem_question_bank && DB.endsem_question_bank.questions) ? 
-        DB.endsem_question_bank.questions.length : 77;
+        DB.endsem_question_bank.questions.length : 82;
       const mCount = qbMastered.size;
       const pct = Math.round((mCount / total) * 100);
 
@@ -2073,7 +2181,7 @@ def build_website():
     function renderEndsemQuestionBank() {{
       actBar.style.display = "none";
       viewTitle.textContent = "Endsem Question Bank & Model Answers (Lectures 11–19)";
-      viewDesc.textContent = "77 real endsem exam questions collected from 14 past papers (2018–2024). Read quick key points for fast revision, or expand the detailed answers to understand the full concepts.";
+      viewDesc.textContent = "82 real exam questions from 14 past papers (2018–2024), covering all objective MCQs, acronyms, match tables, short answers, comparisons, and descriptive case studies.";
 
       const qb = DB.endsem_question_bank || {{ questions: [] }};
       const qs = qb.questions;
@@ -2083,6 +2191,21 @@ def build_website():
       for (let c = 11; c <= 19; c++) classCounts[c] = 0;
       qs.forEach(q => {{
         if (classCounts[q.class_id] !== undefined) classCounts[q.class_id]++;
+      }});
+
+      const allCategories = [
+        "MCQ & Objective",
+        "Acronyms & Expansions",
+        "Match the Following",
+        "Short Answer & Definitions",
+        "Differentiate Between",
+        "Descriptive & Case Study"
+      ];
+
+      const catCounts = {{}};
+      allCategories.forEach(c => catCounts[c] = 0);
+      qs.forEach(q => {{
+        if (catCounts[q.category] !== undefined) catCounts[q.category]++;
       }});
 
       const classTitles = {{
@@ -2119,12 +2242,12 @@ def build_website():
       html += `
             </div>
 
-            <!-- FILTERS ROW -->
+            <!-- FILTERS ROW 1: SEARCH, PAPERS & VIEW CONTROLS -->
             <div class="qb-filters-row">
               <div class="qb-filter-group">
                 <input type="text" id="qb-search" class="qb-search-input" placeholder="Search any question, formula, or case study..." value="${{qbSearchQuery}}" oninput="handleQBSearch(this.value)">
 
-                <select class="qb-select" onchange="setQBPaper(this.value)">
+                <select id="qb-paper-select" class="qb-select" onchange="setQBPaper(this.value)">
                   <option value="ALL" ${{qbCurrentPaper === 'ALL' ? 'selected' : ''}}>All Papers (14 Exam Papers)</option>
                   <option value="End Exam 2024" ${{qbCurrentPaper === 'End Exam 2024' ? 'selected' : ''}}>EST End Exam 2024</option>
                   <option value="End Exam 2023" ${{qbCurrentPaper === 'End Exam 2023' ? 'selected' : ''}}>EVS End Exam 2023</option>
@@ -2133,14 +2256,6 @@ def build_website():
                   <option value="End Exam 2018" ${{qbCurrentPaper === 'End Exam 2018' ? 'selected' : ''}}>EVS End Exam 2018</option>
                   <option value="Mid" ${{qbCurrentPaper === 'Mid' ? 'selected' : ''}}>Mid-Sem Papers (2018–2024)</option>
                   <option value="Quiz" ${{qbCurrentPaper === 'Quiz' ? 'selected' : ''}}>Quizzes (2020–2023)</option>
-                </select>
-
-                <select class="qb-select" onchange="setQBCategory(this.value)">
-                  <option value="ALL" ${{qbCurrentCat === 'ALL' ? 'selected' : ''}}>All Question Types</option>
-                  <option value="Comprehensive Descriptive" ${{qbCurrentCat === 'Comprehensive Descriptive' ? 'selected' : ''}}>Comprehensive (4M – 10M)</option>
-                  <option value="Differentiate Between" ${{qbCurrentCat === 'Differentiate Between' ? 'selected' : ''}}>Differentiate Between (2M – 4M)</option>
-                  <option value="Short Definition" ${{qbCurrentCat === 'Short Definition' ? 'selected' : ''}}>Definitions & What is (1M – 2M)</option>
-                  <option value="Match the Following" ${{qbCurrentCat === 'Match the Following' ? 'selected' : ''}}>Match the Following (5M)</option>
                 </select>
               </div>
 
@@ -2158,6 +2273,28 @@ def build_website():
                 </div>
 
                 <button class="btn-qb-action" onclick="resetQBFilters()">Reset</button>
+              </div>
+            </div>
+
+            <!-- FILTERS ROW 2: CATEGORY MULTI-SELECT CHECKBOXES -->
+            <div class="qb-cat-checkbox-group">
+              <div class="qb-cat-label-row">
+                <span class="qb-cat-title">Question Type Filters (Multi-Select Checkboxes):</span>
+                <span style="font-size: 11px; color: var(--text-muted);">Select any combination of question types</span>
+              </div>
+              <div class="qb-cat-chips-row">
+                <label class="qb-check-chip ${{qbSelectedCats.has('ALL') ? 'active' : ''}}">
+                  <input type="checkbox" data-cat="ALL" ${{qbSelectedCats.has('ALL') ? 'checked' : ''}} onchange="toggleQBCat('ALL')">
+                  <span>All Types</span>
+                  <span class="chip-count">${{qs.length}}</span>
+                </label>
+                ${{allCategories.map(cat => `
+                  <label class="qb-check-chip ${{qbSelectedCats.has(cat) ? 'active' : ''}}">
+                    <input type="checkbox" data-cat="${{cat}}" ${{qbSelectedCats.has(cat) ? 'checked' : ''}} onchange="toggleQBCat('${{cat}}')">
+                    <span>${{cat}}</span>
+                    <span class="chip-count">${{catCounts[cat] || 0}}</span>
+                  </label>
+                `).join('')}}
               </div>
             </div>
 
@@ -2205,9 +2342,9 @@ def build_website():
         }});
       }}
 
-      // 3. Filter by Category
-      if (qbCurrentCat !== "ALL") {{
-        filtered = filtered.filter(q => q.category === qbCurrentCat);
+      // 3. Filter by Category (Multi-Select)
+      if (!qbSelectedCats.has("ALL") && qbSelectedCats.size > 0) {{
+        filtered = filtered.filter(q => qbSelectedCats.has(q.category));
       }}
 
       // 4. Search Filter
@@ -2229,7 +2366,7 @@ def build_website():
         listEl.innerHTML = `
           <div style="background: var(--card-bg); border: 1px dashed var(--border); border-radius: 8px; padding: 40px 20px; text-align: center;">
             <p style="font-size: 16px; font-weight: 600; margin-bottom: 6px;">No questions match your current filters</p>
-            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">Try selecting 'All Classes' or clearing the search query.</p>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">Try selecting 'All Types', 'All Classes', or clearing the search query.</p>
             <button class="btn-qb-action" onclick="resetQBFilters()">Reset All Filters</button>
           </div>
         `;
