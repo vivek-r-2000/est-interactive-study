@@ -1149,27 +1149,90 @@ def build_website():
       color: var(--text);
     }}
 
-    /* Section 1: Key Answer Points */
-    .qb-section-key {{
-      background: var(--success-bg);
-      border: 1px solid #bbf7d0;
+    /* Collapsible Question Sections */
+    details.qb-section {{
+      border: 1px solid var(--border);
       border-radius: 6px;
-      padding: 14px 16px;
+      overflow: hidden;
+      margin-top: 8px;
+      background: var(--card-bg);
+      transition: border-color 0.15s ease;
     }}
-    html.dark .qb-section-key {{
-      background: #142820;
-      border-color: #244134;
+    details.qb-section:hover {{
+      border-color: var(--border-accent, #cbd5e1);
     }}
-    .qb-section-title-key {{
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--success);
-      margin-bottom: 8px;
+    details.qb-section summary::-webkit-details-marker,
+    details.qb-section summary::marker {{
+      display: none;
+    }}
+    .qb-summary {{
+      cursor: pointer;
+      list-style: none;
       display: flex;
       align-items: center;
-      gap: 6px;
+      justify-content: space-between;
+      padding: 9px 14px;
+      user-select: none;
+      transition: background 0.15s ease;
+    }}
+    .qb-summary:hover {{
+      background: var(--card-hover);
+    }}
+    .qb-summary-title {{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }}
+    .qb-chevron-icon {{
+      transition: transform 0.18s ease;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }}
+    details:not([open]) .qb-chevron-icon {{
+      transform: rotate(-90deg);
+    }}
+    details[open] .qb-chevron-icon {{
+      transform: rotate(0deg);
+    }}
+    .qb-summary-hint {{
+      font-size: 11px;
+      color: var(--text-muted);
+      opacity: 0.65;
+      font-weight: 500;
+    }}
+    .qb-summary:hover .qb-summary-hint {{
+      opacity: 1;
+    }}
+
+    /* Section 1: Key Points */
+    .qb-section-key {{
+      border-color: #cbd5e1;
+    }}
+    html.dark .qb-section-key {{
+      border-color: #27272a;
+    }}
+    .qb-section-key .qb-summary {{
+      background: rgba(16, 185, 129, 0.05);
+      border-bottom: 1px solid transparent;
+    }}
+    details.qb-section-key[open] .qb-summary {{
+      border-bottom-color: rgba(16, 185, 129, 0.15);
+    }}
+    html.dark .qb-section-key .qb-summary {{
+      background: rgba(16, 185, 129, 0.08);
+    }}
+    .qb-section-key .qb-summary-title {{
+      color: #047857;
+    }}
+    html.dark .qb-section-key .qb-summary-title {{
+      color: #34d399;
+    }}
+    .qb-section-key .qb-section-body {{
+      padding: 12px 16px;
+      background: var(--card-bg);
     }}
     .qb-section-key ul {{
       padding-left: 18px;
@@ -1183,24 +1246,27 @@ def build_website():
 
     /* Section 2: Detailed Answer */
     .qb-section-det {{
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 16px 18px;
+      border-color: var(--border);
     }}
-    .qb-section-title-det {{
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: #1e40af;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+    .qb-section-det .qb-summary {{
+      background: rgba(59, 130, 246, 0.04);
+      border-bottom: 1px solid transparent;
     }}
-    html.dark .qb-section-title-det {{
+    details.qb-section-det[open] .qb-summary {{
+      border-bottom-color: rgba(59, 130, 246, 0.12);
+    }}
+    html.dark .qb-section-det .qb-summary {{
+      background: rgba(59, 130, 246, 0.08);
+    }}
+    .qb-section-det .qb-summary-title {{
+      color: #1d4ed8;
+    }}
+    html.dark .qb-section-det .qb-summary-title {{
       color: #93c5fd;
+    }}
+    .qb-section-det .qb-section-body {{
+      padding: 14px 16px;
+      background: var(--card-bg);
     }}
     .qb-section-det .detailed-body {{
       font-size: 13px;
@@ -1212,9 +1278,9 @@ def build_website():
     }}
     .qb-section-det h4 {{
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 600;
       margin-top: 6px;
-      color: var(--accent);
+      color: var(--text);
     }}
     .qb-section-det ol, .qb-section-det ul {{
       padding-left: 18px;
@@ -1235,10 +1301,10 @@ def build_website():
     .qb-card-actions {{
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding-top: 12px;
+      gap: 8px;
+      padding-top: 10px;
       border-top: 1px solid var(--border);
-      margin-top: 2px;
+      margin-top: 4px;
     }}
     .btn-qb-action {{
       background: var(--card-hover);
@@ -1258,6 +1324,7 @@ def build_website():
       background: var(--border);
     }}
     .btn-qb-master {{
+      margin-left: auto;
       background: none;
       border: 1px solid var(--border);
       color: var(--text-muted);
@@ -1912,7 +1979,7 @@ def build_website():
       if (qbMastered.has(qid)) {{
         qbMastered.delete(qid);
         btn.classList.remove("checked");
-        btn.innerHTML = `<span>○</span> Mark as Mastered`;
+        btn.innerHTML = `<span>○</span> Mark Mastered`;
         const el = document.getElementById(`card-${{qid}}`);
         if (el) el.classList.remove("mastered");
       }} else {{
@@ -1926,6 +1993,29 @@ def build_website():
       updateQBStats();
     }};
 
+    window.toggleCardCollapse = function(qid, btn) {{
+      const card = document.getElementById("card-" + qid);
+      if (!card) return;
+      const detailsList = card.querySelectorAll("details.qb-section");
+      if (detailsList.length === 0) return;
+      const anyOpen = Array.from(detailsList).some(d => d.open);
+      detailsList.forEach(d => {{
+        d.open = !anyOpen;
+      }});
+      btn.textContent = anyOpen ? "Expand" : "Collapse";
+    }};
+
+    window.setAllQBSections = function(openState) {{
+      const list = document.getElementById("qb-questions-list");
+      if (!list) return;
+      list.querySelectorAll("details.qb-section").forEach(d => {{
+        d.open = openState;
+      }});
+      list.querySelectorAll(".btn-card-toggle").forEach(b => {{
+        b.textContent = openState ? "Collapse" : "Expand";
+      }});
+    }};
+
     window.copyQBAnswer = function(qid, btn) {{
       const q = (DB.endsem_question_bank && DB.endsem_question_bank.questions) ? 
         DB.endsem_question_bank.questions.find(x => x.id === qid) : null;
@@ -1937,11 +2027,11 @@ def build_website():
       tempDiv.innerHTML = q.detailed_answer;
       const detText = tempDiv.innerText;
 
-      const copyPayload = `[${{q.id}}] ${{q.topic}} (${{q.class_name}})\nMarks: ${{q.marks}} | Importance: ${{q.importance}}\nQuestion:\n${{q.prompt}}\n\n=========================\nSECTION 1: KEY ANSWER POINTS\n=========================\n${{keyText}}\n\n=========================\nSECTION 2: DETAILED ANSWER & CONTEXT\n=========================\n${{detText}}`;
+      const copyPayload = `[${{q.id}}] ${{q.topic}} (${{q.class_name}})\nMarks: ${{q.marks}} | Importance: ${{q.importance}}\nQuestion:\n${{q.prompt}}\n\n=========================\nKEY POINTS\n=========================\n${{keyText}}\n\n=========================\nDETAILED ANSWER\n=========================\n${{detText}}`;
 
       navigator.clipboard.writeText(copyPayload).then(() => {{
         const orig = btn.innerHTML;
-        btn.innerHTML = `<span>✓</span> Copied to Clipboard!`;
+        btn.textContent = "Copied!";
         btn.style.color = "var(--success)";
         setTimeout(() => {{
           btn.innerHTML = orig;
@@ -1975,8 +2065,8 @@ def build_website():
 
     function renderEndsemQuestionBank() {{
       actBar.style.display = "none";
-      viewTitle.textContent = "Endsem Question Bank & Model Answers Suite (Lectures 11–19)";
-      viewDesc.textContent = "77 master exam questions synthesized across 14 IIIT previous exam papers (2018–2024 End-Sems, Mid-Sems & Quizzes). Each question includes: (1) Key Answer Points (high-yield keywords) and (2) Detailed Answer with Full Context & Explanations.";
+      viewTitle.textContent = "Endsem Question Bank & Model Answers (Lectures 11–19)";
+      viewDesc.textContent = "77 exam questions synthesized across 14 previous exam papers (2018–2024). Expand or minimize Key Points and Detailed Answer individually or in bulk.";
 
       const qb = DB.endsem_question_bank || {{ questions: [] }};
       const qs = qb.questions;
@@ -2025,7 +2115,7 @@ def build_website():
             <!-- FILTERS ROW -->
             <div class="qb-filters-row">
               <div class="qb-filter-group">
-                <input type="text" id="qb-search" class="qb-search-input" placeholder="🔍 Search questions, formulas, cases..." value="${{qbSearchQuery}}" oninput="handleQBSearch(this.value)">
+                <input type="text" id="qb-search" class="qb-search-input" placeholder="Search questions, formulas, cases..." value="${{qbSearchQuery}}" oninput="handleQBSearch(this.value)">
 
                 <select class="qb-select" onchange="setQBPaper(this.value)">
                   <option value="ALL" ${{qbCurrentPaper === 'ALL' ? 'selected' : ''}}>All Papers (14 Exam Papers)</option>
@@ -2055,7 +2145,12 @@ def build_website():
                   <button class="qb-mode-btn ${{qbViewMode === 'detailed' ? 'active' : ''}}" data-mode="detailed" onclick="setQBViewMode('detailed')">Detailed Only</button>
                 </div>
 
-                <button class="btn-qb-action" onclick="resetQBFilters()">↺ Reset</button>
+                <div class="qb-collapse-group" style="display: flex; gap: 4px;">
+                  <button class="btn-qb-action" onclick="setAllQBSections(false)" title="Minimize all answers">Collapse All</button>
+                  <button class="btn-qb-action" onclick="setAllQBSections(true)" title="Expand all answers">Expand All</button>
+                </div>
+
+                <button class="btn-qb-action" onclick="resetQBFilters()">Reset</button>
               </div>
             </div>
 
@@ -2164,33 +2259,48 @@ def build_website():
               ${{q.prompt}}
             </div>
 
-            <!-- SECTION 1: KEY ANSWER POINTS -->
+            <!-- SECTION 1: KEY POINTS -->
             ${{(qbViewMode === 'both' || qbViewMode === 'key') ? `
-              <div class="qb-section-key">
-                <div class="qb-section-title-key">
-                  <span>🔑 Section 1: Key Answer Points (Exam High-Yield Summary)</span>
+              <details class="qb-section qb-section-key" open id="sec-key-${{q.id}}">
+                <summary class="qb-summary">
+                  <span class="qb-summary-title">
+                    <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <span>Key Points</span>
+                  </span>
+                  <span class="qb-summary-hint">Toggle</span>
+                </summary>
+                <div class="qb-section-body">
+                  ${{q.key_answer_points}}
                 </div>
-                ${{q.key_answer_points}}
-              </div>
+              </details>
             ` : ''}}
 
-            <!-- SECTION 2: DETAILED ANSWER & CONTEXT -->
+            <!-- SECTION 2: DETAILED ANSWER -->
             ${{(qbViewMode === 'both' || qbViewMode === 'detailed') ? `
-              <div class="qb-section-det">
-                <div class="qb-section-title-det">
-                  <span>📖 Section 2: Detailed Answer with All Relevant Context & Slide Connections</span>
+              <details class="qb-section qb-section-det" open id="sec-det-${{q.id}}">
+                <summary class="qb-summary">
+                  <span class="qb-summary-title">
+                    <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <span>Detailed Answer</span>
+                  </span>
+                  <span class="qb-summary-hint">Toggle</span>
+                </summary>
+                <div class="qb-section-body">
+                  ${{q.detailed_answer}}
                 </div>
-                ${{q.detailed_answer}}
-              </div>
+              </details>
             ` : ''}}
 
             <!-- ACTIONS -->
             <div class="qb-card-actions">
+              <button class="btn-qb-action btn-card-toggle" onclick="toggleCardCollapse('${{q.id}}', this)">
+                Collapse
+              </button>
               <button class="btn-qb-action" onclick="copyQBAnswer('${{q.id}}', this)">
-                <span>📋</span> Copy Full Answer
+                Copy Answer
               </button>
               <button class="btn-qb-master ${{isMastered ? 'checked' : ''}}" onclick="toggleQBMastered('${{q.id}}', this)">
-                <span>${{isMastered ? '✓' : '○'}}</span> ${{isMastered ? 'Mastered' : 'Mark as Mastered'}}
+                <span>${{isMastered ? '✓' : '○'}}</span> ${{isMastered ? 'Mastered' : 'Mark Mastered'}}
               </button>
             </div>
           </div>
@@ -2462,26 +2572,41 @@ def build_website():
                 ${{q.prompt}}
               </div>
 
-              <div class="qb-section-key">
-                <div class="qb-section-title-key">
-                  <span>🔑 Section 1: Key Answer Points (Exam High-Yield Summary)</span>
+              <details class="qb-section qb-section-key" open id="search-sec-key-${{q.id}}">
+                <summary class="qb-summary">
+                  <span class="qb-summary-title">
+                    <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <span>Key Points</span>
+                  </span>
+                  <span class="qb-summary-hint">Toggle</span>
+                </summary>
+                <div class="qb-section-body">
+                  ${{q.key_answer_points}}
                 </div>
-                ${{q.key_answer_points}}
-              </div>
+              </details>
 
-              <div class="qb-section-det">
-                <div class="qb-section-title-det">
-                  <span>📖 Section 2: Detailed Answer with All Relevant Context & Slide Connections</span>
+              <details class="qb-section qb-section-det" open id="search-sec-det-${{q.id}}">
+                <summary class="qb-summary">
+                  <span class="qb-summary-title">
+                    <svg class="qb-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <span>Detailed Answer</span>
+                  </span>
+                  <span class="qb-summary-hint">Toggle</span>
+                </summary>
+                <div class="qb-section-body">
+                  ${{q.detailed_answer}}
                 </div>
-                ${{q.detailed_answer}}
-              </div>
+              </details>
 
               <div class="qb-card-actions">
+                <button class="btn-qb-action btn-card-toggle" onclick="toggleCardCollapse('${{q.id}}', this)">
+                  Collapse
+                </button>
                 <button class="btn-qb-action" onclick="copyQBAnswer('${{q.id}}', this)">
-                  <span>📋</span> Copy Full Answer
+                  Copy Answer
                 </button>
                 <button class="btn-qb-master ${{isMastered ? 'checked' : ''}}" onclick="toggleQBMastered('${{q.id}}', this)">
-                  <span>${{isMastered ? '✓' : '○'}}</span> ${{isMastered ? 'Mastered' : 'Mark as Mastered'}}
+                  <span>${{isMastered ? '✓' : '○'}}</span> ${{isMastered ? 'Mastered' : 'Mark Mastered'}}
                 </button>
               </div>
             </div>
