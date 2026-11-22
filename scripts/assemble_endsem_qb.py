@@ -76,13 +76,13 @@ def assemble_qb():
             f.write(f"- **Exam Appearances:** {exams_str}\n\n")
             f.write(f"**Question:**\n> *{q['prompt']}*\n\n")
 
-            f.write("#### 🔑 Section 1: Key Answer Points\n")
+            f.write("#### Key Points\n")
             # Convert simple HTML bullet points to markdown if needed or write cleanly
             clean_key = q["key_answer_points"].replace("<ul>", "").replace("</ul>", "").replace("<li>", "- ").replace("</li>", "\n").replace("<br>", "\n  ").strip()
             clean_key = clean_key.replace("<strong>", "**").replace("</strong>", "**").replace("<em>", "*").replace("</em>", "*")
             f.write(clean_key + "\n\n")
 
-            f.write("#### 📖 Section 2: Detailed Answer with All Relevant Context\n")
+            f.write("#### Detailed Answer\n")
             clean_det = q["detailed_answer"].replace('<div class="detailed-body">', '').replace('</div>', '')
             clean_det = clean_det.replace('<div class="formula-box">', '\n\n').replace('</div>', '\n\n')
             clean_det = clean_det.replace("<h4>", "\n##### ").replace("</h4>", "\n")

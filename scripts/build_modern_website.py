@@ -6,6 +6,11 @@ def build_website():
     with open(db_path, "r", encoding="utf-8") as f:
         data = json.load(f)
         
+    qb_path = os.path.join("Study_Material", "endsem_question_bank.json")
+    if os.path.exists(qb_path):
+        with open(qb_path, "r", encoding="utf-8") as fq:
+            data["endsem_question_bank"] = json.load(fq)
+        
     db_json_escaped = json.dumps(data, ensure_ascii=False)
     
     html = f'''<!DOCTYPE html>
@@ -1365,7 +1370,7 @@ def build_website():
       <div class="header-actions">
         <div class="search-wrap">
           <span class="search-icon">🔍</span>
-          <input type="text" id="search-input" class="search-input" placeholder="Search concepts, case studies, formulas..." autocomplete="off">
+          <input type="text" id="search-input" class="search-input" placeholder="Search any concept, case study, or formula..." autocomplete="off">
         </div>
         <button id="theme-toggle" class="btn-toggle">
           <span id="theme-icon">🌙</span> <span id="theme-label">Dark</span>
@@ -1400,7 +1405,7 @@ def build_website():
     <!-- VIEW HEADER -->
     <div class="view-header" id="view-header">
       <h1 class="view-title" id="view-title">Pillar 1: Planetary Foundations & Human Pressures</h1>
-      <p class="view-desc" id="view-desc">Earth systems, thermodynamic constraints, population pressures, and the cautionary dystopian future.</p>
+      <p class="view-desc" id="view-desc">How Earth's living systems work, the laws of physics that govern energy, and how human population and consumption stretch our planet's limits.</p>
     </div>
 
     <!-- CONTENT DISPLAY CONTAINER -->
@@ -1902,7 +1907,7 @@ def build_website():
     function renderCaseStudies() {{
       actBar.style.display = "none";
       viewTitle.textContent = "Case Study Hub: 12 Landmark Historical Incidents";
-      viewDesc.textContent = "Structured 3-part breakdowns (What Happened → The Root Cause → The Takeaway) for exams and real-world retention.";
+      viewDesc.textContent = "Real-world environmental disasters explained in three clear steps: what happened, what went wrong, and what we learned from it.";
 
       let html = `<div class="case-grid">`;
       DB.case_studies.forEach(cs => {{
@@ -2068,7 +2073,7 @@ def build_website():
     function renderEndsemQuestionBank() {{
       actBar.style.display = "none";
       viewTitle.textContent = "Endsem Question Bank & Model Answers (Lectures 11–19)";
-      viewDesc.textContent = "77 exam questions synthesized across 14 previous exam papers (2018–2024). Expand or minimize Key Points and Detailed Answer individually or in bulk.";
+      viewDesc.textContent = "77 real endsem exam questions collected from 14 past papers (2018–2024). Read quick key points for fast revision, or expand the detailed answers to understand the full concepts.";
 
       const qb = DB.endsem_question_bank || {{ questions: [] }};
       const qs = qb.questions;
@@ -2117,7 +2122,7 @@ def build_website():
             <!-- FILTERS ROW -->
             <div class="qb-filters-row">
               <div class="qb-filter-group">
-                <input type="text" id="qb-search" class="qb-search-input" placeholder="Search questions, formulas, cases..." value="${{qbSearchQuery}}" oninput="handleQBSearch(this.value)">
+                <input type="text" id="qb-search" class="qb-search-input" placeholder="Search any question, formula, or case study..." value="${{qbSearchQuery}}" oninput="handleQBSearch(this.value)">
 
                 <select class="qb-select" onchange="setQBPaper(this.value)">
                   <option value="ALL" ${{qbCurrentPaper === 'ALL' ? 'selected' : ''}}>All Papers (14 Exam Papers)</option>
@@ -2317,7 +2322,7 @@ def build_website():
     function renderCheatSheet() {{
       actBar.style.display = "none";
       viewTitle.textContent = "Formula & Law Cheat Sheet";
-      viewDesc.textContent = "Key ecological laws, mathematical indices (IPAT, NDVI, PUE, Green GDP), and thermodynamic equations.";
+      viewDesc.textContent = "Essential formulas, core environmental laws, and practical indices you need to know for the exam.";
 
       let html = `<div class="cheat-grid">`;
       DB.cheat_sheet.forEach(item => {{
@@ -2421,10 +2426,10 @@ def build_website():
         }});
       }}
 
-      viewDesc.textContent = `Found ${{matches.length}} matching item(s) across the course materials.`;
+      viewDesc.textContent = matches.length === 1 ? "Found 1 matching topic across the course." : `Found ${{matches.length}} matching topics across the course.`;
 
       if (matches.length === 0) {{
-        contentContainer.innerHTML = `<div style="text-align: center; padding: 60px 20px; color: var(--text-muted);">No results found matching "${{q}}". Try searching for "carbon", "NDVI", "Aether", "Zelp", "seaweed", "Bhopal", or "EIA".</div>`;
+        contentContainer.innerHTML = `<div style="text-align: center; padding: 60px 20px; color: var(--text-muted);"><div style="font-size: 24px; margin-bottom: 8px;">🔍</div><strong>Nothing found for "${{q}}".</strong><p style="margin-top: 6px; font-size: 13px;">Try checking your spelling or search friendly terms like "carbon", "NDVI", "Aether", "Zelp", "seaweed", "Bhopal", or "EIA".</p></div>`;
         return;
       }}
 
