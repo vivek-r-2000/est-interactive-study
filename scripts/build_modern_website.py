@@ -17,7 +17,7 @@ def build_website():
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
-          onload="renderMathInElement(document.body, {{delimiters: [{{left: '$$', right: '$$', display: true}}, {{left: '$', right: '$', display: false}}, {{left: '\\\\(', right: '\\\\)', display: false}}, {{left: '\\\\[', right: '\\\\]', display: true}}], throwOnError: false}});"></script>
+          onload="renderMathInElement(document.body, {{delimiters: [{{left: '$$', right: '$$', display: true}}, {{left: '\\\\(', right: '\\\\)', display: false}}, {{left: '\\\\[', right: '\\\\]', display: true}}], throwOnError: false}});"></script>
   <style>
     :root {{
       --bg: #FBFBFA;
@@ -1850,7 +1850,6 @@ def build_website():
         renderMathInElement(contentContainer, {{
           delimiters: [
             {{left: '$$', right: '$$', display: true}},
-            {{left: '$', right: '$', display: false}},
             {{left: '\\\\(', right: '\\\\)', display: false}},
             {{left: '\\\\[', right: '\\\\]', display: true}}
           ],
