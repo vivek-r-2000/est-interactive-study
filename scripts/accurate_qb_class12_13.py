@@ -114,101 +114,10 @@ def get_class12_questions():
         }
     ]
 
+from grounded_class_13 import get_class13_grounded_questions
+
 def get_class13_questions():
-    return [
-        {
-            "id": "EQB-13-01",
-            "class_id": 13,
-            "class_name": "Grassroots Environmental Movements in India",
-            "topic": "Chipko Movement Slogan",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2023", "section": "Section I, Q1(h)", "marks": "1M"}
-            ],
-            "marks": "1M",
-            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
-            "prompt": "Slogan of \"Chipko movement\".",
-            "key_answer_points": "<ul>\n<li><strong>Original Hindi Slogan:</strong>\n<br><em>\"क्या हैं जंगल के उपकार? मिट्टी, पानी और बयार। मिट्टी, पानी और बयार, ज़िंदा रहने के आधार।\"</em></li>\n<li><strong>English Translation:</strong>\n<br><em>\"What do the forests bear? Soil, water and pure air. Soil, water and pure air are the basis of staying alive.\"</em></li>\n<li><strong>Origin:</strong> Coined in 1977 by village activist <strong>Ghanshyam Raturi</strong> and popularized by women leaders like Gaura Devi and Sudesha Devi.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>The Ecological Meaning:</strong> This slogan radically challenged the commercial timber mindset that viewed forests merely as resin, timber, and profit, asserting that forests are vital life-support systems providing clean soil, water, and air.</p>\n<p><em>Slide Reference: Class 13 Slide 5.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-13-02",
-            "class_id": 13,
-            "class_name": "Grassroots Environmental Movements in India",
-            "topic": "Sunderlal Bahuguna Leadership",
-            "category": "MCQ & Objective",
-            "exams": [
-                {"paper": "End Exam 2022", "section": "Section III, Q7", "marks": "1M"}
-            ],
-            "marks": "1M",
-            "importance": "HIGH (⭐⭐⭐⭐)",
-            "prompt": "______ (person) led both Chipko and Tehri dam movement.",
-            "key_answer_points": "<ul>\n<li><strong>Answer:</strong> <strong>Sunderlal Bahuguna</strong> (1927–2021).</li>\n<li><strong>Role in Chipko:</strong> Undertook a 5,000 km trans-Himalayan march across villages in the 1970s, carrying the message to Prime Minister Indira Gandhi which resulted in a 15-year commercial logging ban in the Uttarakhand Himalayas.</li>\n<li><strong>Role in Tehri Dam:</strong> Campaigned relentlessly and went on extended hunger strikes on the banks of the Bhagirathi River to oppose the construction of the seismically dangerous mega-dam.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>A Gandhian Crusader:</strong> Bahuguna combined non-violent satyagraha with deep ecological philosophy, coining the motto: 'Ecology is permanent economy.'</p>\n<p><em>Slide Reference: Class 13 Slides 6 & 11.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-13-03",
-            "class_id": 13,
-            "class_name": "Grassroots Environmental Movements in India",
-            "topic": "Negative Impacts of Tehri Dam",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2024", "section": "Section V, Q4", "marks": "2M"},
-                {"paper": "End Exam 2023", "section": "Section III, Q4", "marks": "3M"}
-            ],
-            "marks": "2M – 3M",
-            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
-            "prompt": "What are the negative impacts of Tehri Dam?",
-            "key_answer_points": "<ul>\n<li><strong>Seismic Hazard (Central Himalayan Gap):</strong> Built in high-risk Seismic Zone V near active fault lines. An earthquake of magnitude >8.0 could breach the 260.5m earth-and-rockfill dam, drowning downstream holy cities (Rishikesh, Haridwar) in hours.</li>\n<li><strong>Massive Involuntary Displacement:</strong> Submerged historic Tehri town and over 100 villages, displacing over 100,000 residents with incomplete rehabilitation.</li>\n<li><strong>Reservoir-Induced Seismicity & Landslides:</strong> Huge water mass (4 cubic km) exerts enormous pore pressure on fragile slope geology, causing slope collapses.</li>\n<li><strong>Ecological Stagnation of the Bhagirathi:</strong> Impedes natural sediment flow and destroys the breeding habitat of endangered cold-water Himalayan fish (Golden Mahseer).</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>The Mega-Dam Tradeoff:</strong> While providing 1,000 MW hydro-peaking power and drinking water to Delhi, Tehri Dam remains controversial due to serious geophysical risks in a geologically active young mountain belt.</p>\n<p><em>Slide Reference: Class 13 Slide 11.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-13-04",
-            "class_id": 13,
-            "class_name": "Grassroots Environmental Movements in India",
-            "topic": "Kali River Environmental Issues",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2023", "section": "Section III, Q3", "marks": "3M"}
-            ],
-            "marks": "3M",
-            "importance": "HIGH (⭐⭐⭐⭐)",
-            "prompt": "What are the environmental issues associated with Kali River of Western ghats?",
-            "key_answer_points": "<ul>\n<li><strong>Dam Cascade & Flow Fragmentation:</strong> Over-dammed by 6 major hydroelectric dams (Supa, Kodasalli, Kadra), drowning thousands of acres of pristine evergreen Western Ghats rainforest.</li>\n<li><strong>Industrial Effluent Pollution (Paper Mills):</strong> The West Coast Paper Mills at Dandeli discharges untreated black liquor wastewater, heavily contaminating drinking water.</li>\n<li><strong>Manganese & Iron Mining Siltation:</strong> Open-pit mining in the catchment chokes the riverbed with heavy silt, destroying endemic riverine fish species.</li>\n<li><strong>Radiation Safety Concerns:</strong> The Kaiga Nuclear Power Generating Station draws cooling water from the Kali River basin, sparking persistent local civil protests over thermal discharge and radiation safety.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>A Choked River:</strong> The Kali River in Uttara Kannada district is a prime example of an ecologically sensitive river system fragmented by overlapping industrial, mining, and power projects.</p>\n<p><em>Slide Reference: Class 13 Slide 13.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-13-05",
-            "class_id": 13,
-            "class_name": "Grassroots Environmental Movements in India",
-            "topic": "Four Indian Grassroots Movements & Locations",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section IX, Q1", "marks": "2M"}
-            ],
-            "marks": "2M",
-            "importance": "HIGH (⭐⭐⭐⭐)",
-            "prompt": "List any 4 environmental movements with their location.",
-            "key_answer_points": "<ul>\n<li><strong>1. Chipko Movement (1973):</strong> Chamoli District, Uttarakhand (Himalayan foothills).</li>\n<li><strong>2. Appiko Movement (1983):</strong> Uttara Kannada District, Karnataka (Western Ghats).</li>\n<li><strong>3. Silent Valley Movement (1978):</strong> Palakkad District, Kerala (Western Ghats tropical rainforest).</li>\n<li><strong>4. Narmada Bachao Andolan (1985):</strong> Narmada River Valley across Gujarat, Madhya Pradesh, and Maharashtra.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Grassroots Environmentalism:</strong> Unlike Western environmentalism which often centered around wildlife conservation and wilderness recreation, Indian environmental struggles have been driven by forest-dependent rural and tribal communities protecting basic survival resources.</p>\n<p><em>Slide Reference: Class 13 Slides 4–12.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-13-06",
-            "class_id": 13,
-            "class_name": "Grassroots Environmental Movements in India",
-            "topic": "Appiko & Silent Valley Movements",
-            "category": "Descriptive & Case Study",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section IX", "marks": "4M"},
-                {"paper": "End Exam 2018", "section": "Part I", "marks": "4M"}
-            ],
-            "marks": "4M",
-            "importance": "HIGH (⭐⭐⭐⭐)",
-            "prompt": "Describe the Appiko movement in Karnataka and the Silent Valley movement in Kerala.",
-            "key_answer_points": "<ul>\n<li><strong>Appiko Movement (1983 - Karnataka):</strong>\n<br>• <em>Meaning:</em> In Kannada, 'Appiko' means 'to hug'—the southern counterpart to Chipko, led by Pandurang Hegde in Salkani forest.\n<br>• <em>Actions:</em> Villagers hugged trees to halt clear-felling for paper mills and commercial monoculture (teak/eucalyptus).\n<br>• <em>Threefold Motto:</em> <strong>Ubsu</strong> (Save forests), <strong>Belesu</strong> (Grow new trees), <strong>Balasu</strong> (Use forest produce rationally).</li>\n<li><strong>Silent Valley Movement (1978 - Kerala):</strong>\n<br>• <em>Threat:</em> A proposed 120 MW hydroelectric dam across the Kunthipuzha River threatening to submerge 8.3 sq km of ancient untouched tropical evergreen rainforest.\n<br>• <em>Key Weapon:</em> Led by the Kerala Sastra Sahitya Parishad (KSSP) using <strong>citizen science</strong>, popular theater, and ecology education. Biologists highlighted the habitat of the rare Lion-tailed Macaque.\n<br>• <em>Victory:</em> In 1983, Prime Minister Indira Gandhi canceled the dam; Silent Valley was declared a National Park in 1985.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Citizen Action:</strong> Silent Valley stands out as one of India's earliest successful environmental campaigns driven not by direct forest dwellers, but by school teachers, scientists, poets, and civil society.</p>\n<p><em>Slide Reference: Class 13 Slides 8–10.</em></p>\n</div>"
-        }
-    ]
+    return get_class13_grounded_questions()
 
 if __name__ == "__main__":
     print(f"Class 12: {len(get_class12_questions())} Qs | Class 13: {len(get_class13_questions())} Qs.")

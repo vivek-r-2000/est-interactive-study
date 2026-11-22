@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Assemble Master Question Bank for Classes 11–19
-Combines all validated questions from the modular class scripts,
+Combines all slide-grounded, verified questions from the modular class scripts,
 updates endsem_question_bank.json, curriculum_database.json,
 and generates the comprehensive ENDSEM_QUESTION_BANK_AND_ANSWERS.md.
 """
@@ -14,24 +14,41 @@ import re
 # Add scripts directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from accurate_qb_class11 import get_class11_questions
-from accurate_qb_class12_13 import get_class12_questions, get_class13_questions
-from accurate_qb_class14_15 import get_class14_questions, get_class15_questions
-from accurate_qb_class16_17 import get_class16_questions, get_class17_questions
-from accurate_qb_class18_19 import get_class18_questions, get_class19_questions
+def load_class_questions(cid):
+    grounded_mod = f"grounded_class_{cid}"
+    try:
+        mod = __import__(grounded_mod)
+        func = getattr(mod, f"get_class{cid}_grounded_questions", None)
+        if func:
+            qs = func()
+            print(f"Loaded Class {cid} from {grounded_mod} ({len(qs)} questions)")
+            return qs
+    except Exception as e:
+        print(f"Note: {grounded_mod} not ready ({e}), falling back to accurate_qb scripts...")
+
+    # Fallbacks
+    if cid == 11:
+        from accurate_qb_class11 import get_class11_questions
+        return get_class11_questions()
+    elif cid in (12, 13):
+        import accurate_qb_class12_13 as m
+        return getattr(m, f"get_class{cid}_questions")()
+    elif cid in (14, 15):
+        import accurate_qb_class14_15 as m
+        return getattr(m, f"get_class{cid}_questions")()
+    elif cid in (16, 17):
+        import accurate_qb_class16_17 as m
+        return getattr(m, f"get_class{cid}_questions")()
+    elif cid in (18, 19):
+        import accurate_qb_class18_19 as m
+        return getattr(m, f"get_class{cid}_questions")()
+    return []
 
 def assemble_all():
-    q11 = get_class11_questions()
-    q12 = get_class12_questions()
-    q13 = get_class13_questions()
-    q14 = get_class14_questions()
-    q15 = get_class15_questions()
-    q16 = get_class16_questions()
-    q17 = get_class17_questions()
-    q18 = get_class18_questions()
-    q19 = get_class19_questions()
-
-    all_questions = q11 + q12 + q13 + q14 + q15 + q16 + q17 + q18 + q19
+    all_questions = []
+    for cid in range(11, 20):
+        c_qs = load_class_questions(cid)
+        all_questions.extend(c_qs)
 
     print(f"Total questions gathered: {len(all_questions)}")
 
@@ -108,8 +125,7 @@ def clean_html_for_md(html_str):
     # Replace generic divs
     s = re.sub(r'<div[^>]*>', r'', s)
     s = re.sub(r'</div>', r'\n', s)
-    # Tables - keep clean or convert
-    # Replace table HTML if present
+    # Tables
     s = re.sub(r'<table[^>]*>', r'\n', s)
     s = re.sub(r'</table>', r'\n', s)
     s = re.sub(r'<thead>.*?</thead>', r'', s, flags=re.DOTALL)

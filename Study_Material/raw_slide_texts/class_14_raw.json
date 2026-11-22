@@ -1,0 +1,147 @@
+{
+  "class_id": 14,
+  "file_name": "Class-14-Green computing.pdf",
+  "total_slides": 35,
+  "slides": [
+    {
+      "slide_num": 1,
+      "text": "29th October 2026\nClass-14"
+    },
+    {
+      "slide_num": 2,
+      "text": "Negative Impact of Technology on the Environment\n1. Mining For Minerals\nMining\nis\nresponsible\nfor\ndeforestation,\nlandscape\ndegradation, water pollution, and the release of vast quantities\nof\nCo2\nand\nCo\ninto\nthe\nair\n[Machinery-Fuels-Water\nconsumption]\nTechnology is Mineral Intensive\nAround 35 different materials are used in smartphones\nPlastic is, after silicon, the second most-used material.\nIron, aluminium, copper, lead, zinc, tin, nickel, and barium\n(finished products)\n2. Massive Energy Use & Carbon Footprint\n[Production and transport- Use of device]\n3. e-waste"
+    },
+    {
+      "slide_num": 3,
+      "text": ""
+    },
+    {
+      "slide_num": 4,
+      "text": "The construction of an average 24-kg\ncomputer and 27-cm monitor requires\nat least 240 kg of fossil fuel, 22 kg of\nchemicals and 1,500 kgs of water – or\n1.8 tons in total, the equivalent of a\nsports utility vehicle\nComputer manufacturing is much more\nmaterials-intensive than making a car\nor refrigerator, which need only one or\ntwo times their weight in fossil fuels.\nSemi conductor Manufacturing \nPlants can use as much water as \na small city."
+    },
+    {
+      "slide_num": 5,
+      "text": "Challenges  \nResearch in Green ICT\n\"Moore's law“: \nGordon Moore, \nco-founder Intel, \npredicted that \ncomputer \nprocessing power \nroughly doubles \nevery two years.\nApprox 50 \nmillion tons of \ne-trash generated \na year \nworldwide, \naccording to the \nUN Environment \nProgramme.\n‘ state-of-the-\nart’ machines \nthreatened by \nobsolescence.\nICT accounts \nfor 2% of of \nglobal CO2\nEmission"
+    },
+    {
+      "slide_num": 6,
+      "text": "Green Computing\nThe term green computing was coined shortly after\nenergy star began\nGreen computing is the environmentally responsible and\nEco friendly use of computers and their resources\nIt is the study of designing, manufacturing, using and\ndisposing of computing devices in such a way that\nreduces environmental impact\nIn 1992 the US environmental protection\nagency launched Energy star a\nlabeling\nprogram\nDesigned to promote and recognize energy\nefficiency\nin\nmonitors,\nclimate\ncontrol\nequipments etc"
+    },
+    {
+      "slide_num": 7,
+      "text": "Green Computing\nToxicity\n•There are toxic chemicals used in the\nmanufacturing\nof\ncomputers\nand\ncomponents which can enter the food\nchain and water!\n•Why\n–Computer Energy is Often Wasteful\n•Leaving the computer on when not in\nuse (CPU and fan consume power, screen\nsavers consume power)\n–Insufficient Power and Cooling Capacities\n•Data\ncenters\nhave\ninsufficient\ncooling\ncapacities.\n–Pollution\n•Manufacturing techniques\n•Packaging\n•Disposal of computers and components\nGlobal Effect\nClimate Change\ne-waste"
+    },
+    {
+      "slide_num": 8,
+      "text": "Reducing waste\nUsing computers to reduce the use of natural resources.\nPurchase/Disposal\nResponsible computer purchase and \ndisposal  considerations\nEnergy use\nEnergy use and efficient\nways to computing\nThree areas of focus\nGreen \nPurchasing??\n(EPP)"
+    },
+    {
+      "slide_num": 9,
+      "text": "Approaches To Green Computing\n1. Virtualization : The\nprocess\nof\nrunning\ntwo or more logical\ncomputer systems on\none set of hardware\nVirtualization platforms can run across hundreds\nof\ninterconnected\nphysical\ncomputers\nand\nstorage devices, to create an entire virtual\ninfrastructure.\nVirtualization helps a company / enterprise\nlower power and cooling consumption, by\nreducing\nthe\nnumber\nof\nmachines\nand\nservers it needs"
+    },
+    {
+      "slide_num": 10,
+      "text": "• Turn off computers and printers\nwhen not in use.\n• Make sure computer is set to sleep\nwhen not in use.\n• Laptops should be preferred over\ndesktops.\n• CRT Monitor (17”) uses 80 watts.\n• LCD Monitor (17”) uses 35 watts.\n• LED Monitor (17”) uses 25 watts. \nLEDs – Rare and Expensive\nLCDs preferred for general users.\nEnergy Star Rated \nComputer – 80% energy Efficient.\nWithout Energy Star Rated Computer –\n70% Efficient."
+    },
+    {
+      "slide_num": 11,
+      "text": "3. Algorithm Efficiency : The efficiency of algorithms has an \nimpact on the amount of computer resources required for any given \ncomputing function\nCo2 Released per search:\nGoogle Search ≈ 0.20gm \nMicrosoft Live Search ≈ 0.32gm \nYahoo Search ≈ 0.26gm\nAOL Search ≈ 0.37gm.\n4. Material Recycling\nDisposal of the computing devices\nconstitute 20-50 million tons per year\n(about 5% of the total waste of the\nplanet) --- e-waste\nWhere are we going to pull all of it?\ne-waste handling\nReuse\nRefurbish"
+    },
+    {
+      "slide_num": 12,
+      "text": ""
+    },
+    {
+      "slide_num": 13,
+      "text": "As of July 2023, Blackle claims to have saved over 10.07 MWh of \nelectrical energy."
+    },
+    {
+      "slide_num": 14,
+      "text": "Thick and Thin Client ?\n“Thin Clients are small, silent devices\nthat communicate with a\ncentral server\ngiving a computing experience that is largely\nidentical to that of a PC”.\n• no hard drives or internal moving parts,\n• minimum processing power with a relatively small amount of\nRAM.\n• information sent to the central server which processes the\ninformation and returns an updated image to the terminal’s\nscreen.\n• All applications are stored and run on the server.\nA thick client is a computer that does not require a connection to\na server system to run .\nThey can benefit from being connected to a network and a server\nBut the thick client (office computer) is largely independent"
+    },
+    {
+      "slide_num": 15,
+      "text": "Smaller, lighter equipment that uses fewer\n1. materials : plastics, precious metals,\n2. energy : (kWh) : during its use and manufacture (embodied\nenergy)\n3. creates less waste : (CO2 and solid material) waste during its\nuse, manufacture and disposal.\n4. uses less process water\nThin Client : Clear Advantages over Thick Client ?\nPC and 17” monitor required 20kgs of materials.\nA PC and Monitor’s life cycle will include the\ndisposal of\n37kgs of non hazardous waste and 0.7kgs of hazardous waste.\nThe production of a PC & monitor will consume..\n3,244 mega joules of energy and 920 litres of process water\nCreate..\n193 kgs of greenhouse gases, also release heavy metals,\ncontribute to air, soil and water pollutants.\nThick Clients"
+    },
+    {
+      "slide_num": 16,
+      "text": "Purchase Price of Thin V’s Thick \nlow spec PC costs £400 : Thin client costs £210 Assume \nPC life = 5yrs, thin client life = 7yrs. \nEnergy Savings of Thin V’s Thick \nThick Client PC : 75W : Thin Client : 5W energy. \nHowever, Thin Client doesn’t always deliver in terms of \ncomputing efficiency and involves cost related to additional \nterminals,  hardware, software purchase etc.,\nQueen Margaret University (Edinburgh) saved £50,000 in\nenergy costs alone (at halfway stage) due to thin Client\nAdvantages of Thick Client over Thin Client\nIn terms of PC’s, no need to connect to a server\n(virtual servers need to be on 24 x 7)"
+    },
+    {
+      "slide_num": 17,
+      "text": ""
+    },
+    {
+      "slide_num": 18,
+      "text": "How can I make my computer Green?\nDevelop a sustainable green computing plan. ...\nRecycle. ...\nMake environmentally sound purchase decisions. .\nReduce Paper Consumption. ...\n1 ton of office paper -- 24 trees ; 1 tree makes 16.67 reams of paper  \n1 ream uses 6% of tree ; 1 ton of recycled paper saves 17 trees\nConserve energy\nBenefits of green computing \nReduced environmental impact (less GHG emissions, less e-\nwaste, fewer virgin resources needed for manufacturing new \ndevices)\nlower energy costs.\nlonger lasting computing devices.\nreduced health risk for computer workers and recyclers"
+    },
+    {
+      "slide_num": 19,
+      "text": "Refers to \nenvironmentally \nsustainable \ncomputing\nNew Paradigm \nof  designing the \nComputer systems \nWhich considers\nProcessing \nPerformance \n&\nalso the energy\nefficiency\nIn Summary"
+    },
+    {
+      "slide_num": 20,
+      "text": "What is E-waste?\nElectronic Waste (e-Waste) - waste electronic/electrical goods which are not\nfit for their originally intended use. such as computers, cellular phones,\nstereos, refrigerators, air conditioners, other consumer durables, etc.\nIs e-Waste Hazardous?\ne--waste\nis\nnot\nhazardous\nwaste\nper-se.\nHowever,\nthe\nhazardous\nconstituents present in the e-waste render it hazardous when such wastes\nare dismantled and processed, and pose hazard to health and environment.\ne-Waste\nA pile of electronic waste on a road\nside in Guiyu, China\nElectronic waste in Guangdong, China As\nmuch as 4,000 tonnes of toxic e-waste are\ndiscarded every hour. Vast amounts are\nroutinely and often illegally shipped as waste\nfrom Europe, USA and Japan to places where\nunprotected workers recover parts and\nmaterials."
+    },
+    {
+      "slide_num": 21,
+      "text": "COMPONENTS                  \nCONSTITUENTS\nPrinted circuit boards\nLead & cadmium\nCathode ray tubes (CRTs)\nLead oxide & Cadmium\nSwitches & flat screen monitors\nMercury\nComputer batteries\nCadmium\nCapacitors and transformers\nPoly Chlorinated Bi-phenyls (PCB)\nPrinted circuit boards, plastic\nBrominated Flame Retardant \ncasings cable \nCable insulation/coating\nPoly Vinyl Chloride (PVC)\nToxic constituents in e-waste"
+    },
+    {
+      "slide_num": 22,
+      "text": "E-waste recycling is presently concentrated in \nthe informal (unorganized) sector\nNo organized collection system prevails\nOperations are mostly illegal\nProcesses are highly polluting\nRecycling operations engage in:\ndismantling \nsale of dismantled parts\nvaluable resource recovery \nexport of processed waste for precious \nmetal recovery\nRecycling scenario in India"
+    },
+    {
+      "slide_num": 23,
+      "text": "Concerns: Informal Recycling \nHigh-risk backyard operation\nNon- efficient and Non-\nenvironmentally sound technologies\nOccupational and environmental \nhazards \nLoss of resources due to inefficient \nprocesses\nImpacts vulnerable social groups-\nWomen, children and migrant \nlabourers"
+    },
+    {
+      "slide_num": 24,
+      "text": "Rotten eggs: e-waste from Europe poisons Ghana's food chain\nToxins from old computers, fridges and other electronic goods are polluting\nchicken eggs [dioxins & PCB] in an area where 80,000 people live\nA man carries electronic waste at the Agbogbloshie dumpsite in Accra\nhttps://www.theguardian.com/global-development/2019/apr/24/rotten-chicken-eggs-e-\nwaste-from-europe-poisons-ghana-food-chain-agbogbloshie-accra"
+    },
+    {
+      "slide_num": 25,
+      "text": "E-waste is ‘distinct’ as it is an end-of-consumption waste while\nhazardous waste results from a distinct industrial process\nEnvironment Protection Act provides for separate regulations for\nwaste with ‘distinct’ characteristics - Biomedical Wastes (M&H)\nRules- 1998 , lead acid batteries, the Batteries (M&H) Rules- 2001\netc.\nThe e-waste value chain\nis rather complex as it involves multiple\nplayers - producers, distributors, retailers, end consumers, collection\nsystem, recyclers\ne-waste recycling involves refurbishment for reuse, dismantling and\nprecious metal recovery which is a complex process\nNeed for a separate/dedicated legislation"
+    },
+    {
+      "slide_num": 26,
+      "text": "Various legislations cover different aspects of e-waste\nThe hazardous waste (management and handling ) rules, 1998\nas\namended\nin\n2008\nfor\nToxic\ncontent\n–\nregistration\nmandatory for recyclers\nMunicipal Solid Waste Management & Handling Rules for non-\nToxic content\nBasel convention for regulating trans-boundary movement\nForeign\nTrade\npolicy\nrestricts\nimport\nof\nsecond-hand\ncomputers and does not permit import of e-waste\n‘Guidelines’ by Central Pollution Control Board ( 2008) \nLegislations/Framework governing e-waste"
+    },
+    {
+      "slide_num": 27,
+      "text": "The guidelines notified in April 2008 - basic guidance document\nidentifying and recognizing fundamental principles:\nProducer Responsibility\nRoHS (Restriction on Hazardous Substances)\nBest practices\nInsight into technologies for various levels of\nrecycling\nThe guidelines explicitly mention the need for a separate\nlegislation for implementing ‘Producer Responsibility’\ne-Waste guidelines: Salient features"
+    },
+    {
+      "slide_num": 28,
+      "text": ""
+    },
+    {
+      "slide_num": 29,
+      "text": "Sustainable concept computers for green computing in the future\nIts skin composed of biodegradable\npolymers\nmade\nfrom\nbamboo\nand\ncornstarch. Its other components too\ncan be returned to the manufacturer\nfor recycling when the model gets\nobsolete.\n2. Biodegradable Desktop computer by Dell\n1. O Project by Dell:\nDesigned\nusing\nhigh-end\nlaser\nprojection\ntechnology and with onboard CD drives. doesn’t\nneed peripherals such as a monitor or keyboard\nas it is projected on the floor. its body is carved\nfrom bio decomposable starch-based polymer\nThe electrical parts can be returned to the\nmanufacturing firm when obsolete"
+    },
+    {
+      "slide_num": 30,
+      "text": "3. Solar laptop concept by Nikola Knezevic:\nLaptop has attached to its top half a\nsolar panel. This can be folded out to\ncatch sunlight irrespective of whether\nthe laptop is in its open or closed\nposition. This solar panel would thus\nhelp harness solar energy. Therefore, it\nensures a fully topped up battery pack\nand a saving on the electricity bill.\n4. Lawn PC is a green computing concept:\nDesigned basically to generate and\nrun on its own harnessed power. it\nhas in its design recyclable grass\nblades with circuits and solar cells.\nThese\nare\nincorporated\nto\nhelp\nharness power, which can, therefore,\nsave almost 876 KWh power per\nyear."
+    },
+    {
+      "slide_num": 31,
+      "text": "5. Igglu modular PC concept makes upgrading simple and clean\nDesigned from standard reusable and\nrecyclable\nproducts\nthe\nhigh\nperformance,\nPCI\ndrives,\ngraphic\ncards, RAM and hard drives\n6. Compaq EOS sustainable desktop \nencourages recycling by easing disassembly\nlow cost as well as has minimal carbon\nfootprint.\nthis\nalso\nencourages\npartial\nrecycling\nas\nand\nwhen\nrequired.\nFurthermore designed to consume less\ndesk-space. HP in a bid to encourage\nrecycling also offers a take back policy in\naddition to using biodegradable bio-resins\nand aluminum within its assembly."
+    },
+    {
+      "slide_num": 32,
+      "text": "7. Ecofriendly desktop computer that never \nbecomes obsolete\nhas no screws within its inside which therefore \nminimizes waste and saves space. With \nexteriors made of plastic lumber and matte \nwhite plastic, the exterior of this system is very \nthin. The unique design aids the computer to \nmerge harmoniously with the home furniture\n8. Avant-grade tablet styled computer keeps e-waste at bay\nis\nenvironmentally\nsustainable\nwith\nfacility for upgrading features and other\nmiscellaneous hardware thereby reducing\ne-waste and overall consumption.\nFacilitated with an OLED display with\nstylus input, this concept minimizes the\nneed\nof\nperipherals\nrendering\nthis\ncomputer handy and portable."
+    },
+    {
+      "slide_num": 33,
+      "text": "9. Recyclable paper laptop for green computing\nMade\nfrom\npulp\nmaterials\nand\nrecycled\npaper\npacked\nin\nlayers,.\nConsidering its unique design and\nmodeling concept, this computer is\ndefinitely recyclable as well as easily\nupgradeable.\n10. Napkin PC – ‘Green’ computer to encourage group interaction\nhas a base station for interface control \nand a Pen for giving out commands \nThe availability of multiple interfaces \non this system renders multi tasking \neasier as well."
+    },
+    {
+      "slide_num": 34,
+      "text": "11. Power Flower PC concept for an eco friendly geek!\nGetting its feed from the hydrogen fuel cell, the components\nextend upward, like daises growing towards the sky. The clean,\npure, white base of the CPU and fuel cell power supply screws\ninto the bottom of the green field. This in turn rests atop of the\nclear water container with the white base inset within it.\nAs power is generated, water drips out of the white base and\ngets collected in the clear water container. It is ingeniously\ndesigned to make it look like random drops of rain falling\nfrom leaves after a downpour. Free of other power sources or\nperipherals and cables or physical sockets, it does manage to\naccommodate Wi-Fi and Bluetooth.\nAnd getting rid of the keyboard and mouse, a\ncamera captures the movements and gestures\nof the user on the desk. Also a face camera,\nwhich also houses a microphone and speaker,\nis directed at the person’s face. Also the need\nof a monitor is eliminated as a small display\ndevice projects the image on a nearby\nsurface.!\nInstead of watering it, you will be able to receive water from it. Which can be reused for \ndrinking, cooking, or even watering real flowers"
+    },
+    {
+      "slide_num": 35,
+      "text": "12. Solar-powered clamshell PC might urbanize rural India\nDesigned for rural India, this mini PC has a small LCD screen that can\nroll out of the main body, this solar powered mini PC has facilities for\nproviding online help to the farmers.\nFor those wanting to give presentations the PC also has a built-in LED\nprojector. With wi-fi connectivity and onboard storage battery that can\nbe charged using its solar panels, this PC is not just green but is also\ncapable of revolutionizing rural India."
+    }
+  ]
+}

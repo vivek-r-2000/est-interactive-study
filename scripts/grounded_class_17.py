@@ -1,0 +1,244 @@
+#!/usr/bin/env python3
+"""
+Grounded Question Bank for Class 17: Sustainable Development Goals (SDGs) & Sustainability
+Grounded 100% in official Class 17 lecture slides (Class-17-SDG.pdf, 36 slides).
+Audited and verified with exhaustive, fully fleshed out detailed answers.
+"""
+
+def get_class17_grounded_questions():
+    return [
+        {
+            "id": "EQB-17-01",
+            "class_id": 17,
+            "class_name": "Sustainable Development Goals (SDGs)",
+            "topic": "Brundtland Definition of Sustainable Development",
+            "category": "Short Answer & Definitions",
+            "exams": [
+                {"paper": "End Exam 2022", "section": "Section IX, Q(d)", "marks": "1M"},
+                {"paper": "End Exam 2019", "section": "Section VIII, Q3", "marks": "1M"}
+            ],
+            "marks": "1M – 3M",
+            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
+            "prompt": "What is Sustainable development defined by WCED (1987)? Explain the twin core concepts of 'needs' and 'limitations', its historical genesis, and the distinction between process and goal.",
+            "key_answer_points": "<ul>\n"
+                                 "<li><strong>Official Definition (Our Common Future, 1987):</strong> Formulated by the UN World Commission on Environment and Development (WCED, chaired by Norwegian Prime Minister Gro Harlem Brundtland):<br>"
+                                 "<em>\"Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs.\"</em></li>\n"
+                                 "<li><strong>The Twin Foundational Concepts:</strong><br>"
+                                 "1. <strong>The Concept of 'Needs':</strong> In particular the essential needs of the world's poor, to which overriding priority should be given (food, clean water, sanitation, shelter, healthcare, and education).<br>"
+                                 "2. <strong>The Concept of 'Limitations':</strong> The limitations imposed by the state of technology and social organization on the environment's carrying capacity to meet present and future needs.</li>\n"
+                                 "<li><strong>Process vs. Goal (Slide 3):</strong> <em>Sustainable development is the operational process by which we reach the long-term goal of sustainability.</em></li>\n"
+                                 "<li><strong>Historical Catalysts (Slide 4):</strong> Born out of acute industrial crises: the 1969 Santa Barbara oil spill (~100,000 barrels leaked), leading to the US National Environmental Policy Act (NEPA, 1969) mandating Environmental Impact Assessments (EIAs), the creation of the EPA (1970), the Clean Water Act, Water Quality Act, and the banning of toxic pesticides like DDT.</li>\n"
+                                 "<li><strong>The Triple Bottom Line (TBL):</strong> True sustainability exists exclusively at the harmonious convergence of three interdependent pillars: <strong>Economic Viability</strong>, <strong>Social Equity</strong>, and <strong>Environmental Protection</strong> (Profit, People, Planet).</li>\n"
+                                 "</ul>",
+            "detailed_answer": "<div class=\"detailed-body\">\n"
+                               "<p><strong>1. Historical Roots and Paradigm Shift:</strong><br>"
+                               "Throughout the post-WWII industrial boom, economic expansion was treated as separate from ecological limits, and natural ecosystems were viewed merely as limitless resource pools and cost-free waste sinks. This illusion shattered following a series of high-profile ecological disasters in the late 1960s—most notably the catastrophic <strong>1969 Santa Barbara oil spill</strong> in California, where a Union Oil blowout released an estimated 100,000 barrels of crude, creating an 800-square-mile oil slick that devastated marine life and coastal biomes. This disaster catalyzed modern environmental activism, prompting the passage of the landmark <strong>National Environmental Policy Act (NEPA) of 1969</strong>, which introduced the legal requirement for prior <em>Environmental Impact Assessments (EIAs)</em> before initiating federal development projects. It was rapidly followed in 1970 by the founding of the US Environmental Protection Agency (EPA), the first Earth Day, statutory clean air and clean water legislation, and bans on toxic synthetic pesticides like DDT. Recognizing that localized end-of-pipe pollution controls were insufficient to solve transnational ecological crises, the United Nations General Assembly established the World Commission on Environment and Development (WCED) in 1983 to re-examine environment-development problems and formulate realistic solutions.</p>\n"
+                               "<p><strong>2. The Brundtland Definition & The Twin Core Concepts:</strong><br>"
+                               "In its seminal 1987 report, <em>Our Common Future</em> (commonly known as the Brundtland Report), the WCED articulated the benchmark definition of sustainable development: <em>\"Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.\"</em> Embedded within this deceptively simple formulation are two non-negotiable concepts:</p>\n"
+                               "<ul>\n"
+                               "<li><strong>The Concept of 'Needs' (Intragenerational Equity):</strong> This explicitly prioritizes the overriding essential needs of the world's poor (adequate nourishment, safe drinking water, primary healthcare, sanitation, and physical shelter). Development cannot be labeled sustainable if it generates private luxury for an affluent minority while billions remain in absolute deprivation.</li>\n"
+                               "<li><strong>The Concept of 'Limitations' (Intergenerational Equity):</strong> This establishes that the biosphere is governed by hard thermodynamic and biophysical limits. The current generation does not hold absolute ownership over Earth; it acts as an intergenerational trustee. The rate of natural resource harvest cannot exceed natural regeneration rates, and the rate of waste discharge cannot exceed the environment's natural assimilative capacity.</li>\n"
+                               "</ul>\n"
+                               "<p><strong>3. Process vs. Target & The Triple Bottom Line:</strong><br>"
+                               "As emphasized in Slide 3, <em>\"Sustainable development is the process by which we reach the goal of sustainability.\"</em> Sustainability represents the dynamic, steady-state balance where human societies flourish within planetary carrying capacities. Sustainable development encompasses the legal, technological, institutional, and economic processes required to transition away from extractive models. Achieving this requires the simultaneous harmonization of the <strong>Triple Bottom Line (TBL)</strong>: <em>Society</em> (social justice, human rights, health equity), <em>Economy</em> (productive employment, resilient infrastructure, innovation), and <em>Environment</em> (biodiversity preservation, atmospheric stability, aquifer recharge). If any single pillar is severed, the entire structure collapses: an economic and social project that ignores the environment produces short-term equity followed by severe ecological collapse.</p>\n"
+                               "<p><em>Slide Reference: Class 17, Slides 2, 3, 4.</em></p>\n"
+                               "</div>"
+        },
+        {
+            "id": "EQB-17-02",
+            "class_id": 17,
+            "class_name": "Sustainable Development Goals (SDGs)",
+            "topic": "Strong vs Weak Sustainability",
+            "category": "Differentiate Between",
+            "exams": [
+                {"paper": "End Exam 2024", "section": "Section IV(b)", "marks": "2M"},
+                {"paper": "End Exam 2023", "section": "Section II, Q15", "marks": "2M"},
+                {"paper": "End Exam 2022", "section": "Section IX, Q(d)", "marks": "2M"},
+                {"paper": "End Exam 2019", "section": "Section VIII, Q3", "marks": "3M"}
+            ],
+            "marks": "2M – 4M",
+            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
+            "prompt": "What is the difference between strong and weak sustainability? Discuss the capital substitutability assumption, critical natural capital, and explain under which category Green Accounting is placed and why.",
+            "key_answer_points": "<ul>\n"
+                                 "<li><strong>Weak Sustainability (Neoclassical Paradigm / Hartwick-Solow Rule):</strong> Assumes that <strong>manufactured capital ($K_m$) and natural capital ($K_n$) are near-perfect substitutes</strong>. Total capital stock must remain non-declining:<br>"
+                                 "<div class=\"formula-box\">$$K_{\\text{total}} = K_m + K_n + K_h \\ge \\text{Constant}$$</div>"
+                                 "Under weak sustainability, liquidating natural assets (e.g., clearcutting a virgin forest or exhausting a mineral deposit) is entirely acceptable as long as the financial revenues are reinvested into equivalent man-made assets (factories, highways, universities, or technological patents).</li>\n"
+                                 "<li><strong>Strong Sustainability (Ecological Economics Paradigm / Herman Daly):</strong> Rejects full capital substitutability, asserting that natural and manufactured capital are <strong>complementary, not substitutable</strong>. Formulates the concept of <strong>Critical Natural Capital ($K_c$)</strong>—vital, non-substitutable life-support services (clean breathable air, stable climate, stratospheric ozone shield, oceanic pH, fertile topsoil, pollination networks) for which no human engineering alternative exists. Mandates that natural capital stocks must be maintained intact in <strong>physical, non-monetized units</strong> ($K_c \\ge K_{c,\\min}$).</li>\n"
+                                 "<li><strong>Classification of Green Accounting:</strong> Green Accounting (SEEA / Environmentally-Adjusted GDP) is placed firmly under <strong>Weak Sustainability</strong>. This is because it converts physical natural depletion into monetary currency equivalents (dollars/rupees) and subtracts them from gross national income, conceptually permitting the substitution and offset of environmental liquidation by manufactured investment.</li>\n"
+                                 "</ul>",
+            "detailed_answer": "<div class=\"detailed-body\">\n"
+                               "<p><strong>1. The Theoretical Fault Line: Capital Substitutability:</strong><br>"
+                               "The fundamental intellectual division in environmental economics concerns whether human-engineered technology can genuinely replace the biosphere. Neoclassical economists (such as Robert Solow and John Hartwick) formulated the <em>Hartwick-Solow rule</em>, which posits that intergenerational welfare is preserved as long as society maintains a constant aggregate stock of total capital ($K_{\\text{total}} = K_m + K_n + K_h$). In this paradigm, nature is treated simply as an inventory of physical assets. If a nation drains an ancient fossil aquifer or deforests a catchment basin, but successfully channels the resulting economic surplus into physical factories, computing infrastructure, and educated human capital, the nation is classified as sustainable. This relies on an aggressive techno-optimist premise: that human ingenuity will continually innovate synthetic substitutes for depleted natural resources.</p>\n"
+                               "<p><strong>2. Ecological Economics & Critical Natural Capital ($K_c$):</strong><br>"
+                               "In sharp contrast, ecological economists (led by Herman Daly and Robert Costanza) point out that natural capital and manufactured capital are fundamental complements rather than substitutes. A fleet of state-of-the-art robotic fishing trawlers ($K_m$) is completely useless if ocean fish populations ($K_n$) are driven to extinction. Strong sustainability introduces the decisive boundary of <strong>Critical Natural Capital ($K_c$)</strong>: biological and geochemical life-support functions that cannot be replicated by any technology. No quantity of financial capital or computing power can manufacture a replacement stratospheric ozone layer, re-engineer a stable global carbon cycle, or artificially synthesize the pollination services provided by millions of insect species. Because ecological thresholds exhibit non-linear catastrophic tipping points, strong sustainability demands the physical preservation of natural capital stocks above ecological safety margins.</p>\n"
+                               "<h4>Comprehensive Comparative Matrix</h4>\n"
+                               "<table class=\"exam-table\">\n"
+                               "<thead><tr><th>Comparative Dimension</th><th>Weak Sustainability</th><th>Strong Sustainability</th></tr></thead>\n"
+                               "<tbody>\n"
+                               "<tr><td><strong>Primary Theoretical School</strong></td><td>Neoclassical Economics (Solow, Hartwick)</td><td>Ecological Economics (Herman Daly, Robert Costanza)</td></tr>\n"
+                               "<tr><td><strong>Capital Substitutability</strong></td><td>Near-infinite substitution ($K_m \\leftrightarrow K_n$)</td><td>Zero substitution for Critical Natural Capital ($K_c$); complements</td></tr>\n"
+                               "<tr><td><strong>Core Governing Formula</strong></td><td>$$K_{\\text{total}} = K_m + K_n + K_h \\ge \\text{Constant}$$</td><td>$$K_c \\ge K_{c,\\min} \\quad \\text{and} \\quad \\Delta K_n \\ge 0$$</td></tr>\n"
+                               "<tr><td><strong>Stance on Technology</strong></td><td>Techno-optimism: engineering overcomes physical limits</td><td>Precautionary principle: respect biophysical & thermodynamic limits</td></tr>\n"
+                               "<tr><td><strong>Valuation & Units</strong></td><td>Monetary valuation (currency units: \\$, ₹)</td><td>Physical and ecological metrics (hectares, ppm, gigatons)</td></tr>\n"
+                               "<tr><td><strong>Measurement Framework</strong></td><td>Adjusted Net Savings (Genuine Savings), Green GDP</td><td>Ecological Footprint, Carrying Capacity, Planetary Boundaries</td></tr>\n"
+                               "<tr><td><strong>View of Nature</strong></td><td>Convertible commercial asset & production factor</td><td>Irreplaceable, sacred life-support envelope with hard limits</td></tr>\n"
+                               "</tbody>\n"
+                               "</table>\n"
+                               "<p><strong>3. Why Green Accounting Conforms to Weak Sustainability:</strong><br>"
+                               "Green Accounting (such as the UN System of Environmental-Economic Accounting, SEEA) modifies conventional national accounts by assigning monetary valuations to natural capital depletion (e.g., mineral extraction, timber loss) and environmental degradation costs (e.g., air and water pollution damage). These monetized figures are then deducted from Gross Domestic Product (GDP) to yield Environmentally-Adjusted Net Domestic Product (Green GDP). Because Green Accounting translates living physical ecosystems into abstract monetary numbers, it adheres strictly to the weak sustainability framework: it assumes that losing a million dollars' worth of clean wetland ecology can be mathematically compensated for by generating a million dollars' worth of industrial manufactured capital. While Green Accounting exposes the economic distortion of conventional GDP, it cannot physically safeguard critical ecological thresholds.</p>\n"
+                               "<p><em>Slide Reference: Class 17, Slides 2, 4, 5, 6; and Class 16, Slides 4, 7, 10.</em></p>\n"
+                               "</div>"
+        },
+        {
+            "id": "EQB-17-03",
+            "class_id": 17,
+            "class_name": "Sustainable Development Goals (SDGs)",
+            "topic": "Sustainable Development Objectives & Core Principles",
+            "category": "MCQ & Objective",
+            "exams": [
+                {"paper": "End Exam 2022", "section": "Section II, Q7", "marks": "1M"}
+            ],
+            "marks": "1M",
+            "importance": "HIGH (⭐⭐⭐⭐)",
+            "prompt": "Sustainable development will not aim at: [a] Social economic development which optimizes benefits without destroying environment, [b] Resource conservation for future generation, [c] Environmental degradation to maximize economic growth, [d] Equity in distribution of resources.",
+            "key_answer_points": "<ul>\n"
+                                 "<li><strong>Correct Option:</strong> <strong>[ c ] Environmental degradation to maximize economic growth.</strong><br>"
+                                 "<em>(Note: Also formulated in exam variations as [d] Maximizing present-day benefits through increased resource consumption).</em></li>\n"
+                                 "<li><strong>Reasoning:</strong> Sustainable development is explicitly designed to halt and reverse environmental destruction. Intentionally degrading ecological assets or consuming resources at unsustainable rates to boost immediate GDP is the absolute antithesis of sustainability.</li>\n"
+                                 "<li><strong>Legitimate Pillars of Sustainable Development:</strong><br>"
+                                 "• <em>Option [a]</em> Social and economic development optimizing benefits within ecological carrying capacity (Slide 2, 3).<br>"
+                                 "• <em>Option [b]</em> Intergenerational resource conservation for future generations (Brundtland principle, Slide 3, 4).<br>"
+                                 "• <em>Option [d]</em> Intragenerational equity in resource distribution, embodied in the UN charter principle <strong>'Leave No One Behind' (LNOB)</strong> (Slide 10).</li>\n"
+                                 "</ul>",
+            "detailed_answer": "<div class=\"detailed-body\">\n"
+                               "<p><strong>1. Deconstructing the Incorrect Axiom (Environmental Degradation for Growth):</strong><br>"
+                               "Option [c] embodies the discredited neoclassical doctrine of <em>\"grow first, clean up later\"</em>, which posits that nations must pass through an intensive stage of heavy environmental destruction before acquiring the wealth needed to remediate pollution. In Class 17, Slides 2 and 5, this approach is exposed as a dangerous fallacy known as the <em>\"Neoliberal Trap\"</em>. Natural ecosystems are not disposable inputs; they represent foundational natural capital generating indispensable life-support functions—such as atmospheric gas regulation, hydrological cycles, soil regeneration, and waste assimilation. Degrading these assets to fuel short-term economic metrics creates catastrophic feedback loops: soil erosion destroys agricultural productivity, aquifer depletion triggers severe water shortages, and toxic air pollution imposes crushing public health costs. Maximizing economic growth through environmental degradation is biologically and economically self-defeating.</p>\n"
+                               "<p><strong>2. The Three Legitimate Aims of Sustainable Development:</strong><br>"
+                               "The remaining three options reflect the essential, interlocking objectives codified across international environmental agreements:</p>\n"
+                               "<ul>\n"
+                               "<li><strong>Optimizing Benefits Within Ecological Limits (Option a):</strong> As defined in Slide 3, sustainable development optimizes socio-economic welfare while preserving ecosystem integrity. This requires decoupled production systems where material throughput and emissions are minimized while human well-being expands.</li>\n"
+                               "<li><strong>Intergenerational Conservation (Option b):</strong> Codified by the 1987 Brundtland Commission, intergenerational equity requires that the present generation hold natural capital in trust for future generations, preventing the irreversible exhaustion of non-renewable resources and the degradation of renewable ecosystems.</li>\n"
+                               "<li><strong>Equitable Distribution of Resources (Option d):</strong> True sustainability cannot coexist with extreme deprivation. As underscored in Slide 10, the universal core principle of the 2030 Agenda is <strong>\"Leave No One Behind\" (LNOB)</strong> (mirrored in India by the motto <em>Sabka Saath, Sabka Vikas</em>). This requires structural equity—ensuring marginalized communities obtain secure access to clean energy, safe drinking water, healthcare, and productive livelihoods.</li>\n"
+                               "</ul>\n"
+                               "<p><strong>3. Institutionalization in the 2030 Agenda:</strong><br>"
+                               "When all 193 UN member states adopted the 17 Sustainable Development Goals in September 2015, they formally abolished the trade-off between growth and ecology. Biosphere goals—SDG 13 (Climate Action), SDG 14 (Life Below Water), and SDG 15 (Life on Land)—form the foundational biophysical boundary within which human social development (SDGs 1–5, 10) and economic infrastructure (SDGs 7, 8, 9, 11, 12) must operate.</p>\n"
+                               "<p><em>Slide Reference: Class 17, Slides 2, 3, 4, 5, 6, 10.</em></p>\n"
+                               "</div>"
+        },
+        {
+            "id": "EQB-17-04",
+            "class_id": 17,
+            "class_name": "Sustainable Development Goals (SDGs)",
+            "topic": "ISEW GDP Adjustment & Measuring Progress via the SDG Index",
+            "category": "MCQ & Objective",
+            "exams": [
+                {"paper": "End Exam 2022", "section": "Section II, Q5", "marks": "1M"}
+            ],
+            "marks": "1M – 4M",
+            "importance": "HIGH (⭐⭐⭐⭐)",
+            "prompt": "Which of the following adjustments would be made to any increase in GDP in order to derive an 'Index of Sustainable Economic Welfare' (ISEW)? [a] Subtract monetary value of non-defensive public expenditures [b] Subtract monetary value of personal consumption [c] Subtract monetary value of capital formation [d] Subtract the costs of environmental degradation. Explain the mathematical formulation of ISEW and compare it with the UN / NITI Aayog 0–100 SDG Index methodology (including the 5-step calculation and normalization formula).",
+            "key_answer_points": "<ul>\n"
+                                 "<li><strong>Correct Option:</strong> <strong>[ d ] Subtract the costs of environmental degradation.</strong></li>\n"
+                                 "<li><strong>Reasoning:</strong> Conventional Gross Domestic Product (GDP) suffers from a perverse accounting flaw: it treats the depletion of natural assets and subsequent cleanup expenditures as positive income. The <strong>Index of Sustainable Economic Welfare (ISEW)</strong> corrects this by subtracting the externalized monetary costs of environmental degradation, pollution damage, and natural capital depletion from personal consumption.</li>\n"
+                                 "<li><strong>Mathematical Formulation of ISEW:</strong><br>"
+                                 "<div class=\"formula-box\">$$\\text{ISEW} = C_{\\text{adj}} + G_{\\text{non-def}} + W_{\\text{non-mkt}} - E_{\\text{def}} - C_{\\text{env}} - D_{\\text{nat}} - I_{\\text{ineq}}$$</div>"
+                                 "<em>Where:</em> $C_{\\text{adj}}$ = income-inequality adjusted personal consumption, $G_{\\text{non-def}}$ = non-defensive public services, $W_{\\text{non-mkt}}$ = value of unpaid household/volunteer labor, $E_{\\text{def}}$ = defensive expenditures, $C_{\\text{env}}$ = environmental degradation costs, $D_{\\text{nat}}$ = natural capital depletion, $I_{\\text{ineq}}$ = income inequality adjustment.</li>\n"
+                                 "<li><strong>The 0–100 SDG Index Measurement Framework (Slides 10, 19, 20):</strong><br>"
+                                 "Rather than forcing complex ecological and social realities into a single monetary currency value, the UN and NITI Aayog utilize a multi-dimensional, normalized index scoring from 0 to 100 across 169 targets:<br>"
+                                 "• <strong>Achiever (100):</strong> Target fully achieved (Blue).<br>"
+                                 "• <strong>Front-Runner (65–99):</strong> Strong progress, close to target (Green).<br>"
+                                 "• <strong>Performer (50–64):</strong> Moderate progress, needs acceleration (Yellow).<br>"
+                                 "• <strong>Aspirant (0–49):</strong> Significant improvement required (Red).</li>\n"
+                                 "</ul>",
+            "detailed_answer": "<div class=\"detailed-body\">\n"
+                               "<p><strong>1. The Accounting Perversity of GDP & The ISEW Remedy:</strong><br>"
+                               "Gross Domestic Product (GDP) simply tallies aggregate market monetary transactions without distinguishing between wealth creation and wealth destruction. If a toxic industrial blowout contaminates an entire river system, GDP paradoxically increases: medical hospital billings, emergency water truck deliveries, and multi-million-dollar hazardous waste remediation contracts are all added to national income as positive growth. Developed by ecological economists Herman Daly and John Cobb in 1989, the <strong>Index of Sustainable Economic Welfare (ISEW)</strong> (and its modern successor, the Genuine Progress Indicator or GPI) rectifies this distortion. ISEW starts with personal consumption expenditure adjusted for income distribution, adds positive non-market contributions (such as household labor and parenting), and subtracts three major negative deductions:</p>\n"
+                               "<ul>\n"
+                               "<li><em>Defensive Expenditures ($E_{\\text{def}}$):</em> Costs incurred merely to defend against the negative side-effects of growth (e.g., medical costs from urban smog, auto accident repairs, noise insulation).</li>\n"
+                               "<li><em>Environmental Degradation Costs ($C_{\\text{env}}$):</em> Direct damage inflicted by air pollution, water contamination, topsoil degradation, and ozone depletion.</li>\n"
+                               "<li><em>Depletion of Natural Capital ($D_{\\text{nat}}$):</em> The permanent liquidation of non-renewable fossil energy reserves and the unsustainable loss of virgin forests and wetlands.</li>\n"
+                               "</ul>\n"
+                               "<p><strong>2. The Modern Measurement Architecture: NITI Aayog's 5-Step SDG Index:</strong><br>"
+                               "While ISEW provides a critical monetary aggregate, tracking the comprehensive 2030 Agenda across 17 goals, 169 targets, and 232+ indicators requires a multi-dimensional mathematical framework. As detailed in Slide 19, NITI Aayog evaluates all Indian States and Union Territories across five systematic steps:</p>\n"
+                               "<ol>\n"
+                               "<li><strong>Step 1 – Raw Data Compilation:</strong> Compiling verified administrative figures and national surveys across central ministries (e.g., Maternal Mortality Ratio = 103, Under-5 Mortality Rate = 34, Immunization Coverage = 85%).</li>\n"
+                               "<li><strong>Step 2 – Target Setting:</strong> Identifying official 2030 target values established by UN declarations or national ministry mandates (e.g., MMR target = 70, Under-5 Mortality target = 25, Immunization target = 100%).</li>\n"
+                               "<li><strong>Step 3 – Normalization (Min-Max Scaling 0–100):</strong> Converting diverse raw metrics (percentages, ratios, absolute counts) into uniform scores between 0 and 100.<br>"
+                               "• <em>Positive Indicators (higher is better, e.g. tap water coverage, renewable share):</em><br>"
+                               "<div class=\"formula-box\">$$I_i = \\left( \\frac{x_i - x_{\\min}}{x_{\\text{target}} - x_{\\min}} \\right) \\times 100$$</div>"
+                               "• <em>Negative Indicators (lower is better, e.g. infant mortality, poverty rate, carbon intensity):</em><br>"
+                               "<div class=\"formula-box\">$$I_i = \\left( \\frac{x_{\\max} - x_i}{x_{\\max} - x_{\\text{target}}} \\right) \\times 100$$</div></li>\n"
+                               "<li><strong>Step 4 – Goal Score Computation:</strong> Calculating the unweighted arithmetic mean of all normalized indicator scores ($I_i$) assigned to goal $g$:<br>"
+                               "<div class=\"formula-box\">$$S_g = \\frac{1}{N_g} \\sum_{i=1}^{N_g} I_i$$</div></li>\n"
+                               "<li><strong>Step 5 – Composite State Index Computation:</strong> Computing the arithmetic mean across all 16 evaluated Goal Scores to yield the state's master composite index:<br>"
+                               "<div class=\"formula-box\">$$\\text{Composite Score} = \\frac{1}{16} \\sum_{g=1}^{16} S_g$$</div>"
+                               "<em>(Crucial Methodological Caveat: SDG 14 'Life Below Water' is excluded from composite state rankings to prevent structural penalization of landlocked states like Bihar, Madhya Pradesh, and Punjab).</em></li>\n"
+                               "</ol>\n"
+                               "<p><strong>3. Step-by-Step Calculation Walkthrough: SDG 3 (Good Health & Well-being, Slide 20):</strong><br>"
+                               "Slide 20 provides an explicit real-world calculation example demonstrating how raw public health statistics are converted into an official Goal Score:</p>\n"
+                               "<ul>\n"
+                               "<li><em>Indicator 1: Maternal Mortality Ratio (MMR):</em> Raw value = 103 deaths per 100,000 live births; 2030 Target = 70; Normalized score = <strong>72</strong>.</li>\n"
+                               "<li><em>Indicator 2: Under-5 Mortality Rate (U5MR):</em> Raw value = 34 deaths per 1,000 live births; 2030 Target = 25; Normalized score = <strong>74</strong>.</li>\n"
+                               "<li><em>Indicator 3: Immunization Coverage:</em> Raw value = 85%; 2030 Target = 100%; Normalized score = <strong>85</strong>.</li>\n"
+                               "<li><em>Goal Score Calculation:</em><br>"
+                               "<div class=\"formula-box\">$$\\text{SDG 3 Goal Score} = \\frac{72 + 74 + 85}{3} = \\frac{231}{3} = 77$$</div>"
+                               "With a composite score of 77, the state achieves <strong>Front-Runner tier (65–99)</strong> status on SDG 3. This mathematical standardization allows transparent, policy-relevant benchmarking across disparate domains without the distortions of single-metric GDP accounting.</li>\n"
+                               "</ul>\n"
+                               "<p><em>Slide Reference: Class 17, Slides 2, 8, 10, 19, 20.</em></p>\n"
+                               "</div>"
+        },
+        {
+            "id": "EQB-17-05",
+            "class_id": 17,
+            "class_name": "Sustainable Development Goals (SDGs)",
+            "topic": "Critical Comment on Overconsumption, Growth & Resource Inequality (The Industrialist and Fisherman Parable)",
+            "category": "Descriptive & Case Study",
+            "exams": [
+                {"paper": "End Exam 2018", "section": "Part VI, Q1", "marks": "2M"}
+            ],
+            "marks": "2M – 5M",
+            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
+            "prompt": "Give a critical comment on the relationship between overconsumption and resource inequality, based on the cartoon/parable of the Industrialist and the Island Fisherman. How does this critique challenge the perpetual economic growth model, what are the ecological limits to growth, and how do enterprise sustainability models (e.g., BYD, Tesla, Patagonia, Grameen Bank) address these challenges?",
+            "key_answer_points": "<ul>\n"
+                                 "<li><strong>The Industrialist & The Island Fisherman Allegory:</strong> An affluent industrialist on a motorized luxury vessel encounters a local fisherman resting serenely on an island beach after landing a modest catch. The industrialist urges him to fish for longer hours, purchase larger boats, build a fleet of commercial trawlers, erect a cannery, issue stock, and endure decades of high-stress corporate labor. When the fisherman asks, <em>\"Why?\"</em>, the industrialist replies: <em>\"So you can become rich, retire, and sit by the sea fishing peacefully in the afternoon!\"</em> The fisherman smiles and responds: <em>\"Am I not already doing that right now?\"</em></li>\n"
+                                 "<li><strong>Core Socio-Ecological Critiques:</strong><br>"
+                                 "1. <strong>The Fallacy of Perpetual Growth & The Treadmill of Production:</strong> Exposes the absurdity of infinite capital accumulation. Modern industrial consumerism creates an artificial cycle of work and spend, confusing monetary turnover with genuine human well-being.<br>"
+                                 "2. <strong>Ecological Limits to Growth:</strong> Planetary sinks and resources are finite (Slide 2). Perpetual expansion drives resource depletion, marine ecosystem collapse, and climate destabilization.<br>"
+                                 "3. <strong>Extreme Resource Inequality (IPAT Imbalance):</strong> The wealthiest 20% of the global population consumes over 80% of planetary resources, leaving marginalized coastal communities to suffer the immediate brunt of depleted fisheries, plastic waste, and sea-level rise (SDGs 10, 12, 14).</li>\n"
+                                 "<li><strong>Corporate Sustainability Case Studies from Class 17 Slides:</strong><br>"
+                                 "• <strong>BYD (Asia/China - Slide 30):</strong> Advances <strong>SDG 11 (Sustainable Cities)</strong> and <strong>SDG 13 (Climate Action)</strong> by mass-producing zero-emission electric buses, commercial municipal vehicles, solar power arrays, and grid-scale energy storage systems, shifting transit from private consumption to clean mass mobility.<br>"
+                                 "• <strong>Tesla (US - Slide 29):</strong> Advances <strong>SDG 7 (Clean Energy)</strong> and <strong>SDG 13 (Climate Action)</strong> through electric mobility, residential solar roofs, and commercial battery storage.<br>"
+                                 "• <strong>Grameen Bank (Asia/Bangladesh - Slide 30):</strong> Advances <strong>SDG 1 (No Poverty)</strong> and <strong>SDG 5 (Gender Equality)</strong> by extending collateral-free microcredit loans to impoverished rural women to launch self-sustaining micro-enterprises.<br>"
+                                 "• <strong>Patagonia (US - Slide 30):</strong> Advances <strong>SDG 12 (Responsible Consumption)</strong> and <strong>SDG 14 (Life Below Water)</strong> through circular product repair ('Worn Wear'), utilizing recycled materials, and donating revenues to grassroots environmental defense.<br>"
+                                 "• <strong>Tata Trusts (India - Slides 35–36):</strong> Deploys catalytic philanthropic partnerships across 850 grassroots organizations in 638 districts, addressing land rights under the Jaga Mission (SDG 1) and rural water security (SDG 6).</li>\n"
+                                 "</ul>",
+            "detailed_answer": "<div class=\"detailed-body\">\n"
+                               "<p><strong>1. Philosophical Deconstruction: Well-Being vs. Boundless Accumulation:</strong><br>"
+                               "The parable of the Industrialist and the Island Fisherman dramatizes the ancient distinction drawn by Aristotle between <em>Oikonomia</em> (the stewardship of resources to satisfy the genuine, finite needs of the household and community) and <em>Chrematistics</em> (the boundless, pathological accumulation of monetary wealth for its own sake). The industrialist represents the modern extractive economic paradigm—what sociologists term the <em>\"Treadmill of Production\"</em>. In this paradigm, capital investment demands compound annual growth, which in turn requires manufacturing artificial human desires through aggressive advertising to drive relentless consumerism. The industrialist is blind to the fact that the ultimate goal of life—tranquility, autonomy, community connection, and leisure—is already being experienced by the fisherman. By urging the fisherman to over-extract the local fishery and subject himself to decades of alienated labor simply to achieve an end-state he already possesses, the industrial model reveals its fundamental irrationality: sacrificing real human life and living ecosystems to feed an abstract accounting metric.</p>\n"
+                               "<p><strong>2. Ecological Limits to Growth & The Decoupling Challenge (Slide 34):</strong><br>"
+                               "The industrialist's vision is not merely psychologically flawed; it is biophysically impossible if extended to all humanity. Earth's biosphere is a thermodynamically closed system with finite throughput capacities (Slide 2). If every small-scale fisherman scaled into an industrial trawler fleet, marine trophic webs would experience irreversible collapse. As detailed in Slide 34, surviving planetary ecological limits requires resolving the challenge of <strong>Decoupling</strong>:</p>\n"
+                               "<ul>\n"
+                               "<li><strong>Relative Decoupling:</strong> Natural resource extraction continues to increase, but at a slower rate than GDP growth ($0 < \\%\\Delta \\text{Resource} < \\%\\Delta \\text{GDP}$). While efficiency improves, total environmental pressures still compound over time.</li>\n"
+                               "<li><strong>Absolute Decoupling:</strong> The true benchmark of sustainability, where economic output expands while absolute physical resource consumption and carbon emissions decline ($\\Delta \\text{GDP} > 0$ while $\\Delta \\text{Resource} < 0$). In historical reality, absolute decoupling is extraordinarily difficult to achieve at a global scale due to the <em>Jevons Paradox</em>, where efficiency gains reduce per-unit costs and trigger higher aggregate consumption.</li>\n"
+                               "</ul>\n"
+                               "<p><strong>3. Severe Resource Inequality & The Environmental Justice Divide:</strong><br>"
+                               "The cartoon underscores extreme global resource inequality. While high-income economies and corporate conglomerates extract the vast majority of resources and fill global atmospheric sinks, vulnerable artisanal communities in the Global South bear the immediate, crushing consequences. In Slide 5, the critique of sustainable development highlights this structural hypocrisy: wealthy nations industrialized by burning cheap fossil fuels, exhausting natural capital, and generating historical emissions, but now lecture developing nations to preserve nature without transferring adequate climate financing or low-cost green technology. True sustainability requires transforming this inequity through the universal mandate of <strong>Leave No One Behind (LNOB)</strong>, guaranteeing that global commons are protected for shared human survival rather than private capital accumulation.</p>\n"
+                               "<p><strong>4. Corporate and Institutional Models of Transformation (Slides 29, 30, 35, 36):</strong><br>"
+                               "Class 17 demonstrates that corporate enterprises and philanthropic institutions can be restructured to counter overconsumption and advance systemic sustainability:</p>\n"
+                               "<ul>\n"
+                               "<li><strong>BYD (China/Asia, Slide 30):</strong> Directly advances <strong>SDG 11 (Sustainable Cities)</strong> and <strong>SDG 13 (Climate Action)</strong>. Rather than prioritizing resource-intensive luxury consumption, BYD scaled mass manufacturing of zero-emission electric municipal buses and public transit vehicles, alongside residential and commercial solar panels and battery storage ecosystems. This demonstrates how advanced industrial manufacturing can be steered toward decarbonizing shared public transit rather than perpetuating individual hyper-consumption.</li>\n"
+                               "<li><strong>Tesla (US, Slide 29):</strong> Targets <strong>SDG 7 (Affordable Clean Energy)</strong> and <strong>SDG 13 (Climate Action)</strong> by commercializing electric powertrains, Megapack stationary grid storage, and solar generation, displacing fossil fuel combustion across energy systems.</li>\n"
+                               "<li><strong>Grameen Bank (Bangladesh/Asia, Slide 30):</strong> Addresses <strong>SDG 1 (No Poverty)</strong> and <strong>SDG 5 (Gender Equality)</strong> by pioneering collateral-free microcredit for impoverished rural women, creating localized, decentralized livelihoods that build community resilience rather than extractive corporate monopolies.</li>\n"
+                               "<li><strong>Patagonia (US, Slide 30):</strong> Champions <strong>SDG 12 (Responsible Consumption)</strong> and <strong>SDG 14 (Life Below Water)</strong> through its revolutionary 'Worn Wear' circular repair program, urging consumers to repair old gear rather than buy new, using recycled fabrics, and donating 1% of total sales to grassroots environmental defense.</li>\n"
+                               "<li><strong>Tata Trusts (India, Slides 35–36):</strong> Exemplifies philanthropic execution by partnering with over 850 grassroots organizations across 638 districts in 33 states and UTs, bridging last-mile service delivery across all 17 SDGs—from granting formal land titles to slum communities under the Jaga Mission (SDG 1) to rejuvenating village water security and solar microgrids (SDGs 6 & 7).</li>\n"
+                               "</ul>\n"
+                               "<p><em>Slide Reference: Class 17, Slides 2, 5, 10, 28, 29, 30, 31, 32, 34, 35, 36.</em></p>\n"
+                               "</div>"
+        }
+    ]
+
+if __name__ == "__main__":
+    qs = get_class17_grounded_questions()
+    print(f"Successfully loaded {len(qs)} grounded questions for Class 17.")
+    for q in qs:
+        print(f" - [{q['id']}] {q['topic']} ({len(q['detailed_answer'])} chars in detailed answer)")

@@ -1,83 +1,8 @@
 import json
+from grounded_class_18 import get_class18_grounded_questions
 
 def get_class18_questions():
-    return [
-        {
-            "id": "EQB-18-01",
-            "class_id": 18,
-            "class_name": "Natural Resource Accounting & Geospatial Technology",
-            "topic": "Remote Sensing Definition",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section I, Q1", "marks": "1M"}
-            ],
-            "marks": "1M",
-            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
-            "prompt": "Define Remote sensing.",
-            "key_answer_points": "<ul>\n<li><strong>Definition:</strong> The science and art of acquiring information about the Earth's surface, atmosphere, and oceans from a distance—typically using satellite or aircraft sensors measuring reflected or emitted electromagnetic radiation—without making physical contact with the object.</li>\n<li><strong>Core Workflow:</strong> Energy Source (Sun/Radar) $\\rightarrow$ Transmission through atmosphere $\\rightarrow$ Interaction with target Earth surface $\\rightarrow$ Sensor recording $\\rightarrow$ Transmission & Digital Image Processing.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Earth Observation:</strong> Enables continuous, non-invasive monitoring of global natural resources across spatial and temporal scales.</p>\n<p><em>Slide Reference: Class 18 Slide 4.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-18-02",
-            "class_id": 18,
-            "class_name": "Natural Resource Accounting & Geospatial Technology",
-            "topic": "Vegetation & Water in Infrared FCC Satellite Imagery",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section I, Q2", "marks": "2M"}
-            ],
-            "marks": "2M",
-            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
-            "prompt": "How vegetation and deeper water bodies appear in infrared composite satellite data?",
-            "key_answer_points": "<ul>\n<li><strong>Healthy Green Vegetation:</strong> Appears as <strong>Vibrant Red / Bright Pink</strong> in standard False Color Composites (FCC: NIR band mapped to Red channel, Red band mapped to Green, Green band mapped to Blue).\n<br>• <em>Reason:</em> Spongy mesophyll leaf cells reflect strongly in the Near-Infrared (NIR) spectrum (40–50% reflectance) while absorbing visible red light for photosynthesis.</li>\n<li><strong>Deeper Clear Water Bodies:</strong> Appear as <strong>Deep Blue to Jet Black</strong>.\n<br>• <em>Reason:</em> Water absorbs almost 100% of incoming Near-Infrared and Shortwave-Infrared radiation; deep, clear water reflects virtually zero NIR back to satellite sensors.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Why False Color?:</strong> The human eye cannot perceive infrared light. Mapping near-infrared reflectance to the visible red color channel makes healthy plant biomass stand out vividly against non-living backgrounds.</p>\n<p><em>Slide Reference: Class 18 Slides 8–10.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-18-03",
-            "class_id": 18,
-            "class_name": "Natural Resource Accounting & Geospatial Technology",
-            "topic": "Six Applications of Remote Sensing in Environmental Studies",
-            "category": "Descriptive & Case Study",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section I, Q3", "marks": "3M"}
-            ],
-            "marks": "3M",
-            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
-            "prompt": "List any Six applications of remote sensing technology in environmental studies.",
-            "key_answer_points": "<ul>\n<li><strong>1. Forest Cover & Deforestation Monitoring:</strong> Tracking canopy density loss, illegal logging, and measuring afforestation rates over time.</li>\n<li><strong>2. Natural Disaster Management:</strong> Mapping real-time flood extents, earthquake damage zones, cyclone tracks, and active forest wildfire perimeters (using thermal infrared sensors).</li>\n<li><strong>3. Agricultural Crop Health & Yield Prediction:</strong> Calculating NDVI vegetation health, drought stress, and soil moisture patterns.</li>\n<li><strong>4. Water Resource Assessment:</strong> Delineating reservoir shrinkage, glacial lake outburst flood (GLOF) risks, and coastal sediment plumes.</li>\n<li><strong>5. Urban Heat Island & Land Use Mapping (LULC):</strong> Detecting urban sprawl, wetland encroachment, and concrete heat retention.</li>\n<li><strong>6. Coastal & Coral Reef Health:</strong> Mapping mangrove extent, coastal erosion, and thermal coral bleaching anomalies.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Planetary Scale:</strong> Satellite sensors provide synoptic, repetitive coverage of remote terrains (like the Himalayas or Amazon basin) that are impossible to survey manually on foot.</p>\n<p><em>Slide Reference: Class 18 Slides 12–16.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-18-04",
-            "class_id": 18,
-            "class_name": "Natural Resource Accounting & Geospatial Technology",
-            "topic": "Spectral Signatures in Natural Resource Accounting",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section I", "marks": "2M"}
-            ],
-            "marks": "2M",
-            "importance": "HIGH (⭐⭐⭐⭐)",
-            "prompt": "What are spectral signatures, and why is the near-infrared band critical for vegetation monitoring?",
-            "key_answer_points": "<ul>\n<li><strong>Spectral Signature:</strong> The specific pattern of electromagnetic reflectance and absorption displayed by a material across different wavelengths of the spectrum, serving as a unique 'optical fingerprint'.</li>\n<li><strong>Why the Near-Infrared (NIR) Band is Critical:</strong> Chlorophyll pigments in green leaves absorb blue and red light for photosynthesis. However, leaf spongy mesophyll cells strongly bounce back Near-Infrared wavelengths (0.7–1.1 $\\mu$m) to avoid overheating. When a plant suffers water stress or disease, its cellular mesophyll collapses, causing NIR reflectance to drop dramatically before any visual yellowing is visible to the human eye.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Early Stress Detection:</strong> Near-infrared sensors detect crop drought and pest attacks days before damage becomes visible to human farmers.</p>\n<p><em>Slide Reference: Class 18 Slides 7–9.</em></p>\n</div>"
-        },
-        {
-            "id": "EQB-18-05",
-            "class_id": 18,
-            "class_name": "Natural Resource Accounting & Geospatial Technology",
-            "topic": "Normalized Difference Vegetation Index (NDVI)",
-            "category": "Short Answer & Definitions",
-            "exams": [
-                {"paper": "End Exam 2019", "section": "Section I", "marks": "2M"}
-            ],
-            "marks": "2M",
-            "importance": "CRITICAL (⭐⭐⭐⭐⭐)",
-            "prompt": "What is NDVI (Normalized Difference Vegetation Index) and how is it used in natural resource accounting?",
-            "key_answer_points": "<ul>\n<li><strong>Mathematical Formula:</strong>\n<div class=\"formula-box\">$$\\text{NDVI} = \\frac{\\text{NIR} - \\text{Red}}{\\text{NIR} + \\text{Red}}$$</div></li>\n<li><strong>Numerical Range & Interpretation:</strong> Values range from <strong>-1.0 to +1.0</strong>:\n<br>• Negative values ($-1.0$ to $0.0$): Water, snow, clouds.\n<br>• Near zero ($0.0$ to $0.2$): Bare rock, sand, concrete urban surfaces.\n<br>• Moderate positive ($0.2$ to $0.5$): Sparse grass, dry crops, shrubs.\n<br>• High positive ($0.6$ to $0.9$): Dense tropical rainforest, healthy mature crops.</li>\n<li><strong>Use in Natural Resource Accounting:</strong> Provides a standardized, objective spatial metric to quantify forest canopy degradation, track carbon sequestration stocks, and verify reforestation compliance for carbon credits.</li>\n</ul>",
-            "detailed_answer": "<div class=\"detailed-body\">\n<p><strong>Why Normalization Matters:</strong> Subtracting Red from NIR and dividing by their sum cancels out differences in solar illumination angles and atmospheric haze across seasons.</p>\n<p><em>Slide Reference: Class 18 Slides 10–11.</em></p>\n</div>"
-        }
-    ]
+    return get_class18_grounded_questions()
 
 def get_class19_questions():
     return [

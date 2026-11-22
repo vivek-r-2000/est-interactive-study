@@ -1,0 +1,107 @@
+{
+  "class_id": 18,
+  "file_name": "Class-18-NRA-Geospatial.pdf",
+  "total_slides": 25,
+  "slides": [
+    {
+      "slide_num": 1,
+      "text": "Geospatial Technology in Natural \nResource Accounting\n19th November 2026\nClass-18"
+    },
+    {
+      "slide_num": 2,
+      "text": "Natural Resource Accounting \n(NRA)\nResource; Natural Resource\nOdum (1971) Classification\nhttps://ec.europa.eu/newsroo\nm/env/items/661981/en"
+    },
+    {
+      "slide_num": 3,
+      "text": "Ecosystem goods and services framework (MA, 2005)."
+    },
+    {
+      "slide_num": 4,
+      "text": "Natural Resource Accounting (NRA)\nNRA is a process of estimating the value of natural resource depletion \nand environment degradation due to economic activities.\nhttps://www.unescwa.org/sd-glossary/natural-resource-accounting"
+    },
+    {
+      "slide_num": 5,
+      "text": "Example of Natural Resource Accounts\nSource: Environmental and Resource Economics: A Contemporary Approach Edition: 3 \nChapter: 8 Publisher: M.E. Sharpe"
+    },
+    {
+      "slide_num": 6,
+      "text": "What is the Significance of NRA\nInterrelation between Economy and Environment \nAid to policy framing: sound database \nManaging SDGs \nCombating Climate change \nWhat are the Challenges Related to \nAccounting of Natural Resources?\nLack of capacity building programs\nMapping the periodicity of data\nIssues related to data sharing"
+    },
+    {
+      "slide_num": 7,
+      "text": "Natural resource accounts\nFocus on stocks and flows of natural resources (forests, water, minerals, fisheries, \nland).\nMeasured in physical terms (e.g., area of forest, tons of coal, cubic meters of water) \nand sometimes in monetary terms (resource rent, value of extraction).\nExample: India’s forest cover and timber stock accounts in the GNA\nExample: \nEcosystem \nAccounts\nEcosystem accounts \nand how they relate \nto each other\nSource: \nhttps://seea.un.org/ecosystem-\nti"
+    },
+    {
+      "slide_num": 8,
+      "text": "Ecosystem accounting takes a \nspatial approach\nSource: https://seea.un.org/ecosystem-accounting\nHow ecosystem assets \ngenerate ecosystem \nservices to beneficiaries \nin a spatial relationship"
+    },
+    {
+      "slide_num": 9,
+      "text": "Why Geospatial in NRA\n1. Limitations of Conventional Surveys in Resource Auditing\nHigh cost & time-consuming:\nLimited coverage:\nData inconsistency:\nSlow update cycles: \nAccessibility challenges:\n2. Remote Sensing (RS) & GIS as Cost-Effective, Scalable, \nand Verifiable Tools\nCost-effective: \nScalable:.\nFrequent monitoring:\nObjectivity & transparency:"
+    },
+    {
+      "slide_num": 10,
+      "text": "CASE STUDIES"
+    },
+    {
+      "slide_num": 11,
+      "text": "Kondapalli Reserve Forest (Andhra Pradesh)\nLinking LULC Change to Natural Resource Accounting"
+    },
+    {
+      "slide_num": 12,
+      "text": "Why LULC Matters for NRA\n•LULC = spatial representation of natural capital stocks.\n•Temporal LULC maps → show depletion, additions, or \ntransformation of resources.\n•Urbanization is a key driver of:\n• Forest/agriculture → Built-up.\n• Decline in ecosystem services.\n•Basis for land accounts in SEEA \n(System of Environmental-Economic Accounting)."
+    },
+    {
+      "slide_num": 13,
+      "text": ""
+    },
+    {
+      "slide_num": 14,
+      "text": ""
+    },
+    {
+      "slide_num": 15,
+      "text": "Forest area: 1990 = 115.74 km² (41.63% of study area) → 2015 = \n106 km² (37.53%) \nBuilt-up: 1990 = 3.10 km² (1.11%) → 2017 = 62.26 km² (22.07%)\nNet forest loss 1990–2015: 9.74 km² (~0.39 km² /yr)"
+    },
+    {
+      "slide_num": 16,
+      "text": "Stocks & Flows Framework\n• • Natural capital stock = forest, agriculture, water\n• • Manufactured capital stock = built-up area\n• • Flow = Change in stock between time periods\n• Forest ↓ → loss of carbon sequestration, biodiversity, \nwater regulation\n• • Forest 1990–2015: -9.74 km² → negative flow\n• • Built-up 1990–2017: +59.16 km² → positive flow of \nmanufactured capital\n• Built-up ↑ → gain in infrastructure, but ↑ waste & \nemissions\n• • Accounts: Translate physical flows → monetary \naccounts (e.g., carbon, provisioning services)"
+    },
+    {
+      "slide_num": 17,
+      "text": "Worked Example: Carbon Valuation\n• Forest loss (1990–2015) = 9.74 km² = 974 ha\n• Assume mean biomass = 30 tC/ha\n• Total C loss = 974 × 30 = 29,220 tC\n• Convert to CO₂ = 29,220 × 3.67 = 107,140 tCO₂\n• Value (Carbon price scenarios):\n• • At US$5/tCO₂:107,140 × 5 = US$535,700 \nUS$10/tCO₂:107,140 × 10 = US$1,071,400 \nUS$20/tCO₂:107,140 × 20 = US$2,142,800"
+    },
+    {
+      "slide_num": 18,
+      "text": "Water Bodies and \nRamsar Sites in \nKerala\n(Ashtamudi, \nSasthamkotta, \nVembanad-Kol)\nWetlands\nprovide\ncritical\necosystem\nservices,\nincluding\nwater\npurification,\nflood\nregulation, and livelihoods.\nDespite\nRamsar\nprotection,\nKerala’s\nRamsar\nsites\nface\ndegradation from urbanization,\npollution,\nreclamation,\nand\nindustrial activities."
+    },
+    {
+      "slide_num": 19,
+      "text": "• Ashtamudi Wetland: 61.4 km², Kollam district,\nsecond-largest wetland ecosystem in Kerala.\n• Sasthamkotta Lake: 3.75 km², largest freshwater lake\nin Kerala, vital drinking water source.\n• Vembanad-Kol Wetland: 2033 km², largest tropical\nbrackish wetland in India, supports paddy cultivation\nbelow sea level.\nStudy Area\nNatural Resource Accounting Context\nDecline in water bodies reduces fisheries and water supply\nVegetation loss impacts carbon sequestration and biodiversity\nBuilt-up\nexpansion\nreflects\nunsustainable\nurban\ngrowth,\nexternalizing ecological costs\n• Pokkali fields decline undermines traditional livelihoods and\ncultural economy\nNRA links ecosystem changes to economic valuation"
+    },
+    {
+      "slide_num": 20,
+      "text": "1988–2022:\n• Water bodies: \nstable (67.9 → 65.7 km²).\n• Vegetation: \nsharp decline (220.7 → 139.8 km²).\n• Agriculture/fallow: \nreduced from 84.8 → 15.7 km².\n• Built-up: \nmajor increase (15.6 → 167.8 km²)\nEconomic Impact:\nLoss of agricultural productivity, \nincreased water stress, livelihood \nshifts."
+    },
+    {
+      "slide_num": 21,
+      "text": "1988–2023: • Water bodies: 442.1 → 347.7 km² (−94.4 km²).\nVegetation: 767.3 → 650.3 km². • Pokkali fields: 97.1 → 57.7 km².\nBuilt-up: 80.8 → 340.6 km².\nEconomic Impact: Decline in fisheries (fish landings halved since 2000), \nloss of Pokkali-rice-practice, tourism pressure."
+    },
+    {
+      "slide_num": 22,
+      "text": "Economic Accounting Implications\n• Loss of fishery resources = reduced income for local communities.\n• Agricultural decline = food insecurity, job losses.\n• Urban growth = external costs (pollution, flooding).\n• Declining water storage = higher disaster costs (floods, water crisis).\n• Ecosystem degradation = reduced tourism potential.\nKey Findings:\n• 20–40% vegetation decline.\n• Built-up increased 3–4x.\n• Water bodies reduced by ~100 km² in Vembanad.\n• Traditional Pokkali rice farming reduced 40%.\nAccounting Framework:\n• Direct use values (fisheries, agriculture).\n• Indirect use values (flood regulation, water purification).\n• Non-use values (biodiversity, cultural heritage)."
+    },
+    {
+      "slide_num": 23,
+      "text": "Monetary Valuation using Mid-point values \nMethod: Benefit-transfer (illustrative)\nFisheries provisioning\nVembanad-Kol: ₹115,000 / ha / yr (from estuarine fishery studies)\nAshtamudi & Sasthamkotta: ₹80,000 / ha / yr (clam & freshwater fishery\nvalues)\nAgriculture\nPokkali fields (Vembanad-Kol): ₹50,000 / ha / yr\nPaddy/fallow agriculture (Ashtamudi & Sasthamkotta): ₹37,500 / ha / yr\nRegulating\nservices\n(flood\ncontrol,\nwater\npurification,\ncarbon\nsequestration)₹42,500 / ha / yr (mid of 25,000–60,000 range)\nRecreation / Tourism₹15,000 / ha / yr (mid of 12,000–18,000 range from\nbackwater tourism studies)\nBiodiversity / Non-use values₹8,000 / ha / yr (mid of 6,000–10,000 WTP\nrange)"
+    },
+    {
+      "slide_num": 24,
+      "text": "Mid-case monetary results (calculated using land-cover losses → \nhectares × mid range values\n•Fisheries (waterbody loss = 9,440 \nha): 9,440 × 115,000 = \n₹1,085,600,000\n•Agriculture (pokkali loss = 3,940 \nha): 3,940 × 50,000 = ₹197,000,000\n•Regulating services (vegetation loss \n= 11,700 ha): 11,700 × 42,500 = \n₹497,250,000\nVembanad-Kol (1988–2023 area changes → losses in hectares)\n•Recreation (waterbody loss = 9,440 \nha): 9,440 × 15,000 = ₹141,600,000\n•Biodiversity (vegetation loss = 11,700 \nha): 11,700 × 8,000 = ₹93,600,000\nTotal Vembanad-Kol ≈ \n₹2,015,050,000 per year (~₹201.5 \ncrores/yr)"
+    },
+    {
+      "slide_num": 25,
+      "text": "Ashtamudi & Sasthamkotta (1988–2022 area changes → losses \nin hectares)\n•Fisheries (waterbody loss = 220 ha): 220 × 80,000 = ₹17,600,000\n•Agriculture (fallow/agri loss = 6,910 ha): 6,910 × 37,500 = \n₹259,125,000\n•Regulating services (vegetation loss = 8,090 ha): 8,090 × 42,500 \n= ₹343,825,000\n•Recreation (waterbody loss = 220 ha): 220 × 15,000 = ₹3,300,000\n•Biodiversity (vegetation loss = 8,090 ha): 8,090 × 8,000 = \n₹64,720,000\nTotal Ashtamudi & Sasthamkotta ≈ ₹688,570,000 per year \n(~₹68.9 crores/yr\nCombined (Kerala Ramsar Sites, mid-\ncase total)\n•Vembanad-Kol + Ashtamudi & \nSasthamkotta\n•≈ ₹2,703,620,000 per year (~₹270.36 \ncrores/yr)"
+    }
+  ]
+}
