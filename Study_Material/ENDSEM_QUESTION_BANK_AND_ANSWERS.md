@@ -34,16 +34,16 @@
 
 **[For 3 Marks — Three Core Sequential Steps (1M each)]:**
 
-- **Atmospheric $	ext{CO}_2$ Direct Air Capture (1 Mark):** Captures ambient $	ext{CO}_2$ directly from air using solid sorbent filters powered entirely by solar and wind renewable electricity.
+- **Atmospheric $\text{CO}_2$ Direct Air Capture (1 Mark):** Captures ambient $\text{CO}_2$ directly from air using solid sorbent filters powered entirely by solar and wind renewable electricity.
 
-- **Electrolytic Hydrogen Generation & Syngas Synthesis (1 Mark):** Water is split via zero-carbon electrolysis to yield green hydrogen ($	ext{H}_2$), which is reacted with captured $	ext{CO}_2$ via reverse water-gas shift to produce methane hydrocarbon feedstock ($	ext{CH}_4$).
+- **Electrolytic Hydrogen Generation & Syngas Synthesis (1 Mark):** Water is split via zero-carbon electrolysis to yield green hydrogen ($\text{H}_2$), which is reacted with captured $\text{CO}_2$ via reverse water-gas shift to produce methane hydrocarbon feedstock ($\text{CH}_4$).
 
 - **Chemical Vapor Deposition (CVD) Crystallization (1 Mark):** Hydrocarbon gas is fed into a high-temperature plasma reactor ($\sim 3,000^{\circ}\text{C}$) where carbon atoms deposit layer-by-layer onto diamond seed crystals over several weeks, creating gem-grade synthetic diamond with identical physical/optical properties to mined diamonds.
 
 **[If asked for 5 Marks, add]:**
 
 <ol start="4">
-- **Carbon Accounting & Environmental Benefit (1 Mark):** Traditional diamond mining moves $\sim 250	ext{ tonnes}$ of earth and emits $160	ext{ kg CO}_2$ per carat; Aether's process is net carbon-negative, permanently sequestering $\sim 20	ext{ tonnes of CO}_2$ per carat of diamond produced.
+- **Carbon Accounting & Environmental Benefit (1 Mark):** Traditional diamond mining moves $\sim 250\text{ tonnes}$ of earth and emits $160\text{ kg CO}_2$ per carat; Aether's process is net carbon-negative, permanently sequestering $\sim 20\text{ tonnes of CO}_2$ per carat of diamond produced.
 
 - **Resource Efficiency (1 Mark):** Eliminates open-pit ecological devastation, toxic tailings runoff, and ground water depletion associated with conventional diamond kimberlite pipe mining.
 
@@ -101,13 +101,13 @@
 **Differences between Ordinary Portland Cement (OPC) and Novacem Cement:**
 
   | **1. Raw Feedstock & Chemistry** 
-  <td>Limestone ($	ext{CaCO}_3$) calcined at $1,450^{\circ}\text{C}$, releasing intrinsic geogenic chemical $	ext{CO}_2$:
+  <td>Limestone ($\text{CaCO}_3$) calcined at $1,450^{\circ}\text{C}$, releasing intrinsic geogenic chemical $\text{CO}_2$:
   $$\text{CaCO}_3 \rightarrow \text{CaO} + \text{CO}_2$$</td>
-  | Magnesium silicates (talc/olivine) transformed into magnesium oxide ($	ext{MgO}$) at lower calcination temperature ($700^{\circ}\text{C}$) without carbonate decomposition. 
+  | Magnesium silicates (talc/olivine) transformed into magnesium oxide ($\text{MgO}$) at lower calcination temperature ($700^{\circ}\text{C}$) without carbonate decomposition. 
 
   | **2. Net Carbon Balance** 
   | **Highly Carbon-Positive:** Produces $\sim 0.8\text{ to }1.0\text{ kg CO}_2$ per kg of cement manufactured ($>8\%$ of global emissions). 
-  | **Carbon-Negative:** Sequesters $\sim 0.5\text{ kg CO}_2$ per kg of cement as $	ext{MgO}$ carbonates to magnesium carbonates during curing. 
+  | **Carbon-Negative:** Sequesters $\sim 0.5\text{ kg CO}_2$ per kg of cement as $\text{MgO}$ carbonates to magnesium carbonates during curing. 
 
   | **3. Manufacturing Thermal Demand** 
   | Requires massive fossil fuel energy to maintain rotary kilns at $1,450^{\circ}\text{C}$. 
@@ -221,7 +221,7 @@ These coastal ecosystems sequester carbon **30 to 50 times faster** than terrest
 
 **[For 1 Mark — Core Mechanism & Solution]:**
 
-Enteric fermentation in ruminant livestock (cattle) produces methane ($	ext{CH}_4$) when methanogenic archaea in the rumen break down fibrous cellulose. It can be mitigated by supplementing cattle feed with red seaweed (*Asparagopsis taxiformis*), which contains **bromoform** that blocks the methyl-coenzyme M reductase enzyme, cutting enteric methane emissions by up to **80% to 90%**.
+Enteric fermentation in ruminant livestock (cattle) produces methane ($\text{CH}_4$) when methanogenic archaea in the rumen break down fibrous cellulose. It can be mitigated by supplementing cattle feed with red seaweed (*Asparagopsis taxiformis*), which contains **bromoform** that blocks the methyl-coenzyme M reductase enzyme, cutting enteric methane emissions by up to **80% to 90%**.
 
 **[If asked for 2 Marks, add Secondary Mitigations (1M)]:**
 
@@ -280,13 +280,13 @@ Additional interventions include chemical enzyme inhibitors (e.g. 3-Nitrooxyprop
 
 **[For 1 Mark — Core Definition & Technology]:**
 
-**Direct Air Capture (DAC)** refers to industrial engineering systems that extract $	ext{CO}_2$ directly from ambient atmospheric air (concentration $pprox 420	ext{ ppm}$) using chemical sorbents powered by clean energy for geological sequestration or utilization.
+**Direct Air Capture (DAC)** refers to industrial engineering systems that extract $\text{CO}_2$ directly from ambient atmospheric air (concentration $\approx 420\text{ ppm}$) using chemical sorbents powered by clean energy for geological sequestration or utilization.
 
 **[If asked for 2 Marks, compare the two leading technologies (1M)]:**
 
-- **Solid Sorbent Systems (Climeworks, Switzerland):** Air is drawn through amine-functionalized cellulose filters that chemically bind $	ext{CO}_2$; filters are desorbed at moderate temperatures ($\sim 100^{\circ}\text{C}$) and dissolved in water for basalt mineralization (Orca plant, Iceland).
+- **Solid Sorbent Systems (Climeworks, Switzerland):** Air is drawn through amine-functionalized cellulose filters that chemically bind $\text{CO}_2$; filters are desorbed at moderate temperatures ($\sim 100^{\circ}\text{C}$) and dissolved in water for basalt mineralization (Orca plant, Iceland).
 
-- **Liquid Solvent Systems (Carbon Engineering, Canada):** Uses potassium hydroxide ($	ext{KOH}$) liquid contactor, reacting $	ext{CO}_2$ to potassium carbonate, followed by high-temperature calcination ($900^{\circ}\text{C}$) to release pure $	ext{CO}_2$.
+- **Liquid Solvent Systems (Carbon Engineering, Canada):** Uses potassium hydroxide ($\text{KOH}$) liquid contactor, reacting $\text{CO}_2$ to potassium carbonate, followed by high-temperature calcination ($900^{\circ}\text{C}$) to release pure $\text{CO}_2$.
 
 #### Key Points
 - **Leading Commercial Pioneers:** **Climeworks** (Switzerland/Iceland), **Carbon Engineering (CE)** (Canada/USA), and **Global Thermostat** (USA) (Slides 8, 9, 14).
@@ -392,9 +392,9 @@ Slide 3 explains that biochar is produced through **pyrolysis**: heating renewab
 
 **Biomass Utilization in Building & Construction for Negative Emissions:**
 
-- **Structural Mass Timber & Bamboo (1 Mark):** Replacing carbon-intensive Portland cement and steel with engineered cross-laminated timber (CLT) and rapid-growing bamboo converts buildings into long-term carbon storage banks that sequester photosynthetic $	ext{CO}_2$ for the building's 50–100 year service life.
+- **Structural Mass Timber & Bamboo (1 Mark):** Replacing carbon-intensive Portland cement and steel with engineered cross-laminated timber (CLT) and rapid-growing bamboo converts buildings into long-term carbon storage banks that sequester photosynthetic $\text{CO}_2$ for the building's 50–100 year service life.
 
-- **Bio-Based Insulation & Hempcrete (1 Mark):** Utilizing agricultural hemp shives mixed with hydrated lime ($	ext{Ca(OH)}_2$) to form lightweight, breathable monolithic walls. Beyond low embodied carbon, the lime matrix continuously reabsorbs ambient $	ext{CO}_2$ through curing carbonation:
+- **Bio-Based Insulation & Hempcrete (1 Mark):** Utilizing agricultural hemp shives mixed with hydrated lime ($\text{Ca(OH)}_2$) to form lightweight, breathable monolithic walls. Beyond low embodied carbon, the lime matrix continuously reabsorbs ambient $\text{CO}_2$ through curing carbonation:
 $$\text{Ca(OH)}_2 + \text{CO}_2 \rightarrow \text{CaCO}_3 + \text{H}_2\text{O}$$
 
 #### Key Points
@@ -451,7 +451,7 @@ $$\text{Ca(OH)}_2 + \text{CO}_2 \rightarrow \text{CaCO}_3 + \text{H}_2\text{O}$$
   
     <li>*Mechanism:* Adding finely ground alkaline minerals (calcium hydroxide $\text{Ca(OH)}_2$, olivine, or limestone) to surface ocean waters increases oceanic chemical acid-neutralizing capacity.
 
-    - *Reaction:* Converts dissolved aqueous $\text{CO}_2$ into stable dissolved bicarbonate ($	ext{HCO}_3^-$) and carbonate ions:
+    - *Reaction:* Converts dissolved aqueous $\text{CO}_2$ into stable dissolved bicarbonate ($\text{HCO}_3^-$) and carbonate ions:
     $$\text{CO}_2 + \text{H}_2\text{O} + \text{CO}_3^{2-} \rightarrow 2\text{HCO}_3^-$$
     This lowers ocean acidity while drawing additional atmospheric $\text{CO}_2$ into the ocean surface layer for permanent chemical storage for over 100,000 years.
 
@@ -519,12 +519,12 @@ $$\text{Ca(OH)}_2 + \text{CO}_2 \rightarrow \text{CaCO}_3 + \text{H}_2\text{O}$$
 
 - **Definition (1 Mark):** **Enhanced Weathering (EW)** is a geoengineering technique that accelerates the natural geological silicate weathering cycle by spreading finely pulverized silicate rocks (such as basalt or olivine $\text{Mg}_2\text{SiO}_4$) over agricultural soils or coastal beaches.
 
-- **Reaction Mechanism (1 Mark):** Natural chemical weathering takes hundreds of thousands of years. Crushing rocks to micro-scale particles increases surface reaction area by orders of magnitude, rapidly reacting with soil carbonic acid ($	ext{H}_2	ext{CO}_3$) to convert atmospheric $	ext{CO}_2$ into stable dissolved bicarbonate:
+- **Reaction Mechanism (1 Mark):** Natural chemical weathering takes hundreds of thousands of years. Crushing rocks to micro-scale particles increases surface reaction area by orders of magnitude, rapidly reacting with soil carbonic acid ($\text{H}_2\text{CO}_3$) to convert atmospheric $\text{CO}_2$ into stable dissolved bicarbonate:
 $$\text{Mg}_2\text{SiO}_4 + 4\text{CO}_2 + 4\text{H}_2\text{O} \rightarrow 2\text{Mg}^{2+} + 4\text{HCO}_3^- + \text{H}_4\text{SiO}_4$$
 
 **[If asked for 3 Marks, add Co-Benefits (1M)]:**
 
-Releases essential agronomic macronutrients ($	ext{Ca, Mg, P, K}$), counteracts soil acidification, reduces toxic aluminum mobility, and eliminates the need for synthetic lime fertilizers.
+Releases essential agronomic macronutrients ($\text{Ca, Mg, P, K}$), counteracts soil acidification, reduces toxic aluminum mobility, and eliminates the need for synthetic lime fertilizers.
 
 #### Key Points
 - **Natural Geological Baseline:** Natural rock weathering (the slow chemical dissolution of silicate and carbonate rocks by rainwater) naturally absorbs around **3% of global fossil fuel emissions** over geological timescales (Slide 7).
@@ -568,13 +568,13 @@ While this natural process quietly absorbs roughly **3% of annual fossil fuel em
 
 **[For 2 Marks — Two-Stage Amine Scrubbing Process (1M each)]:**
 
-- **Absorption Stage (1 Mark):** Cooled flue gas containing $	ext{CO}_2$ enters the bottom of an absorption column and flows upward against a descending aqueous liquid amine solvent (typically 30% Monoethanolamine - MEA). The basic amine reacts exothermically with weak acidic $	ext{CO}_2$ at $40	ext{--}50^{\circ}\text{C}$ to form soluble carbamate salts, scrubbing $>90\%$ of $	ext{CO}_2$ from the exhaust gas.
+- **Absorption Stage (1 Mark):** Cooled flue gas containing $\text{CO}_2$ enters the bottom of an absorption column and flows upward against a descending aqueous liquid amine solvent (typically 30% Monoethanolamine - MEA). The basic amine reacts exothermically with weak acidic $\text{CO}_2$ at $40\text{--}50^{\circ}\text{C}$ to form soluble carbamate salts, scrubbing $>90\%$ of $\text{CO}_2$ from the exhaust gas.
 
-- **Desorption / Stripping Stage (1 Mark):** The $	ext{CO}_2$-rich amine solvent is pumped into a stripper column and heated to $120	ext{--}140^{\circ}\text{C}$ using steam reboilers. The thermal energy breaks the chemical bonds, liberating high-purity ($\sim 99\%$) $	ext{CO}_2$ gas for compression and underground geological storage, while the regenerated solvent is recycled back to the absorber.
+- **Desorption / Stripping Stage (1 Mark):** The $\text{CO}_2$-rich amine solvent is pumped into a stripper column and heated to $120\text{--}140^{\circ}\text{C}$ using steam reboilers. The thermal energy breaks the chemical bonds, liberating high-purity ($\sim 99\%$) $\text{CO}_2$ gas for compression and underground geological storage, while the regenerated solvent is recycled back to the absorber.
 
 **[If asked for 3 Marks, add Energy Penalty & Challenges (1M)]:**
 
-The solvent regeneration requires massive thermal parasitic energy ($\sim 3.0	ext{ to }4.0	ext{ GJ/tonne CO}_2$), reducing power plant net electricity output by 20–30%, alongside solvent thermal degradation and equipment corrosion.
+The solvent regeneration requires massive thermal parasitic energy ($\sim 3.0\text{ to }4.0\text{ GJ/tonne CO}_2$), reducing power plant net electricity output by 20–30%, alongside solvent thermal degradation and equipment corrosion.
 
 #### Key Points
 - **Scuba-Diving Analogy:** Scuba rebreather gear uses chemical scrubbers (soda lime canisters) to capture exhaled $\text{CO}_2$ from a diver's breathing loop. Power plant scrubbers adopt a similar principle, using specialized chemical sorbents to remove $\text{CO}_2$ directly from post-combustion flue gas (Slide 13).
@@ -626,7 +626,7 @@ Researchers Neil J. Williams and Erick Holguin developed an innovative solid-sta
 
 - **Core Project Identity (1 Mark):** A pioneering UK industrial decarbonization cluster located in Teesside, combining a high-efficiency 860 MW Combined Cycle Gas Turbine (CCGT) power station with commercial-scale Carbon Capture, Utilization, and Storage (CCUS).
 
-- **Carbon Abatement Scale & Storage (1 Mark):** Designed to capture up to **2 million tonnes of $	ext{CO}_2$ annually** from power generation and adjacent chemical manufacturing plants, transporting compressed $	ext{CO}_2$ via subsea pipelines for permanent storage $>1,000	ext{ meters}$ under the North Sea in saline aquifers (Endurance aquifer), serving as an economic blueprint for industrial net-zero hubs.
+- **Carbon Abatement Scale & Storage (1 Mark):** Designed to capture up to **2 million tonnes of $\text{CO}_2$ annually** from power generation and adjacent chemical manufacturing plants, transporting compressed $\text{CO}_2$ via subsea pipelines for permanent storage $>1,000\text{ meters}$ under the North Sea in saline aquifers (Endurance aquifer), serving as an economic blueprint for industrial net-zero hubs.
 
 #### Key Points
 - **Core Definition & Objective:** Net Zero Teesside (NZT) is a landmark industrial carbon capture, utilization, and storage (CCUS) project located in Teesside, North East England, designed to create the UK's first zero-carbon industrial cluster (Slide 16).
@@ -671,12 +671,12 @@ Researchers Neil J. Williams and Erick Holguin developed an innovative solid-sta
 - **Global Sector Contribution (1 Mark):** Animal agriculture (meat and dairy production) accounts for approximately **$14.5\%$ of all anthropogenic global greenhouse gas emissions** (FAO), on par with total direct emissions from global transportation.
 
 - **Major Gas Breakdown & Potency (1 Mark):**
-  <br>• **Methane ($	ext{CH}_4$, GWP = 28):** 44% of sector emissions, from enteric livestock fermentation and anaerobic manure storage.
-  <br>• **Nitrous Oxide ($	ext{N}_2	ext{O}$, GWP = 265):** 29% of emissions, from chemical fertilizer applications and livestock manure nitrogen deposition.
+  <br>• **Methane ($\text{CH}_4$, GWP = 28):** 44% of sector emissions, from enteric livestock fermentation and anaerobic manure storage.
+  <br>• **Nitrous Oxide ($\text{N}_2\text{O}$, GWP = 265):** 29% of emissions, from chemical fertilizer applications and livestock manure nitrogen deposition.
 
 **[If asked for 3 Marks, add Land Use & Beef Intensity (1M)]:**
 
-Beef production is the most carbon-intensive food on Earth, generating $\sim 60	ext{ kg CO}_2	ext{e}$ per kg of beef produced, driven heavily by tropical deforestation for pasture expansion and soybean animal feed monocultures.
+Beef production is the most carbon-intensive food on Earth, generating $\sim 60\text{ kg CO}_2\text{e}$ per kg of beef produced, driven heavily by tropical deforestation for pasture expansion and soybean animal feed monocultures.
 
 #### Key Points
 - **Global Livestock Footprint:** Meat and dairy industries generate **7.1 gigatons of GHG annually**, which accounts for **14.5% of total anthropogenic emissions** (Slide 17).
@@ -786,7 +786,7 @@ Slide 20 showcases a conceptualized unmanned, wind-powered, remotely controlled 
 
 **[For 2 Marks — Two Low-Carbon Innovations in Maritime Shipping (1M each)]:**
 
-- **Zero-Carbon Alternative Fuels (1 Mark):** Replacing heavy fuel oil (HFO) with clean alternative chemical fuels—green ammonia ($	ext{NH}_3$, zero-carbon combustion) and green e-methanol synthesized with captured $	ext{CO}_2$ and green hydrogen, cutting vessel GHG emissions by $>80\%$.
+- **Zero-Carbon Alternative Fuels (1 Mark):** Replacing heavy fuel oil (HFO) with clean alternative chemical fuels—green ammonia ($\text{NH}_3$, zero-carbon combustion) and green e-methanol synthesized with captured $\text{CO}_2$ and green hydrogen, cutting vessel GHG emissions by $>80\%$.
 
 - **Wind-Assisted Propulsion Technologies (1 Mark):** Retrofitting cargo vessels with modern rigid wing sails, automated rotor sails (Flettner rotors), and giant towing kites that utilize auxiliary wind energy, reducing engine load and bunker fuel consumption by 10% to 30%.
 
@@ -990,7 +990,7 @@ Uses proprietary **SEI-PCS (Spatially Explicit Information on Production to Cons
 
 **[For 3 Marks — Definitions & Three Soilless Growing Technologies (1M each)]:**
 
-**Vertical Farming** is the agricultural practice of cultivating crops in vertically stacked layers inside controlled buildings using Artificial Lighting (LEDs) and Controlled Environment Agriculture (CEA) to optimize temperature, humidity, and $	ext{CO}_2$.
+**Vertical Farming** is the agricultural practice of cultivating crops in vertically stacked layers inside controlled buildings using Artificial Lighting (LEDs) and Controlled Environment Agriculture (CEA) to optimize temperature, humidity, and $\text{CO}_2$.
 
 - **Hydroponics (1 Mark):** Plants are cultivated with roots submerged directly in an aerated, recirculating aqueous mineral nutrient solution without soil.
 
@@ -1001,7 +1001,7 @@ Uses proprietary **SEI-PCS (Spatially Explicit Information on Production to Cons
 **[If asked for 5 Marks, add]:**
 
 <ol start="4">
-- **Precision CEA Parameter Control (1 Mark):** Sensors modulate photosynthetic photon flux density (PPFD), red-to-blue light ratios, and ambient $	ext{CO}_2$ ($800	ext{--}1,200	ext{ ppm}$), accelerating crop maturation rates up to $2	imes$ to $3	imes$.
+- **Precision CEA Parameter Control (1 Mark):** Sensors modulate photosynthetic photon flux density (PPFD), red-to-blue light ratios, and ambient $\text{CO}_2$ ($800\text{--}1,200\text{ ppm}$), accelerating crop maturation rates up to $2\times$ to $3\times$.
 
 - **Urban Proximity Advantage (1 Mark):** Collocates food production inside city limits, slashing food transport miles, refrigeration spoilage, and packaging requirements.
 
@@ -1212,9 +1212,9 @@ Rather than spraying chemical pesticides (which poison pollinators, trigger chem
 
 **[For 2 Marks — Two Core IPCC Scientific Reasons (1M each)]:**
 
-- **Offsetting Hard-to-Abate Residual Emissions (1 Mark):** Certain economic sectors cannot achieve absolute zero emissions by 2050 (e.g. aviation, maritime shipping, steel/cement processing, heavy agricultural nitrous oxide). Reaching net-zero requires active physical removal of $	ext{CO}_2$ from the atmosphere to balance unavoidable residual emissions.
+- **Offsetting Hard-to-Abate Residual Emissions (1 Mark):** Certain economic sectors cannot achieve absolute zero emissions by 2050 (e.g. aviation, maritime shipping, steel/cement processing, heavy agricultural nitrous oxide). Reaching net-zero requires active physical removal of $\text{CO}_2$ from the atmosphere to balance unavoidable residual emissions.
 
-- **Reversing Historical Carbon Overshoot (1 Mark):** Even with aggressive decarbonization, emissions will likely exceed the remaining global carbon budget, temporarily overshooting $1.5^{\circ}\text{C}$. NETs are mandatory to deliver net-negative emissions in the second half of the century to draw down atmospheric concentrations back to safe planetary boundaries ($350	ext{ ppm}$).
+- **Reversing Historical Carbon Overshoot (1 Mark):** Even with aggressive decarbonization, emissions will likely exceed the remaining global carbon budget, temporarily overshooting $1.5^{\circ}\text{C}$. NETs are mandatory to deliver net-negative emissions in the second half of the century to draw down atmospheric concentrations back to safe planetary boundaries ($350\text{ ppm}$).
 
 **[If asked for 3 Marks, add NET Portfolio Balance (1M)]:**
 
@@ -1270,7 +1270,7 @@ Slide 2 introduces **Afforestation and Reforestation (A/R)** as the primary natu
 
 **Role of Remote Work & Intelligent Building Systems in Urban Carbon Abatement:**
 
-- **Commuter Transportation Decoupling (1 Mark):** Remote and hybrid working models eliminate millions of daily peak-hour single-occupancy vehicle passenger commutes, directly cutting urban vehicular fuel combustion, tailpipe $	ext{NO}_x$ and $	ext{PM}_{2.5}$ emissions, and localized congestion gridlock.
+- **Commuter Transportation Decoupling (1 Mark):** Remote and hybrid working models eliminate millions of daily peak-hour single-occupancy vehicle passenger commutes, directly cutting urban vehicular fuel combustion, tailpipe $\text{NO}_x$ and $\text{PM}_{2.5}$ emissions, and localized congestion gridlock.
 
 - **Smart Building HVAC Automation & Consolidation (1 Mark):** Intelligent IoT Building Management Systems (BMS) use occupancy sensors, predictive temperature algorithms, and automated zone dampers to dynamically power down heating, ventilation, and lighting in unoccupied office spaces, while consolidated cloud data centers operate at ultra-efficient Power Usage Effectiveness (PUE $< 1.2$), achieving 20% to 40% commercial building energy reductions.
 
@@ -1415,8 +1415,10 @@ While the first statutory EIA notification was approved in **1994**, it was late
 
 - **Three-Tier Risk Classification:**
 <br>• **Very Low Risk:** Inherently benign activities $\rightarrow$ EIA process stops immediately.
-<br>• **Moderate or Unknown Risk:** Uncertain consequences $ightarrow$ Triggers a rapid Preliminary Assessment (Initial Environmental Examination - IEE).
-<br>• **High / Very High Risk:** Significant adverse impacts likely $ightarrow$ Mandates a comprehensive Full EIA Study (Phase II).
+<br>• **Moderate or Unknown Risk:** Uncertain consequences $
+ightarrow$ Triggers a rapid Preliminary Assessment (Initial Environmental Examination - IEE).
+<br>• **High / Very High Risk:** Significant adverse impacts likely $
+ightarrow$ Mandates a comprehensive Full EIA Study (Phase II).
 
 - **Standardized Low-Burden Questioning:** Uses rapid, basic questions (e.g., does it involve penetration roads, large-scale irrigation, or non-native species?) that do *not* require extensive technical analysis or site data.
 
@@ -1512,7 +1514,8 @@ The significance of screening extends across governance, economic, and environme
 
 - **Team & Resources:** Preliminary assessment can be executed rapidly by project staff or general practitioners; Full EIA strictly requires a certified multi-disciplinary team of professional experts.
 
-- **Possible Findings:** Preliminary assessment yields 3 possible findings (no significant impacts $\rightarrow$ ends; impacts mitigated $\rightarrow$ proceed; significant impacts likely $ightarrow$ full EIA needed). Full EIA results in a comprehensive Environmental Impact Statement (EIS) and legally binding Environmental Management Plan (EMP).
+- **Possible Findings:** Preliminary assessment yields 3 possible findings (no significant impacts $\rightarrow$ ends; impacts mitigated $\rightarrow$ proceed; significant impacts likely $
+ightarrow$ full EIA needed). Full EIA results in a comprehensive Environmental Impact Statement (EIS) and legally binding Environmental Management Plan (EMP).
 
 #### Detailed Answer
 #### 1. Conceptual Overview and Framework
@@ -1588,7 +1591,7 @@ To arrive at findings in a preliminary assessment, the preparer follows a rapid 
 
 - **Hydrologist / Hydrogeologist:** Evaluates river discharge depletion, wastewater dilution assimilative capacity, and groundwater vulnerability.
 
-- **Air Quality Modeler:** AERMOD dispersion modeling of kraft odor ($	ext{H}_2	ext{S}$, methyl mercaptan) and particulate matter ($	ext{PM}_{10}, 	ext{SO}_2, 	ext{NO}_x$).
+- **Air Quality Modeler:** AERMOD dispersion modeling of kraft odor ($\text{H}_2\text{S}$, methyl mercaptan) and particulate matter ($\text{PM}_{10}, \text{SO}_2, \text{NO}_x$).
 
 - **Terrestrial & Aquatic Ecologist:** Baseline floral/faunal inventory, forest fragmentation impact on Mt. Kenya biosphere, and aquatic toxicity biomonitoring.
 
@@ -1779,11 +1782,12 @@ An industrial paper plant on a wet forested mountain interacts simultaneously wi
 
 - **Acid Mine Drainage (AMD) (2 Marks):**
   
-    <li>*Cause:* Oxidation of subsurface iron sulfide minerals (pyrite $	ext{FeS}_2$) exposed to atmospheric oxygen and water during open-cast excavation:
-    $$2	ext{FeS}_2 + 7	ext{O}_2 + 2	ext{H}_2	ext{O} ightarrow 2	ext{Fe}^{2+} + 4	ext{SO}_4^{2-} + 4	ext{H}^+$$
+    <li>*Cause:* Oxidation of subsurface iron sulfide minerals (pyrite $\text{FeS}_2$) exposed to atmospheric oxygen and water during open-cast excavation:
+    $$2\text{FeS}_2 + 7\text{O}_2 + 2\text{H}_2\text{O} 
+ightarrow 2\text{Fe}^{2+} + 4\text{SO}_4^{2-} + 4\text{H}^+$$
     This produces sulfuric acid, which leaches heavy metals into surrounding groundwater.
 
-    - *Mitigation:* Divert run-on water using peripheral drains; line tailings ponds with impermeable geomembranes; treat acidic drainage with active lime ($	ext{Ca(OH)}_2$) neutralization tanks and constructed wetland anoxic limestone drains.
+    - *Mitigation:* Divert run-on water using peripheral drains; line tailings ponds with impermeable geomembranes; treat acidic drainage with active lime ($\text{Ca(OH)}_2$) neutralization tanks and constructed wetland anoxic limestone drains.
 
   
 
@@ -1892,14 +1896,14 @@ In accordance with the statutory framework (Class 12, Slide 23):
 
 - **Underreporting Endangered Marine Habitats (1 Mark):** The EIA report downplayed Galathea Bay as an uninhabited shoreline, ignoring that it is one of the world's most critical nesting sites for the endangered **Giant Leatherback Sea Turtle** (*Dermochelys coriacea*) and Nicobar Megapode bird.
 
-- **Violating Tribal Rights & Geological Hazards (1 Mark):** Overlooked the de-notification of $\sim 84	ext{ km}^2$ of tribal reserve land belonging to indigenous **Shompen and Nicobarese** tribes, while completely failing to address severe tectonic and tsunami risks in high-hazard **Seismic Zone V**.
+- **Violating Tribal Rights & Geological Hazards (1 Mark):** Overlooked the de-notification of $\sim 84\text{ km}^2$ of tribal reserve land belonging to indigenous **Shompen and Nicobarese** tribes, while completely failing to address severe tectonic and tsunami risks in high-hazard **Seismic Zone V**.
 
 #### Key Points
 - **Statutory Mandate on Report Integrity:** As emphasized in Class 12 Slide 31, *"EIA is a legal document and any attempt to provide wrong facts or down playing of relevant information is an offence."* Slide 32 specifically directs study of the Great Nicobar mega-project EIA controversies.
 
 - **Flaw 1 (Underreporting / Omission of Sea Turtle Nesting Sanctuaries):** The EIA report downplayed the ecological significance of Galathea Bay, claiming low nesting density, whereas Galathea Bay is globally acknowledged as one of the world's most critical nesting sanctuaries for the vulnerable **Giant Leatherback Sea Turtle** (*Dermochelys coriacea*) and the endemic Nicobar Megapode bird.
 
-- **Flaw 2 (Ignoring / Glossing Over Indigenous Tribal Rights):** The EIA failed to adequately account for irreversible impacts on Particularly Vulnerable Tribal Groups (PVTGs)—specifically the semi-nomadic **Shompen** and the coastal **Nicobarese**—omitting the full implications of de-notifying nearly $84	ext{ km}^2$ of pristine Tribal Reserve forest.
+- **Flaw 2 (Ignoring / Glossing Over Indigenous Tribal Rights):** The EIA failed to adequately account for irreversible impacts on Particularly Vulnerable Tribal Groups (PVTGs)—specifically the semi-nomadic **Shompen** and the coastal **Nicobarese**—omitting the full implications of de-notifying nearly $84\text{ km}^2$ of pristine Tribal Reserve forest.
 
 - **Flaw 3 (Severe Under-Assessment of Extreme Seismic & Tsunami Hazards):** Great Nicobar is situated in **Seismic Zone V** along the active Sunda subduction megathrust (the epicentral zone of the 2004 earthquake that caused 3–4 meters of island land subsidence); the EIA failed to incorporate adequate seismic risk analysis and tectonic stability assessments for the deep-sea transshipment port.
 
@@ -2588,9 +2592,9 @@ As established in the core curriculum framework (Murugesan lifecycle model), gre
 
 **[If asked for 4 Marks, add]:**
 
-- **Capital & Operating Cost (1 Mark):** Thick clients cost $\sim £400	ext{ to }£600$ per seat with high IT maintenance; thin clients cost $\sim £210$ per unit with centralized, automated software patching.
+- **Capital & Operating Cost (1 Mark):** Thick clients cost $\sim £400\text{ to }£600$ per seat with high IT maintenance; thin clients cost $\sim £210$ per unit with centralized, automated software patching.
 
-- **Life-Cycle Ecological Footprint (Slide 16 Case Study) (1 Mark):** Over lifecycle, a thick client embodies $3,244	ext{ MJ}$ energy, $920	ext{ L}$ water, and $193	ext{ kg CO}_2	ext{e}$; a thin client uses only $878	ext{ MJ}$ energy and $56	ext{ kg CO}_2	ext{e}$ (saving $£50,000$ and $46	ext{ t CO}_2	ext{e}$ in Queen Margaret University trial).
+- **Life-Cycle Ecological Footprint (Slide 16 Case Study) (1 Mark):** Over lifecycle, a thick client embodies $3,244\text{ MJ}$ energy, $920\text{ L}$ water, and $193\text{ kg CO}_2\text{e}$; a thin client uses only $878\text{ MJ}$ energy and $56\text{ kg CO}_2\text{e}$ (saving $£50,000$ and $46\text{ t CO}_2\text{e}$ in Queen Margaret University trial).
 
 #### Key Points
 - **System Architecture:**
@@ -2767,11 +2771,11 @@ This rapid obsolescence cycle creates severe global environmental crises:
 
 **[If asked for 2 Marks, add Specific Toxic Constituents (1M)]:**
 
-- **Lead ($	ext{Pb}$):** In CRT solder and circuit boards, causing irreversible neurotoxicity and brain damage.
+- **Lead ($\text{Pb}$):** In CRT solder and circuit boards, causing irreversible neurotoxicity and brain damage.
 
-- **Cadmium ($	ext{Cd}$):** In SMD chip resistors and rechargeable Ni-Cd batteries, causing severe kidney damage.
+- **Cadmium ($\text{Cd}$):** In SMD chip resistors and rechargeable Ni-Cd batteries, causing severe kidney damage.
 
-- **Mercury ($	ext{Hg}$):** In CCFL backlight tubes, causing chronic neurological and reproductive damage.
+- **Mercury ($\text{Hg}$):** In CCFL backlight tubes, causing chronic neurological and reproductive damage.
 
 #### Key Points
 - **Core Definition:** Electronic Waste (e-waste) refers to discarded electronic or electrical equipment that is no longer fit for its originally intended use (e.g. computers, cellular phones, stereos, refrigerators, air conditioners, and consumer durables).
@@ -3007,20 +3011,20 @@ This empirical comparison proves that refining backend indexing algorithms, redu
 
 **[For 3 Marks — Three Core Resource Inputs (1M each)]:**
 
-Manufacturing a single desktop computer and 17-inch monitor ($\sim 24	ext{ kg}$) requires at least **1.8 tons of raw physical resources** (Slide 12):
+Manufacturing a single desktop computer and 17-inch monitor ($\sim 24\text{ kg}$) requires at least **1.8 tons of raw physical resources** (Slide 12):
 
-- **Fossil Fuels (1 Mark):** $\sim 240	ext{ kg}$ of fossil fuels—nearly **10 times the computer's own physical weight**—expended in ultra-high-temperature semiconductor fabrication.
+- **Fossil Fuels (1 Mark):** $\sim 240\text{ kg}$ of fossil fuels—nearly **10 times the computer's own physical weight**—expended in ultra-high-temperature semiconductor fabrication.
 
-- **Chemical Reagents (1 Mark):** $\sim 22	ext{ kg}$ of industrial specialty chemicals, corrosive acids, and high-purity gases (hydrofluoric acid, silane, toxic dopants).
+- **Chemical Reagents (1 Mark):** $\sim 22\text{ kg}$ of industrial specialty chemicals, corrosive acids, and high-purity gases (hydrofluoric acid, silane, toxic dopants).
 
-- **Water Footprint (1 Mark):** $\sim 1,500	ext{ kg (1,500 liters)}$ of freshwater, primarily converted to Ultra-Pure Water (UPW) to rinse microchips between lithographic layers.
+- **Water Footprint (1 Mark):** $\sim 1,500\text{ kg (1,500 liters)}$ of freshwater, primarily converted to Ultra-Pure Water (UPW) to rinse microchips between lithographic layers.
 
 **[If asked for 5 Marks, add]:**
 
 <ol start="4">
 - **Trace Mineral Intensity (1 Mark):** Over **35 different critical elements and minerals** (gold, tantalum, coltan, rare earths), requiring several tons of raw mineral ore extraction per machine.
 
-- **Lifecycle Carbon Imbalance (1 Mark):** Over **$70	ext{--}80\%$ of a computer's total lifetime carbon footprint** is embedded upfront in the manufacturing stage, making extending product lifespan the most effective green strategy.
+- **Lifecycle Carbon Imbalance (1 Mark):** Over **$70\text{--}80\%$ of a computer's total lifetime carbon footprint** is embedded upfront in the manufacturing stage, making extending product lifespan the most effective green strategy.
 
 </ol>
 
@@ -3124,9 +3128,9 @@ Slide 15 provides further lifecycle quantification: producing a standard PC and 
 
 - **The 24-Tree Rule:** Producing 1 ton of virgin office paper consumes **24 living mature trees**.
 
-- **The Ream Calculation:** 1 tree yields $pprox 16.67$ reams of paper (8,333 sheets). Consuming 1 ream of paper (500 sheets) consumes approximately **$6\%$ of a living tree**.
+- **The Ream Calculation:** 1 tree yields $\approx 16.67$ reams of paper (8,333 sheets). Consuming 1 ream of paper (500 sheets) consumes approximately **$6\%$ of a living tree**.
 
-- **Recycling Benefit:** Recycling 1 ton of paper saves 17 mature trees, $7,000	ext{ gallons}$ of water, and 4,000 kWh of electricity.
+- **Recycling Benefit:** Recycling 1 ton of paper saves 17 mature trees, $7,000\text{ gallons}$ of water, and 4,000 kWh of electricity.
 
 **2. Operational IT Greening Protocols [3 Marks]:**
 
@@ -3294,7 +3298,7 @@ Slides 29 through 35 present twelve pioneering industrial design concepts that r
 
 - **Unique Post-Consumer Nature (1 Mark):** Unlike continuous point-source industrial waste, e-waste originates from millions of dispersed post-consumer households and offices, making conventional factory pollution laws inapplicable.
 
-- **Complex Hazardous-Precious Material Matrix (1 Mark):** Electronics contain both highly toxic heavy metals ($	ext{Pb, Cd, Hg}$) and valuable precious metals ($	ext{Au, Ag, Cu, Pd}$), creating economic incentives for dangerous informal backyard recycling if unregulated.
+- **Complex Hazardous-Precious Material Matrix (1 Mark):** Electronics contain both highly toxic heavy metals ($\text{Pb, Cd, Hg}$) and valuable precious metals ($\text{Au, Ag, Cu, Pd}$), creating economic incentives for dangerous informal backyard recycling if unregulated.
 
 - **Extended Producer Responsibility (EPR) Mandate (1 Mark):** Mandates that electronics manufacturers and brand owners finance and organize take-back buyback schemes, establishing formal collection targets and RoHS substance bans.
 
@@ -3410,7 +3414,7 @@ Slide 27 details the landmark guidelines notified by the Central Pollution Contr
 
 **[If asked for 5 Marks, add Guiyu Case Study (2 Marks)]:**
 
-- **Guiyu, China Case Study (Slide 22):** Processed up to 4,000 tonnes of e-waste per hour; clinical testing revealed over **$80\%$ of local school children suffered from severe clinical lead poisoning** ($	ext{blood lead levels} > 10\,\mu	ext{g/dL}$), and local Lianjiang river water was completely undrinkable.
+- **Guiyu, China Case Study (Slide 22):** Processed up to 4,000 tonnes of e-waste per hour; clinical testing revealed over **$80\%$ of local school children suffered from severe clinical lead poisoning** ($\text{blood lead levels} > 10\,\mu\text{g/dL}$), and local Lianjiang river water was completely undrinkable.
 
 #### Key Points
 - **Informal Recycling Reality in India & Developing Nations (Slide 22):**
@@ -3498,19 +3502,19 @@ Slide 24 presents a landmark 2019 investigative report published in *The Guardia
 **Matching Electronic Components with Toxic Constituents:**
 
   | **Printed Circuit Boards (PCBs)** 
-  | **Lead ($	ext{Pb}$) & BFRs** 
+  | **Lead ($\text{Pb}$) & BFRs** 
   | Neurotoxic damage to central nervous system; endocrine disruption from brominated flame retardants. 
 
   | **Cathode Ray Tubes (CRTs)** 
-  | **Lead ($	ext{Pb}$) & Barium ($	ext{Ba}$)** 
+  | **Lead ($\text{Pb}$) & Barium ($\text{Ba}$)** 
   | Funnel glass contains 1–4 kg of lead shielding X-rays; bioaccumulative neurotoxin causing intellectual disability. 
 
   | **SMD Resistors & Semiconductors** 
-  | **Cadmium ($	ext{Cd}$)** 
+  | **Cadmium ($\text{Cd}$)** 
   | Chronic inhalation causes irreversible renal kidney damage and osteomalacia (Itai-itai bone disease). 
 
   | **Flat Screen Backlights (CCFL)** 
-  | **Mercury ($	ext{Hg}$)** 
+  | **Mercury ($\text{Hg}$)** 
   | Elemental mercury vaporizes easily; causes severe tremors, neurological disorders, and bioaccumulates as methylmercury. 
 
   | **Cables & Computer Housings** 
@@ -3789,7 +3793,7 @@ To establish a universal professional charter, green engineers formulated the Sa
 
 - **Premise:** Formulated by Paul Anastas & Julie Zimmerman to engineer inherently benign systems from molecular to urban scale.
 
-- **Principle 1 (Inherent Rather Than Circumstantial):** Ensure all materials and energy inputs/outputs are inherently non-hazardous (e.g. replacing toxic dichloromethane with supercritical $	ext{CO}_2$).
+- **Principle 1 (Inherent Rather Than Circumstantial):** Ensure all materials and energy inputs/outputs are inherently non-hazardous (e.g. replacing toxic dichloromethane with supercritical $\text{CO}_2$).
 
 - **Principle 5 (Output-Pulled Rather Than Input-Pushed):** Approach design through "Le Chatelier's principle"—minimize energy by pulling transformations forward through continuous product separation (e.g. continuous water condensation in reversible reactions).
 
@@ -3838,7 +3842,7 @@ To establish a universal professional charter, green engineers formulated the Sa
 - **Principle 1: Inherent Rather Than Circumstantial (Slide 7)**
 <br>*Official Definition:* "Designers should evaluate the inherent nature of the selected material and energy inputs to ensure that they are as benign as possible as a first step toward a sustainable product, process, or system."
 <br>*Engineering Rationale:* Traditional safety engineering relies on circumstantial controls (blast containment, scrubbers, personal protective respirators) to manage lethal substances. If the circumstantial apparatus fails, catastrophe occurs. Green engineering designs the hazard out entirely by choosing inherently non-toxic feedstocks.
-<br>*Slide Example:* **Dichloromethane (\(	ext{CH}_2	ext{Cl}_2\))**—a volatile, carcinogenic organochlorine solvent widely used in paint strippers and extraction. Circumstantial exhaust hoods do not eliminate worker exposure or environmental emissions; green engineering substitutes it with non-toxic, bio-based alternatives.
+<br>*Slide Example:* **Dichloromethane (\(\text{CH}_2\text{Cl}_2\))**—a volatile, carcinogenic organochlorine solvent widely used in paint strippers and extraction. Circumstantial exhaust hoods do not eliminate worker exposure or environmental emissions; green engineering substitutes it with non-toxic, bio-based alternatives.
 
 - **Principle 2: Prevention Rather Than Treatment (Slide 8)**
 <br>*Official Definition:* "It is better to prevent waste than to treat or clean up waste after it is formed."
@@ -3847,7 +3851,7 @@ To establish a universal professional charter, green engineers formulated the Sa
   
     <li>Implementation of breakthrough green technologies.
 
-    - Solvent substitution (replacing toxic organic solvents with supercritical \(	ext{CO}_2\) or aqueous media).
+    - Solvent substitution (replacing toxic organic solvents with supercritical \(\text{CO}_2\) or aqueous media).
 
     - Eliminating hazardous chemical intermediates in multi-step synthesis.
 
@@ -3943,7 +3947,7 @@ To establish a universal professional charter, green engineers formulated the Sa
 
 - **Toxic Chemical Effluent Discharge (1 Mark):** Synthetic indigo dyeing, sulfur black, and chemical mordants require heavy water rinses that discharge toxic, persistent dye effluents into waterways (e.g., severe river contamination in Xintang, China), destroying aquatic ecosystems.
 
-- **High Carbon & Occupational Footprint (1 Mark):** Producing one pair generates $\sim 44	ext{ lbs (20 kg)}$ of $	ext{CO}_2$ equivalent, while manual chemical weathering and pneumatic silica sandblasting cause fatal, irreversible **silicosis** in garment workers.
+- **High Carbon & Occupational Footprint (1 Mark):** Producing one pair generates $\sim 44\text{ lbs (20 kg)}$ of $\text{CO}_2$ equivalent, while manual chemical weathering and pneumatic silica sandblasting cause fatal, irreversible **silicosis** in garment workers.
 
 **[If asked for 4 Marks, add Sustainable Engineering Alternatives (1M)]:**
 
@@ -3991,14 +3995,14 @@ Slide 3 specifically documents the destructive practice of **Denim Sandblasting*
 
 - **Economic Motivation:** Apparel manufacturers favor sandblasting because it is a cheap, fast, and simple mechanical shortcut to manipulate garments without purchasing expensive specialized machinery.
 
-- **Worker Health Pathology:** The primary ingredient in sandblasting grit is **silica (crystalline quartz, \(	ext{SiO}_2\))**. Blasting denim atomizes silica particles into microscopic respirable dust. Garment workers operating in poorly ventilated facilities inhale these sharp mineral particles, which lodge permanently in the lung alveoli, causing progressive pulmonary fibrosis, severe respiratory failure, and incurable, fatal **silicosis**.
+- **Worker Health Pathology:** The primary ingredient in sandblasting grit is **silica (crystalline quartz, \(\text{SiO}_2\))**. Blasting denim atomizes silica particles into microscopic respirable dust. Garment workers operating in poorly ventilated facilities inhale these sharp mineral particles, which lodge permanently in the lung alveoli, causing progressive pulmonary fibrosis, severe respiratory failure, and incurable, fatal **silicosis**.
 
 #### 4. Carbon Footprint and Equivalent Energy Cost
 
 Beyond water consumption and chemical poisoning, denim manufacturing carries a massive fossil fuel and greenhouse gas footprint:
 
-<p style="text-align:center; font-weight:600; font-size:1.05rem; margin:0.3rem 0;">1 Pair of Denim Jeans = 44 Pounds (\(pprox 20	ext{ kg}\)) of Greenhouse Gas Emissions</p>
-<p style="text-align:center; font-style:italic; margin:0.3rem 0;">Directly equivalent to burning over 21 pounds (\(pprox 9.5	ext{ kg}\)) of coal!</p>
+<p style="text-align:center; font-weight:600; font-size:1.05rem; margin:0.3rem 0;">1 Pair of Denim Jeans = 44 Pounds (\(\approx 20\text{ kg}\)) of Greenhouse Gas Emissions</p>
+<p style="text-align:center; font-style:italic; margin:0.3rem 0;">Directly equivalent to burning over 21 pounds (\(\approx 9.5\text{ kg}\)) of coal!</p>
 
 This staggering carbon toll stems from the combined thermal and electrical energy demanded by coal-fired captive power plants supplying textile mills: pumping massive water volumes, heating multi-stage boiling dye baths, running energy-intensive mechanical drying drums, and transporting heavy fabrics across global supply chains.
 
@@ -4036,7 +4040,7 @@ The denim crisis provides the ultimate benchmark for why the **12 Principles of 
   
     <li>Asnæs Power Station delivers waste steam to the Statoil refinery and Novo Nordisk pharmaceutical plant.
 
-    - Power plant flue-gas desulfurization (FGD) scrubbers capture sulfur dioxide to produce synthetic calcium sulfate (gypsum $	ext{CaSO}_4\cdot 2	ext{H}_2	ext{O}$), which supplies the adjacent Gyproc plasterboard factory, eliminating virgin gypsum mining.
+    - Power plant flue-gas desulfurization (FGD) scrubbers capture sulfur dioxide to produce synthetic calcium sulfate (gypsum $\text{CaSO}_4\cdot 2\text{H}_2\text{O}$), which supplies the adjacent Gyproc plasterboard factory, eliminating virgin gypsum mining.
 
   
 
@@ -4083,7 +4087,7 @@ In traditional industrial design, manufacturing plants operate as isolated linea
   <ul>
     <li>Waste thermal steam from a 1,500 MW power station is piped to provide district heating for the entire municipality and process heat for an adjacent Novo Nordisk pharmaceutical plant and Equinor oil refinery.
 
-    - Sulfur dioxide gas trapped by the power station's flue-gas desulfurization scrubbers reacts with limestone to produce pure synthetic gypsum (\(	ext{CaSO}_4\cdot 2	ext{H}_2	ext{O}\)), which is piped directly to a neighboring Gyproc wallboard factory, eliminating the need to mine natural gypsum.
+    - Sulfur dioxide gas trapped by the power station's flue-gas desulfurization scrubbers reacts with limestone to produce pure synthetic gypsum (\(\text{CaSO}_4\cdot 2\text{H}_2\text{O}\)), which is piped directly to a neighboring Gyproc wallboard factory, eliminating the need to mine natural gypsum.
 
     - Fly ash and clinker from combustion boilers are delivered to cement manufacturing plants for concrete synthesis, closing all solid waste loops.
 
@@ -4219,11 +4223,11 @@ where $C$ is consumption, $I$ is gross private investment, $G$ is government exp
 #### Detailed Answer
 **Origins and Theoretical Architecture:** Following the Great Depression, the United States commissioned Simon Kuznets in 1934 to develop a standardized accounting ledger of national production. This crystallized into the United Nations System of National Accounts (SNA). The core formula accounts for all final goods and services transacted in formal markets:
 
-$$	ext{GNP} = C + I + G + (X - M) + (R - P)$$
+$$\text{GNP} = C + I + G + (X - M) + (R - P)$$
 
 **The Fundamental Asymmetry of SNA:** While the SNA meticulously calculates the depreciation of man-made physical capital (machines, buildings, roads) via the equation:
 
-$$	ext{Net Investment } (I_n) = 	ext{Gross Investment } (I_g) - 	ext{Depreciation } (D)$$
+$$\text{Net Investment } (I_n) = \text{Gross Investment } (I_g) - \text{Depreciation } (D)$$
 
 it treats natural capital as an inexhaustible, free gift. When an oil well is pumped dry or a virgin rainforest is clear-cut, the SNA records the revenue as pure income without deducting a single dollar for natural capital depreciation. Worse, the SNA records oil spill cleanups, hospital bills from toxic smog, and post-hurricane rebuilding as positive additions to GDP.
 
@@ -4335,7 +4339,7 @@ ensuring national consumption does not erode the natural capital base.
 
 **Application to Natural Resources:** In conventional accounting, if a nation clear-cuts all its forests and exports the timber, its GDP rises sharply, giving an illusion of prosperity. However, its productive capital base has shrunk. Green accounting operationalizes the Hicksian concept by computing Environmentally-adjusted Net Domestic Product (EDP):
 
-$$	ext{EDP} = 	ext{GDP} - D_m - D_n$$
+$$\text{EDP} = \text{GDP} - D_m - D_n$$
 
 By subtracting both the depreciation of manufactured machinery ($D_m$) and the depletion of environmental resources ($D_n$), Hicksian green income reveals whether a nation is truly generating surplus or merely liquidating its ecological inheritance.
 
@@ -4695,9 +4699,9 @@ $$\text{GPI} = C_{\text{adj}} + G_{\text{non-market}} - D_{\text{defensive}} - E
 
 **1. The Hedonic Property Pricing Model:**
 
-$$P_i = eta_0 + eta_1 (	ext{Bedrooms})_i + eta_2 (	ext{Distance to CBD})_i + eta_3 (	ext{PM}_{2.5} 	ext{ Concentration})_i + \epsilon_i$$
+$$P_i = eta_0 + eta_1 (\text{Bedrooms})_i + eta_2 (\text{Distance to CBD})_i + eta_3 (\text{PM}_{2.5} \text{ Concentration})_i + \epsilon_i$$
 
-By controlling statistically for architectural square footage and transit access, multiple regression isolates $eta_3$—the negative property discount associated with higher particulate pollution. If home prices drop by ₹5,00,000 for every $10 \, \mu	ext{g/m}^3$ increase in air pollution, that reveals the surrogate market value of air quality.
+By controlling statistically for architectural square footage and transit access, multiple regression isolates $eta_3$—the negative property discount associated with higher particulate pollution. If home prices drop by ₹5,00,000 for every $10 \, \mu\text{g/m}^3$ increase in air pollution, that reveals the surrogate market value of air quality.
 
 **2. The Zonal and Individual Travel Cost Method:**
 
@@ -4831,7 +4835,7 @@ Because entry tickets to national parks are typically heavily subsidized, ticket
 </ul>
 
 #### Detailed Answer
-**Economic Rationale for Carbon Markets:** A molecule of $	ext{CO}_2$ has the same global warming impact regardless of where it is emitted. Reducing 1 tonne of carbon in a coal plant in Germany might cost €150, whereas achieving the same 1-tonne reduction by upgrading a biomass boiler in rural India might cost only €15. The Kyoto Protocol created three flexible mechanisms to harness this marginal abatement cost differential:
+**Economic Rationale for Carbon Markets:** A molecule of $\text{CO}_2$ has the same global warming impact regardless of where it is emitted. Reducing 1 tonne of carbon in a coal plant in Germany might cost €150, whereas achieving the same 1-tonne reduction by upgrading a biomass boiler in rural India might cost only €15. The Kyoto Protocol created three flexible mechanisms to harness this marginal abatement cost differential:
 
 **1. Clean Development Mechanism (CDM):**
 
@@ -4960,7 +4964,7 @@ JI is an Annex-I to Annex-I mechanism. Because both host and donor nations have 
 #### Detailed Answer
 **Systematic Directory of Environmental Governance and Accounting Acronyms:** These twelve acronyms recur consistently across past exam papers and represent fundamental institutional, analytical, and economic metrics:
 
-- **CER (Certified Emission Reduction):** Official carbon credit token generated by CDM projects in developing nations, equivalent to 1 metric tonne of $	ext{CO}_2$ avoided.
+- **CER (Certified Emission Reduction):** Official carbon credit token generated by CDM projects in developing nations, equivalent to 1 metric tonne of $\text{CO}_2$ avoided.
 
 - **EDP (Environmentally-adjusted Domestic Product):** The central output indicator of SEEA, calculated by subtracting capital depreciation and environmental degradation from GDP.
 
@@ -5022,19 +5026,19 @@ This allows policymakers in the Netherlands and across the European Union (Euros
 
 **1. Mathematical Definition of GWP (2 Marks):**
 
-**Global Warming Potential (GWP)** measures the cumulative radiative forcing of a pulse emission of 1 kg of a trace gas relative to 1 kg of reference gas ($	ext{CO}_2$) over a specified time horizon ($TH$, typically 100 years):
+**Global Warming Potential (GWP)** measures the cumulative radiative forcing of a pulse emission of 1 kg of a trace gas relative to 1 kg of reference gas ($\text{CO}_2$) over a specified time horizon ($TH$, typically 100 years):
 $$\text{GWP}_x = \frac{\int_{0}^{TH} a_x \cdot [C_x(t)] \, dt}{\int_{0}^{TH} a_{\text{CO}_2} \cdot [C_{\text{CO}_2}(t)] \, dt}$$
-where $a_x$ is radiative efficiency ($	ext{W}/(	ext{m}^2\cdot\text{kg})$) and $C_x(t)$ is the atmospheric concentration decay function over time.
+where $a_x$ is radiative efficiency ($\text{W}/(\text{m}^2\cdot\text{kg})$) and $C_x(t)$ is the atmospheric concentration decay function over time.
 
 **2. Correct Match Table (100-Year GWP - IPCC AR5) [3 Marks]:**
 
-| **Carbon Dioxide ($	ext{CO}_2$)** | **1** (Reference Standard) | Fossil fuel combustion, deforestation 
+| **Carbon Dioxide ($\text{CO}_2$)** | **1** (Reference Standard) | Fossil fuel combustion, deforestation 
 
-| **Methane ($	ext{CH}_4$)** | **28** | Enteric livestock fermentation, rice paddies, landfills 
+| **Methane ($\text{CH}_4$)** | **28** | Enteric livestock fermentation, rice paddies, landfills 
 
-| **Nitrous Oxide ($	ext{N}_2	ext{O}$)** | **265** | Synthetic nitrogen fertilizers, chemical nylon manufacturing 
+| **Nitrous Oxide ($\text{N}_2\text{O}$)** | **265** | Synthetic nitrogen fertilizers, chemical nylon manufacturing 
 
-| **Sulfur Hexafluoride ($	ext{SF}_6$)** | **23,500** | High-voltage electrical switchgear insulation
+| **Sulfur Hexafluoride ($\text{SF}_6$)** | **23,500** | High-voltage electrical switchgear insulation
 
 #### Key Points
 - **(1) Carbon Dioxide ($\text{CO}_2$):** $\text{GWP} = 1$ (Reference baseline gas by international definition).
@@ -5048,7 +5052,7 @@ where $a_x$ is radiative efficiency ($	ext{W}/(	ext{m}^2\cdot\text{kg})$) and $C
 #### Detailed Answer
 **Scientific Definition of GWP:** Global Warming Potential (GWP) is a relative index measuring how much thermal infrared energy 1 ton of a given greenhouse gas absorbs over a 100-year time horizon compared to 1 ton of carbon dioxide:
 
-$$	ext{GWP}_i = rac{\int_0^{100} a_i \cdot C_i(t) \, dt}{\int_0^{100} a_{	ext{CO}_2} \cdot C_{	ext{CO}_2}(t) \, dt}$$
+$$\text{GWP}_i = rac{\int_0^{100} a_i \cdot C_i(t) \, dt}{\int_0^{100} a_{\text{CO}_2} \cdot C_{\text{CO}_2}(t) \, dt}$$
 
 **Physical Characteristics of the Gases:**
 
@@ -5307,7 +5311,7 @@ With a composite score of 77, the state achieves **Front-Runner tier (65–99)**
 $$I = P \times A \times T$$
 In industrialized nations, excessive per-capita affluence and overconsumption ($A$) drive ecological degradation far more aggressively than population growth ($P$).
 
-- **Ecological Footprint & Planetary Overshoot (1 Mark):** Global consumption currently demands $\sim 1.75$ Earth equivalents annually. High-income nations consume up to $4	ext{ to }5$ Earths per capita, depleting ecological reserves and exceeding biophysical planetary boundaries.
+- **Ecological Footprint & Planetary Overshoot (1 Mark):** Global consumption currently demands $\sim 1.75$ Earth equivalents annually. High-income nations consume up to $4\text{ to }5$ Earths per capita, depleting ecological reserves and exceeding biophysical planetary boundaries.
 
 **[If asked for 5 Marks, add]:**
 
@@ -5436,9 +5440,9 @@ Geospatial remote sensing directly eliminates these limitations by offering **co
 
 #### Key Points
 - **Standard False Color Composite (FCC) Channel Mapping:**
-<br>• Red Display Channel $\leftarrow$ **Near-Infrared (NIR) Band** ($pprox 0.76\text{--}0.90\ \mu\text{m}$)
-<br>• Green Display Channel $\leftarrow$ **Visible Red Band** ($pprox 0.63\text{--}0.69\ \mu\text{m}$)
-<br>• Blue Display Channel $\leftarrow$ **Visible Green Band** ($pprox 0.52\text{--}0.60\ \mu\text{m}$)
+<br>• Red Display Channel $\leftarrow$ **Near-Infrared (NIR) Band** ($\approx 0.76\text{--}0.90\ \mu\text{m}$)
+<br>• Green Display Channel $\leftarrow$ **Visible Red Band** ($\approx 0.63\text{--}0.69\ \mu\text{m}$)
+<br>• Blue Display Channel $\leftarrow$ **Visible Green Band** ($\approx 0.52\text{--}0.60\ \mu\text{m}$)
 
 - **Appearance of Healthy Green Vegetation:**
 <br>• **Appears:** **Vibrant Bright Red / Crimson / Magenta**.
@@ -6295,11 +6299,11 @@ As presented on Slide 6 (data as of October 2026):
 
 **[If asked for 2 Marks, add the Three-Zone Buffer System (1 Mark)]:**
 
-- **Zone 1 (Streamside Forest, $\sim 15	ext{ ft}$):** Undisturbed native trees at water edge stabilizing bank soil with deep roots and providing water shade to lower temperatures.
+- **Zone 1 (Streamside Forest, $\sim 15\text{ ft}$):** Undisturbed native trees at water edge stabilizing bank soil with deep roots and providing water shade to lower temperatures.
 
-- **Zone 2 (Managed Forest, $\sim 60	ext{ ft}$):** Intermediate tree and shrub strip that absorbs dissolved nutrients and facilitates biological denitrification in soil.
+- **Zone 2 (Managed Forest, $\sim 60\text{ ft}$):** Intermediate tree and shrub strip that absorbs dissolved nutrients and facilitates biological denitrification in soil.
 
-- **Zone 3 (Grass Filter Strip, $\sim 20	ext{ ft}$):** Dense herbaceous perennial grass strip adjoining farmland that converts turbulent surface runoff into sheet flow and captures coarse soil sediments.
+- **Zone 3 (Grass Filter Strip, $\sim 20\text{ ft}$):** Dense herbaceous perennial grass strip adjoining farmland that converts turbulent surface runoff into sheet flow and captures coarse soil sediments.
 
 #### Key Points
 - **Definition:** Vegetated linear forest strips (consisting of native trees, shrubs, and perennial grasses) located immediately adjacent to rivers, streams, lakes, and wetlands (Riverine systems under Ramsar). They form a critical ecological buffer zone between agricultural/urban land and freshwater bodies.
@@ -6367,7 +6371,7 @@ The deep, interlaced root systems of mature riparian trees physically reinforce 
 
 - Located along the Odisha coastline, Chilika is **Asia's largest brackish water lagoon**, designated as **India's first Ramsar wetland site in 1981**.
 
-- Spans an area of $900	ext{ to }1,165	ext{ km}^2$, serving as the wintering haven for over 1 million migratory waterfowl across 160 species along the Central Asian Flyway, and supporting the flagship endangered **Irrawaddy Dolphin** (*Orcaella brevirostris*).
+- Spans an area of $900\text{ to }1,165\text{ km}^2$, serving as the wintering haven for over 1 million migratory waterfowl across 160 species along the Central Asian Flyway, and supporting the flagship endangered **Irrawaddy Dolphin** (*Orcaella brevirostris*).
 
 **2. Ecological Degradation & Placement on Montreux Record [2 Marks]:**
 
@@ -6558,9 +6562,12 @@ Because their entire world population exists in one restricted locality, endemic
 - **Definitive Matching Solution:**
 <br>1. **Wildlife (Protection) Act** $\rightarrow$ **1972**
 <br>2. **Water (Prevention and Control of Pollution) Act** $\rightarrow$ **1974**
-<br>3. **Forest (Conservation) Act** $ightarrow$ **1980**
-<br>4. **Air (Prevention and Control of Pollution) Act** $ightarrow$ **1981**
-<br>5. **Environment (Protection) Act** $ightarrow$ **1986**
+<br>3. **Forest (Conservation) Act** $
+ightarrow$ **1980**
+<br>4. **Air (Prevention and Control of Pollution) Act** $
+ightarrow$ **1981**
+<br>5. **Environment (Protection) Act** $
+ightarrow$ **1986**
 
 - **Additional Tested Environmental Years / Rules:**
 <br>• **1998** $\rightarrow$ **The Biomedical Waste (Management and Handling) Rules**
